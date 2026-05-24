@@ -610,6 +610,122 @@
   }
   .queue-done .check { font-size: 36px; display: block; margin-bottom: 8px; }
 
+  /* feedback FAB + panel */
+  .fb-fab {
+    position: fixed;
+    bottom: max(20px, env(safe-area-inset-bottom));
+    right: 20px;
+    z-index: 150;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: var(--primary);
+    border: none;
+    border-radius: 28px;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 6px 22px rgba(10,37,64,0.28);
+    display: flex; align-items: center; gap: 6px;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .fb-fab:hover { transform: translateY(-1px); box-shadow: 0 8px 26px rgba(10,37,64,0.35); }
+  .fb-fab .fb-count {
+    background: var(--primary);
+    color: var(--accent);
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 800;
+    margin-left: 4px;
+  }
+  .fb-fab .fb-count:empty { display: none; }
+  .fb-panel {
+    display: none;
+    position: fixed;
+    bottom: max(80px, calc(env(safe-area-inset-bottom) + 80px));
+    right: 20px;
+    width: 360px;
+    max-width: calc(100vw - 40px);
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    z-index: 151;
+    overflow: hidden;
+  }
+  .fb-panel.open { display: block; }
+  .fb-panel-head {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: #fff;
+    padding: 14px 18px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .fb-panel-head h3 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; }
+  .fb-panel-head .close {
+    background: rgba(255,255,255,0.18);
+    color: #fff; border: none;
+    width: 26px; height: 26px; border-radius: 50%;
+    font-size: 15px; cursor: pointer;
+  }
+  .fb-body { padding: 16px 18px; }
+  .fb-tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+  .fb-tab {
+    flex: 1; padding: 6px 10px;
+    border-radius: 14px; border: 1px solid var(--border);
+    background: #fafbfc; color: var(--text-muted);
+    font-size: 11px; font-weight: 700;
+    cursor: pointer; font-family: inherit;
+    transition: all 0.15s;
+  }
+  .fb-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .fb-context-select {
+    width: 100%; padding: 8px 10px;
+    border: 1px solid var(--border); border-radius: 8px;
+    font-size: 12.5px; margin-bottom: 10px;
+    background: #fafbfc; font-family: inherit;
+  }
+  .fb-textarea {
+    width: 100%; min-height: 100px;
+    padding: 10px 12px;
+    border: 1px solid var(--border); border-radius: 8px;
+    font-family: inherit; font-size: 13px; line-height: 1.55;
+    resize: vertical; background: #fafbfc;
+  }
+  .fb-textarea:focus { outline: none; border-color: var(--accent); background: #fff; }
+  .fb-actions { display: flex; gap: 8px; margin-top: 12px; }
+  .fb-actions .btn { flex: 1; padding: 11px 12px; font-size: 12.5px; }
+  .fb-saved-list {
+    max-height: 200px; overflow-y: auto;
+    margin-top: 10px;
+  }
+  .fb-saved-item {
+    background: #fafbfc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    font-size: 12.5px;
+    position: relative;
+  }
+  .fb-saved-item .fb-meta {
+    font-size: 10px; color: var(--text-muted);
+    letter-spacing: 0.5px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 4px;
+    display: flex; justify-content: space-between;
+  }
+  .fb-saved-item .fb-meta .fb-kind { color: var(--accent-dark); }
+  .fb-saved-item .fb-del {
+    background: transparent; border: none; color: var(--negative);
+    font-size: 11px; cursor: pointer; padding: 0;
+  }
+  .fb-empty { color: var(--text-muted); font-size: 12px; text-align: center; padding: 14px 6px; font-style: italic; }
+  @media (max-width: 820px) {
+    .fb-panel { right: 12px; left: 12px; width: auto; bottom: max(80px, calc(env(safe-area-inset-bottom) + 80px)); }
+    .fb-fab { right: 14px; padding: 11px 16px; font-size: 12px; }
+  }
+
   /* nav scenario tabs */
   .nav-link.scenario { padding: 14px 18px; }
   .nav-link.scenario .sc-count-pill {
@@ -850,6 +966,41 @@
 
 <div class="container" id="listings"></div>
 
+<button class="fb-fab" onclick="toggleFeedback()" id="fbFab">💬 Feedback<span class="fb-count" id="fbCount"></span></button>
+<div class="fb-panel" id="fbPanel">
+  <div class="fb-panel-head">
+    <h3>Feedback for Balraj</h3>
+    <button class="close" onclick="toggleFeedback()">×</button>
+  </div>
+  <div class="fb-body">
+    <div class="fb-tabs">
+      <button class="fb-tab active" data-tab="new" onclick="fbSwitchTab('new')">✍ New</button>
+      <button class="fb-tab" data-tab="saved" onclick="fbSwitchTab('saved')">📋 Saved (<span id="fbSavedCount">0</span>)</button>
+    </div>
+    <div id="fbTabNew">
+      <select class="fb-context-select" id="fbContext">
+        <option value="general">General feedback (about the page / report)</option>
+        <option value="scenario">About a specific scenario</option>
+        <option value="listing">About a specific listing</option>
+        <option value="feature">Feature request</option>
+        <option value="bug">Bug / something broken</option>
+      </select>
+      <textarea class="fb-textarea" id="fbText" placeholder="What's on your mind? — e.g. 'Add school district filter', 'Listings in Katy look too thin', 'Send button on iPhone broken'…"></textarea>
+      <div class="fb-actions">
+        <button class="btn btn-copy" onclick="fbSaveOnly()">💾 Save Only</button>
+        <button class="btn btn-sms" onclick="fbSaveAndEmail()">✉ Save & Email</button>
+      </div>
+    </div>
+    <div id="fbTabSaved" style="display:none">
+      <div class="fb-saved-list" id="fbSavedList"></div>
+      <div class="fb-actions">
+        <button class="btn btn-copy" onclick="fbClearAll()">🗑 Clear All</button>
+        <button class="btn btn-sms" onclick="fbEmailAll()">✉ Email All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal-backdrop" id="textAllModal" onclick="if(event.target===this)closeTextAllQueue()">
   <div class="modal">
     <div class="modal-head">
@@ -893,10 +1044,7 @@ const SCENARIOS = [
 
 // Replace LISTINGS with daily scraper output (same shape).
 // Each listing carries scenario_id matching one of SCENARIOS above.
-const LISTINGS = [{"id":1,"address":"1101 N Blair Ave","city":"Cleveland","state":"TX","zip":"77327","price":58000,"beds":2,"baths":1,"sqft":844,"year_built":1949,"price_per_sqft":69,"dom":13,"status":"Active","mls":"84093644","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/1101-n-blair-ave-cleveland-tx-77327/4786918","zillow_url":null,"agent":{"name":"John Hinch","brokerage":"JLA Realty","phone":"(832) 318-5309"},"sms_message":"Hi John, this is Vivek, local Investor. Interested in your listing at 1101 N Blair Ave, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":78300,"arv_high":89900,"comps":[{"address":"Cleveland TX 77327","notes":"Area renovated sales typically $85K–$120K; ~$90–$110/sqft for updated 2/1 homes"}],"red_flags":["Built 1949 — high risk of outdated electrical (knob-and-tube), plumbing (galvanized), and foundation issues","Low price/sqft ($69) signals likely deferred maintenance or significant repair needs","Extended DOM (13 days) in a low price bracket suggests inspection concerns or title issues","Small 844 sqft limits exit strategies — resale pool is narrow"],"opportunity_notes":["Bayou-rural Cleveland value play — lowest-cost entry in Liberty County","$58K acquisition leaves strong spread for BRRRR or flip if cosmetic","2/1 layout is rentable to single occupants or couples at $750–$900/mo gross","Reduced price confirms motivated seller — room to negotiate below ask"]}},
-{"id":2,"address":"504 Road 5007 Rd","city":"Cleveland","state":"TX","zip":"77327","price":100000,"beds":4,"baths":2.5,"sqft":728,"year_built":1978,"price_per_sqft":137,"dom":63,"status":"Active","mls":"76101835","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/504-road-5007-cleveland-tx-77327/13610012","zillow_url":null,"agent":{"name":"Jose Salinas","brokerage":"LPT Realty, LLC","phone":"(713) 806-9491"},"sms_message":"Hi Jose, this is Vivek, local Investor. Interested in your listing at 504 Road 5007 Rd, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":135000,"arv_high":155000,"comps":[{"address":"Cleveland TX 77327","notes":"Area renovated 3-4BR sales typically $130K–$170K; ~$110–$130/sqft for updated homes on acreage"}],"red_flags":["Built 1978 — potential asbestos, plumbing, and electrical upgrade needs","High $137/sqft on only 728 sqft — very small footprint for 4BR/2.5BA configuration, likely cramped","63 DOM is a strong seller-motivation signal but also flags prior deal fallout risk","High price for size in rural Liberty County limits resale buyer pool"],"opportunity_notes":["63 DOM = highly motivated seller — price negotiable, possibly 10–15% below ask","4BR configuration increases rental demand (larger families, multi-occupant)","Reduced price listing confirms willingness to negotiate","Cleveland bayou rural market: cash buyers with minimal competition"]}},
-{"id":3,"address":"879 County Road 2167","city":"Cleveland","state":"TX","zip":"77327","price":75000,"beds":2,"baths":1,"sqft":912,"year_built":1980,"price_per_sqft":82,"dom":38,"status":"Active","mls":"91867683","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/879-county-road-2167-cleveland-tx-77327/4801420","zillow_url":null,"agent":{"name":"Barbara Sinkovec","brokerage":"RE/MAX Southwest","phone":"(713) 248-4241"},"sms_message":"Hi Barbara, this is Vivek, local Investor. Interested in your listing at 879 County Road 2167, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":101250,"arv_high":116250,"comps":[{"address":"Cleveland TX 77327","notes":"Area renovated 2/1 homes sell $95K–$130K; ~$100–$115/sqft fully updated"}],"red_flags":["Built 1980 — likely original systems (HVAC, plumbing, electrical) need assessment","Low $82/sqft suggests deferred maintenance or cosmetic issues","38 DOM signals prior buyer fallout or undisclosed condition issues","2/1 layout limits rental rate ceiling vs larger configurations"],"opportunity_notes":["38 DOM with reduced price = seller likely flexible on terms","$75K entry on 912 sqft 2/1 — strong rent yield potential ($800–$950/mo)","Cleveland rural market: low competition from retail buyers","Spread to ARV supports light-rehab flip or BRRRR strategy"]}},
-{"id":4,"address":"159 Road 5814","city":"Cleveland","state":"TX","zip":"77327","price":100000,"beds":3,"baths":2,"sqft":1100,"year_built":2023,"price_per_sqft":91,"dom":43,"status":"Active","mls":"22797247","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/0-corner-of-road-5805-and-road-581-cleveland-tx-77327/16149776","zillow_url":null,"agent":{"name":"Anette Serrano","brokerage":"Keller Williams Houston Central","phone":"(915) 227-5212"},"sms_message":"Hi Anette, this is Vivek, local Investor. Interested in your listing at 159 Road 5814, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":135000,"arv_high":155000,"comps":[{"address":"Cleveland TX 77327","notes":"New construction 3/2 comps in rural Liberty County selling $130K–$165K; ~$110–$125/sqft"}],"red_flags":["New 2023 build at $100K is suspiciously cheap — verify permits, certificate of occupancy, and finish quality","43 DOM on a brand-new home is a red flag — suggests quality or location concerns","Rural road address (Road 5814) limits buyer pool for resale","$91/sqft on new construction in this market is below replacement cost — investigate why"],"opportunity_notes":["2023 build = no deferred maintenance, new systems, warranty-eligible items","3/2 layout is the most rentable configuration in rural TX markets ($950–$1,150/mo)","Reduced price on new construction = motivated builder or developer offload","Strong spread: $100K buy vs $135–155K ARV if condition confirmed on inspection"]}}]; // populated daily by scraper
+const LISTINGS = []; // populated daily by scraper
 
 const fmtMoney = n => n == null ? '—' : '$' + n.toLocaleString('en-US');
 const fmtMoneyShort = n => n == null ? '—' : n >= 1000 ? '$' + (n/1000).toFixed(n>=10000?0:1) + 'K' : '$' + n;
@@ -1502,7 +1650,111 @@ function onDateChange() {
   sel.value = today();
 }
 
-document.addEventListener('DOMContentLoaded', () => { populateDateSelect(); init(); });
+// ============================================================
+// FEEDBACK WIDGET — Vivek's notes & feature requests for Balraj
+// ============================================================
+const FB_KEY = 'tqhb_feedback_v1';
+const FB_TO_EMAIL = 'balrajsinghkalra@gmail.com';
+
+function fbLoad() {
+  try { return JSON.parse(localStorage.getItem(FB_KEY) || '[]'); } catch (e) { return []; }
+}
+function fbSave(arr) { localStorage.setItem(FB_KEY, JSON.stringify(arr)); fbUpdateCount(); }
+function fbUpdateCount() {
+  const n = fbLoad().length;
+  document.getElementById('fbCount').textContent = n ? String(n) : '';
+  document.getElementById('fbSavedCount').textContent = String(n);
+}
+
+function toggleFeedback() {
+  const panel = document.getElementById('fbPanel');
+  panel.classList.toggle('open');
+  if (panel.classList.contains('open')) { fbRenderSaved(); }
+}
+
+function fbSwitchTab(which) {
+  document.querySelectorAll('.fb-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === which));
+  document.getElementById('fbTabNew').style.display = which === 'new' ? '' : 'none';
+  document.getElementById('fbTabSaved').style.display = which === 'saved' ? '' : 'none';
+}
+
+function fbCollect() {
+  const text = document.getElementById('fbText').value.trim();
+  if (!text) { alert('Type some feedback first.'); return null; }
+  return {
+    id: Date.now(),
+    timestamp: new Date().toISOString(),
+    context: document.getElementById('fbContext').value,
+    text: text,
+    page_date: today(),
+    user_agent: navigator.userAgent.slice(0, 80)
+  };
+}
+
+function fbSaveOnly() {
+  const entry = fbCollect(); if (!entry) return;
+  const all = fbLoad(); all.unshift(entry); fbSave(all);
+  document.getElementById('fbText').value = '';
+  fbSwitchTab('saved');
+  fbRenderSaved();
+}
+
+function fbSaveAndEmail() {
+  const entry = fbCollect(); if (!entry) return;
+  const all = fbLoad(); all.unshift(entry); fbSave(all);
+  const subject = '[TQHB Feedback] ' + entry.context + ' — ' + new Date().toLocaleDateString('en-US');
+  const body = 'From: Vivek (TQHB Daily Lead Generator)\nDate: ' + new Date().toLocaleString('en-US') + '\nContext: ' + entry.context + '\n\n' + entry.text + '\n\n— sent from tqhb.github.io/daily-lead-generator/';
+  document.getElementById('fbText').value = '';
+  fbSwitchTab('saved');
+  fbRenderSaved();
+  window.location.href = 'mailto:' + FB_TO_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
+
+function fbRenderSaved() {
+  const list = document.getElementById('fbSavedList');
+  const all = fbLoad();
+  list.replaceChildren();
+  if (all.length === 0) {
+    list.insertAdjacentHTML('beforeend', '<div class="fb-empty">No saved feedback yet. Switch to ✍ New to add some.</div>');
+    return;
+  }
+  const html = all.map(e => {
+    const when = new Date(e.timestamp).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+    return '<div class="fb-saved-item">'
+      + '<div class="fb-meta"><span class="fb-kind">' + esc(e.context) + ' · ' + when + '</span>'
+      + '<button class="fb-del" onclick="fbDelete(' + e.id + ')">Delete</button></div>'
+      + esc(e.text).replace(/\n/g, '<br>')
+      + '</div>';
+  }).join('');
+  list.insertAdjacentHTML('beforeend', html);
+}
+
+function fbDelete(id) {
+  const all = fbLoad().filter(e => e.id !== id);
+  fbSave(all);
+  fbRenderSaved();
+}
+
+function fbClearAll() {
+  if (!confirm('Delete ALL saved feedback? This cannot be undone (unless you re-type it).')) return;
+  fbSave([]);
+  fbRenderSaved();
+}
+
+function fbEmailAll() {
+  const all = fbLoad();
+  if (all.length === 0) { alert('Nothing saved yet.'); return; }
+  const subject = '[TQHB Feedback] Batch of ' + all.length + ' notes — ' + new Date().toLocaleDateString('en-US');
+  const body = 'From: Vivek (TQHB Daily Lead Generator)\nSent: ' + new Date().toLocaleString('en-US') + '\n\n'
+    + all.map((e, i) => {
+        const when = new Date(e.timestamp).toLocaleString('en-US');
+        return '── #' + (i+1) + ' [' + e.context + '] ' + when + ' ──\n' + e.text;
+      }).join('\n\n')
+    + '\n\n— sent from tqhb.github.io/daily-lead-generator/';
+  window.location.href = 'mailto:' + FB_TO_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
+
+document.addEventListener('DOMContentLoaded', () => { populateDateSelect(); init(); fbUpdateCount(); });
 </script>
 </body>
 </html>
