@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texas Quick Home Buyer — Agent Outreach</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0D2B4E;--navy2:#1a3a5c;--red:#C8102E;--gold:#D4A843;
+  --green:#22a84f;--gbg:#F0F2F5;--card:#fff;--gl:#f7f8fa;
+  --gb:#e2e6eb;--gt:#5a6475;--td:#1a2332;--bl:#0066cc
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',sans-serif;background:var(--gbg);color:var(--td);padding:0 0 60px;-webkit-font-smoothing:antialiased}
+
+/* HEADER */
+.hdr{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 60%,#0f2a4a 100%);padding:18px 14px 14px;position:sticky;top:0;z-index:100;box-shadow:0 2px 14px rgba(0,0,0,.3)}
+.hdr-in{display:flex;align-items:center;gap:12px;max-width:480px;margin:0 auto}
+.logo{width:54px;height:54px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.25);overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.35);flex-shrink:0}
+.logo svg{width:50px;height:50px}
+.hdr-txt{flex:1}
+.hdr-brand{font-size:15px;font-weight:800;color:#fff;letter-spacing:-.2px}
+.hdr-brand em{color:var(--gold);font-style:normal}
+.hdr-sub{font-size:10.5px;color:rgba(255,255,255,.6);margin-top:2px;font-weight:500}
+.hdr-pill{background:var(--red);color:#fff;font-size:9.5px;font-weight:800;padding:2px 8px;border-radius:20px;margin-top:5px;display:inline-block;text-transform:uppercase;letter-spacing:.4px}
+
+/* STATS */
+.stats{background:#122848;display:flex;border-bottom:1px solid #0a1e36}
+.st{flex:1;text-align:center;padding:7px 4px;border-right:1px solid rgba(255,255,255,.07)}
+.st:last-child{border-right:none}
+.sn{font-size:14px;font-weight:800;color:var(--gold)}
+.sl{font-size:9px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.4px;margin-top:1px;font-weight:600}
+
+/* TIP */
+.tip{background:linear-gradient(90deg,#e8f0fe,#f0f4ff);border-left:3px solid var(--bl);margin:10px 12px 0;border-radius:0 10px 10px 0;padding:8px 11px;font-size:11px;color:#334;line-height:1.5}
+.tip strong{color:var(--bl)}
+
+/* SECTION LABEL */
+.slbl{margin:14px 12px 7px;font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--gt);display:flex;align-items:center;gap:6px}
+.slbl::after{content:'';flex:1;height:1px;background:var(--gb)}
+
+/* CARD */
+.card{background:var(--card);border-radius:16px;margin:0 12px 12px;box-shadow:0 1px 3px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04);border:1.5px solid var(--gb);overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.card.texted{border-color:var(--green);box-shadow:0 1px 4px rgba(34,168,79,.15),0 4px 16px rgba(34,168,79,.1)}
+
+/* Card strip */
+.cstrip{background:linear-gradient(90deg,var(--navy) 0%,var(--navy2) 100%);padding:10px 13px;display:flex;align-items:center;gap:9px}
+.cnum{width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.2);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.caddr{flex:1;min-width:0}
+.caddr h3{font-size:12.5px;font-weight:700;color:#fff;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.caddr p{font-size:10px;color:rgba(255,255,255,.55);margin-top:2px}
+.tpill{display:none;font-size:9px;font-weight:800;color:var(--green);background:rgba(34,168,79,.15);border:1px solid var(--green);padding:2px 6px;border-radius:20px;text-transform:uppercase;letter-spacing:.3px;flex-shrink:0}
+.card.texted .tpill{display:inline-block}
+
+.badge{display:inline-block;font-size:9.5px;font-weight:700;padding:2px 6px;border-radius:5px;margin-left:4px;vertical-align:middle}
+.br{background:rgba(200,16,46,.12);color:#C8102E;border:1px solid rgba(200,16,46,.25)}
+.bo{background:rgba(212,168,67,.15);color:#906520;border:1px solid rgba(212,168,67,.35)}
+.bb{background:rgba(0,102,204,.1);color:#0066cc;border:1px solid rgba(0,102,204,.2)}
+
+/* Card body */
+.cbody{padding:11px 13px}
+
+/* Agent */
+.agt{display:flex;align-items:center;gap:9px;background:var(--gl);border-radius:10px;border:1px solid var(--gb);padding:8px 10px;margin-bottom:9px}
+.aico{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.ainf{flex:1;min-width:0}
+.aname{font-size:12px;font-weight:700;color:var(--td);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.abrok{font-size:10px;color:var(--gt);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.aph{font-size:11.5px;font-weight:700;color:var(--bl);flex-shrink:0}
+
+/* Message */
+.msgbox{background:linear-gradient(135deg,#e8f4fd,#eef6ff);border-radius:10px;border:1px solid #c5dff5;padding:9px 11px;margin-bottom:10px}
+.msglbl{font-size:9px;font-weight:800;color:var(--bl);text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px}
+.msgtxt{font-size:11.5px;line-height:1.55;color:var(--td)}
+
+/* Buttons */
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:9px}
+.bfull{grid-column:1/-1}
+.btn{display:flex;align-items:center;justify-content:center;gap:5px;padding:11px 8px;border-radius:10px;font-size:12.5px;font-weight:700;text-decoration:none;border:none;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:opacity .15s,transform .1s;letter-spacing:.1px}
+.btn:active{opacity:.8;transform:scale(.97)}
+.bsms{background:linear-gradient(135deg,#178c38,#22a84f);color:#fff;box-shadow:0 2px 6px rgba(34,168,79,.3)}
+.bcopy{background:var(--gl);color:var(--bl);border:1.5px solid var(--gb)}
+.bhar{background:linear-gradient(135deg,#0050c0,#0066ee);color:#fff;box-shadow:0 2px 6px rgba(0,100,200,.25)}
+.bcon{background:linear-gradient(135deg,#b06810,#d48820);color:#fff;box-shadow:0 2px 6px rgba(200,130,30,.3)}
+.brpt{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;box-shadow:0 2px 6px rgba(13,43,78,.25)}
+.brpt.open{background:linear-gradient(135deg,#252060,#3530a0)}
+.bcopied{background:linear-gradient(135deg,#178c38,#22a84f)!important;color:#fff!important;border-color:transparent!important}
+
+/* Divider / checkbox / remarks */
+.div{border:none;border-top:1px solid var(--gb);margin:9px 0}
+.chkrow{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.chkrow input{width:19px;height:19px;accent-color:var(--green);cursor:pointer;flex-shrink:0}
+.chklbl{font-size:12px;font-weight:600;color:var(--gt);cursor:pointer;user-select:none}
+.chkrow input:checked+.chklbl{color:var(--green)}
+.remlbl{font-size:9.5px;font-weight:700;color:var(--gt);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+textarea.rem{width:100%;min-height:46px;border-radius:9px;border:1.5px solid var(--gb);padding:7px 9px;font-family:-apple-system,sans-serif;font-size:12px;color:var(--td);background:var(--gl);resize:none;outline:none;transition:border-color .2s,background .2s}
+textarea.rem:focus{border-color:var(--bl);background:#fff}
+textarea.rem::placeholder{color:#b0b8c4}
+
+/* Report panel */
+.rp{display:none;margin:7px 0 2px}
+.rp.open{display:block;animation:sd .2s ease}
+@keyframes sd{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.rpi{background:#0f1729;border-radius:12px;padding:13px;color:#dde4f0;border:1px solid #1e2d45}
+.rcl{text-align:right;font-size:10.5px;font-weight:700;color:#4a6080;cursor:pointer;margin-bottom:9px;-webkit-tap-highlight-color:transparent}
+.rcl:active{opacity:.6}
+.rtitle{font-size:13px;font-weight:800;color:#7ab3ff;margin-bottom:9px}
+.ralert{border-radius:8px;padding:8px 11px;font-size:11px;font-weight:600;margin-bottom:10px;line-height:1.5}
+.rwarn{background:#261e0a;color:#ffd060;border-left:3px solid #ffd060}
+.rdang{background:#26100a;color:#ff7060;border-left:3px solid #ff5040}
+.rok{background:#0a2014;color:#40d870;border-left:3px solid #40d870}
+.rhdr{font-size:9.5px;font-weight:800;color:#4a80c0;text-transform:uppercase;letter-spacing:.8px;margin:11px 0 6px;padding-bottom:3px;border-bottom:1px solid #1e2d45}
+.rrow{display:flex;gap:4px;margin-bottom:4px;flex-wrap:wrap}
+.rcell{flex:1;min-width:82px;background:#0a1020;border-radius:7px;padding:6px 7px;border:1px solid #1e2d45}
+.rlbl{font-size:8.5px;font-weight:700;color:#385060;text-transform:uppercase;letter-spacing:.4px;margin-bottom:2px}
+.rval{font-size:11px;font-weight:600;color:#c8d8e8;line-height:1.3}
+.rblk{background:#0a1020;border-radius:8px;padding:8px 10px;margin-bottom:6px;border:1px solid #1e2d45}
+.rext{border-left:3px solid #5a90cc}
+.rflag{border-left:3px solid #ff5040}
+.ropp{border-left:3px solid #40d870}
+.rbll{font-size:9px;font-weight:700;color:#385060;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.rline{font-size:11px;color:#a0b8d0;padding:2px 0;line-height:1.4}
+.rtbl{width:100%;border-collapse:collapse;font-size:10px;margin-bottom:8px}
+.rtbl th{background:#111e33;color:#4a80c0;font-weight:700;padding:5px 6px;text-align:left;font-size:9.5px}
+.rtbl td{color:#8aa8c0;padding:4px 6px;border-top:1px solid #182030}
+.rarv{background:#0a1e10;border-radius:8px;padding:9px 11px;border:1px solid #183020}
+.rarvr{font-size:13px;font-weight:800;color:#40d870;margin-bottom:3px}
+.rarvs{font-size:10.5px;color:#405550}
+
+/* FOOTER */
+.footer{margin:18px 12px 0;background:#fff;border-radius:14px;border:1px solid var(--gb);padding:13px;text-align:center}
+.flogo{display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:7px}
+.flogo svg{width:34px;height:34px}
+.fname{font-size:13px;font-weight:800;color:var(--navy)}
+.fname span{color:var(--red)}
+.fmeta{font-size:10px;color:var(--gt);line-height:1.6}
+.fdiv{border:none;border-top:1px solid var(--gb);margin:8px 0}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr">
+  <div class="hdr-in">
+    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="49" fill="white" stroke="#d5d5d5" stroke-width="1.5"/>
+  <path d="M20,22 L28,14 L44,14 L48,18 L58,16 L70,20 L78,24 L82,35 L79,44 L84,52 L82,60 L73,68 L68,76 L62,73 L57,80 L49,82 L42,77 L35,80 L28,72 L22,62 L18,50 L20,38 Z" fill="#C8102E"/>
+  <path d="M20,48 L82,48 L82,60 L73,68 L68,76 L62,73 L57,80 L49,82 L42,77 L35,80 L28,72 L22,62 L18,50 Z" fill="#002868"/>
+  <polygon points="50,32 52.5,39 60,39 54,44 56.5,51 50,46.5 43.5,51 46,44 40,39 47.5,39" fill="white"/>
+  <rect x="45" y="10" width="12" height="10" rx="1" fill="#1a1a2e"/>
+  <polygon points="43,12 51,4 59,12" fill="#0f0f1e"/>
+  <rect x="48" y="14" width="4" height="6" fill="#3a3a5a"/>
+</svg></div>
+    <div class="hdr-txt">
+      <div class="hdr-brand">Texas <em>Quick</em> Home Buyer</div>
+      <div class="hdr-sub">Houston, TX · RE Investor · Agent Outreach</div>
+      <div class="hdr-pill">📅 March 12, 2026 · Daily Report</div>
+    </div>
+  </div>
+</header>
+<div class="stats">
+  <div class="st"><div class="sn">10</div><div class="sl">Listings</div></div>
+  <div class="st"><div class="sn">$25K</div><div class="sl">Min</div></div>
+  <div class="st"><div class="sn">$150K</div><div class="sl">Max</div></div>
+  <div class="st"><div class="sn">1K+ ft²</div><div class="sl">Size</div></div>
+</div>
+<div class="tip"><strong>📱 Safari only for Text button</strong> — Copy, HAR, Save Contact &amp; AI Report work in any browser. Notes &amp; checkboxes auto-save.</div>
+<div class="slbl">Today's Properties</div>
+
+
+<!-- P1 -->
+<div class="card" id="card-1">
+  <div class="cstrip">
+    <div class="cnum">1</div>
+    <div class="caddr">
+      <h3>10341 Caxton St, 77016</h3>
+      <p>$150,000 · MLS# 10357889 · Northside · DOM 1</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Virginia Espinoza</div>
+        <div class="abrok">eXp Realty LLC</div>
+      </div>
+      <div class="aph">(346) 600-8833</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Virginia, this is Vivek, local Investor. Interested in your listing at 10341 Caxton St, Houston TX 77016. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+13466008833&body=Hi%20Virginia%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%2010341%20Caxton%20St%2C%20Houston%20TX%2077016.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Virginia</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Virginia, this is Vivek, local Investor. Interested in your listing at 10341 Caxton St, Houston TX 77016. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/10341-caxton-st-houston-tx-77016/17748419" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Virginia','Espinoza','eXp Realty LLC','3466008833','10357889','https://www.har.com/homedetail/10341-caxton-st-houston-tx-77016/17748419')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-1" onclick="toggleReport(1)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-1">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(1)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #1</div>
+    <div class="ralert rwarn">⚠️ DOM: 1 day — Just listed. 2024 AC + new roof already done = strong value-add upside.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">10341 Caxton St, Houston, TX 77016</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">10357889</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$150,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$114/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">1 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 1 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,317</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">7,020</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1960</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2 / Attached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Henry Place</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Northside</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Traditional brick, 2-car attached garage, good curb appeal</div><div class=rline>2024 AC unit — newer system ✅</div><div class=rline>Newer 30-year shingle roof ✅</div><div class=rline>Appliances included in sale</div><div class=rline>No HOA — rental-friendly</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>Cosmetic updates likely needed interior</div><div class=rline>1960 build — verify plumbing/electrical condition</div><div class=rline>Yard maintenance needed</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>2024 AC + new roof = major capex already done</div><div class=rline>No HOA = easy rental</div><div class=rline>Northside location — solid working-class rental demand</div><div class=rline>Strong fix-and-rent candidate at $150K</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 10341 Caxton St, Houston, TX 77016</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #1  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Henry Place area avg</td><td>$155,000–$175,000</td><td>1,300–1,500</td><td>$110–120</td></tr><tr><td>Northside sold comps (90d)</td><td>$130,000–$165,000</td><td>1,200–1,600</td><td>$95–115</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $175,000 – $200,000</div><div class="rarvs">Potential Spread | Entry: $150,000  |  ARV: $175,000–$200,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-1" onchange="saveCheck(1,this.checked);toggleTexted(1,this.checked)">
+      <label class="chklbl" for="chk-1">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-1" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(1,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P2 -->
+<div class="card" id="card-2">
+  <div class="cstrip">
+    <div class="cnum">2</div>
+    <div class="caddr">
+      <h3>5011 Brisbane Dr, 77048<span class="badge br">🚨 Gutted</span></h3>
+      <p>$110,000 · MLS# 41138410 · Med Center South · DOM 1</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Amanda Whitespeare</div>
+        <div class="abrok">eXp Realty CitySide Properties</div>
+      </div>
+      <div class="aph">(713) 997-9027</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Amanda, this is Vivek, local Investor. Interested in your listing at 5011 Brisbane Dr, Houston TX 77048. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+17139979027&body=Hi%20Amanda%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%205011%20Brisbane%20Dr%2C%20Houston%20TX%2077048.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Amanda</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Amanda, this is Vivek, local Investor. Interested in your listing at 5011 Brisbane Dr, Houston TX 77048. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/5011-brisbane-dr-houston-tx-77048/17748920" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Amanda','Whitespeare','eXp Realty CitySide Properties','7139979027','41138410','https://www.har.com/homedetail/5011-brisbane-dr-houston-tx-77048/17748920')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-2" onclick="toggleReport(2)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-2">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(2)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #2</div>
+    <div class="ralert rdang">🚨 Gutted to studs — full renovation needed. Medical Center South location = strong post-reno value.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">5011 Brisbane Dr, Houston, TX 77048</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">41138410</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$110,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$105/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">1 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 2 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,049</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">5,720</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1963</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2 / Attached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Kennedy Heights</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Medical Center South</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Brick construction — solid bones</div><div class=rline>Interior: Rooms gutted to studs — full rehab required</div><div class=rline>2-car attached garage intact</div><div class=rline>Medical Center proximity = strong rental demand</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>🚨 Rooms gutted to studs — full renovation required</div><div class=rline>Plumbing, electrical, drywall, flooring — budget full interior</div><div class=rline>Brick exterior in good condition — no structural concerns visible</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>Medical Center South = Houston&#39;s strongest rental corridor</div><div class=rline>$110K entry = significant upside post-reno</div><div class=rline>Brick exterior reduces long-term maintenance</div><div class=rline>Kennedy Heights — established neighborhood</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 5011 Brisbane Dr, Houston, TX 77048</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #2  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Kennedy Heights renovated</td><td>$155,000–$185,000</td><td>1,000–1,200</td><td>$130–155</td></tr><tr><td>Med Center South sold (90d)</td><td>$140,000–$175,000</td><td>1,000–1,300</td><td>$120–145</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $160,000 – $190,000</div><div class="rarvs">Potential Spread | Entry: $110,000  |  ARV: $160,000–$190,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-2" onchange="saveCheck(2,this.checked);toggleTexted(2,this.checked)">
+      <label class="chklbl" for="chk-2">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-2" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(2,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P3 -->
+<div class="card" id="card-3">
+  <div class="cstrip">
+    <div class="cnum">3</div>
+    <div class="caddr">
+      <h3>1119 Verret Ln, 77090<span class="badge br">🔥 Fire</span></h3>
+      <p>$129,900 · MLS# 44939369 · Foreclosure · DOM 1</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Debbie Grigg</div>
+        <div class="abrok">NextHome First Source</div>
+      </div>
+      <div class="aph">(281) 686-3345</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Debbie, this is Vivek, local Investor. Interested in your listing at 1119 Verret Ln, Houston TX 77090. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+12816863345&body=Hi%20Debbie%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%201119%20Verret%20Ln%2C%20Houston%20TX%2077090.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Debbie</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Debbie, this is Vivek, local Investor. Interested in your listing at 1119 Verret Ln, Houston TX 77090. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/1119-verret-ln-houston-tx-77090/17744739" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Debbie','Grigg','NextHome First Source','2816863345','44939369','https://www.har.com/homedetail/1119-verret-ln-houston-tx-77090/17744739')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-3" onclick="toggleReport(3)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-3">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(3)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #3</div>
+    <div class="ralert rdang">🚨 FIRE DAMAGED FORECLOSURE — Full rebuild. $38/sqft deeply distressed. Experienced developer play only.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">1119 Verret Ln, Houston, TX 77090</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">44939369</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active — FORECLOSURE</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$129,900</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$38/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">1 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">4 Bed / 2 Full &amp; 1 Half</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">3,403</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">9,750</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1969</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1.5 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2 / Detached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Westador Sec 01</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">1960 / Cypress Creek North</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Fire damaged — all windows boarded up</div><div class=rline>Blue tarp on roof — active roof damage</div><div class=rline>Property sold as-is, foreclosure</div><div class=rline>Large 3,403 sqft — significant rebuild potential</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>🚨 FIRE DAMAGED — full rebuild required</div><div class=rline>All windows boarded — property uninhabitable</div><div class=rline>Blue tarp on roof — roof severely damaged</div><div class=rline>Sold as-is, deed restrictions apply</div><div class=rline>Title search critical — foreclosure</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>$38/sqft = deeply distressed pricing</div><div class=rline>3,403 sqft + 4 bed = high ARV potential post-rebuild</div><div class=rline>Cypress Creek North = growing suburban market</div><div class=rline>Experienced contractor/developer opportunity</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 1119 Verret Ln, Houston, TX 77090</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #3  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Westador area renovated</td><td>$230,000–$280,000</td><td>2,800–3,500</td><td>$75–90</td></tr><tr><td>Cypress Creek North sold (90d)</td><td>$200,000–$260,000</td><td>2,500–3,500</td><td>$70–85</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $220,000 – $270,000</div><div class="rarvs">Potential Spread | Entry: $129,900  |  ARV: $220,000–$270,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-3" onchange="saveCheck(3,this.checked);toggleTexted(3,this.checked)">
+      <label class="chklbl" for="chk-3">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-3" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(3,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P4 -->
+<div class="card" id="card-4">
+  <div class="cstrip">
+    <div class="cnum">4</div>
+    <div class="caddr">
+      <h3>878 Granville Dr, 77091</h3>
+      <p>$65,000 · MLS# 57993832 · NW Houston · DOM 1</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Steven Franco</div>
+        <div class="abrok">Real Broker LLC</div>
+      </div>
+      <div class="aph">(832) 599-0533</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Steven, this is Vivek, local Investor. Interested in your listing at 878 Granville Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+18325990533&body=Hi%20Steven%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%20878%20Granville%20Dr%2C%20Houston%20TX%2077091.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Steven</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Steven, this is Vivek, local Investor. Interested in your listing at 878 Granville Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/878-granville-dr-houston-tx-77091/17756842" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Steven','Franco','Real Broker LLC','8325990533','57993832','https://www.har.com/homedetail/878-granville-dr-houston-tx-77091/17756842')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-4" onclick="toggleReport(4)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-4">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(4)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #4</div>
+    <div class="ralert rwarn">⚠️ DOM: 1 day. 1947 build — must inspect electrical/plumbing. Second lowest price in batch at $65K.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">878 Granville Dr, Houston, TX 77091</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">57993832</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$65,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$43/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">1 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 1 Full &amp; 1 Half</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,526</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">7,700</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1947</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">None</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Green Meadows</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Northwest Houston</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Traditional style, chain-link fence, front porch</div><div class=rline>Storage shed on property</div><div class=rline>Near Hwy 290 &amp; Ella Blvd</div><div class=rline>No garage — carport or no covered parking</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>1947 build — high priority: inspect knob &amp; tube electrical, galvanized plumbing</div><div class=rline>No garage — limits rental appeal</div><div class=rline>Cosmetic updates needed throughout</div><div class=rline>HISD zoning — verify school district</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>$65K entry = lowest acquisition after #5</div><div class=rline>Hwy 290 &amp; Ella Blvd = strong commuter access</div><div class=rline>Northwest Houston rental demand solid</div><div class=rline>$43/sqft = deep value-add potential</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 878 Granville Dr, Houston, TX 77091</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #4  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Green Meadows renovated</td><td>$130,000–$160,000</td><td>1,400–1,700</td><td>$85–100</td></tr><tr><td>NW Houston sold comps (90d)</td><td>$115,000–$150,000</td><td>1,300–1,600</td><td>$80–95</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $130,000 – $155,000</div><div class="rarvs">Potential Spread | Entry: $65,000  |  ARV: $130,000–$155,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-4" onchange="saveCheck(4,this.checked);toggleTexted(4,this.checked)">
+      <label class="chklbl" for="chk-4">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-4" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(4,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P5 -->
+<div class="card" id="card-5">
+  <div class="cstrip">
+    <div class="cnum">5</div>
+    <div class="caddr">
+      <h3>422 Surratt Dr, 77091<span class="badge bo">🏛 Auction</span></h3>
+      <p>$25,000 · MLS# 64539181 · Foreclosure · DOM 1</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Marcia Warner</div>
+        <div class="abrok">Coldwell Banker Realty</div>
+      </div>
+      <div class="aph">(936) 525-9561</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Marcia, this is Vivek, local Investor. Interested in your listing at 422 Surratt Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+19365259561&body=Hi%20Marcia%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%20422%20Surratt%20Dr%2C%20Houston%20TX%2077091.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Marcia</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Marcia, this is Vivek, local Investor. Interested in your listing at 422 Surratt Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/422-surratt-dr-houston-tx-77091/17761934" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Marcia','Warner','Coldwell Banker Realty','9365259561','64539181','https://www.har.com/homedetail/422-surratt-dr-houston-tx-77091/17761934')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-5" onclick="toggleReport(5)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-5">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(5)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #5</div>
+    <div class="ralert rdang">🚨 AUCTION — No interior showings. Unknown condition. Highest risk / highest potential ROI at $25K.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">422 Surratt Dr, Houston, TX 77091</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">64539181</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active — FORECLOSURE / AUCTION</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$25,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$20/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">1 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">2 Bed / 1 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,267</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">6,360</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1956</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">1 / Attached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Wildrose Garden Sec 03</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Northwest Houston</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Brick/wood siding mix, 1-car attached garage</div><div class=rline>Structure appears standing — no obvious fire/flood damage</div><div class=rline>Yard overgrown — property vacant</div><div class=rline>No interior photos — drive-by only</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>🚨 AUCTION SALE — No interior showings, drive-by only</div><div class=rline>🚨 Interior condition completely unknown</div><div class=rline>🚨 1956 build — risk of knob &amp; tube electrical, galvanized plumbing</div><div class=rline>Foreclosure — title search critical</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>🏆 Lowest price in batch at $25,000</div><div class=rline>Near I-45 = strong commuter rental location</div><div class=rline>1-car attached garage adds value</div><div class=rline>Wholesale/assignment play at this price</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 422 Surratt Dr, Houston, TX 77091</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #5  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Wildrose Garden renovated</td><td>$120,000–$145,000</td><td>1,100–1,400</td><td>$95–110</td></tr><tr><td>NW Houston sold comps (90d)</td><td>$110,000–$140,000</td><td>1,100–1,400</td><td>$85–100</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $115,000 – $140,000</div><div class="rarvs">Potential Spread | Entry: $25,000  |  ARV: $115,000–$140,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-5" onchange="saveCheck(5,this.checked);toggleTexted(5,this.checked)">
+      <label class="chklbl" for="chk-5">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-5" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(5,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P6 -->
+<div class="card" id="card-6">
+  <div class="cstrip">
+    <div class="cnum">6</div>
+    <div class="caddr">
+      <h3>4231 S Acres Dr, 77047</h3>
+      <p>$140,000 · MLS# 62028743 · Med Center South · DOM 2</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Ashley Ruby</div>
+        <div class="abrok">Waizel Properties</div>
+      </div>
+      <div class="aph">(281) 987-4403</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Ashley, this is Vivek, local Investor. Interested in your listing at 4231 S Acres Dr, Houston TX 77047. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+12819874403&body=Hi%20Ashley%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%204231%20S%20Acres%20Dr%2C%20Houston%20TX%2077047.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Ashley</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Ashley, this is Vivek, local Investor. Interested in your listing at 4231 S Acres Dr, Houston TX 77047. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/4231-s-acres-dr-houston-tx-77047/17760082" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Ashley','Ruby','Waizel Properties','2819874403','62028743','https://www.har.com/homedetail/4231-s-acres-dr-houston-tx-77047/17760082')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-6" onclick="toggleReport(6)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-6">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(6)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #6</div>
+    <div class="ralert rwarn">⚠️ DOM: 2 days. Medical Center South 4/2 Ranch with 2-car garage — strong fix-and-rent candidate.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">4231 S Acres Dr, Houston, TX 77047</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">62028743</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$140,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$116/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">2 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">4 Bed / 2 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,206</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">7,150</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1964</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Ranch / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2 / Attached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">South Acres Estates Sec 05</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Medical Center South</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Ranch brick, 2-car attached garage, mature trees</div><div class=rline>Interior: Original 1960s blue tile bathroom</div><div class=rline>Overgrown yard — property appears vacant</div><div class=rline>47 photos available — review for hidden issues</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>Original fixtures throughout — full cosmetic renovation needed</div><div class=rline>Blue tile bathroom = budget full remodel</div><div class=rline>Yard overgrown — landscaping needed</div><div class=rline>1964 — inspect HVAC, plumbing, electrical</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>Medical Center South = Houston&#39;s strongest rental corridor</div><div class=rline>4 bed/2 bath Ranch + 2-car garage = ideal rental config</div><div class=rline>Brick Ranch = durable, great long-term hold</div><div class=rline>$116/sqft = room for value-add cosmetic reno</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 4231 S Acres Dr, Houston, TX 77047</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #6  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>South Acres renovated</td><td>$175,000–$210,000</td><td>1,100–1,400</td><td>$140–160</td></tr><tr><td>Med Center South comps (90d)</td><td>$165,000–$200,000</td><td>1,100–1,400</td><td>$130–150</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $175,000 – $205,000</div><div class="rarvs">Potential Spread | Entry: $140,000  |  ARV: $175,000–$205,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-6" onchange="saveCheck(6,this.checked);toggleTexted(6,this.checked)">
+      <label class="chklbl" for="chk-6">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-6" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(6,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P7 -->
+<div class="card" id="card-7">
+  <div class="cstrip">
+    <div class="cnum">7</div>
+    <div class="caddr">
+      <h3>125 W Sunnyside St, 77076<span class="badge bb">🏊 Pool</span></h3>
+      <p>$136,000 · MLS# 72284125 · Foreclosure · DOM 2</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Chris Lawrence</div>
+        <div class="abrok">Trillionaire Realty</div>
+      </div>
+      <div class="aph">(832) 455-3550</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Chris, this is Vivek, local Investor. Interested in your listing at 125 W Sunnyside St, Houston TX 77076. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+18324553550&body=Hi%20Chris%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%20125%20W%20Sunnyside%20St%2C%20Houston%20TX%2077076.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Chris</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Chris, this is Vivek, local Investor. Interested in your listing at 125 W Sunnyside St, Houston TX 77076. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/125-w-sunnyside-st-houston-tx-77076/17759201" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Chris','Lawrence','Trillionaire Realty','8324553550','72284125','https://www.har.com/homedetail/125-w-sunnyside-st-houston-tx-77076/17759201')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-7" onclick="toggleReport(7)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-7">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(7)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #7</div>
+    <div class="ralert rwarn">⚠️ DOM: 2 days. Foreclosure with IN-GROUND POOL — kitchen missing. Strong upside if pool in good condition.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">125 W Sunnyside St, Houston, TX 77076</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">72284125</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active — Foreclosure</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$136,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$94/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">2 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 1 Full &amp; 1 Half</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,453</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">6,003</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1952</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Ranch/Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2-Car Carport</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Wildrose Gardens Sec 01</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Northwest Houston</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: 2-car carport, white siding, property vacant</div><div class=rline>Interior: Bedroom shows recent staging — some work done</div><div class=rline>In-ground pool in backyard</div><div class=rline>Deferred maintenance throughout — kitchen missing</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>🚨 Kitchen currently missing — full kitchen install required</div><div class=rline>🏊 In-ground pool — inspect, service, or fill (cost varies widely)</div><div class=rline>Deferred maintenance throughout</div><div class=rline>1952 build — inspect electrical, plumbing</div><div class=rline>Foreclosure — title search required</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>🏊 In-ground pool = premium rental appeal in Houston heat</div><div class=rline>Near Moody Park, Northline Commons, Houston Farmers Market</div><div class=rline>Easy I-45 access = strong commuter location</div><div class=rline>$94/sqft = value-add room with reno</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 125 W Sunnyside St, Houston, TX 77076</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #7  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>NW Houston renovated (pool)</td><td>$175,000–$210,000</td><td>1,300–1,600</td><td>$120–145</td></tr><tr><td>Wildrose Gardens sold (90d)</td><td>$150,000–$185,000</td><td>1,200–1,600</td><td>$110–130</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $165,000 – $195,000</div><div class="rarvs">Potential Spread | Entry: $136,000  |  ARV: $165,000–$195,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-7" onchange="saveCheck(7,this.checked);toggleTexted(7,this.checked)">
+      <label class="chklbl" for="chk-7">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-7" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(7,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P8 -->
+<div class="card" id="card-8">
+  <div class="cstrip">
+    <div class="cnum">8</div>
+    <div class="caddr">
+      <h3>7002 Jay St, 77028<span class="badge br">🚨 Gutted</span></h3>
+      <p>$119,000 · MLS# 11210072 · Northside · DOM 3</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Brian Hamill</div>
+        <div class="abrok">Waizel Properties Spring</div>
+      </div>
+      <div class="aph">(936) 525-7686</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Brian, this is Vivek, local Investor. Interested in your listing at 7002 Jay St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+19365257686&body=Hi%20Brian%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%207002%20Jay%20St%2C%20Houston%20TX%2077028.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Brian</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Brian, this is Vivek, local Investor. Interested in your listing at 7002 Jay St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/7002-jay-st-houston-tx-77028/17749811" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Brian','Hamill','Waizel Properties Spring','9365257686','11210072','https://www.har.com/homedetail/7002-jay-st-houston-tx-77028/17749811')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-8" onclick="toggleReport(8)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-8">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(8)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #8</div>
+    <div class="ralert rwarn">Fully gutted to studs — blank canvas. Large lot. 3 DOM — active listing.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">7002 Jay St, Houston, TX 77028</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">11210072</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$119,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$95/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">3 Day(s) — ✅ 3 DOM</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 2 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,247</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">9,750</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1955</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2 / Detached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Wesley Place</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Northside</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: White wood siding, overgrown, chain-link fence</div><div class=rline>Interior: Fully gutted to studs — blank canvas</div><div class=rline>2-car detached garage — large lot</div><div class=rline>Agent markets as &#39;blank canvas, ready to make perfect home&#39;</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>🚨 Fully gutted to studs — full interior renovation required</div><div class=rline>Plumbing, electrical, drywall, flooring, fixtures — full budget</div><div class=rline>Exterior siding weathered — may need replacement</div><div class=rline>1955 build — review structural integrity</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>Blank canvas = full custom interior layout possible</div><div class=rline>Large 9,750 sqft lot = outdoor value-add potential</div><div class=rline>2-car detached garage adds value</div><div class=rline>Wesley Place — Northside, solid working-class demand</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 7002 Jay St, Houston, TX 77028</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #8  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Wesley Place renovated</td><td>$160,000–$190,000</td><td>1,100–1,400</td><td>$120–140</td></tr><tr><td>Northside sold comps (90d)</td><td>$145,000–$180,000</td><td>1,100–1,400</td><td>$110–130</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $160,000 – $185,000</div><div class="rarvs">Potential Spread | Entry: $119,000  |  ARV: $160,000–$185,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-8" onchange="saveCheck(8,this.checked);toggleTexted(8,this.checked)">
+      <label class="chklbl" for="chk-8">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-8" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(8,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P9 -->
+<div class="card" id="card-9">
+  <div class="cstrip">
+    <div class="cnum">9</div>
+    <div class="caddr">
+      <h3>5115 Celestial Ln, 77039</h3>
+      <p>$120,000 · MLS# 41082353 · NE Houston · DOM 1</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Renae Jackson</div>
+        <div class="abrok">BHG RE Gary Greene</div>
+      </div>
+      <div class="aph">(281) 330-7579</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Renae, this is Vivek, local Investor. Interested in your listing at 5115 Celestial Ln, Houston TX 77039. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+12813307579&body=Hi%20Renae%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%205115%20Celestial%20Ln%2C%20Houston%20TX%2077039.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Renae</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Renae, this is Vivek, local Investor. Interested in your listing at 5115 Celestial Ln, Houston TX 77039. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/5115-celestial-ln-houston-tx-77039/17753672" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Renae','Jackson','BHG RE Gary Greene','2813307579','41082353','https://www.har.com/homedetail/5115-celestial-ln-houston-tx-77039/17753672')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-9" onclick="toggleReport(9)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-9">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(9)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #9</div>
+    <div class="ralert rwarn">⚠️ DOM: 1 day. Northeast Houston brick 3/2 — solid fix-and-rent candidate at $120K.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">5115 Celestial Ln, Houston, TX 77039</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">41082353</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$120,000</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$96/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">1 Day(s) — ⚠️ Below 15-day target</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 2 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,251</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">6,534</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1968</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">2 / Attached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Green Valley Sec 01</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">Northeast Houston</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Traditional brick, 2-car attached garage</div><div class=rline>Northeast Houston — Beltway 8 access</div><div class=rline>Established neighborhood, mature trees</div><div class=rline>Moderate condition — cosmetic updates needed</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>Cosmetic renovation needed throughout</div><div class=rline>1968 build — inspect HVAC, plumbing, electrical</div><div class=rline>Yard maintenance required</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>Northeast Houston — growing rental demand</div><div class=rline>Beltway 8 access = strong commuter location</div><div class=rline>3/2 brick + 2-car garage = solid rental config</div><div class=rline>$96/sqft = value-add room with cosmetic reno</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 5115 Celestial Ln, Houston, TX 77039</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #9  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Green Valley renovated</td><td>$155,000–$180,000</td><td>1,100–1,400</td><td>$120–135</td></tr><tr><td>NE Houston sold comps (90d)</td><td>$140,000–$170,000</td><td>1,100–1,400</td><td>$110–125</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $155,000 – $180,000</div><div class="rarvs">Potential Spread | Entry: $120,000  |  ARV: $155,000–$180,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-9" onchange="saveCheck(9,this.checked);toggleTexted(9,this.checked)">
+      <label class="chklbl" for="chk-9">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-9" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(9,this.value)"></textarea>
+  </div>
+</div>
+
+<!-- P10 -->
+<div class="card" id="card-10">
+  <div class="cstrip">
+    <div class="cnum">10</div>
+    <div class="caddr">
+      <h3>11201 Muscatine St, 77029</h3>
+      <p>$129,900 · MLS# 96512970 · East Houston · DOM 6</p>
+    </div>
+    <div class="tpill">✓ Texted</div>
+  </div>
+  <div class="cbody">
+    <div class="agt">
+      <div class="aico">👤</div>
+      <div class="ainf">
+        <div class="aname">Edward McClintick</div>
+        <div class="abrok">Joseph Walter Realty LLC</div>
+      </div>
+      <div class="aph">(888) 227-1009</div>
+    </div>
+    <div class="msgbox">
+      <div class="msglbl">📱 Outreach Message</div>
+      <div class="msgtxt">Hi Edward, this is Vivek, local Investor. Interested in your listing at 11201 Muscatine St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!</div>
+    </div>
+    <div class="bgrid">
+      <a class="btn bsms bfull" href="sms:+18882271009&body=Hi%20Edward%2C%20this%20is%20Vivek%2C%20local%20Investor.%20Interested%20in%20your%20listing%20at%2011201%20Muscatine%20St%2C%20Houston%20TX%2077029.%20Are%20you%20available%20to%20walk%20the%20property%3F%20Is%20there%20a%20lockbox%20on%20site%3F%20Thank%20you!">💬 Text Edward</a>
+      <button class="btn bcopy" onclick="copyMsg(this,'Hi Edward, this is Vivek, local Investor. Interested in your listing at 11201 Muscatine St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!')">📋 Copy</button>
+      <a class="btn bhar" href="https://www.har.com/homedetail/11201-muscatine-st-houston-tx-77029/11684818" target="_blank">🔗 HAR Listing</a>
+      <button class="btn bcon" onclick="saveContact('Edward','McClintick','Joseph Walter Realty LLC','8882271009','96512970','https://www.har.com/homedetail/11201-muscatine-st-houston-tx-77029/11684818')">👤 Save Contact</button>
+      <button class="btn brpt bfull" id="rptbtn-10" onclick="toggleReport(10)">📄 View AI Report</button>
+    </div>
+    <div class="rp" id="rpt-10">
+      <div class="rpi">
+        <div class="rcl" onclick="toggleReport(10)">✕ Close Report</div>
+    <div class="rtitle">📋 AI Property Report #10</div>
+    <div class="ralert rok">✅ 6 DOM — meets target. East Houston/I-10 corridor. Motivated seller possible. Good fix-and-rent candidate.</div>
+    <div class="rhdr">🏠 Property Details</div>
+    <div class="rrow"><div class="rcell"><div class="rlbl">Address</div><div class="rval">11201 Muscatine St, Houston, TX 77029</div></div><div class="rcell"><div class="rlbl">MLS #</div><div class="rval">96512970</div></div><div class="rcell"><div class="rlbl">Status</div><div class="rval">Active</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">List Price</div><div class="rval">$129,900</div></div><div class="rcell"><div class="rlbl">Price / Sqft</div><div class="rval">$99/sqft</div></div><div class="rcell"><div class="rlbl">Days on Market</div><div class="rval">6 Day(s) — ✅ 6 DOM</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Beds / Baths</div><div class="rval">3 Bed / 2 Full</div></div><div class="rcell"><div class="rlbl">Living Sqft</div><div class="rval">1,312</div></div><div class="rcell"><div class="rlbl">Lot Sqft</div><div class="rval">7,840</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Year Built</div><div class="rval">1955</div></div><div class="rcell"><div class="rlbl">Style / Stories</div><div class="rval">Traditional / 1 Story</div></div><div class="rcell"><div class="rlbl">Garage</div><div class="rval">1 / Attached</div></div></div><div class="rrow"><div class="rcell"><div class="rlbl">Subdivision</div><div class="rval">Cloverleaf</div></div><div class="rcell"><div class="rlbl">Market Area</div><div class="rval">East Houston</div></div><div class="rcell"><div class="rlbl">Property Type</div><div class="rval">Single-Family</div></div></div>
+    <div class="rhdr">📸 Photo Observations</div>
+    <div class="rblk rext"><div class="rbll">Exterior &amp; Interior Notes</div><div class=rline>Exterior: Traditional, attached garage, established neighborhood</div><div class=rline>East Houston — I-10 corridor access</div><div class=rline>Moderate condition — cosmetic updates likely needed</div><div class=rline>1955 build — verify major systems</div></div>
+    <div class="rblk rflag"><div class="rbll">⚠️ Flagged Repairs</div><div class=rline>1955 build — inspect electrical, plumbing thoroughly</div><div class=rline>Cosmetic renovation needed</div><div class=rline>1-car garage — limits rental premium slightly</div></div>
+    <div class="rblk ropp"><div class="rbll">💡 Investment Opportunities</div><div class=rline>6 DOM — slightly seasoned, seller potentially more motivated</div><div class=rline>East Houston / I-10 corridor = strong industrial worker rental demand</div><div class=rline>3/2 with garage in Cloverleaf = solid long-term rental</div><div class=rline>$99/sqft = upside with light reno</div><div class=rline>4. NEIGHBORHOOD INTELLIGENCE (0.5 mile radius)</div><div class=rline>Maps: 11201 Muscatine St, Houston, TX 77029</div><div class=rline>6. AGENT OUTREACH</div><div class=rline>TQHB Daily Report  |  Property #10  |  3/12/2026  |  Confidential</div></div>
+    <div class="rhdr">📊 Neighborhood Intelligence</div>
+    <div style="font-size:11px;color:#8e8e93;margin-bottom:6px;font-weight:600;text-transform:uppercase">Sold Comps · Last 90 Days</div>
+    <table class="rtbl"><tr><th>Reference Point</th><th>Price Range</th><th>Sqft Range</th><th>$/sqft</th></tr><tr><td>Cloverleaf renovated sales</td><td>$165,000–$195,000</td><td>1,200–1,400</td><td>$125–145</td></tr><tr><td>East Houston sold comps (90d)</td><td>$150,000–$185,000</td><td>1,100–1,400</td><td>$115–135</td></tr></table>
+    <div class="rarv"><div class="rarvr">Estimated ARV Range — $165,000 – $195,000</div><div class="rarvs">Potential Spread | Entry: $129,900  |  ARV: $165,000–$195,000</div></div>
+      </div>
+    </div>
+    <hr class="div">
+    <div class="chkrow">
+      <input type="checkbox" id="chk-10" onchange="saveCheck(10,this.checked);toggleTexted(10,this.checked)">
+      <label class="chklbl" for="chk-10">✉️ Texted agent</label>
+    </div>
+    <div class="remlbl">💬 Remarks</div>
+    <textarea class="rem" id="rem-10" placeholder="Notes on property, agent response, visit…" oninput="saveRemark(10,this.value)"></textarea>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="flogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="49" fill="white" stroke="#d5d5d5" stroke-width="1.5"/>
+  <path d="M20,22 L28,14 L44,14 L48,18 L58,16 L70,20 L78,24 L82,35 L79,44 L84,52 L82,60 L73,68 L68,76 L62,73 L57,80 L49,82 L42,77 L35,80 L28,72 L22,62 L18,50 L20,38 Z" fill="#C8102E"/>
+  <path d="M20,48 L82,48 L82,60 L73,68 L68,76 L62,73 L57,80 L49,82 L42,77 L35,80 L28,72 L22,62 L18,50 Z" fill="#002868"/>
+  <polygon points="50,32 52.5,39 60,39 54,44 56.5,51 50,46.5 43.5,51 46,44 40,39 47.5,39" fill="white"/>
+  <rect x="45" y="10" width="12" height="10" rx="1" fill="#1a1a2e"/>
+  <polygon points="43,12 51,4 59,12" fill="#0f0f1e"/>
+  <rect x="48" y="14" width="4" height="6" fill="#3a3a5a"/>
+</svg><div class="fname">Texas <span>Quick</span> Home Buyer</div></div>
+  <div class="fdiv"></div>
+  <div class="fmeta">RE Investor · Houston, TX · 50-Mile Radius<br>AI-Generated Daily Report · Confidential · March 12, 2026</div>
+</div>
+
+<script>
+function copyMsg(btn,text){
+  const orig=btn.innerHTML;
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(text).then(()=>{btn.innerHTML='✅ Copied!';btn.classList.add('bcopied');setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('bcopied')},2000)});
+  }else{
+    const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+    btn.innerHTML='✅ Copied!';btn.classList.add('bcopied');setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('bcopied')},2000);
+  }
+}
+function toggleReport(n){
+  const p=document.getElementById('rpt-'+n);
+  const b=document.getElementById('rptbtn-'+n);
+  const open=p.classList.contains('open');
+  p.classList.toggle('open');
+  if(b){b.innerHTML=open?'📄 View AI Report':'📋 Hide Report';b.classList.toggle('open',!open);}
+  if(!open)setTimeout(()=>p.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
+}
+function saveContact(first,last,company,phone,mls,harUrl){
+  const fn=first+' '+last+' (TQHB_AI) (MLS #'+mls+')';
+  const vcf=['BEGIN:VCARD','VERSION:3.0','FN:'+fn,'N:'+last+';'+first+';;;','ORG:'+company,'TEL;TYPE=CELL:+1'+phone,'URL:'+harUrl,'NOTE:TQHB Lead · MLS# '+mls+' · AI Report','END:VCARD'].join('\r\n');
+  const b=new Blob([vcf],{type:'text/vcard'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=first+'_'+last+'_TQHB.vcf';
+  document.body.appendChild(a);a.click();setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href)},500);
+}
+function saveCheck(n,v){try{localStorage.setItem('tqhb_chk_'+n,v?'1':'0')}catch(e){}}
+function toggleTexted(n,c){const el=document.getElementById('card-'+n);if(el){c?el.classList.add('texted'):el.classList.remove('texted')}}
+function saveRemark(n,v){try{localStorage.setItem('tqhb_rem_'+n,v)}catch(e){}}
+(function(){
+  for(let i=1;i<=10;i++){
+    try{
+      if(localStorage.getItem('tqhb_chk_'+i)==='1'){const el=document.getElementById('chk-'+i);if(el){el.checked=true;toggleTexted(i,true)}}
+      const r=localStorage.getItem('tqhb_rem_'+i);if(r){const ta=document.getElementById('rem-'+i);if(ta)ta.value=r}
+    }catch(e){}
+  }
+})();
+</script>
+</body>
+</html>

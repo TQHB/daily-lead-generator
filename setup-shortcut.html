@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setup · TQHB Text Agents Siri Shortcut</title>
+<style>
+  :root {
+    --primary: #0a2540; --primary-light: #1e3a5f;
+    --accent: #c9a961; --accent-dark: #a6874a;
+    --bg: #f6f7f9; --card: #ffffff;
+    --border: #e5e7eb; --text: #1a1a1a; --text-muted: #6b7280;
+    --positive: #10b981; --info: #3b82f6; --warning: #f59e0b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0; padding: 0 0 80px;
+    background: var(--bg); color: var(--text);
+    font-size: 15px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #fff; padding: 28px 32px;
+    border-bottom: 4px solid var(--accent);
+  }
+  header .wrap { max-width: 760px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px 0; font-size: 24px; font-weight: 700; }
+  header .sub { font-size: 12px; opacity: 0.7; letter-spacing: 1.5px; text-transform: uppercase; }
+  header a { color: var(--accent); text-decoration: none; font-size: 12px; font-weight: 700; }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+  h2 { color: var(--primary); margin: 36px 0 12px 0; font-size: 18px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  h3 { color: var(--primary); margin: 22px 0 6px 0; font-size: 15px; }
+  p { margin: 8px 0; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code, .mono { font-family: "SF Mono", Menlo, monospace; background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  pre {
+    background: #0a2540; color: #c9a961;
+    padding: 14px 18px; border-radius: 8px;
+    font-family: "SF Mono", Menlo, monospace; font-size: 12px;
+    line-height: 1.7; overflow-x: auto; white-space: pre;
+    margin: 12px 0;
+  }
+  .callout {
+    background: #eff6ff;
+    border-left: 4px solid var(--info);
+    padding: 14px 18px; margin: 14px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .callout.warn { background: #fef9c3; border-left-color: var(--warning); }
+  .callout.danger { background: #fef2f2; border-left-color: #ef4444; }
+  .callout.success { background: #f0fdf4; border-left-color: var(--positive); }
+  .callout strong { color: var(--primary); }
+  .step {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 14px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    position: relative;
+  }
+  .step .num {
+    position: absolute; left: -14px; top: 16px;
+    background: var(--accent); color: var(--primary);
+    width: 30px; height: 30px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 13px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .step h3 { margin-top: 0; }
+  .action-pill {
+    display: inline-block;
+    background: var(--primary); color: #fff;
+    padding: 3px 10px; border-radius: 12px;
+    font-size: 12px; font-weight: 700;
+    margin: 0 2px;
+  }
+  .action-pill.toggle { background: var(--warning); }
+  .action-pill.send { background: var(--positive); }
+  .visual {
+    background: #0a2540;
+    color: #c9a961;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+  .visual .arrow { color: #6b7280; }
+  .visual .label { color: #fff; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--primary); color: #fff; font-weight: 600; font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+  tr:nth-child(even) { background: #fafbfc; }
+  .back-link {
+    display: inline-block;
+    margin-top: 24px;
+    background: var(--primary); color: #fff;
+    padding: 10px 18px; border-radius: 8px;
+    text-decoration: none; font-weight: 700; font-size: 13px;
+  }
+  .back-link:hover { background: var(--primary-light); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="./">← Back to Daily Report</a>
+    <h1>Setup · TQHB Text Agents Shortcut</h1>
+    <div class="sub">One-time setup · 5 minutes</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2>What this does</h2>
+<p>The TQHB report page builds a daily queue of agents to text. With the <strong>"Run Shortcut"</strong> button, the page hands that queue to an iOS Siri Shortcut on your iPhone, which then fires all the SMS in one go — instead of you tapping Send for each one.</p>
+
+<div class="callout success">
+  <strong>End result:</strong> review the daily report → tap one button → all messages send from your iPhone with your number as the sender → done in ~10 seconds for 20 agents.
+</div>
+
+<h2>Before you start</h2>
+<ul>
+  <li>iOS 16 or newer (any iPhone from 2018+)</li>
+  <li>The <strong>Shortcuts</strong> app installed (built into iOS — if you deleted it, re-download from App Store)</li>
+  <li>5 minutes</li>
+</ul>
+
+<h2>Build the Shortcut on your iPhone</h2>
+
+<div class="step">
+  <div class="num">1</div>
+  <h3>Open Shortcuts → tap <span class="action-pill">＋</span> to create new</h3>
+  <p>Top-right corner. You'll see a blank canvas with "Add Action" in the middle.</p>
+</div>
+
+<div class="step">
+  <div class="num">2</div>
+  <h3>Add action: <span class="action-pill">Get Contents of URL</span> — replace with this</h3>
+  <p>Actually skip — we use the <strong>Shortcut Input</strong> instead. The page passes text data via the <code>shortcuts://</code> URL scheme. So:</p>
+  <p>Tap <span class="action-pill">＋ Add Action</span> → search "Get Dictionary" → choose <strong>Get Dictionary from Input</strong>.</p>
+  <div class="visual">
+    <span class="label">Action 1:</span> Get Dictionary from <span style="color:#c9a961">Shortcut Input</span>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">3</div>
+  <h3>Get the <code>queue</code> array out of the dictionary</h3>
+  <p>Add action → search "Get Dictionary Value" → choose <strong>Get Dictionary Value</strong>.</p>
+  <ul>
+    <li>Get: <strong>Value</strong></li>
+    <li>For: <strong>queue</strong></li>
+    <li>In: tap the variable → choose <strong>Dictionary</strong> (from step 2)</li>
+  </ul>
+  <div class="visual">
+    <span class="label">Action 2:</span> Get Value for <span style="color:#fff">queue</span> in <span style="color:#c9a961">Dictionary</span>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">4</div>
+  <h3>Loop through each agent: <span class="action-pill">Repeat with Each</span></h3>
+  <p>Add action → search "Repeat" → choose <strong>Repeat with Each</strong>. The input is the <strong>Dictionary Value</strong> from step 3 (the queue array).</p>
+  <p>You'll see <code>Repeat with Each Item in [Dictionary Value]</code> and an <strong>End Repeat</strong> marker. All next actions go <strong>between</strong> these two markers.</p>
+</div>
+
+<div class="step">
+  <div class="num">5</div>
+  <h3>Inside the loop: pull <code>phone</code> and <code>message</code> from each entry</h3>
+  <p>Add action <strong>Get Dictionary Value</strong> — Value for <strong>phone</strong> in <strong>Repeat Item</strong>. Rename this magic variable to <code>RecipientPhone</code> (tap the variable chip → rename).</p>
+  <p>Add another <strong>Get Dictionary Value</strong> — Value for <strong>message</strong> in <strong>Repeat Item</strong>. Rename to <code>MessageBody</code>.</p>
+  <div class="visual">
+    <span class="label">Inside loop:</span><br>
+    &nbsp;&nbsp;Get Value for <span style="color:#fff">phone</span> in <span style="color:#c9a961">Repeat Item</span> → <span style="color:#fff">RecipientPhone</span><br>
+    &nbsp;&nbsp;Get Value for <span style="color:#fff">message</span> in <span style="color:#c9a961">Repeat Item</span> → <span style="color:#fff">MessageBody</span>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">6</div>
+  <h3>Send the message: <span class="action-pill send">Send Message</span></h3>
+  <p>Add action → search "Send Message" → choose <strong>Send Message</strong> (the Messages-app one, not "Send Email").</p>
+  <ul>
+    <li><strong>Message:</strong> tap → pick <code>MessageBody</code> variable</li>
+    <li><strong>Recipients:</strong> tap → pick <code>RecipientPhone</code> variable</li>
+    <li>Tap <strong>Show More</strong> → toggle <span class="action-pill toggle">Ask Before Sending</span> to <strong>OFF</strong></li>
+  </ul>
+  <div class="callout danger">
+    <strong>Critical:</strong> If "Ask Before Sending" stays ON, you'll get a confirmation prompt for every single message — defeating the whole point. Toggle it OFF.
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">7</div>
+  <h3>Optional: <span class="action-pill">Show Notification</span> when done</h3>
+  <p><strong>After</strong> the End Repeat marker (not inside), add → search "Show Notification" → choose <strong>Show Notification</strong>. Title: <em>TQHB queue sent</em>. Body: <em>All messages dispatched.</em></p>
+</div>
+
+<div class="step">
+  <div class="num">8</div>
+  <h3>Name it <strong>EXACTLY</strong>: <code>TQHB Text Agents</code></h3>
+  <p>Top of the screen, tap the title field → set to <code>TQHB Text Agents</code>. <strong>Case and spacing matter</strong> — the page calls this exact name via URL scheme.</p>
+  <p>Tap <strong>Done</strong> top-right.</p>
+</div>
+
+<h2>Final shortcut should look like this</h2>
+<div class="visual">
+<span style="color:#fff">┌─ TQHB Text Agents</span><br>
+│<br>
+├─ 1. Get Dictionary from <span style="color:#c9a961">Shortcut Input</span><br>
+├─ 2. Get Value for <span style="color:#fff">queue</span> in <span style="color:#c9a961">Dictionary</span><br>
+├─ 3. Repeat with Each Item in <span style="color:#c9a961">Dictionary Value</span><br>
+│&nbsp;&nbsp;&nbsp;├─ 4. Get Value for <span style="color:#fff">phone</span> → <span style="color:#fff">RecipientPhone</span><br>
+│&nbsp;&nbsp;&nbsp;├─ 5. Get Value for <span style="color:#fff">message</span> → <span style="color:#fff">MessageBody</span><br>
+│&nbsp;&nbsp;&nbsp;└─ 6. <span style="color:#10b981">Send Message</span> <span style="color:#fff">MessageBody</span> to <span style="color:#fff">RecipientPhone</span><br>
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f59e0b">[Ask Before Sending: OFF]</span><br>
+├─ 7. End Repeat<br>
+└─ 8. Show Notification: <em>"TQHB queue sent"</em>
+</div>
+
+<h2>Test it</h2>
+<ol>
+  <li>Open <a href="./">tqhb.github.io/daily-lead-generator</a> on your iPhone Safari</li>
+  <li>Tap <span class="action-pill">🎯 Run Shortcut</span> button in the header</li>
+  <li>Confirm the "Hand off N messages…" prompt</li>
+  <li>Safari hands off to Shortcuts → loop fires</li>
+  <li>Open Messages app — every agent should have a sent thread</li>
+</ol>
+
+<div class="callout warn">
+  <strong>First-run iOS prompt:</strong> the first time the Shortcut runs, iOS may ask <em>"Allow Run Shortcut?"</em> Tap <strong>Always Allow</strong> so future runs are silent.
+</div>
+
+<h2>Share with Vivek (one-tap install)</h2>
+<p>Once your Shortcut works end-to-end:</p>
+<ol>
+  <li>Open Shortcuts app → long-press the <strong>TQHB Text Agents</strong> card</li>
+  <li>Tap <strong>Share</strong> → <strong>iCloud Link</strong></li>
+  <li>iCloud generates a link like <code>https://www.icloud.com/shortcuts/...</code></li>
+  <li>Send the link to Vivek via WhatsApp/iMessage</li>
+  <li>Vivek taps the link on his iPhone → <strong>Add Shortcut</strong> → done</li>
+</ol>
+<div class="callout">
+  <strong>Note for Vivek:</strong> first time he uses the page's Run Shortcut button, iOS may prompt "Allow Untrusted Shortcuts" or "Allow Run Shortcut." Both can be set to Always Allow in Settings → Shortcuts.
+</div>
+
+<h2>Troubleshooting</h2>
+
+<table>
+  <tr><th>Symptom</th><th>Fix</th></tr>
+  <tr><td>"Couldn't open Shortcut" alert</td><td>Name mismatch. Verify the Shortcut is named EXACTLY <code>TQHB Text Agents</code> (no extra spaces).</td></tr>
+  <tr><td>Asks confirmation per message</td><td>Toggle <strong>Ask Before Sending</strong> OFF inside the Send Message action.</td></tr>
+  <tr><td>Some messages sent, then stopped</td><td>iOS rate-limits ~10 SMS/minute. For 30+, run twice with the status filter (e.g. Active first, Under Contract second).</td></tr>
+  <tr><td>"Could not run Shortcut from this app"</td><td>Settings → Shortcuts → Advanced → enable <strong>Allow Running Scripts</strong>.</td></tr>
+  <tr><td>"Allow Untrusted Shortcuts" greyed out</td><td>Run any Shortcut once from the Shortcuts app to enable the toggle.</td></tr>
+  <tr><td>SMS sent from wrong number</td><td>Settings → Messages → iMessage account → set sending number to Vivek's primary line.</td></tr>
+</table>
+
+<h2>What gets sent</h2>
+<p>The page passes JSON to the Shortcut. Each <code>queue</code> entry has:</p>
+<pre>{
+  "generated_at": "2026-05-25T18:30:00Z",
+  "count": 12,
+  "queue": [
+    {
+      "name": "Virginia Espinoza",
+      "phone": "+13466008833",
+      "message": "Hi Virginia, this is Vivek...",
+      "type": "active",
+      "mls_list": "10357889"
+    },
+    {
+      "name": "Edward McClintick",
+      "phone": "+18882271009",
+      "message": "Hey Edward, this is Vivek, local investor. I see it is under contract...",
+      "type": "uc",
+      "mls_list": "96512970"
+    }
+    ...
+  ]
+}</pre>
+<p>Under Contract listings carry <code>type: "uc"</code> so the message body uses the "if the current buyer doesn't perform" wording. Agents with mixed status appear twice (one entry per type).</p>
+
+<a class="back-link" href="./">← Back to Daily Report</a>
+
+</div>
+</body>
+</html>
