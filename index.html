@@ -186,6 +186,43 @@
   .status-Active { background: rgba(16,185,129,0.12); color: #065f46; border: 1px solid rgba(16,185,129,0.3); }
   .status-Foreclosure { background: rgba(239,68,68,0.12); color: #991b1b; border: 1px solid rgba(239,68,68,0.3); }
   .status-Auction { background: rgba(245,158,11,0.12); color: #92400e; border: 1px solid rgba(245,158,11,0.3); }
+  .status-Under-Contract {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+    color: #fff; border: 1px solid #ea580c;
+    box-shadow: 0 1px 3px rgba(249,115,22,0.3);
+  }
+  .listing-card.under-contract { border-color: #fb923c; }
+  .listing-card.under-contract .cstrip, .listing-card.under-contract .facts-grid { background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); }
+
+  /* status filter bar */
+  .status-filter {
+    position: sticky;
+    top: 50px;
+    z-index: 40;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 40px;
+    display: flex; align-items: center; gap: 10px;
+    flex-wrap: wrap;
+  }
+  .status-filter .lbl { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); }
+  .filter-pill {
+    padding: 5px 14px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text-muted);
+    transition: all 0.15s;
+    font-family: inherit;
+  }
+  .filter-pill:hover { border-color: var(--accent); color: var(--primary); }
+  .filter-pill.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .filter-pill.active.uc { background: #f97316; border-color: #ea580c; color: #fff; }
+  .listing.hidden, .bucket.hidden, .bucket-empty.hidden { display: none; }
   .listing-card {
     background: var(--card);
     border-radius: 10px;
@@ -637,6 +674,15 @@
   <div class="nav-inner" id="navLinks"></div>
 </nav>
 
+<div class="status-filter">
+  <span class="lbl">Show:</span>
+  <button class="filter-pill active" data-filter="all" onclick="applyStatusFilter('all')">All</button>
+  <button class="filter-pill" data-filter="active" onclick="applyStatusFilter('active')">Active Only</button>
+  <button class="filter-pill uc" data-filter="uc" onclick="applyStatusFilter('uc')">⚠ Under Contract Only</button>
+  <button class="filter-pill" data-filter="foreclosure" onclick="applyStatusFilter('foreclosure')">🔥 Foreclosure Only</button>
+  <span style="margin-left:auto;font-size:11px;color:var(--text-muted)" id="filterStats"></span>
+</div>
+
 <div class="hero">
   <div class="hero-row">
     <div>
@@ -687,16 +733,18 @@
 // SCENARIOS — daily scraper runs ONE of these per pass.
 // Add/remove scenarios here; each listing carries scenario_id.
 // ============================================================
+// Codename convention: [Geography] [Play Type]
+//   Drop = Price Reduction · Distress = Foreclosure · Fresh = Just Listed
 const SCENARIOS = [
-  { id: 1, code: "S1", label: "Cleveland · ≤$100K · Price Drop",        filters: ["City: Cleveland", "For Sale", "Single Family", "Max $100,000", "Price Reduction"] },
-  { id: 2, code: "S2", label: "Conroe · ≤$200K · 2 Baths · Price Drop", filters: ["City: Conroe", "For Sale", "Single Family", "Max $200,000", "Min Baths: 2", "Price Reduction"] },
-  { id: 3, code: "S3", label: "Woodland · ≤$250K · 2 Baths · Price Drop", filters: ["City: Woodland", "For Sale", "Single Family", "Max $250,000", "Min Baths: 2", "Price Reduction"] },
-  { id: 4, code: "S4", label: "ZIP 77028 · ≤$150K · Price Drop",        filters: ["ZIP: 77028", "For Sale", "Single Family", "Max $150,000", "Price Reduction"] },
-  { id: 5, code: "S5", label: "Houston 77028 · ≤$200K · Foreclosure",   filters: ["City: Houston", "ZIP: 77028", "For Sale", "Single Family", "Max $200,000", "Foreclosure"] },
-  { id: 6, code: "S6", label: "Cleveland · ≤$200K · Foreclosure",       filters: ["City: Cleveland", "ZIP: 77028 (⚠ verify)", "For Sale", "Single Family", "Max $200,000", "Foreclosure"] },
-  { id: 7, code: "S7", label: "Katy · ≤$250K · Price Drop",             filters: ["City: Katy", "For Sale", "Single Family", "Max $250,000", "Price Reduction"] },
-  { id: 8, code: "S8", label: "Katy · ≤$250K · Just Listed",            filters: ["City: Katy", "For Sale", "Single Family", "Max $250,000", "Just Listed"] },
-  { id: 9, code: "S9", label: "Katy · ≤$250K · Foreclosure",            filters: ["City: Katy", "For Sale", "Single Family", "Max $250,000", "Foreclosure"] }
+  { id: 1, code: "S1", icon: "💧", name: "Cleveland Drop",    sub: "≤$100K · SFR",         filters: ["City: Cleveland", "For Sale", "Single Family", "Max $100K", "Price Reduction"] },
+  { id: 2, code: "S2", icon: "💧", name: "Conroe Cut",        sub: "≤$200K · 2BA · SFR",   filters: ["City: Conroe", "For Sale", "Single Family", "Max $200K", "Min 2 Baths", "Price Reduction"] },
+  { id: 3, code: "S3", icon: "💧", name: "Woodland Cut",      sub: "≤$250K · 2BA · SFR",   filters: ["City: Woodland", "For Sale", "Single Family", "Max $250K", "Min 2 Baths", "Price Reduction"] },
+  { id: 4, code: "S4", icon: "💧", name: "Northside Drop",    sub: "77028 · ≤$150K · SFR", filters: ["ZIP: 77028", "For Sale", "Single Family", "Max $150K", "Price Reduction"] },
+  { id: 5, code: "S5", icon: "🔥", name: "Northside Distress",sub: "77028 · ≤$200K · SFR", filters: ["City: Houston", "ZIP: 77028", "For Sale", "Single Family", "Max $200K", "Foreclosure"] },
+  { id: 6, code: "S6", icon: "🔥", name: "Cleveland Distress",sub: "≤$200K · SFR",         filters: ["City: Cleveland", "ZIP: 77028 (⚠ verify with Vivek)", "For Sale", "Single Family", "Max $200K", "Foreclosure"] },
+  { id: 7, code: "S7", icon: "💧", name: "Katy Drop",         sub: "≤$250K · SFR",         filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "Price Reduction"] },
+  { id: 8, code: "S8", icon: "✨", name: "Katy Fresh",        sub: "≤$250K · New Listings",filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "Just Listed"] },
+  { id: 9, code: "S9", icon: "🔥", name: "Katy Distress",     sub: "≤$250K · SFR",         filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "Foreclosure"] }
 ];
 
 // Replace LISTINGS with daily scraper output (same shape).
@@ -711,7 +759,7 @@ const LISTINGS = [
   {"id":7,"address":"125 W Sunnyside St","city":"Houston","state":"TX","zip":"77076","price":136000,"beds":3,"baths":1.5,"sqft":1453,"year_built":1952,"price_per_sqft":94,"dom":2,"status":"Foreclosure","mls":"72284125","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/125-w-sunnyside-st-houston-tx-77076/17759201","zillow_url":null,"agent":{"name":"Chris Lawrence","brokerage":"Trillionaire Realty","phone":"(832) 455-3550"},"sms_message":"Hi Chris, this is Vivek, local Investor. Interested in your listing at 125 W Sunnyside St, Houston TX 77076. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":165000,"arv_high":195000,"comps":[{"address":"NW Houston renovated (pool)","notes":"Price range $175,000–$210,000; sqft 1,300–1,600; $120–145/sqft"},{"address":"Wildrose Gardens sold (90d)","notes":"Price range $150,000–$185,000; sqft 1,200–1,600; $110–130/sqft"}],"red_flags":["Kitchen currently missing — full kitchen install required","In-ground pool — inspect, service, or fill (cost varies widely)","Deferred maintenance throughout","1952 build — inspect electrical, plumbing","Foreclosure — title search required"],"opportunity_notes":["In-ground pool = premium rental appeal in Houston heat","Near Moody Park, Northline Commons, Houston Farmers Market","Easy I-45 access = strong commuter location","$94/sqft = value-add room with reno"]}},
   {"id":8,"address":"7002 Jay St","city":"Houston","state":"TX","zip":"77028","price":119000,"beds":3,"baths":2,"sqft":1247,"year_built":1955,"price_per_sqft":95,"dom":3,"status":"Active","mls":"11210072","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/7002-jay-st-houston-tx-77028/17749811","zillow_url":null,"agent":{"name":"Brian Hamill","brokerage":"Waizel Properties Spring","phone":"(936) 525-7686"},"sms_message":"Hi Brian, this is Vivek, local Investor. Interested in your listing at 7002 Jay St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":160000,"arv_high":185000,"comps":[{"address":"Wesley Place renovated","notes":"Price range $160,000–$190,000; sqft 1,100–1,400; $120–140/sqft"},{"address":"Northside sold comps (90d)","notes":"Price range $145,000–$180,000; sqft 1,100–1,400; $110–130/sqft"}],"red_flags":["Fully gutted to studs — full interior renovation required","Plumbing, electrical, drywall, flooring, fixtures — full budget","Exterior siding weathered — may need replacement","1955 build — review structural integrity"],"opportunity_notes":["Blank canvas = full custom interior layout possible","Large 9,750 sqft lot = outdoor value-add potential","2-car detached garage adds value","Wesley Place — Northside, solid working-class demand"]}},
   {"id":9,"address":"5115 Celestial Ln","city":"Houston","state":"TX","zip":"77039","price":120000,"beds":3,"baths":2,"sqft":1251,"year_built":1968,"price_per_sqft":96,"dom":1,"status":"Active","mls":"41082353","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/5115-celestial-ln-houston-tx-77039/17753672","zillow_url":null,"agent":{"name":"Renae Jackson","brokerage":"BHG RE Gary Greene","phone":"(281) 330-7579"},"sms_message":"Hi Renae, this is Vivek, local Investor. Interested in your listing at 5115 Celestial Ln, Houston TX 77039. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":155000,"arv_high":180000,"comps":[{"address":"Green Valley renovated","notes":"Price range $155,000–$180,000; sqft 1,100–1,400; $120–135/sqft"},{"address":"NE Houston sold comps (90d)","notes":"Price range $140,000–$170,000; sqft 1,100–1,400; $110–125/sqft"}],"red_flags":["Cosmetic renovation needed throughout","1968 build — inspect HVAC, plumbing, electrical","Yard maintenance required"],"opportunity_notes":["Northeast Houston — growing rental demand","Beltway 8 access = strong commuter location","3/2 brick + 2-car garage = solid rental config","$96/sqft = value-add room with cosmetic reno"]}},
-  {"id":10,"address":"11201 Muscatine St","city":"Houston","state":"TX","zip":"77029","price":129900,"beds":3,"baths":2,"sqft":1312,"year_built":1955,"price_per_sqft":99,"dom":6,"status":"Active","mls":"96512970","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/11201-muscatine-st-houston-tx-77029/11684818","zillow_url":null,"agent":{"name":"Edward McClintick","brokerage":"Joseph Walter Realty LLC","phone":"(888) 227-1009"},"sms_message":"Hi Edward, this is Vivek, local Investor. Interested in your listing at 11201 Muscatine St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":165000,"arv_high":195000,"comps":[{"address":"Cloverleaf renovated sales","notes":"Price range $165,000–$195,000; sqft 1,200–1,400; $125–145/sqft"},{"address":"East Houston sold comps (90d)","notes":"Price range $150,000–$185,000; sqft 1,100–1,400; $115–135/sqft"}],"red_flags":["1955 build — inspect electrical, plumbing thoroughly","Cosmetic renovation needed","1-car garage — limits rental premium slightly"],"opportunity_notes":["6 DOM — slightly seasoned, seller potentially more motivated","East Houston / I-10 corridor = strong industrial worker rental demand","3/2 with garage in Cloverleaf = solid long-term rental","$99/sqft = upside with light reno"]}}
+  {"id":10,"address":"11201 Muscatine St","city":"Houston","state":"TX","zip":"77029","price":129900,"beds":3,"baths":2,"sqft":1312,"year_built":1955,"price_per_sqft":99,"dom":6,"status":"Under Contract","mls":"96512970","source":"HAR","scenario_id":1,"har_url":"https://www.har.com/homedetail/11201-muscatine-st-houston-tx-77029/11684818","zillow_url":null,"agent":{"name":"Edward McClintick","brokerage":"Joseph Walter Realty LLC","phone":"(888) 227-1009"},"sms_message":"Hi Edward, this is Vivek, local Investor. Interested in your listing at 11201 Muscatine St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":165000,"arv_high":195000,"comps":[{"address":"Cloverleaf renovated sales","notes":"Price range $165,000–$195,000; sqft 1,200–1,400; $125–145/sqft"},{"address":"East Houston sold comps (90d)","notes":"Price range $150,000–$185,000; sqft 1,100–1,400; $115–135/sqft"}],"red_flags":["1955 build — inspect electrical, plumbing thoroughly","Cosmetic renovation needed","1-car garage — limits rental premium slightly"],"opportunity_notes":["6 DOM — slightly seasoned, seller potentially more motivated","East Houston / I-10 corridor = strong industrial worker rental demand","3/2 with garage in Cloverleaf = solid long-term rental","$99/sqft = upside with light reno"]}}
 ];
 
 const fmtMoney = n => n == null ? '—' : '$' + n.toLocaleString('en-US');
@@ -740,11 +788,12 @@ function renderHero() {
 
 function renderNav() {
   const navHtml = SCENARIOS.map(sc => {
-    const count = LISTINGS.filter(l => l.scenario_id === sc.id).length;
+    const count = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l)).length;
     return '<a href="#scenario-' + sc.id + '" class="nav-link scenario" data-scenario="' + sc.id + '">'
-      + '<span class="num">' + sc.code + '</span>' + esc(sc.label)
+      + '<span class="num">' + sc.icon + ' ' + sc.code + '</span>' + esc(sc.name)
       + '<span class="sc-count-pill">' + count + '</span></a>';
   }).join('');
+  document.getElementById('navLinks').replaceChildren();
   document.getElementById('navLinks').insertAdjacentHTML('beforeend', navHtml);
 }
 
@@ -752,8 +801,8 @@ function renderScenarioDivider(sc, count) {
   return '<div class="scenario-divider" id="scenario-' + sc.id + '">'
     + '<div class="scenario-divider-inner">'
     + '<div>'
-    + '<div class="sc-kicker">Scenario ' + sc.code + '</div>'
-    + '<h2>' + esc(sc.label) + '</h2>'
+    + '<div class="sc-kicker">' + sc.icon + ' Scenario ' + sc.code + ' · ' + esc(sc.sub) + '</div>'
+    + '<h2>' + esc(sc.name) + '</h2>'
     + '<div class="sc-filters">' + sc.filters.map(esc).join(' · ') + '</div>'
     + '</div>'
     + '<div class="sc-count">' + count + ' listing' + (count === 1 ? '' : 's') + '</div>'
@@ -762,8 +811,44 @@ function renderScenarioDivider(sc, count) {
 
 function renderEmptyScenario(sc) {
   return '<div class="empty-scenario">'
-    + '<strong>No listings yet for ' + sc.code + '.</strong> Awaiting next scraper run for filter set: ' + sc.filters.map(esc).join(' · ')
+    + '<strong>' + sc.icon + ' ' + esc(sc.name) + '</strong> — no listings yet. Awaiting next scraper run for: ' + sc.filters.map(esc).join(' · ')
     + '</div>';
+}
+
+// Status filter — drives both visible listings and batch SMS queue.
+let activeFilter = 'all';
+function shouldShow(l) {
+  if (activeFilter === 'all') return true;
+  if (activeFilter === 'uc') return isUnderContract(l);
+  if (activeFilter === 'foreclosure') return /foreclosure|auction/i.test(l.status || '');
+  if (activeFilter === 'active') return !isUnderContract(l) && !/foreclosure|auction/i.test(l.status || '');
+  return true;
+}
+function applyStatusFilter(name) {
+  activeFilter = name;
+  document.querySelectorAll('.filter-pill').forEach(p => p.classList.toggle('active', p.dataset.filter === name));
+  document.querySelectorAll('.listing').forEach(el => {
+    const mls = el.dataset.mls;
+    const l = LISTINGS.find(x => x.mls === mls);
+    el.classList.toggle('hidden', !l || !shouldShow(l));
+  });
+  // Update bucket + scenario counts
+  document.querySelectorAll('.scenario-divider').forEach(d => {
+    const scId = parseInt(d.id.replace('scenario-', ''), 10);
+    const visible = LISTINGS.filter(x => x.scenario_id === scId && shouldShow(x) && x.dom >= FRESH_CUTOFF).length;
+    const countEl = d.querySelector('.sc-count');
+    if (countEl) countEl.textContent = visible + ' listing' + (visible === 1 ? '' : 's');
+  });
+  // Re-render nav counts
+  document.querySelectorAll('.nav-link.scenario').forEach(a => {
+    const scId = parseInt(a.dataset.scenario, 10);
+    const visible = LISTINGS.filter(x => x.scenario_id === scId && shouldShow(x) && x.dom >= FRESH_CUTOFF).length;
+    const pill = a.querySelector('.sc-count-pill');
+    if (pill) pill.textContent = visible;
+  });
+  const totalVisible = LISTINGS.filter(shouldShow).length;
+  const total = LISTINGS.length;
+  document.getElementById('filterStats').textContent = totalVisible + ' of ' + total + ' listings shown';
 }
 
 function renderListing(l) {
@@ -771,19 +856,23 @@ function renderListing(l) {
   const totalUpside = ((l.ai_report.arv_high - l.price) / l.price * 100).toFixed(0);
   const avgArv = (l.ai_report.arv_low + l.ai_report.arv_high) / 2;
   const spread = avgArv - l.price;
+  const uc = isUnderContract(l);
+  const cardClass = 'listing-card' + (uc ? ' under-contract' : '');
+  const smsMsg = smsBodyFor(l);
   const compsRows = l.ai_report.comps.map(c =>
     '<tr><td><strong>' + esc(c.address) + '</strong></td><td>' + esc(c.notes || '—') + '</td></tr>'
   ).join('');
   const flagsList = l.ai_report.red_flags.map(f => '<li>' + esc(f) + '</li>').join('');
   const oppsList = l.ai_report.opportunity_notes.map(o => '<li>' + esc(o) + '</li>').join('');
   const phoneClean = l.agent.phone.replace(/[^\d]/g, '');
-  return '<section class="listing" id="' + id + '">'
+  const statusClass = esc(l.status).replace(/\s+/g, '-');
+  return '<section class="listing" id="' + id + '" data-mls="' + esc(l.mls) + '">'
     + '<div class="section-header">'
     + '<div class="kicker">Property ' + String(l.id).padStart(2,'0') + ' · MLS ' + esc(l.mls) + ' · ' + esc(l.source) + '</div>'
-    + '<h2>' + esc(l.address) + ', ' + esc(l.city) + ' ' + esc(l.state) + ' ' + esc(l.zip) + ' <span class="status-badge status-' + esc(l.status) + '">' + esc(l.status) + '</span></h2>'
+    + '<h2>' + esc(l.address) + ', ' + esc(l.city) + ' ' + esc(l.state) + ' ' + esc(l.zip) + ' <span class="status-badge status-' + statusClass + '">' + esc(l.status) + '</span></h2>'
     + '<div class="sub">' + (l.beds || '?') + ' Bed · ' + (l.baths || '?') + ' Bath · ' + (l.sqft||0).toLocaleString() + ' sqft · Built ' + (l.year_built || '?') + ' · ' + l.dom + ' DOM</div>'
     + '</div>'
-    + '<div class="listing-card" data-id="' + l.id + '">'
+    + '<div class="' + cardClass + '" data-id="' + l.id + '">'
     + '<div class="facts-grid">'
     + '<div class="fact"><div class="lbl">List Price</div><div class="val price">' + fmtMoney(l.price) + '</div></div>'
     + '<div class="fact"><div class="lbl">Beds / Baths</div><div class="val">' + (l.beds || '?') + ' / ' + (l.baths || '?') + '</div></div>'
@@ -809,9 +898,9 @@ function renderListing(l) {
     + '<div class="agent-info"><div class="name">' + esc(l.agent.name) + '</div><div class="brokerage">' + esc(l.agent.brokerage) + '</div></div>'
     + '<a class="agent-phone" href="tel:' + phoneClean + '">' + esc(l.agent.phone) + '</a>'
     + '</div>'
-    + '<div class="sms-box"><div class="sms-lbl"><span>📱 Pre-filled SMS</span></div><div class="sms-txt" id="sms-' + l.id + '">' + esc(l.sms_message) + '</div></div>'
+    + '<div class="sms-box"><div class="sms-lbl"><span>📱 Pre-filled SMS' + (uc ? ' <em style="color:#f97316">(Under Contract template)</em>' : '') + '</span></div><div class="sms-txt" id="sms-' + l.id + '">' + esc(smsMsg) + '</div></div>'
     + '<div class="actions">'
-    + '<a class="btn btn-sms" href="sms:' + phoneClean + '&body=' + encodeURIComponent(l.sms_message) + '">📱 Text Agent</a>'
+    + '<a class="btn btn-sms" href="sms:' + phoneClean + '&body=' + encodeURIComponent(smsMsg) + '">📱 Text Agent</a>'
     + '<a class="btn btn-call" href="tel:' + phoneClean + '">📞 Call</a>'
     + '<a class="btn btn-har" href="' + esc(l.har_url || '#') + '" target="_blank" rel="noopener">🏠 HAR Listing</a>'
     + '<button class="btn btn-save" onclick="saveContact(' + l.id + ')">💾 Save Contact</button>'
@@ -1085,6 +1174,7 @@ function init() {
   loadState();
   initScrollspy();
   updateAgentCounter();
+  applyStatusFilter('all'); // populates filterStats + ensures consistent state
 }
 
 // ============================================================
@@ -1095,25 +1185,45 @@ function init() {
 let textQueue = [];
 let textIdx = 0;
 
+// SMS template chooser — Under Contract gets the "if buyer doesn't perform" wording.
+function isUnderContract(l) { return /under\s*contract/i.test(l.status || ''); }
+
+function smsBodyFor(l) {
+  const firstName = l.agent.name.split(' ')[0];
+  if (isUnderContract(l)) {
+    return 'Hey ' + firstName + ', this is Vivek, local investor. Interested in one of your listings at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + '. I see it is under contract — would you please let me know if the current buyer doesn\'t perform? Thank you!';
+  }
+  return l.sms_message || ('Hi ' + firstName + ', this is Vivek, local Investor. Interested in your listing at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + '. Are you available to walk the property? Is there a lockbox on site? Thank you!');
+}
+
 function buildTextQueue() {
-  // Group today's listings by agent phone — one queue item per agent.
-  const byPhone = {};
+  // Group by (agent phone, status type) — so one agent with mixed Active + UC
+  // listings shows up as TWO queue items, each with the right SMS template.
+  const groups = {};
   LISTINGS.forEach(l => {
-    const k = phoneKey(l.agent.phone);
-    if (!byPhone[k]) byPhone[k] = { agent: l.agent, listings: [] };
-    byPhone[k].listings.push(l);
+    if (!shouldShow(l)) return; // respect current status filter
+    const type = isUnderContract(l) ? 'uc' : 'active';
+    const k = phoneKey(l.agent.phone) + ':' + type;
+    if (!groups[k]) groups[k] = { agent: l.agent, type: type, listings: [] };
+    groups[k].listings.push(l);
   });
-  // Skip agents already texted today (by phone-based key).
   const todayKey = today();
-  return Object.values(byPhone).filter(item => {
-    const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + todayKey;
+  return Object.values(groups).filter(item => {
+    const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + item.type + '_' + todayKey;
     return localStorage.getItem(k) !== '1';
   });
 }
 
 function composedBodyFor(item) {
-  if (item.listings.length === 1) return item.listings[0].sms_message;
-  const intro = 'Hi ' + item.agent.name.split(' ')[0] + ', this is Vivek, local Investor. Interested in your listings:';
+  if (item.listings.length === 1) return smsBodyFor(item.listings[0]);
+  const firstName = item.agent.name.split(' ')[0];
+  if (item.type === 'uc') {
+    const intro = 'Hey ' + firstName + ', this is Vivek, local investor. Interested in your listings (currently under contract):';
+    const lines = item.listings.map(l => '\n• ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + ' (MLS ' + l.mls + ')').join('');
+    const outro = '\n\nWould you please let me know if any of the current buyers don\'t perform? Thank you!';
+    return intro + lines + outro;
+  }
+  const intro = 'Hi ' + firstName + ', this is Vivek, local Investor. Interested in your listings:';
   const lines = item.listings.map(l => '\n• ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + ' (MLS ' + l.mls + ')').join('');
   const outro = '\n\nAre any available to walk? Are there lockboxes on site? Thank you!';
   return intro + lines + outro;
@@ -1132,22 +1242,23 @@ function closeTextAllQueue() {
 
 function renderTextQueueStep() {
   const body = document.getElementById('textAllBody');
+  body.replaceChildren();
   if (textIdx >= textQueue.length) {
-    const html = '<div class="queue-done"><span class="check">✓</span>All caught up — every agent in today\'s report has been queued or sent.</div>'
-      + '<div class="queue-actions"><button class="btn btn-har" onclick="closeTextAllQueue()">Close</button></div>';
-    body.insertAdjacentHTML('afterbegin', html);
-    body.lastChild && body.removeChild(body.lastChild);
-    body.replaceChildren();
-    body.insertAdjacentHTML('beforeend', html);
+    body.insertAdjacentHTML('beforeend',
+      '<div class="queue-done"><span class="check">✓</span>All caught up — ' + textQueue.length + ' agent' + (textQueue.length===1?'':'s') + ' queued or sent.</div>'
+      + '<div class="queue-actions"><button class="btn btn-har" onclick="closeTextAllQueue()">Close</button></div>');
     return;
   }
   const item = textQueue[textIdx];
-  const phoneClean = phoneKey(item.agent.phone);
   const msg = composedBodyFor(item);
+  const typeBadge = item.type === 'uc'
+    ? '<span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;margin-left:6px">⚠ Under Contract</span>'
+    : '';
   const listingRefs = item.listings.map(l =>
-    '<div>• <strong>MLS ' + esc(l.mls) + '</strong> — ' + esc(l.address) + ' · $' + l.price.toLocaleString() + '</div>'
+    '<div>• <strong>MLS ' + esc(l.mls) + '</strong> — ' + esc(l.address) + ' · $' + l.price.toLocaleString() + ' <em style="color:var(--text-muted);font-size:11px">[' + esc(l.status) + ']</em></div>'
   ).join('');
-  const html = '<div class="queue-progress">Agent <strong>' + (textIdx + 1) + '</strong> of <strong>' + textQueue.length + '</strong></div>'
+  body.insertAdjacentHTML('beforeend',
+    '<div class="queue-progress">Agent <strong>' + (textIdx + 1) + '</strong> of <strong>' + textQueue.length + '</strong>' + typeBadge + '</div>'
     + '<div class="queue-agent">'
     + '<div class="name">' + esc(item.agent.name) + '</div>'
     + '<div class="brokerage">' + esc(item.agent.brokerage) + ' · ' + esc(item.agent.phone) + '</div>'
@@ -1156,17 +1267,17 @@ function renderTextQueueStep() {
     + '<div class="queue-sms"><div class="lbl">📱 Composed SMS</div>' + esc(msg).replace(/\n/g, '<br>') + '</div>'
     + '<div class="queue-actions">'
     + '<button class="btn btn-copy" onclick="skipCurrentAgent()">Skip</button>'
-    + '<button class="btn btn-sms" onclick="sendCurrentAgent(\'' + phoneClean + '\', ' + JSON.stringify(msg).replace(/'/g,"\\'") + ')">Send &amp; Next →</button>'
-    + '</div>';
-  body.replaceChildren();
-  body.insertAdjacentHTML('beforeend', html);
+    + '<button class="btn btn-sms" onclick="sendCurrentAgent()">Send &amp; Next →</button>'
+    + '</div>');
 }
 
-function sendCurrentAgent(phone, msg) {
+function sendCurrentAgent() {
   const item = textQueue[textIdx];
-  const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + today();
+  if (!item) return;
+  const phone = phoneKey(item.agent.phone);
+  const msg = composedBodyFor(item);
+  const k = 'tqhb_textall_' + phone + '_' + item.type + '_' + today();
   localStorage.setItem(k, '1');
-  // Also mark each listing's "Texted" toggle
   item.listings.forEach(l => {
     localStorage.setItem('tqhb_texted_' + l.mls, '1');
     const cb = document.querySelector('[data-texted="' + l.mls + '"]');
