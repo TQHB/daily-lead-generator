@@ -447,6 +447,115 @@
   }
   .empty-scenario strong { color: var(--primary); }
 
+  /* DOM buckets within scenarios */
+  .bucket {
+    max-width: 1400px;
+    margin: 26px auto 14px;
+    padding: 0 40px;
+  }
+  .bucket-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.8px;
+  }
+  .bucket-header .bucket-dot { font-size: 14px; line-height: 1; }
+  .bucket-header .bucket-label { text-transform: uppercase; letter-spacing: 1.2px; }
+  .bucket-header .bucket-tag { font-size: 11px; font-weight: 600; opacity: 0.8; text-transform: none; letter-spacing: 0.3px; }
+  .bucket-header .bucket-count {
+    margin-left: auto;
+    background: rgba(255,255,255,0.55);
+    color: var(--text);
+    padding: 2px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+  .bucket.hot .bucket-header { background: #fef2f2; color: #991b1b; border-left: 5px solid var(--negative); }
+  .bucket.warm .bucket-header { background: #fef9c3; color: #854d0e; border-left: 5px solid var(--warning); }
+  .bucket.cool .bucket-header { background: #ecfdf5; color: #065f46; border-left: 5px solid var(--positive); }
+  .bucket.hot .bucket-count, .bucket.warm .bucket-count, .bucket.cool .bucket-count { background: rgba(255,255,255,0.7); }
+  .bucket-empty {
+    max-width: 1400px; margin: 0 auto 12px; padding: 12px 40px;
+    color: var(--text-muted); font-size: 12px; font-style: italic;
+    border-left: 2px dashed var(--border); margin-left: 40px;
+  }
+  .excluded-note {
+    max-width: 1400px; margin: 12px auto 0; padding: 10px 40px;
+    color: var(--text-muted); font-size: 11px;
+  }
+
+  /* text-all modal */
+  .modal-backdrop {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(10,37,64,0.55);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    align-items: center; justify-content: center;
+    padding: 18px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: #fff;
+    border-radius: 14px;
+    max-width: 520px; width: 100%;
+    max-height: 90vh; overflow: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    border: 1px solid var(--border);
+  }
+  .modal-head {
+    padding: 16px 20px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: #fff;
+    border-radius: 14px 14px 0 0;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .modal-head h3 { margin: 0; font-size: 15px; font-weight: 700; }
+  .modal-head .close {
+    background: rgba(255,255,255,0.18);
+    color: #fff; border: none;
+    width: 28px; height: 28px; border-radius: 50%;
+    font-size: 16px; cursor: pointer;
+  }
+  .modal-body { padding: 20px; }
+  .queue-progress {
+    font-size: 11px; color: var(--text-muted);
+    letter-spacing: 1.2px; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .queue-progress strong { color: var(--accent-dark); font-size: 12px; }
+  .queue-agent {
+    background: #fafbfc;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .queue-agent .name { font-weight: 700; color: var(--primary); font-size: 15px; }
+  .queue-agent .brokerage { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .queue-agent .listing-ref { font-size: 12px; color: var(--text); margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border); }
+  .queue-agent .listing-ref strong { color: var(--primary); }
+  .queue-sms {
+    background: #e8f4fd;
+    border: 1px solid #c5dff5;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 12.5px; line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .queue-sms .lbl { font-size: 10px; font-weight: 800; color: var(--info); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+  .queue-actions { display: flex; gap: 8px; }
+  .queue-actions .btn { flex: 1; padding: 12px; font-size: 13px; }
+  .queue-done {
+    text-align: center;
+    padding: 24px 12px;
+    color: var(--positive);
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .queue-done .check { font-size: 36px; display: block; margin-bottom: 8px; }
+
   /* nav scenario tabs */
   .nav-link.scenario { padding: 14px 18px; }
   .nav-link.scenario .sc-count-pill {
@@ -514,8 +623,10 @@
       </div>
     </div>
     <div class="header-actions">
-      <span class="header-pill"><strong id="reportDate">—</strong></span>
+      <span class="header-pill" style="display:flex;align-items:center;gap:6px"><span style="opacity:0.7">📅</span><select id="reportDateSel" onchange="onDateChange()" style="background:transparent;color:#fff;border:none;font-size:11px;font-weight:700;font-family:inherit;outline:none;cursor:pointer"></select></span>
       <span class="header-pill"><strong id="reportCount">—</strong> Listings</span>
+      <span class="header-pill"><strong id="agentCount">—</strong></span>
+      <button class="print-btn" onclick="openTextAllQueue()" style="background:var(--positive);color:#fff">📱 Text All Agents</button>
       <button class="print-btn" onclick="saveAllContacts()" style="background:#fff;color:var(--primary)">💾 Save All Contacts</button>
       <button class="print-btn" onclick="window.print()">Print Report</button>
     </div>
@@ -538,14 +649,26 @@
 
 <div class="filter-note">
   <strong>Constants across all scenarios:</strong>
-  <span class="filter-chip">City: Houston</span>
   <span class="filter-chip">For Sale</span>
-  <span class="filter-chip">SFR</span>
-  <span class="filter-chip">Max Baths: 2</span>
-  <span style="margin-left:6px;font-size:11px">→ Scenarios below vary by price cap &amp; price-reduction filter.</span>
+  <span class="filter-chip">Single Family</span>
+  <span class="filter-chip">DOM ≥ 10 days</span>
+  <span style="margin-left:6px;font-size:11px">→ 9 scenarios below vary by city/ZIP, price cap, baths, &amp; flags (Price Drop · Just Listed · Foreclosure).</span>
+  <div style="margin-top:8px;font-size:11px;color:var(--text-muted)">
+    <strong style="color:var(--primary)">Dedup policy:</strong> The daily scraper maintains a registry of every MLS# ever surfaced (<code>mls_seen.json</code>). Listings already shown in past reports are excluded from future runs — you only see <em>new</em> deals each day.
+  </div>
 </div>
 
 <div class="container" id="listings"></div>
+
+<div class="modal-backdrop" id="textAllModal" onclick="if(event.target===this)closeTextAllQueue()">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>📱 Text All Agents</h3>
+      <button class="close" onclick="closeTextAllQueue()">×</button>
+    </div>
+    <div class="modal-body" id="textAllBody"></div>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="brand-mini">
@@ -565,10 +688,15 @@
 // Add/remove scenarios here; each listing carries scenario_id.
 // ============================================================
 const SCENARIOS = [
-  { id: 1, code: "S1", label: "≤$100K · Price Drop ON",  filters: ["Houston", "For Sale", "SFR", "Max Baths 2", "Max $100K", "Price Reduction ON"] },
-  { id: 2, code: "S2", label: "≤$100K · Price Drop OFF", filters: ["Houston", "For Sale", "SFR", "Max Baths 2", "Max $100K", "Price Reduction OFF"] },
-  { id: 3, code: "S3", label: "≤$200K · Price Drop ON",  filters: ["Houston", "For Sale", "SFR", "Max Baths 2", "Max $200K", "Price Reduction ON"] },
-  { id: 4, code: "S4", label: "≤$200K · Price Drop OFF", filters: ["Houston", "For Sale", "SFR", "Max Baths 2", "Max $200K", "Price Reduction OFF"] }
+  { id: 1, code: "S1", label: "Cleveland · ≤$100K · Price Drop",        filters: ["City: Cleveland", "For Sale", "Single Family", "Max $100,000", "Price Reduction"] },
+  { id: 2, code: "S2", label: "Conroe · ≤$200K · 2 Baths · Price Drop", filters: ["City: Conroe", "For Sale", "Single Family", "Max $200,000", "Min Baths: 2", "Price Reduction"] },
+  { id: 3, code: "S3", label: "Woodland · ≤$250K · 2 Baths · Price Drop", filters: ["City: Woodland", "For Sale", "Single Family", "Max $250,000", "Min Baths: 2", "Price Reduction"] },
+  { id: 4, code: "S4", label: "ZIP 77028 · ≤$150K · Price Drop",        filters: ["ZIP: 77028", "For Sale", "Single Family", "Max $150,000", "Price Reduction"] },
+  { id: 5, code: "S5", label: "Houston 77028 · ≤$200K · Foreclosure",   filters: ["City: Houston", "ZIP: 77028", "For Sale", "Single Family", "Max $200,000", "Foreclosure"] },
+  { id: 6, code: "S6", label: "Cleveland · ≤$200K · Foreclosure",       filters: ["City: Cleveland", "ZIP: 77028 (⚠ verify)", "For Sale", "Single Family", "Max $200,000", "Foreclosure"] },
+  { id: 7, code: "S7", label: "Katy · ≤$250K · Price Drop",             filters: ["City: Katy", "For Sale", "Single Family", "Max $250,000", "Price Reduction"] },
+  { id: 8, code: "S8", label: "Katy · ≤$250K · Just Listed",            filters: ["City: Katy", "For Sale", "Single Family", "Max $250,000", "Just Listed"] },
+  { id: 9, code: "S9", label: "Katy · ≤$250K · Foreclosure",            filters: ["City: Katy", "For Sale", "Single Family", "Max $250,000", "Foreclosure"] }
 ];
 
 // Replace LISTINGS with daily scraper output (same shape).
@@ -602,7 +730,6 @@ function renderHero() {
   const avgUpside = ((avgARV - avgPrice) / avgPrice * 100).toFixed(0);
   const distressed = LISTINGS.filter(l => l.status === 'Foreclosure' || l.status === 'Auction').length;
   document.getElementById('reportCount').textContent = String(n);
-  document.getElementById('reportDate').textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   const heroHtml =
     '<div class="stat"><div class="lbl">Listings</div><div class="val">' + n + '</div><div class="sub">Today\'s batch</div></div>' +
     '<div class="stat"><div class="lbl">Price Range</div><div class="val">' + fmtMoneyShort(minPrice) + '–' + fmtMoneyShort(maxPrice) + '</div><div class="sub">Avg ' + fmtMoneyShort(avgPrice) + '</div></div>' +
@@ -714,14 +841,24 @@ function copyMessage(id, evt) {
 
 function saveContact(id) {
   const l = LISTINGS.find(x => x.id === id);
-  const vcard = buildVcardFor(l);
+  const agent = mergeListingIntoAgent(l);
+  const vcard = buildVcardFromAgent(agent);
   const blob = new Blob([vcard], { type: 'text/vcard' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = l.agent.name.replace(/\s/g,'_') + '_MLS' + l.mls + '.vcf';
+  a.download = agent.name.replace(/\s/g,'_') + '_MLS' + l.mls + '.vcf';
   a.click();
   URL.revokeObjectURL(url);
+  updateAgentCounter();
+}
+
+function updateAgentCounter() {
+  const el = document.getElementById('agentCount');
+  if (!el) return;
+  const agents = allAgents();
+  const totalMls = agents.reduce((s,a) => s + a.listings.length, 0);
+  el.textContent = agents.length + ' agents · ' + totalMls + ' MLS tracked';
 }
 
 function loadState() {
@@ -781,66 +918,298 @@ function initScrollspy() {
   sections.forEach(s => observer.observe(s));
 }
 
-function buildVcardFor(l) {
-  const phoneClean = l.agent.phone.replace(/[^\d]/g, '');
-  const noteLines = [
-    'MLS: ' + l.mls,
-    'Listing: ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip,
-    'Price: $' + l.price.toLocaleString(),
-    'Specs: ' + (l.beds||'?') + 'BR / ' + (l.baths||'?') + 'BA / ' + (l.sqft||0).toLocaleString() + ' sqft / Built ' + (l.year_built||'?'),
-    'Status: ' + l.status + ' · DOM ' + l.dom,
-    'HAR: ' + (l.har_url || ''),
-    'Source: ' + l.source,
-    'Captured: ' + new Date().toLocaleDateString('en-US')
-  ].filter(Boolean).join('\\n');
+// ============================================================
+// AGENT REGISTRY — persists across days via localStorage.
+// Keyed by phone (stable across listings).
+// Each agent record accumulates every MLS they've ever listed.
+// vCard export uses stable UID so iOS Contacts updates in place.
+// ============================================================
+const AGENT_KEY_PREFIX = 'tqhb_agent_';
+const today = () => new Date().toISOString().slice(0,10);
+
+function phoneKey(phone) { return (phone || '').replace(/[^\d]/g, ''); }
+
+function getAgent(phone) {
+  const raw = localStorage.getItem(AGENT_KEY_PREFIX + phoneKey(phone));
+  return raw ? JSON.parse(raw) : null;
+}
+
+function putAgent(agent) {
+  localStorage.setItem(AGENT_KEY_PREFIX + phoneKey(agent.phone), JSON.stringify(agent));
+}
+
+function allAgents() {
+  const out = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(AGENT_KEY_PREFIX)) {
+      try { out.push(JSON.parse(localStorage.getItem(k))); } catch (e) {}
+    }
+  }
+  return out.sort((a,b) => a.name.localeCompare(b.name));
+}
+
+function mergeListingIntoAgent(l) {
+  const existing = getAgent(l.agent.phone);
+  const listingRec = {
+    mls: l.mls,
+    address: l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip,
+    price: l.price,
+    status: l.status,
+    har_url: l.har_url,
+    first_seen: today(),
+    last_seen: today()
+  };
+  if (existing) {
+    const idx = existing.listings.findIndex(x => x.mls === l.mls);
+    if (idx >= 0) {
+      existing.listings[idx] = Object.assign({}, existing.listings[idx], listingRec, { first_seen: existing.listings[idx].first_seen });
+    } else {
+      existing.listings.push(listingRec);
+    }
+    existing.name = l.agent.name;
+    existing.brokerage = l.agent.brokerage;
+    existing.last_seen = today();
+    putAgent(existing);
+    return existing;
+  }
+  const fresh = {
+    phone: l.agent.phone,
+    name: l.agent.name,
+    brokerage: l.agent.brokerage,
+    first_seen: today(),
+    last_seen: today(),
+    listings: [listingRec]
+  };
+  putAgent(fresh);
+  return fresh;
+}
+
+function refreshAgentRegistry() {
+  LISTINGS.forEach(mergeListingIntoAgent);
+}
+
+function buildVcardFromAgent(agent) {
+  const phoneClean = phoneKey(agent.phone);
+  const mlsList = agent.listings.map(x => x.mls).join(', ');
+  const noteLines = ['Agent first seen via TQHB on ' + agent.first_seen + ' · last seen ' + agent.last_seen];
+  noteLines.push('Listings tracked (' + agent.listings.length + '):');
+  agent.listings.forEach(x => {
+    noteLines.push('  • MLS ' + x.mls + ' — $' + x.price.toLocaleString() + ' — ' + x.address + ' [' + x.status + '] (first seen ' + x.first_seen + ')');
+    if (x.har_url) noteLines.push('    HAR: ' + x.har_url);
+  });
   return [
     'BEGIN:VCARD',
     'VERSION:3.0',
-    'FN:' + l.agent.name + ' (MLS ' + l.mls + ')',
-    'N:' + l.agent.name + ';;;;',
-    'ORG:' + l.agent.brokerage,
-    'TITLE:Listing Agent — MLS ' + l.mls,
+    'UID:tqhb-agent-' + phoneClean,
+    'FN:' + agent.name + ' (TQHB · ' + agent.listings.length + ' MLS)',
+    'N:' + agent.name + ';;;;',
+    'ORG:' + agent.brokerage,
+    'TITLE:Listing Agent — MLS ' + mlsList,
     'TEL;TYPE=CELL,VOICE:+1' + phoneClean,
-    'NOTE:' + noteLines,
-    'URL:' + (l.har_url || ''),
-    'CATEGORIES:TQHB Lead,MLS ' + l.mls,
+    'NOTE:' + noteLines.join('\\n'),
+    'CATEGORIES:TQHB Lead',
+    'REV:' + new Date().toISOString(),
     'END:VCARD'
   ].join('\n');
 }
 
 function saveAllContacts() {
-  if (LISTINGS.length === 0) { alert('No listings to save.'); return; }
-  const vcards = LISTINGS.map(buildVcardFor).join('\n');
+  refreshAgentRegistry();
+  const agents = allAgents();
+  if (agents.length === 0) { alert('No agents tracked yet.'); return; }
+  const vcards = agents.map(buildVcardFromAgent).join('\n');
   const blob = new Blob([vcards], { type: 'text/vcard' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  const stamp = new Date().toISOString().slice(0,10);
   a.href = url;
-  a.download = 'TQHB_All_Agents_' + stamp + '.vcf';
+  a.download = 'TQHB_All_Agents_' + today() + '.vcf';
   a.click();
   URL.revokeObjectURL(url);
 }
 
+const DOM_BUCKETS = [
+  { id: 'hot',  min: 30, max: Infinity, label: '30+ Days on Market',   tag: 'Most motivated sellers' },
+  { id: 'warm', min: 20, max: 29,       label: '20–29 Days on Market', tag: 'Getting stale' },
+  { id: 'cool', min: 10, max: 19,       label: '10–19 Days on Market', tag: 'Seasoning' }
+];
+const FRESH_CUTOFF = 10;
+
+function bucketFor(dom) {
+  return DOM_BUCKETS.find(b => dom >= b.min && dom <= b.max);
+}
+
+function renderBucketHeader(b, count) {
+  const dot = b.id === 'hot' ? '🔴' : b.id === 'warm' ? '🟠' : '🟡';
+  return '<div class="bucket ' + b.id + '"><div class="bucket-header">'
+    + '<span class="bucket-dot">' + dot + '</span>'
+    + '<span class="bucket-label">' + esc(b.label) + '</span>'
+    + '<span class="bucket-tag">· ' + esc(b.tag) + '</span>'
+    + '<span class="bucket-count">' + count + '</span>'
+    + '</div></div>';
+}
+
+function renderEmptyBucket(b) {
+  return '<div class="bucket-empty">No listings in ' + esc(b.label) + ' for this scenario.</div>';
+}
+
 function init() {
+  refreshAgentRegistry();
   renderHero();
   renderNav();
   const container = document.getElementById('listings');
   let html = '';
   SCENARIOS.forEach(sc => {
-    const listings = LISTINGS.filter(l => l.scenario_id === sc.id);
-    html += renderScenarioDivider(sc, listings.length);
-    if (listings.length === 0) {
+    const scListings = LISTINGS.filter(l => l.scenario_id === sc.id);
+    const seasoned = scListings.filter(l => l.dom >= FRESH_CUTOFF);
+    const fresh = scListings.filter(l => l.dom < FRESH_CUTOFF);
+    html += renderScenarioDivider(sc, seasoned.length);
+    if (scListings.length === 0) {
       html += renderEmptyScenario(sc);
-    } else {
-      html += listings.map(renderListing).join('');
+      return;
+    }
+    DOM_BUCKETS.forEach(b => {
+      const inBucket = seasoned.filter(l => l.dom >= b.min && l.dom <= b.max);
+      if (inBucket.length === 0) {
+        html += renderEmptyBucket(b);
+      } else {
+        html += renderBucketHeader(b, inBucket.length);
+        html += inBucket.sort((a,b) => b.dom - a.dom).map(renderListing).join('');
+      }
+    });
+    if (fresh.length > 0) {
+      html += '<div class="excluded-note">⚠ <strong>' + fresh.length + ' fresh listing' + (fresh.length===1?'':'s') + '</strong> excluded (DOM &lt; ' + FRESH_CUTOFF + '): ' + fresh.map(l => 'MLS ' + esc(l.mls) + ' (' + l.dom + 'd)').join(', ') + '</div>';
     }
   });
   container.insertAdjacentHTML('beforeend', html);
   loadState();
   initScrollspy();
+  updateAgentCounter();
 }
 
-document.addEventListener('DOMContentLoaded', init);
+// ============================================================
+// TEXT-ALL-AGENTS SEQUENTIAL QUEUE
+// ============================================================
+// One agent at a time. Each agent gets ONE composed SMS (not one per listing)
+// — if an agent has multiple MLS today, the SMS references all of them.
+let textQueue = [];
+let textIdx = 0;
+
+function buildTextQueue() {
+  // Group today's listings by agent phone — one queue item per agent.
+  const byPhone = {};
+  LISTINGS.forEach(l => {
+    const k = phoneKey(l.agent.phone);
+    if (!byPhone[k]) byPhone[k] = { agent: l.agent, listings: [] };
+    byPhone[k].listings.push(l);
+  });
+  // Skip agents already texted today (by phone-based key).
+  const todayKey = today();
+  return Object.values(byPhone).filter(item => {
+    const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + todayKey;
+    return localStorage.getItem(k) !== '1';
+  });
+}
+
+function composedBodyFor(item) {
+  if (item.listings.length === 1) return item.listings[0].sms_message;
+  const intro = 'Hi ' + item.agent.name.split(' ')[0] + ', this is Vivek, local Investor. Interested in your listings:';
+  const lines = item.listings.map(l => '\n• ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + ' (MLS ' + l.mls + ')').join('');
+  const outro = '\n\nAre any available to walk? Are there lockboxes on site? Thank you!';
+  return intro + lines + outro;
+}
+
+function openTextAllQueue() {
+  textQueue = buildTextQueue();
+  textIdx = 0;
+  document.getElementById('textAllModal').classList.add('open');
+  renderTextQueueStep();
+}
+
+function closeTextAllQueue() {
+  document.getElementById('textAllModal').classList.remove('open');
+}
+
+function renderTextQueueStep() {
+  const body = document.getElementById('textAllBody');
+  if (textIdx >= textQueue.length) {
+    const html = '<div class="queue-done"><span class="check">✓</span>All caught up — every agent in today\'s report has been queued or sent.</div>'
+      + '<div class="queue-actions"><button class="btn btn-har" onclick="closeTextAllQueue()">Close</button></div>';
+    body.insertAdjacentHTML('afterbegin', html);
+    body.lastChild && body.removeChild(body.lastChild);
+    body.replaceChildren();
+    body.insertAdjacentHTML('beforeend', html);
+    return;
+  }
+  const item = textQueue[textIdx];
+  const phoneClean = phoneKey(item.agent.phone);
+  const msg = composedBodyFor(item);
+  const listingRefs = item.listings.map(l =>
+    '<div>• <strong>MLS ' + esc(l.mls) + '</strong> — ' + esc(l.address) + ' · $' + l.price.toLocaleString() + '</div>'
+  ).join('');
+  const html = '<div class="queue-progress">Agent <strong>' + (textIdx + 1) + '</strong> of <strong>' + textQueue.length + '</strong></div>'
+    + '<div class="queue-agent">'
+    + '<div class="name">' + esc(item.agent.name) + '</div>'
+    + '<div class="brokerage">' + esc(item.agent.brokerage) + ' · ' + esc(item.agent.phone) + '</div>'
+    + '<div class="listing-ref">' + listingRefs + '</div>'
+    + '</div>'
+    + '<div class="queue-sms"><div class="lbl">📱 Composed SMS</div>' + esc(msg).replace(/\n/g, '<br>') + '</div>'
+    + '<div class="queue-actions">'
+    + '<button class="btn btn-copy" onclick="skipCurrentAgent()">Skip</button>'
+    + '<button class="btn btn-sms" onclick="sendCurrentAgent(\'' + phoneClean + '\', ' + JSON.stringify(msg).replace(/'/g,"\\'") + ')">Send &amp; Next →</button>'
+    + '</div>';
+  body.replaceChildren();
+  body.insertAdjacentHTML('beforeend', html);
+}
+
+function sendCurrentAgent(phone, msg) {
+  const item = textQueue[textIdx];
+  const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + today();
+  localStorage.setItem(k, '1');
+  // Also mark each listing's "Texted" toggle
+  item.listings.forEach(l => {
+    localStorage.setItem('tqhb_texted_' + l.mls, '1');
+    const cb = document.querySelector('[data-texted="' + l.mls + '"]');
+    if (cb) { cb.checked = true; cb.closest('.listing-card').classList.add('texted'); }
+  });
+  window.location.href = 'sms:' + phone + '&body=' + encodeURIComponent(msg);
+  textIdx++;
+  setTimeout(renderTextQueueStep, 400);
+}
+
+function skipCurrentAgent() {
+  textIdx++;
+  renderTextQueueStep();
+}
+
+// ============================================================
+// DATE PICKER — daily report archive
+// ============================================================
+// For now there's only one report (today). When the scraper starts
+// publishing reports/YYYY-MM-DD.json, populate this list from a manifest.
+function populateDateSelect() {
+  const sel = document.getElementById('reportDateSel');
+  const dates = [today()]; // future: load list from /reports/manifest.json
+  sel.replaceChildren();
+  dates.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+    sel.appendChild(opt);
+  });
+  sel.value = today();
+}
+
+function onDateChange() {
+  const sel = document.getElementById('reportDateSel');
+  const picked = sel.value;
+  if (picked === today()) return;
+  // Future: fetch /reports/${picked}.json and re-render. For now alert.
+  alert('Historical report for ' + picked + ' not yet archived. The daily scraper will start writing reports/YYYY-MM-DD.json once wired up.');
+  sel.value = today();
+}
+
+document.addEventListener('DOMContentLoaded', () => { populateDateSelect(); init(); });
 </script>
 </body>
 </html>
