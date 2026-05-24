@@ -1,0 +1,550 @@
+[
+  {
+    "id": 1,
+    "address": "10341 Caxton St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77016",
+    "price": 150000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1317,
+    "year_built": 1960,
+    "price_per_sqft": 114,
+    "dom": 1,
+    "status": "Active",
+    "mls": "10357889",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/10341-caxton-st-houston-tx-77016/17748419",
+    "zillow_url": null,
+    "agent": {
+      "name": "Virginia Espinoza",
+      "brokerage": "eXp Realty LLC",
+      "phone": "(346) 600-8833"
+    },
+    "sms_message": "Hi Virginia, this is Vivek, local Investor. Interested in your listing at 10341 Caxton St, Houston TX 77016. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 200000,
+      "comps": [
+        {
+          "address": "Henry Place area avg",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $155,000–$175,000; sqft 1,300–1,500; $110–120/sqft"
+        },
+        {
+          "address": "Northside sold comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $130,000–$165,000; sqft 1,200–1,600; $95–115/sqft"
+        }
+      ],
+      "red_flags": [
+        "Cosmetic updates likely needed interior",
+        "1960 build — verify plumbing/electrical condition",
+        "Yard maintenance needed"
+      ],
+      "opportunity_notes": [
+        "2024 AC + new roof = major capex already done",
+        "No HOA = easy rental",
+        "Northside location — solid working-class rental demand",
+        "Strong fix-and-rent candidate at $150K"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "address": "5011 Brisbane Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77048",
+    "price": 110000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1049,
+    "year_built": 1963,
+    "price_per_sqft": 105,
+    "dom": 1,
+    "status": "Active",
+    "mls": "41138410",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/5011-brisbane-dr-houston-tx-77048/17748920",
+    "zillow_url": null,
+    "agent": {
+      "name": "Amanda Whitespeare",
+      "brokerage": "eXp Realty CitySide Properties",
+      "phone": "(713) 997-9027"
+    },
+    "sms_message": "Hi Amanda, this is Vivek, local Investor. Interested in your listing at 5011 Brisbane Dr, Houston TX 77048. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 160000,
+      "arv_high": 190000,
+      "comps": [
+        {
+          "address": "Kennedy Heights renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $155,000–$185,000; sqft 1,000–1,200; $130–155/sqft"
+        },
+        {
+          "address": "Med Center South sold (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $140,000–$175,000; sqft 1,000–1,300; $120–145/sqft"
+        }
+      ],
+      "red_flags": [
+        "Rooms gutted to studs — full renovation required",
+        "Plumbing, electrical, drywall, flooring — budget full interior",
+        "Brick exterior in good condition — no structural concerns visible"
+      ],
+      "opportunity_notes": [
+        "Medical Center South = Houston's strongest rental corridor",
+        "$110K entry = significant upside post-reno",
+        "Brick exterior reduces long-term maintenance",
+        "Kennedy Heights — established neighborhood"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "address": "1119 Verret Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77090",
+    "price": 129900,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 3403,
+    "year_built": 1969,
+    "price_per_sqft": 38,
+    "dom": 1,
+    "status": "Foreclosure",
+    "mls": "44939369",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/1119-verret-ln-houston-tx-77090/17744739",
+    "zillow_url": null,
+    "agent": {
+      "name": "Debbie Grigg",
+      "brokerage": "NextHome First Source",
+      "phone": "(281) 686-3345"
+    },
+    "sms_message": "Hi Debbie, this is Vivek, local Investor. Interested in your listing at 1119 Verret Ln, Houston TX 77090. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 220000,
+      "arv_high": 270000,
+      "comps": [
+        {
+          "address": "Westador area renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $230,000–$280,000; sqft 2,800–3,500; $75–90/sqft"
+        },
+        {
+          "address": "Cypress Creek North sold (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $200,000–$260,000; sqft 2,500–3,500; $70–85/sqft"
+        }
+      ],
+      "red_flags": [
+        "FIRE DAMAGED — full rebuild required",
+        "All windows boarded — property uninhabitable",
+        "Blue tarp on roof — roof severely damaged",
+        "Sold as-is, deed restrictions apply",
+        "Title search critical — foreclosure"
+      ],
+      "opportunity_notes": [
+        "$38/sqft = deeply distressed pricing",
+        "3,403 sqft + 4 bed = high ARV potential post-rebuild",
+        "Cypress Creek North = growing suburban market",
+        "Experienced contractor/developer opportunity"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "address": "878 Granville Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77091",
+    "price": 65000,
+    "beds": 3,
+    "baths": 1.5,
+    "sqft": 1526,
+    "year_built": 1947,
+    "price_per_sqft": 43,
+    "dom": 1,
+    "status": "Active",
+    "mls": "57993832",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/878-granville-dr-houston-tx-77091/17756842",
+    "zillow_url": null,
+    "agent": {
+      "name": "Steven Franco",
+      "brokerage": "Real Broker LLC",
+      "phone": "(832) 599-0533"
+    },
+    "sms_message": "Hi Steven, this is Vivek, local Investor. Interested in your listing at 878 Granville Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 130000,
+      "arv_high": 155000,
+      "comps": [
+        {
+          "address": "Green Meadows renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $130,000–$160,000; sqft 1,400–1,700; $85–100/sqft"
+        },
+        {
+          "address": "NW Houston sold comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $115,000–$150,000; sqft 1,300–1,600; $80–95/sqft"
+        }
+      ],
+      "red_flags": [
+        "1947 build — high priority: inspect knob & tube electrical, galvanized plumbing",
+        "No garage — limits rental appeal",
+        "Cosmetic updates needed throughout",
+        "HISD zoning — verify school district"
+      ],
+      "opportunity_notes": [
+        "$65K entry = lowest acquisition after #5",
+        "Hwy 290 & Ella Blvd = strong commuter access",
+        "Northwest Houston rental demand solid",
+        "$43/sqft = deep value-add potential"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "address": "422 Surratt Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77091",
+    "price": 25000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 1267,
+    "year_built": 1956,
+    "price_per_sqft": 20,
+    "dom": 1,
+    "status": "Foreclosure",
+    "mls": "64539181",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/422-surratt-dr-houston-tx-77091/17761934",
+    "zillow_url": null,
+    "agent": {
+      "name": "Marcia Warner",
+      "brokerage": "Coldwell Banker Realty",
+      "phone": "(936) 525-9561"
+    },
+    "sms_message": "Hi Marcia, this is Vivek, local Investor. Interested in your listing at 422 Surratt Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 115000,
+      "arv_high": 140000,
+      "comps": [
+        {
+          "address": "Wildrose Garden renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $120,000–$145,000; sqft 1,100–1,400; $95–110/sqft"
+        },
+        {
+          "address": "NW Houston sold comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $110,000–$140,000; sqft 1,100–1,400; $85–100/sqft"
+        }
+      ],
+      "red_flags": [
+        "AUCTION SALE — No interior showings, drive-by only",
+        "Interior condition completely unknown",
+        "1956 build — risk of knob & tube electrical, galvanized plumbing",
+        "Foreclosure — title search critical"
+      ],
+      "opportunity_notes": [
+        "Lowest price in batch at $25,000",
+        "Near I-45 = strong commuter rental location",
+        "1-car attached garage adds value",
+        "Wholesale/assignment play at this price"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "address": "4231 S Acres Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77047",
+    "price": 140000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1206,
+    "year_built": 1964,
+    "price_per_sqft": 116,
+    "dom": 2,
+    "status": "Active",
+    "mls": "62028743",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/4231-s-acres-dr-houston-tx-77047/17760082",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ashley Ruby",
+      "brokerage": "Waizel Properties",
+      "phone": "(281) 987-4403"
+    },
+    "sms_message": "Hi Ashley, this is Vivek, local Investor. Interested in your listing at 4231 S Acres Dr, Houston TX 77047. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "South Acres renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $175,000–$210,000; sqft 1,100–1,400; $140–160/sqft"
+        },
+        {
+          "address": "Med Center South comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $165,000–$200,000; sqft 1,100–1,400; $130–150/sqft"
+        }
+      ],
+      "red_flags": [
+        "Original fixtures throughout — full cosmetic renovation needed",
+        "Blue tile bathroom = budget full remodel",
+        "Yard overgrown — landscaping needed",
+        "1964 — inspect HVAC, plumbing, electrical"
+      ],
+      "opportunity_notes": [
+        "Medical Center South = Houston's strongest rental corridor",
+        "4 bed/2 bath Ranch + 2-car garage = ideal rental config",
+        "Brick Ranch = durable, great long-term hold",
+        "$116/sqft = room for value-add cosmetic reno"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "address": "125 W Sunnyside St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77076",
+    "price": 136000,
+    "beds": 3,
+    "baths": 1.5,
+    "sqft": 1453,
+    "year_built": 1952,
+    "price_per_sqft": 94,
+    "dom": 2,
+    "status": "Foreclosure",
+    "mls": "72284125",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/125-w-sunnyside-st-houston-tx-77076/17759201",
+    "zillow_url": null,
+    "agent": {
+      "name": "Chris Lawrence",
+      "brokerage": "Trillionaire Realty",
+      "phone": "(832) 455-3550"
+    },
+    "sms_message": "Hi Chris, this is Vivek, local Investor. Interested in your listing at 125 W Sunnyside St, Houston TX 77076. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "NW Houston renovated (pool)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $175,000–$210,000; sqft 1,300–1,600; $120–145/sqft"
+        },
+        {
+          "address": "Wildrose Gardens sold (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $150,000–$185,000; sqft 1,200–1,600; $110–130/sqft"
+        }
+      ],
+      "red_flags": [
+        "Kitchen currently missing — full kitchen install required",
+        "In-ground pool — inspect, service, or fill (cost varies widely)",
+        "Deferred maintenance throughout",
+        "1952 build — inspect electrical, plumbing",
+        "Foreclosure — title search required"
+      ],
+      "opportunity_notes": [
+        "In-ground pool = premium rental appeal in Houston heat",
+        "Near Moody Park, Northline Commons, Houston Farmers Market",
+        "Easy I-45 access = strong commuter location",
+        "$94/sqft = value-add room with reno"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "address": "7002 Jay St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 119000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1247,
+    "year_built": 1955,
+    "price_per_sqft": 95,
+    "dom": 3,
+    "status": "Active",
+    "mls": "11210072",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/7002-jay-st-houston-tx-77028/17749811",
+    "zillow_url": null,
+    "agent": {
+      "name": "Brian Hamill",
+      "brokerage": "Waizel Properties Spring",
+      "phone": "(936) 525-7686"
+    },
+    "sms_message": "Hi Brian, this is Vivek, local Investor. Interested in your listing at 7002 Jay St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 160000,
+      "arv_high": 185000,
+      "comps": [
+        {
+          "address": "Wesley Place renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $160,000–$190,000; sqft 1,100–1,400; $120–140/sqft"
+        },
+        {
+          "address": "Northside sold comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $145,000–$180,000; sqft 1,100–1,400; $110–130/sqft"
+        }
+      ],
+      "red_flags": [
+        "Fully gutted to studs — full interior renovation required",
+        "Plumbing, electrical, drywall, flooring, fixtures — full budget",
+        "Exterior siding weathered — may need replacement",
+        "1955 build — review structural integrity"
+      ],
+      "opportunity_notes": [
+        "Blank canvas = full custom interior layout possible",
+        "Large 9,750 sqft lot = outdoor value-add potential",
+        "2-car detached garage adds value",
+        "Wesley Place — Northside, solid working-class demand"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "address": "5115 Celestial Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77039",
+    "price": 120000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1251,
+    "year_built": 1968,
+    "price_per_sqft": 96,
+    "dom": 1,
+    "status": "Active",
+    "mls": "41082353",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/5115-celestial-ln-houston-tx-77039/17753672",
+    "zillow_url": null,
+    "agent": {
+      "name": "Renae Jackson",
+      "brokerage": "BHG RE Gary Greene",
+      "phone": "(281) 330-7579"
+    },
+    "sms_message": "Hi Renae, this is Vivek, local Investor. Interested in your listing at 5115 Celestial Ln, Houston TX 77039. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 155000,
+      "arv_high": 180000,
+      "comps": [
+        {
+          "address": "Green Valley renovated",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $155,000–$180,000; sqft 1,100–1,400; $120–135/sqft"
+        },
+        {
+          "address": "NE Houston sold comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $140,000–$170,000; sqft 1,100–1,400; $110–125/sqft"
+        }
+      ],
+      "red_flags": [
+        "Cosmetic renovation needed throughout",
+        "1968 build — inspect HVAC, plumbing, electrical",
+        "Yard maintenance required"
+      ],
+      "opportunity_notes": [
+        "Northeast Houston — growing rental demand",
+        "Beltway 8 access = strong commuter location",
+        "3/2 brick + 2-car garage = solid rental config",
+        "$96/sqft = value-add room with cosmetic reno"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "address": "11201 Muscatine St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77029",
+    "price": 129900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1312,
+    "year_built": 1955,
+    "price_per_sqft": 99,
+    "dom": 6,
+    "status": "Active",
+    "mls": "96512970",
+    "source": "HAR",
+    "har_url": "https://www.har.com/homedetail/11201-muscatine-st-houston-tx-77029/11684818",
+    "zillow_url": null,
+    "agent": {
+      "name": "Edward McClintick",
+      "brokerage": "Joseph Walter Realty LLC",
+      "phone": "(888) 227-1009"
+    },
+    "sms_message": "Hi Edward, this is Vivek, local Investor. Interested in your listing at 11201 Muscatine St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Cloverleaf renovated sales",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $165,000–$195,000; sqft 1,200–1,400; $125–145/sqft"
+        },
+        {
+          "address": "East Houston sold comps (90d)",
+          "sold_price": null,
+          "sqft": null,
+          "notes": "Price range $150,000–$185,000; sqft 1,100–1,400; $115–135/sqft"
+        }
+      ],
+      "red_flags": [
+        "1955 build — inspect electrical, plumbing thoroughly",
+        "Cosmetic renovation needed",
+        "1-car garage — limits rental premium slightly"
+      ],
+      "opportunity_notes": [
+        "6 DOM — slightly seasoned, seller potentially more motivated",
+        "East Houston / I-10 corridor = strong industrial worker rental demand",
+        "3/2 with garage in Cloverleaf = solid long-term rental",
+        "$99/sqft = upside with light reno"
+      ]
+    }
+  }
+]

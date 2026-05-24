@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Deals Generator · Texas Quick Home Buyer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a2540'/%3E%3Cpath d='M22 38 L32 24 L42 38 Z' fill='%23c9a961'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #0a2540;
+    --primary-light: #1e3a5f;
+    --accent: #c9a961;
+    --accent-dark: #a6874a;
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #1a1a1a;
+    --text-muted: #6b7280;
+    --positive: #10b981;
+    --negative: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 124px; }
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    margin: 0; padding: 0 0 60px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  header.site-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #fff;
+    padding: 22px 40px;
+    border-bottom: 4px solid var(--accent);
+  }
+  .header-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand-logo {
+    width: 46px; height: 46px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .brand-logo svg { width: 38px; height: 38px; }
+  header.site-header h1 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
+  header.site-header h1 em { color: var(--accent); font-style: normal; }
+  header.site-header .subtitle { font-size: 11px; opacity: 0.75; margin-top: 4px; letter-spacing: 1.5px; text-transform: uppercase; }
+  .header-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .header-pill {
+    background: rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.92);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .header-pill strong { color: var(--accent); margin-right: 4px; }
+  .print-btn {
+    background: var(--accent); color: var(--primary);
+    border: none; padding: 9px 18px;
+    border-radius: 6px; font-weight: 700;
+    cursor: pointer; font-size: 12px;
+    letter-spacing: 0.8px; font-family: inherit;
+    text-transform: uppercase;
+  }
+  .print-btn:hover { background: #fff; }
+  nav.sticky-nav {
+    position: sticky; top: 0;
+    background: rgba(255,255,255,0.98);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    z-index: 50;
+    padding: 0 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .nav-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center;
+    gap: 0; overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .nav-link {
+    padding: 14px 14px;
+    color: var(--text-muted); text-decoration: none;
+    font-size: 12px; font-weight: 600;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap; transition: color 0.15s, border-color 0.15s;
+  }
+  .nav-link:hover { color: var(--primary); }
+  .nav-link.active { color: var(--primary); border-bottom-color: var(--accent); }
+  .nav-link .num {
+    color: var(--accent-dark);
+    font-size: 11px;
+    margin-right: 5px;
+    font-weight: 800;
+  }
+  .hero {
+    max-width: 1400px; margin: 24px auto 0;
+    padding: 24px 40px;
+    background: linear-gradient(135deg, #fef9ed 0%, #fdf4dc 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(201, 169, 97, 0.3);
+  }
+  .hero-row {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .hero h2 { color: var(--primary); margin: 0 0 6px 0; font-size: 22px; font-weight: 700; }
+  .hero .desc { color: var(--text-muted); margin: 0; font-size: 13px; max-width: 700px; }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+  }
+  .stat {
+    background: rgba(255,255,255,0.7);
+    border: 1px solid rgba(201,169,97,0.2);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .stat .lbl {
+    font-size: 10px; color: var(--accent-dark);
+    letter-spacing: 1.2px; text-transform: uppercase;
+    font-weight: 800; margin-bottom: 4px;
+  }
+  .stat .val { font-size: 20px; font-weight: 700; color: var(--primary); font-variant-numeric: tabular-nums; }
+  .stat .sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  .filter-note {
+    max-width: 1400px; margin: 16px auto 0;
+    padding: 12px 40px;
+    font-size: 12px; color: var(--text-muted);
+  }
+  .filter-note strong { color: var(--primary); }
+  .filter-chip {
+    display: inline-block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 3px 10px;
+    margin: 0 4px 4px 0;
+    font-size: 11px;
+    color: var(--text);
+  }
+  .container { max-width: 1400px; margin: 24px auto 0; padding: 0 40px; }
+  .listing {
+    margin-bottom: 36px;
+    scroll-margin-top: 130px;
+  }
+  .section-header {
+    margin-bottom: 18px;
+    border-left: 5px solid var(--accent);
+    padding-left: 18px;
+  }
+  .section-header .kicker {
+    font-size: 11px; color: var(--accent-dark);
+    font-weight: 800; letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 4px;
+  }
+  .section-header h2 {
+    margin: 0; font-size: 22px; color: var(--primary);
+    font-weight: 700; line-height: 1.3;
+  }
+  .section-header .sub {
+    margin-top: 4px; color: var(--text-muted); font-size: 13px;
+  }
+  .status-badge {
+    display: inline-block;
+    font-size: 10px; font-weight: 800;
+    padding: 3px 9px; border-radius: 12px;
+    letter-spacing: 1px; text-transform: uppercase;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .status-Active { background: rgba(16,185,129,0.12); color: #065f46; border: 1px solid rgba(16,185,129,0.3); }
+  .status-Foreclosure { background: rgba(239,68,68,0.12); color: #991b1b; border: 1px solid rgba(239,68,68,0.3); }
+  .status-Auction { background: rgba(245,158,11,0.12); color: #92400e; border: 1px solid rgba(245,158,11,0.3); }
+  .listing-card {
+    background: var(--card);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .listing-card.texted {
+    border-color: var(--positive);
+    box-shadow: 0 1px 3px rgba(16,185,129,0.15), 0 4px 16px rgba(16,185,129,0.08);
+  }
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .fact {
+    padding: 14px 16px;
+    border-right: 1px solid var(--border);
+  }
+  .fact:last-child { border-right: none; }
+  .fact .lbl {
+    font-size: 10px; color: var(--text-muted);
+    letter-spacing: 1px; text-transform: uppercase;
+    font-weight: 700; margin-bottom: 2px;
+  }
+  .fact .val {
+    font-size: 16px; font-weight: 700; color: var(--primary);
+    font-variant-numeric: tabular-nums;
+  }
+  .fact .val.price { color: var(--positive); }
+  .card-body { padding: 22px 24px; }
+  .card-body h3 {
+    color: var(--primary); font-size: 14px;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 700; letter-spacing: 0.3px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card-body h3 .h-ico { color: var(--accent-dark); font-size: 12px; }
+  .card-body h3:not(:first-child) { margin-top: 24px; }
+  .arv-block {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border: 1px solid rgba(16,185,129,0.25);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .arv-block .arv-lbl {
+    font-size: 10px; color: #047857;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 800;
+  }
+  .arv-block .arv-val {
+    font-size: 22px; font-weight: 700; color: #065f46;
+    font-variant-numeric: tabular-nums; margin-top: 2px;
+  }
+  .arv-block .arv-spread {
+    text-align: right;
+  }
+  .arv-block .arv-spread .lbl { font-size: 10px; color: #047857; letter-spacing: 1px; text-transform: uppercase; font-weight: 800; }
+  .arv-block .arv-spread .val { font-size: 16px; font-weight: 700; color: #065f46; font-variant-numeric: tabular-nums; }
+  table.data-table {
+    width: 100%; border-collapse: collapse;
+    margin: 8px 0 4px;
+    font-size: 13px;
+  }
+  table.data-table th, table.data-table td {
+    padding: 9px 12px; text-align: left;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.data-table th {
+    background: var(--primary); color: #fff;
+    font-weight: 600; font-size: 11px; letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+  table.data-table tr:nth-child(even) { background: #fafbfc; }
+  .callout {
+    padding: 12px 16px; margin: 8px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 13px; line-height: 1.7;
+    border-left: 4px solid var(--info);
+    background: #eff6ff;
+  }
+  .callout.warning { background: #fef2f2; border-left-color: var(--negative); }
+  .callout.success { background: #f0fdf4; border-left-color: var(--positive); }
+  .callout ul { margin: 4px 0 0 0; padding-left: 18px; }
+  .callout li { margin: 3px 0; }
+  .callout-label {
+    font-size: 10px; font-weight: 800;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    display: block; margin-bottom: 4px;
+  }
+  .callout.warning .callout-label { color: #991b1b; }
+  .callout.success .callout-label { color: #065f46; }
+  .agent-block {
+    background: #fafbfc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .agent-avatar {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 16px;
+    flex-shrink: 0;
+  }
+  .agent-info { flex: 1; min-width: 180px; }
+  .agent-info .name { font-size: 14px; font-weight: 700; color: var(--primary); }
+  .agent-info .brokerage { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
+  .agent-phone {
+    font-size: 14px; font-weight: 700;
+    color: var(--info); text-decoration: none;
+    font-variant-numeric: tabular-nums;
+  }
+  .agent-phone:hover { text-decoration: underline; }
+  .sms-box {
+    background: linear-gradient(135deg, #e8f4fd 0%, #eef6ff 100%);
+    border: 1px solid #c5dff5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+  }
+  .sms-box .sms-lbl {
+    font-size: 10px; font-weight: 800; color: var(--info);
+    letter-spacing: 1.2px; text-transform: uppercase;
+    margin-bottom: 4px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .sms-box .sms-txt { font-size: 13px; line-height: 1.65; color: var(--text); }
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .btn {
+    display: flex; align-items: center; justify-content: center;
+    gap: 6px;
+    padding: 11px 12px;
+    border-radius: 8px;
+    font-size: 12.5px; font-weight: 700;
+    text-decoration: none;
+    border: none; cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.2px;
+    transition: opacity 0.15s, transform 0.1s, background 0.15s;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-sms { background: var(--positive); color: #fff; }
+  .btn-sms:hover { background: #0ea372; }
+  .btn-call { background: var(--info); color: #fff; }
+  .btn-call:hover { background: #2563eb; }
+  .btn-har { background: var(--primary); color: #fff; }
+  .btn-har:hover { background: var(--primary-light); }
+  .btn-save { background: var(--accent); color: var(--primary); }
+  .btn-save:hover { background: var(--accent-dark); color: #fff; }
+  .btn-copy { background: #f3f4f6; color: var(--text); border: 1px solid var(--border); }
+  .btn-copy:hover { background: #e5e7eb; }
+  .control-row {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap;
+    margin-top: 16px; padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .texted-toggle {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; color: var(--text);
+    cursor: pointer;
+    user-select: none;
+  }
+  .texted-toggle input { width: 16px; height: 16px; accent-color: var(--positive); cursor: pointer; }
+  .texted-toggle .pill {
+    display: none;
+    background: rgba(16,185,129,0.15);
+    color: #065f46;
+    border: 1px solid var(--positive);
+    font-size: 10px; font-weight: 800;
+    padding: 2px 8px; border-radius: 10px;
+    letter-spacing: 0.8px; text-transform: uppercase;
+  }
+  .listing-card.texted .texted-toggle .pill { display: inline-block; }
+  .remarks-wrap { flex: 1; min-width: 200px; }
+  .remarks {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 12.5px;
+    resize: vertical;
+    min-height: 38px;
+    background: #fafbfc;
+  }
+  .remarks:focus { outline: none; border-color: var(--accent); background: #fff; }
+  footer.site-footer {
+    max-width: 1400px;
+    margin: 60px auto 0;
+    padding: 28px 40px;
+    border-top: 2px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+  footer.site-footer .brand-mini {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-weight: 700;
+  }
+  footer.site-footer .brand-mini svg { width: 22px; height: 22px; }
+  @media (max-width: 768px) {
+    header.site-header { padding: 16px 18px; }
+    nav.sticky-nav { padding: 0 18px; }
+    .container, .hero, .filter-note { padding-left: 18px; padding-right: 18px; }
+    .hero { margin-left: 12px; margin-right: 12px; }
+    header.site-header h1 { font-size: 17px; }
+    .card-body { padding: 16px 14px; }
+    .section-header h2 { font-size: 18px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media print {
+    nav.sticky-nav, .header-actions, .actions, .control-row, footer { display: none !important; }
+    body { background: #fff; }
+    .listing-card { break-inside: avoid; page-break-inside: avoid; box-shadow: none; }
+    .listing { margin-bottom: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-logo">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="10" fill="#0a2540"/>
+          <path d="M14 16 L14 24 L18 24 L18 38 L22 38 L22 44 L26 44 L26 52 L34 52 L34 48 L42 48 L42 52 L46 52 L46 44 L50 44 L50 38 L54 38 L54 24 L50 24 L50 16 L42 16 L42 12 L36 12 L36 18 L28 18 L28 12 L22 12 L22 16 Z" fill="#c9a961" opacity="0.85"/>
+          <path d="M26 36 L32 28 L38 36 L38 42 L34 42 L34 38 L30 38 L30 42 L26 42 Z" fill="#fff"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Texas Quick <em>Home Buyer</em></h1>
+        <div class="subtitle">Daily Deals Generator</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span class="header-pill"><strong id="reportDate">—</strong></span>
+      <span class="header-pill"><strong id="reportCount">—</strong> Listings</span>
+      <button class="print-btn" onclick="window.print()">Print Report</button>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky-nav">
+  <div class="nav-inner" id="navLinks"></div>
+</nav>
+
+<div class="hero">
+  <div class="hero-row">
+    <div>
+      <h2>Houston Investment Deal Report</h2>
+      <p class="desc">AI-curated Single Family Residences in Houston & 50-mile radius, sourced from HAR.com. Each listing includes ARV estimate, area comparables, red flags, opportunity notes, and pre-filled agent outreach.</p>
+    </div>
+  </div>
+  <div class="stats-grid" id="heroStats"></div>
+</div>
+
+<div class="filter-note">
+  <strong>Search Criteria:</strong>
+  <span class="filter-chip">City: Houston</span>
+  <span class="filter-chip">For Sale</span>
+  <span class="filter-chip">SFR</span>
+  <span class="filter-chip">Max Baths: 2</span>
+  <span class="filter-chip">Run 1 · ≤$100K · Price Drop ON</span>
+  <span class="filter-chip">Run 2 · ≤$100K · Price Drop OFF</span>
+  <span class="filter-chip">Run 3 · ≤$200K · Price Drop ON</span>
+  <span class="filter-chip">Run 4 · ≤$200K · Price Drop OFF</span>
+</div>
+
+<div class="container" id="listings"></div>
+
+<footer class="site-footer">
+  <div class="brand-mini">
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+      <rect width="64" height="64" rx="10" fill="#0a2540"/>
+      <path d="M26 38 L32 28 L38 38 Z" fill="#c9a961"/>
+    </svg>
+    <span>Texas Quick Home Buyer</span>
+  </div>
+  <div>Daily Deals Generator · Generated by AI · Investment property analysis for Vivek</div>
+  <div style="margin-top:6px;opacity:0.7">texasquickhomebuyer@gmail.com · Houston, TX (50-mile radius)</div>
+</footer>
+
+<script>
+// Replace LISTINGS with daily scraper output (same shape).
+const LISTINGS = [
+  {"id":1,"address":"10341 Caxton St","city":"Houston","state":"TX","zip":"77016","price":150000,"beds":3,"baths":1,"sqft":1317,"year_built":1960,"price_per_sqft":114,"dom":1,"status":"Active","mls":"10357889","source":"HAR","har_url":"https://www.har.com/homedetail/10341-caxton-st-houston-tx-77016/17748419","zillow_url":null,"agent":{"name":"Virginia Espinoza","brokerage":"eXp Realty LLC","phone":"(346) 600-8833"},"sms_message":"Hi Virginia, this is Vivek, local Investor. Interested in your listing at 10341 Caxton St, Houston TX 77016. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":175000,"arv_high":200000,"comps":[{"address":"Henry Place area avg","notes":"Price range $155,000–$175,000; sqft 1,300–1,500; $110–120/sqft"},{"address":"Northside sold comps (90d)","notes":"Price range $130,000–$165,000; sqft 1,200–1,600; $95–115/sqft"}],"red_flags":["Cosmetic updates likely needed interior","1960 build — verify plumbing/electrical condition","Yard maintenance needed"],"opportunity_notes":["2024 AC + new roof = major capex already done","No HOA = easy rental","Northside location — solid working-class rental demand","Strong fix-and-rent candidate at $150K"]}},
+  {"id":2,"address":"5011 Brisbane Dr","city":"Houston","state":"TX","zip":"77048","price":110000,"beds":3,"baths":2,"sqft":1049,"year_built":1963,"price_per_sqft":105,"dom":1,"status":"Active","mls":"41138410","source":"HAR","har_url":"https://www.har.com/homedetail/5011-brisbane-dr-houston-tx-77048/17748920","zillow_url":null,"agent":{"name":"Amanda Whitespeare","brokerage":"eXp Realty CitySide Properties","phone":"(713) 997-9027"},"sms_message":"Hi Amanda, this is Vivek, local Investor. Interested in your listing at 5011 Brisbane Dr, Houston TX 77048. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":160000,"arv_high":190000,"comps":[{"address":"Kennedy Heights renovated","notes":"Price range $155,000–$185,000; sqft 1,000–1,200; $130–155/sqft"},{"address":"Med Center South sold (90d)","notes":"Price range $140,000–$175,000; sqft 1,000–1,300; $120–145/sqft"}],"red_flags":["Rooms gutted to studs — full renovation required","Plumbing, electrical, drywall, flooring — budget full interior","Brick exterior in good condition — no structural concerns visible"],"opportunity_notes":["Medical Center South = Houston's strongest rental corridor","$110K entry = significant upside post-reno","Brick exterior reduces long-term maintenance","Kennedy Heights — established neighborhood"]}},
+  {"id":3,"address":"1119 Verret Ln","city":"Houston","state":"TX","zip":"77090","price":129900,"beds":4,"baths":2.5,"sqft":3403,"year_built":1969,"price_per_sqft":38,"dom":1,"status":"Foreclosure","mls":"44939369","source":"HAR","har_url":"https://www.har.com/homedetail/1119-verret-ln-houston-tx-77090/17744739","zillow_url":null,"agent":{"name":"Debbie Grigg","brokerage":"NextHome First Source","phone":"(281) 686-3345"},"sms_message":"Hi Debbie, this is Vivek, local Investor. Interested in your listing at 1119 Verret Ln, Houston TX 77090. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":220000,"arv_high":270000,"comps":[{"address":"Westador area renovated","notes":"Price range $230,000–$280,000; sqft 2,800–3,500; $75–90/sqft"},{"address":"Cypress Creek North sold (90d)","notes":"Price range $200,000–$260,000; sqft 2,500–3,500; $70–85/sqft"}],"red_flags":["FIRE DAMAGED — full rebuild required","All windows boarded — property uninhabitable","Blue tarp on roof — roof severely damaged","Sold as-is, deed restrictions apply","Title search critical — foreclosure"],"opportunity_notes":["$38/sqft = deeply distressed pricing","3,403 sqft + 4 bed = high ARV potential post-rebuild","Cypress Creek North = growing suburban market","Experienced contractor/developer opportunity"]}},
+  {"id":4,"address":"878 Granville Dr","city":"Houston","state":"TX","zip":"77091","price":65000,"beds":3,"baths":1.5,"sqft":1526,"year_built":1947,"price_per_sqft":43,"dom":1,"status":"Active","mls":"57993832","source":"HAR","har_url":"https://www.har.com/homedetail/878-granville-dr-houston-tx-77091/17756842","zillow_url":null,"agent":{"name":"Steven Franco","brokerage":"Real Broker LLC","phone":"(832) 599-0533"},"sms_message":"Hi Steven, this is Vivek, local Investor. Interested in your listing at 878 Granville Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":130000,"arv_high":155000,"comps":[{"address":"Green Meadows renovated","notes":"Price range $130,000–$160,000; sqft 1,400–1,700; $85–100/sqft"},{"address":"NW Houston sold comps (90d)","notes":"Price range $115,000–$150,000; sqft 1,300–1,600; $80–95/sqft"}],"red_flags":["1947 build — high priority: inspect knob & tube electrical, galvanized plumbing","No garage — limits rental appeal","Cosmetic updates needed throughout","HISD zoning — verify school district"],"opportunity_notes":["$65K entry = lowest acquisition after #5","Hwy 290 & Ella Blvd = strong commuter access","Northwest Houston rental demand solid","$43/sqft = deep value-add potential"]}},
+  {"id":5,"address":"422 Surratt Dr","city":"Houston","state":"TX","zip":"77091","price":25000,"beds":2,"baths":1,"sqft":1267,"year_built":1956,"price_per_sqft":20,"dom":1,"status":"Foreclosure","mls":"64539181","source":"HAR","har_url":"https://www.har.com/homedetail/422-surratt-dr-houston-tx-77091/17761934","zillow_url":null,"agent":{"name":"Marcia Warner","brokerage":"Coldwell Banker Realty","phone":"(936) 525-9561"},"sms_message":"Hi Marcia, this is Vivek, local Investor. Interested in your listing at 422 Surratt Dr, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":115000,"arv_high":140000,"comps":[{"address":"Wildrose Garden renovated","notes":"Price range $120,000–$145,000; sqft 1,100–1,400; $95–110/sqft"},{"address":"NW Houston sold comps (90d)","notes":"Price range $110,000–$140,000; sqft 1,100–1,400; $85–100/sqft"}],"red_flags":["AUCTION SALE — No interior showings, drive-by only","Interior condition completely unknown","1956 build — risk of knob & tube electrical, galvanized plumbing","Foreclosure — title search critical"],"opportunity_notes":["Lowest price in batch at $25,000","Near I-45 = strong commuter rental location","1-car attached garage adds value","Wholesale/assignment play at this price"]}},
+  {"id":6,"address":"4231 S Acres Dr","city":"Houston","state":"TX","zip":"77047","price":140000,"beds":4,"baths":2,"sqft":1206,"year_built":1964,"price_per_sqft":116,"dom":2,"status":"Active","mls":"62028743","source":"HAR","har_url":"https://www.har.com/homedetail/4231-s-acres-dr-houston-tx-77047/17760082","zillow_url":null,"agent":{"name":"Ashley Ruby","brokerage":"Waizel Properties","phone":"(281) 987-4403"},"sms_message":"Hi Ashley, this is Vivek, local Investor. Interested in your listing at 4231 S Acres Dr, Houston TX 77047. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":175000,"arv_high":205000,"comps":[{"address":"South Acres renovated","notes":"Price range $175,000–$210,000; sqft 1,100–1,400; $140–160/sqft"},{"address":"Med Center South comps (90d)","notes":"Price range $165,000–$200,000; sqft 1,100–1,400; $130–150/sqft"}],"red_flags":["Original fixtures throughout — full cosmetic renovation needed","Blue tile bathroom = budget full remodel","Yard overgrown — landscaping needed","1964 — inspect HVAC, plumbing, electrical"],"opportunity_notes":["Medical Center South = Houston's strongest rental corridor","4 bed/2 bath Ranch + 2-car garage = ideal rental config","Brick Ranch = durable, great long-term hold","$116/sqft = room for value-add cosmetic reno"]}},
+  {"id":7,"address":"125 W Sunnyside St","city":"Houston","state":"TX","zip":"77076","price":136000,"beds":3,"baths":1.5,"sqft":1453,"year_built":1952,"price_per_sqft":94,"dom":2,"status":"Foreclosure","mls":"72284125","source":"HAR","har_url":"https://www.har.com/homedetail/125-w-sunnyside-st-houston-tx-77076/17759201","zillow_url":null,"agent":{"name":"Chris Lawrence","brokerage":"Trillionaire Realty","phone":"(832) 455-3550"},"sms_message":"Hi Chris, this is Vivek, local Investor. Interested in your listing at 125 W Sunnyside St, Houston TX 77076. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":165000,"arv_high":195000,"comps":[{"address":"NW Houston renovated (pool)","notes":"Price range $175,000–$210,000; sqft 1,300–1,600; $120–145/sqft"},{"address":"Wildrose Gardens sold (90d)","notes":"Price range $150,000–$185,000; sqft 1,200–1,600; $110–130/sqft"}],"red_flags":["Kitchen currently missing — full kitchen install required","In-ground pool — inspect, service, or fill (cost varies widely)","Deferred maintenance throughout","1952 build — inspect electrical, plumbing","Foreclosure — title search required"],"opportunity_notes":["In-ground pool = premium rental appeal in Houston heat","Near Moody Park, Northline Commons, Houston Farmers Market","Easy I-45 access = strong commuter location","$94/sqft = value-add room with reno"]}},
+  {"id":8,"address":"7002 Jay St","city":"Houston","state":"TX","zip":"77028","price":119000,"beds":3,"baths":2,"sqft":1247,"year_built":1955,"price_per_sqft":95,"dom":3,"status":"Active","mls":"11210072","source":"HAR","har_url":"https://www.har.com/homedetail/7002-jay-st-houston-tx-77028/17749811","zillow_url":null,"agent":{"name":"Brian Hamill","brokerage":"Waizel Properties Spring","phone":"(936) 525-7686"},"sms_message":"Hi Brian, this is Vivek, local Investor. Interested in your listing at 7002 Jay St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":160000,"arv_high":185000,"comps":[{"address":"Wesley Place renovated","notes":"Price range $160,000–$190,000; sqft 1,100–1,400; $120–140/sqft"},{"address":"Northside sold comps (90d)","notes":"Price range $145,000–$180,000; sqft 1,100–1,400; $110–130/sqft"}],"red_flags":["Fully gutted to studs — full interior renovation required","Plumbing, electrical, drywall, flooring, fixtures — full budget","Exterior siding weathered — may need replacement","1955 build — review structural integrity"],"opportunity_notes":["Blank canvas = full custom interior layout possible","Large 9,750 sqft lot = outdoor value-add potential","2-car detached garage adds value","Wesley Place — Northside, solid working-class demand"]}},
+  {"id":9,"address":"5115 Celestial Ln","city":"Houston","state":"TX","zip":"77039","price":120000,"beds":3,"baths":2,"sqft":1251,"year_built":1968,"price_per_sqft":96,"dom":1,"status":"Active","mls":"41082353","source":"HAR","har_url":"https://www.har.com/homedetail/5115-celestial-ln-houston-tx-77039/17753672","zillow_url":null,"agent":{"name":"Renae Jackson","brokerage":"BHG RE Gary Greene","phone":"(281) 330-7579"},"sms_message":"Hi Renae, this is Vivek, local Investor. Interested in your listing at 5115 Celestial Ln, Houston TX 77039. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":155000,"arv_high":180000,"comps":[{"address":"Green Valley renovated","notes":"Price range $155,000–$180,000; sqft 1,100–1,400; $120–135/sqft"},{"address":"NE Houston sold comps (90d)","notes":"Price range $140,000–$170,000; sqft 1,100–1,400; $110–125/sqft"}],"red_flags":["Cosmetic renovation needed throughout","1968 build — inspect HVAC, plumbing, electrical","Yard maintenance required"],"opportunity_notes":["Northeast Houston — growing rental demand","Beltway 8 access = strong commuter location","3/2 brick + 2-car garage = solid rental config","$96/sqft = value-add room with cosmetic reno"]}},
+  {"id":10,"address":"11201 Muscatine St","city":"Houston","state":"TX","zip":"77029","price":129900,"beds":3,"baths":2,"sqft":1312,"year_built":1955,"price_per_sqft":99,"dom":6,"status":"Active","mls":"96512970","source":"HAR","har_url":"https://www.har.com/homedetail/11201-muscatine-st-houston-tx-77029/11684818","zillow_url":null,"agent":{"name":"Edward McClintick","brokerage":"Joseph Walter Realty LLC","phone":"(888) 227-1009"},"sms_message":"Hi Edward, this is Vivek, local Investor. Interested in your listing at 11201 Muscatine St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!","ai_report":{"arv_low":165000,"arv_high":195000,"comps":[{"address":"Cloverleaf renovated sales","notes":"Price range $165,000–$195,000; sqft 1,200–1,400; $125–145/sqft"},{"address":"East Houston sold comps (90d)","notes":"Price range $150,000–$185,000; sqft 1,100–1,400; $115–135/sqft"}],"red_flags":["1955 build — inspect electrical, plumbing thoroughly","Cosmetic renovation needed","1-car garage — limits rental premium slightly"],"opportunity_notes":["6 DOM — slightly seasoned, seller potentially more motivated","East Houston / I-10 corridor = strong industrial worker rental demand","3/2 with garage in Cloverleaf = solid long-term rental","$99/sqft = upside with light reno"]}}
+];
+
+const fmtMoney = n => n == null ? '—' : '$' + n.toLocaleString('en-US');
+const fmtMoneyShort = n => n == null ? '—' : n >= 1000 ? '$' + (n/1000).toFixed(n>=10000?0:1) + 'K' : '$' + n;
+const initials = name => name.split(' ').map(w => w[0]).slice(0,2).join('').toUpperCase();
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeId = s => 'prop-' + s;
+
+function renderHero() {
+  const n = LISTINGS.length;
+  const prices = LISTINGS.map(l => l.price).filter(Boolean);
+  const minPrice = Math.min.apply(null, prices);
+  const maxPrice = Math.max.apply(null, prices);
+  const avgARV = LISTINGS.reduce((s,l)=>s+(l.ai_report.arv_low+l.ai_report.arv_high)/2, 0) / n;
+  const avgPrice = prices.reduce((a,b)=>a+b,0)/n;
+  const avgUpside = ((avgARV - avgPrice) / avgPrice * 100).toFixed(0);
+  const distressed = LISTINGS.filter(l => l.status === 'Foreclosure' || l.status === 'Auction').length;
+  document.getElementById('reportCount').textContent = String(n);
+  document.getElementById('reportDate').textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const heroHtml =
+    '<div class="stat"><div class="lbl">Listings</div><div class="val">' + n + '</div><div class="sub">Today\'s batch</div></div>' +
+    '<div class="stat"><div class="lbl">Price Range</div><div class="val">' + fmtMoneyShort(minPrice) + '–' + fmtMoneyShort(maxPrice) + '</div><div class="sub">Avg ' + fmtMoneyShort(avgPrice) + '</div></div>' +
+    '<div class="stat"><div class="lbl">Avg ARV Upside</div><div class="val">+' + avgUpside + '%</div><div class="sub">Post-renovation</div></div>' +
+    '<div class="stat"><div class="lbl">Distressed</div><div class="val">' + distressed + ' / ' + n + '</div><div class="sub">Foreclosure/Auction</div></div>';
+  document.getElementById('heroStats').insertAdjacentHTML('beforeend', heroHtml);
+}
+
+function renderNav() {
+  const navHtml = LISTINGS.map(l =>
+    '<a href="#' + safeId(l.id) + '" class="nav-link" data-id="' + l.id + '"><span class="num">' + String(l.id).padStart(2,'0') + '</span>' + esc(l.zip) + ' · ' + fmtMoneyShort(l.price) + '</a>'
+  ).join('');
+  document.getElementById('navLinks').insertAdjacentHTML('beforeend', navHtml);
+}
+
+function renderListing(l) {
+  const id = safeId(l.id);
+  const totalUpside = ((l.ai_report.arv_high - l.price) / l.price * 100).toFixed(0);
+  const avgArv = (l.ai_report.arv_low + l.ai_report.arv_high) / 2;
+  const spread = avgArv - l.price;
+  const compsRows = l.ai_report.comps.map(c =>
+    '<tr><td><strong>' + esc(c.address) + '</strong></td><td>' + esc(c.notes || '—') + '</td></tr>'
+  ).join('');
+  const flagsList = l.ai_report.red_flags.map(f => '<li>' + esc(f) + '</li>').join('');
+  const oppsList = l.ai_report.opportunity_notes.map(o => '<li>' + esc(o) + '</li>').join('');
+  const phoneClean = l.agent.phone.replace(/[^\d]/g, '');
+  return '<section class="listing" id="' + id + '">'
+    + '<div class="section-header">'
+    + '<div class="kicker">Property ' + String(l.id).padStart(2,'0') + ' · MLS ' + esc(l.mls) + ' · ' + esc(l.source) + '</div>'
+    + '<h2>' + esc(l.address) + ', ' + esc(l.city) + ' ' + esc(l.state) + ' ' + esc(l.zip) + ' <span class="status-badge status-' + esc(l.status) + '">' + esc(l.status) + '</span></h2>'
+    + '<div class="sub">' + (l.beds || '?') + ' Bed · ' + (l.baths || '?') + ' Bath · ' + (l.sqft||0).toLocaleString() + ' sqft · Built ' + (l.year_built || '?') + ' · ' + l.dom + ' DOM</div>'
+    + '</div>'
+    + '<div class="listing-card" data-id="' + l.id + '">'
+    + '<div class="facts-grid">'
+    + '<div class="fact"><div class="lbl">List Price</div><div class="val price">' + fmtMoney(l.price) + '</div></div>'
+    + '<div class="fact"><div class="lbl">Beds / Baths</div><div class="val">' + (l.beds || '?') + ' / ' + (l.baths || '?') + '</div></div>'
+    + '<div class="fact"><div class="lbl">Sqft</div><div class="val">' + (l.sqft||0).toLocaleString() + '</div></div>'
+    + '<div class="fact"><div class="lbl">$ / Sqft</div><div class="val">$' + (l.price_per_sqft || '?') + '</div></div>'
+    + '<div class="fact"><div class="lbl">Year Built</div><div class="val">' + (l.year_built || '?') + '</div></div>'
+    + '<div class="fact"><div class="lbl">DOM</div><div class="val">' + l.dom + '</div></div>'
+    + '</div>'
+    + '<div class="card-body">'
+    + '<h3><span class="h-ico">▸</span> AI Valuation Report</h3>'
+    + '<div class="arv-block">'
+    + '<div><div class="arv-lbl">After Repair Value (ARV)</div><div class="arv-val">' + fmtMoney(l.ai_report.arv_low) + ' – ' + fmtMoney(l.ai_report.arv_high) + '</div></div>'
+    + '<div class="arv-spread"><div class="lbl">Upside vs List</div><div class="val">+' + fmtMoneyShort(spread) + ' (' + totalUpside + '%)</div></div>'
+    + '</div>'
+    + '<h3><span class="h-ico">▸</span> Area Comparables</h3>'
+    + '<table class="data-table"><thead><tr><th style="width:38%">Area</th><th>Range / Sqft / $ per Sqft</th></tr></thead><tbody>' + compsRows + '</tbody></table>'
+    + '<h3><span class="h-ico">▸</span> Red Flags &amp; Opportunities</h3>'
+    + '<div class="callout warning"><span class="callout-label">⚠ Red Flags</span><ul>' + flagsList + '</ul></div>'
+    + '<div class="callout success"><span class="callout-label">✓ Opportunity Notes</span><ul>' + oppsList + '</ul></div>'
+    + '<h3><span class="h-ico">▸</span> Listing Agent</h3>'
+    + '<div class="agent-block">'
+    + '<div class="agent-avatar">' + initials(l.agent.name) + '</div>'
+    + '<div class="agent-info"><div class="name">' + esc(l.agent.name) + '</div><div class="brokerage">' + esc(l.agent.brokerage) + '</div></div>'
+    + '<a class="agent-phone" href="tel:' + phoneClean + '">' + esc(l.agent.phone) + '</a>'
+    + '</div>'
+    + '<div class="sms-box"><div class="sms-lbl"><span>📱 Pre-filled SMS</span></div><div class="sms-txt" id="sms-' + l.id + '">' + esc(l.sms_message) + '</div></div>'
+    + '<div class="actions">'
+    + '<a class="btn btn-sms" href="sms:' + phoneClean + '&body=' + encodeURIComponent(l.sms_message) + '">📱 Text Agent</a>'
+    + '<a class="btn btn-call" href="tel:' + phoneClean + '">📞 Call</a>'
+    + '<a class="btn btn-har" href="' + esc(l.har_url || '#') + '" target="_blank" rel="noopener">🏠 HAR Listing</a>'
+    + '<button class="btn btn-save" onclick="saveContact(' + l.id + ')">💾 Save Contact</button>'
+    + '<button class="btn btn-copy" onclick="copyMessage(' + l.id + ', event)">📋 Copy SMS</button>'
+    + '</div>'
+    + '<div class="control-row">'
+    + '<label class="texted-toggle">'
+    + '<input type="checkbox" data-texted="' + l.id + '"><span>Mark as Texted</span><span class="pill">✓ Texted</span>'
+    + '</label>'
+    + '<div class="remarks-wrap"><textarea class="remarks" placeholder="Remarks / notes…" data-remarks="' + l.id + '"></textarea></div>'
+    + '</div>'
+    + '</div></div></section>';
+}
+
+function copyMessage(id, evt) {
+  const l = LISTINGS.find(x => x.id === id);
+  navigator.clipboard.writeText(l.sms_message).then(() => {
+    const btn = evt.target;
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied';
+    setTimeout(() => { btn.textContent = orig; }, 1400);
+  });
+}
+
+function saveContact(id) {
+  const l = LISTINGS.find(x => x.id === id);
+  const phoneClean = l.agent.phone.replace(/[^\d]/g, '');
+  const vcard = ['BEGIN:VCARD','VERSION:3.0','FN:' + l.agent.name,'ORG:' + l.agent.brokerage,'TEL;TYPE=CELL:+1' + phoneClean,'NOTE:TQHB Listing #' + l.id + ' — ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip,'END:VCARD'].join('\n');
+  const blob = new Blob([vcard], { type: 'text/vcard' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = l.agent.name.replace(/\s/g,'_') + '.vcf';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function loadState() {
+  document.querySelectorAll('[data-texted]').forEach(cb => {
+    const id = cb.dataset.texted;
+    const key = 'tqhb_texted_' + id;
+    if (localStorage.getItem(key) === '1') {
+      cb.checked = true;
+      cb.closest('.listing-card').classList.add('texted');
+    }
+    cb.addEventListener('change', () => {
+      localStorage.setItem(key, cb.checked ? '1' : '0');
+      cb.closest('.listing-card').classList.toggle('texted', cb.checked);
+    });
+  });
+  document.querySelectorAll('[data-remarks]').forEach(ta => {
+    const id = ta.dataset.remarks;
+    const key = 'tqhb_remarks_' + id;
+    ta.value = localStorage.getItem(key) || '';
+    ta.addEventListener('input', () => localStorage.setItem(key, ta.value));
+  });
+}
+
+function initScrollspy() {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('.listing');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const id = e.target.id;
+        navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+      }
+    });
+  }, { rootMargin: '-130px 0px -60% 0px' });
+  sections.forEach(s => observer.observe(s));
+}
+
+function init() {
+  renderHero();
+  renderNav();
+  const listingsHtml = LISTINGS.map(renderListing).join('');
+  document.getElementById('listings').insertAdjacentHTML('beforeend', listingsHtml);
+  loadState();
+  initScrollspy();
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
