@@ -3585,14 +3585,12 @@ function skipCurrentAgent() {
 // "TQHB Text Agents" Shortcut installed on the user's iPhone via
 // the shortcuts:// URL scheme. The Shortcut loops Send Message.
 // See setup-shortcut.html for one-time install instructions.
-function runSiriShortcut() {
+async function runSiriShortcut() {
   const queue = buildTextQueue();
   if (queue.length === 0) {
     alert('Queue empty — all agents already texted today for the current filter.');
     return;
   }
-  // Flatten to a simple array of one entry per AGENT-MESSAGE pair.
-  // For agents with mixed status, this produces 2 messages (one Active, one UC).
   const payload = queue.map(item => ({
     name: item.agent.name,
     phone: '+1' + phoneKey(item.agent.phone),
@@ -3601,16 +3599,23 @@ function runSiriShortcut() {
     mls_list: item.listings.map(l => l.mls).join(',')
   }));
   const jsonStr = JSON.stringify({ generated_at: new Date().toISOString(), count: payload.length, queue: payload });
-  const encoded = encodeURIComponent(jsonStr);
-  const url = 'shortcuts://run-shortcut?name=' + encodeURIComponent('TQHB Text Agents') + '&input=text&text=' + encoded;
-  if (url.length > 30000) {
-    alert('Queue too large (' + payload.length + ' messages, ' + url.length + ' chars). Use Text One-by-One instead, or run a filtered subset.');
+
+  const ok = confirm(
+    'Hand off ' + payload.length + ' message' + (payload.length===1?'':'s') +
+    ' to TQHB Text Agents Shortcut?\n\n' +
+    'Queue will be copied to your clipboard, then Shortcut opens to read it.\n\n' +
+    'iOS sends ~10 SMS/minute, so ' + payload.length + ' messages will take ~' +
+    Math.ceil(payload.length/10) + ' min total. Keep Shortcuts app foregrounded.'
+  );
+  if (!ok) return;
+
+  try {
+    await navigator.clipboard.writeText(jsonStr);
+  } catch (e) {
+    alert('Could not copy to clipboard: ' + e.message + '\n\nTry tapping the page first to give it focus, then Run Shortcut again.');
     return;
   }
-  // Confirm before launching the Shortcut so user knows what's happening.
-  const ok = confirm('Hand off ' + payload.length + ' message' + (payload.length===1?'':'s') + ' to the TQHB Text Agents Shortcut?\n\nMake sure you have installed the Shortcut first (see Setup button).');
-  if (!ok) return;
-  // Mark all as sent (Shortcut will actually fire them).
+
   queue.forEach(item => {
     const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + item.type + '_' + today();
     localStorage.setItem(k, '1');
@@ -3620,7 +3625,8 @@ function runSiriShortcut() {
       if (cb) { cb.checked = true; cb.closest('.listing-card').classList.add('texted'); }
     });
   });
-  window.location.href = url;
+  // No payload in URL — Shortcut reads from clipboard
+  window.location.href = 'shortcuts://run-shortcut?name=' + encodeURIComponent('TQHB Text Agents');
 }
 
 // ============================================================
