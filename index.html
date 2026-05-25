@@ -940,6 +940,8 @@
   <button class="filter-pill" data-filter="active" onclick="applyStatusFilter('active')">Active Only</button>
   <button class="filter-pill uc" data-filter="uc" onclick="applyStatusFilter('uc')">⚠ Under Contract Only</button>
   <button class="filter-pill" data-filter="foreclosure" onclick="applyStatusFilter('foreclosure')">🔥 Foreclosure Only</button>
+  <input id="mlsSearch" type="search" placeholder="🔍 Search by MLS, address, or agent…" oninput="onMlsSearch(this.value)"
+    style="margin-left:18px;flex:1;max-width:380px;padding:7px 12px;border:1px solid var(--border);border-radius:6px;background:#fff;font-size:13px;font-family:inherit;outline:none" />
   <span style="margin-left:auto;font-size:11px;color:var(--text-muted)" id="filterStats"></span>
 </div>
 
@@ -30356,12 +30358,35 @@ function renderEmptyScenario(sc) {
 
 // Status filter — drives both visible listings and batch SMS queue.
 let activeFilter = 'all';
+let searchTerm = '';
+
 function shouldShow(l) {
-  if (activeFilter === 'all') return true;
-  if (activeFilter === 'uc') return isUnderContract(l);
-  if (activeFilter === 'foreclosure') return /foreclosure|auction/i.test(l.status || '');
-  if (activeFilter === 'active') return !isUnderContract(l) && !/foreclosure|auction/i.test(l.status || '');
+  // Status filter
+  let statusOk = true;
+  if (activeFilter === 'uc') statusOk = isUnderContract(l);
+  else if (activeFilter === 'foreclosure') statusOk = /foreclosure|auction/i.test(l.status || '');
+  else if (activeFilter === 'active') statusOk = !isUnderContract(l) && !/foreclosure|auction/i.test(l.status || '');
+  if (!statusOk) return false;
+  // Search filter — matches MLS, address, agent name, brokerage (case-insensitive substring)
+  if (searchTerm) {
+    const t = searchTerm.toLowerCase();
+    const hay = ((l.mls || '') + ' ' + (l.address || '') + ' ' + (l.city || '') + ' ' + (l.zip || '') + ' ' + (l.agent?.name || '') + ' ' + (l.agent?.brokerage || '')).toLowerCase();
+    if (!hay.includes(t)) return false;
+  }
   return true;
+}
+
+function onMlsSearch(v) {
+  searchTerm = (v || '').trim();
+  applyStatusFilter(activeFilter);
+  // If single MLS match, scroll to it
+  if (searchTerm.length >= 4) {
+    const exact = LISTINGS.find(l => String(l.mls) === searchTerm);
+    if (exact) {
+      const el = document.querySelector('[data-mls="' + searchTerm + '"]');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
 }
 function applyStatusFilter(name) {
   activeFilter = name;
@@ -30632,24 +30657,31 @@ function refreshAgentRegistry() {
 
 function buildVcardFromAgent(agent) {
   const phoneClean = phoneKey(agent.phone);
-  const mlsList = agent.listings.map(x => x.mls).join(', ');
-  const noteLines = ['Agent first seen via TQHB on ' + agent.first_seen + ' · last seen ' + agent.last_seen];
-  noteLines.push('Listings tracked (' + agent.listings.length + '):');
+  // Build a contact name like "Virginia Espinoza 10357889 #TQHB" (one MLS) or
+  // "Virginia Espinoza 10357889+2 #TQHB" (multi-listing agent). The #TQHB hashtag
+  // lets the user filter Contacts later and bulk-delete via search.
+  const firstMls = agent.listings[0]?.mls || '';
+  const extraCount = Math.max(0, agent.listings.length - 1);
+  const mlsTag = firstMls ? (extraCount ? firstMls + '+' + extraCount : firstMls) : '';
+  const contactName = [agent.name, mlsTag, '#TQHB'].filter(Boolean).join(' ');
+  // Note field: full listing breakdown for reference (visible in Contact details)
+  const noteLines = ['Tracked via TQHB · first ' + agent.first_seen + ' · last ' + agent.last_seen];
+  noteLines.push('Listings (' + agent.listings.length + '):');
   agent.listings.forEach(x => {
-    noteLines.push('  • MLS ' + x.mls + ' — $' + x.price.toLocaleString() + ' — ' + x.address + ' [' + x.status + '] (first seen ' + x.first_seen + ')');
+    noteLines.push('  MLS ' + x.mls + ' — $' + x.price.toLocaleString() + ' — ' + x.address + ' [' + x.status + ']');
     if (x.har_url) noteLines.push('    HAR: ' + x.har_url);
+    if (x.zillow_url) noteLines.push('    Zillow: ' + x.zillow_url);
   });
   return [
     'BEGIN:VCARD',
     'VERSION:3.0',
     'UID:tqhb-agent-' + phoneClean,
-    'FN:' + agent.name + ' (TQHB · ' + agent.listings.length + ' MLS)',
+    'FN:' + contactName,
     'N:' + agent.name + ';;;;',
-    'ORG:' + agent.brokerage,
-    'TITLE:Listing Agent — MLS ' + mlsList,
+    'ORG:' + (agent.brokerage || ''),
     'TEL;TYPE=CELL,VOICE:+1' + phoneClean,
     'NOTE:' + noteLines.join('\\n'),
-    'CATEGORIES:TQHB Lead',
+    'CATEGORIES:TQHB',
     'REV:' + new Date().toISOString(),
     'END:VCARD'
   ].join('\n');
@@ -30775,10 +30807,16 @@ function isUnderContract(l) { return /under\s*contract/i.test(l.status || ''); }
 
 function smsBodyFor(l) {
   const firstName = l.agent.name.split(' ')[0];
+  const mlsTag = l.mls ? ' (MLS# ' + l.mls + ')' : '';
   if (isUnderContract(l)) {
-    return 'Hey ' + firstName + ', this is Vivek, local investor. Interested in one of your listings at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + '. I see it is under contract — would you please let me know if the current buyer doesn\'t perform? Thank you!';
+    return 'Hey ' + firstName + ', this is Vivek, local investor. Interested in one of your listings at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + mlsTag + '. I see it is under contract — would you please let me know if the current buyer doesn\'t perform? Thank you!';
   }
-  return l.sms_message || ('Hi ' + firstName + ', this is Vivek, local Investor. Interested in your listing at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + '. Are you available to walk the property? Is there a lockbox on site? Thank you!');
+  // Strip any old (MLS# x) from prebuilt l.sms_message in case it was generated before MLS was appended,
+  // then append fresh MLS so replies are easy to match.
+  const base = (l.sms_message || ('Hi ' + firstName + ', this is Vivek, local Investor. Interested in your listing at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + '. Are you available to walk the property? Is there a lockbox on site? Thank you!'))
+    .replace(/\s*\(MLS#[^)]*\)/i, '');
+  // Insert MLS just before "Are you available" so it lives with the address rather than tacking onto the end
+  return base.replace(/(\. )Are you available/, mlsTag + '$1Are you available');
 }
 
 function buildTextQueue() {
