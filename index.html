@@ -35733,8 +35733,13 @@ function renderEmptyScenario(sc) {
 // Status filter — drives both visible listings and batch SMS queue.
 let activeFilter = 'all';
 let searchTerm = '';
+let selectedDate = 'all';
 
 function shouldShow(l) {
+  // Date filter — picked date matches scrape_date OR last_seen_date
+  if (selectedDate && selectedDate !== 'all') {
+    if (l.scrape_date !== selectedDate && l.last_seen_date !== selectedDate) return false;
+  }
   // Status filter
   let statusOk = true;
   if (activeFilter === 'uc') statusOk = isUnderContract(l);
@@ -36348,24 +36353,54 @@ async function runSiriShortcut() {
 // publishing reports/YYYY-MM-DD.json, populate this list from a manifest.
 function populateDateSelect() {
   const sel = document.getElementById('reportDateSel');
-  const dates = [today()]; // future: load list from /reports/manifest.json
+  // Build set of dates present in LISTINGS
+  const dateSet = new Set();
+  LISTINGS.forEach(l => {
+    if (l.scrape_date) dateSet.add(l.scrape_date);
+    if (l.last_seen_date) dateSet.add(l.last_seen_date);
+  });
+  const todayStr = today();
+  dateSet.add(todayStr); // always include today even if empty
+  const sortedData = Array.from(dateSet).sort();
+  // Fill every day from earliest to today (continuous range, no gaps)
+  const allDates = [];
+  if (sortedData.length > 0) {
+    const cur = new Date(sortedData[0] + 'T12:00:00');
+    const end = new Date(todayStr + 'T12:00:00');
+    while (cur <= end) {
+      const y = cur.getFullYear();
+      const m = String(cur.getMonth()+1).padStart(2,'0');
+      const d = String(cur.getDate()).padStart(2,'0');
+      allDates.push(y + '-' + m + '-' + d);
+      cur.setDate(cur.getDate()+1);
+    }
+  }
+  allDates.reverse(); // newest first
   sel.replaceChildren();
-  dates.forEach(d => {
+  // "All time" first
+  const optAll = document.createElement('option');
+  optAll.value = 'all';
+  optAll.textContent = 'All time (' + LISTINGS.length + ')';
+  sel.appendChild(optAll);
+  allDates.forEach(d => {
+    const count = LISTINGS.filter(l => l.scrape_date === d || l.last_seen_date === d).length;
+    const label = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
     const opt = document.createElement('option');
     opt.value = d;
-    opt.textContent = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+    const isToday = d === todayStr;
+    opt.textContent = (isToday ? '★ ' : '') + label + ' (' + count + ')' + (count === 0 ? ' — empty' : '');
     sel.appendChild(opt);
   });
-  sel.value = today();
+  // Default: most-recent date that has listings, else today
+  const mostRecentWithData = allDates.find(d => LISTINGS.some(l => l.scrape_date === d || l.last_seen_date === d));
+  sel.value = mostRecentWithData || todayStr;
+  selectedDate = sel.value;
 }
 
 function onDateChange() {
   const sel = document.getElementById('reportDateSel');
-  const picked = sel.value;
-  if (picked === today()) return;
-  // Future: fetch /reports/${picked}.json and re-render. For now alert.
-  alert('Historical report for ' + picked + ' not yet archived. The daily scraper will start writing reports/YYYY-MM-DD.json once wired up.');
-  sel.value = today();
+  selectedDate = sel.value;
+  applyStatusFilter(typeof activeFilter !== 'undefined' ? activeFilter : 'all');
 }
 
 // ============================================================
