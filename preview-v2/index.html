@@ -39970,12 +39970,23 @@ function allAgents() {
   return out.sort((a,b) => a.name.localeCompare(b.name));
 }
 
+// Patterns the scraper sometimes leaves in the name/phone field instead of a real value
+const PLACEHOLDER_RE = /^\s*$|see\s*har|tap\s*har|not\s*provided|view\s*on\s*har|see\s*listing|n\/a|tbd|unknown|placeholder|\(see|\(tap/i;
+function isPlaceholderText(s) {
+  if (!s) return true;
+  if (PLACEHOLDER_RE.test(s)) return true;
+  // strip punctuation — if nothing meaningful remains, it's junk
+  const stripped = String(s).replace(/[^a-zA-Z0-9]/g, '').trim();
+  return stripped.length < 3;
+}
+
 function mergeListingIntoAgent(l) {
-  // Skip listings with no real phone — otherwise "(Tap HAR ↗ to view)" placeholders
-  // all collapse into a single bogus registry entry with empty phone, and Save All
-  // ends up producing a single malformed vCard with TEL:+1.
-  const cleanPhone = phoneKey(l.agent && l.agent.phone);
+  // Skip if no real phone (≥7 digits) AND skip placeholder names like "(See HAR listing)" /
+  // "(Tap HAR ↗ to view)" — those produce useless contact cards.
+  if (!l || !l.agent) return null;
+  const cleanPhone = phoneKey(l.agent.phone);
   if (!cleanPhone || cleanPhone.length < 7) return null;
+  if (isPlaceholderText(l.agent.name)) return null;
   const existing = getAgent(l.agent.phone);
   const listingRec = {
     mls: l.mls,
@@ -40012,12 +40023,18 @@ function mergeListingIntoAgent(l) {
 }
 
 function refreshAgentRegistry() {
-  // Purge any pre-existing bogus entries (empty / short phone) from old code paths
+  // Purge any pre-existing bogus entries from old code paths:
+  // - empty / short phone
+  // - placeholder names like "(See HAR listing)" / "(Tap HAR ↗ to view)" / "(not provided)"
   for (let i = localStorage.length - 1; i >= 0; i--) {
     const k = localStorage.key(i);
     if (k && k.startsWith(AGENT_KEY_PREFIX)) {
       const suffix = k.slice(AGENT_KEY_PREFIX.length);
-      if (!suffix || suffix.length < 7) localStorage.removeItem(k);
+      if (!suffix || suffix.length < 7) { localStorage.removeItem(k); continue; }
+      try {
+        const a = JSON.parse(localStorage.getItem(k));
+        if (!a || isPlaceholderText(a.name)) localStorage.removeItem(k);
+      } catch (e) { localStorage.removeItem(k); }
     }
   }
   LISTINGS.forEach(mergeListingIntoAgent);
@@ -40096,9 +40113,14 @@ function isIOS() {
 
 function saveAllContacts() {
   refreshAgentRegistry();
-  const agents = allAgents().filter(a => phoneKey(a.phone).length >= 7);
-  if (agents.length === 0) { alert('No agents with valid phone numbers tracked yet. Most current listings only show "(Tap HAR ↗ to view)" placeholder phones — the scraper couldn\'t resolve their numbers through HAR.com\'s captcha. Try again after the next overnight scrape.'); return; }
-  if (!confirm(`About to download ${agents.length} agent contacts as a single vCard file.\n\nContinue?`)) return;
+  const agents = allAgents().filter(a =>
+    phoneKey(a.phone).length >= 7 && !isPlaceholderText(a.name)
+  );
+  if (agents.length === 0) { alert('No agents with real names + phones tracked yet. Most current listings only show "(Tap HAR ↗ to view)" or "(See HAR listing)" placeholders — the scraper couldn\'t resolve them past HAR\'s captcha. Try again after the next overnight scrape.'); return; }
+  // Show a preview of who's getting saved so user can spot junk
+  const sample = agents.slice(0, 3).map(a => '• ' + a.name + ' (' + a.brokerage + ')').join('\n');
+  const more = agents.length > 3 ? '\n• …and ' + (agents.length - 3) + ' more' : '';
+  if (!confirm(`Save ${agents.length} agent contacts:\n\n${sample}${more}\n\nContinue?`)) return;
 
   // Build a single multi-vCard file with proper CRLF and modern MIME.
   // Each vCard already ends with END:VCARD\r\n; concatenate without extra separator.
