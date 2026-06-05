@@ -1,1089 +1,838 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="TQHB">
-<meta name="theme-color" content="#0a2540">
-<title>Daily Deals Generator · Texas Quick Home Buyer</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a2540'/%3E%3Cpath d='M22 38 L32 24 L42 38 Z' fill='%23c9a961'/%3E%3C/svg%3E">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="TQHB"/>
+<meta name="theme-color" content="#111317"/>
+<title>Lead Finder v3 — TQHB</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2356df92'/%3E%3Cpath d='M22 38 L32 24 L42 38 Z' fill='%23111317'/%3E%3C/svg%3E"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-secondary": "#002e69",
+        "secondary-container": "#4b8eff",
+        "on-background": "#e2e2e8",
+        "background": "#111317",
+        "on-tertiary": "#67001a",
+        "secondary": "#adc6ff",
+        "bucket-hot": "#FF453A",
+        "surface-container": "#1e2024",
+        "outline-variant": "#3d4a40",
+        "surface-dim": "#111317",
+        "tertiary": "#ffb3b6",
+        "inverse-primary": "#006d3e",
+        "surface": "#111317",
+        "surface-variant": "#333539",
+        "on-secondary-fixed": "#001a41",
+        "surface-bright": "#37393e",
+        "primary-fixed-dim": "#56df92",
+        "status-auction-bg": "rgba(191, 90, 242, 0.15)",
+        "on-tertiary-fixed": "#40000c",
+        "surface-container-high": "#282a2e",
+        "on-primary-fixed-variant": "#00522d",
+        "inverse-surface": "#e2e2e8",
+        "primary": "#56df92",
+        "status-pending-bg": "rgba(255, 159, 10, 0.15)",
+        "bucket-warm": "#FF9F0A",
+        "on-error-container": "#ffdad6",
+        "surface-container-highest": "#333539",
+        "tertiary-fixed-dim": "#ffb3b6",
+        "on-surface": "#e2e2e8",
+        "tertiary-container": "#f7717d",
+        "bucket-fresh": "#30D158",
+        "surface-elevated": "#1C1E23",
+        "secondary-fixed-dim": "#adc6ff",
+        "on-surface-variant": "#bccabd",
+        "on-tertiary-fixed-variant": "#871d2e",
+        "on-error": "#690005",
+        "bucket-cool": "#8E8E93",
+        "on-tertiary-container": "#6c041c",
+        "primary-fixed": "#75fcac",
+        "surface-container-lowest": "#0c0e12",
+        "on-primary": "#00391e",
+        "primary-container": "#15b26a",
+        "on-primary-fixed": "#00210f",
+        "on-secondary-container": "#00285c",
+        "inverse-on-surface": "#2f3035",
+        "border-hairline": "rgba(255, 255, 255, 0.1)",
+        "status-active-bg": "rgba(21, 178, 106, 0.15)",
+        "on-secondary-fixed-variant": "#004493",
+        "error-container": "#93000a",
+        "surface-container-low": "#1a1c20",
+        "surface-tint": "#56df92",
+        "error": "#ffb4ab",
+        "on-primary-container": "#003c20",
+        "tertiary-fixed": "#ffdada",
+        "outline": "#869488",
+        "secondary-fixed": "#d8e2ff"
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        full: "9999px"
+      },
+      spacing: {
+        "unit-xl": "32px",
+        "unit-xs": "4px",
+        "unit-lg": "24px",
+        "unit-md": "16px",
+        "container-margin": "20px",
+        "unit-sm": "8px",
+        "gutter": "16px"
+      },
+      fontFamily: {
+        "data-mono": ["JetBrains Mono"],
+        "label-caps": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-md": ["Inter"],
+        "body-sm": ["Inter"],
+        "headline-lg": ["Inter"]
+      },
+      fontSize: {
+        "data-mono": ["14px", { lineHeight: "20px", fontWeight: "500" }],
+        "label-caps": ["11px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+        "body-md": ["15px", { lineHeight: "22px", fontWeight: "400" }],
+        "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }],
+        "headline-lg": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }]
+      }
+    }
+  }
+}
+</script>
 <style>
-  :root {
-    --primary: #0a2540;
-    --primary-light: #1e3a5f;
-    --accent: #c9a961;
-    --accent-dark: #a6874a;
-    --bg: #f6f7f9;
-    --card: #ffffff;
-    --border: #e5e7eb;
-    --text: #1a1a1a;
-    --text-muted: #6b7280;
-    --positive: #10b981;
-    --negative: #ef4444;
-    --warning: #f59e0b;
-    --info: #3b82f6;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 124px; }
-  body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
-    margin: 0; padding: 0 0 60px;
-    background: var(--bg);
-    color: var(--text);
-    font-size: 14px;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-  header.site-header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-    color: #fff;
-    padding: 22px 40px;
-    border-bottom: 4px solid var(--accent);
-  }
-  .header-inner {
-    max-width: 1400px; margin: 0 auto;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 16px;
-  }
-  .brand { display: flex; align-items: center; gap: 14px; }
-  .brand-logo {
-    width: 46px; height: 46px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 4px;
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 16px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #333539; border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #37393e; }
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  /* View states */
+  .view { display: none; }
+  .view.active { display: block; }
+  /* Under contract card */
+  .uc-card { opacity: 0.45; pointer-events: none; position: relative; }
+  .uc-ribbon {
+    position: absolute; inset: 0; z-index: 10;
     display: flex; align-items: center; justify-content: center;
+    pointer-events: all;
   }
-  .brand-logo svg { width: 38px; height: 38px; }
-  header.site-header h1 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
-  header.site-header h1 em { color: var(--accent); font-style: normal; }
-  header.site-header .subtitle { font-size: 11px; opacity: 0.75; margin-top: 4px; letter-spacing: 1.5px; text-transform: uppercase; }
-  .header-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .header-pill {
-    background: rgba(255,255,255,0.12);
-    color: rgba(255,255,255,0.92);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  .header-pill strong { color: var(--accent); margin-right: 4px; }
-  .print-btn {
-    background: var(--accent); color: var(--primary);
-    border: none; padding: 9px 18px;
-    border-radius: 6px; font-weight: 700;
-    cursor: pointer; font-size: 12px;
-    letter-spacing: 0.8px; font-family: inherit;
+  .uc-ribbon span {
+    background: rgba(255,69,58,0.15);
+    border: 1px solid rgba(255,69,58,0.4);
+    color: #FF453A;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+    padding: 4px 14px; border-radius: 6px;
+    transform: rotate(-6deg);
     text-transform: uppercase;
   }
-  .print-btn:hover { background: #fff; }
-  nav.sticky-nav {
-    position: sticky; top: 0;
-    background: rgba(255,255,255,0.98);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-    z-index: 50;
-    padding: 0 40px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  /* Action sheet */
+  #actionSheet { display: none; }
+  #actionSheet.open { display: flex; }
+  /* Text all modal */
+  #textAllModal { display: none; }
+  #textAllModal.open { display: flex; }
+  /* Feedback panel */
+  #fbPanel { display: none; }
+  #fbPanel.open { display: block; }
+  /* Scenario form modal */
+  #scenarioFormModal { display: none; }
+  #scenarioFormModal.open { display: flex; }
+  /* Listing detail view */
+  #detailView { display: none; }
+  #detailView.open { display: flex; }
+  /* Scenario list view */
+  #scenarioListView { display: none; }
+  #scenarioListView.open { display: block; }
+  /* Deal score ring animation */
+  @keyframes ring-draw {
+    from { stroke-dasharray: 0, 100; }
+    to { }
   }
-  .nav-inner {
-    max-width: 1400px; margin: 0 auto;
-    display: flex; align-items: center;
-    gap: 0; overflow-x: auto;
-    scrollbar-width: thin;
-  }
-  .nav-link {
-    padding: 14px 14px;
-    color: var(--text-muted); text-decoration: none;
-    font-size: 12px; font-weight: 600;
-    border-bottom: 3px solid transparent;
-    white-space: nowrap; transition: color 0.15s, border-color 0.15s;
-  }
-  .nav-link:hover { color: var(--primary); }
-  .nav-link.active { color: var(--primary); border-bottom-color: var(--accent); }
-  .nav-link .num {
-    color: var(--accent-dark);
-    font-size: 11px;
-    margin-right: 5px;
-    font-weight: 800;
-  }
-  .hero {
-    max-width: 1400px; margin: 24px auto 0;
-    padding: 24px 40px;
-    background: linear-gradient(135deg, #fef9ed 0%, #fdf4dc 100%);
+  .ring-path { animation: ring-draw 0.6s ease-out forwards; }
+  /* Filter pills */
+  .filter-pill.active { background: rgba(21, 178, 106, 0.15); color: #56df92; border-color: rgba(86,223,146,0.4); }
+  .tab-btn.active { color: #56df92; border-bottom-color: #56df92; }
+  /* Pending scenarios card */
+  #pendingScenariosWrap .ps-card {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.3);
     border-radius: 12px;
-    border: 1px solid rgba(201, 169, 97, 0.3);
   }
-  .hero-row {
-    display: flex; align-items: flex-end; justify-content: space-between;
-    flex-wrap: wrap; gap: 20px;
-  }
-  .hero h2 { color: var(--primary); margin: 0 0 6px 0; font-size: 22px; font-weight: 700; }
-  .hero .desc { color: var(--text-muted); margin: 0; font-size: 13px; max-width: 700px; }
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(120px, 1fr));
-    gap: 12px;
-    margin-top: 18px;
-  }
-  .stat {
-    background: rgba(255,255,255,0.7);
-    border: 1px solid rgba(201,169,97,0.2);
-    border-radius: 8px;
-    padding: 12px 14px;
-  }
-  .stat .lbl {
-    font-size: 10px; color: var(--accent-dark);
-    letter-spacing: 1.2px; text-transform: uppercase;
-    font-weight: 800; margin-bottom: 4px;
-  }
-  .stat .val { font-size: 20px; font-weight: 700; color: var(--primary); font-variant-numeric: tabular-nums; }
-  .stat .sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
-  .filter-note {
-    max-width: 1400px; margin: 16px auto 0;
-    padding: 12px 40px;
-    font-size: 12px; color: var(--text-muted);
-  }
-  .filter-note strong { color: var(--primary); }
-  .filter-chip {
-    display: inline-block;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 3px 10px;
-    margin: 0 4px 4px 0;
-    font-size: 11px;
-    color: var(--text);
-  }
-  .container { max-width: 1400px; margin: 24px auto 0; padding: 0 40px; }
-  .listing {
-    margin-bottom: 36px;
-    scroll-margin-top: 130px;
-  }
-  .section-header {
-    margin-bottom: 18px;
-    border-left: 5px solid var(--accent);
-    padding-left: 18px;
-  }
-  .section-header .kicker {
-    font-size: 11px; color: var(--accent-dark);
-    font-weight: 800; letter-spacing: 2px;
-    text-transform: uppercase; margin-bottom: 4px;
-  }
-  .section-header h2 {
-    margin: 0; font-size: 22px; color: var(--primary);
-    font-weight: 700; line-height: 1.3;
-  }
-  .section-header .sub {
-    margin-top: 4px; color: var(--text-muted); font-size: 13px;
-  }
-  .status-badge {
-    display: inline-block;
-    font-size: 10px; font-weight: 800;
-    padding: 3px 9px; border-radius: 12px;
-    letter-spacing: 1px; text-transform: uppercase;
-    margin-left: 10px;
-    vertical-align: middle;
-  }
-  .status-Active { background: rgba(16,185,129,0.12); color: #065f46; border: 1px solid rgba(16,185,129,0.3); }
-  .status-Foreclosure { background: rgba(239,68,68,0.12); color: #991b1b; border: 1px solid rgba(239,68,68,0.3); }
-  .status-Auction { background: rgba(245,158,11,0.12); color: #92400e; border: 1px solid rgba(245,158,11,0.3); }
-  .status-Under-Contract {
-    background: linear-gradient(135deg, #fb923c, #f97316);
-    color: #fff; border: 1px solid #ea580c;
-    box-shadow: 0 1px 3px rgba(249,115,22,0.3);
-  }
-  .listing-card.under-contract { border-color: #fb923c; }
-  .listing-card.under-contract .cstrip, .listing-card.under-contract .facts-grid { background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); }
-
-  /* status filter bar */
-  .status-filter {
-    position: sticky;
-    top: 50px;
-    z-index: 40;
-    background: rgba(255,255,255,0.97);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--border);
-    padding: 8px 40px;
-    display: flex; align-items: center; gap: 10px;
-    flex-wrap: wrap;
-  }
-  .status-filter .lbl { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); }
-  .filter-pill {
-    padding: 5px 14px;
-    border-radius: 16px;
-    font-size: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: var(--text-muted);
-    transition: all 0.15s;
-    font-family: inherit;
-  }
-  .filter-pill:hover { border-color: var(--accent); color: var(--primary); }
-  .filter-pill.active { background: var(--primary); color: #fff; border-color: var(--primary); }
-  .filter-pill.active.uc { background: #f97316; border-color: #ea580c; color: #fff; }
-  .listing.hidden, .bucket.hidden, .bucket-empty.hidden { display: none; }
-  .listing-card {
-    background: var(--card);
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    border: 1px solid var(--border);
-    overflow: hidden;
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-  .listing-card.texted {
-    border-color: var(--positive);
-    box-shadow: 0 1px 3px rgba(16,185,129,0.15), 0 4px 16px rgba(16,185,129,0.08);
-  }
-  .facts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    gap: 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .fact {
-    padding: 14px 16px;
-    border-right: 1px solid var(--border);
-  }
-  .fact:last-child { border-right: none; }
-  .fact .lbl {
-    font-size: 10px; color: var(--text-muted);
-    letter-spacing: 1px; text-transform: uppercase;
-    font-weight: 700; margin-bottom: 2px;
-  }
-  .fact .val {
-    font-size: 16px; font-weight: 700; color: var(--primary);
-    font-variant-numeric: tabular-nums;
-  }
-  .fact .val.price { color: var(--positive); }
-  .card-body { padding: 22px 24px; }
-  .card-body h3 {
-    color: var(--primary); font-size: 14px;
-    margin: 0 0 12px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-    font-weight: 700; letter-spacing: 0.3px;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .card-body h3 .h-ico { color: var(--accent-dark); font-size: 12px; }
-  .card-body h3:not(:first-child) { margin-top: 24px; }
-  .arv-block {
-    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
-    border: 1px solid rgba(16,185,129,0.25);
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin-bottom: 18px;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 12px;
-  }
-  .arv-block .arv-lbl {
-    font-size: 10px; color: #047857;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    font-weight: 800;
-  }
-  .arv-block .arv-val {
-    font-size: 22px; font-weight: 700; color: #065f46;
-    font-variant-numeric: tabular-nums; margin-top: 2px;
-  }
-  .arv-block .arv-spread {
-    text-align: right;
-  }
-  .arv-block .arv-spread .lbl { font-size: 10px; color: #047857; letter-spacing: 1px; text-transform: uppercase; font-weight: 800; }
-  .arv-block .arv-spread .val { font-size: 16px; font-weight: 700; color: #065f46; font-variant-numeric: tabular-nums; }
-  table.data-table {
-    width: 100%; border-collapse: collapse;
-    margin: 8px 0 4px;
-    font-size: 13px;
-  }
-  table.data-table th, table.data-table td {
-    padding: 9px 12px; text-align: left;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-  }
-  table.data-table th {
-    background: var(--primary); color: #fff;
-    font-weight: 600; font-size: 11px; letter-spacing: 0.6px;
-    text-transform: uppercase;
-  }
-  table.data-table tr:nth-child(even) { background: #fafbfc; }
-  .callout {
-    padding: 12px 16px; margin: 8px 0;
-    border-radius: 0 6px 6px 0;
-    font-size: 13px; line-height: 1.7;
-    border-left: 4px solid var(--info);
-    background: #eff6ff;
-  }
-  .callout.warning { background: #fef2f2; border-left-color: var(--negative); }
-  .callout.success { background: #f0fdf4; border-left-color: var(--positive); }
-  .callout ul { margin: 4px 0 0 0; padding-left: 18px; }
-  .callout li { margin: 3px 0; }
-  .callout-label {
-    font-size: 10px; font-weight: 800;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    display: block; margin-bottom: 4px;
-  }
-  .callout.warning .callout-label { color: #991b1b; }
-  .callout.success .callout-label { color: #065f46; }
-  .agent-block {
-    background: #fafbfc;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 14px 16px;
-    display: flex; align-items: center; gap: 14px;
-    margin-bottom: 14px;
-    flex-wrap: wrap;
-  }
-  .agent-avatar {
-    width: 44px; height: 44px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
-    color: #fff;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 16px;
-    flex-shrink: 0;
-  }
-  .agent-info { flex: 1; min-width: 180px; }
-  .agent-info .name { font-size: 14px; font-weight: 700; color: var(--primary); }
-  .agent-info .brokerage { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
-  .agent-phone {
-    font-size: 14px; font-weight: 700;
-    color: var(--info); text-decoration: none;
-    font-variant-numeric: tabular-nums;
-  }
-  .agent-phone:hover { text-decoration: underline; }
-  .sms-box {
-    background: linear-gradient(135deg, #e8f4fd 0%, #eef6ff 100%);
-    border: 1px solid #c5dff5;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 14px;
-  }
-  .sms-box .sms-lbl {
-    font-size: 10px; font-weight: 800; color: var(--info);
-    letter-spacing: 1.2px; text-transform: uppercase;
-    margin-bottom: 4px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .sms-box .sms-txt { font-size: 13px; line-height: 1.65; color: var(--text); }
-  .actions {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 8px;
-    margin-top: 6px;
-  }
-  .btn {
-    display: flex; align-items: center; justify-content: center;
-    gap: 6px;
-    padding: 11px 12px;
-    border-radius: 8px;
-    font-size: 12.5px; font-weight: 700;
-    text-decoration: none;
-    border: none; cursor: pointer;
-    font-family: inherit;
-    letter-spacing: 0.2px;
-    transition: opacity 0.15s, transform 0.1s, background 0.15s;
-  }
-  .btn:active { transform: scale(0.98); }
-  .btn-sms { background: var(--positive); color: #fff; }
-  .btn-sms:hover { background: #0ea372; }
-  .btn-call { background: var(--info); color: #fff; }
-  .btn-call:hover { background: #2563eb; }
-  .btn-har { background: var(--primary); color: #fff; }
-  .btn-har:hover { background: var(--primary-light); }
-  .btn-save { background: var(--accent); color: var(--primary); }
-  .btn-save:hover { background: var(--accent-dark); color: #fff; }
-  .btn-copy { background: #f3f4f6; color: var(--text); border: 1px solid var(--border); }
-  .btn-copy:hover { background: #e5e7eb; }
-  .control-row {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 12px; flex-wrap: wrap;
-    margin-top: 16px; padding-top: 14px;
-    border-top: 1px solid var(--border);
-  }
-  .texted-toggle {
-    display: flex; align-items: center; gap: 8px;
-    font-size: 13px; font-weight: 600; color: var(--text);
-    cursor: pointer;
-    user-select: none;
-  }
-  .texted-toggle input { width: 16px; height: 16px; accent-color: var(--positive); cursor: pointer; }
-  .texted-toggle .pill {
-    display: none;
-    background: rgba(16,185,129,0.15);
-    color: #065f46;
-    border: 1px solid var(--positive);
-    font-size: 10px; font-weight: 800;
-    padding: 2px 8px; border-radius: 10px;
-    letter-spacing: 0.8px; text-transform: uppercase;
-  }
-  .listing-card.texted .texted-toggle .pill { display: inline-block; }
-  .remarks-wrap { flex: 1; min-width: 200px; }
-  .remarks {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 12.5px;
-    resize: vertical;
-    min-height: 38px;
-    background: #fafbfc;
-  }
-  .remarks:focus { outline: none; border-color: var(--accent); background: #fff; }
-  .remarks-header {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 4px;
-  }
-  .remarks-lbl {
-    font-size: 10px; color: var(--text-muted);
-    font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-  }
-  .save-indicator {
-    font-size: 10px; font-weight: 700; letter-spacing: 0.5px;
-    transition: color 0.2s, opacity 0.2s;
-  }
-  .save-indicator.saving { color: var(--warning); }
-  .save-indicator.saved { color: var(--positive); }
-
-  /* scenario sections */
-  .scenario-divider {
-    max-width: 1400px;
-    margin: 40px auto 18px;
-    padding: 0 40px;
-  }
-  .scenario-divider-inner {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-    color: #fff;
-    border-radius: 10px;
-    padding: 16px 22px;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 12px;
-    box-shadow: 0 4px 14px rgba(10,37,64,0.18);
-  }
-  .scenario-divider .sc-kicker {
-    font-size: 10px; color: var(--accent);
-    font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
-  }
-  .scenario-divider h2 { margin: 2px 0 0 0; font-size: 18px; font-weight: 700; color: #fff; }
-  .scenario-divider .sc-filters {
-    margin-top: 10px;
-    display: flex; flex-wrap: wrap; gap: 4px;
-  }
-  .scenario-divider .sc-filters .sc-filter-chip {
-    background: rgba(255,255,255,0.14);
-    color: #fff;
-    border: 1px solid rgba(201,169,97,0.35);
-    padding: 3px 9px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  .scenario-divider .sc-count {
-    background: var(--accent); color: var(--primary);
-    padding: 6px 14px; border-radius: 20px;
-    font-size: 12px; font-weight: 800;
-    font-variant-numeric: tabular-nums;
-  }
-  .empty-scenario {
-    max-width: 1400px; margin: 0 auto 40px;
-    padding: 28px 40px;
-    background: var(--card);
-    border: 1px dashed var(--border);
-    border-radius: 10px;
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 13px;
-  }
-  .empty-scenario strong { color: var(--primary); }
-
-  /* DOM buckets within scenarios */
-  .bucket {
-    max-width: 1400px;
-    margin: 26px auto 14px;
-    padding: 0 40px;
-  }
-  .bucket-header {
-    display: flex; align-items: center; gap: 12px;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 12px; font-weight: 700;
-    letter-spacing: 0.8px;
-  }
-  .bucket-header .bucket-dot { font-size: 14px; line-height: 1; }
-  .bucket-header .bucket-label { text-transform: uppercase; letter-spacing: 1.2px; }
-  .bucket-header .bucket-tag { font-size: 11px; font-weight: 600; opacity: 0.8; text-transform: none; letter-spacing: 0.3px; }
-  .bucket-header .bucket-count {
-    margin-left: auto;
-    background: rgba(255,255,255,0.55);
-    color: var(--text);
-    padding: 2px 10px; border-radius: 12px;
-    font-size: 11px; font-weight: 800;
-    font-variant-numeric: tabular-nums;
-  }
-  .bucket.hot .bucket-header { background: #fef2f2; color: #991b1b; border-left: 5px solid var(--negative); }
-  .bucket.warm .bucket-header { background: #fef9c3; color: #854d0e; border-left: 5px solid var(--warning); }
-  .bucket.cool .bucket-header { background: #ecfdf5; color: #065f46; border-left: 5px solid var(--positive); }
-  .bucket.hot .bucket-count, .bucket.warm .bucket-count, .bucket.cool .bucket-count { background: rgba(255,255,255,0.7); }
-  .bucket-empty {
-    max-width: 1400px; margin: 0 auto 12px; padding: 12px 40px;
-    color: var(--text-muted); font-size: 12px; font-style: italic;
-    border-left: 2px dashed var(--border); margin-left: 40px;
-  }
-  .excluded-note {
-    max-width: 1400px; margin: 12px auto 0; padding: 10px 40px;
-    color: var(--text-muted); font-size: 11px;
-  }
-
-  /* text-all modal */
-  .modal-backdrop {
-    display: none;
-    position: fixed; inset: 0;
-    background: rgba(10,37,64,0.55);
-    backdrop-filter: blur(4px);
-    z-index: 200;
-    align-items: center; justify-content: center;
-    padding: 18px;
-  }
-  .modal-backdrop.open { display: flex; }
-  .modal {
-    background: #fff;
-    border-radius: 14px;
-    max-width: 520px; width: 100%;
-    max-height: 90vh; overflow: auto;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-    border: 1px solid var(--border);
-  }
-  .modal-head {
-    padding: 16px 20px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
-    color: #fff;
-    border-radius: 14px 14px 0 0;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .modal-head h3 { margin: 0; font-size: 15px; font-weight: 700; }
-  .modal-head .close {
-    background: rgba(255,255,255,0.18);
-    color: #fff; border: none;
-    width: 28px; height: 28px; border-radius: 50%;
-    font-size: 16px; cursor: pointer;
-  }
-  .modal-body { padding: 20px; }
-  .queue-progress {
-    font-size: 11px; color: var(--text-muted);
-    letter-spacing: 1.2px; text-transform: uppercase; font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .queue-progress strong { color: var(--accent-dark); font-size: 12px; }
-  .queue-agent {
-    background: #fafbfc;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin-bottom: 12px;
-  }
-  .queue-agent .name { font-weight: 700; color: var(--primary); font-size: 15px; }
-  .queue-agent .brokerage { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
-  .queue-agent .listing-ref { font-size: 12px; color: var(--text); margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border); }
-  .queue-agent .listing-ref strong { color: var(--primary); }
-  .queue-sms {
-    background: #e8f4fd;
-    border: 1px solid #c5dff5;
-    border-radius: 8px;
-    padding: 10px 12px;
-    font-size: 12.5px; line-height: 1.6;
-    margin-bottom: 12px;
-  }
-  .queue-sms .lbl { font-size: 10px; font-weight: 800; color: var(--info); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
-  .queue-actions { display: flex; gap: 8px; }
-  .queue-actions .btn { flex: 1; padding: 12px; font-size: 13px; }
-  .queue-done {
-    text-align: center;
-    padding: 24px 12px;
-    color: var(--positive);
-    font-weight: 700;
-    font-size: 15px;
-  }
-  .queue-done .check { font-size: 36px; display: block; margin-bottom: 8px; }
-
-  /* feedback FAB + panel */
-  .fb-fab {
-    position: fixed;
-    bottom: max(20px, env(safe-area-inset-bottom));
-    right: 20px;
-    z-index: 150;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-    color: var(--primary);
-    border: none;
-    border-radius: 28px;
-    padding: 12px 18px;
-    font-size: 13px;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0 6px 22px rgba(10,37,64,0.28);
-    display: flex; align-items: center; gap: 6px;
-    font-family: inherit;
-    letter-spacing: 0.3px;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .fb-fab:hover { transform: translateY(-1px); box-shadow: 0 8px 26px rgba(10,37,64,0.35); }
-  .fb-fab .fb-count {
-    background: var(--primary);
-    color: var(--accent);
-    padding: 1px 7px;
-    border-radius: 10px;
-    font-size: 11px;
-    font-weight: 800;
-    margin-left: 4px;
-  }
-  .fb-fab .fb-count:empty { display: none; }
-  .fb-panel {
-    display: none;
-    position: fixed;
-    bottom: max(80px, calc(env(safe-area-inset-bottom) + 80px));
-    right: 20px;
-    width: 360px;
-    max-width: calc(100vw - 40px);
-    background: #fff;
-    border-radius: 14px;
-    border: 1px solid var(--border);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-    z-index: 151;
-    overflow: hidden;
-  }
-  .fb-panel.open { display: block; }
-  .fb-panel-head {
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
-    color: #fff;
-    padding: 14px 18px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .fb-panel-head h3 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; }
-  .fb-panel-head .close {
-    background: rgba(255,255,255,0.18);
-    color: #fff; border: none;
-    width: 26px; height: 26px; border-radius: 50%;
-    font-size: 15px; cursor: pointer;
-  }
-  .fb-body { padding: 16px 18px; }
-  .fb-tabs { display: flex; gap: 6px; margin-bottom: 12px; }
-  .fb-tab {
-    flex: 1; padding: 6px 10px;
-    border-radius: 14px; border: 1px solid var(--border);
-    background: #fafbfc; color: var(--text-muted);
-    font-size: 11px; font-weight: 700;
-    cursor: pointer; font-family: inherit;
-    transition: all 0.15s;
-  }
-  .fb-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
-  .fb-context-select {
-    width: 100%; padding: 8px 10px;
-    border: 1px solid var(--border); border-radius: 8px;
-    font-size: 12.5px; margin-bottom: 10px;
-    background: #fafbfc; font-family: inherit;
-  }
-  .fb-textarea {
-    width: 100%; min-height: 100px;
-    padding: 10px 12px;
-    border: 1px solid var(--border); border-radius: 8px;
-    font-family: inherit; font-size: 13px; line-height: 1.55;
-    resize: vertical; background: #fafbfc;
-  }
-  .fb-textarea:focus { outline: none; border-color: var(--accent); background: #fff; }
-  .fb-actions { display: flex; gap: 8px; margin-top: 12px; }
-  .fb-actions .btn { flex: 1; padding: 11px 12px; font-size: 12.5px; }
-  .fb-saved-list {
-    max-height: 200px; overflow-y: auto;
-    margin-top: 10px;
-  }
-  .fb-saved-item {
-    background: #fafbfc;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 12px;
-    margin-bottom: 8px;
-    font-size: 12.5px;
-    position: relative;
-  }
-  .fb-saved-item .fb-meta {
-    font-size: 10px; color: var(--text-muted);
-    letter-spacing: 0.5px; text-transform: uppercase;
-    font-weight: 700; margin-bottom: 4px;
-    display: flex; justify-content: space-between;
-  }
-  .fb-saved-item .fb-meta .fb-kind { color: var(--accent-dark); }
-  .fb-saved-item .fb-del {
-    background: transparent; border: none; color: var(--negative);
-    font-size: 11px; cursor: pointer; padding: 0;
-  }
-  .fb-empty { color: var(--text-muted); font-size: 12px; text-align: center; padding: 14px 6px; font-style: italic; }
-  @media (max-width: 820px) {
-    .fb-panel { right: 12px; left: 12px; width: auto; bottom: max(80px, calc(env(safe-area-inset-bottom) + 80px)); }
-    .fb-fab { right: 14px; padding: 11px 16px; font-size: 12px; }
-  }
-
-  /* nav scenario tabs */
-  .nav-link.scenario { padding: 14px 18px; }
-  .nav-link.scenario .sc-count-pill {
-    display: inline-block;
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    padding: 1px 7px;
-    border-radius: 10px;
-    font-size: 10px;
-    font-weight: 800;
-    margin-left: 6px;
-    font-variant-numeric: tabular-nums;
-  }
-  .nav-link.scenario.active .sc-count-pill { background: var(--accent); color: var(--primary); border-color: var(--accent); }
-  footer.site-footer {
-    max-width: 1400px;
-    margin: 60px auto 0;
-    padding: 28px 40px;
-    border-top: 2px solid var(--border);
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 12px;
-  }
-  footer.site-footer .brand-mini {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-bottom: 8px;
-    color: var(--primary);
-    font-weight: 700;
-  }
-  footer.site-footer .brand-mini svg { width: 22px; height: 22px; }
-  @media (max-width: 820px) {
-    body { font-size: 14px; padding-bottom: max(80px, env(safe-area-inset-bottom)); -webkit-overflow-scrolling: touch; }
-
-    /* compact header for mobile */
-    header.site-header {
-      padding: 14px 14px calc(14px + env(safe-area-inset-top)) 14px;
-      padding-top: max(14px, env(safe-area-inset-top));
-    }
-    .header-inner { gap: 10px; }
-    .brand { gap: 10px; }
-    .brand-logo { width: 38px; height: 38px; }
-    .brand-logo svg { width: 30px; height: 30px; }
-    header.site-header h1 { font-size: 16px; letter-spacing: 0; }
-    header.site-header .subtitle { font-size: 9px; letter-spacing: 1px; }
-    .header-actions { width: 100%; gap: 6px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
-    .header-actions::-webkit-scrollbar { display: none; }
-    .header-pill { padding: 5px 9px; font-size: 10px; white-space: nowrap; flex-shrink: 0; }
-    .print-btn { padding: 8px 12px; font-size: 11px; letter-spacing: 0.4px; white-space: nowrap; flex-shrink: 0; min-height: 36px; }
-
-    /* sticky nav adjustments */
-    nav.sticky-nav { padding: 0 6px; top: 0; }
-    .nav-inner { gap: 0; padding: 0 6px; }
-    .nav-link { padding: 12px 10px; font-size: 11px; }
-    .nav-link.scenario { padding: 12px 10px; }
-    .nav-link.scenario .sc-count-pill { padding: 1px 6px; font-size: 9px; margin-left: 4px; }
-
-    /* status filter — horizontal scroll on mobile */
-    .status-filter {
-      padding: 8px 14px;
-      gap: 6px;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      flex-wrap: nowrap;
-      top: 49px;
-    }
-    .status-filter::-webkit-scrollbar { display: none; }
-    .status-filter .lbl { flex-shrink: 0; font-size: 10px; }
-    .filter-pill { padding: 6px 12px; font-size: 11px; min-height: 32px; flex-shrink: 0; }
-    .status-filter span#filterStats { display: none; }
-
-    /* hero, container, filter-note */
-    .container, .filter-note, .scenario-divider, .bucket, .empty-scenario { padding-left: 14px; padding-right: 14px; }
-    .hero { margin: 14px 12px 0; padding: 16px 18px; }
-    .hero h2 { font-size: 18px; }
-    .hero .desc { font-size: 12px; line-height: 1.55; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 12px; }
-    .stat { padding: 10px 12px; }
-    .stat .val { font-size: 16px; }
-    .stat .sub { font-size: 10px; }
-    .filter-note { padding: 10px 14px; font-size: 11px; }
-    .filter-chip { padding: 2px 8px; font-size: 10px; margin: 0 3px 3px 0; }
-
-    /* scenario divider */
-    .scenario-divider { margin: 24px auto 12px; }
-    .scenario-divider-inner { padding: 14px 16px; flex-direction: column; align-items: flex-start; gap: 10px; }
-    .scenario-divider h2 { font-size: 16px; }
-    .scenario-divider .sc-kicker { font-size: 9px; letter-spacing: 1.4px; }
-    .scenario-divider .sc-count { align-self: flex-start; padding: 4px 10px; font-size: 11px; }
-
-    /* bucket headers */
-    .bucket { margin: 18px auto 10px; }
-    .bucket-header { padding: 8px 12px; font-size: 11px; gap: 8px; }
-    .bucket-header .bucket-label { letter-spacing: 0.8px; }
-    .bucket-header .bucket-tag { display: none; }
-
-    /* listing card section header */
-    .listing { margin-bottom: 22px; scroll-margin-top: 110px; }
-    .section-header { padding-left: 12px; border-left-width: 4px; }
-    .section-header .kicker { font-size: 10px; letter-spacing: 1.2px; }
-    .section-header h2 { font-size: 15px; line-height: 1.35; }
-    .section-header .sub { font-size: 12px; }
-    .status-badge { font-size: 9px; padding: 2px 7px; margin-left: 6px; }
-
-    /* listing card body */
-    .listing-card { border-radius: 12px; }
-    .facts-grid { grid-template-columns: repeat(3, 1fr); }
-    .fact { padding: 10px 12px; }
-    .fact:nth-child(3n) { border-right: none; }
-    .fact:nth-child(-n+3) { border-bottom: 1px solid var(--border); }
-    .fact .lbl { font-size: 9px; }
-    .fact .val { font-size: 14px; }
-    .card-body { padding: 14px 14px; }
-    .card-body h3 { font-size: 12px; padding-bottom: 6px; gap: 6px; }
-    .card-body h3:not(:first-child) { margin-top: 18px; }
-
-    /* ARV */
-    .arv-block { padding: 12px 14px; flex-direction: column; align-items: flex-start; gap: 6px; }
-    .arv-block .arv-val { font-size: 18px; }
-    .arv-block .arv-spread { text-align: left; }
-
-    /* data table — convert to vertical cards */
-    table.data-table { font-size: 12px; }
-    table.data-table th, table.data-table td { padding: 7px 9px; }
-
-    /* callouts */
-    .callout { padding: 10px 14px; font-size: 12.5px; }
-
-    /* agent block */
-    .agent-block { padding: 12px 14px; gap: 10px; }
-    .agent-avatar { width: 38px; height: 38px; font-size: 14px; }
-    .agent-info { min-width: 130px; }
-    .agent-info .name { font-size: 13px; }
-    .agent-phone { font-size: 13px; }
-
-    /* SMS box */
-    .sms-box { padding: 10px 12px; }
-    .sms-box .sms-txt { font-size: 12.5px; }
-
-    /* action buttons — bigger tap targets */
-    .actions { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-    .actions .btn { padding: 12px 8px; font-size: 12px; min-height: 44px; }
-    .actions .btn:first-child { grid-column: 1 / -1; } /* SMS full width */
-
-    /* control row */
-    .control-row { flex-direction: column; align-items: stretch; gap: 10px; padding-top: 12px; }
-    .texted-toggle { padding: 4px 0; }
-    .remarks { font-size: 13px; }
-    .remarks-wrap { min-width: 0; }
-
-    /* modal */
-    .modal-backdrop { padding: 0; align-items: flex-end; }
-    .modal { border-radius: 14px 14px 0 0; max-height: 92vh; }
-    .modal-head { padding: 14px 16px; }
-    .modal-body { padding: 16px; }
-    .queue-actions .btn { min-height: 44px; }
-
-    /* footer */
-    footer.site-footer { padding: 22px 18px; margin-top: 36px; }
-  }
-  @media (max-width: 400px) {
-    .facts-grid { grid-template-columns: repeat(2, 1fr); }
-    .fact:nth-child(3n) { border-right: 1px solid var(--border); }
-    .fact:nth-child(2n) { border-right: none; }
-    .fact:nth-child(-n+4) { border-bottom: 1px solid var(--border); }
-  }
-  @media print {
-    nav.sticky-nav, .header-actions, .actions, .control-row, footer { display: none !important; }
-    body { background: #fff; }
-    .listing-card { break-inside: avoid; page-break-inside: avoid; box-shadow: none; }
-    .listing { margin-bottom: 22px; }
-  }
+  /* Search highlight */
+  mark { background: rgba(86,223,146,0.25); color: #56df92; border-radius: 2px; }
+  /* Texted state */
+  .listing-card.texted { opacity: 0.55; }
+  .texted-toggle .pill { display: none; }
+  .listing-card.texted .texted-toggle .pill { display: inline; }
+  .listing-card.texted .texted-toggle span:not(.pill) { text-decoration: line-through; }
 </style>
 </head>
-<body>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen">
 
-<header class="site-header">
-  <div class="header-inner">
-    <div class="brand">
-      <div class="brand-logo">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-          <rect width="64" height="64" rx="10" fill="#0a2540"/>
-          <path d="M14 16 L14 24 L18 24 L18 38 L22 38 L22 44 L26 44 L26 52 L34 52 L34 48 L42 48 L42 52 L46 52 L46 44 L50 44 L50 38 L54 38 L54 24 L50 24 L50 16 L42 16 L42 12 L36 12 L36 18 L28 18 L28 12 L22 12 L22 16 Z" fill="#c9a961" opacity="0.85"/>
-          <path d="M26 36 L32 28 L38 36 L38 42 L34 42 L34 38 L30 38 L30 42 L26 42 Z" fill="#fff"/>
-        </svg>
-      </div>
-      <div>
-        <h1>Texas Quick <em>Home Buyer</em></h1>
-        <div class="subtitle">Daily Deals Generator</div>
-      </div>
-    </div>
-    <div class="header-actions">
-      <span class="header-pill" style="display:flex;align-items:center;gap:6px"><span style="opacity:0.7">📅</span><select id="reportDateSel" onchange="onDateChange()" style="background:transparent;color:#fff;border:none;font-size:11px;font-weight:700;font-family:inherit;outline:none;cursor:pointer"></select></span>
-      <span class="header-pill"><strong id="reportCount">—</strong> Listings today</span>
-      <span class="header-pill" title="Cumulative agents ever seen across all page loads — kept so re-imported vCards merge MLS history. Click reset to clear."><strong id="agentCount">—</strong> · <a href="#" onclick="resetAgentRegistry();return false;" style="color:var(--accent);text-decoration:underline;cursor:pointer">reset</a></span>
-      <button class="print-btn" onclick="runSiriShortcut()" style="background:#000;color:#fff" title="Copies the message queue to your clipboard. Then open Shortcuts app and tap TQHB Text Agents.">📋 Copy Text Queue</button>
-      <button class="print-btn" onclick="openTextAllQueue()" style="background:var(--positive);color:#fff">📱 Text One-by-One</button>
-      <button class="print-btn" onclick="saveAllContacts()" style="background:#fff;color:var(--primary)">💾 Save All Contacts</button>
-      <button class="print-btn" onclick="window.print()">Print Report</button>
-      <a class="print-btn" href="setup-shortcut.html" target="_blank" style="background:rgba(255,255,255,0.12);color:#fff;text-decoration:none">⚙ Setup</a>
-    </div>
+<!-- =====================================================================
+     DESKTOP SIDEBAR NAV (hidden on mobile)
+===================================================================== -->
+<nav id="desktopSidebar" class="hidden md:flex flex-col w-64 bg-surface-container border-r border-border-hairline h-screen fixed top-0 left-0 z-40 overflow-y-auto">
+  <div class="h-16 flex items-center px-6 border-b border-border-hairline flex-shrink-0">
+    <h1 class="text-headline-md font-headline-md text-primary tracking-tight">Lead Finder v3</h1>
   </div>
-</header>
-
-<nav class="sticky-nav">
-  <div class="nav-inner" id="navLinks"></div>
+  <div class="flex-1 py-4 px-3 flex flex-col gap-1">
+    <!-- Main section -->
+    <div class="px-3 pb-2 pt-2 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">Main</div>
+    <a class="sidebar-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-surface-variant/50 cursor-pointer text-on-surface-variant" data-view="today" onclick="showView('today')">
+      <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">dashboard</span>
+      <span class="font-body-md text-body-md font-medium">Deals</span>
+    </a>
+    <a class="sidebar-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-surface-variant/50 cursor-pointer text-on-surface-variant" data-view="sourcing" onclick="showView('sourcing')">
+      <span class="material-symbols-outlined">search</span>
+      <span class="font-body-md text-body-md">Sourcing</span>
+    </a>
+    <a class="sidebar-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-surface-variant/50 cursor-pointer text-on-surface-variant" data-view="watchlist" onclick="showView('watchlist')">
+      <span class="material-symbols-outlined">visibility</span>
+      <span class="font-body-md text-body-md">Watchlist</span>
+    </a>
+    <!-- Scenarios section -->
+    <div class="px-3 pb-2 pt-6 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">Scenarios</div>
+    <div id="sidebarScenarios"></div>
+  </div>
+  <div class="p-4 border-t border-border-hairline flex-shrink-0">
+    <a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant/50 cursor-pointer" onclick="showView('settings')">
+      <span class="material-symbols-outlined">settings</span>
+      <span class="font-body-md text-body-md">Settings</span>
+    </a>
+  </div>
 </nav>
 
-<div class="status-filter">
-  <span class="lbl">Show:</span>
-  <button class="filter-pill active" data-filter="all" onclick="applyStatusFilter('all')">All</button>
-  <button class="filter-pill" data-filter="active" onclick="applyStatusFilter('active')">Active Only</button>
-  <button class="filter-pill uc" data-filter="uc" onclick="applyStatusFilter('uc')">⚠ Under Contract Only</button>
-  <button class="filter-pill" data-filter="foreclosure" onclick="applyStatusFilter('foreclosure')">🔥 Foreclosure Only</button>
-  <input id="mlsSearch" type="search" placeholder="🔍 Search by MLS, address, or agent…" oninput="onMlsSearch(this.value)"
-    style="margin-left:18px;flex:1;max-width:380px;padding:7px 12px;border:1px solid var(--border);border-radius:6px;background:#fff;font-size:13px;font-family:inherit;outline:none" />
-  <button onclick="openScenarioForm()" style="margin-left:10px;padding:7px 14px;border:1px solid var(--primary);background:var(--primary);color:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">+ Add Scenario</button>
-  <span style="margin-left:auto;font-size:11px;color:var(--text-muted)" id="filterStats"></span>
-</div>
+<!-- =====================================================================
+     MAIN CONTENT (offset on desktop for sidebar)
+===================================================================== -->
+<div class="md:ml-64 flex flex-col min-h-screen">
 
-<div class="hero">
-  <div class="hero-row">
-    <div>
-      <h2>Houston Investment Deal Report</h2>
-      <p class="desc">AI-curated Single Family Residences in Houston & 50-mile radius, sourced from HAR.com. Each listing includes ARV estimate, area comparables, red flags, opportunity notes, and pre-filled agent outreach.</p>
+  <!-- MOBILE TOP BAR -->
+  <header class="md:hidden bg-background/90 backdrop-blur-md border-b border-border-hairline fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 pt-safe">
+    <div class="flex items-center gap-3">
+      <button onclick="toggleMobileMenu()" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors">
+        <span class="material-symbols-outlined text-primary">menu</span>
+      </button>
+      <h1 class="text-headline-md font-headline-md text-primary tracking-tight">Lead Finder v3</h1>
+    </div>
+    <div class="flex items-center gap-2">
+      <button onclick="openSearch()" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">search</span>
+      </button>
+      <button onclick="openBulkMenu()" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">more_vert</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- DESKTOP TOP BAR -->
+  <header class="hidden md:flex items-center justify-between px-8 h-16 border-b border-border-hairline bg-surface/80 backdrop-blur-md sticky top-0 z-30 flex-shrink-0">
+    <div class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-on-surface-variant text-sm">filter_list</span>
+      <span id="desktopFilterLabel" class="font-body-sm text-body-sm text-on-surface-variant">Filtered by: <strong class="text-on-surface font-medium">All Scenarios</strong></span>
+    </div>
+    <div class="flex items-center gap-3">
+      <!-- Search -->
+      <div class="relative">
+        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+        <input id="desktopSearch" type="text" placeholder="MLS / address / agent…"
+          class="bg-surface-variant border border-border-hairline rounded-lg pl-9 pr-3 py-1.5 text-body-sm font-body-sm text-on-surface placeholder-on-surface-variant/50 focus:outline-none focus:border-primary/50 w-56 transition-all"
+          oninput="onMlsSearch(this.value)"/>
+      </div>
+      <!-- Sort / filter  -->
+      <select id="desktopDateSel" onchange="onDateChange()" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-1.5 text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-primary/50">
+        <option value="all">All time</option>
+      </select>
+      <!-- Bulk actions -->
+      <button onclick="saveAllContacts()" class="bg-surface-variant border border-border-hairline text-on-surface px-3 py-1.5 rounded-lg font-body-sm text-body-sm hover:bg-surface-bright transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">contacts</span> Save All
+      </button>
+      <button onclick="openTextAllQueue()" class="bg-surface-variant border border-border-hairline text-on-surface px-3 py-1.5 rounded-lg font-body-sm text-body-sm hover:bg-surface-bright transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">chat_bubble</span> Batch SMS
+      </button>
+      <button onclick="openScenarioForm()" class="bg-primary-container text-white px-3 py-1.5 rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">add</span> New Scenario
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT MENU -->
+  <div id="mobileMenuOverlay" class="md:hidden fixed inset-0 bg-black/60 z-50 hidden" onclick="toggleMobileMenu()"></div>
+  <div id="mobileMenu" class="md:hidden fixed top-0 left-0 h-full w-72 bg-surface-container z-50 transform -translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="h-14 flex items-center px-6 border-b border-border-hairline pt-safe">
+      <h2 class="text-headline-md font-headline-md text-primary tracking-tight">Lead Finder v3</h2>
+    </div>
+    <div class="flex-1 overflow-y-auto py-4 px-3 flex flex-col gap-1">
+      <div class="px-3 pb-2 pt-2 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">Main</div>
+      <a class="mobile-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-on-surface-variant hover:bg-surface-variant/50 cursor-pointer" onclick="showView('today');toggleMobileMenu()">
+        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">dashboard</span>
+        <span class="font-body-md text-body-md font-medium">Deals</span>
+      </a>
+      <a class="mobile-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-on-surface-variant hover:bg-surface-variant/50 cursor-pointer" onclick="showView('sourcing');toggleMobileMenu()">
+        <span class="material-symbols-outlined">search</span>
+        <span class="font-body-md text-body-md">Sourcing</span>
+      </a>
+      <a class="mobile-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-on-surface-variant hover:bg-surface-variant/50 cursor-pointer" onclick="showView('watchlist');toggleMobileMenu()">
+        <span class="material-symbols-outlined">visibility</span>
+        <span class="font-body-md text-body-md">Watchlist</span>
+      </a>
+      <a class="mobile-main-link flex items-center gap-3 px-3 py-2 rounded-lg transition-colors text-on-surface-variant hover:bg-surface-variant/50 cursor-pointer" onclick="showView('settings');toggleMobileMenu()">
+        <span class="material-symbols-outlined">settings</span>
+        <span class="font-body-md text-body-md">Settings</span>
+      </a>
+      <div class="px-3 pb-2 pt-6 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">Scenarios</div>
+      <div id="mobileMenuScenarios"></div>
+    </div>
+    <div class="p-4 border-t border-border-hairline flex flex-col gap-2">
+      <button onclick="saveAllContacts();toggleMobileMenu()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-colors">
+        <span class="material-symbols-outlined text-sm">contacts</span>
+        <span class="font-body-sm text-body-sm">Save All Contacts</span>
+      </button>
+      <button onclick="openTextAllQueue();toggleMobileMenu()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-colors">
+        <span class="material-symbols-outlined text-sm">chat_bubble</span>
+        <span class="font-body-sm text-body-sm">Batch SMS Queue</span>
+      </button>
+      <button onclick="runSiriShortcut();toggleMobileMenu()" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-colors">
+        <span class="material-symbols-outlined text-sm">shortcuts</span>
+        <span class="font-body-sm text-body-sm">Siri Shortcut</span>
+      </button>
+      <button onclick="openScenarioForm();toggleMobileMenu()" class="w-full bg-primary-container text-white px-3 py-2 rounded-lg font-body-sm text-body-sm font-medium flex items-center gap-2 justify-center">
+        <span class="material-symbols-outlined text-sm">add</span> New Scenario
+      </button>
     </div>
   </div>
-  <div class="stats-grid" id="heroStats"></div>
+
+  <!-- MOBILE SEARCH BAR (shown when search icon tapped) -->
+  <div id="mobileSearchBar" class="md:hidden hidden fixed top-14 left-0 w-full z-40 bg-background border-b border-border-hairline px-4 py-2 pt-safe">
+    <div class="relative">
+      <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+      <input id="mobileSearch" type="text" placeholder="MLS / address / agent…"
+        class="w-full bg-surface-variant border border-border-hairline rounded-lg pl-9 pr-8 py-2 text-body-sm font-body-sm text-on-surface placeholder-on-surface-variant/50 focus:outline-none focus:border-primary/50"
+        oninput="onMlsSearch(this.value)"/>
+      <button onclick="closeSearch()" class="absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant">
+        <span class="material-symbols-outlined text-sm">close</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       VIEW SYSTEM: today / scenario / detail / sourcing / watchlist / settings
+  =================================================================== -->
+  <div class="pt-14 md:pt-0 pb-20 md:pb-0 flex-1">
+
+    <!-- ── TODAY DASHBOARD ────────────────────────────────────── -->
+    <div id="viewToday" class="view active">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-8">
+        <!-- Date + greeting -->
+        <div class="mb-6 flex justify-between items-end">
+          <div>
+            <p id="todayDateLabel" class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase tracking-wider">Loading…</p>
+            <h1 class="font-headline-lg text-headline-lg text-on-surface">Today</h1>
+          </div>
+        </div>
+
+        <!-- Scenario chip row (scrollable) -->
+        <div id="scenarioChips" class="flex overflow-x-auto hide-scrollbar gap-2 mb-6 pb-1 -mx-4 px-4 md:mx-0 md:px-0">
+          <!-- injected by JS -->
+        </div>
+
+        <!-- Status filter pills -->
+        <div class="flex gap-2 flex-wrap mb-6">
+          <button class="filter-pill active px-4 py-1.5 rounded-full border border-border-hairline bg-surface-elevated text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" data-filter="all" onclick="applyStatusFilter('all')">All</button>
+          <button class="filter-pill px-4 py-1.5 rounded-full border border-border-hairline bg-surface-elevated text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" data-filter="active" onclick="applyStatusFilter('active')">Active</button>
+          <button class="filter-pill px-4 py-1.5 rounded-full border border-border-hairline bg-surface-elevated text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" data-filter="uc" onclick="applyStatusFilter('uc')">Under Contract</button>
+          <button class="filter-pill px-4 py-1.5 rounded-full border border-border-hairline bg-surface-elevated text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" data-filter="foreclosure" onclick="applyStatusFilter('foreclosure')">Foreclosure</button>
+          <span id="filterStats" class="ml-auto font-label-caps text-label-caps text-on-surface-variant self-center"></span>
+        </div>
+
+        <!-- Hero bento -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <!-- Main hero -->
+          <div class="md:col-span-2 bg-surface-elevated border border-border-hairline rounded-xl p-6 relative overflow-hidden flex flex-col justify-between min-h-[200px]">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
+            <div class="z-10">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-status-active-bg text-primary font-label-caps text-label-caps mb-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                LIVE PIPELINE
+              </span>
+              <h2 id="heroLeadCount" class="font-headline-lg text-headline-lg text-on-surface mb-1">— Leads</h2>
+              <p id="heroSubtitle" class="font-body-md text-body-md text-on-surface-variant">Loading…</p>
+            </div>
+            <div class="mt-6 flex gap-3 z-10 flex-wrap">
+              <button onclick="startReview()" class="bg-primary-container hover:bg-primary-container/90 text-white px-6 py-2.5 rounded-lg font-body-sm text-body-sm font-medium transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1">play_arrow</span>
+                Start Review
+              </button>
+              <button onclick="openTextAllQueue()" class="bg-surface-variant border border-border-hairline text-on-surface px-5 py-2.5 rounded-lg font-body-sm text-body-sm hover:bg-surface-bright transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">chat_bubble</span>
+                Batch SMS
+              </button>
+            </div>
+          </div>
+          <!-- Stats stack -->
+          <div class="flex flex-row md:flex-col gap-4">
+            <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5 flex-1 flex flex-col justify-center">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Total Active</span>
+                <span class="material-symbols-outlined text-on-surface-variant text-sm">folder_open</span>
+              </div>
+              <div id="statTotalActive" class="font-data-mono text-data-mono text-xl text-on-surface">—</div>
+            </div>
+            <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5 flex-1 flex flex-col justify-center">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Avg Upside</span>
+                <span class="material-symbols-outlined text-on-surface-variant text-sm">trending_up</span>
+              </div>
+              <div id="statAvgUpside" class="font-data-mono text-data-mono text-xl text-primary">—</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pending scenarios panel -->
+        <div id="pendingScenariosWrap" class="mb-6"></div>
+
+        <!-- Today's Best 3 -->
+        <div class="mb-8">
+          <div class="flex items-center justify-between mb-4 px-1">
+            <h3 class="font-headline-md text-headline-md text-on-surface">Today's Best 3</h3>
+            <button onclick="showView('scenario-all')" class="font-body-sm text-body-sm text-primary hover:text-primary-fixed transition-colors">View All</button>
+          </div>
+          <div id="todayBest3" class="flex flex-col bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden">
+            <!-- injected -->
+          </div>
+        </div>
+
+        <!-- Desktop 3-col listing grid (scenario list goes here on desktop after clicking scenario) -->
+        <!-- On Today dashboard we show all listings in 3-col grid below Best 3 -->
+        <div class="mb-4 flex items-center justify-between">
+          <h3 class="font-headline-md text-headline-md text-on-surface">All Listings</h3>
+          <span id="reportCount" class="font-label-caps text-label-caps text-on-surface-variant"></span>
+        </div>
+        <div id="listingsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+          <!-- injected by renderGrid() -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SCENARIO DRILL-DOWN VIEW ────────────────────────────── -->
+    <div id="viewScenario" class="view">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-6">
+        <!-- Back + title -->
+        <div class="flex items-center gap-3 mb-6">
+          <button onclick="showView('today')" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors text-on-surface-variant">
+            <span class="material-symbols-outlined">arrow_back</span>
+          </button>
+          <div>
+            <p id="scenarioViewCode" class="font-label-caps text-label-caps text-on-surface-variant"></p>
+            <h2 id="scenarioViewName" class="font-headline-md text-headline-md text-on-surface"></h2>
+          </div>
+        </div>
+        <!-- Filter chips for this scenario -->
+        <div id="scenarioFilterChips" class="flex gap-2 flex-wrap mb-6"></div>
+        <!-- Listing grid for this scenario -->
+        <div id="scenarioGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+      </div>
+    </div>
+
+    <!-- ── LISTING DETAIL VIEW ──────────────────────────────────── -->
+    <div id="viewDetail" class="view">
+      <!-- Back bar -->
+      <div class="sticky top-14 md:top-16 z-20 bg-background/80 backdrop-blur-md border-b border-border-hairline">
+        <div class="max-w-3xl mx-auto px-4 h-12 flex items-center gap-3">
+          <button id="detailBackBtn" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors text-on-surface-variant">
+            <span class="material-symbols-outlined text-sm">arrow_back</span>
+          </button>
+          <span id="detailTitle" class="font-headline-md text-headline-md text-on-surface truncate flex-1">Detail</span>
+          <button id="detailMoreBtn" onclick="openActionSheet()" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors text-on-surface-variant">
+            <span class="material-symbols-outlined text-sm">more_vert</span>
+          </button>
+        </div>
+      </div>
+      <!-- Photo placeholder -->
+      <div id="detailPhoto" class="w-full h-56 md:h-80 bg-surface-container-high flex items-center justify-center relative">
+        <span class="material-symbols-outlined text-6xl text-on-surface-variant/30">home_work</span>
+        <div id="detailStatusBadge" class="absolute top-4 left-4 px-3 py-1 rounded-full font-label-caps text-label-caps"></div>
+        <div id="detailDomBadge" class="absolute top-4 right-4 font-data-mono text-data-mono text-xs px-2 py-0.5 rounded shadow-sm font-medium"></div>
+      </div>
+      <!-- Content -->
+      <div class="max-w-3xl mx-auto px-4 py-6 space-y-4">
+        <!-- Address + deal score -->
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h1 id="detailAddress" class="font-headline-lg text-headline-lg text-on-surface mb-1"></h1>
+            <p id="detailCityState" class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">location_on</span>
+            </p>
+          </div>
+          <div id="detailScoreRing" class="relative w-16 h-16 flex items-center justify-center ml-4 flex-shrink-0"></div>
+        </div>
+        <!-- Price + ARV tiles -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-surface-elevated border border-border-hairline rounded-xl p-4 flex flex-col">
+            <span class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase tracking-wider">List Price</span>
+            <span id="detailPrice" class="font-headline-md text-headline-md text-on-surface font-data-mono tracking-tight"></span>
+          </div>
+          <div class="bg-surface-elevated border border-border-hairline rounded-xl p-4 flex flex-col relative overflow-hidden">
+            <div class="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-primary/10 to-transparent pointer-events-none"></div>
+            <span class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase tracking-wider flex justify-between">
+              Est. ARV <span id="detailUpsidePct" class="text-primary font-data-mono"></span>
+            </span>
+            <span id="detailArv" class="font-headline-md text-headline-md text-on-surface font-data-mono tracking-tight"></span>
+          </div>
+        </div>
+        <!-- Underwriting specs -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden">
+          <div class="px-4 py-3 border-b border-border-hairline flex items-center gap-2 bg-surface-variant/30">
+            <span class="material-symbols-outlined text-on-surface-variant text-sm">analytics</span>
+            <h2 class="font-body-md text-body-md font-semibold text-on-surface">Underwriting Specs</h2>
+          </div>
+          <div id="detailSpecs" class="grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-2 p-4"></div>
+        </div>
+        <!-- AI Analysis -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden">
+          <div class="px-4 py-3 border-b border-border-hairline flex items-center justify-between bg-surface-variant/30">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-on-surface-variant text-sm">memory</span>
+              <h2 class="font-body-md text-body-md font-semibold text-on-surface">AI Analysis Report</h2>
+            </div>
+            <span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-0.5 rounded">Scanned</span>
+          </div>
+          <div class="p-4 space-y-4">
+            <div>
+              <span class="font-label-caps text-label-caps text-on-surface-variant block mb-2">Identified Risks</span>
+              <div id="detailRedFlags" class="flex flex-wrap gap-2"></div>
+            </div>
+            <div>
+              <span class="font-label-caps text-label-caps text-on-surface-variant block mb-2">Value Opportunities</span>
+              <div id="detailOpps" class="flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Recent Comps -->
+        <div id="detailCompsWrap" class="bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden">
+          <div class="px-4 py-3 border-b border-border-hairline flex items-center gap-2 bg-surface-variant/30">
+            <span class="material-symbols-outlined text-on-surface-variant text-sm">real_estate_agent</span>
+            <h2 class="font-body-md text-body-md font-semibold text-on-surface">Area Comparables</h2>
+          </div>
+          <div id="detailComps" class="flex flex-col"></div>
+        </div>
+        <!-- Agent card -->
+        <div id="detailAgentCard" class="bg-surface-elevated border border-border-hairline rounded-xl p-4">
+          <!-- injected -->
+        </div>
+        <!-- Remarks -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden">
+          <div class="px-4 py-3 border-b border-border-hairline bg-surface-variant/30 flex items-center justify-between">
+            <span class="font-body-sm text-body-sm font-medium text-on-surface">Remarks (auto-saved)</span>
+            <span id="detailSaveIndicator" class="font-label-caps text-label-caps text-on-surface-variant"></span>
+          </div>
+          <textarea id="detailRemarks" class="w-full bg-transparent px-4 py-3 text-body-sm font-body-sm text-on-surface placeholder-on-surface-variant/50 focus:outline-none resize-none" rows="3" placeholder="Notes — saved per MLS, persists across sessions…"></textarea>
+        </div>
+        <!-- Texted toggle -->
+        <label id="detailTextedToggle" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl cursor-pointer hover:bg-surface-variant/30 transition-colors">
+          <input type="checkbox" id="detailTextedCb" class="accent-primary w-4 h-4"/>
+          <span class="font-body-sm text-body-sm text-on-surface">Mark as Texted</span>
+        </label>
+        <!-- Under contract toggle -->
+        <button id="detailUcBtn" onclick="toggleUnderContract()" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-border-hairline bg-surface-elevated text-on-surface-variant hover:bg-surface-variant/50 transition-colors font-body-sm text-body-sm">
+          <span class="material-symbols-outlined text-sm">gavel</span>
+          <span id="detailUcBtnLabel">Mark Under Contract</span>
+        </button>
+        <!-- Spacer for bottom CTA -->
+        <div class="h-16 md:h-0"></div>
+      </div>
+      <!-- Bottom CTA (mobile) -->
+      <div class="fixed bottom-16 left-0 w-full md:hidden z-20 bg-background/90 backdrop-blur-md border-t border-border-hairline pb-safe px-4 py-3">
+        <button onclick="openActionSheet()" class="w-full bg-primary-container text-white font-body-md text-body-md py-3.5 rounded-xl hover:bg-inverse-primary transition-colors active:scale-[0.98] flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1">send</span>
+          Contact Agent
+        </button>
+      </div>
+    </div>
+
+    <!-- ── SOURCING VIEW ─────────────────────────────────────────── -->
+    <div id="viewSourcing" class="view">
+      <div class="max-w-2xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Sourcing</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Suggest a new scenario. Balraj will build the scraper and notify you.</p>
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl p-6">
+          <form id="scenarioForm" onsubmit="submitScenario(event)" class="flex flex-col gap-4">
+            <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_template" value="table"/>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Scenario Name *</label>
+              <input id="sf_name" name="name" required class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="e.g. Pasadena Drop"/>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex flex-col gap-1.5">
+                <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Code</label>
+                <input id="sf_code" name="code" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="S11"/>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Subtitle</label>
+                <input id="sf_subtitle" name="subtitle" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="≤$200K · SFR"/>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">HAR Search URL</label>
+              <input id="sf_url" name="har_url" type="url" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="https://www.har.com/…"/>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Filters</label>
+              <input id="sf_filters" name="filters" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="City: Pasadena · Max $200K · Price Reduction"/>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Notes</label>
+              <textarea id="sf_notes" name="notes" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50 resize-none" rows="3" placeholder="Why this area? Any special criteria?"></textarea>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Submitted by</label>
+              <input id="sf_who" name="submitted_by" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="Vivek"/>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <button type="submit" class="flex-1 bg-primary-container text-white py-3 rounded-xl font-body-md text-body-md font-medium hover:bg-primary-fixed transition-colors">Submit Scenario</button>
+            </div>
+            <p id="sf_status" class="font-body-sm text-body-sm text-primary text-center"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── WATCHLIST VIEW ────────────────────────────────────────── -->
+    <div id="viewWatchlist" class="view">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Watchlist</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6">Listings marked Under Contract.</p>
+        <div id="watchlistGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+        <p id="watchlistEmpty" class="font-body-md text-body-md text-on-surface-variant hidden">No listings under contract yet.</p>
+      </div>
+    </div>
+
+    <!-- ── SETTINGS VIEW ─────────────────────────────────────────── -->
+    <div id="viewSettings" class="view">
+      <div class="max-w-2xl mx-auto px-4 md:px-8 py-8 space-y-6">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface">Settings</h2>
+
+        <!-- Date filter -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5">
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Date Filter</h3>
+          <select id="reportDateSel" onchange="onDateChange()" class="w-full bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50">
+            <option value="all">All time</option>
+          </select>
+        </div>
+
+        <!-- Agent registry -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5">
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-1">Agent Registry</h3>
+          <p id="agentCount" class="font-body-sm text-body-sm text-on-surface-variant mb-4">Loading…</p>
+          <div class="flex gap-3">
+            <button onclick="saveAllContacts()" class="flex-1 bg-surface-variant border border-border-hairline text-on-surface px-4 py-2.5 rounded-xl font-body-sm text-body-sm hover:bg-surface-bright transition-colors">Save All vCards</button>
+            <button onclick="resetAgentRegistry()" class="flex-1 bg-surface-variant border border-border-hairline text-error px-4 py-2.5 rounded-xl font-body-sm text-body-sm hover:bg-surface-bright transition-colors">Reset Registry</button>
+          </div>
+        </div>
+
+        <!-- Feedback panel -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden">
+          <div class="px-5 py-4 border-b border-border-hairline flex items-center justify-between">
+            <h3 class="font-headline-md text-headline-md text-on-surface">Feedback / Notes</h3>
+            <span id="fbCount" class="font-data-mono text-data-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded"></span>
+          </div>
+          <div class="p-5">
+            <div class="flex gap-2 mb-4 border-b border-border-hairline pb-3">
+              <button class="fb-tab active tab-btn border-b-2 border-transparent px-3 py-1.5 font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors" data-tab="new" onclick="fbSwitchTab('new')">✍ New</button>
+              <button class="fb-tab tab-btn border-b-2 border-transparent px-3 py-1.5 font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors" data-tab="saved" onclick="fbSwitchTab('saved')">
+                Saved (<span id="fbSavedCount">0</span>)
+              </button>
+            </div>
+            <div id="fbTabNew">
+              <select id="fbContext" class="w-full bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-sm font-body-sm text-on-surface mb-3 focus:outline-none focus:border-primary/50">
+                <option>General</option>
+                <option>Bug Report</option>
+                <option>Feature Request</option>
+                <option>Data Issue</option>
+              </select>
+              <textarea id="fbText" class="w-full bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-primary/50 resize-none mb-3" rows="4" placeholder="Feedback for Balraj…"></textarea>
+              <div class="flex gap-2">
+                <button onclick="fbSaveOnly()" class="flex-1 bg-surface-variant border border-border-hairline text-on-surface px-3 py-2 rounded-lg font-body-sm text-body-sm hover:bg-surface-bright transition-colors">Save</button>
+                <button onclick="fbSaveAndEmail()" class="flex-1 bg-primary-container text-white px-3 py-2 rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors">Save + Email</button>
+              </div>
+            </div>
+            <div id="fbTabSaved" style="display:none">
+              <div id="fbSavedList" class="space-y-3 mb-3"></div>
+              <div class="flex gap-2">
+                <button onclick="fbEmailAll()" class="flex-1 bg-surface-variant border border-border-hairline text-on-surface px-3 py-2 rounded-lg font-body-sm text-body-sm hover:bg-surface-bright transition-colors">Email All</button>
+                <button onclick="fbClearAll()" class="flex-1 bg-surface-variant border border-error/30 text-error px-3 py-2 rounded-lg font-body-sm text-body-sm hover:bg-surface-bright transition-colors">Clear All</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Siri Shortcut -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5">
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Siri Shortcut</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">One-tap batch send all queued SMS messages via the TQHB Shortcut on your iPhone.</p>
+          <button onclick="runSiriShortcut()" class="w-full bg-surface-variant border border-border-hairline text-on-surface px-4 py-2.5 rounded-xl font-body-sm text-body-sm hover:bg-surface-bright transition-colors flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-sm">shortcuts</span>
+            Run Siri Shortcut
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end view container -->
+
+  <!-- MOBILE BOTTOM TAB BAR -->
+  <nav class="md:hidden bg-surface-elevated border-t border-border-hairline fixed bottom-0 w-full z-50 pb-safe flex justify-around items-center h-14 px-2">
+    <button class="bottom-tab flex flex-col items-center justify-center text-primary gap-0.5 px-4 py-1 rounded-xl" data-view="today" onclick="showView('today')">
+      <span class="material-symbols-outlined text-[22px]" style="font-variation-settings:'FILL' 1">dashboard</span>
+      <span class="font-label-caps text-label-caps text-[10px]">Deals</span>
+    </button>
+    <button class="bottom-tab flex flex-col items-center justify-center text-on-surface-variant gap-0.5 px-4 py-1 rounded-xl" data-view="sourcing" onclick="showView('sourcing')">
+      <span class="material-symbols-outlined text-[22px]">search</span>
+      <span class="font-label-caps text-label-caps text-[10px]">Sourcing</span>
+    </button>
+    <button class="bottom-tab flex flex-col items-center justify-center text-on-surface-variant gap-0.5 px-4 py-1 rounded-xl" data-view="watchlist" onclick="showView('watchlist')">
+      <span class="material-symbols-outlined text-[22px]">visibility</span>
+      <span class="font-label-caps text-label-caps text-[10px]">Watchlist</span>
+    </button>
+    <button class="bottom-tab flex flex-col items-center justify-center text-on-surface-variant gap-0.5 px-4 py-1 rounded-xl" data-view="settings" onclick="showView('settings')">
+      <span class="material-symbols-outlined text-[22px]">settings</span>
+      <span class="font-label-caps text-label-caps text-[10px]">Settings</span>
+    </button>
+  </nav>
+
+</div><!-- end main content wrapper -->
+
+<!-- =====================================================================
+     ACTION SHEET MODAL
+===================================================================== -->
+<div id="actionSheet" class="fixed inset-0 z-[60] flex flex-col justify-end bg-black/60" onclick="closeActionSheet()">
+  <div class="bg-surface-container rounded-t-2xl border-t border-border-hairline p-4 pb-safe max-w-lg w-full mx-auto" onclick="event.stopPropagation()">
+    <div class="w-10 h-1 bg-surface-variant rounded-full mx-auto mb-4"></div>
+    <h3 id="actionSheetTitle" class="font-headline-md text-headline-md text-on-surface mb-4 text-center">Actions</h3>
+    <div class="flex flex-col gap-2">
+      <button id="asCall" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-primary">call</span>
+        <span class="font-body-md text-body-md font-medium">Call Agent</span>
+      </button>
+      <button id="asSMS" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-primary">chat</span>
+        <span class="font-body-md text-body-md font-medium">Send SMS</span>
+      </button>
+      <button id="asCopySMS" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">content_copy</span>
+        <span class="font-body-md text-body-md">Copy SMS Text</span>
+      </button>
+      <button id="asVCard" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">contact_mail</span>
+        <span class="font-body-md text-body-md">Save vCard</span>
+      </button>
+      <button id="asUC" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">gavel</span>
+        <span id="asUCLabel" class="font-body-md text-body-md">Mark Under Contract</span>
+      </button>
+      <button id="asHAR" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+        <span class="font-body-md text-body-md">Open in HAR</span>
+      </button>
+      <button id="asZillow" class="flex items-center gap-3 px-4 py-3 bg-surface-elevated border border-border-hairline rounded-xl text-on-surface hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+        <span class="font-body-md text-body-md">Open in Zillow</span>
+      </button>
+      <button onclick="closeActionSheet()" class="flex items-center justify-center px-4 py-3 bg-surface-variant rounded-xl text-on-surface-variant hover:bg-surface-bright transition-colors mt-1">
+        <span class="font-body-md text-body-md">Cancel</span>
+      </button>
+    </div>
+  </div>
 </div>
 
-<div id="pendingScenariosWrap"></div>
-
-<div id="scenarioFormModal" style="display:none;position:fixed;inset:0;background:rgba(15,17,21,.55);z-index:9000;align-items:center;justify-content:center;padding:20px">
-  <div style="background:#fff;max-width:560px;width:100%;border-radius:14px;padding:28px;max-height:90vh;overflow-y:auto;font-family:inherit">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-      <h3 style="margin:0;font-size:20px">Suggest a new scenario</h3>
-      <button onclick="closeScenarioForm()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#666;padding:0;line-height:1">×</button>
+<!-- =====================================================================
+     BATCH SMS TEXT-ALL MODAL
+===================================================================== -->
+<div id="textAllModal" class="fixed inset-0 z-[60] bg-black/70 flex items-center justify-center p-4">
+  <div class="bg-surface-container border border-border-hairline rounded-2xl w-full max-w-lg max-h-[85vh] overflow-y-auto">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-border-hairline">
+      <h3 class="font-headline-md text-headline-md text-on-surface">Batch SMS Queue</h3>
+      <button onclick="closeTextAllQueue()" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors text-on-surface-variant">
+        <span class="material-symbols-outlined text-sm">close</span>
+      </button>
     </div>
-    <p style="color:#666;font-size:13px;margin:0 0 18px">Saved on your device immediately. Balraj is emailed automatically and will build the scraper for it.</p>
-    <form id="scenarioForm" onsubmit="submitScenario(event)">
-      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Scenario name *</label>
-      <input id="sf_name" required placeholder='e.g. "Spring TX 3-bed price drop"' style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:14px">
+    <div id="textAllBody" class="p-6 space-y-4"></div>
+  </div>
+</div>
 
-      <div style="display:flex;gap:12px;margin-bottom:14px">
-        <div style="flex:0 0 110px">
-          <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Code</label>
-          <input id="sf_code" placeholder="S11" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit">
+<!-- =====================================================================
+     ADD-SCENARIO MODAL (also accessible as inline Sourcing view)
+===================================================================== -->
+<div id="scenarioFormModal" class="fixed inset-0 z-[60] bg-black/70 flex items-center justify-center p-4">
+  <div class="bg-surface-container border border-border-hairline rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-border-hairline">
+      <h3 class="font-headline-md text-headline-md text-on-surface">Suggest a Scenario</h3>
+      <button onclick="closeScenarioForm()" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-colors text-on-surface-variant">
+        <span class="material-symbols-outlined text-sm">close</span>
+      </button>
+    </div>
+    <form id="scenarioFormModal_inner" onsubmit="submitScenario(event)" class="p-6 flex flex-col gap-4">
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_template" value="table"/>
+      <div class="flex flex-col gap-1.5">
+        <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Scenario Name *</label>
+        <input id="sf_name" name="name" required class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50"/>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Code</label>
+          <input id="sf_code" name="code" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="S11"/>
         </div>
-        <div style="flex:1">
-          <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Submitted by</label>
-          <input id="sf_who" placeholder="Vivek" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit">
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Subtitle</label>
+          <input id="sf_subtitle" name="subtitle" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="≤$200K · SFR"/>
         </div>
       </div>
-
-      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">One-line description</label>
-      <input id="sf_subtitle" placeholder='e.g. "Active SFR with recent price reduction, under $200K"' style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:14px">
-
-      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">HAR.com search URL</label>
-      <input id="sf_url" type="url" placeholder="https://www.har.com/search/results/..." style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:4px">
-      <p style="color:#888;font-size:11px;margin:0 0 14px">Tip: open HAR.com, build the search exactly how you'd want it, paste the URL here.</p>
-
-      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Filter criteria (free-text)</label>
-      <textarea id="sf_filters" rows="2" placeholder="e.g. 3+ beds, under $200K, DOM 20+, Single Family only, Spring/Klein area" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:14px;resize:vertical"></textarea>
-
-      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Notes (why this scenario?)</label>
-      <textarea id="sf_notes" rows="2" placeholder="Optional context — what makes this worth scraping daily?" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:18px;resize:vertical"></textarea>
-
-      <div style="display:flex;gap:10px;justify-content:flex-end;align-items:center">
-        <span id="sf_status" style="margin-right:auto;font-size:13px"></span>
-        <button type="button" onclick="closeScenarioForm()" style="padding:9px 18px;border:1px solid #d4d4d8;background:#fff;color:#333;border-radius:6px;cursor:pointer;font-size:14px;font-family:inherit">Cancel</button>
-        <button type="submit" style="padding:9px 18px;border:1px solid var(--primary);background:var(--primary);color:#fff;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600;font-family:inherit">Save &amp; notify Balraj</button>
+      <div class="flex flex-col gap-1.5">
+        <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">HAR URL</label>
+        <input id="sf_url" name="har_url" type="url" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50"/>
       </div>
+      <div class="flex flex-col gap-1.5">
+        <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Filters</label>
+        <input id="sf_filters" name="filters" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50"/>
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Notes</label>
+        <textarea id="sf_notes" name="notes" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50 resize-none" rows="3"></textarea>
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Submitted by</label>
+        <input id="sf_who" name="submitted_by" class="bg-surface-variant border border-border-hairline rounded-lg px-3 py-2 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary/50" placeholder="Vivek"/>
+      </div>
+      <div class="flex gap-3 pt-2">
+        <button type="button" onclick="closeScenarioForm()" class="flex-1 bg-surface-variant border border-border-hairline text-on-surface py-3 rounded-xl font-body-md text-body-md hover:bg-surface-bright transition-colors">Cancel</button>
+        <button type="submit" class="flex-1 bg-primary-container text-white py-3 rounded-xl font-body-md text-body-md font-medium hover:bg-primary-fixed transition-colors">Submit</button>
+      </div>
+      <p id="sf_status" class="font-body-sm text-body-sm text-primary text-center"></p>
     </form>
   </div>
 </div>
 
-<div style="max-width:1400px;margin:16px auto 0;padding:14px 22px;background:linear-gradient(135deg,#fff7ed,#ffedd5);border:1px solid #fb923c;border-radius:10px;color:#7c2d12;font-size:13px;line-height:1.55">
-  <strong style="display:block;font-size:14px;margin-bottom:4px">📞 Phone numbers pending for most listings</strong>
-  HAR.com blocks automated phone lookups (PerimeterX captcha on detail pages). Tonight's overnight scrape captured <strong>~620 listings</strong> across all 10 scenarios with address / price / specs / MLS, but most show <code>(Tap HAR ↗ to view)</code> for the agent contact. Click the <strong>🏠 HAR Listing</strong> button on any card to see the real phone on HAR.com. The 19 listings with real verified phones are from earlier batches.
-</div>
-
-<div class="filter-note">
-  <strong>Constants across all scenarios:</strong>
-  <span class="filter-chip">For Sale</span>
-  <span class="filter-chip">Single Family</span>
-  <span class="filter-chip">DOM ≥ 10 days</span>
-  <span style="margin-left:6px;font-size:11px">→ 9 scenarios below vary by city/ZIP, price cap, baths, &amp; flags (Price Drop · Just Listed · Foreclosure).</span>
-  <div style="margin-top:8px;font-size:11px;color:var(--text-muted)">
-    <strong style="color:var(--primary)">Dedup policy:</strong> The daily scraper maintains a registry of every MLS# ever surfaced (<code>mls_seen.json</code>). Listings already shown in past reports are excluded from future runs — you only see <em>new</em> deals each day.
-  </div>
-</div>
-
-<div class="container" id="listings"></div>
-
-<button class="fb-fab" onclick="toggleFeedback()" id="fbFab">💬 Feedback<span class="fb-count" id="fbCount"></span></button>
-<div class="fb-panel" id="fbPanel">
-  <div class="fb-panel-head">
-    <h3>Feedback for Balraj</h3>
-    <button class="close" onclick="toggleFeedback()">×</button>
-  </div>
-  <div class="fb-body">
-    <div class="fb-tabs">
-      <button class="fb-tab active" data-tab="new" onclick="fbSwitchTab('new')">✍ New</button>
-      <button class="fb-tab" data-tab="saved" onclick="fbSwitchTab('saved')">📋 Saved (<span id="fbSavedCount">0</span>)</button>
-    </div>
-    <div id="fbTabNew">
-      <select class="fb-context-select" id="fbContext">
-        <option value="general">General feedback (about the page / report)</option>
-        <option value="scenario">About a specific scenario</option>
-        <option value="listing">About a specific listing</option>
-        <option value="feature">Feature request</option>
-        <option value="bug">Bug / something broken</option>
-      </select>
-      <textarea class="fb-textarea" id="fbText" placeholder="What's on your mind? — e.g. 'Add school district filter', 'Listings in Katy look too thin', 'Send button on iPhone broken'…"></textarea>
-      <div class="fb-actions">
-        <button class="btn btn-copy" onclick="fbSaveOnly()">💾 Save Only</button>
-        <button class="btn btn-sms" onclick="fbSaveAndEmail()">✉ Save & Email</button>
-      </div>
-    </div>
-    <div id="fbTabSaved" style="display:none">
-      <div class="fb-saved-list" id="fbSavedList"></div>
-      <div class="fb-actions">
-        <button class="btn btn-copy" onclick="fbClearAll()">🗑 Clear All</button>
-        <button class="btn btn-sms" onclick="fbEmailAll()">✉ Email All</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal-backdrop" id="textAllModal" onclick="if(event.target===this)closeTextAllQueue()">
-  <div class="modal">
-    <div class="modal-head">
-      <h3>📱 Text All Agents</h3>
-      <button class="close" onclick="closeTextAllQueue()">×</button>
-    </div>
-    <div class="modal-body" id="textAllBody"></div>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <div class="brand-mini">
-    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-      <rect width="64" height="64" rx="10" fill="#0a2540"/>
-      <path d="M26 38 L32 28 L38 38 Z" fill="#c9a961"/>
-    </svg>
-    <span>Texas Quick Home Buyer</span>
-  </div>
-  <div>Daily Deals Generator · Generated by AI · Investment property analysis for Vivek</div>
-  <div style="margin-top:6px;opacity:0.7">texasquickhomebuyer@gmail.com · Houston, TX (50-mile radius)</div>
-</footer>
-
 <script>
 // ============================================================
-// SCENARIOS — daily scraper runs ONE of these per pass.
-// Add/remove scenarios here; each listing carries scenario_id.
+// DATA
 // ============================================================
-// Codename convention: [Geography] [Play Type]
-//   Drop = Price Reduction · Plus = no flag (widest net) · Fresh = Just Listed · 🔥 = Foreclosure-only tab
 const SCENARIOS = [
   { id: 1, code: "S1", icon: "💧", name: "Cleveland Drop", sub: "≤$100K · SFR",         filters: ["City: Cleveland", "For Sale", "Single Family", "Max $100K", "Price Reduction"] },
   { id: 2, code: "S2", icon: "💧", name: "Conroe Cut",     sub: "≤$200K · 2BA · SFR",   filters: ["City: Conroe", "For Sale", "Single Family", "Max $200K", "Min 2 Baths", "Price Reduction"] },
@@ -1092,13 +841,11 @@ const SCENARIOS = [
   { id: 5, code: "S5", icon: "🏘", name: "Northside Plus", sub: "77028 · ≤$200K · SFR", filters: ["City: Houston", "ZIP: 77028", "For Sale", "Single Family", "Max $200K", "(no flag — widest net)"] },
   { id: 6, code: "S6", icon: "🏘", name: "Cleveland Plus", sub: "≤$200K · SFR",         filters: ["City: Cleveland", "For Sale", "Single Family", "Max $200K", "(no flag — widest net)"] },
   { id: 7, code: "S7", icon: "💧", name: "Katy Drop",      sub: "≤$250K · SFR",         filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "Price Reduction"] },
-  { id: 8, code: "S8", icon: "✨", name: "Katy Fresh",     sub: "≤$250K · New Listings",filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "Just Listed"] },
+  { id: 8, code: "S8", icon: "✨", name: "Katy Fresh",     sub: "≤$250K · New Listings", filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "Just Listed"] },
   { id: 9, code: "S9", icon: "🏘", name: "Katy Plus",      sub: "≤$250K · SFR",         filters: ["City: Katy", "For Sale", "Single Family", "Max $250K", "(no flag — widest net)"] },
   { id: 10,code: "S10",icon: "🔥", name: "Foreclosure List",sub: "Houston metro · 100mi", filters: ["Houston metro area", "100-mile radius", "For Sale", "Single Family", "Foreclosure ONLY", "(separate from S1-S9)"] }
 ];
 
-// Replace LISTINGS with daily scraper output (same shape).
-// Each listing carries scenario_id matching one of SCENARIOS above.
 const LISTINGS = [
   {
     "id": 1,
@@ -39368,81 +39115,641 @@ const LISTINGS = [
   }
 }
 ];
-
+// ============================================================
+// HELPERS
+// ============================================================
 const fmtMoney = n => n == null ? '—' : '$' + n.toLocaleString('en-US');
 const fmtMoneyShort = n => n == null ? '—' : n >= 1000 ? '$' + (n/1000).toFixed(n>=10000?0:1) + 'K' : '$' + n;
 const initials = name => name.split(' ').map(w => w[0]).slice(0,2).join('').toUpperCase();
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeId = s => 'prop-' + s;
 
+const DOM_BUCKETS = [
+  { id: 'hot',  min: 30, max: Infinity, label: '30+ DOM', tag: 'Most motivated', color: '#FF453A' },
+  { id: 'warm', min: 20, max: 29,       label: '20–29 DOM', tag: 'Getting stale', color: '#FF9F0A' },
+  { id: 'cool', min: 10, max: 19,       label: '10–19 DOM', tag: 'Seasoning', color: '#8E8E93' }
+];
+const FRESH_CUTOFF = 10;
+
+function bucketFor(dom) {
+  return DOM_BUCKETS.find(b => dom >= b.min && dom <= b.max);
+}
+
+function dealScore(l) {
+  if (l.ai_report && l.ai_report.deal_score != null) return l.ai_report.deal_score;
+  const upside = l.ai_report ? ((l.ai_report.arv_high - l.price) / l.price * 100) : 0;
+  if (upside >= 40) return 9;
+  if (upside >= 30) return 8;
+  if (upside >= 25) return 7;
+  if (upside >= 20) return 6;
+  if (upside >= 15) return 5;
+  return 4;
+}
+
+function domBadgeHtml(dom) {
+  if (dom < FRESH_CUTOFF) return '';
+  const b = bucketFor(dom);
+  const color = b ? b.color : '#8E8E93';
+  const label = b ? b.id.toUpperCase() : 'AGED';
+  return `<span style="background:${color}20;color:${color};border:1px solid ${color}40" class="font-data-mono text-[10px] px-1.5 py-0.5 rounded font-bold tracking-wider">${label} ${dom}d</span>`;
+}
+
+function statusBadgeHtml(status) {
+  const s = (status || '').toLowerCase();
+  let cls = 'bg-surface-variant text-on-surface-variant';
+  if (s === 'active') cls = 'bg-status-active-bg text-primary';
+  else if (/under.contract/.test(s)) cls = 'bg-red-500/15 text-red-400';
+  else if (s === 'foreclosure' || s === 'auction') cls = 'bg-status-auction-bg text-[#BF5AF2]';
+  else if (s === 'pending') cls = 'bg-status-pending-bg text-[#FF9F0A]';
+  return `<span class="font-label-caps text-label-caps px-2 py-0.5 rounded ${cls}">${esc(status)}</span>`;
+}
+
+function dealScoreRingHtml(score, size = 64) {
+  const pct = Math.min(100, (score / 10) * 100);
+  const color = score >= 8 ? '#56df92' : score >= 6 ? '#FF9F0A' : '#8E8E93';
+  return `<svg width="${size}" height="${size}" viewBox="0 0 36 36" class="transform -rotate-90">
+    <path fill="none" stroke="#333539" stroke-width="3" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+    <path fill="none" stroke="${color}" stroke-width="3" stroke-dasharray="${pct}, 100" stroke-linecap="round" class="ring-path" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+  </svg>
+  <div class="absolute flex flex-col items-center" style="top:50%;left:50%;transform:translate(-50%,-50%)">
+    <span class="font-headline-md text-headline-md text-on-surface leading-none" style="color:${color}">${score}</span>
+    <span class="font-label-caps text-on-surface-variant" style="font-size:8px;line-height:1.2">/10</span>
+  </div>`;
+}
+
+// ============================================================
+// PHOTO PLACEHOLDER
+// ============================================================
+function photoPlaceholderHtml(listing) {
+  const icons = ['home', 'home_work', 'maps_home_work'];
+  const icon = icons[listing.id % icons.length];
+  const colors = ['#1e2024','#1C1E23','#282a2e','#1a1c20'];
+  const bg = colors[listing.id % colors.length];
+  return `<div class="w-full h-32 flex items-center justify-center relative overflow-hidden" style="background:${bg}">
+    <span class="material-symbols-outlined text-4xl" style="color:rgba(255,255,255,0.15)">${icon}</span>
+  </div>`;
+}
+
+// ============================================================
+// LISTING CARD (grid card)
+// ============================================================
+function renderCard(l) {
+  const score = dealScore(l);
+  const uc = isUnderContract(l);
+  const upside = ((l.ai_report.arv_high - l.price) / l.price * 100).toFixed(0);
+  const phoneClean = (l.agent.phone || '').replace(/[^\d]/g, '');
+  return `<div class="bg-surface-elevated border border-border-hairline rounded-[14px] overflow-hidden flex flex-col hover:border-primary/30 transition-colors cursor-pointer group listing" data-mls="${esc(l.mls)}" id="card-${l.id}" onclick="openDetail(${l.id})">
+    ${photoPlaceholderHtml(l)}
+    ${uc ? '<div class="relative"><div class="absolute inset-0 bg-background/60 z-10 flex items-center justify-center"><span style="color:#FF453A;background:rgba(255,69,58,0.15);border:1px solid rgba(255,69,58,0.4)" class="font-label-caps text-[9px] px-2 py-1 rounded tracking-widest rotate-[-4deg] inline-block">UNDER CONTRACT</span></div></div>' : ''}
+    <div class="p-4 flex-1 flex flex-col">
+      <div class="flex justify-between items-start mb-1.5 gap-2">
+        <h3 class="font-body-md text-body-md font-semibold text-on-surface leading-tight truncate flex-1">${esc(l.address)}</h3>
+        ${statusBadgeHtml(l.status)}
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mb-3">${esc(l.city)}, ${esc(l.state)} ${esc(l.zip)}</p>
+      <div class="flex items-center justify-between mb-3">
+        <span class="font-data-mono text-data-mono text-xl text-on-surface">${fmtMoney(l.price)}</span>
+        <div class="relative w-10 h-10 flex items-center justify-center">
+          ${dealScoreRingHtml(score, 40)}
+        </div>
+      </div>
+      <div class="flex items-center gap-1 mb-3 flex-wrap">
+        <span class="font-label-caps text-label-caps text-on-surface-variant">ARV ${fmtMoneyShort(l.ai_report.arv_low)}–${fmtMoneyShort(l.ai_report.arv_high)}</span>
+        <span class="ml-auto font-label-caps text-label-caps text-primary">+${upside}% UPSIDE</span>
+      </div>
+      <div class="flex items-center gap-3 mb-4 border-t border-border-hairline pt-3 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bed</span>${l.beds||'?'}</span>
+        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">shower</span>${l.baths||'?'}</span>
+        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">straighten</span>${(l.sqft||0).toLocaleString()}</span>
+        <span class="ml-auto">${domBadgeHtml(l.dom)}</span>
+      </div>
+      <!-- Agent chip -->
+      <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-full bg-surface-variant flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant flex-shrink-0 border border-border-hairline">${initials(l.agent.name)}</div>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate flex-1">${esc(l.agent.name)}</span>
+      </div>
+      <!-- Skip / Action buttons -->
+      <div class="mt-auto flex gap-2" onclick="event.stopPropagation()">
+        <button onclick="skipCard(${l.id})" class="flex-1 bg-surface-variant text-on-surface py-2 rounded-lg font-body-sm text-body-sm border border-border-hairline hover:bg-surface-bright transition-colors">Skip</button>
+        <button onclick="openDetailActions(${l.id})" class="flex-1 bg-primary-container text-white py-2 rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors">Action</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ============================================================
+// BEST 3 LIST ITEM (Today dashboard)
+// ============================================================
+function renderBest3Item(l, isLast) {
+  const score = dealScore(l);
+  const b = bucketFor(l.dom);
+  const dotColor = b ? b.color : '#30D158';
+  return `<div class="group flex items-center p-4 ${isLast ? '' : 'border-b border-border-hairline'} hover:bg-surface-variant/30 transition-colors cursor-pointer" onclick="openDetail(${l.id})">
+    <div class="w-14 h-14 rounded-lg overflow-hidden bg-surface-variant flex-shrink-0 relative flex items-center justify-center" style="background:#1e2024">
+      <span class="material-symbols-outlined text-2xl" style="color:rgba(255,255,255,0.2)">home</span>
+      <div class="absolute top-1 left-1 w-2 h-2 rounded-full" style="background:${dotColor}"></div>
+    </div>
+    <div class="ml-3 flex-1 min-w-0">
+      <div class="flex items-center gap-2 mb-0.5">
+        <span class="font-data-mono text-data-mono text-on-surface truncate">${fmtMoney(l.price)}</span>
+        <span class="px-1.5 py-0.5 rounded text-[10px] font-bold tracking-wider" style="background:${dotColor}20;color:${dotColor}">${score}/10</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant truncate">${esc(l.address)}, ${esc(l.city)}</p>
+    </div>
+    <div class="flex-shrink-0 ml-3 flex flex-col items-end">
+      <span class="font-label-caps text-label-caps text-on-surface-variant mb-1">${l.dom} DOM</span>
+      <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-sm">chevron_right</span>
+    </div>
+  </div>`;
+}
+
+// ============================================================
+// SIDEBAR SCENARIO LIST
+// ============================================================
+function renderSidebarScenarios() {
+  const html = SCENARIOS.map(sc => {
+    const count = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l)).length;
+    const b = DOM_BUCKETS[0]; // use hot color as dot
+    const dotColor = count > 0 ? '#56df92' : '#333539';
+    return `<a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant/50 cursor-pointer" onclick="openScenario(${sc.id})">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:${dotColor}"></div>
+        <span class="font-body-sm text-body-sm">${sc.code}: ${esc(sc.name)}</span>
+      </div>
+      <span class="font-data-mono text-[11px] opacity-50">${count}</span>
+    </a>`;
+  }).join('');
+  const sidebar = document.getElementById('sidebarScenarios');
+  if (sidebar) sidebar.innerHTML = html;
+  const mobile = document.getElementById('mobileMenuScenarios');
+  if (mobile) mobile.innerHTML = html.replace(/onclick="openScenario/g, 'onclick="toggleMobileMenu();openScenario');
+}
+
+function renderScenarioChips() {
+  const chips = document.getElementById('scenarioChips');
+  if (!chips) return;
+  let html = `<button class="scenario-chip whitespace-nowrap px-4 py-2 rounded-full border border-border-hairline bg-surface-elevated text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" onclick="showView('today')">All</button>`;
+  SCENARIOS.forEach(sc => {
+    const count = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l)).length;
+    html += `<button class="scenario-chip whitespace-nowrap px-4 py-2 rounded-full border border-border-hairline bg-surface-elevated text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" onclick="openScenario(${sc.id})">${sc.code} ${esc(sc.name)} <span class="opacity-50 font-data-mono text-[10px] ml-1">${count}</span></button>`;
+  });
+  chips.innerHTML = html;
+}
+
+// ============================================================
+// HERO STATS
+// ============================================================
 function renderHero() {
-  const n = LISTINGS.length;
-  const prices = LISTINGS.map(l => l.price).filter(Boolean);
-  const minPrice = Math.min.apply(null, prices);
-  const maxPrice = Math.max.apply(null, prices);
-  const avgARV = LISTINGS.reduce((s,l)=>s+(l.ai_report.arv_low+l.ai_report.arv_high)/2, 0) / n;
-  const avgPrice = prices.reduce((a,b)=>a+b,0)/n;
-  const avgUpside = ((avgARV - avgPrice) / avgPrice * 100).toFixed(0);
-  const distressed = LISTINGS.filter(l => l.status === 'Foreclosure' || l.status === 'Auction').length;
-  document.getElementById('reportCount').textContent = String(n);
-  const heroHtml =
-    '<div class="stat"><div class="lbl">Listings</div><div class="val">' + n + '</div><div class="sub">Today\'s batch</div></div>' +
-    '<div class="stat"><div class="lbl">Price Range</div><div class="val">' + fmtMoneyShort(minPrice) + '–' + fmtMoneyShort(maxPrice) + '</div><div class="sub">Avg ' + fmtMoneyShort(avgPrice) + '</div></div>' +
-    '<div class="stat"><div class="lbl">Avg ARV Upside</div><div class="val">+' + avgUpside + '%</div><div class="sub">Post-renovation</div></div>' +
-    '<div class="stat"><div class="lbl">Distressed</div><div class="val">' + distressed + ' / ' + n + '</div><div class="sub">Foreclosure/Auction</div></div>';
-  document.getElementById('heroStats').insertAdjacentHTML('beforeend', heroHtml);
+  const visible = LISTINGS.filter(shouldShow);
+  const n = visible.length;
+  const active = visible.filter(l => !isUnderContract(l) && !/foreclosure|auction/i.test(l.status||'')).length;
+  const prices = visible.map(l => l.price).filter(Boolean);
+  const avgPrice = prices.length ? prices.reduce((a,b)=>a+b,0)/prices.length : 0;
+  const avgARV = visible.length ? visible.reduce((s,l)=>s+(l.ai_report.arv_low+l.ai_report.arv_high)/2, 0) / visible.length : 0;
+  const avgUpside = avgPrice ? ((avgARV - avgPrice) / avgPrice * 100).toFixed(0) : 0;
+
+  const heroEl = document.getElementById('heroLeadCount');
+  const subEl = document.getElementById('heroSubtitle');
+  const activeEl = document.getElementById('statTotalActive');
+  const upsideEl = document.getElementById('statAvgUpside');
+  const countEl = document.getElementById('reportCount');
+  if (heroEl) heroEl.textContent = n + ' Listings';
+  if (subEl) subEl.textContent = 'Across ' + SCENARIOS.filter(s => LISTINGS.some(l => l.scenario_id === s.id && shouldShow(l))).length + ' active scenarios. ' + prices.length + ' with prices.';
+  if (activeEl) activeEl.textContent = active;
+  if (upsideEl) upsideEl.textContent = '+' + avgUpside + '%';
+  if (countEl) countEl.textContent = n + ' listings';
+}
+
+// ============================================================
+// RENDER BEST 3
+// ============================================================
+function renderBest3() {
+  const container = document.getElementById('todayBest3');
+  if (!container) return;
+  const visible = LISTINGS.filter(shouldShow);
+  const top3 = visible.slice().sort((a,b) => dealScore(b) - dealScore(a)).slice(0,3);
+  if (top3.length === 0) {
+    container.innerHTML = '<div class="p-6 text-center font-body-sm text-body-sm text-on-surface-variant">No listings match current filter.</div>';
+    return;
+  }
+  container.innerHTML = top3.map((l, i) => renderBest3Item(l, i === top3.length - 1)).join('');
+}
+
+// ============================================================
+// RENDER MAIN GRID
+// ============================================================
+function renderGrid(targetId, listings) {
+  const container = document.getElementById(targetId);
+  if (!container) return;
+  if (listings.length === 0) {
+    container.innerHTML = '<div class="col-span-full py-12 text-center font-body-sm text-body-sm text-on-surface-variant">No listings match the current filter.</div>';
+    return;
+  }
+  container.innerHTML = listings.map(renderCard).join('');
 }
 
 function renderNav() {
-  const navHtml = SCENARIOS.map(sc => {
-    const count = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l)).length;
-    return '<a href="#scenario-' + sc.id + '" class="nav-link scenario" data-scenario="' + sc.id + '">'
-      + '<span class="num">' + sc.icon + ' ' + sc.code + '</span>' + esc(sc.name)
-      + '<span class="sc-count-pill">' + count + '</span></a>';
-  }).join('');
-  document.getElementById('navLinks').replaceChildren();
-  document.getElementById('navLinks').insertAdjacentHTML('beforeend', navHtml);
+  // no-op: sidebar uses renderSidebarScenarios
 }
 
-function renderScenarioDivider(sc, count) {
-  const chips = sc.filters.map(f => '<span class="sc-filter-chip">' + esc(f) + '</span>').join('');
-  return '<div class="scenario-divider" id="scenario-' + sc.id + '">'
-    + '<div class="scenario-divider-inner">'
-    + '<div style="flex:1;min-width:0">'
-    + '<div class="sc-kicker">' + sc.icon + ' Scenario ' + sc.code + ' · ' + esc(sc.sub) + '</div>'
-    + '<h2>' + esc(sc.name) + '</h2>'
-    + '<div class="sc-filters">' + chips + '</div>'
-    + '</div>'
-    + '<div class="sc-count">' + count + ' listing' + (count === 1 ? '' : 's') + '</div>'
-    + '</div></div>';
+function renderScenarioDivider() {}  // no-op: replaced by scenario view
+function renderEmptyScenario() {}    // no-op
+function renderBucketHeader() {}     // no-op
+function renderEmptyBucket() {}      // no-op
+
+// ============================================================
+// VIEW NAVIGATION
+// ============================================================
+let currentView = 'today';
+let detailBackView = 'today';
+
+function showView(viewId) {
+  // Hide all views
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  // Map viewId to element
+  const map = {
+    'today': 'viewToday',
+    'scenario': 'viewScenario',
+    'detail': 'viewDetail',
+    'sourcing': 'viewSourcing',
+    'watchlist': 'viewWatchlist',
+    'settings': 'viewSettings'
+  };
+  const elId = map[viewId] || map['today'];
+  const el = document.getElementById(elId);
+  if (el) el.classList.add('active');
+  currentView = viewId;
+
+  // Update bottom tab active states
+  document.querySelectorAll('.bottom-tab').forEach(b => {
+    const isActive = b.dataset.view === viewId;
+    b.classList.toggle('text-primary', isActive);
+    b.classList.toggle('text-on-surface-variant', !isActive);
+  });
+  // Update sidebar active states
+  document.querySelectorAll('.sidebar-main-link').forEach(a => {
+    const isActive = a.dataset.view === viewId;
+    a.classList.toggle('bg-primary-container/10', isActive);
+    a.classList.toggle('text-primary', isActive);
+    a.classList.toggle('text-on-surface-variant', !isActive);
+  });
+  // Desktop filter label
+  const filterLabel = document.getElementById('desktopFilterLabel');
+  if (filterLabel) {
+    const text = viewId === 'today' ? 'All Scenarios' : (viewId.startsWith('sc:') ? viewId.replace('sc:','S') : viewId);
+    filterLabel.innerHTML = `Filtered by: <strong class="text-on-surface font-medium">${text}</strong>`;
+  }
+  // Watchlist re-render on open
+  if (viewId === 'watchlist') renderWatchlist();
+  window.scrollTo(0,0);
 }
 
-function renderEmptyScenario(sc) {
-  return '<div class="empty-scenario">'
-    + '<strong>' + sc.icon + ' ' + esc(sc.name) + '</strong> — no listings yet. Awaiting next scraper run for: ' + sc.filters.map(esc).join(' · ')
-    + '</div>';
+function openScenario(scId) {
+  const sc = SCENARIOS.find(s => s.id === scId);
+  if (!sc) return;
+  document.getElementById('scenarioViewCode').textContent = sc.code + ' · ' + sc.sub;
+  document.getElementById('scenarioViewName').textContent = sc.name;
+  // Filter chips
+  const chipsEl = document.getElementById('scenarioFilterChips');
+  if (chipsEl) {
+    chipsEl.innerHTML = sc.filters.map(f => `<span class="px-3 py-1 rounded-full border border-border-hairline bg-surface-elevated font-label-caps text-label-caps text-on-surface-variant text-[10px]">${esc(f)}</span>`).join('');
+  }
+  // Render listings for this scenario
+  const scListings = LISTINGS.filter(l => l.scenario_id === scId && shouldShow(l)).sort((a,b) => dealScore(b) - dealScore(a));
+  renderGrid('scenarioGrid', scListings);
+  detailBackView = 'scenario';
+  showView('scenario');
+  // Update desktop filter label
+  const filterLabel = document.getElementById('desktopFilterLabel');
+  if (filterLabel) filterLabel.innerHTML = `Filtered by: <strong class="text-on-surface font-medium">${sc.code}: ${esc(sc.name)}</strong>`;
 }
 
-// Status filter — drives both visible listings and batch SMS queue.
+// ============================================================
+// DETAIL VIEW
+// ============================================================
+let currentListing = null;
+
+function openDetail(id) {
+  const l = LISTINGS.find(x => x.id === id);
+  if (!l) return;
+  currentListing = l;
+  detailBackView = currentView;
+
+  // Set back button
+  const backBtn = document.getElementById('detailBackBtn');
+  if (backBtn) backBtn.onclick = () => showView(detailBackView);
+
+  // Title
+  document.getElementById('detailTitle').textContent = l.address;
+
+  // Status badge in photo area
+  const statusBadge = document.getElementById('detailStatusBadge');
+  if (statusBadge) {
+    statusBadge.className = 'absolute top-4 left-4 px-3 py-1 rounded-full font-label-caps text-label-caps';
+    const s = (l.status||'').toLowerCase();
+    if (s === 'active') { statusBadge.classList.add('bg-status-active-bg','text-primary'); }
+    else if (/under.contract/.test(s)) { statusBadge.classList.add('bg-red-500/15','text-red-400'); }
+    else if (s === 'foreclosure'||s==='auction') { statusBadge.classList.add('bg-status-auction-bg','text-[#BF5AF2]'); }
+    else statusBadge.classList.add('bg-surface-variant','text-on-surface-variant');
+    statusBadge.textContent = l.status;
+  }
+
+  // DOM badge
+  const domBadge = document.getElementById('detailDomBadge');
+  if (domBadge) {
+    const b = bucketFor(l.dom);
+    const color = b ? b.color : '#30D158';
+    domBadge.style.background = color + '20';
+    domBadge.style.color = color;
+    domBadge.style.border = '1px solid ' + color + '40';
+    domBadge.textContent = l.dom + ' DOM';
+  }
+
+  // Address
+  document.getElementById('detailAddress').textContent = l.address;
+  const cityState = document.getElementById('detailCityState');
+  if (cityState) cityState.innerHTML = `<span class="material-symbols-outlined text-sm">location_on</span> ${esc(l.city)}, ${esc(l.state)} ${esc(l.zip)}`;
+
+  // Deal score ring
+  const scoreEl = document.getElementById('detailScoreRing');
+  if (scoreEl) { const s = dealScore(l); scoreEl.innerHTML = dealScoreRingHtml(s, 64); }
+
+  // Price + ARV
+  document.getElementById('detailPrice').textContent = fmtMoney(l.price);
+  const upside = ((l.ai_report.arv_high - l.price) / l.price * 100).toFixed(0);
+  document.getElementById('detailUpsidePct').textContent = '+' + upside + '% UPSIDE';
+  document.getElementById('detailArv').textContent = fmtMoneyShort(l.ai_report.arv_low) + ' – ' + fmtMoneyShort(l.ai_report.arv_high);
+
+  // Specs
+  const specs = document.getElementById('detailSpecs');
+  if (specs) {
+    specs.innerHTML = [
+      ['Price/Sqft', '$' + (l.price_per_sqft||'?')],
+      ['Beds / Baths', (l.beds||'?') + ' / ' + (l.baths||'?')],
+      ['Living Area', (l.sqft||0).toLocaleString() + ' sqft'],
+      ['Year Built', l.year_built||'?'],
+      ['Days on Market', l.dom + ' DOM'],
+      ['MLS #', l.mls||'—'],
+      ['Source', l.source||'—'],
+      ['Scrape Date', l.scrape_date||'—']
+    ].map(([k,v]) => `<div><span class="font-label-caps text-label-caps text-on-surface-variant block mb-0.5">${k}</span><span class="font-data-mono text-data-mono text-on-surface">${esc(String(v))}</span></div>`).join('');
+  }
+
+  // Red flags
+  const flags = document.getElementById('detailRedFlags');
+  if (flags) {
+    const arr = l.ai_report.red_flags || [];
+    flags.innerHTML = arr.length ? arr.map(f => `<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-error-container/20 border border-error/30"><span class="material-symbols-outlined text-sm text-error">warning</span><span class="font-body-sm text-body-sm text-error font-medium">${esc(f)}</span></div>`).join('') : '<span class="font-body-sm text-body-sm text-on-surface-variant">None identified.</span>';
+  }
+
+  // Opportunities
+  const opps = document.getElementById('detailOpps');
+  if (opps) {
+    const arr = l.ai_report.opportunity_notes || [];
+    opps.innerHTML = arr.length ? arr.map(o => `<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-primary-container/20 border border-primary-container/30"><span class="material-symbols-outlined text-sm text-primary">trending_up</span><span class="font-body-sm text-body-sm text-primary font-medium">${esc(o)}</span></div>`).join('') : '<span class="font-body-sm text-body-sm text-on-surface-variant">None identified.</span>';
+  }
+
+  // Comps
+  const comps = document.getElementById('detailComps');
+  if (comps) {
+    const arr = l.ai_report.comps || [];
+    comps.innerHTML = arr.map((c, i) => `<div class="${i < arr.length-1 ? 'border-b border-border-hairline' : ''} px-4 py-3 hover:bg-surface-variant/30 transition-colors"><div class="font-body-md text-body-md text-on-surface font-medium">${esc(c.address||'Comparable')}</div><div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">${esc(c.notes||'')}</div></div>`).join('');
+  }
+
+  // Agent card
+  const agentCard = document.getElementById('detailAgentCard');
+  const phoneClean = (l.agent.phone||'').replace(/[^\d]/g,'');
+  const smsMsg = smsBodyFor(l);
+  if (agentCard) {
+    agentCard.innerHTML = `
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-full bg-surface-variant border border-border-hairline flex items-center justify-center font-label-caps text-label-caps text-on-surface flex-shrink-0">${initials(l.agent.name)}</div>
+        <div class="flex-1">
+          <h3 class="font-body-md text-body-md font-semibold text-on-surface">${esc(l.agent.name)}</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">${esc(l.agent.brokerage||'')}</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-2">
+        <a href="tel:${phoneClean}" class="flex items-center justify-center gap-1.5 py-2.5 border border-border-hairline rounded-xl hover:bg-surface-variant/50 transition-colors text-on-surface">
+          <span class="material-symbols-outlined text-sm text-primary">call</span>
+          <span class="font-body-sm text-body-sm font-medium">Call</span>
+        </a>
+        <a href="sms:${phoneClean}&body=${encodeURIComponent(smsMsg)}" class="flex items-center justify-center gap-1.5 py-2.5 border border-border-hairline rounded-xl hover:bg-surface-variant/50 transition-colors text-on-surface">
+          <span class="material-symbols-outlined text-sm text-primary">chat</span>
+          <span class="font-body-sm text-body-sm font-medium">SMS</span>
+        </a>
+        <button onclick="saveContact(${l.id})" class="flex items-center justify-center gap-1.5 py-2.5 border border-border-hairline rounded-xl hover:bg-surface-variant/50 transition-colors text-on-surface">
+          <span class="material-symbols-outlined text-sm text-on-surface-variant">contact_mail</span>
+          <span class="font-body-sm text-body-sm font-medium">vCard</span>
+        </button>
+      </div>`;
+  }
+
+  // Remarks
+  const ta = document.getElementById('detailRemarks');
+  if (ta) {
+    ta.value = localStorage.getItem('tqhb_remarks_' + l.mls) || '';
+    ta.dataset.mls = l.mls;
+    const indicator = document.getElementById('detailSaveIndicator');
+    let saveTimer;
+    ta.oninput = () => {
+      if (indicator) { indicator.textContent = '● Saving…'; }
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => {
+        localStorage.setItem('tqhb_remarks_' + ta.dataset.mls, ta.value);
+        localStorage.setItem('tqhb_remarks_ts_' + ta.dataset.mls, String(Date.now()));
+        if (indicator) {
+          const ts = localStorage.getItem('tqhb_remarks_ts_' + ta.dataset.mls);
+          const when = ts ? new Date(parseInt(ts,10)).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) : '';
+          indicator.textContent = ta.value ? '✓ Saved · ' + when : '';
+        }
+      }, 300);
+    };
+    if (indicator) {
+      const ts = localStorage.getItem('tqhb_remarks_ts_' + l.mls);
+      const when = ts ? new Date(parseInt(ts,10)).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) : '';
+      indicator.textContent = ta.value ? '✓ Saved · ' + when : '';
+    }
+  }
+
+  // Texted cb
+  const cb = document.getElementById('detailTextedCb');
+  if (cb) {
+    cb.checked = localStorage.getItem('tqhb_texted_' + l.mls) === '1';
+    cb.dataset.mls = l.mls;
+    cb.onchange = () => { localStorage.setItem('tqhb_texted_' + l.mls, cb.checked ? '1' : '0'); };
+  }
+
+  // Under contract button
+  const ucBtn = document.getElementById('detailUcBtn');
+  const ucLabel = document.getElementById('detailUcBtnLabel');
+  if (ucLabel) ucLabel.textContent = isUnderContract(l) ? 'Remove Under Contract' : 'Mark Under Contract';
+  if (ucBtn) {
+    if (isUnderContract(l)) {
+      ucBtn.classList.add('border-red-400/30','text-red-400');
+    } else {
+      ucBtn.classList.remove('border-red-400/30','text-red-400');
+    }
+  }
+
+  showView('detail');
+}
+
+function toggleUnderContract() {
+  if (!currentListing) return;
+  const mls = currentListing.mls;
+  const key = 'uc:' + mls;
+  const wasUC = localStorage.getItem(key) === '1';
+  if (wasUC) {
+    localStorage.removeItem(key);
+  } else {
+    localStorage.setItem(key, '1');
+  }
+  // Re-render detail
+  openDetail(currentListing.id);
+}
+
+// ============================================================
+// ACTION SHEET
+// ============================================================
+function openActionSheet(id) {
+  const l = id ? LISTINGS.find(x => x.id === id) : currentListing;
+  if (!l) return;
+  currentListing = l;
+  const phoneClean = (l.agent.phone||'').replace(/[^\d]/g,'');
+  const smsMsg = smsBodyFor(l);
+  document.getElementById('actionSheetTitle').textContent = l.address;
+
+  document.getElementById('asCall').onclick = () => { window.location.href = 'tel:' + phoneClean; closeActionSheet(); };
+  document.getElementById('asSMS').onclick = () => { window.location.href = 'sms:' + phoneClean + '&body=' + encodeURIComponent(smsMsg); closeActionSheet(); };
+  document.getElementById('asCopySMS').onclick = () => {
+    navigator.clipboard.writeText(smsMsg).then(() => {
+      const btn = document.getElementById('asCopySMS');
+      const orig = btn.querySelector('span:last-child').textContent;
+      btn.querySelector('span:last-child').textContent = '✓ Copied!';
+      setTimeout(() => { btn.querySelector('span:last-child').textContent = orig; }, 1400);
+    });
+    closeActionSheet();
+  };
+  document.getElementById('asVCard').onclick = () => { saveContact(l.id); closeActionSheet(); };
+  const ucLabel = document.getElementById('asUCLabel');
+  if (ucLabel) ucLabel.textContent = isUnderContract(l) ? 'Remove Under Contract' : 'Mark Under Contract';
+  document.getElementById('asUC').onclick = () => { toggleUnderContract(); closeActionSheet(); };
+  const harBtn = document.getElementById('asHAR');
+  harBtn.style.display = l.har_url ? '' : 'none';
+  harBtn.onclick = () => { window.open(l.har_url, '_blank', 'noopener'); closeActionSheet(); };
+  const zillowBtn = document.getElementById('asZillow');
+  zillowBtn.style.display = l.zillow_url ? '' : 'none';
+  zillowBtn.onclick = () => { window.open(l.zillow_url, '_blank', 'noopener'); closeActionSheet(); };
+
+  document.getElementById('actionSheet').classList.add('open');
+}
+
+function closeActionSheet() {
+  document.getElementById('actionSheet').classList.remove('open');
+}
+
+// ============================================================
+// SKIP CARD (just collapses/hides for session)
+// ============================================================
+const skippedCards = new Set();
+function skipCard(id) {
+  skippedCards.add(id);
+  const card = document.getElementById('card-' + id);
+  if (card) {
+    card.style.transition = 'opacity 0.2s, transform 0.2s';
+    card.style.opacity = '0';
+    card.style.transform = 'scale(0.95)';
+    setTimeout(() => { card.style.display = 'none'; }, 200);
+  }
+}
+
+function openDetailActions(id) {
+  currentListing = LISTINGS.find(x => x.id === id) || currentListing;
+  openActionSheet(id);
+}
+
+// ============================================================
+// START REVIEW — goes to first scenario with listings
+// ============================================================
+function startReview() {
+  const firstSc = SCENARIOS.find(sc => LISTINGS.some(l => l.scenario_id === sc.id && shouldShow(l)));
+  if (firstSc) openScenario(firstSc.id);
+}
+
+// ============================================================
+// WATCHLIST
+// ============================================================
+function renderWatchlist() {
+  const grid = document.getElementById('watchlistGrid');
+  const empty = document.getElementById('watchlistEmpty');
+  if (!grid) return;
+  const ucListings = LISTINGS.filter(l => localStorage.getItem('uc:' + l.mls) === '1' || isUnderContract(l));
+  if (ucListings.length === 0) {
+    grid.innerHTML = '';
+    if (empty) empty.classList.remove('hidden');
+  } else {
+    if (empty) empty.classList.add('hidden');
+    grid.innerHTML = ucListings.map(renderCard).join('');
+  }
+}
+
+// ============================================================
+// MOBILE MENU + SEARCH
+// ============================================================
+function toggleMobileMenu() {
+  const overlay = document.getElementById('mobileMenuOverlay');
+  const menu = document.getElementById('mobileMenu');
+  const isOpen = !menu.classList.contains('-translate-x-full');
+  overlay.classList.toggle('hidden', isOpen);
+  menu.classList.toggle('-translate-x-full', isOpen);
+}
+
+function openSearch() {
+  const bar = document.getElementById('mobileSearchBar');
+  if (bar) {
+    bar.classList.toggle('hidden');
+    if (!bar.classList.contains('hidden')) {
+      document.getElementById('mobileSearch').focus();
+    }
+  }
+}
+
+function closeSearch() {
+  const bar = document.getElementById('mobileSearchBar');
+  if (bar) bar.classList.add('hidden');
+  document.getElementById('mobileSearch').value = '';
+  onMlsSearch('');
+}
+
+function openBulkMenu() {
+  // Show a quick action sheet with bulk options
+  const l = currentListing;
+  // Just open text queue or save all
+  const choice = confirm('Batch SMS (OK) or Save All Contacts (Cancel → choose)?\n\nOK = Batch SMS\nCancel = Save All Contacts');
+  if (choice) openTextAllQueue();
+  else saveAllContacts();
+}
+
+// ============================================================
+// FILTER + SEARCH
+// ============================================================
 let activeFilter = 'all';
 let searchTerm = '';
 let selectedDate = 'all';
 
 function shouldShow(l) {
-  // Date filter — picked date matches scrape_date OR last_seen_date
   if (selectedDate && selectedDate !== 'all') {
     if (l.scrape_date !== selectedDate && l.last_seen_date !== selectedDate) return false;
   }
-  // Status filter
   let statusOk = true;
   if (activeFilter === 'uc') statusOk = isUnderContract(l);
   else if (activeFilter === 'foreclosure') statusOk = /foreclosure|auction/i.test(l.status || '');
   else if (activeFilter === 'active') statusOk = !isUnderContract(l) && !/foreclosure|auction/i.test(l.status || '');
   if (!statusOk) return false;
-  // Search filter — matches MLS, address, agent name, brokerage (case-insensitive substring)
   if (searchTerm) {
     const t = searchTerm.toLowerCase();
-    const hay = ((l.mls || '') + ' ' + (l.address || '') + ' ' + (l.city || '') + ' ' + (l.zip || '') + ' ' + (l.agent?.name || '') + ' ' + (l.agent?.brokerage || '')).toLowerCase();
+    const hay = ((l.mls||'') + ' ' + (l.address||'') + ' ' + (l.city||'') + ' ' + (l.zip||'') + ' ' + (l.agent?.name||'') + ' ' + (l.agent?.brokerage||'')).toLowerCase();
     if (!hay.includes(t)) return false;
   }
   return true;
@@ -39450,8 +39757,12 @@ function shouldShow(l) {
 
 function onMlsSearch(v) {
   searchTerm = (v || '').trim();
-  applyStatusFilter(activeFilter);
-  // If single MLS match, scroll to it
+  // Sync both search inputs
+  const ds = document.getElementById('desktopSearch');
+  const ms = document.getElementById('mobileSearch');
+  if (ds && ds.value !== searchTerm) ds.value = searchTerm;
+  if (ms && ms.value !== searchTerm) ms.value = searchTerm;
+  rerender();
   if (searchTerm.length >= 4) {
     const exact = LISTINGS.find(l => String(l.mls) === searchTerm);
     if (exact) {
@@ -39460,207 +39771,38 @@ function onMlsSearch(v) {
     }
   }
 }
+
 function applyStatusFilter(name) {
   activeFilter = name;
   document.querySelectorAll('.filter-pill').forEach(p => p.classList.toggle('active', p.dataset.filter === name));
-  document.querySelectorAll('.listing').forEach(el => {
-    const mls = el.dataset.mls;
-    const l = LISTINGS.find(x => x.mls === mls);
-    el.classList.toggle('hidden', !l || !shouldShow(l));
-  });
-  // Update bucket + scenario counts
-  document.querySelectorAll('.scenario-divider').forEach(d => {
-    const scId = parseInt(d.id.replace('scenario-', ''), 10);
-    const visible = LISTINGS.filter(x => x.scenario_id === scId && shouldShow(x) && x.dom >= FRESH_CUTOFF).length;
-    const countEl = d.querySelector('.sc-count');
-    if (countEl) countEl.textContent = visible + ' listing' + (visible === 1 ? '' : 's');
-  });
-  // Re-render nav counts
-  document.querySelectorAll('.nav-link.scenario').forEach(a => {
-    const scId = parseInt(a.dataset.scenario, 10);
-    const visible = LISTINGS.filter(x => x.scenario_id === scId && shouldShow(x) && x.dom >= FRESH_CUTOFF).length;
-    const pill = a.querySelector('.sc-count-pill');
-    if (pill) pill.textContent = visible;
-  });
-  const totalVisible = LISTINGS.filter(shouldShow).length;
-  const total = LISTINGS.length;
-  document.getElementById('filterStats').textContent = totalVisible + ' of ' + total + ' listings shown';
+  rerender();
 }
 
-function renderListing(l) {
-  const id = safeId(l.id);
-  const totalUpside = ((l.ai_report.arv_high - l.price) / l.price * 100).toFixed(0);
-  const avgArv = (l.ai_report.arv_low + l.ai_report.arv_high) / 2;
-  const spread = avgArv - l.price;
-  const uc = isUnderContract(l);
-  const cardClass = 'listing-card' + (uc ? ' under-contract' : '');
-  const smsMsg = smsBodyFor(l);
-  const compsRows = l.ai_report.comps.map(c =>
-    '<tr><td><strong>' + esc(c.address) + '</strong></td><td>' + esc(c.notes || '—') + '</td></tr>'
-  ).join('');
-  const flagsList = l.ai_report.red_flags.map(f => '<li>' + esc(f) + '</li>').join('');
-  const oppsList = l.ai_report.opportunity_notes.map(o => '<li>' + esc(o) + '</li>').join('');
-  const phoneClean = l.agent.phone.replace(/[^\d]/g, '');
-  const statusClass = esc(l.status).replace(/\s+/g, '-');
-  return '<section class="listing" id="' + id + '" data-mls="' + esc(l.mls) + '">'
-    + '<div class="section-header">'
-    + '<div class="kicker">Property ' + String(l.id).padStart(2,'0') + ' · MLS ' + esc(l.mls) + ' · ' + esc(l.source) + '</div>'
-    + '<h2>' + esc(l.address) + ', ' + esc(l.city) + ' ' + esc(l.state) + ' ' + esc(l.zip) + ' <span class="status-badge status-' + statusClass + '">' + esc(l.status) + '</span></h2>'
-    + '<div class="sub">' + (l.beds || '?') + ' Bed · ' + (l.baths || '?') + ' Bath · ' + (l.sqft||0).toLocaleString() + ' sqft · Built ' + (l.year_built || '?') + ' · ' + l.dom + ' DOM</div>'
-    + '</div>'
-    + '<div class="' + cardClass + '" data-id="' + l.id + '">'
-    + '<div class="facts-grid">'
-    + '<div class="fact"><div class="lbl">List Price</div><div class="val price">' + fmtMoney(l.price) + '</div></div>'
-    + '<div class="fact"><div class="lbl">Beds / Baths</div><div class="val">' + (l.beds || '?') + ' / ' + (l.baths || '?') + '</div></div>'
-    + '<div class="fact"><div class="lbl">Sqft</div><div class="val">' + (l.sqft||0).toLocaleString() + '</div></div>'
-    + '<div class="fact"><div class="lbl">$ / Sqft</div><div class="val">$' + (l.price_per_sqft || '?') + '</div></div>'
-    + '<div class="fact"><div class="lbl">Year Built</div><div class="val">' + (l.year_built || '?') + '</div></div>'
-    + '<div class="fact"><div class="lbl">DOM</div><div class="val">' + l.dom + '</div></div>'
-    + '</div>'
-    + '<div class="card-body">'
-    + '<h3><span class="h-ico">▸</span> AI Valuation Report</h3>'
-    + '<div class="arv-block">'
-    + '<div><div class="arv-lbl">After Repair Value (ARV)</div><div class="arv-val">' + fmtMoney(l.ai_report.arv_low) + ' – ' + fmtMoney(l.ai_report.arv_high) + '</div></div>'
-    + '<div class="arv-spread"><div class="lbl">Upside vs List</div><div class="val">+' + fmtMoneyShort(spread) + ' (' + totalUpside + '%)</div></div>'
-    + '</div>'
-    + '<h3><span class="h-ico">▸</span> Area Comparables</h3>'
-    + '<table class="data-table"><thead><tr><th style="width:38%">Area</th><th>Range / Sqft / $ per Sqft</th></tr></thead><tbody>' + compsRows + '</tbody></table>'
-    + '<h3><span class="h-ico">▸</span> Red Flags &amp; Opportunities</h3>'
-    + '<div class="callout warning"><span class="callout-label">⚠ Red Flags</span><ul>' + flagsList + '</ul></div>'
-    + '<div class="callout success"><span class="callout-label">✓ Opportunity Notes</span><ul>' + oppsList + '</ul></div>'
-    + '<h3><span class="h-ico">▸</span> Listing Agent</h3>'
-    + '<div class="agent-block">'
-    + '<div class="agent-avatar">' + initials(l.agent.name) + '</div>'
-    + '<div class="agent-info"><div class="name">' + esc(l.agent.name) + '</div><div class="brokerage">' + esc(l.agent.brokerage) + '</div></div>'
-    + '<a class="agent-phone" href="tel:' + phoneClean + '">' + esc(l.agent.phone) + '</a>'
-    + '</div>'
-    + '<div class="sms-box"><div class="sms-lbl"><span>📱 Pre-filled SMS' + (uc ? ' <em style="color:#f97316">(Under Contract template)</em>' : '') + '</span></div><div class="sms-txt" id="sms-' + l.id + '">' + esc(smsMsg) + '</div></div>'
-    + '<div class="actions">'
-    + '<a class="btn btn-sms" href="sms:' + phoneClean + '&body=' + encodeURIComponent(smsMsg) + '">📱 Text Agent</a>'
-    + '<a class="btn btn-call" href="tel:' + phoneClean + '">📞 Call</a>'
-    + '<a class="btn btn-har" href="' + esc(l.har_url || '#') + '" target="_blank" rel="noopener">🏠 HAR Listing</a>'
-    + '<button class="btn btn-save" onclick="saveContact(' + l.id + ')">💾 Save Contact</button>'
-    + '<button class="btn btn-copy" onclick="copyMessage(' + l.id + ', event)">📋 Copy SMS</button>'
-    + '</div>'
-    + '<div class="control-row">'
-    + '<label class="texted-toggle">'
-    + '<input type="checkbox" data-texted="' + esc(l.mls) + '"><span>Mark as Texted</span><span class="pill">✓ Texted</span>'
-    + '</label>'
-    + '<div class="remarks-wrap">'
-    + '<div class="remarks-header"><span class="remarks-lbl">Remarks (auto-saved)</span><span class="save-indicator" data-saved="' + esc(l.mls) + '"></span></div>'
-    + '<textarea class="remarks" placeholder="Add notes — auto-saved per property (keyed by MLS, persists across daily refreshes)…" data-remarks="' + esc(l.mls) + '"></textarea>'
-    + '</div>'
-    + '</div>'
-    + '</div></div></section>';
-}
-
-function copyMessage(id, evt) {
-  const l = LISTINGS.find(x => x.id === id);
-  navigator.clipboard.writeText(l.sms_message).then(() => {
-    const btn = evt.target;
-    const orig = btn.textContent;
-    btn.textContent = '✓ Copied';
-    setTimeout(() => { btn.textContent = orig; }, 1400);
-  });
-}
-
-function saveContact(id) {
-  const l = LISTINGS.find(x => x.id === id);
-  const agent = mergeListingIntoAgent(l);
-  const vcard = buildVcardFromAgent(agent);
-  const blob = new Blob([vcard], { type: 'text/vcard' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = agent.name.replace(/\s/g,'_') + '_MLS' + l.mls + '.vcf';
-  a.click();
-  URL.revokeObjectURL(url);
-  updateAgentCounter();
-}
-
-function updateAgentCounter() {
-  const el = document.getElementById('agentCount');
-  if (!el) return;
-  const agents = allAgents();
-  const totalMls = agents.reduce((s,a) => s + a.listings.length, 0);
-  el.textContent = agents.length + ' agents · ' + totalMls + ' MLS';
-}
-
-function resetAgentRegistry() {
-  const agents = allAgents();
-  if (agents.length === 0) { alert('Registry is already empty.'); return; }
-  if (!confirm('Clear ' + agents.length + ' agents (' + agents.reduce((s,a)=>s+a.listings.length,0) + ' tracked MLS) from local registry? Then re-imported vCards will start fresh.')) return;
-  for (let i = localStorage.length - 1; i >= 0; i--) {
-    const k = localStorage.key(i);
-    if (k && k.startsWith(AGENT_KEY_PREFIX)) localStorage.removeItem(k);
-  }
-  refreshAgentRegistry(); // re-add today's listings only
-  updateAgentCounter();
-  alert('Reset done. Registry now reflects only today\'s ' + LISTINGS.length + ' listings.');
-}
-
-function loadState() {
-  document.querySelectorAll('[data-texted]').forEach(cb => {
-    const mls = cb.dataset.texted;
-    const key = 'tqhb_texted_' + mls;
-    if (localStorage.getItem(key) === '1') {
-      cb.checked = true;
-      cb.closest('.listing-card').classList.add('texted');
+function rerender() {
+  // Re-render hero stats, best 3, main grid, sidebar counts
+  renderHero();
+  renderBest3();
+  const visible = LISTINGS.filter(shouldShow).sort((a,b) => dealScore(b) - dealScore(a));
+  renderGrid('listingsGrid', visible);
+  renderSidebarScenarios();
+  renderScenarioChips();
+  // If we're in scenario view, re-render that too
+  if (currentView === 'scenario') {
+    const scNameEl = document.getElementById('scenarioViewName');
+    if (scNameEl) {
+      const sc = SCENARIOS.find(s => s.name === scNameEl.textContent);
+      if (sc) {
+        const scListings = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l)).sort((a,b) => dealScore(b) - dealScore(a));
+        renderGrid('scenarioGrid', scListings);
+      }
     }
-    cb.addEventListener('change', () => {
-      localStorage.setItem(key, cb.checked ? '1' : '0');
-      cb.closest('.listing-card').classList.toggle('texted', cb.checked);
-    });
-  });
-  document.querySelectorAll('[data-remarks]').forEach(ta => {
-    const mls = ta.dataset.remarks;
-    const key = 'tqhb_remarks_' + mls;
-    const tsKey = 'tqhb_remarks_ts_' + mls;
-    const indicator = document.querySelector('[data-saved="' + mls + '"]');
-    ta.value = localStorage.getItem(key) || '';
-    const updateIndicator = (state) => {
-      if (!indicator) return;
-      if (state === 'saving') { indicator.textContent = '● Saving…'; indicator.className = 'save-indicator saving'; }
-      else if (state === 'saved') {
-        const ts = localStorage.getItem(tsKey);
-        const when = ts ? new Date(parseInt(ts, 10)).toLocaleString('en-US', { month:'short', day:'numeric', hour:'numeric', minute:'2-digit' }) : '';
-        indicator.textContent = ta.value ? '✓ Saved · ' + when : '';
-        indicator.className = 'save-indicator saved';
-      }
-    };
-    updateIndicator('saved');
-    let saveTimer;
-    ta.addEventListener('input', () => {
-      updateIndicator('saving');
-      clearTimeout(saveTimer);
-      saveTimer = setTimeout(() => {
-        localStorage.setItem(key, ta.value);
-        localStorage.setItem(tsKey, String(Date.now()));
-        updateIndicator('saved');
-      }, 300);
-    });
-  });
-}
-
-function initScrollspy() {
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('.scenario-divider');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const id = e.target.id;
-        navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
-      }
-    });
-  }, { rootMargin: '-130px 0px -60% 0px' });
-  sections.forEach(s => observer.observe(s));
+  }
+  const totalVisible = LISTINGS.filter(shouldShow).length;
+  document.getElementById('filterStats').textContent = totalVisible + ' of ' + LISTINGS.length + ' listings';
 }
 
 // ============================================================
-// AGENT REGISTRY — persists across days via localStorage.
-// Keyed by phone (stable across listings).
-// Each agent record accumulates every MLS they've ever listed.
-// vCard export uses stable UID so iOS Contacts updates in place.
+// CONTACT MANAGEMENT (unchanged from original)
 // ============================================================
 const AGENT_KEY_PREFIX = 'tqhb_agent_';
 const today = () => new Date().toISOString().slice(0,10);
@@ -39729,14 +39871,10 @@ function refreshAgentRegistry() {
 
 function buildVcardFromAgent(agent) {
   const phoneClean = phoneKey(agent.phone);
-  // Build a contact name like "Virginia Espinoza 10357889 #TQHB" (one MLS) or
-  // "Virginia Espinoza 10357889+2 #TQHB" (multi-listing agent). The #TQHB hashtag
-  // lets the user filter Contacts later and bulk-delete via search.
   const firstMls = agent.listings[0]?.mls || '';
   const extraCount = Math.max(0, agent.listings.length - 1);
   const mlsTag = firstMls ? (extraCount ? firstMls + '+' + extraCount : firstMls) : '';
   const contactName = [agent.name, mlsTag, '#TQHB'].filter(Boolean).join(' ');
-  // Note field: full listing breakdown for reference (visible in Contact details)
   const noteLines = ['Tracked via TQHB · first ' + agent.first_seen + ' · last ' + agent.last_seen];
   noteLines.push('Listings (' + agent.listings.length + '):');
   agent.listings.forEach(x => {
@@ -39759,12 +39897,45 @@ function buildVcardFromAgent(agent) {
   ].join('\n');
 }
 
+function saveContact(id) {
+  const l = LISTINGS.find(x => x.id === id);
+  const agent = mergeListingIntoAgent(l);
+  const vcard = buildVcardFromAgent(agent);
+  const blob = new Blob([vcard], { type: 'text/vcard' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = agent.name.replace(/\s/g,'_') + '_MLS' + l.mls + '.vcf';
+  a.click();
+  URL.revokeObjectURL(url);
+  updateAgentCounter();
+}
+
+function updateAgentCounter() {
+  const el = document.getElementById('agentCount');
+  if (!el) return;
+  const agents = allAgents();
+  const totalMls = agents.reduce((s,a) => s + a.listings.length, 0);
+  el.textContent = agents.length + ' agents · ' + totalMls + ' MLS tracked';
+}
+
+function resetAgentRegistry() {
+  const agents = allAgents();
+  if (agents.length === 0) { alert('Registry is already empty.'); return; }
+  if (!confirm('Clear ' + agents.length + ' agents (' + agents.reduce((s,a)=>s+a.listings.length,0) + ' tracked MLS)?')) return;
+  for (let i = localStorage.length - 1; i >= 0; i--) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(AGENT_KEY_PREFIX)) localStorage.removeItem(k);
+  }
+  refreshAgentRegistry();
+  updateAgentCounter();
+  alert('Reset done. Registry now reflects only current listings.');
+}
+
 function saveAllContacts() {
   refreshAgentRegistry();
   const agents = allAgents();
   if (agents.length === 0) { alert('No agents tracked yet.'); return; }
-  // iOS Contacts requires CRLF line endings AND each VCARD properly separated.
-  // Convert any embedded \n within vcards to \r\n so iOS accepts the bundle.
   const vcards = agents.map(a => buildVcardFromAgent(a).replace(/\r?\n/g, '\r\n')).join('\r\n');
   const blob = new Blob([vcards], { type: 'text/x-vcard;charset=utf-8' });
   const url = URL.createObjectURL(blob);
@@ -39773,9 +39944,8 @@ function saveAllContacts() {
   a.download = 'TQHB_All_Agents_' + today() + '.vcf';
   a.click();
   URL.revokeObjectURL(url);
-  // Also offer sequential fallback in case iOS still only imports first card.
   setTimeout(() => {
-    const useSeq = confirm('Downloaded ' + agents.length + ' contacts in one file.\n\nIf iOS only saved the FIRST contact (known iOS bug with multi-vCard files), click OK to save the rest one at a time. Otherwise click Cancel.');
+    const useSeq = confirm('Downloaded ' + agents.length + ' contacts.\n\nIf iOS only saved the first contact, click OK to save the rest one at a time.');
     if (useSeq) saveContactsSequential();
   }, 800);
 }
@@ -39785,10 +39955,7 @@ function saveContactsSequential() {
   if (agents.length === 0) return;
   let idx = 0;
   function next() {
-    if (idx >= agents.length) {
-      alert('Done — saved ' + agents.length + ' contacts.');
-      return;
-    }
+    if (idx >= agents.length) { alert('Done — saved ' + agents.length + ' contacts.'); return; }
     const agent = agents[idx];
     const vcard = buildVcardFromAgent(agent).replace(/\r?\n/g, '\r\n');
     const blob = new Blob([vcard], { type: 'text/x-vcard;charset=utf-8' });
@@ -39799,83 +39966,15 @@ function saveContactsSequential() {
     a.click();
     URL.revokeObjectURL(url);
     idx++;
-    setTimeout(() => {
-      if (confirm('Saved ' + agent.name + ' (' + idx + '/' + agents.length + '). Save next?')) next();
-    }, 600);
+    setTimeout(() => { if (confirm('Saved ' + agent.name + ' (' + idx + '/' + agents.length + '). Save next?')) next(); }, 600);
   }
   next();
 }
 
-const DOM_BUCKETS = [
-  { id: 'hot',  min: 30, max: Infinity, label: '30+ Days on Market',   tag: 'Most motivated sellers' },
-  { id: 'warm', min: 20, max: 29,       label: '20–29 Days on Market', tag: 'Getting stale' },
-  { id: 'cool', min: 10, max: 19,       label: '10–19 Days on Market', tag: 'Seasoning' }
-];
-const FRESH_CUTOFF = 10;
-
-function bucketFor(dom) {
-  return DOM_BUCKETS.find(b => dom >= b.min && dom <= b.max);
-}
-
-function renderBucketHeader(b, count) {
-  const dot = b.id === 'hot' ? '🔴' : b.id === 'warm' ? '🟠' : '🟡';
-  return '<div class="bucket ' + b.id + '"><div class="bucket-header">'
-    + '<span class="bucket-dot">' + dot + '</span>'
-    + '<span class="bucket-label">' + esc(b.label) + '</span>'
-    + '<span class="bucket-tag">· ' + esc(b.tag) + '</span>'
-    + '<span class="bucket-count">' + count + '</span>'
-    + '</div></div>';
-}
-
-function renderEmptyBucket(b) {
-  return '<div class="bucket-empty">No listings in ' + esc(b.label) + ' for this scenario.</div>';
-}
-
-function init() {
-  refreshAgentRegistry();
-  renderHero();
-  renderNav();
-  const container = document.getElementById('listings');
-  let html = '';
-  SCENARIOS.forEach(sc => {
-    const scListings = LISTINGS.filter(l => l.scenario_id === sc.id);
-    const seasoned = scListings.filter(l => l.dom >= FRESH_CUTOFF);
-    const fresh = scListings.filter(l => l.dom < FRESH_CUTOFF);
-    html += renderScenarioDivider(sc, seasoned.length);
-    if (scListings.length === 0) {
-      html += renderEmptyScenario(sc);
-      return;
-    }
-    DOM_BUCKETS.forEach(b => {
-      const inBucket = seasoned.filter(l => l.dom >= b.min && l.dom <= b.max);
-      if (inBucket.length === 0) {
-        html += renderEmptyBucket(b);
-      } else {
-        html += renderBucketHeader(b, inBucket.length);
-        html += inBucket.sort((a,b) => b.dom - a.dom).map(renderListing).join('');
-      }
-    });
-    if (fresh.length > 0) {
-      html += '<div class="excluded-note">⚠ <strong>' + fresh.length + ' fresh listing' + (fresh.length===1?'':'s') + '</strong> excluded (DOM &lt; ' + FRESH_CUTOFF + '): ' + fresh.map(l => 'MLS ' + esc(l.mls) + ' (' + l.dom + 'd)').join(', ') + '</div>';
-    }
-  });
-  container.insertAdjacentHTML('beforeend', html);
-  loadState();
-  initScrollspy();
-  updateAgentCounter();
-  applyStatusFilter('all'); // populates filterStats + ensures consistent state
-}
-
 // ============================================================
-// TEXT-ALL-AGENTS SEQUENTIAL QUEUE
+// SMS BODY + TEXT QUEUE (unchanged from original)
 // ============================================================
-// One agent at a time. Each agent gets ONE composed SMS (not one per listing)
-// — if an agent has multiple MLS today, the SMS references all of them.
-let textQueue = [];
-let textIdx = 0;
-
-// SMS template chooser — Under Contract gets the "if buyer doesn't perform" wording.
-function isUnderContract(l) { return /under\s*contract/i.test(l.status || ''); }
+function isUnderContract(l) { return /under\s*contract/i.test(l.status || '') || localStorage.getItem('uc:' + l.mls) === '1'; }
 
 function smsBodyFor(l) {
   const firstName = l.agent.name.split(' ')[0];
@@ -39883,20 +39982,18 @@ function smsBodyFor(l) {
   if (isUnderContract(l)) {
     return 'Hey ' + firstName + ', this is Vivek, local investor. Interested in one of your listings at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + mlsTag + '. I see it is under contract — would you please let me know if the current buyer doesn\'t perform? Thank you!';
   }
-  // Strip any old (MLS# x) from prebuilt l.sms_message in case it was generated before MLS was appended,
-  // then append fresh MLS so replies are easy to match.
   const base = (l.sms_message || ('Hi ' + firstName + ', this is Vivek, local Investor. Interested in your listing at ' + l.address + ', ' + l.city + ' ' + l.state + ' ' + l.zip + '. Are you available to walk the property? Is there a lockbox on site? Thank you!'))
     .replace(/\s*\(MLS#[^)]*\)/i, '');
-  // Insert MLS just before "Are you available" so it lives with the address rather than tacking onto the end
   return base.replace(/(\. )Are you available/, mlsTag + '$1Are you available');
 }
 
+let textQueue = [];
+let textIdx = 0;
+
 function buildTextQueue() {
-  // Group by (agent phone, status type) — so one agent with mixed Active + UC
-  // listings shows up as TWO queue items, each with the right SMS template.
   const groups = {};
   LISTINGS.forEach(l => {
-    if (!shouldShow(l)) return; // respect current status filter
+    if (!shouldShow(l)) return;
     const type = isUnderContract(l) ? 'uc' : 'active';
     const k = phoneKey(l.agent.phone) + ':' + type;
     if (!groups[k]) groups[k] = { agent: l.agent, type: type, listings: [] };
@@ -39937,33 +40034,32 @@ function closeTextAllQueue() {
 
 function renderTextQueueStep() {
   const body = document.getElementById('textAllBody');
-  body.replaceChildren();
+  body.innerHTML = '';
   if (textIdx >= textQueue.length) {
-    body.insertAdjacentHTML('beforeend',
-      '<div class="queue-done"><span class="check">✓</span>All caught up — ' + textQueue.length + ' agent' + (textQueue.length===1?'':'s') + ' queued or sent.</div>'
-      + '<div class="queue-actions"><button class="btn btn-har" onclick="closeTextAllQueue()">Close</button></div>');
+    body.innerHTML = '<div class="text-center py-8"><span class="font-headline-md text-headline-md text-primary">✓</span><p class="font-body-md text-body-md text-on-surface mt-2">All caught up — ' + textQueue.length + ' agent' + (textQueue.length===1?'':'s') + ' queued.</p><button class="mt-4 bg-surface-variant border border-border-hairline text-on-surface px-6 py-2 rounded-xl font-body-sm text-body-sm hover:bg-surface-bright transition-colors" onclick="closeTextAllQueue()">Close</button></div>';
     return;
   }
   const item = textQueue[textIdx];
   const msg = composedBodyFor(item);
-  const typeBadge = item.type === 'uc'
-    ? '<span style="background:#f97316;color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;margin-left:6px">⚠ Under Contract</span>'
-    : '';
+  const typeBadge = item.type === 'uc' ? '<span class="bg-red-500/20 text-red-400 px-2 py-0.5 rounded font-label-caps text-label-caps ml-2">Under Contract</span>' : '';
   const listingRefs = item.listings.map(l =>
-    '<div>• <strong>MLS ' + esc(l.mls) + '</strong> — ' + esc(l.address) + ' · $' + l.price.toLocaleString() + ' <em style="color:var(--text-muted);font-size:11px">[' + esc(l.status) + ']</em></div>'
+    `<div class="font-body-sm text-body-sm text-on-surface-variant">• MLS ${esc(l.mls)} — ${esc(l.address)} · ${fmtMoney(l.price)}</div>`
   ).join('');
-  body.insertAdjacentHTML('beforeend',
-    '<div class="queue-progress">Agent <strong>' + (textIdx + 1) + '</strong> of <strong>' + textQueue.length + '</strong>' + typeBadge + '</div>'
-    + '<div class="queue-agent">'
-    + '<div class="name">' + esc(item.agent.name) + '</div>'
-    + '<div class="brokerage">' + esc(item.agent.brokerage) + ' · ' + esc(item.agent.phone) + '</div>'
-    + '<div class="listing-ref">' + listingRefs + '</div>'
-    + '</div>'
-    + '<div class="queue-sms"><div class="lbl">📱 Composed SMS</div>' + esc(msg).replace(/\n/g, '<br>') + '</div>'
-    + '<div class="queue-actions">'
-    + '<button class="btn btn-copy" onclick="skipCurrentAgent()">Skip</button>'
-    + '<button class="btn btn-sms" onclick="sendCurrentAgent()">Send &amp; Next →</button>'
-    + '</div>');
+  body.innerHTML = `
+    <div class="font-label-caps text-label-caps text-on-surface-variant mb-4">Agent ${textIdx+1} of ${textQueue.length} ${typeBadge}</div>
+    <div class="bg-surface-variant border border-border-hairline rounded-xl p-4 mb-4">
+      <div class="font-body-md text-body-md font-semibold text-on-surface mb-1">${esc(item.agent.name)}</div>
+      <div class="font-body-sm text-body-sm text-on-surface-variant mb-3">${esc(item.agent.brokerage||'')} · ${esc(item.agent.phone)}</div>
+      ${listingRefs}
+    </div>
+    <div class="bg-surface-elevated border border-border-hairline rounded-xl p-4 mb-4">
+      <div class="font-label-caps text-label-caps text-on-surface-variant mb-2">Composed SMS</div>
+      <div class="font-body-sm text-body-sm text-on-surface whitespace-pre-wrap">${esc(msg)}</div>
+    </div>
+    <div class="flex gap-3">
+      <button onclick="skipCurrentAgent()" class="flex-1 bg-surface-variant border border-border-hairline text-on-surface py-2.5 rounded-xl font-body-sm text-body-sm hover:bg-surface-bright transition-colors">Skip</button>
+      <button onclick="sendCurrentAgent()" class="flex-1 bg-primary-container text-white py-2.5 rounded-xl font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors">Send & Next →</button>
+    </div>`;
 }
 
 function sendCurrentAgent() {
@@ -39975,8 +40071,6 @@ function sendCurrentAgent() {
   localStorage.setItem(k, '1');
   item.listings.forEach(l => {
     localStorage.setItem('tqhb_texted_' + l.mls, '1');
-    const cb = document.querySelector('[data-texted="' + l.mls + '"]');
-    if (cb) { cb.checked = true; cb.closest('.listing-card').classList.add('texted'); }
   });
   window.location.href = 'sms:' + phone + '&body=' + encodeURIComponent(msg);
   textIdx++;
@@ -39989,18 +40083,11 @@ function skipCurrentAgent() {
 }
 
 // ============================================================
-// SIRI SHORTCUT HANDOFF — one-tap batch send
+// SIRI SHORTCUT
 // ============================================================
-// Builds a payload of {phone, message} pairs and hands off to the
-// "TQHB Text Agents" Shortcut installed on the user's iPhone via
-// the shortcuts:// URL scheme. The Shortcut loops Send Message.
-// See setup-shortcut.html for one-time install instructions.
 async function runSiriShortcut() {
   const queue = buildTextQueue();
-  if (queue.length === 0) {
-    alert('Queue empty — all agents already texted today for the current filter.');
-    return;
-  }
+  if (queue.length === 0) { alert('Queue empty — all agents already texted today for the current filter.'); return; }
   const payload = queue.map(item => ({
     name: item.agent.name,
     phone: '+1' + phoneKey(item.agent.phone),
@@ -40009,223 +40096,167 @@ async function runSiriShortcut() {
     mls_list: item.listings.map(l => l.mls).join(',')
   }));
   const jsonStr = JSON.stringify({ generated_at: new Date().toISOString(), count: payload.length, queue: payload });
-  const dateLabel = (typeof selectedDate !== 'undefined' && selectedDate && selectedDate !== 'all') ? selectedDate : 'all dates';
-
+  const dateLabel = (selectedDate && selectedDate !== 'all') ? selectedDate : 'all dates';
   const ok = confirm(
-    'Copy ' + payload.length + ' message' + (payload.length===1?'':'s') +
-    ' (from ' + dateLabel + ') to clipboard?\n\n' +
-    'Then open the Shortcuts app on your iPhone and tap TQHB Text Agents.\n' +
-    'It will read the queue from your clipboard and send each message.\n\n' +
-    'iOS sends ~10 SMS/minute, so ~' + Math.ceil(payload.length/10) + ' min for ' + payload.length + ' messages.'
+    'Copy ' + payload.length + ' message' + (payload.length===1?'':'s') + ' (' + dateLabel + ') to clipboard?\n\n' +
+    'Then open Shortcuts app and tap TQHB Text Agents.\n~' + Math.ceil(payload.length/10) + ' min for ' + payload.length + ' messages.'
   );
   if (!ok) return;
-
-  try {
-    await navigator.clipboard.writeText(jsonStr);
-  } catch (e) {
-    alert('Could not copy to clipboard: ' + e.message + '\n\nTry tapping the page first to give it focus, then Run Shortcut again.');
-    return;
-  }
-
+  try { await navigator.clipboard.writeText(jsonStr); }
+  catch (e) { alert('Could not copy to clipboard: ' + e.message + '\n\nTap the page first, then try again.'); return; }
   queue.forEach(item => {
     const k = 'tqhb_textall_' + phoneKey(item.agent.phone) + '_' + item.type + '_' + today();
     localStorage.setItem(k, '1');
-    item.listings.forEach(l => {
-      localStorage.setItem('tqhb_texted_' + l.mls, '1');
-      const cb = document.querySelector('[data-texted="' + l.mls + '"]');
-      if (cb) { cb.checked = true; cb.closest('.listing-card').classList.add('texted'); }
-    });
+    item.listings.forEach(l => { localStorage.setItem('tqhb_texted_' + l.mls, '1'); });
   });
-  // Final user-facing confirmation — no auto-jump to Shortcuts. Vivek opens it manually.
-  alert('✓ Copied ' + payload.length + ' messages to clipboard.\n\nNow:\n1. Switch to the Shortcuts app\n2. Tap "TQHB Text Agents"\n3. It reads the queue from your clipboard and sends each message');
+  alert('✓ Copied ' + payload.length + ' messages.\n\n1. Switch to Shortcuts\n2. Tap "TQHB Text Agents"');
 }
 
 // ============================================================
-// DATE PICKER — daily report archive
+// DATE PICKER
 // ============================================================
-// For now there's only one report (today). When the scraper starts
-// publishing reports/YYYY-MM-DD.json, populate this list from a manifest.
 function populateDateSelect() {
-  const sel = document.getElementById('reportDateSel');
-  // Build set of dates present in LISTINGS
+  const sels = [document.getElementById('reportDateSel'), document.getElementById('desktopDateSel')].filter(Boolean);
   const dateSet = new Set();
   LISTINGS.forEach(l => {
     if (l.scrape_date) dateSet.add(l.scrape_date);
     if (l.last_seen_date) dateSet.add(l.last_seen_date);
   });
   const todayStr = today();
-  dateSet.add(todayStr); // always include today even if empty
+  dateSet.add(todayStr);
   const sortedData = Array.from(dateSet).sort();
-  // Fill every day from earliest to today (continuous range, no gaps)
   const allDates = [];
   if (sortedData.length > 0) {
     const cur = new Date(sortedData[0] + 'T12:00:00');
     const end = new Date(todayStr + 'T12:00:00');
     while (cur <= end) {
-      const y = cur.getFullYear();
-      const m = String(cur.getMonth()+1).padStart(2,'0');
-      const d = String(cur.getDate()).padStart(2,'0');
+      const y = cur.getFullYear(), m = String(cur.getMonth()+1).padStart(2,'0'), d = String(cur.getDate()).padStart(2,'0');
       allDates.push(y + '-' + m + '-' + d);
       cur.setDate(cur.getDate()+1);
     }
   }
-  allDates.reverse(); // newest first
-  sel.replaceChildren();
-  // "All time" first
-  const optAll = document.createElement('option');
-  optAll.value = 'all';
-  optAll.textContent = 'All time (' + LISTINGS.length + ')';
-  sel.appendChild(optAll);
-  allDates.forEach(d => {
-    const count = LISTINGS.filter(l => l.scrape_date === d || l.last_seen_date === d).length;
-    const label = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-    const opt = document.createElement('option');
-    opt.value = d;
-    const isToday = d === todayStr;
-    opt.textContent = (isToday ? '★ ' : '') + label + ' (' + count + ')' + (count === 0 ? ' — empty' : '');
-    sel.appendChild(opt);
+  allDates.reverse();
+  sels.forEach(sel => {
+    sel.innerHTML = '';
+    const optAll = document.createElement('option');
+    optAll.value = 'all';
+    optAll.textContent = 'All time (' + LISTINGS.length + ')';
+    sel.appendChild(optAll);
+    allDates.forEach(d => {
+      const count = LISTINGS.filter(l => l.scrape_date === d || l.last_seen_date === d).length;
+      const label = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+      const opt = document.createElement('option');
+      opt.value = d;
+      opt.textContent = (d === todayStr ? '★ ' : '') + label + ' (' + count + ')' + (count === 0 ? ' — empty' : '');
+      sel.appendChild(opt);
+    });
+    const mostRecent = allDates.find(d => LISTINGS.some(l => l.scrape_date === d || l.last_seen_date === d));
+    sel.value = mostRecent || todayStr;
   });
-  // Default: most-recent date that has listings, else today
-  const mostRecentWithData = allDates.find(d => LISTINGS.some(l => l.scrape_date === d || l.last_seen_date === d));
-  sel.value = mostRecentWithData || todayStr;
-  selectedDate = sel.value;
+  selectedDate = sels[0] ? sels[0].value : 'all';
 }
 
 function onDateChange() {
-  const sel = document.getElementById('reportDateSel');
-  selectedDate = sel.value;
-  applyStatusFilter(typeof activeFilter !== 'undefined' ? activeFilter : 'all');
+  const sel = document.getElementById('reportDateSel') || document.getElementById('desktopDateSel');
+  selectedDate = sel ? sel.value : 'all';
+  // Sync both selects
+  [document.getElementById('reportDateSel'), document.getElementById('desktopDateSel')].forEach(s => { if (s) s.value = selectedDate; });
+  rerender();
 }
 
 // ============================================================
-// FEEDBACK WIDGET — Vivek's notes & feature requests for Balraj
+// FEEDBACK
 // ============================================================
 const FB_KEY = 'tqhb_feedback_v1';
 const FB_TO_EMAIL = 'balrajsinghkalra@gmail.com';
 
-function fbLoad() {
-  try { return JSON.parse(localStorage.getItem(FB_KEY) || '[]'); } catch (e) { return []; }
-}
+function fbLoad() { try { return JSON.parse(localStorage.getItem(FB_KEY) || '[]'); } catch (e) { return []; } }
 function fbSave(arr) { localStorage.setItem(FB_KEY, JSON.stringify(arr)); fbUpdateCount(); }
 function fbUpdateCount() {
   const n = fbLoad().length;
-  document.getElementById('fbCount').textContent = n ? String(n) : '';
-  document.getElementById('fbSavedCount').textContent = String(n);
+  const c = document.getElementById('fbCount');
+  const sc = document.getElementById('fbSavedCount');
+  if (c) c.textContent = n ? String(n) : '';
+  if (sc) sc.textContent = String(n);
 }
-
 function toggleFeedback() {
   const panel = document.getElementById('fbPanel');
-  panel.classList.toggle('open');
-  if (panel.classList.contains('open')) { fbRenderSaved(); }
+  if (panel) { panel.classList.toggle('open'); if (panel.classList.contains('open')) fbRenderSaved(); }
 }
-
 function fbSwitchTab(which) {
   document.querySelectorAll('.fb-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === which));
-  document.getElementById('fbTabNew').style.display = which === 'new' ? '' : 'none';
-  document.getElementById('fbTabSaved').style.display = which === 'saved' ? '' : 'none';
+  const tabNew = document.getElementById('fbTabNew');
+  const tabSaved = document.getElementById('fbTabSaved');
+  if (tabNew) tabNew.style.display = which === 'new' ? '' : 'none';
+  if (tabSaved) tabSaved.style.display = which === 'saved' ? '' : 'none';
 }
-
 function fbCollect() {
   const text = document.getElementById('fbText').value.trim();
   if (!text) { alert('Type some feedback first.'); return null; }
-  return {
-    id: Date.now(),
-    timestamp: new Date().toISOString(),
-    context: document.getElementById('fbContext').value,
-    text: text,
-    page_date: today(),
-    user_agent: navigator.userAgent.slice(0, 80)
-  };
+  return { id: Date.now(), timestamp: new Date().toISOString(), context: document.getElementById('fbContext').value, text, page_date: today(), user_agent: navigator.userAgent.slice(0,80) };
 }
-
 function fbSaveOnly() {
   const entry = fbCollect(); if (!entry) return;
   const all = fbLoad(); all.unshift(entry); fbSave(all);
   document.getElementById('fbText').value = '';
-  fbSwitchTab('saved');
-  fbRenderSaved();
+  fbSwitchTab('saved'); fbRenderSaved();
 }
-
 function fbSaveAndEmail() {
   const entry = fbCollect(); if (!entry) return;
   const all = fbLoad(); all.unshift(entry); fbSave(all);
   const subject = '[TQHB Feedback] ' + entry.context + ' — ' + new Date().toLocaleDateString('en-US');
   const body = 'From: Vivek (TQHB Daily Lead Generator)\nDate: ' + new Date().toLocaleString('en-US') + '\nContext: ' + entry.context + '\n\n' + entry.text + '\n\n— sent from tqhb.github.io/daily-lead-generator/';
   document.getElementById('fbText').value = '';
-  fbSwitchTab('saved');
-  fbRenderSaved();
+  fbSwitchTab('saved'); fbRenderSaved();
   window.location.href = 'mailto:' + FB_TO_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 }
-
 function fbRenderSaved() {
   const list = document.getElementById('fbSavedList');
+  if (!list) return;
   const all = fbLoad();
-  list.replaceChildren();
-  if (all.length === 0) {
-    list.insertAdjacentHTML('beforeend', '<div class="fb-empty">No saved feedback yet. Switch to ✍ New to add some.</div>');
-    return;
-  }
-  const html = all.map(e => {
+  if (all.length === 0) { list.innerHTML = '<div class="font-body-sm text-body-sm text-on-surface-variant">No saved feedback yet.</div>'; return; }
+  list.innerHTML = all.map(e => {
     const when = new Date(e.timestamp).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
-    return '<div class="fb-saved-item">'
-      + '<div class="fb-meta"><span class="fb-kind">' + esc(e.context) + ' · ' + when + '</span>'
-      + '<button class="fb-del" onclick="fbDelete(' + e.id + ')">Delete</button></div>'
-      + esc(e.text).replace(/\n/g, '<br>')
-      + '</div>';
+    return `<div class="bg-surface-variant rounded-xl p-3 border border-border-hairline"><div class="flex justify-between mb-1"><span class="font-label-caps text-label-caps text-on-surface-variant">${esc(e.context)} · ${when}</span><button class="font-label-caps text-label-caps text-error hover:underline" onclick="fbDelete(${e.id})">Delete</button></div><div class="font-body-sm text-body-sm text-on-surface">${esc(e.text).replace(/\n/g,'<br>')}</div></div>`;
   }).join('');
-  list.insertAdjacentHTML('beforeend', html);
 }
-
-function fbDelete(id) {
-  const all = fbLoad().filter(e => e.id !== id);
-  fbSave(all);
-  fbRenderSaved();
-}
-
+function fbDelete(id) { fbSave(fbLoad().filter(e => e.id !== id)); fbRenderSaved(); }
 function fbClearAll() {
-  if (!confirm('Delete ALL saved feedback? This cannot be undone (unless you re-type it).')) return;
-  fbSave([]);
-  fbRenderSaved();
+  if (!confirm('Delete ALL saved feedback?')) return;
+  fbSave([]); fbRenderSaved();
 }
-
 function fbEmailAll() {
   const all = fbLoad();
   if (all.length === 0) { alert('Nothing saved yet.'); return; }
   const subject = '[TQHB Feedback] Batch of ' + all.length + ' notes — ' + new Date().toLocaleDateString('en-US');
-  const body = 'From: Vivek (TQHB Daily Lead Generator)\nSent: ' + new Date().toLocaleString('en-US') + '\n\n'
-    + all.map((e, i) => {
-        const when = new Date(e.timestamp).toLocaleString('en-US');
-        return '── #' + (i+1) + ' [' + e.context + '] ' + when + ' ──\n' + e.text;
-      }).join('\n\n')
-    + '\n\n— sent from tqhb.github.io/daily-lead-generator/';
+  const body = 'From: Vivek\nSent: ' + new Date().toLocaleString('en-US') + '\n\n' + all.map((e,i) => '── #' + (i+1) + ' [' + e.context + '] ' + new Date(e.timestamp).toLocaleString() + ' ──\n' + e.text).join('\n\n');
   window.location.href = 'mailto:' + FB_TO_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 }
 
-// =================== ADD-SCENARIO FEATURE ===================
+// ============================================================
+// ADD SCENARIO (modal + pending panel)
+// ============================================================
 const PENDING_SCENARIOS_KEY = 'pending_scenarios_v1';
 const SCENARIO_INTAKE_EMAIL = 'balrajsinghkalra@gmail.com';
 
 function openScenarioForm() {
-  document.getElementById('scenarioFormModal').style.display = 'flex';
-  setTimeout(() => document.getElementById('sf_name').focus(), 50);
+  document.getElementById('scenarioFormModal').classList.add('open');
+  setTimeout(() => { const el = document.getElementById('sf_name'); if (el) el.focus(); }, 50);
 }
 function closeScenarioForm() {
-  document.getElementById('scenarioFormModal').style.display = 'none';
-  document.getElementById('sf_status').textContent = '';
-  document.getElementById('scenarioForm').reset();
+  document.getElementById('scenarioFormModal').classList.remove('open');
+  const st = document.getElementById('sf_status'); if (st) st.textContent = '';
+  const form = document.getElementById('scenarioFormModal_inner');
+  if (form) form.reset();
 }
 function loadPendingScenarios() {
-  try { return JSON.parse(localStorage.getItem(PENDING_SCENARIOS_KEY) || '[]'); }
-  catch (e) { return []; }
+  try { return JSON.parse(localStorage.getItem(PENDING_SCENARIOS_KEY) || '[]'); } catch (e) { return []; }
 }
-function savePendingScenarios(arr) {
-  localStorage.setItem(PENDING_SCENARIOS_KEY, JSON.stringify(arr));
-}
+function savePendingScenarios(arr) { localStorage.setItem(PENDING_SCENARIOS_KEY, JSON.stringify(arr)); }
 async function submitScenario(evt) {
   evt.preventDefault();
   const statusEl = document.getElementById('sf_status');
-  statusEl.textContent = 'Submitting…';
-  statusEl.style.color = '#666';
+  if (statusEl) { statusEl.textContent = 'Submitting…'; statusEl.style.color = '#bccabd'; }
   const data = {
     name: document.getElementById('sf_name').value.trim(),
     code: document.getElementById('sf_code').value.trim(),
@@ -40237,7 +40268,7 @@ async function submitScenario(evt) {
     submitted_at: new Date().toISOString(),
     id: 'sc-' + Date.now()
   };
-  if (!data.name) { statusEl.textContent = 'Scenario name is required'; statusEl.style.color = '#c00'; return; }
+  if (!data.name) { if (statusEl) { statusEl.textContent = 'Scenario name is required'; statusEl.style.color = '#ffb4ab'; } return; }
   const pending = loadPendingScenarios();
   pending.unshift(data);
   savePendingScenarios(pending);
@@ -40245,25 +40276,17 @@ async function submitScenario(evt) {
     const r = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(SCENARIO_INTAKE_EMAIL), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(Object.assign({
-        _subject: 'TQHB — new scenario request: ' + data.name,
-        _captcha: 'false',
-        _template: 'table'
-      }, data))
+      body: JSON.stringify(Object.assign({ _subject: 'TQHB — new scenario request: ' + data.name, _captcha: 'false', _template: 'table' }, data))
     });
-    statusEl.style.color = r.ok ? '#0a7' : '#c80';
-    statusEl.textContent = r.ok
-      ? '✓ Saved locally and emailed. Balraj will build it and notify you.'
-      : '✓ Saved locally. (Email queued — saved on device anyway.)';
+    if (statusEl) { statusEl.style.color = r.ok ? '#56df92' : '#FF9F0A'; statusEl.textContent = r.ok ? '✓ Saved and emailed. Balraj will build it.' : '✓ Saved locally (email may retry).'; }
   } catch (e) {
-    statusEl.style.color = '#c80';
-    statusEl.textContent = '✓ Saved locally. (Offline — will surface next time online.)';
+    if (statusEl) { statusEl.style.color = '#FF9F0A'; statusEl.textContent = '✓ Saved locally (offline — will retry).'; }
   }
   renderPendingScenarios();
   setTimeout(closeScenarioForm, 2200);
 }
 function deletePending(id) {
-  if (!confirm('Remove this pending scenario from the list?')) return;
+  if (!confirm('Remove this pending scenario?')) return;
   savePendingScenarios(loadPendingScenarios().filter(p => p.id !== id));
   renderPendingScenarios();
 }
@@ -40280,48 +40303,102 @@ function makeEl(tag, opts) {
 function renderPendingScenarios() {
   const wrap = document.getElementById('pendingScenariosWrap');
   if (!wrap) return;
-  wrap.replaceChildren();
+  wrap.innerHTML = '';
   const pending = loadPendingScenarios();
   if (!pending.length) return;
-  const card = makeEl('div', { css: 'max-width:1400px;margin:20px auto;padding:14px 22px;background:#fffbeb;border:1px solid #f59e0b;border-radius:10px;font-size:13px;line-height:1.55' });
-  card.appendChild(makeEl('strong', { text: '⏳ Pending scenarios (' + pending.length + ') — awaiting scraper build', css: 'display:block;font-size:14px;margin-bottom:8px;color:#7c2d12' }));
+  const card = document.createElement('div');
+  card.className = 'ps-card p-4 mb-2';
+  card.innerHTML = '<div class="font-label-caps text-label-caps text-[#FF9F0A] mb-3">⏳ Pending Scenarios (' + pending.length + ') — awaiting scraper build</div>';
   pending.forEach(p => {
-    const row = makeEl('div', { css: 'padding:8px 0;border-top:1px dashed #fed7aa' });
-    const flex = makeEl('div', { css: 'display:flex;justify-content:space-between;gap:10px;align-items:flex-start' });
-    const left = makeEl('div', { css: 'flex:1;min-width:0' });
-    const title = makeEl('strong', { text: (p.code ? p.code + ' · ' : '') + p.name });
-    left.appendChild(title);
-    if (p.subtitle) {
-      const sub = makeEl('span', { text: ' — ' + p.subtitle, css: 'color:#92400e' });
-      left.appendChild(sub);
-    }
-    const meta = makeEl('div', { css: 'color:#7c2d12;margin-top:3px' });
-    meta.appendChild(document.createTextNode('By '));
-    meta.appendChild(makeEl('b', { text: p.submitted_by || 'Vivek' }));
-    meta.appendChild(document.createTextNode(' · ' + new Date(p.submitted_at).toLocaleString()));
-    left.appendChild(meta);
-    if (p.har_url) {
-      const linkRow = makeEl('div', { css: 'margin-top:3px' });
-      const a = makeEl('a', { text: p.har_url.length > 80 ? p.har_url.slice(0,80) + '…' : p.har_url, css: 'color:#0369a1', attrs: { href: p.har_url, target: '_blank' } });
-      linkRow.appendChild(a);
-      left.appendChild(linkRow);
-    }
-    if (p.filters) left.appendChild(makeEl('div', { text: 'Filters: ' + p.filters, css: 'margin-top:3px;color:#78350f' }));
-    if (p.notes) left.appendChild(makeEl('div', { text: p.notes, css: 'margin-top:3px;color:#78350f;font-style:italic' }));
+    const row = document.createElement('div');
+    row.className = 'border-t border-border-hairline py-3 flex justify-between gap-2';
+    const left = document.createElement('div');
+    left.innerHTML = '<div class="font-body-sm text-body-sm font-semibold text-on-surface">' + esc((p.code ? p.code + ' · ' : '') + p.name) + '</div>'
+      + (p.subtitle ? '<div class="font-body-sm text-body-sm text-on-surface-variant">' + esc(p.subtitle) + '</div>' : '')
+      + '<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">By ' + esc(p.submitted_by||'Vivek') + ' · ' + new Date(p.submitted_at).toLocaleString() + '</div>'
+      + (p.filters ? '<div class="font-label-caps text-label-caps text-on-surface-variant">' + esc(p.filters) + '</div>' : '');
     const btn = makeEl('button', {
       text: 'Remove',
-      css: 'background:none;border:1px solid #fbbf24;color:#92400e;padding:4px 10px;border-radius:5px;cursor:pointer;font-size:11px;font-family:inherit',
+      css: 'padding:4px 10px;border-radius:6px;font-size:11px;font-family:inherit;background:rgba(255,69,58,0.1);color:#FF453A;border:1px solid rgba(255,69,58,0.3);cursor:pointer;flex-shrink:0;height:fit-content',
       on: { click: () => deletePending(p.id) }
     });
-    flex.appendChild(left);
-    flex.appendChild(btn);
-    row.appendChild(flex);
+    row.appendChild(left); row.appendChild(btn);
     card.appendChild(row);
   });
   wrap.appendChild(card);
 }
 
-document.addEventListener('DOMContentLoaded', () => { populateDateSelect(); init(); fbUpdateCount(); renderPendingScenarios(); });
+// ============================================================
+// LOAD STATE (texted checkboxes + remarks from localStorage)
+// ============================================================
+function loadState() {
+  document.querySelectorAll('[data-texted]').forEach(cb => {
+    const mls = cb.dataset.texted;
+    if (localStorage.getItem('tqhb_texted_' + mls) === '1') {
+      cb.checked = true;
+      const card = cb.closest('.listing-card');
+      if (card) card.classList.add('texted');
+    }
+    cb.addEventListener('change', () => {
+      localStorage.setItem('tqhb_texted_' + mls, cb.checked ? '1' : '0');
+      const card = cb.closest('.listing-card');
+      if (card) card.classList.toggle('texted', cb.checked);
+    });
+  });
+}
+
+// ============================================================
+// DATE LABEL
+// ============================================================
+function setDateLabel() {
+  const el = document.getElementById('todayDateLabel');
+  if (!el) return;
+  const now = new Date();
+  el.textContent = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+// ============================================================
+// INIT
+// ============================================================
+function init() {
+  setDateLabel();
+  populateDateSelect();
+  refreshAgentRegistry();
+  renderSidebarScenarios();
+  renderScenarioChips();
+  renderHero();
+  renderBest3();
+  const visible = LISTINGS.filter(shouldShow).sort((a,b) => dealScore(b) - dealScore(a));
+  renderGrid('listingsGrid', visible);
+  updateAgentCounter();
+  fbUpdateCount();
+  renderPendingScenarios();
+  // Active filter stats
+  const totalVisible = LISTINGS.filter(shouldShow).length;
+  document.getElementById('filterStats').textContent = totalVisible + ' of ' + LISTINGS.length + ' listings';
+}
+
+// compat alias: old code called copyMessage(id, evt)
+function copyMessage(id, evt) {
+  const l = LISTINGS.find(x => x.id === id);
+  if (!l) return;
+  navigator.clipboard.writeText(smsBodyFor(l)).then(() => {
+    if (evt && evt.target) {
+      const btn = evt.target;
+      const orig = btn.textContent;
+      btn.textContent = '✓ Copied';
+      setTimeout(() => { btn.textContent = orig; }, 1400);
+    }
+  });
+}
+
+// compat alias: initScrollspy (no-op in new IA)
+function initScrollspy() {}
+
+// renderListing kept as alias for old scraper compatibility (not used in new UI)
+function renderListing(l) { return renderCard(l); }
+
+document.addEventListener('DOMContentLoaded', init);
 </script>
 </body>
 </html>
