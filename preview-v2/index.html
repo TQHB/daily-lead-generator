@@ -671,6 +671,42 @@ tailwind.config = {
       <div class="max-w-2xl mx-auto px-4 md:px-8 py-8 space-y-6">
         <h2 class="font-headline-lg text-headline-lg text-on-surface">Settings</h2>
 
+        <!-- Color legend / design system reference -->
+        <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5">
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-1">Color Legend</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Quick reference for the colors used across the app.</p>
+
+          <div class="mb-4">
+            <div class="font-label-caps text-label-caps text-on-surface-variant mb-2">DOM Urgency Buckets</div>
+            <div class="grid grid-cols-2 gap-2">
+              <div class="rounded-lg p-3 text-center" style="background:#FF453A"><div class="font-headline-md text-headline-md text-white">HOT</div><div class="font-label-caps text-label-caps text-white/80">30+ days</div></div>
+              <div class="rounded-lg p-3 text-center" style="background:#FF9F0A"><div class="font-headline-md text-headline-md text-white">WARM</div><div class="font-label-caps text-label-caps text-white/80">20–29 days</div></div>
+              <div class="rounded-lg p-3 text-center" style="background:#8E8E93"><div class="font-headline-md text-headline-md text-white">COOL</div><div class="font-label-caps text-label-caps text-white/80">10–19 days</div></div>
+              <div class="rounded-lg p-3 text-center" style="background:#30D158"><div class="font-headline-md text-headline-md text-white">FRESH</div><div class="font-label-caps text-label-caps text-white/80">0–9 days (hidden)</div></div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <div class="font-label-caps text-label-caps text-on-surface-variant mb-2">Status Pills</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-status-active-bg text-primary">Active</span>
+              <span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-status-pending-bg text-[#FF9F0A]">Pending</span>
+              <span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-status-auction-bg text-[#BF5AF2]">Foreclosure</span>
+              <span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant">Off Market</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="font-label-caps text-label-caps text-on-surface-variant mb-2">Sidebar Scenario Dots</div>
+            <div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+              <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full" style="background:#FF453A"></div>Heavy with HOT leads (≥40%)</div>
+              <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full" style="background:#FF9F0A"></div>Some HOT leads (20–40%)</div>
+              <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full" style="background:#56df92"></div>Mostly fresh inventory</div>
+              <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full" style="background:#333539"></div>No listings yet</div>
+            </div>
+          </div>
+        </div>
+
         <!-- Date filter -->
         <div class="bg-surface-elevated border border-border-hairline rounded-xl p-5">
           <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Date Filter</h3>
@@ -39224,9 +39260,21 @@ function dealScoreRingHtml(score, size = 64) {
 // PHOTO PLACEHOLDER
 // ============================================================
 function photoPlaceholderHtml(listing) {
+  // If listing has real photo URLs (populated by Bright Data backfill), show first one
+  const photos = listing.photo_urls || [];
+  if (photos.length > 0) {
+    const count = photos.length > 1 ? `<div class="absolute bottom-2 right-2 bg-background/70 backdrop-blur-sm px-2 py-0.5 rounded font-data-mono text-[10px] text-on-surface">1 / ${photos.length}</div>` : '';
+    return `<div class="w-full h-32 relative overflow-hidden bg-surface-container-high">
+      <img src="${esc(photos[0])}" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="w-full h-full flex items-center justify-center absolute inset-0" style="display:none;background:#1e2024">
+        <span class="material-symbols-outlined" style="font-size:42px;color:rgba(255,255,255,0.2)">broken_image</span>
+      </div>
+      ${count}
+    </div>`;
+  }
+  // Fallback: stylized empty state
   const icons = ['home', 'home_work', 'maps_home_work', 'cottage', 'apartment'];
   const icon = icons[listing.id % icons.length];
-  // Subtle hue per scenario so cards have visual variety
   const hueByScen = { 1:'#1c2024', 2:'#1d231d', 3:'#1d2024', 4:'#22201d', 5:'#221d1f', 6:'#1c1f23', 7:'#1f1f22', 8:'#1f2421', 9:'#22221f', 10:'#221d1d' };
   const bg = hueByScen[listing.scenario_id] || '#1e2024';
   return `<div class="w-full h-32 flex items-center justify-center relative overflow-hidden" style="background:linear-gradient(135deg, ${bg} 0%, #282a2e 100%)">
@@ -39249,7 +39297,9 @@ function renderCard(l) {
   if (/foreclosure|auction/.test(s)) edgeColor = '#BF5AF2';
   else if (/pending|under.contract/.test(s)) edgeColor = '#FF9F0A';
   else if ((l.dom || 0) >= 30) edgeColor = '#FF453A'; // active but HOT
+  const isHot = (l.dom || 0) >= 30 && !/foreclosure|auction|pending|under.contract/.test(s);
   return `<div class="bg-surface-elevated border border-border-hairline rounded-[14px] overflow-hidden flex flex-col hover:border-primary/30 transition-colors cursor-pointer group listing relative" data-mls="${esc(l.mls)}" id="card-${l.id}" onclick="openDetail(${l.id})" style="border-left:4px solid ${edgeColor}">
+    ${isHot ? '<div class="absolute top-3 left-3 z-20 px-2 py-0.5 rounded font-label-caps text-label-caps text-white" style="background:#FF453A;letter-spacing:.08em">HOT LEAD</div>' : ''}
     ${photoPlaceholderHtml(l)}
     ${uc ? '<div class="relative"><div class="absolute inset-0 bg-background/60 z-10 flex items-center justify-center"><span style="color:#FF453A;background:rgba(255,69,58,0.15);border:1px solid rgba(255,69,58,0.4)" class="font-label-caps text-[9px] px-2 py-1 rounded tracking-widest rotate-[-4deg] inline-block">UNDER CONTRACT</span></div></div>' : ''}
     <div class="p-4 flex-1 flex flex-col">
@@ -39279,10 +39329,14 @@ function renderCard(l) {
         <div class="w-7 h-7 rounded-full bg-surface-variant flex items-center justify-center font-label-caps text-label-caps text-on-surface-variant flex-shrink-0 border border-border-hairline">${initials(l.agent.name)}</div>
         <span class="font-body-sm text-body-sm text-on-surface-variant truncate flex-1">${esc(l.agent.name)}</span>
       </div>
-      <!-- Skip / Action buttons -->
+      <!-- Call Owner (green) + Text buttons — match Stitch Card Anatomy -->
       <div class="mt-auto flex gap-2" onclick="event.stopPropagation()">
-        <button onclick="skipCard(${l.id})" class="flex-1 bg-surface-variant text-on-surface py-2 rounded-lg font-body-sm text-body-sm border border-border-hairline hover:bg-surface-bright transition-colors">Skip</button>
-        <button onclick="openDetailActions(${l.id})" class="flex-1 bg-primary-container text-white py-2 rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors">Action</button>
+        ${phoneClean ? `<a href="tel:${phoneClean}" class="flex-1 bg-primary-container text-white py-2 rounded-lg font-body-sm text-body-sm font-medium hover:bg-primary-fixed transition-colors flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-sm">phone</span>Call Owner
+        </a>` : ''}
+        ${phoneClean ? `<a href="sms:+1${phoneClean}&body=${encodeURIComponent(smsBodyFor(l))}" class="flex-1 bg-surface-variant text-on-surface py-2 rounded-lg font-body-sm text-body-sm border border-border-hairline hover:bg-surface-bright transition-colors flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-sm">chat_bubble</span>Text
+        </a>` : '<button onclick="openDetail('+l.id+')" class="flex-1 bg-surface-variant text-on-surface py-2 rounded-lg font-body-sm text-body-sm border border-border-hairline hover:bg-surface-bright transition-colors">Details</button>'}
       </div>
     </div>
   </div>`;
