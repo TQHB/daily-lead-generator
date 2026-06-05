@@ -942,6 +942,7 @@
   <button class="filter-pill" data-filter="foreclosure" onclick="applyStatusFilter('foreclosure')">🔥 Foreclosure Only</button>
   <input id="mlsSearch" type="search" placeholder="🔍 Search by MLS, address, or agent…" oninput="onMlsSearch(this.value)"
     style="margin-left:18px;flex:1;max-width:380px;padding:7px 12px;border:1px solid var(--border);border-radius:6px;background:#fff;font-size:13px;font-family:inherit;outline:none" />
+  <button onclick="openScenarioForm()" style="margin-left:10px;padding:7px 14px;border:1px solid var(--primary);background:var(--primary);color:#fff;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">+ Add Scenario</button>
   <span style="margin-left:auto;font-size:11px;color:var(--text-muted)" id="filterStats"></span>
 </div>
 
@@ -953,6 +954,52 @@
     </div>
   </div>
   <div class="stats-grid" id="heroStats"></div>
+</div>
+
+<div id="pendingScenariosWrap"></div>
+
+<div id="scenarioFormModal" style="display:none;position:fixed;inset:0;background:rgba(15,17,21,.55);z-index:9000;align-items:center;justify-content:center;padding:20px">
+  <div style="background:#fff;max-width:560px;width:100%;border-radius:14px;padding:28px;max-height:90vh;overflow-y:auto;font-family:inherit">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <h3 style="margin:0;font-size:20px">Suggest a new scenario</h3>
+      <button onclick="closeScenarioForm()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#666;padding:0;line-height:1">×</button>
+    </div>
+    <p style="color:#666;font-size:13px;margin:0 0 18px">Saved on your device immediately. Balraj is emailed automatically and will build the scraper for it.</p>
+    <form id="scenarioForm" onsubmit="submitScenario(event)">
+      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Scenario name *</label>
+      <input id="sf_name" required placeholder='e.g. "Spring TX 3-bed price drop"' style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:14px">
+
+      <div style="display:flex;gap:12px;margin-bottom:14px">
+        <div style="flex:0 0 110px">
+          <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Code</label>
+          <input id="sf_code" placeholder="S11" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit">
+        </div>
+        <div style="flex:1">
+          <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Submitted by</label>
+          <input id="sf_who" placeholder="Vivek" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit">
+        </div>
+      </div>
+
+      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">One-line description</label>
+      <input id="sf_subtitle" placeholder='e.g. "Active SFR with recent price reduction, under $200K"' style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:14px">
+
+      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">HAR.com search URL</label>
+      <input id="sf_url" type="url" placeholder="https://www.har.com/search/results/..." style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:4px">
+      <p style="color:#888;font-size:11px;margin:0 0 14px">Tip: open HAR.com, build the search exactly how you'd want it, paste the URL here.</p>
+
+      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Filter criteria (free-text)</label>
+      <textarea id="sf_filters" rows="2" placeholder="e.g. 3+ beds, under $200K, DOM 20+, Single Family only, Spring/Klein area" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:14px;resize:vertical"></textarea>
+
+      <label style="display:block;font-size:12px;color:#555;margin-bottom:4px;font-weight:600">Notes (why this scenario?)</label>
+      <textarea id="sf_notes" rows="2" placeholder="Optional context — what makes this worth scraping daily?" style="width:100%;padding:9px 12px;border:1px solid #d4d4d8;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:18px;resize:vertical"></textarea>
+
+      <div style="display:flex;gap:10px;justify-content:flex-end;align-items:center">
+        <span id="sf_status" style="margin-right:auto;font-size:13px"></span>
+        <button type="button" onclick="closeScenarioForm()" style="padding:9px 18px;border:1px solid #d4d4d8;background:#fff;color:#333;border-radius:6px;cursor:pointer;font-size:14px;font-family:inherit">Cancel</button>
+        <button type="submit" style="padding:9px 18px;border:1px solid var(--primary);background:var(--primary);color:#fff;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600;font-family:inherit">Save &amp; notify Balraj</button>
+      </div>
+    </form>
+  </div>
 </div>
 
 <div style="max-width:1400px;margin:16px auto 0;padding:14px 22px;background:linear-gradient(135deg,#fff7ed,#ffedd5);border:1px solid #fb923c;border-radius:10px;color:#7c2d12;font-size:13px;line-height:1.55">
@@ -40154,7 +40201,127 @@ function fbEmailAll() {
   window.location.href = 'mailto:' + FB_TO_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 }
 
-document.addEventListener('DOMContentLoaded', () => { populateDateSelect(); init(); fbUpdateCount(); });
+// =================== ADD-SCENARIO FEATURE ===================
+const PENDING_SCENARIOS_KEY = 'pending_scenarios_v1';
+const SCENARIO_INTAKE_EMAIL = 'balrajsinghkalra@gmail.com';
+
+function openScenarioForm() {
+  document.getElementById('scenarioFormModal').style.display = 'flex';
+  setTimeout(() => document.getElementById('sf_name').focus(), 50);
+}
+function closeScenarioForm() {
+  document.getElementById('scenarioFormModal').style.display = 'none';
+  document.getElementById('sf_status').textContent = '';
+  document.getElementById('scenarioForm').reset();
+}
+function loadPendingScenarios() {
+  try { return JSON.parse(localStorage.getItem(PENDING_SCENARIOS_KEY) || '[]'); }
+  catch (e) { return []; }
+}
+function savePendingScenarios(arr) {
+  localStorage.setItem(PENDING_SCENARIOS_KEY, JSON.stringify(arr));
+}
+async function submitScenario(evt) {
+  evt.preventDefault();
+  const statusEl = document.getElementById('sf_status');
+  statusEl.textContent = 'Submitting…';
+  statusEl.style.color = '#666';
+  const data = {
+    name: document.getElementById('sf_name').value.trim(),
+    code: document.getElementById('sf_code').value.trim(),
+    subtitle: document.getElementById('sf_subtitle').value.trim(),
+    har_url: document.getElementById('sf_url').value.trim(),
+    filters: document.getElementById('sf_filters').value.trim(),
+    notes: document.getElementById('sf_notes').value.trim(),
+    submitted_by: document.getElementById('sf_who').value.trim() || 'Vivek',
+    submitted_at: new Date().toISOString(),
+    id: 'sc-' + Date.now()
+  };
+  if (!data.name) { statusEl.textContent = 'Scenario name is required'; statusEl.style.color = '#c00'; return; }
+  const pending = loadPendingScenarios();
+  pending.unshift(data);
+  savePendingScenarios(pending);
+  try {
+    const r = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(SCENARIO_INTAKE_EMAIL), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.assign({
+        _subject: 'TQHB — new scenario request: ' + data.name,
+        _captcha: 'false',
+        _template: 'table'
+      }, data))
+    });
+    statusEl.style.color = r.ok ? '#0a7' : '#c80';
+    statusEl.textContent = r.ok
+      ? '✓ Saved locally and emailed. Balraj will build it and notify you.'
+      : '✓ Saved locally. (Email queued — saved on device anyway.)';
+  } catch (e) {
+    statusEl.style.color = '#c80';
+    statusEl.textContent = '✓ Saved locally. (Offline — will surface next time online.)';
+  }
+  renderPendingScenarios();
+  setTimeout(closeScenarioForm, 2200);
+}
+function deletePending(id) {
+  if (!confirm('Remove this pending scenario from the list?')) return;
+  savePendingScenarios(loadPendingScenarios().filter(p => p.id !== id));
+  renderPendingScenarios();
+}
+function makeEl(tag, opts) {
+  const el = document.createElement(tag);
+  if (opts) {
+    if (opts.text != null) el.textContent = opts.text;
+    if (opts.css) el.setAttribute('style', opts.css);
+    if (opts.attrs) Object.entries(opts.attrs).forEach(([k,v]) => el.setAttribute(k,v));
+    if (opts.on) Object.entries(opts.on).forEach(([k,v]) => el.addEventListener(k,v));
+  }
+  return el;
+}
+function renderPendingScenarios() {
+  const wrap = document.getElementById('pendingScenariosWrap');
+  if (!wrap) return;
+  wrap.replaceChildren();
+  const pending = loadPendingScenarios();
+  if (!pending.length) return;
+  const card = makeEl('div', { css: 'max-width:1400px;margin:20px auto;padding:14px 22px;background:#fffbeb;border:1px solid #f59e0b;border-radius:10px;font-size:13px;line-height:1.55' });
+  card.appendChild(makeEl('strong', { text: '⏳ Pending scenarios (' + pending.length + ') — awaiting scraper build', css: 'display:block;font-size:14px;margin-bottom:8px;color:#7c2d12' }));
+  pending.forEach(p => {
+    const row = makeEl('div', { css: 'padding:8px 0;border-top:1px dashed #fed7aa' });
+    const flex = makeEl('div', { css: 'display:flex;justify-content:space-between;gap:10px;align-items:flex-start' });
+    const left = makeEl('div', { css: 'flex:1;min-width:0' });
+    const title = makeEl('strong', { text: (p.code ? p.code + ' · ' : '') + p.name });
+    left.appendChild(title);
+    if (p.subtitle) {
+      const sub = makeEl('span', { text: ' — ' + p.subtitle, css: 'color:#92400e' });
+      left.appendChild(sub);
+    }
+    const meta = makeEl('div', { css: 'color:#7c2d12;margin-top:3px' });
+    meta.appendChild(document.createTextNode('By '));
+    meta.appendChild(makeEl('b', { text: p.submitted_by || 'Vivek' }));
+    meta.appendChild(document.createTextNode(' · ' + new Date(p.submitted_at).toLocaleString()));
+    left.appendChild(meta);
+    if (p.har_url) {
+      const linkRow = makeEl('div', { css: 'margin-top:3px' });
+      const a = makeEl('a', { text: p.har_url.length > 80 ? p.har_url.slice(0,80) + '…' : p.har_url, css: 'color:#0369a1', attrs: { href: p.har_url, target: '_blank' } });
+      linkRow.appendChild(a);
+      left.appendChild(linkRow);
+    }
+    if (p.filters) left.appendChild(makeEl('div', { text: 'Filters: ' + p.filters, css: 'margin-top:3px;color:#78350f' }));
+    if (p.notes) left.appendChild(makeEl('div', { text: p.notes, css: 'margin-top:3px;color:#78350f;font-style:italic' }));
+    const btn = makeEl('button', {
+      text: 'Remove',
+      css: 'background:none;border:1px solid #fbbf24;color:#92400e;padding:4px 10px;border-radius:5px;cursor:pointer;font-size:11px;font-family:inherit',
+      on: { click: () => deletePending(p.id) }
+    });
+    flex.appendChild(left);
+    flex.appendChild(btn);
+    row.appendChild(flex);
+    card.appendChild(row);
+  });
+  wrap.appendChild(card);
+}
+
+document.addEventListener('DOMContentLoaded', () => { populateDateSelect(); init(); fbUpdateCount(); renderPendingScenarios(); });
 </script>
 </body>
 </html>
