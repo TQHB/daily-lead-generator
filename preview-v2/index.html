@@ -242,9 +242,43 @@ tailwind.config = {
 
   <!-- DESKTOP TOP BAR -->
   <header class="hidden md:flex items-center justify-between px-8 h-16 border-b border-border-hairline bg-surface/80 backdrop-blur-md sticky top-0 z-30 flex-shrink-0">
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-3 flex-1 min-w-0">
       <span class="material-symbols-outlined text-on-surface-variant text-sm">filter_list</span>
-      <span id="desktopFilterLabel" class="font-body-sm text-body-sm text-on-surface-variant">Filtered by: <strong class="text-on-surface font-medium">All Scenarios</strong></span>
+      <span id="desktopFilterLabel" class="font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">Filtered by: <strong class="text-on-surface font-medium">All Scenarios</strong></span>
+
+      <!-- 3 stat tiles -->
+      <div id="topStatsTiles" class="hidden lg:flex items-center gap-2 ml-6">
+        <!-- NEW LEADS -->
+        <div class="flex items-center gap-2 bg-surface-elevated border border-border-hairline rounded-lg px-3 py-1.5">
+          <div class="w-7 h-7 rounded-md flex items-center justify-center" style="background:rgba(86,223,146,0.15)">
+            <span class="material-symbols-outlined text-base" style="color:#56df92">flash_on</span>
+          </div>
+          <div class="leading-tight">
+            <div class="font-label-caps text-[9px] tracking-widest text-on-surface-variant">NEW LEADS</div>
+            <div class="font-data-mono text-body-sm text-on-surface"><span id="statNewLeads">—</span> <span id="statNewDelta" class="text-primary text-[10px]"></span></div>
+          </div>
+        </div>
+        <!-- TOTAL ACTIVE -->
+        <div class="flex items-center gap-2 bg-surface-elevated border border-border-hairline rounded-lg px-3 py-1.5">
+          <div class="w-7 h-7 rounded-md flex items-center justify-center" style="background:rgba(255,255,255,0.06)">
+            <span class="material-symbols-outlined text-base text-on-surface-variant">bar_chart</span>
+          </div>
+          <div class="leading-tight">
+            <div class="font-label-caps text-[9px] tracking-widest text-on-surface-variant">TOTAL ACTIVE</div>
+            <div class="font-data-mono text-body-sm text-on-surface" id="statTotalActive">—</div>
+          </div>
+        </div>
+        <!-- AVG SCORE -->
+        <div class="flex items-center gap-2 bg-surface-elevated border border-border-hairline rounded-lg px-3 py-1.5">
+          <div class="w-7 h-7 rounded-md flex items-center justify-center" style="background:rgba(191,90,242,0.15)">
+            <span class="material-symbols-outlined text-base" style="color:#BF5AF2">track_changes</span>
+          </div>
+          <div class="leading-tight">
+            <div class="font-label-caps text-[9px] tracking-widest text-on-surface-variant">AVG SCORE</div>
+            <div class="font-data-mono text-body-sm text-on-surface"><span id="statAvgScore">—</span><span class="opacity-50 text-[10px]"> /100</span></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="flex items-center gap-3">
       <!-- Search -->
@@ -39276,9 +39310,17 @@ function renderBest3Item(l, isLast) {
 // ============================================================
 function renderSidebarScenarios() {
   const html = SCENARIOS.map(sc => {
-    const count = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l)).length;
-    const b = DOM_BUCKETS[0]; // use hot color as dot
-    const dotColor = count > 0 ? '#56df92' : '#333539';
+    const inScen = LISTINGS.filter(l => l.scenario_id === sc.id && shouldShow(l));
+    const count = inScen.length;
+    // Heat-code: red if >=40% HOT (30+ DOM), amber if >=20% HOT, green if <20% HOT, grey if empty
+    const hotCount = inScen.filter(l => (l.dom || 0) >= 30).length;
+    const hotPct = count > 0 ? hotCount / count : 0;
+    let dotColor = '#333539';
+    if (count > 0) {
+      if (hotPct >= 0.40) dotColor = '#FF453A';
+      else if (hotPct >= 0.20) dotColor = '#FF9F0A';
+      else dotColor = '#56df92';
+    }
     return `<a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant transition-colors hover:bg-surface-variant/50 cursor-pointer" onclick="openScenario(${sc.id})">
       <div class="flex items-center gap-3">
         <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:${dotColor}"></div>
@@ -39326,6 +39368,20 @@ function renderHero() {
   if (activeEl) activeEl.textContent = active;
   if (upsideEl) upsideEl.textContent = '+' + avgUpside + '%';
   if (countEl) countEl.textContent = n + ' listings';
+
+  // Top stat tiles (desktop only)
+  const today = new Date().toISOString().slice(0,10);
+  const newToday = visible.filter(l => l.scrape_date === today).length;
+  const newLeadsEl = document.getElementById('statNewLeads');
+  const newDeltaEl = document.getElementById('statNewDelta');
+  const avgScoreEl = document.getElementById('statAvgScore');
+  if (newLeadsEl) newLeadsEl.textContent = newToday;
+  if (newDeltaEl) newDeltaEl.textContent = newToday > 0 ? '+' + newToday : '';
+  if (avgScoreEl) {
+    const scores = visible.map(l => dealScore(l)).filter(s => s != null);
+    const avgS = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0)/scores.length * 10) : 0;
+    avgScoreEl.textContent = avgS;
+  }
 }
 
 // ============================================================
