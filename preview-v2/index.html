@@ -39971,6 +39971,11 @@ function allAgents() {
 }
 
 function mergeListingIntoAgent(l) {
+  // Skip listings with no real phone — otherwise "(Tap HAR ↗ to view)" placeholders
+  // all collapse into a single bogus registry entry with empty phone, and Save All
+  // ends up producing a single malformed vCard with TEL:+1.
+  const cleanPhone = phoneKey(l.agent && l.agent.phone);
+  if (!cleanPhone || cleanPhone.length < 7) return null;
   const existing = getAgent(l.agent.phone);
   const listingRec = {
     mls: l.mls,
@@ -40007,6 +40012,14 @@ function mergeListingIntoAgent(l) {
 }
 
 function refreshAgentRegistry() {
+  // Purge any pre-existing bogus entries (empty / short phone) from old code paths
+  for (let i = localStorage.length - 1; i >= 0; i--) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(AGENT_KEY_PREFIX)) {
+      const suffix = k.slice(AGENT_KEY_PREFIX.length);
+      if (!suffix || suffix.length < 7) localStorage.removeItem(k);
+    }
+  }
   LISTINGS.forEach(mergeListingIntoAgent);
 }
 
@@ -40083,13 +40096,15 @@ function isIOS() {
 
 function saveAllContacts() {
   refreshAgentRegistry();
-  const agents = allAgents();
-  if (agents.length === 0) { alert('No agents tracked yet.'); return; }
+  const agents = allAgents().filter(a => phoneKey(a.phone).length >= 7);
+  if (agents.length === 0) { alert('No agents with valid phone numbers tracked yet. Most current listings only show "(Tap HAR ↗ to view)" placeholder phones — the scraper couldn\'t resolve their numbers through HAR.com\'s captcha. Try again after the next overnight scrape.'); return; }
+  if (!confirm(`About to download ${agents.length} agent contacts as a single vCard file.\n\nContinue?`)) return;
 
-  // Build a single multi-vCard file with proper CRLF and modern MIME
+  // Build a single multi-vCard file with proper CRLF and modern MIME.
+  // Each vCard already ends with END:VCARD\r\n; concatenate without extra separator.
   const vcards = agents
-    .map(a => buildVcardFromAgent(a).replace(/\r?\n/g, '\r\n').trim())
-    .join('\r\n') + '\r\n';
+    .map(a => buildVcardFromAgent(a).replace(/\r?\n/g, '\r\n') + '\r\n')
+    .join('');
   const blob = new Blob([vcards], { type: 'text/vcard;charset=utf-8' });
   const url = URL.createObjectURL(blob);
 
