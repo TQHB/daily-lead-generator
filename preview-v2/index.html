@@ -39515,11 +39515,12 @@ function openDetail(id) {
   // Title
   document.getElementById('detailTitle').textContent = l.address;
 
-  // Map view — Google Maps embed of property address
+  // Satellite view of property — closest thing to a real photo without an API key
   const mapFrame = document.getElementById('detailMapFrame');
   if (mapFrame) {
     const q = encodeURIComponent(`${l.address}, ${l.city}, ${l.state} ${l.zip}`);
-    mapFrame.src = `https://maps.google.com/maps?q=${q}&t=&z=17&ie=UTF8&iwloc=&output=embed`;
+    // t=k for satellite (hybrid w/ labels), z=19 for closest zoom that still shows the lot
+    mapFrame.src = `https://maps.google.com/maps?q=${q}&t=k&z=19&ie=UTF8&iwloc=&output=embed`;
   }
   // HAR photo link (overlaid on map)
   const harA = document.getElementById('detailPhotoHar');
