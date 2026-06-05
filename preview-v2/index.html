@@ -463,11 +463,17 @@ tailwind.config = {
           </button>
         </div>
       </div>
-      <!-- Photo placeholder -->
-      <div id="detailPhoto" class="w-full h-56 md:h-80 bg-surface-container-high flex items-center justify-center relative">
-        <span class="material-symbols-outlined text-6xl text-on-surface-variant/30">home_work</span>
-        <div id="detailStatusBadge" class="absolute top-4 left-4 px-3 py-1 rounded-full font-label-caps text-label-caps"></div>
-        <div id="detailDomBadge" class="absolute top-4 right-4 font-data-mono text-data-mono text-xs px-2 py-0.5 rounded shadow-sm font-medium"></div>
+      <!-- Photo placeholder — no photos in data (HAR blocks scraping). Designed to feel intentional. -->
+      <div id="detailPhoto" class="w-full h-40 md:h-52 relative overflow-hidden" style="background: linear-gradient(135deg, #1e2024 0%, #282a2e 100%);">
+        <!-- subtle grid pattern -->
+        <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px); background-size: 24px 24px;"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-1 text-center px-4">
+          <span class="material-symbols-outlined text-on-surface-variant/40" style="font-size:52px">home_work</span>
+          <div class="font-label-caps text-label-caps text-on-surface-variant/60 tracking-wider">Photo on HAR.com</div>
+          <a id="detailPhotoHar" target="_blank" class="font-body-sm text-body-sm text-primary hover:underline mt-1">Open listing ↗</a>
+        </div>
+        <div id="detailStatusBadge" class="absolute top-4 left-4 px-3 py-1 rounded-full font-label-caps text-label-caps backdrop-blur-sm"></div>
+        <div id="detailDomBadge" class="absolute top-4 right-4 font-data-mono text-data-mono text-xs px-2 py-0.5 rounded shadow-sm font-medium backdrop-blur-sm"></div>
       </div>
       <!-- Content -->
       <div class="max-w-3xl mx-auto px-4 py-6 space-y-4">
@@ -39181,12 +39187,14 @@ function dealScoreRingHtml(score, size = 64) {
 // PHOTO PLACEHOLDER
 // ============================================================
 function photoPlaceholderHtml(listing) {
-  const icons = ['home', 'home_work', 'maps_home_work'];
+  const icons = ['home', 'home_work', 'maps_home_work', 'cottage', 'apartment'];
   const icon = icons[listing.id % icons.length];
-  const colors = ['#1e2024','#1C1E23','#282a2e','#1a1c20'];
-  const bg = colors[listing.id % colors.length];
-  return `<div class="w-full h-32 flex items-center justify-center relative overflow-hidden" style="background:${bg}">
-    <span class="material-symbols-outlined text-4xl" style="color:rgba(255,255,255,0.15)">${icon}</span>
+  // Subtle hue per scenario so cards have visual variety
+  const hueByScen = { 1:'#1c2024', 2:'#1d231d', 3:'#1d2024', 4:'#22201d', 5:'#221d1f', 6:'#1c1f23', 7:'#1f1f22', 8:'#1f2421', 9:'#22221f', 10:'#221d1d' };
+  const bg = hueByScen[listing.scenario_id] || '#1e2024';
+  return `<div class="w-full h-32 flex items-center justify-center relative overflow-hidden" style="background:linear-gradient(135deg, ${bg} 0%, #282a2e 100%)">
+    <div class="absolute inset-0 opacity-[0.05]" style="background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px); background-size: 16px 16px;"></div>
+    <span class="material-symbols-outlined relative" style="font-size:42px;color:rgba(255,255,255,0.22)">${icon}</span>
   </div>`;
 }
 
@@ -39441,6 +39449,13 @@ function openDetail(id) {
 
   // Title
   document.getElementById('detailTitle').textContent = l.address;
+
+  // Photo placeholder — wire HAR link
+  const harA = document.getElementById('detailPhotoHar');
+  if (harA) {
+    if (l.har_url) { harA.href = l.har_url; harA.style.display = ''; }
+    else { harA.style.display = 'none'; }
+  }
 
   // Status badge in photo area
   const statusBadge = document.getElementById('detailStatusBadge');
