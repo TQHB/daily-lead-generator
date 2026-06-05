@@ -380,6 +380,12 @@ tailwind.config = {
           </div>
         </div>
 
+        <!-- Date filter on mobile (top) + Scenario chip row -->
+        <div class="flex items-center gap-2 mb-3 md:hidden">
+          <span class="material-symbols-outlined text-on-surface-variant text-sm">calendar_today</span>
+          <select id="mobileDateSel" onchange="onDateChange()" class="flex-1 bg-surface-variant border border-border-hairline rounded-lg px-3 py-1.5 text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-primary/50"></select>
+        </div>
+
         <!-- Scenario chip row (scrollable) -->
         <div id="scenarioChips" class="flex overflow-x-auto hide-scrollbar gap-2 mb-6 pb-1 -mx-4 px-4 md:mx-0 md:px-0">
           <!-- injected by JS -->
@@ -497,17 +503,14 @@ tailwind.config = {
           </button>
         </div>
       </div>
-      <!-- Photo placeholder — no photos in data (HAR blocks scraping). Designed to feel intentional. -->
-      <div id="detailPhoto" class="w-full h-40 md:h-52 relative overflow-hidden" style="background: linear-gradient(135deg, #1e2024 0%, #282a2e 100%);">
-        <!-- subtle grid pattern -->
-        <div class="absolute inset-0 opacity-[0.06]" style="background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px); background-size: 24px 24px;"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center gap-1 text-center px-4">
-          <span class="material-symbols-outlined text-on-surface-variant/40" style="font-size:52px">home_work</span>
-          <div class="font-label-caps text-label-caps text-on-surface-variant/60 tracking-wider">Photo on HAR.com</div>
-          <a id="detailPhotoHar" target="_blank" class="font-body-sm text-body-sm text-primary hover:underline mt-1">Open listing ↗</a>
-        </div>
-        <div id="detailStatusBadge" class="absolute top-4 left-4 px-3 py-1 rounded-full font-label-caps text-label-caps backdrop-blur-sm"></div>
-        <div id="detailDomBadge" class="absolute top-4 right-4 font-data-mono text-data-mono text-xs px-2 py-0.5 rounded shadow-sm font-medium backdrop-blur-sm"></div>
+      <!-- Map view — Google Maps embed of property address (no API key needed) -->
+      <div id="detailPhoto" class="w-full h-56 md:h-72 relative overflow-hidden bg-surface-container-high">
+        <iframe id="detailMapFrame" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div id="detailStatusBadge" class="absolute top-4 left-4 px-3 py-1 rounded-full font-label-caps text-label-caps backdrop-blur-sm shadow-md z-10"></div>
+        <div id="detailDomBadge" class="absolute top-4 right-4 font-data-mono text-data-mono text-xs px-2 py-0.5 rounded shadow-md font-medium backdrop-blur-sm z-10"></div>
+        <a id="detailPhotoHar" target="_blank" class="absolute bottom-3 right-3 bg-background/80 backdrop-blur-sm border border-border-hairline rounded-lg px-3 py-1.5 font-body-sm text-body-sm text-primary hover:bg-background flex items-center gap-1 z-10">
+          <span class="material-symbols-outlined text-sm">photo_library</span>Photos on HAR ↗
+        </a>
       </div>
       <!-- Content -->
       <div class="max-w-3xl mx-auto px-4 py-6 space-y-4">
@@ -39240,7 +39243,13 @@ function renderCard(l) {
   const uc = isUnderContract(l);
   const upside = ((l.ai_report.arv_high - l.price) / l.price * 100).toFixed(0);
   const phoneClean = (l.agent.phone || '').replace(/[^\d]/g, '');
-  return `<div class="bg-surface-elevated border border-border-hairline rounded-[14px] overflow-hidden flex flex-col hover:border-primary/30 transition-colors cursor-pointer group listing" data-mls="${esc(l.mls)}" id="card-${l.id}" onclick="openDetail(${l.id})">
+  // Left-edge color bar: red = HOT/Foreclosure, amber = Pending, green = Active+Fresh, grey = Cool/Other
+  const s = (l.status || '').toLowerCase();
+  let edgeColor = '#56df92'; // green default
+  if (/foreclosure|auction/.test(s)) edgeColor = '#BF5AF2';
+  else if (/pending|under.contract/.test(s)) edgeColor = '#FF9F0A';
+  else if ((l.dom || 0) >= 30) edgeColor = '#FF453A'; // active but HOT
+  return `<div class="bg-surface-elevated border border-border-hairline rounded-[14px] overflow-hidden flex flex-col hover:border-primary/30 transition-colors cursor-pointer group listing relative" data-mls="${esc(l.mls)}" id="card-${l.id}" onclick="openDetail(${l.id})" style="border-left:4px solid ${edgeColor}">
     ${photoPlaceholderHtml(l)}
     ${uc ? '<div class="relative"><div class="absolute inset-0 bg-background/60 z-10 flex items-center justify-center"><span style="color:#FF453A;background:rgba(255,69,58,0.15);border:1px solid rgba(255,69,58,0.4)" class="font-label-caps text-[9px] px-2 py-1 rounded tracking-widest rotate-[-4deg] inline-block">UNDER CONTRACT</span></div></div>' : ''}
     <div class="p-4 flex-1 flex flex-col">
@@ -39506,7 +39515,13 @@ function openDetail(id) {
   // Title
   document.getElementById('detailTitle').textContent = l.address;
 
-  // Photo placeholder — wire HAR link
+  // Map view — Google Maps embed of property address
+  const mapFrame = document.getElementById('detailMapFrame');
+  if (mapFrame) {
+    const q = encodeURIComponent(`${l.address}, ${l.city}, ${l.state} ${l.zip}`);
+    mapFrame.src = `https://maps.google.com/maps?q=${q}&t=&z=17&ie=UTF8&iwloc=&output=embed`;
+  }
+  // HAR photo link (overlaid on map)
   const harA = document.getElementById('detailPhotoHar');
   if (harA) {
     if (l.har_url) { harA.href = l.har_url; harA.style.display = ''; }
@@ -40003,20 +40018,46 @@ function resetAgentRegistry() {
   alert('Reset done. Registry now reflects only current listings.');
 }
 
+// Detect iOS/iPadOS — bundled multi-vCard files only import the first contact on iOS,
+// so on iOS we navigate to the blob URL directly which triggers iOS's "Open in Contacts"
+// sheet that DOES properly add all cards.
+function isIOS() {
+  const ua = navigator.userAgent || '';
+  return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
 function saveAllContacts() {
   refreshAgentRegistry();
   const agents = allAgents();
   if (agents.length === 0) { alert('No agents tracked yet.'); return; }
-  const vcards = agents.map(a => buildVcardFromAgent(a).replace(/\r?\n/g, '\r\n')).join('\r\n');
-  const blob = new Blob([vcards], { type: 'text/x-vcard;charset=utf-8' });
+
+  // Build a single multi-vCard file with proper CRLF and modern MIME
+  const vcards = agents
+    .map(a => buildVcardFromAgent(a).replace(/\r?\n/g, '\r\n').trim())
+    .join('\r\n') + '\r\n';
+  const blob = new Blob([vcards], { type: 'text/vcard;charset=utf-8' });
   const url = URL.createObjectURL(blob);
+
+  if (isIOS()) {
+    // iOS path: open in Safari/Contacts directly — shows "Add N Contacts" sheet
+    // which actually imports ALL cards (instead of only the first).
+    window.location.href = url;
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    return;
+  }
+
+  // Desktop / Android path: regular download
   const a = document.createElement('a');
   a.href = url;
   a.download = 'TQHB_All_Agents_' + today() + '.vcf';
+  document.body.appendChild(a);
   a.click();
-  URL.revokeObjectURL(url);
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
+
+  // Offer sequential fallback in case bundled mis-imports
   setTimeout(() => {
-    const useSeq = confirm('Downloaded ' + agents.length + ' contacts.\n\nIf iOS only saved the first contact, click OK to save the rest one at a time.');
+    const useSeq = confirm('Downloaded ' + agents.length + ' contacts.\n\nIf only the first contact saved, click OK to save the rest one at a time.');
     if (useSeq) saveContactsSequential();
   }, 800);
 }
@@ -40029,15 +40070,19 @@ function saveContactsSequential() {
     if (idx >= agents.length) { alert('Done — saved ' + agents.length + ' contacts.'); return; }
     const agent = agents[idx];
     const vcard = buildVcardFromAgent(agent).replace(/\r?\n/g, '\r\n');
-    const blob = new Blob([vcard], { type: 'text/x-vcard;charset=utf-8' });
+    const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = agent.name.replace(/\s/g, '_') + '_TQHB.vcf';
-    a.click();
-    URL.revokeObjectURL(url);
+    if (isIOS()) {
+      window.location.href = url;
+    } else {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = agent.name.replace(/\s/g, '_') + '_TQHB.vcf';
+      document.body.appendChild(a); a.click(); a.remove();
+    }
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
     idx++;
-    setTimeout(() => { if (confirm('Saved ' + agent.name + ' (' + idx + '/' + agents.length + '). Save next?')) next(); }, 600);
+    setTimeout(() => { if (confirm('Saved ' + agent.name + ' (' + idx + '/' + agents.length + '). Save next?')) next(); }, 800);
   }
   next();
 }
@@ -40187,7 +40232,7 @@ async function runSiriShortcut() {
 // DATE PICKER
 // ============================================================
 function populateDateSelect() {
-  const sels = [document.getElementById('reportDateSel'), document.getElementById('desktopDateSel')].filter(Boolean);
+  const sels = [document.getElementById('reportDateSel'), document.getElementById('desktopDateSel'), document.getElementById('mobileDateSel')].filter(Boolean);
   const dateSet = new Set();
   LISTINGS.forEach(l => {
     if (l.scrape_date) dateSet.add(l.scrape_date);
@@ -40215,10 +40260,11 @@ function populateDateSelect() {
     sel.appendChild(optAll);
     allDates.forEach(d => {
       const count = LISTINGS.filter(l => l.scrape_date === d || l.last_seen_date === d).length;
+      if (count === 0 && d !== todayStr) return; // hide empty dates (keep today even if 0)
       const label = new Date(d + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
       const opt = document.createElement('option');
       opt.value = d;
-      opt.textContent = (d === todayStr ? '★ ' : '') + label + ' (' + count + ')' + (count === 0 ? ' — empty' : '');
+      opt.textContent = (d === todayStr ? '★ ' : '') + label + ' (' + count + ')';
       sel.appendChild(opt);
     });
     const mostRecent = allDates.find(d => LISTINGS.some(l => l.scrape_date === d || l.last_seen_date === d));
@@ -40228,9 +40274,9 @@ function populateDateSelect() {
 }
 
 function onDateChange() {
-  const sel = document.getElementById('reportDateSel') || document.getElementById('desktopDateSel');
+  const sel = document.getElementById('mobileDateSel') || document.getElementById('reportDateSel') || document.getElementById('desktopDateSel');
   selectedDate = sel ? sel.value : 'all';
-  // Sync both selects
+  // Sync all selects
   [document.getElementById('reportDateSel'), document.getElementById('desktopDateSel')].forEach(s => { if (s) s.value = selectedDate; });
   rerender();
 }
