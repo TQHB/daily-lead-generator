@@ -5434,5 +5434,627 @@
         "Watch for motivated builder/relisting or appraisal gap on the Coming Soon launch to negotiate basis down toward $880-$920K"
       ]
     }
+  },
+  {
+    "id": 16290039,
+    "address": "663 Road 5252, Cleveland, TX 77327",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 99000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 982,
+    "year_built": 1980,
+    "price_per_sqft": 101,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14967513",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/663-road-5252-cleveland-tx-77327/14967513",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ruth Kera",
+      "brokerage": "Keller Williams Realty The Woodlands",
+      "phone": "713-503-1159"
+    },
+    "sms_message": "Hi Ruth, this is Vivek, local Investor. Interested in your listing at 663 Road 5252, Cleveland, TX 77327, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 135000,
+      "arv_high": 160000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Updated 2/1-2/2 ~1,000 sqft homes in Cleveland 77327 selling $140k-$165k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Similar 1980s SFR on acreage/large lots in Tarkington area trading $130k-$155k"
+        }
+      ],
+      "red_flags": [
+        "1980 build likely needs full reno (roof, HVAC, electrical, plumbing) at this price point",
+        "Only 982 sqft / 2-bed limits resale buyer pool and rent ceiling",
+        "77327 is far-out exurban (Liberty County) \u2014 slower appreciation, weaker comps, longer DOM",
+        "Possible flood/septic/well issues common in rural Cleveland \u2014 verify FEMA zone and utilities",
+        "Just-listed (DOM 0) \u2014 price not yet market-tested; verify lot size and true condition"
+      ],
+      "opportunity_notes": [
+        "Low $99k entry leaves margin for Fix&Rent: rent ~$1,200-$1,400/mo on rural 2/2",
+        "Fix&Flip spread ~$40k-$55k over ARV if reno held to $25k-$35k",
+        "Add 3rd bedroom if layout allows to lift ARV toward high end and widen buyer pool",
+        "Cleveland corridor benefiting from Houston exurban growth/Grand Parkway spillover \u2014 buy-and-hold upside",
+        "Wholesale angle viable to rural landlord buyers if acquired below $85k"
+      ]
+    }
+  },
+  {
+    "id": 16290040,
+    "address": "951 Lakeshore Dr, Cleveland, TX 77327",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 65000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1361,
+    "year_built": 1980,
+    "price_per_sqft": 48,
+    "dom": 0,
+    "status": "Active",
+    "mls": "4811951",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/951-lakeshore-dr-cleveland-tx-77327/4811951",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mitzi Davis",
+      "brokerage": "JLA Realty",
+      "phone": "713-992-7900"
+    },
+    "sms_message": "Hi Mitzi, this is Vivek, local Investor. Interested in your listing at 951 Lakeshore Dr, Cleveland, TX 77327, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 150000,
+      "arv_high": 185000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 3/2 ~1,300-1,450 sqft in 77327 trading $150K-$180K"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Updated 1980s SFR in Cleveland/Plum Grove area selling ~$120/sqft"
+        }
+      ],
+      "red_flags": [
+        "$65K list with 0 DOM signals heavy rehab, foundation, or major deferred maintenance",
+        "1980 build likely original systems (roof, HVAC, electrical, plumbing) needing full replacement",
+        "Rural Liberty County 77327 \u2014 possible septic/well, flood plain risk, and slow resale velocity",
+        "Verify clean title/no liens and that 'Lakeshore Dr' lot isn't in a flood zone or HOA-restricted lakefront"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent: low basis + cheap rents-to-price; 3/2 rents ~$1,400-$1,650/mo in Cleveland",
+        "Even at $40K-$55K rehab, all-in ~$110K-$120K leaves equity vs $150K-$185K ARV",
+        "Wholesale angle: deep discount entry, assign to landlord/flip buyers active in 77327 growth corridor (Grand Parkway/Colony Ridge spillover)",
+        "Confirm utilities (septic/well vs city) and flood status to firm up exit value"
+      ]
+    }
+  },
+  {
+    "id": 16290041,
+    "address": "170 County Road 328 N, Cleveland, TX 77327",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 100000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1452,
+    "year_built": 1955,
+    "price_per_sqft": 69,
+    "dom": 0,
+    "status": "Active",
+    "mls": "4810124",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/170-county-road-328-n-cleveland-tx-77327/4810124",
+    "zillow_url": null,
+    "agent": {
+      "name": "Shelby Davis",
+      "brokerage": "Results Real Estate",
+      "phone": "281-761-1852"
+    },
+    "sms_message": "Hi Shelby, this is Vivek, local Investor. Interested in your listing at 170 County Road 328 N, Cleveland, TX 77327, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290042,
+    "address": "16392 Many Trees Ln",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 195000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1264,
+    "year_built": 2003,
+    "price_per_sqft": 154,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5305129",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16392-many-trees-ln-conroe-tx-77302/5305129",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sheri Burton",
+      "brokerage": "Active Realty Team LLC",
+      "phone": "8325975719"
+    },
+    "sms_message": "Hi Sheri, this is Vivek, local Investor. Interested in your listing at 16392 Many Trees Ln, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 235000,
+      "arv_high": 260000,
+      "comps": [
+        {
+          "address": "Conroe 77302",
+          "notes": "3/2 ~1,300sf 2002-2005 builds in 77302/Conroe resale $225k-$255k"
+        },
+        {
+          "address": "Conroe 77302",
+          "notes": "Renovated SFR ~$185-200/sf in Imperial Oaks/Crighton Ridge area"
+        }
+      ],
+      "red_flags": [
+        "Active at $195k with 0 DOM \u2014 thin margin, likely list near retail for Fix&Flip",
+        "2003 build may have aging HVAC/roof and original kitchens/baths",
+        "Small 1,264 sf limits resale ceiling vs newer 1,800+ sf nearby inventory",
+        "Conroe 77302 has MUD taxes/high tax rate that pressures buyer affordability"
+      ],
+      "opportunity_notes": [
+        "Better fit for Fix&Rent \u2014 Conroe 77302 rents ~$1,700-1,950 for 3/2, cash-flows if all-in under ~$205k",
+        "Flip works only if acquired well below $195k (target ~$165-175k) given $25-35k reno + closing",
+        "Wholesale angle: tie up and assign to flippers if seller flexible; verify true condition first",
+        "2003 vintage = simpler systems, lower rehab scope than 1980s stock",
+        "Strong owner-occ exit demand in Conroe under $260k FHA price band"
+      ]
+    }
+  },
+  {
+    "id": 16290043,
+    "address": "5618 Shelford Birch Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 186990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1411,
+    "year_built": 2026,
+    "price_per_sqft": 133,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17573102",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/5618-shelford-birch-dr-conroe-tx-77303/17573102",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 5618 Shelford Birch Dr, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 220000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 3/2 ~1,400 sqft in Conroe 77303/Grand Central Park-area subdivisions trading $190k-$215k"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Resale 2023-2025 builds ~1,350-1,500 sqft closing $185k-$210k in 77303"
+        }
+      ],
+      "red_flags": [
+        "New construction at $186,990 leaves little to no built-in equity for flip; you're buying near retail",
+        "No value-add \u2014 can't force appreciation via rehab on a brand-new home",
+        "77303 (north Conroe) has heavy new-build supply; future resale competes directly with builder inventory and incentives",
+        "DOM 0 / Active = untested pricing; builder base price may not reflect actual closed comps",
+        "Likely MUD district + builder-area high property tax rate (2.5-3.3%) compresses rental cash flow",
+        "Small 1,411 sqft footprint limits rent ceiling vs newer 4-bed builds in same submarket"
+      ],
+      "opportunity_notes": [
+        "Best fit as Fix&Rent/buy-and-hold turnkey \u2014 new build means minimal capex/maintenance for 5-10 yrs",
+        "Negotiate builder incentives: rate buydown, closing-cost credits, or appliance/blind packages to improve entry basis",
+        "Strong workforce-rental demand corridor along I-45/Hwy 105; target rent ~$1,650-$1,850/mo for 3/2 new build",
+        "Wholesale margin is thin here \u2014 pass unless you can secure assignable contract well under base price",
+        "If holding, push for 2-1 buydown to boost early DCR while north-Conroe rents climb with population growth"
+      ]
+    }
+  },
+  {
+    "id": 16290044,
+    "address": "5622 Shelford Birch Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 185990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1402,
+    "year_built": 2026,
+    "price_per_sqft": 133,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17573113",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/5622-shelford-birch-dr-conroe-tx-77303/17573113",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 5622 Shelford Birch Dr, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 210000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 3/2 ~1,400 sqft in 77303/Grangerland tracts trading ~$185-205k ($132-146/sqft)"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Resale 2-4yr-old 3/2 1,300-1,500 sqft Conroe NE closing ~$190-200k"
+        }
+      ],
+      "red_flags": [
+        "New-construction spec home priced near retail/ARV \u2014 almost no equity spread for Fix&Flip or Fix&Rent",
+        "77303 is lower-demand NE Conroe submarket; longer DOM and softer rent ceiling than I-45 corridor",
+        "Builder-saturated area: ongoing new inventory caps appreciation and undercuts resale",
+        "No rehab upside (built 2026) \u2014 value-add play is gone; pure buy-and-hold math only",
+        "Higher Montgomery County tax rate + likely MUD/PID can push effective rate ~2.8-3.3%, crushing rent cash flow",
+        "Slab/foundation and drainage risk common in newer Conroe MUD developments"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent buy-and-hold, not flip \u2014 rent comps ~$1,650-1,850/mo on 3/2 1,400 sqft new build",
+        "Negotiate builder incentives (rate buydown, closing costs, upgrades) rather than price to improve yield",
+        "Wholesale only viable if assigned well under $175k to leave margin \u2014 unlikely at new-build list",
+        "DSCR/long-term hold appeal: low maintenance, builder warranty, tenant-ready Day 1",
+        "Verify MUD tax rate and HOA before underwriting; model with conservative ~3% effective tax"
+      ]
+    }
+  },
+  {
+    "id": 16290045,
+    "address": "7601 Delavan Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 140900,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1098,
+    "year_built": 1956,
+    "price_per_sqft": 128,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "8723400",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/7601-delavan-dr-houston-tx-77028/8723400",
+    "zillow_url": null,
+    "agent": {
+      "name": "Charlie Kriegel",
+      "brokerage": "Winhill Advisors - Kirby",
+      "phone": "8324962614"
+    },
+    "sms_message": "Hey Charlie, this is Vivek, local investor. Interested in one of your listings at 7601 Delavan Dr, Houston TX 77028. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "3/1-3/2 renovated bungalows in 77028 (Trinity Gardens) selling ~$165k-$200k post-rehab"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Updated 1,000-1,300 sqft 1950s homes near Homestead Rd trading $150-$170/sqft renovated"
+        }
+      ],
+      "red_flags": [
+        "Already Under Contract - P, so likely not actionable unless deal falls through",
+        "1 bath only and 1,098 sqft limits ARV ceiling without adding a bath",
+        "1956 build: expect original cast-iron/galvanized plumbing, knob-and-tube risk, foundation movement common on Houston clay",
+        "77028 has elevated crime/insurance costs and slower retail buyer demand; better as rental exit",
+        "DOM 0 suggests fresh listing/quick contract \u2014 limited room to negotiate price"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent candidate: NE Houston SFR rents ~$1,400-$1,650/mo for renovated 3/1-3/2, supporting solid cash-on-cash at $140.9k entry",
+        "Add a second bath if floorplan allows to push ARV toward high end and improve rentability",
+        "Trinity Gardens benefits from proximity to downtown/East End redevelopment and 610/Hwy 59 access \u2014 long-term appreciation play",
+        "Wholesale angle: if entry can be assigned in the $120k-$130k range, spread exists for a rehab investor targeting ~$190k ARV",
+        "Verify foundation, sewer line, and roof age early \u2014 these drive whether margin holds for Fix&Flip vs hold"
+      ]
+    }
+  },
+  {
+    "id": 16290046,
+    "address": "7641 Delavan Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 150000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 828,
+    "year_built": 1956,
+    "price_per_sqft": 181,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3215592",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/7641-delavan-dr-houston-tx-77028/3215592",
+    "zillow_url": null,
+    "agent": {
+      "name": "Karina Soria",
+      "brokerage": "Vive Realty LLC",
+      "phone": "281-795-6175"
+    },
+    "sms_message": "Hi Karina, this is Vivek, local Investor. Interested in your listing at 7641 Delavan Dr, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/1-3/2 ~850-1000 sqft 1950s homes near Settegast/77028 selling $200k-$240k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Recent flips on Delavan/Bay/Mayweather area trading ~$230/sqft post-reno"
+        }
+      ],
+      "red_flags": [
+        "Tiny 828 sqft footprint and only 1 bath caps resale; budget for 2nd bath add to hit ARV",
+        "1956 build \u2014 likely needs full systems (electrical, plumbing, foundation, HVAC) and possible asbestos/lead remediation",
+        "77028/Settegast is high-crime, lower-income submarket \u2014 soft rents and slower flip resale, appraisal risk",
+        "$150k ask leaves thin margin on a sub-$240k ARV after $50k-$70k rehab; verify true as-is value, may be overpriced",
+        "Active DOM 0 \u2014 no price-drop leverage yet; confirm flood/Halls Bayou proximity and lot condition"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent fits best: post-reno rent ~$1,400-$1,650/mo, all-in ~$210k-$220k can yield reasonable cash flow",
+        "Add a second bathroom and possibly expand sqft to push from 3/1 into stronger 3/2 ARV bracket",
+        "Wholesale angle: tie up below $130k-$135k and assign to flippers given thin retail margin",
+        "Path-of-progress play \u2014 proximity to downtown/East End redevelopment supports long-term appreciation hold"
+      ]
+    }
+  },
+  {
+    "id": 16290047,
+    "address": "8038 Talton St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 129000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1192,
+    "year_built": 1948,
+    "price_per_sqft": 108,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3188276",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/8038-talton-st-houston-tx-77028/3188276",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Lively",
+      "brokerage": "NB Elite Realty",
+      "phone": "281-701-9557"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 8038 Talton St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/1-3/2 ~1,100-1,300 sqft in 77028 (Houston Gardens/Trinity) trading ~$185k-$210k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Post-rehab bungalows near Kashmere Gardens/E Houston comping ~$160/sqft"
+        }
+      ],
+      "red_flags": [
+        "1948 build \u2014 likely original cast-iron/galvanized plumbing, knob-and-tube or outdated wiring, and pier-and-beam foundation movement common in NE Houston clay soils",
+        "Only 1 bath on 1,192 sqft caps ARV and rentability; budget to add a 2nd bath",
+        "77028 is a flood/heavy-clay area near Hunting Bayou \u2014 verify flood zone and post-Harvey history",
+        "Lower-value, higher-DOM submarket; resale buyer pool thin and FHA appraisal-sensitive",
+        "DOM 0 / brand-new Active \u2014 price not yet tested, may be priced to retail not wholesale"
+      ],
+      "opportunity_notes": [
+        "At $129k with ARV ~$180-215k, spread supports Fix&Flip only if all-in (purchase+rehab) stays near $150-160k; target 70% ARV = buy ~$120k or below after rehab estimate",
+        "Strong Fix&Rent candidate \u2014 77028 rents for renovated 3/2 run ~$1,500-$1,750/mo; solid cash-on-cash if added 2nd bath",
+        "Add 2nd bath and modernize to push from 3/1 to 3/2 \u2014 biggest ARV lever in this comp set",
+        "Wholesale exit viable to local landlord/BRRRR buyers if assignment keeps buyer at/under ~$120k",
+        "Small footprint and slab/pier rehab keeps reno scope contained vs larger homes \u2014 faster turn"
+      ]
+    }
+  },
+  {
+    "id": 16290048,
+    "address": "4943 Shreveport Blvd, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 154899,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1128,
+    "year_built": 1960,
+    "price_per_sqft": 137,
+    "dom": 0,
+    "status": "Active",
+    "mls": "15739539",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/4843-shreveport-blvd-houston-tx-77028/15739539",
+    "zillow_url": null,
+    "agent": {
+      "name": "Chet Polniazek",
+      "brokerage": "1st Texas Realty Services",
+      "phone": "713-231-1129"
+    },
+    "sms_message": "Hi Chet, this is Vivek, local Investor. Interested in your listing at 4943 Shreveport Blvd, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/2 ~1,150 sqft in 77028 (Trinity Gardens/Settegast) trading $195k-$220k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Updated 1960s SFR on Homestead/Lockwood corridor closing $185k-$210k"
+        }
+      ],
+      "red_flags": [
+        "Only 1 bath = functional obsolescence; budget for adding a 2nd bath",
+        "77028 (Trinity Gardens/Settegast) is a softer-demand, higher-crime submarket \u2014 longer DOM and pickier appraisals",
+        "1960 slab home \u2014 likely foundation/plumbing/electrical updates; verify cast-iron sewer",
+        "Near Greens Bayou \u2014 check FEMA flood zone before committing",
+        "List $154,899 leaves thin flip margin: ~$185-215k ARV minus rehab/holding/selling caps upside"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest play: 3/2 rents ~$1,450-$1,700/mo in 77028, solid cash-on-cash if bought near list or below",
+        "Add 2nd bath to push ARV and rentability \u2014 small footprint keeps reno cost contained",
+        "DOM 0 / fresh Active \u2014 make a sub-list cash offer before competition builds",
+        "Wholesale exit viable to local landlords given workforce-rental demand and proximity to 610/US-59"
+      ]
+    }
+  },
+  {
+    "id": 16290049,
+    "address": "646 Maria Elena Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 180990,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1954,
+    "year_built": 2026,
+    "price_per_sqft": 93,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17624597",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/646-maria-elena-way-cleveland-tx-77327/17624597",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jared Turner",
+      "brokerage": "Lennar Homes Village Builders, LLC",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Jared, this is Vivek, local Investor. Interested in your listing at 646 Maria Elena Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build DR Horton/LGI 4/2.5 ~1,900-2,000 sqft in Cleveland 77327 (Grand San Jacinto/Santa Fe Trails) closing $185k-$200k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Resale 2022-2024 builds ~1,950 sqft in 77327 trading $95-$105/sqft"
+        }
+      ],
+      "red_flags": [
+        "Brand-new build at $92.6/sqft leaves near-zero flip spread \u2014 ARV \u2248 list, no instant equity",
+        "DOM 0 / new construction: builder retail pricing, hard to negotiate below market for a flip",
+        "Cleveland 77327 is heavy new-supply exurb \u2014 competing builder inventory caps appreciation and resale ARV",
+        "Liberty County location ~50mi from Houston core: longer rent-up time, more tenant turnover risk",
+        "No rehab value-add possible on a 2026 build \u2014 can't force appreciation via renovation"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-and-hold, not flip: rent ~$1,700-$1,900/mo on a 4/2.5 supports ~1% rule at this price",
+        "Low maintenance capex for ~10 yrs (new roof/HVAC/systems + builder warranty) boosts net cash flow",
+        "Push builder for closing-cost credits, rate buydown, or appliance/blinds packages to improve entry basis",
+        "Strong path-of-growth area (SH-99/Grand Pkwy expansion, Cleveland industrial/jobs) favors long-term hold",
+        "Wholesale only viable if assigned pre-close at a builder bulk/investor discount; retail spread too thin otherwise"
+      ]
+    }
+  },
+  {
+    "id": 16290050,
+    "address": "649 Maria Elena Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 169490,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1411,
+    "year_built": 2026,
+    "price_per_sqft": 120,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17624601",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/649-maria-elena-way-cleveland-tx-77327/17624601",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jared Turner",
+      "brokerage": "Lennar Homes Village Builders, LLC",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Jared, this is Vivek, local Investor. Interested in your listing at 649 Maria Elena Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 170000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1,400sf in 77327/Colony Ridge area selling $175k-$190k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Recent Plum Grove production builds at ~$120-130/sf"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build (DOM 0) leaves little forced-equity upside for Fix&Flip",
+        "Colony Ridge/Plum Grove submarket has high inventory of identical new builds, soft resale demand",
+        "Possible MUD/high property-tax burden and unfinished community infrastructure depressing comps",
+        "Rural Cleveland location = longer DOM and limited buyer pool on exit"
+      ],
+      "opportunity_notes": [
+        "Better fit for Fix&Rent/buy-hold: low entry price (~$120/sf) supports cashflow if rent ~$1,500-1,700",
+        "Turnkey new construction = near-zero rehab capex, immediate rent-ready",
+        "Negotiate builder incentives/rate buydown given DOM 0 and heavy competing supply",
+        "Wholesale margin thin here \u2014 only pursue if contracted well under $160k"
+      ]
+    }
   }
 ]
