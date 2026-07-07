@@ -11459,5 +11459,806 @@
         "CCISD schools + NASA/Clear Lake employment support both quick resale and long-term rental exit"
       ]
     }
+  },
+  {
+    "id": 16290154,
+    "address": "67 Road 5216",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 88000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 920,
+    "year_built": 1988,
+    "price_per_sqft": 96,
+    "dom": 0,
+    "status": "Active",
+    "mls": "12207721",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/67-road-5216-cleveland-tx-77327/12207721",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 67 Road 5216, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 135000,
+      "arv_high": 160000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 2/2 ~900-1000sqft in Cleveland 77327 rural subdivisions typically resell $135k-$155k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Small stick-built homes on acreage lots near Grand San Jacinto/Santa Fe area trending $145k-$165k post-rehab"
+        }
+      ],
+      "red_flags": [
+        "77327 is rural Liberty County \u2014 likely septic + well, verify condition and permits",
+        "Possible flood exposure near San Jacinto River drainage; pull FEMA flood zone before offer",
+        "'Road 5216' address pattern suggests private/POA-maintained roads and possible deed restrictions or lot POA dues",
+        "Confirm stick-built vs manufactured/mobile \u2014 financing and ARV differ sharply",
+        "Only 2/2 at 920sqft limits retail buyer pool and rent ceiling",
+        "1988 build \u2014 check for original electrical, HVAC, roof, and foundation/pier settling",
+        "DOM 0 (just listed) \u2014 limited price-negotiation leverage yet, but move fast on quality deals"
+      ],
+      "opportunity_notes": [
+        "Low $88k basis leaves room; target all-in (purchase+rehab) under ~$115k-$120k for Fix&Flip margin at $145k ARV",
+        "Fix&Rent viable \u2014 small rural 2/2 rents ~$1,150-$1,350/mo; strong yield on low basis if condition is fair",
+        "Cash/light-rehab flip or wholesale to landlord likely best exit given rural buyer pool",
+        "If land/lot is usable acreage, added value for mobile/RV placement or storage appeals to local buyers",
+        "Wholesale exit: assignable to Cleveland-area rental investors who prefer this price band"
+      ]
+    }
+  },
+  {
+    "id": 16290155,
+    "address": "168 County Road 2859",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 66000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 960,
+    "year_built": 1980,
+    "price_per_sqft": 69,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14971064",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/168-county-road-2859-cleveland-tx-77327/14971064",
+    "zillow_url": null,
+    "agent": {
+      "name": "Russell Rhodes",
+      "brokerage": "Berkshire HathawayHS PenFed TX",
+      "phone": "972-899-5600"
+    },
+    "sms_message": "Hi Russell, this is Vivek, local Investor. Interested in your listing at 168 County Road 2859, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 135000,
+      "arv_high": 160000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 2-3BR 1,000-1,300sf on acreage lots in 77327 selling $140k-$165k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Older frame homes near Cleveland/Tarkington selling $120-$150/sf renovated"
+        }
+      ],
+      "red_flags": [
+        "1980 frame home, likely needs full reno (roof, HVAC, plumbing, foundation risk on rural pier-and-beam)",
+        "Only 2BR/960sf limits resale \u2014 most buyers want 3BR",
+        "Rural Cleveland/Liberty County \u2014 slower absorption, well/septic likely (inspection needed)",
+        "$66k list may signal condition/title issues; verify occupancy and land vs structure value"
+      ],
+      "opportunity_notes": [
+        "Low entry price leaves margin for Fix&Flip or Fix&Rent even with $30-45k reno",
+        "Consider adding 3rd bedroom to hit stronger resale/rent tier",
+        "Rural acreage appeals to land buyers \u2014 potential wholesale exit to landlords/owner-finance flippers",
+        "Fix&Rent: rents ~$1,200-1,450/mo post-reno, solid cash-flow at this basis",
+        "77327 sees steady Houston-exurb demand growth; owner-finance resale common in this submarket"
+      ]
+    }
+  },
+  {
+    "id": 16290156,
+    "address": "13100 Royal Springs Rd NE",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 190900,
+    "beds": 1,
+    "baths": 1,
+    "sqft": 1064,
+    "year_built": 2023,
+    "price_per_sqft": 179,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17597714",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/13100-royal-springs-rd-conroe-tx-77303/17597714",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mary Koulianos",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - The Woodlands",
+      "phone": "7133890857"
+    },
+    "sms_message": "Hi Mary, this is Vivek, local Investor. Interested in your listing at 13100 Royal Springs Rd NE, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "77303 new-build (2022-2023) SFR trading ~$140-165/sqft"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Nearby Conroe 3/2 ~1,100-1,200 sqft resales $200k-$230k"
+        }
+      ],
+      "red_flags": [
+        "1 bed/1 bath at 1,064 sqft is atypical \u2014 likely a data error or non-conforming/added space; verify actual beds before underwriting",
+        "1/1 config severely limits retail buyer pool and FHA/VA financeability, hurting Flip exit",
+        "DOM 0 / brand-new 2023 build means little instant equity \u2014 priced near retail at $179/sqft",
+        "77303 is a slower-appreciating pocket of Conroe with wide comp variance; confirm subdivision, HOA, and whether MUD tax rate inflates carrying costs"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest play: new 2023 build = minimal capex; a true 1/1 rents ~$1,250-1,450/mo, a real 3/2 at this sqft rents ~$1,650-1,850/mo",
+        "If the listing is actually 3/2 (sqft supports it), $190,900 could be a mispriced entry \u2014 pull tax records/appraisal district to confirm room count",
+        "Wholesale angle only works with a meaningful discount; at ~$179/sqft there is little spread \u2014 target contract \u2264$165k to move to an investor",
+        "New construction lowers maintenance/insurance risk and supports a cleaner long-term buy-and-hold vs. dated 77303 inventory"
+      ]
+    }
+  },
+  {
+    "id": 16290157,
+    "address": "14652 South Ascot Bend Cir",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 183991,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1409,
+    "year_built": 2026,
+    "price_per_sqft": 131,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17629514",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/14652-south-ascot-bend-cir-conroe-tx-77306/17629514",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 14652 South Ascot Bend Cir, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~1,400 sqft in Conroe 77306 (Ascot/Grand Lake Estates area) closing $210k-$230k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Comparable 2024-2026 builders' spec homes ~1,350-1,500 sqft trading $150-$165/sqft"
+        }
+      ],
+      "red_flags": [
+        "New construction at $131/sqft leaves little rehab margin \u2014 no Fix&Flip value-add on a 2026 build",
+        "ARV upside capped by builder still selling competing new inventory nearby at similar prices",
+        "77306 is outer-Conroe/soft rental demand; verify rent comps before Fix&Rent underwriting",
+        "Small 1,409 sqft on likely modest lot limits appreciation vs larger new builds",
+        "DOM 0 / Active \u2014 unverified list price, may be builder base price before lot premium/upgrades"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/BRRRR-lite or turnkey rental, not flip: buy-and-hold new build with low maintenance capex",
+        "Estimated rent $1,650-$1,850/mo; at $184k basis that's ~1.0-1.05% rule \u2014 marginal but workable with good financing",
+        "Push builder for closing-cost credits/rate buydown to improve cash flow instead of expecting equity spread",
+        "Wholesale only viable if secured well under $175k; thin assignment room at current pricing",
+        "Conroe/Montgomery County growth corridor (Grand Central Park, 249 tollway) supports long-term appreciation for a hold"
+      ]
+    }
+  },
+  {
+    "id": 16290158,
+    "address": "14676 South Ascot Bend Cir",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 195740,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1607,
+    "year_built": 2026,
+    "price_per_sqft": 122,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "17584170",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/14676-south-ascot-bend-cir-conroe-tx-77306/17584170",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hey Christopher, this is Vivek, local investor. Interested in one of your listings at 14676 South Ascot Bend Cir, Conroe TX 77306. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 4/2 ~1600sf 77306 resales $205k-$220k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Conroe DR Horton/LGI comps ~$130-138/sf"
+        }
+      ],
+      "red_flags": [
+        "New construction leaves no fix&flip spread; ARV ~ purchase price",
+        "Already Under Contract - P, likely unavailable",
+        "2026 build in MUD district = high tax rate (~2.8-3.3%) hurts rent cashflow",
+        "77306 is soft/slower-appreciating east Conroe submarket",
+        "No forced-appreciation angle on a brand-new home"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-hold, not flip or wholesale",
+        "Rent ~$1,650-1,800/mo; marginal DSCR after high MUD taxes+insurance",
+        "Builder incentives (rate buydown/closing costs) are the real margin here",
+        "Wholesale only viable if secured well under $185k with assignment room",
+        "Newer roof/HVAC/systems = low capex, tenant-ready turnkey rental"
+      ]
+    }
+  },
+  {
+    "id": 16290159,
+    "address": "7502 Bywood St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 119999,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 972,
+    "year_built": 1952,
+    "price_per_sqft": 123,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "7985515",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/7502-bywood-st-houston-tx-77028/7985515",
+    "zillow_url": null,
+    "agent": {
+      "name": "Chet Polniazek",
+      "brokerage": "1st Texas Realty Services",
+      "phone": "7132311129"
+    },
+    "sms_message": "Hi Chet, this is Vivek, local Investor. Interested in your listing at 7502 Bywood St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/1-3/2 ~1,000 sqft in 77028/Trinity Gardens trading $170k-$200k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "New-construction & gut-rehab infill nearby pushing $210k+ on larger sqft"
+        }
+      ],
+      "red_flags": [
+        "1 bath on a 3-bed limits resale/rent \u2014 budget to add a 2nd bath",
+        "1952 build: likely original cast-iron/galvanized plumbing, knob-and-tube risk, foundation movement common in NE Houston clay",
+        "972 sqft is small \u2014 caps top-end ARV",
+        "77028 is a high-crime, slower-appreciation submarket; buyer pool skews investor/FHA",
+        "Zero DOM + sub-$120k list may signal wholesaler/as-is condition or multiple offers",
+        "Verify not in floodplain (Hunting Bayou nearby) \u2014 pull FEMA/flood history"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent: low basis ~$120k, rehab $40k-$55k, all-in ~$175k against $1,450-$1,650/mo rent = solid cash-on-cash",
+        "Add 2nd bath if layout allows to lift both ARV and rent",
+        "Land value play \u2014 larger lots in 77028 attracting new-build infill; check lot size for teardown/newbuild exit",
+        "Wholesale angle: if assignable under $115k, spread exists to local landlord buyers",
+        "Confirm ARV with post-rehab 3/2 comps before committing; keep flip margin thin here \u2014 lean rental hold"
+      ]
+    }
+  },
+  {
+    "id": 16290160,
+    "address": "8437 Carolwood Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 149900,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1310,
+    "year_built": 1950,
+    "price_per_sqft": 114,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3187669",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/8437-carolwood-dr-houston-tx-77028/3187669",
+    "zillow_url": null,
+    "agent": {
+      "name": "Carly Cox",
+      "brokerage": "JLA Realty",
+      "phone": "2816826778"
+    },
+    "sms_message": "Hi Carly, this is Vivek, local Investor. Interested in your listing at 8437 Carolwood Dr, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/1-3/2 ~1,300sf in 77028 (Trinity/Kashmere Gardens) trading $180k-$220k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "1950s frame homes near Homestead Rd flipping to low-$200s post-reno"
+        }
+      ],
+      "red_flags": [
+        "1950 build likely needs full systems: cedar/pier-and-beam foundation movement, cast-iron/galvanized plumbing, knob-and-tube or outdated electrical",
+        "Only 1 bath \u2014 add a 2nd bath to hit comp value, budget for it",
+        "77028/Trinity Gardens is a C-class, high-crime submarket; slower buyer exit and lower rent ceiling",
+        "Possible original wood siding/asbestos; verify no prior fire/flood, check for post-tension/no slab",
+        "1,310sf leaves little room to expand beds without addition"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent play: rehab to 3/2, target rent ~$1,450-$1,650/mo; strong cash-on-cash if all-in under ~$175k",
+        "Fix&Flip margin possible if reno held to ~$45k-$60k and 2nd bath added, exit low-$200s",
+        "DOM 0 \u2014 move fast with cash offer below ask given deferred-maintenance leverage",
+        "Wholesale angle: assignment to landlord-buyer pool active in this zip if contract secured near/below $130k",
+        "Convert to 3/2 to maximize both ARV and rentability given single-bath discount"
+      ]
+    }
+  },
+  {
+    "id": 16290161,
+    "address": "6911 Finch St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 125000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 832,
+    "year_built": 1940,
+    "price_per_sqft": 150,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3169530",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/6911-finch-st-houston-tx-77028/3169530",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Tubbs",
+      "brokerage": "IDG Realty",
+      "phone": "8884010447"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 6911 Finch St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 2-3/1 800-1000sqft in Trinity/Kashmere Gardens (77028) resell ~$165-200k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Similar 1940s bungalows on nearby streets flip in the high-$100s after full reno"
+        }
+      ],
+      "red_flags": [
+        "1940 build likely needs foundation, plumbing (cast iron), electrical, and roof updates",
+        "832 sqft 2/1 is small \u2014 buyer pool skews investor/first-time; consider add-on for value",
+        "77028/Trinity Gardens has flood & crime perception issues that cap top-end pricing and appraisals",
+        "DOM 0 means unproven \u2014 verify no hidden liens, tax delinquency, or occupied/tenant status",
+        "Tight sqft-to-lot economics; reno budget can quickly erode the $40-70k spread"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent play: post-reno rents ~$1,350-1,600/mo fit this price point for solid cash flow",
+        "Entry at $125k leaves margin if reno kept to $35-50k on a cosmetic-to-moderate scope",
+        "Check lot size \u2014 adding a 3rd bed/2nd bath or ADU could push ARV toward $210k+",
+        "Wholesale angle: assign to landlord buyers active in 77028 if reno scope exceeds appetite",
+        "Gentrification creep from nearby Kashmere/Fifth Ward redevelopment supports appreciation"
+      ]
+    }
+  },
+  {
+    "id": 16290162,
+    "address": "374 Lucia Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 120990,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 771,
+    "year_built": 2026,
+    "price_per_sqft": 157,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17607703",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/374-lucia-way-cleveland-tx-77327/17607703",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 374 Lucia Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 130000,
+      "arv_high": 150000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 2/2 ~750-850 sqft in 77327 Colony Ridge area closing $125k-$145k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Small entry-level new construction near Plum Grove/Cleveland trading $160-$190/sqft"
+        }
+      ],
+      "red_flags": [
+        "Colony Ridge/77327 area: MUD taxes and high tax rates compress cash-flow and resale",
+        "Tiny 771 sqft 2/2 has thin buyer pool; mostly cash/owner-finance market",
+        "DOM 0 / brand-new 2026 build = no comp seasoning; ARV based on unproven new-construction pricing",
+        "Flood-prone rural NE Houston zip \u2014 verify FEMA flood zone and insurance cost",
+        "New build at retail price leaves little margin for Fix&Flip; already near ARV"
+      ],
+      "opportunity_notes": [
+        "Best fit as Fix&Rent turnkey: minimal rehab, rents ~$1,100-$1,300 for new 2/2 in area",
+        "Wholesale angle: assign to cash/owner-finance investors active in Colony Ridge",
+        "Low entry price ($120,990) keeps total basis affordable for buy-and-hold",
+        "No renovation needed (2026 build) reduces holding/rehab risk if acquired below list"
+      ]
+    }
+  },
+  {
+    "id": 16290163,
+    "address": "377 Lucia Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 133990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1033,
+    "year_built": 2026,
+    "price_per_sqft": 130,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17619799",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/377-lucia-way-cleveland-tx-77327/17619799",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 377 Lucia Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 140000,
+      "arv_high": 160000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1,000-1,100 sqft in 77327 (Plum Grove/Colony Ridge corridor) resale $140k-$155k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Comparable 2024-2026 builds in Grand San Jacinto/Santa Fe subdivisions listing $135k-$160k"
+        }
+      ],
+      "red_flags": [
+        "Colony Ridge/Plum Grove area: MUD/high property tax rates and special assessments compress cash flow",
+        "Thin resale comps and slow appreciation; heavy new-build supply keeps ARV near list, little forced-equity room",
+        "Small 1,033 sqft footprint limits rent ceiling and buyer pool",
+        "Flood/drainage exposure common in 77327 \u2014 verify FEMA zone and elevation",
+        "New construction at $130/sqft leaves near-zero rehab margin for a Fix&Flip"
+      ],
+      "opportunity_notes": [
+        "Best fit: Fix&Rent turnkey buy-and-hold \u2014 new build means minimal capex, likely $1,300-$1,500/mo rent",
+        "Builder incentives/rate buydowns possible at DOM 0 \u2014 negotiate closing costs or price to improve cap rate",
+        "Wholesale only viable if under contract well below $130k; retail-priced new build offers no assignment spread",
+        "Strong rental demand from Houston-commuter workforce along US-59/SH-99 corridor"
+      ]
+    }
+  },
+  {
+    "id": 16290164,
+    "address": "1208 Road 5005",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 148000,
+    "beds": 1,
+    "baths": 1,
+    "sqft": 432,
+    "year_built": 2020,
+    "price_per_sqft": 343,
+    "dom": 0,
+    "status": "Active",
+    "mls": "13612807",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/1208-road-5005-cleveland-tx-77327/13612807",
+    "zillow_url": null,
+    "agent": {
+      "name": "Karina Estrada Lopez",
+      "brokerage": "Executive Texas Realty",
+      "phone": "8323437369"
+    },
+    "sms_message": "Hi Karina, this is Vivek, local Investor. Interested in your listing at 1208 Road 5005, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 110000,
+      "arv_high": 140000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "77327 Colony Ridge new-build 1/1 & 2/1 cottages 400-700 sqft trading ~$95k-$135k on owner-financed lots"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Recent 77327 small SFR closings ~$180-$260/sqft, well below this list's $343/sqft"
+        }
+      ],
+      "red_flags": [
+        "$343/sqft is far above 77327 norms \u2014 priced for retail/owner-finance, not investor margin",
+        "432 sqft 1/1 severely limits resale pool and conventional financing (many lenders won't fund <600 sqft)",
+        "Colony Ridge / 'Road 5005' area: owner-financed lot developer, title/deed-restriction and appraisal-gap risk",
+        "DOM 0 Active \u2014 no market validation; likely developer or wholesale-flip inventory",
+        "Liberty County location = weak comp depth, wide value spread, slow liquidity"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: 2020 build needs little rehab; small cottage can rent ~$900-$1,100/mo to workforce tenants in Colony Ridge",
+        "Cash/owner-finance play only \u2014 avoid conventional exit given size",
+        "Wholesale angle: negotiate toward $70k-$90k to leave room; retail buyers here are cash/owner-finance",
+        "Verify actual lot size, survey, deed restrictions, and whether price includes land outright before any offer"
+      ]
+    }
+  },
+  {
+    "id": 16290165,
+    "address": "27201 Clear Breeze Dr, Katy, TX 77493",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 239000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1844,
+    "year_built": 2023,
+    "price_per_sqft": 130,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16596036",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/27310-clear-breeze-dr-katy-tx-77493/16596036",
+    "zillow_url": null,
+    "agent": {
+      "name": "Darya Shavandi",
+      "brokerage": "TrustPoint Realty, LLC",
+      "phone": "2817010942"
+    },
+    "sms_message": "Hi Darya, this is Vivek, local Investor. Interested in your listing at 27201 Clear Breeze Dr, Katy, TX 77493, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 260000,
+      "arv_high": 290000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "Sunterra/Katy 77493 2022-2023 builds, 4/2 ~1800 sqft sold $265k-$285k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Comparable new-construction 1-story in 77493 ~$150-158/sqft"
+        }
+      ],
+      "red_flags": [
+        "2023 build priced ~$130/sqft is well below market \u2014 verify not a data error, deed restriction, or MUD/high-tax trap",
+        "77493 has heavy new-construction supply; builder inventory competes and caps resale ARV",
+        "New MUD districts here carry 3.2-3.5% tax rates, hurting Fix&Rent cash flow",
+        "0 DOM/Active \u2014 confirm truly available and not pending or a teaser price"
+      ],
+      "opportunity_notes": [
+        "If price is real, ~$25k-$50k equity spread makes this a strong Fix&Flip or wholesale assignment",
+        "2023 build needs little rehab \u2014 light cosmetic only, ideal low-capex Fix&Rent",
+        "Rents in 77493 for 4/2 ~$1,950-$2,150/mo; test cash flow against MUD tax before holding",
+        "Wholesale angle: lock at $239k, assign to a landlord at $255k-$265k for quick spread"
+      ]
+    }
+  },
+  {
+    "id": 16290166,
+    "address": "403 Fenn St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77018",
+    "price": 484000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2538,
+    "year_built": 2021,
+    "price_per_sqft": 191,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3088963",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/403-fenn-st-houston-tx-77018/3088963",
+    "zillow_url": null,
+    "agent": {
+      "name": "Benjamin Chin",
+      "brokerage": "Century 21 Olympian Area Specialists",
+      "phone": "713-703-6497"
+    },
+    "sms_message": "Hi Benjamin, this is Vivek, local Investor. Interested in your listing at 403 Fenn St, Houston TX 77018. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 530000,
+      "arv_high": 600000,
+      "comps": [
+        {
+          "address": "Houston 77018",
+          "notes": "77018 Oak Forest 2020-2022 new builds 4/3 2400-2700sf resale ~$215-240/sqft"
+        },
+        {
+          "address": "Houston 77018",
+          "notes": "Comparable 2021 builds nearby trading $525K-$595K"
+        }
+      ],
+      "red_flags": [
+        "2021 build = no rehab/forced-equity upside; poor Fix&Flip or Fix&Rent value-add fit",
+        "List $484K ($191/sqft) is oddly low for 77018 new construction\u2014verify condition/lot/flood before assuming instant equity",
+        "Coming Soon w/ DOM 0: price unproven, expect competition once live",
+        "Parts of 77018 near White Oak Bayou\u2014confirm flood zone (X vs AE) and prior flooding",
+        "Houston tax rate ~2.1-2.4% erodes rental cashflow on a $530K+ asset"
+      ],
+      "opportunity_notes": [
+        "If condition matches comps, ~$50-115K spread over list suggests a light-lift wholesale/wholetail play, not a flip",
+        "Rents for 4/3 ~2500sf newer builds in Oak Forest ~$3,000-3,400/mo\u2014likely negative cashflow at this basis, weak Fix&Rent",
+        "Best angle: lock at/under list, wholetail to owner-occupant retail buyer in a strong inner-loop-adjacent submarket",
+        "Verify why priced under market (estate/relo/off-market) to confirm real discount vs. hidden defect"
+      ]
+    }
+  },
+  {
+    "id": 16290167,
+    "address": "7710 Ashmole Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77088",
+    "price": 235000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1602,
+    "year_built": 1977,
+    "price_per_sqft": 147,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10984978",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/7710-ashmole-ln-houston-tx-77088/10984978",
+    "zillow_url": null,
+    "agent": {
+      "name": "Dallas Nield",
+      "brokerage": "HomeSmart",
+      "phone": "832-815-1670"
+    },
+    "sms_message": "Hi Dallas, this is Vivek, local Investor. Interested in your listing at 7710 Ashmole Ln, Houston TX 77088. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 255000,
+      "arv_high": 290000,
+      "comps": [
+        {
+          "address": "Houston 77088",
+          "notes": "1970s 3/2 ~1,600sf renovated resales in 77088 trading $260k-$285k"
+        },
+        {
+          "address": "Houston 77088",
+          "notes": "Nearby Acres Homes flips at ~$170-180/sf post-reno"
+        }
+      ],
+      "red_flags": [
+        "1977 build likely needs updated electrical/plumbing, possible original cast iron sewer lines",
+        "No renovation photos yet (Coming Soon), unknown foundation/roof/HVAC condition",
+        "77088/Acres Homes has softer, block-by-block resale values; slower DOM on higher ARV",
+        "Price at $235k leaves thin margin if full gut needed ($147/sf list vs mid-$170s ARV)"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent play strong: rents ~$1,800-2,100/mo for updated 3/2 in 77088, cash-flow friendly at right basis",
+        "1,602 sf single-story on likely larger NW Houston lot appeals to owner-occupants (FHA buyer pool for exit)",
+        "Negotiate below list given no offers (DOM 0/Coming Soon) and 1970s systems; target ~$210-220k to protect flip spread",
+        "Cosmetic-to-moderate reno ($35-55k) can hit ARV; verify foundation early to avoid margin-killer"
+      ]
+    }
+  },
+  {
+    "id": 16290168,
+    "address": "910 Cranberry Hill Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77079",
+    "price": 975000,
+    "beds": 5,
+    "baths": 4,
+    "sqft": 4990,
+    "year_built": 1981,
+    "price_per_sqft": 195,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11312421",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/910-cranberry-hill-ct-houston-tx-77079/11312421",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jennifer Lerner",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "3124938068"
+    },
+    "sms_message": "Hi Jennifer, this is Vivek, local Investor. Interested in your listing at 910 Cranberry Hill Ct, Houston TX 77079. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1150000,
+      "arv_high": 1375000,
+      "comps": [
+        {
+          "address": "Houston 77079",
+          "notes": "77079 Memorial-area 4,500-5,000 sqft renovated homes trading ~$240-280/sqft ($1.2M-$1.35M)"
+        },
+        {
+          "address": "Houston 77079",
+          "notes": "Nottingham Forest/Energy Corridor 5/4 remodels closing $1.25M-$1.4M on larger lots"
+        }
+      ],
+      "red_flags": [
+        "77079 sits in the Addicks/Barker reservoir zone \u2014 many Nottingham Forest homes flooded in Harvey (2017); pull elevation cert, flood history and check if in reservoir pool/floodway before anything",
+        "1981 build at $195/sqft entry with no DOM \u2014 likely dated systems (original HVAC, cast-iron/galvanized plumbing, aluminum wiring era, possible polybutylene) needing full reno",
+        "$975k entry on a 4,990 sqft home leaves thin flip margin \u2014 after $150-250k reno + carry, exit near $1.3M is tight for Fix&Flip",
+        "Coming Soon / 0 DOM means unproven price; seller may expect near-list, squeezing acquisition spread",
+        "Large luxury sqft has a soft resale ceiling in 77079 \u2014 psf compresses above ~$1.3M and days-on-market lengthen"
+      ],
+      "opportunity_notes": [
+        "Strong Spring Branch ISD schools (Rummel Creek Elem, Memorial HS) and Energy Corridor proximity support both resale and premium rents \u2014 Fix&Rent could clear $5,500-$7,000/mo",
+        "If not flood-damaged/repetitive-loss, a cosmetic-plus reno (kitchen, baths, floors, paint, systems) at $120-180k can hit the $1.25M-$1.35M ARV band",
+        "Motivated pre-market seller + coming-soon status is a chance to lock it below list before broad exposure \u2014 negotiate to ~$850-900k for viable flip spread",
+        "Wholesale angle: if flood/reservoir exposure checks out clean, assignable to an owner-occupant renovator who values the school zone and won't demand investor margin"
+      ]
+    }
   }
 ]
