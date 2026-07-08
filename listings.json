@@ -12260,5 +12260,170 @@
         "Wholesale angle: if flood/reservoir exposure checks out clean, assignable to an owner-occupant renovator who values the school zone and won't demand investor margin"
       ]
     }
+  },
+  {
+    "id": 16290169,
+    "address": "2500 E. Paul Rd, Katy, TX 77493",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 225000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1660,
+    "year_built": 1989,
+    "price_per_sqft": 136,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3528235",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/2500-e-paul-rd-katy-tx-77493/3528235",
+    "zillow_url": null,
+    "agent": {
+      "name": "Not Available",
+      "brokerage": "Not Available",
+      "phone": "Not Available"
+    },
+    "sms_message": "Hi Not, this is Vivek, local Investor. Interested in your listing at 2500 E. Paul Rd, Katy, TX 77493, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290170,
+    "address": "27115 Clear Mist Dr, Katy, TX 77493",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 235000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2026,
+    "year_built": 2023,
+    "price_per_sqft": 116,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "10993863",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/27115-clear-mist-dr-katy-tx-77493",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hey there, this is Vivek, local investor. Interested in one of your listings at 27115 Clear Mist Dr, Katy, TX 77493, Katy TX 77493. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290171,
+    "address": "807 Memorial Heights Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 956000,
+    "beds": 3,
+    "baths": 4,
+    "sqft": 3026,
+    "year_built": 2019,
+    "price_per_sqft": 316,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "14929747",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/807-memorial-heights-houston-tx-77007/14929747",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jack Lin",
+      "brokerage": "Precise Real Estate Professionals",
+      "phone": "2813230789"
+    },
+    "sms_message": "Hi Jack, this is Vivek, local Investor. Interested in your listing at 807 Memorial Heights Dr, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290172,
+    "address": "11819 Primwood Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77070",
+    "price": 649000,
+    "beds": 5,
+    "baths": 4,
+    "sqft": 4187,
+    "year_built": 1989,
+    "price_per_sqft": 155,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3543679",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/11819-primwood-dr-houston-tx-77070/3543679",
+    "zillow_url": null,
+    "agent": {
+      "name": "Eden Tieh",
+      "brokerage": "Keller Williams Realty Southwest",
+      "phone": "281-787-2788"
+    },
+    "sms_message": "Hi Eden, this is Vivek, local Investor. Interested in your listing at 11819 Primwood Dr, Houston TX 77070. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290173,
+    "address": "2730 Knotty Oaks Trl",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77045",
+    "price": 245000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1454,
+    "year_built": 1960,
+    "price_per_sqft": 169,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3236828",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2730-knotty-oaks-trl-houston-tx-77045/3236828",
+    "zillow_url": null,
+    "agent": {
+      "name": "Eugene Chua",
+      "brokerage": "The Sears Group",
+      "phone": "847-226-8967"
+    },
+    "sms_message": "Hi Eugene, this is Vivek, local Investor. Interested in your listing at 2730 Knotty Oaks Trl, Houston TX 77045. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
