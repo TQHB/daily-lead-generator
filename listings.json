@@ -13341,5 +13341,808 @@
         "Confirm rent comps and Section 8 FMR for 77047 (3BR) to validate DSCR before committing"
       ]
     }
+  },
+  {
+    "id": 16290192,
+    "address": "16550 Colleen Pl, Conroe, TX 77306",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 170000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 1005,
+    "year_built": 2022,
+    "price_per_sqft": 169,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16445135",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16550-colleen-pl-conroe-tx-77306/16445135",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ezekiel Ano",
+      "brokerage": "Revko Commercial Real Estate, LLC",
+      "phone": "281-203-7736"
+    },
+    "sms_message": "Hi Ezekiel, this is Vivek, local Investor. Interested in your listing at 16550 Colleen Pl, Conroe, TX 77306, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 2/1 & 3/2 homes in 77306 (Conroe/Grangerland) trading ~$175-210k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Recent 2020-2023 builds ~1,000-1,200 sqft on larger lots east of I-45"
+        }
+      ],
+      "red_flags": [
+        "Only 2 beds / 1 bath limits resale & rent pool vs 3/2 standard",
+        "Very low sqft (1,005) caps ARV ceiling",
+        "77306 is rural east Conroe \u2014 check for septic, well, flood zone (near Caney Creek), and unpaved road access",
+        "Built 2022 so little forced-appreciation upside via rehab \u2014 thin flip margin at $170k ask"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent fit: near-new 2022 build needs minimal capex; likely rents ~$1,450-1,650/mo",
+        "Turnkey-ish hold \u2014 low maintenance/turn cost given age",
+        "Negotiate below ask on a DOM 0 new listing only if it lingers; possible land value if on acreage",
+        "Wholesale only works with deep discount (~$140-150k) given tight comp spread"
+      ]
+    }
+  },
+  {
+    "id": 16290193,
+    "address": "3643 Duplet Ave, Conroe, TX 77306",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 159990,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1360,
+    "year_built": 2026,
+    "price_per_sqft": 118,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17633419",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/3643-duplet-ave-conroe-tx-77306/17633419",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 3643 Duplet Ave, Conroe, TX 77306, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2.5 ~1,350 sqft in 77306 (Conroe/Grangerland) trading $170K-$190K"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Resale 3/2 1,300-1,500 sqft nearby closing $165K-$185K"
+        }
+      ],
+      "red_flags": [
+        "2026 new construction priced at only $118/sqft \u2014 likely spec/production builder in a value tract, thin flip margin",
+        "2.5 baths in 1,360 sqft suggests small bedrooms/tight layout typical of entry-level builds",
+        "DOM 0 / brand new \u2014 no negotiation leverage or distress; buying at retail",
+        "77306 (east Conroe/Grangerland) is softer, slower-appreciating submarket with more inventory",
+        "No rehab upside on new construction \u2014 Fix&Flip/Fix&Rent value-add thesis doesn't apply"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-and-hold: est. rent $1,450-$1,650/mo, ~1% rule roughly met at this price",
+        "Low entry price and new build = minimal maintenance/capex for first 5-7 years, strong tenant appeal",
+        "Push builder for closing-cost credits, rate buydown, or appliance/fence upgrades to boost cash flow",
+        "Conroe growth corridor (Hwy 105/59, Grand Central Park spillover) supports long-term rent and value appreciation",
+        "Wholesale angle weak here \u2014 no equity spread on retail new construction; skip unless builder bulk/assignment discount available"
+      ]
+    }
+  },
+  {
+    "id": 16290194,
+    "address": "16540 Desert Star Dr, Conroe, TX 77302",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 144900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 2000,
+    "price_per_sqft": 108,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5265307",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16540-desert-star-dr-conroe-tx-77302/5265307",
+    "zillow_url": null,
+    "agent": {
+      "name": "Alejandra Silva",
+      "brokerage": "JLA Realty",
+      "phone": "936-522-8446"
+    },
+    "sms_message": "Hi Alejandra, this is Vivek, local Investor. Interested in your listing at 16540 Desert Star Dr, Conroe, TX 77302, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 245000,
+      "comps": [
+        {
+          "address": "Conroe 77302",
+          "notes": "Renovated 3/2 ~1,300-1,400 sqft in 77302/Artavia-Grand Central corridor trading ~$210k-$240k ($155-175/sqft)"
+        },
+        {
+          "address": "Conroe 77302",
+          "notes": "Comparable 2000-era Conroe SFR resales in Imperial Oaks/Crighton Ridge closing ~$220k after updates"
+        }
+      ],
+      "red_flags": [
+        "$144,900 active list is well below likely ARV \u2014 suggests condition/foundation issues or estimate; verify why",
+        "DOM 0 / Active means multiple offers likely; sub-$150k Conroe deals draw heavy investor competition, thin margin risk",
+        "1344 sqft on 2000-build may have original HVAC/roof/water heater at end of life \u2014 capex heavy",
+        "77302 has pockets of MUD districts + high property tax rates (~2.5-3%), compressing rent yield and flip carry"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: 3/2 in Conroe rents ~$1,650-1,850/mo; at ~$145k + ~$25-35k rehab, target ~1% rule feasible",
+        "Fix&Flip spread: ~$215k-245k ARV vs ~$145k acquisition leaves room if rehab stays under ~$35k and ARV holds",
+        "Wholesale angle: if truly distressed, assign to landlord buyer \u2014 strong Conroe rental demand from Woodlands/I-45 commuters",
+        "2000 build = slab/framing likely sound vs older stock; cosmetic-only rehab (paint/floor/kitchen) could hit ARV fast"
+      ]
+    }
+  },
+  {
+    "id": 16290195,
+    "address": "574 Road 5268",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 115000,
+    "beds": 0,
+    "baths": 0,
+    "sqft": 0,
+    "year_built": 0,
+    "price_per_sqft": null,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15269085",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/574-road-5268-cleveland-tx-77327/15269085",
+    "zillow_url": null,
+    "agent": {
+      "name": "Alejandra Ruiz",
+      "brokerage": "Texan Vista Realty",
+      "phone": "2819198428"
+    },
+    "sms_message": "Hi Alejandra, this is Vivek, local Investor. Interested in your listing at 574 Road 5268, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 150000,
+      "arv_high": 185000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Recent 3/2 ~1,300 sqft rebuilds in 77327 rural subdivisions selling $155k-$180k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-construction starter homes off FM-1010/US-59 corridor $160k-$190k"
+        }
+      ],
+      "red_flags": [
+        "Zero data on beds/baths/sqft/year_built \u2014 likely raw land or teardown, not a house",
+        "'Road 5268' addressing indicates rural unrestricted subdivision (Plum Grove/Tarkington area) \u2014 verify flood zone & FEMA maps",
+        "77327 has heavy floodplain exposure near Trinity/East Fork San Jacinto \u2014 pull elevation cert",
+        "Possible septic/well only (no city water/sewer) and unpaved road access",
+        "DOM=0 and $115k with no structure specs suggests lot listing or wholesaler assignment"
+      ],
+      "opportunity_notes": [
+        "If it's a cleared/buildable lot, $115k is high for raw Cleveland land \u2014 negotiate toward $40k-$70k unless improved acreage",
+        "Best fit is likely new-build-to-rent or manufactured-home placement rather than Fix&Rent",
+        "Confirm acreage \u2014 larger unrestricted tracts support mobile home rentals popular in this submarket",
+        "Strong path is Wholesale/assignment given thin data; verify title, access easement, and utilities before committing",
+        "Rent comps in 77327 for 3/2 run ~$1,400-$1,700/mo \u2014 supports BRRRR only if all-in stays under ~$150k"
+      ]
+    }
+  },
+  {
+    "id": 16290196,
+    "address": "369 Lucia Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 122990,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 771,
+    "year_built": 2026,
+    "price_per_sqft": 160,
+    "dom": 0,
+    "status": "New Construction",
+    "mls": "17633428",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/369-lucia-way-cleveland-tx-77327/17633428",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 369 Lucia Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 128000,
+      "arv_high": 145000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New 2/2 ~750-850 sqft builds in 77327 (Colony Ridge/Santa Fe area) closing $130k-$148k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Resale 3/2 ~1,000 sqft in Cleveland trading $150k-$175k, showing per-sqft ceiling near $175-190/sqft"
+        }
+      ],
+      "red_flags": [
+        "Only 771 sqft with 2/2 \u2014 tiny footprint caps ARV and narrows resale buyer pool",
+        "New construction at $159/sqft leaves almost no equity spread for Fix&Flip",
+        "77327/Colony Ridge is heavy owner-financed developer inventory \u2014 appraisals and financed-buyer comps can lag",
+        "2BR limits rent demand vs 3BR family renters in this submarket",
+        "MUD/high property-tax and possible unpaved-road/utility issues common in this zip"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent buy-and-hold: new build = near-zero maintenance capex for years",
+        "Realistic rent $1,150-$1,350/mo; at $123k basis gross yield ~11-13%, workable if taxes/insurance controlled",
+        "Wholesale only viable with meaningful builder discount or bulk-lot assignment \u2014 thin margin retail",
+        "Target long-term appreciation play on Cleveland/Grand Parkway growth corridor, not short-term flip",
+        "Negotiate builder for closing-cost credits or rate buydown to improve cash-on-cash rather than expecting flip spread"
+      ]
+    }
+  },
+  {
+    "id": 16290197,
+    "address": "1982 Road 5714",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 195000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1092,
+    "year_built": 2022,
+    "price_per_sqft": 179,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15772234",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/1982-road-5714-cleveland-tx-77327/15772234",
+    "zillow_url": null,
+    "agent": {
+      "name": "Marcey Rogers",
+      "brokerage": "Dynamize Real Estate",
+      "phone": "8329984663"
+    },
+    "sms_message": "Hi Marcey, this is Vivek, local Investor. Interested in your listing at 1982 Road 5714, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 210000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1000-1200 sqft in Cleveland 77327 (Colony Ridge area) closing $175k-$205k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "2021-2023 builds on large lots off FM roads trading ~$160-185/sqft"
+        }
+      ],
+      "red_flags": [
+        "'Road 5714' address pattern indicates Colony Ridge/Santa Fe subdivision \u2014 heavy inventory saturation and slow resale",
+        "DOM 0 but this submarket has hundreds of near-identical new builds competing, compressing ARV",
+        "Liberty County / Cleveland 77327 is rural far-NE Houston (~45+ min to jobs), thin conventional-buyer pool and financing friction (many seller-financed comps distort true cash value)",
+        "At $195k list vs ~$180-210k ARV there is little to no spread for Fix&Flip after closing/holding costs",
+        "Flood/drainage and unincorporated MUD/road-maintenance concerns common in this area",
+        "2022 build means minimal rehab upside \u2014 no value-add via cosmetic fix"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-hold: 3/2 new construction rents ~$1,450-1,700/mo in Cleveland, low maintenance given 2022 build",
+        "Wholesale only viable if acquired well under $160k given razor-thin ARV spread",
+        "New construction (2022) = low capex, strong for a turnkey rental with minimal rehab reserve",
+        "Large lots typical here add long-term land value; target cash purchase to avoid appraisal/financing gaps"
+      ]
+    }
+  },
+  {
+    "id": 16290198,
+    "address": "2606 Carson Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 238000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1360,
+    "year_built": 1980,
+    "price_per_sqft": 175,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "11962881",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/2606-carson-dr-katy-tx-77493/11962881",
+    "zillow_url": null,
+    "agent": {
+      "name": "LaDonna McCullough",
+      "brokerage": "Views Of Texas Realty",
+      "phone": "281-948-3698"
+    },
+    "sms_message": "Hi LaDonna, this is Vivek, local Investor. Interested in your listing at 2606 Carson Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290199,
+    "address": "19430 Winding Branch Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 219997,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1447,
+    "year_built": 1984,
+    "price_per_sqft": 152,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3549928",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/19430-winding-branch-dr-katy-tx-77449/3549928",
+    "zillow_url": null,
+    "agent": {
+      "name": "Chris Schmidt",
+      "brokerage": "Your Home Sold Guaranteed Realty",
+      "phone": "7132269427"
+    },
+    "sms_message": "Hi Chris, this is Vivek, local Investor. Interested in your listing at 19430 Winding Branch Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290200,
+    "address": "24019 Tayloe House Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 227500,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1451,
+    "year_built": 1980,
+    "price_per_sqft": 157,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3464756",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/24019-tayloe-house-ln-katy-tx-77493/3464756",
+    "zillow_url": null,
+    "agent": {
+      "name": "Akrum Ali",
+      "brokerage": "Akrum A Ali",
+      "phone": "202-378-0567"
+    },
+    "sms_message": "Hi Akrum, this is Vivek, local Investor. Interested in your listing at 24019 Tayloe House Ln, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 275000,
+      "arv_high": 305000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "Renovated 1970s-80s 4/2 ~1,400-1,600sqft in old Katy 77493 trading $270k-$300k ($185-$205/sqft)"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Updated single-story 4/2 near Katy Elem/Katy ISD closing low-$290s"
+        }
+      ],
+      "red_flags": [
+        "1980 build \u2014 likely original plumbing (cast iron/galvanized), electrical panel, and HVAC; budget for major systems",
+        "1,451 sqft on a 4/2 means small bedrooms/tight layout \u2014 verify not a converted garage adding the 4th bed",
+        "DOM 0 / just listed at ~$157/sqft \u2014 priced near retail, thin margin; expect competition and possible bidding",
+        "Katy 77493 has flood-prone pockets \u2014 pull FEMA flood zone + MUD/tax rate (Katy taxes run high ~2.5-3%)",
+        "Confirm foundation condition \u2014 1980 slab in Houston clay soil is a common defect"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent play: Katy ISD is a top rental draw; renovated 4/2 rents ~$1,900-$2,200/mo",
+        "Old Katy 77493 sees steady appreciation and new construction nearby lifting comps",
+        "If cosmetic-only ($30k-$45k reno) and systems check out, ~$275k-$305k ARV supports a flip or refinance-and-hold",
+        "4-bed count is a rental/resale advantage over the many 3/2s in the submarket",
+        "Negotiate below list given systems age; target all-in (purchase+reno) under $250k for viable Fix&Flip spread"
+      ]
+    }
+  },
+  {
+    "id": 16290201,
+    "address": "6022 Minard Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 220000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1459,
+    "year_built": 2004,
+    "price_per_sqft": 151,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "3683135",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/6022-minard-dr-katy-tx-77449/3683135",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hey there, this is Vivek, local investor. Interested in one of your listings at 6022 Minard Dr, Katy TX 77449. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": 245000,
+      "arv_high": 270000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "Similar 3/2 ~1,450sf 2004-built in Katy 77449 (Williamsburg/Cimarron area) sold $250-265k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Updated 1,400-1,600sf single-story nearby closed $255-272k"
+        }
+      ],
+      "red_flags": [
+        "Already Under Contract - P \u2014 likely not actionable unless it falls through",
+        "DOM 0 means no listing history/photos to assess condition",
+        "77449 is high-volume, thin-margin zip; limited spread at $220k buy",
+        "Katy ISD taxes + possible MUD/HOA compress rents and flip net"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: 1,459sf 3/2 rents ~$1,800-2,000/mo; at $220k+light reno, marginal cap rate \u2014 backup-offer only",
+        "Fix&Flip spread ~$25-50k gross before ~$18-25k reno/closing/holding \u2014 tight, needs sub-$210k buy",
+        "2004 build = solid bones, likely only cosmetic (paint/floor/counters) reno needed",
+        "Best play: submit backup offer in case contract fails; otherwise pass \u2014 margin too thin at ask"
+      ]
+    }
+  },
+  {
+    "id": 16290202,
+    "address": "21403 Park Bishop Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77450",
+    "price": 244000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1243,
+    "year_built": 1983,
+    "price_per_sqft": 196,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "8478884",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/21403-park-bishop-dr-katy-tx-77450/8478884",
+    "zillow_url": null,
+    "agent": {
+      "name": "Amber Broadway",
+      "brokerage": "Opendoor Brokerage, LLC",
+      "phone": "480-462-5392"
+    },
+    "sms_message": "Hi Amber, this is Vivek, local Investor. Interested in your listing at 21403 Park Bishop Dr, Katy TX 77450. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 275000,
+      "arv_high": 310000,
+      "comps": [
+        {
+          "address": "Katy 77450",
+          "notes": "Renovated 2/2 patio/garden homes in Nottingham Country/Cinco Ranch area of 77450 trading $270k-$305k at ~$220-245/sqft"
+        },
+        {
+          "address": "Katy 77450",
+          "notes": "1980s Katy ISD single-story homes ~1,200-1,400 sqft closing $260k-$300k post-reno"
+        }
+      ],
+      "red_flags": [
+        "Only 2 bed/2 bath and 1,243 sqft limits buyer pool vs. 3/2 norm \u2014 harder resale/rent premium",
+        "1983 build: likely original galvanized/polybutylene plumbing, aging HVAC, possible cast iron sewer lines, foundation movement common in Katy clay soil",
+        "DOM 0 / just listed \u2014 no price-drop leverage yet; verify not already in multiple offers",
+        "Possible HOA (patio-home style) \u2014 check dues, rental caps, and deed restrictions before Fix&Rent",
+        "Katy 77450 has localized flood history \u2014 confirm flood zone (X vs AE) and any Harvey/Imelda claims"
+      ],
+      "opportunity_notes": [
+        "Katy ISD address is a strong rent and resale driver; Fix&Rent should command $1,950-$2,300/mo for a clean 2/2",
+        "Spread at $244k list to $275k-$310k ARV supports a light-to-moderate cosmetic Fix&Flip if reno held to ~$25k-$40k",
+        "Confirm true condition/repair scope \u2014 if solid bones, this pencils best as Fix&Rent for cash-flow + appreciation in Cinco Ranch corridor",
+        "Push offer into low-$220s given small footprint to protect margin; verify square footage and bed count against HCAD/appraisal district",
+        "Check for garage conversion or added flex space that could market as 3rd bedroom to widen buyer pool"
+      ]
+    }
+  },
+  {
+    "id": 16290203,
+    "address": "2011 Newland Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 225000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1585,
+    "year_built": 1992,
+    "price_per_sqft": 142,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3692353",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/2011-newland-dr-katy-tx-77449/3692353",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 2011 Newland Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290204,
+    "address": "26834 Scarlet Willow Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 249990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1302,
+    "year_built": 2026,
+    "price_per_sqft": 192,
+    "dom": 0,
+    "status": "New Construction",
+    "mls": "17450270",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/26834-scarlet-willow-dr-katy-tx-77493/17450270",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 26834 Scarlet Willow Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 270000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 3/2 ~1,300 sqft in 77493 (Elyson/Sunterra area) closing $255k-$268k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Comparable builder spec homes 1,250-1,400 sqft listing $249k-$272k"
+        }
+      ],
+      "red_flags": [
+        "New construction at retail price leaves near-zero flip margin \u2014 no forced-appreciation opportunity",
+        "1,302 sqft is small; 3/2 with tight footprint limits rent premium and resale pool",
+        "MUD taxes + potential HOA in 77493 push effective tax rate ~2.8-3.3%, hurting rent cash flow",
+        "DOM 0 / builder pricing means no distress; buyer competes with builder incentives, not below-market"
+      ],
+      "opportunity_notes": [
+        "Fix&Flip: not viable \u2014 no discount to ARV; skip unless builder closeout/bulk discount available",
+        "Fix&Rent: turnkey new build, minimal capex; est. rent $1,750-$1,950/mo, likely negative/thin cash flow at list price",
+        "Wholesale: no spread at retail; only pursue if assignable at 15-20%+ below list",
+        "Strongest play is long-term buy-and-hold for 77493 appreciation; negotiate builder rate buydown/closing credits to improve returns"
+      ]
+    }
+  },
+  {
+    "id": 16290205,
+    "address": "20502 Cocoplum Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 250000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1388,
+    "year_built": 1983,
+    "price_per_sqft": 180,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "10153787",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/20502-cocoplum-dr-katy-tx-77449/10153787",
+    "zillow_url": null,
+    "agent": {
+      "name": "Tena Wood",
+      "brokerage": "RE/MAX Grand",
+      "phone": "281-773-6974"
+    },
+    "sms_message": "Hey Tena, this is Vivek, local investor. Interested in one of your listings at 20502 Cocoplum Dr, Katy TX 77449. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": 265000,
+      "arv_high": 295000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "77449 1,300-1,500 sqft renovated 3/2 sells ~$270-290k (e.g. Westgreen/Bear Creek Village)"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "1980s 2-story off Franz Rd trading ~$185-200/sqft updated"
+        }
+      ],
+      "red_flags": [
+        "Already Under Contract (P) - likely unavailable unless it falls through",
+        "1388 sqft is small for 3/2.5 - tight room sizes hurt resale",
+        "1983 build: expect original galvanized/cast iron plumbing, aging HVAC, possible foundation movement on Katy clay",
+        "77449 has high inventory/competition - slower resale and thinner spreads",
+        "$250k list = ~$180/sqft going-in, leaves little margin for a flip"
+      ],
+      "opportunity_notes": [
+        "At ARV ~$280k, max flip buy near $170-185k after $30-40k rehab - current $250k is too high for flip math",
+        "Better fit as Fix&Rent: 3/2.5 in Katy ISD rents ~$1,750-1,950/mo, solid tenant demand",
+        "Wholesale angle: if it falls out of contract, tie up sub-$200k and assign to a landlord buyer",
+        "Katy ISD schools are the main resale/rental draw - lead with that",
+        "Verify foundation and plumbing condition before committing given 1983 slab-on-clay"
+      ]
+    }
+  },
+  {
+    "id": 16290206,
+    "address": "6407 Winter Stone",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "price": 220000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1523,
+    "year_built": 1997,
+    "price_per_sqft": 144,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3573765",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/6407-winter-stone-houston-tx-77084/3573765",
+    "zillow_url": null,
+    "agent": {
+      "name": "Scarlett Rossett",
+      "brokerage": "Walzel Properties - Corporate Office",
+      "phone": "832-463-7267"
+    },
+    "sms_message": "Hi Scarlett, this is Vivek, local Investor. Interested in your listing at 6407 Winter Stone, Houston TX 77084. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 285000,
+      "comps": [
+        {
+          "address": "Houston 77084",
+          "notes": "77084 3/2 ~1500sqft renovated resales trading $255k-$280k"
+        },
+        {
+          "address": "Houston 77084",
+          "notes": "Bear Creek/Kieth-Harrow area 1990s builds ~$175/sqft ARV"
+        }
+      ],
+      "red_flags": [
+        "Coming Soon/DOM 0 \u2014 no negotiation leverage yet, may draw multiple offers",
+        "$220k list leaves thin margin: only ~$30k-$65k spread to ARV before rehab/closing/holding",
+        "77084 west of Hwy 6 has Addicks/Barker reservoir flood-pool exposure \u2014 verify flood zone & Harvey history",
+        "1997 build likely needs HVAC, roof, and dated finishes \u2014 confirm rehab scope"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent play: 77084 rents ~$1,850-$2,150/mo for updated 3/2, good Katy ISD-adjacent tenant demand",
+        "Fix&Flip viable only if acquired well under list (~$185k-$195k) given tight ARV spread",
+        "Wholesale angle: lock at Coming Soon before MLS exposure, assign to landlords targeting West Houston cash flow",
+        "1523 sqft on slab, brick \u2014 low structural-risk profile, predictable cosmetic rehab budget $30k-$45k"
+      ]
+    }
+  },
+  {
+    "id": 16290207,
+    "address": "2003 Millhouse Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77073",
+    "price": 249999,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1914,
+    "year_built": 1973,
+    "price_per_sqft": 131,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3356408",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2003-millhouse-rd-houston-tx-77073/3356408",
+    "zillow_url": null,
+    "agent": {
+      "name": "Bridgette Crawford",
+      "brokerage": "RE/MAX Integrity",
+      "phone": "8324734819"
+    },
+    "sms_message": "Hi Bridgette, this is Vivek, local Investor. Interested in your listing at 2003 Millhouse Rd, Houston TX 77073. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290208,
+    "address": "14803 Grand Nugget Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77062",
+    "price": 395000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2353,
+    "year_built": 1990,
+    "price_per_sqft": 168,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3585821",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/14803-grand-nugget-ct-houston-tx-77062/3585821",
+    "zillow_url": null,
+    "agent": {
+      "name": "Carrie Nelson",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Bay Area",
+      "phone": "281-635-8384"
+    },
+    "sms_message": "Hi Carrie, this is Vivek, local Investor. Interested in your listing at 14803 Grand Nugget Ct, Houston TX 77062. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
