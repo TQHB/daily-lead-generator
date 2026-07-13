@@ -15258,5 +15258,396 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290236,
+    "address": "1607 Allen St, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 85000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 900,
+    "year_built": 1950,
+    "price_per_sqft": 94,
+    "dom": 0,
+    "status": "Active",
+    "mls": "1992238",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/1607-allen-st-houston-tx-77028/1992238",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 1607 Allen St, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 150000,
+      "arv_high": 180000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/1-3/2 ~900-1100 sqft in 77028 (Trinity/Houston Gardens) trading ~$155k-$180k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Similar 1950s frame homes near Allen St/Kelley area post-rehab ~$160k median"
+        }
+      ],
+      "red_flags": [
+        "1950 build likely needs full systems: foundation (Houston clay soil movement), sewer/galvanized plumbing, knob-and-tube/aluminum wiring, roof",
+        "Single bath and only 900 sqft caps rent and resale ceiling",
+        "77028 is a high-crime, lower-demand submarket \u2014 longer DOM and appraisal risk on exit",
+        "DOM 0 / just listed \u2014 verify not a wholesaler markup or occupied/tenant/title issue",
+        "Flood exposure risk near Halls Bayou / possible Harvey history \u2014 pull FEMA flood zone"
+      ],
+      "opportunity_notes": [
+        "Add a second bath (space permitting) to hit 3/2 and lift ARV toward high end",
+        "Fix&Rent numbers likely best fit: est. rent $1,300-$1,500/mo; strong cash flow if all-in kept under ~$130k",
+        "Target purchase well below ask (~$60k-$70k) given rehab scope to protect 70% ARV rule",
+        "Wholesale exit viable to local landlord buyers if acquired at deep discount",
+        "Verify clean title, no city liens/open permits, and true living sqft via HCAD before locking"
+      ]
+    }
+  },
+  {
+    "id": 16290237,
+    "address": "207 E St, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 95000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1300,
+    "year_built": 1955,
+    "price_per_sqft": 73,
+    "dom": 0,
+    "status": "Active",
+    "mls": "2112099",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/207-e-st-houston-tx-77028/2112099",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 207 E St, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290238,
+    "address": "294 County Road 3415",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 165000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1680,
+    "year_built": 1978,
+    "price_per_sqft": 98,
+    "dom": 0,
+    "status": "Active",
+    "mls": "12538816",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/294-county-road-3415-cleveland-tx-77327/12538816",
+    "zillow_url": null,
+    "agent": {
+      "name": "Crystal Martinez",
+      "brokerage": "Vive Realty LLC",
+      "phone": "832-869-0181"
+    },
+    "sms_message": "Hi Crystal, this is Vivek, local Investor. Interested in your listing at 294 County Road 3415, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 250000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 3/2 ~1,600-1,800 sqft on acreage in 77327 trading ~$210k-$245k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Recent flips near FM 787 / CR 341x corridor around $130-$145/sqft ARV"
+        }
+      ],
+      "red_flags": [
+        "County Road address = likely rural acreage; verify septic (aerobic) and private well condition, not city utilities",
+        "1978 build: potential aluminum wiring, original CI/galvanized plumbing, HVAC/roof age, possible asbestos siding/tile",
+        "77327 is partly in floodplain near Trinity River/creeks \u2014 pull FEMA flood zone and elevation before committing",
+        "DOM 0 / Active priced at ~$98/sqft suggests it may move fast or be a wholesale/as-is deal; confirm true condition",
+        "Cleveland/Liberty County resale is slower and thinner than Harris County \u2014 longer DOM and pricier hard-money carry"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent fits best: acreage + 3/2 rents ~$1,600-$1,900/mo in 77327; strong rent-to-price supports BRRRR",
+        "Land value adds upside \u2014 confirm lot size/acreage, road frontage, and whether it's ag-exempt or subdividable",
+        "At $165k with $35-45k cosmetic reno, ~$215-250k ARV leaves flip margin if flood zone is clear (target ~70% ARV - rehab)",
+        "Wholesale angle: rural as-is 3/2s attract owner-occupant rehabbers and rent-to-own buyers in the Cleveland/Grand San Jacinto growth corridor",
+        "Confirm access/easement and mobile-home-vs-stick-built distinction (CR areas mix both) as it heavily impacts financing and ARV"
+      ]
+    }
+  },
+  {
+    "id": 16290239,
+    "address": "370 Lucia Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 163990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1192,
+    "year_built": 2026,
+    "price_per_sqft": 138,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "17618766",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/370-lucia-way-cleveland-tx-77327/17618766",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jared Turner",
+      "brokerage": "Lennar Homes Village Builders, LLC",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hey Jared, this is Vivek, local investor. Interested in one of your listings at 370 Lucia Way, Cleveland TX 77327. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": 160000,
+      "arv_high": 180000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1150-1250 sqft in 77327 (Colony Ridge/Grand San Jacinto) closing $160-178k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Resale 2023-2025 builds nearby trading $155-172k, ~$135/sqft"
+        }
+      ],
+      "red_flags": [
+        "Status is Under Contract-P \u2014 not actionable unless deal falls through",
+        "New construction 2026 = no rehab/forced-appreciation margin, buying at retail",
+        "77327 is Colony Ridge/Cleveland exurb: heavy new-build supply suppresses resale and appreciation",
+        "Thin/negative flip spread; ARV \u2248 list price leaves no room after 6-8% selling costs",
+        "Verify flood zone, MUD tax rate, and lot size \u2014 high property-tax burden common here hurts rent coverage",
+        "Rural location, longer DOM on resale, softer buyer pool"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey buy-and-hold, not flip \u2014 new build = low maintenance capex",
+        "Entry-level price attractive to first-time/workforce renters; target rent ~$1,450-1,650/mo, verify 1% rule",
+        "Wholesale only viable if assignable below ~$150k; retail contract leaves no assignment margin",
+        "Confirm builder incentives (rate buydown/closing costs) that could improve cash-on-cash if reassigned",
+        "Monitor if it falls back to active \u2014 motivated builder may discount aging spec inventory"
+      ]
+    }
+  },
+  {
+    "id": 16290240,
+    "address": "10239 Plum Grove Rd",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 195000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1696,
+    "year_built": 2018,
+    "price_per_sqft": 115,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "13335240",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/10239-plum-grove-rd-cleveland-tx-77327/13335240",
+    "zillow_url": null,
+    "agent": {
+      "name": "Steven Franco",
+      "brokerage": "Real Broker, LLC",
+      "phone": "346-676-8566"
+    },
+    "sms_message": "Hey Steven, this is Vivek, local investor. Interested in one of your listings at 10239 Plum Grove Rd, Cleveland TX 77327. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 245000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "2018-built 4/2 ~1,700sf in 77327 (Grand San Jacinto/Santa Fe area) trading $210k-$240k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Newer stick-built SFR on Plum Grove Rd corridor closing ~$130-$145/sf"
+        }
+      ],
+      "red_flags": [
+        "Status 'Under Contract - P' with 0 DOM \u2014 likely already tied up, hard to secure",
+        "77327/Liberty Co is soft, rural exurb with slow absorption and thin buyer pool",
+        "Verify build type \u2014 many area homes are manufactured/modular, which caps ARV and limits financing",
+        "Possible septic/well and flood-zone exposure (Plum Grove/San Jacinto watershed) \u2014 confirm survey & elevation",
+        "2018 build leaves little forced-appreciation room; margins thin at $195k in"
+      ],
+      "opportunity_notes": [
+        "Only 8 years old \u2014 minimal rehab, ideal light-lipstick Fix&Rent play",
+        "Fix&Rent: 4/2 rents ~$1,650-$1,850/mo, supporting ~1% rule at this basis",
+        "Wholesale angle if seller falls through \u2014 assign to landlord buyers given low entry price",
+        "Confirm on true stick-built + acreage lot to push ARV toward high end",
+        "Growing Cleveland/Grand Texas corridor (SH-99/Colony Ridge spillover) supports rental demand"
+      ]
+    }
+  },
+  {
+    "id": 16290241,
+    "address": "5515 Truett St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77023",
+    "price": 270000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 1494,
+    "year_built": 1938,
+    "price_per_sqft": 181,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3136655",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5515-truett-st-houston-tx-77023/3136655",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rosalinda Swartz",
+      "brokerage": "Redfin Corporation",
+      "phone": "703-388-8530"
+    },
+    "sms_message": "Hi Rosalinda, this is Vivek, local Investor. Interested in your listing at 5515 Truett St, Houston TX 77023. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 340000,
+      "arv_high": 400000,
+      "comps": [
+        {
+          "address": "Houston 77023",
+          "notes": "Renovated 1930s-40s bungalows in 77023 Eastwood/East End trading ~$230-270/sqft"
+        },
+        {
+          "address": "Houston 77023",
+          "notes": "Comparable 2-3/2 remodels near Lawndale/Telephone Rd closing $360k-$410k"
+        }
+      ],
+      "red_flags": [
+        "1938 build: likely foundation movement, cast-iron/galvanized plumbing, knob-and-tube or cloth wiring, possible asbestos/lead",
+        "2/1 layout caps resale \u2014 most East End buyers want 3/2; reconfiguration needed to hit ARV",
+        "$270k entry on a 2/1 is steep; leaves thin margin for a full gut + addition on Fix&Flip math",
+        "Coming Soon / 0 DOM means no price discovery \u2014 seller likely testing top of market",
+        "77023 has flood-prone pockets near Brays/Buffalo Bayou \u2014 verify flood zone and prior claims",
+        "1494 sqft on tax record may include unpermitted additions common in pre-war East End homes"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent play \u2014 East End rents robust; renovated 3/2 leases $2,100-$2,500/mo",
+        "Gentrifying corridor near downtown, EaDo, and Gulf Freeway; appreciation tailwind",
+        "Add a 2nd bath and convert to 3/2 within existing footprint to unlock $60k-$80k in ARV",
+        "Lot value strong \u2014 East End land supports new-build or ADU exit if rehab economics weaken",
+        "Best fit likely Fix&Rent or wholesale to a flipper; negotiate below $240k to make Fix&Flip pencil"
+      ]
+    }
+  },
+  {
+    "id": 16290242,
+    "address": "12402 Honeywood Trl",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 975000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 3909,
+    "year_built": 1988,
+    "price_per_sqft": 249,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3333949",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/12402-honeywood-trl-houston-tx-77077/3333949",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kindi Scartaccini",
+      "brokerage": "Martha Turner Sotheby's International Realty",
+      "phone": "7135398828"
+    },
+    "sms_message": "Hi Kindi, this is Vivek, local Investor. Interested in your listing at 12402 Honeywood Trl, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1000000,
+      "arv_high": 1150000,
+      "comps": [
+        {
+          "address": "Houston 77077",
+          "notes": "77077 Energy Corridor 3,800-4,000 sqft updated 1980s builds trading ~$260-295/sqft"
+        },
+        {
+          "address": "Houston 77077",
+          "notes": "Nearby Nottingham/Ashford Forest 4/3.5 remodels closing $1.05M-$1.15M"
+        }
+      ],
+      "red_flags": [
+        "$975K list = ~$249/sqft with 0 DOM (Coming Soon) \u2014 priced near retail, thin spread for Fix&Flip",
+        "1988 build likely needs full reno (HVAC, roof, kitchen/baths, PEX) \u2014 budget $120K-$180K to hit ARV",
+        "77077 sits in/near flood-prone Energy Corridor (Buffalo Bayou/Barker Reservoir) \u2014 verify flood zone, Harvey history, elevation cert",
+        "3,909 sqft luxury reno at $1M+ carries longer DOM and higher carry cost than sub-$500K Houston bread-and-butter"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent weak here \u2014 $1M basis vs ~$4.5K-$5.5K/mo rent won't cash flow; not a rental play",
+        "Fix&Flip only viable if acquired well under list (~$800K-$850K) given $150K reno + carry to net margin",
+        "Energy Corridor draws corporate/oil-and-gas relocation buyers \u2014 good exit demand for updated large homes",
+        "Coming Soon status = pre-market; push for early off-market offer before competing bids set price",
+        "Confirm lot size, pool, and non-flooded status \u2014 clean Harvey record materially lifts ARV and buyer pool"
+      ]
+    }
+  },
+  {
+    "id": 16290243,
+    "address": "4402 Libbey Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77092",
+    "price": 415000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1717,
+    "year_built": 1954,
+    "price_per_sqft": 242,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3223071",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4402-libbey-ln-houston-tx-77092/3223071",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kirsten Abney",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Woodway",
+      "phone": "7132088307"
+    },
+    "sms_message": "Hi Kirsten, this is Vivek, local Investor. Interested in your listing at 4402 Libbey Ln, Houston TX 77092. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
