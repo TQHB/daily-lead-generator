@@ -15649,5 +15649,1036 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290244,
+    "address": "35 County Road 2701",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 69000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 600,
+    "year_built": 1975,
+    "price_per_sqft": 115,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "4789129",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/35-road-2701-and-hwy-146-cleveland-tx-77327/4789129",
+    "zillow_url": null,
+    "agent": {
+      "name": "Pam Holmes",
+      "brokerage": "JLA Realty",
+      "phone": "9363289367"
+    },
+    "sms_message": "Hi Pam, this is Vivek, local Investor. Interested in your listing at 35 County Road 2701, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 95000,
+      "arv_high": 125000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Small 2/1 & 3/1 frame homes in 77327 (Cleveland/Tarkington area) resell ~$100-130k after light rehab, roughly $150-190/sqft on tiny footprints"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Rural CR-address homes on acreage lots trade on land value; recent 600-900 sqft sales ~$90-120k"
+        }
+      ],
+      "red_flags": [
+        "Only 600 sqft 2/1 built 1975 \u2014 very small, limited buyer/tenant pool and hard to expand ARV",
+        "Rural County Road location (likely septic + well, possible dirt/gravel road) \u2014 inspect water, septic, flood/wetland status",
+        "77327 is a low-value, slow-appreciation exurb ~50mi from Houston core \u2014 long DOM risk on exit",
+        "Price is land/lot-driven; verify structure isn't a teardown or mobile/manufactured home (common in this area)",
+        "Possible flood/Trinity River basin exposure \u2014 pull FEMA zone before committing"
+      ],
+      "opportunity_notes": [
+        "Cheap entry at $69k leaves room for Fix&Rent \u2014 light rehab ($20-35k) could yield $1,150-1,350/mo rent, strong cash-on-cash if land is usable",
+        "Fix&Rent is best exit here vs Flip given thin retail buyer pool for 600 sqft; target Section 8 / workforce tenants common in 77327",
+        "Confirm lot size \u2014 if on 0.5+ acre, land value supports the buy and allows future add-on/manufactured placement",
+        "Wholesale angle viable to local landlord investors if inspection reveals heavy rehab or septic/foundation issues",
+        "Verify manufactured vs stick-built: if stick-built on owned land, financing/exit is much easier than a mobile"
+      ]
+    }
+  },
+  {
+    "id": 16290245,
+    "address": "19191158285",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 64895,
+    "beds": 1,
+    "baths": 1,
+    "sqft": 850,
+    "year_built": 1985,
+    "price_per_sqft": 76,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "2336579",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/0-open-air-lake-rd-cleveland-tx-77327/2336579",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 19191158285, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 95000,
+      "arv_high": 120000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "77327 3/2 ~1,100 sqft renovated selling $130-160k, but true 1/1 comps scarce"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Cleveland/Splendora older 850-1,000 sqft resales trading $90-125k post-rehab"
+        }
+      ],
+      "red_flags": [
+        "Address '19191158285' is invalid/garbled \u2014 verify true parcel before offer",
+        "1bed/1bath is a functional obsolescence issue; limited buyer & renter pool in this market",
+        "850 sqft + 1985 build in rural 77327 suggests possible manufactured/mobile home \u2014 confirm it's stick-built (financing & value differ sharply)",
+        "DOM 0 means no market validation yet",
+        "Flood exposure common in 77327 (San Jacinto watershed) \u2014 pull FEMA flood map"
+      ],
+      "opportunity_notes": [
+        "Low $64,895 basis leaves margin if it's a real SFR on land \u2014 Fix&Rent could hit $1,050-1,250/mo rent",
+        "Consider adding 2nd bed if layout/sqft allows to escape 1/1 obsolescence and lift ARV toward $120k+",
+        "Value likely sits in the lot/acreage in Cleveland \u2014 confirm land size for potential upside",
+        "Best fit is Fix&Rent or Wholesale to a landlord/handyman buyer given price point; thin flip margin at this size"
+      ]
+    }
+  },
+  {
+    "id": 16290246,
+    "address": "5991 Mercer St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 198990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1600,
+    "year_built": 2026,
+    "price_per_sqft": 124,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17635795",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/5991-mercer-st-conroe-tx-77303/17635795",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 5991 Mercer St, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 210000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 4/2 ~1,600sf in Conroe 77303 closing $205k-$230k ($128-$145/sf)"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Similar 2025-2026 spec homes off Hwy 105/FM 1484 corridor trading low-$200s"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build priced at/near ARV \u2014 essentially zero flip or wholesale margin ($124/sf list vs comps)",
+        "77303 is a softer sub-market (higher DOM, more price sensitivity, some flood/pipeline proximity NE of Conroe)",
+        "No rehab value-add on new construction; forced-appreciation play is dead",
+        "DOM 0 \u2014 unproven pricing, likely builder inventory with limited negotiation until aging",
+        "Verify no MUD/high tax rate and builder-tied lender incentives inflating perceived value"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent viable as turnkey buy-and-hold: new build = near-zero deferred maintenance, low capex 10+ yrs, warranty coverage",
+        "Estimated rent $1,650-$1,850/mo; ~1% rule marginal but supported by new-home tenant appeal",
+        "Push builder for closing-cost credits, rate buydown, or appliance/blinds/fence package to improve day-1 cash flow",
+        "Better as a rental hold than flip/wholesale \u2014 target discount only if unit ages past 60-90 DOM or builder does year-end inventory clearance"
+      ]
+    }
+  },
+  {
+    "id": 16290247,
+    "address": "5958 Mercer St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 176990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1266,
+    "year_built": 2026,
+    "price_per_sqft": 140,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17635794",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/5958-mercer-st-conroe-tx-77303/17635794",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 5958 Mercer St, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 3/2 ~1,250-1,400 sqft in Conroe 77303 (Grand Central Park/Ladera-type communities) trading $185k-$200k"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Resale 2023-2025 3/2 ~1,300 sqft near FM 3083/Hwy 105 corridor $180k-$195k"
+        }
+      ],
+      "red_flags": [
+        "Brand-new construction (built 2026) = near-zero rehab spread, no forced-appreciation upside for Fix&Flip or Fix&Rent",
+        "List price ~$140/sqft already at or near ARV; little/no equity at acquisition",
+        "77303 is a softer submarket vs 77384/77385 with heavier new-build supply pipeline pressuring resale/appreciation",
+        "DOM 0 / just-listed builder inventory \u2014 price likely firm, limited negotiation on base",
+        "No lot/community detail \u2014 possible MUD taxes and HOA typical of Conroe new builds compress rental cash flow"
+      ],
+      "opportunity_notes": [
+        "Best fit is buy-and-hold rental, not flip: est. rent ~$1,550-$1,750/mo; run against high Montgomery County + MUD tax rate before underwriting",
+        "Push builder for closing-cost credits/rate buydown rather than price cut to improve cash-on-cash",
+        "New build = minimal maintenance capex and strong tenant appeal (warranty, new systems) for Fix&Rent hold",
+        "Wholesale is weak here \u2014 no distressed spread; only viable if assigning builder-incentive-stacked contract to a rental buyer",
+        "Verify HOA/MUD, tax rate, and whether builder offers rent-ready incentives before committing"
+      ]
+    }
+  },
+  {
+    "id": 16290248,
+    "address": "16467 Kyle Reid Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 165000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 2002,
+    "price_per_sqft": 123,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "9900392",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16467-kyle-reid-ct-conroe-tx-77302/9900392",
+    "zillow_url": null,
+    "agent": {
+      "name": "Anthony Cook",
+      "brokerage": "Grand Monarch Management LP",
+      "phone": "713-822-6722"
+    },
+    "sms_message": "Hi Anthony, this is Vivek, local Investor. Interested in your listing at 16467 Kyle Reid Ct, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 240000,
+      "comps": [
+        {
+          "address": "Conroe 77302",
+          "notes": "Similar 3/2 ~1,300-1,400 sqft in Imperial Oaks/77302 sold $215k-$235k"
+        },
+        {
+          "address": "Conroe 77302",
+          "notes": "2000s-built 1,344 sqft SFR nearby closed ~$225k after cosmetic reno"
+        }
+      ],
+      "red_flags": [
+        "Listed at $165k / DOM 0 \u2014 likely off-market or investor-priced; verify condition & occupancy",
+        "2002 build may need HVAC, roof, water heater at ~24 yrs old",
+        "Conroe/Montgomery County taxes ~2.3-2.7% erode Fix&Rent cash flow",
+        "No lot/photos/foundation data given \u2014 verify slab (expansive clay common in area)"
+      ],
+      "opportunity_notes": [
+        "~$50k+ spread to ARV supports Fix&Flip or wholesale if condition is cosmetic",
+        "Fix&Rent target rent ~$1,750-$1,950/mo for 3/2 1,344 sqft in 77302",
+        "Strong Conroe/Grand Central Park rental demand; near I-45 & 242 corridor",
+        "Wholesale assignment viable given sub-market price and investor spread"
+      ]
+    }
+  },
+  {
+    "id": 16290249,
+    "address": "4706 N Wayside, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 185000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1075,
+    "year_built": 1994,
+    "price_per_sqft": 172,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3155254",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/4706-n-wayside-dr-houston-tx-77028/3155254",
+    "zillow_url": null,
+    "agent": {
+      "name": "Cameron Mushtaq",
+      "brokerage": "NB Elite Realty",
+      "phone": "832-257-2949"
+    },
+    "sms_message": "Hi Cameron, this is Vivek, local Investor. Interested in your listing at 4706 N Wayside, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 230000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/2 ~1,100 sqft in 77028 (Houston Gardens/Trinity Gardens) trading $200k-$225k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "3/1 near N Wayside/Homestead selling $180k-$210k post-rehab"
+        }
+      ],
+      "red_flags": [
+        "Only 1 bath on 1,075 sqft caps ARV and resale/rent appeal \u2014 budget to add a 2nd bath",
+        "N Wayside is a busy 4-lane commercial corridor; traffic/noise depresses value and buyer pool",
+        "$185k ask sits near likely ARV \u2014 razor-thin flip margin before rehab, closing, and carry",
+        "77028 is a lower-value, high-crime submarket with slower retail resale and appraisal risk",
+        "1994 build likely needs HVAC/roof/systems refresh; verify no deferred foundation/plumbing issues",
+        "Confirm flood zone and Halls Bayou proximity \u2014 parts of NE Houston carry flood/insurance exposure"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent fits best: rehabbed 3/2 in 77028 rents ~$1,450-$1,700/mo, solid cash-flow at this basis",
+        "Converting to 3/2 (add bath) is the highest-ROI move \u2014 pushes ARV toward $225k-$230k",
+        "Strong wholesale angle to local landlord/BRRRR buyers if contract can be assigned under ~$170k",
+        "Investor-heavy rental area near I-610/US-90 access supports steady tenant demand",
+        "Negotiate 10-15% below ask \u2014 high DOM leverage typical here; target all-in (buy+rehab) under $200k for flip viability"
+      ]
+    }
+  },
+  {
+    "id": 16290250,
+    "address": "7137 Bywood St, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 169000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 952,
+    "year_built": 1945,
+    "price_per_sqft": 178,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3170223",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/7137-bywood-st-houston-tx-77028/3170223",
+    "zillow_url": null,
+    "agent": {
+      "name": "Yolanda Diaz",
+      "brokerage": "World Wide Realty,LLC",
+      "phone": "713-291-3187"
+    },
+    "sms_message": "Hi Yolanda, this is Vivek, local Investor. Interested in your listing at 7137 Bywood St, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/2s ~900-1,100 sqft in 77028 (Trinity/Kashmere Gardens) trading ~$190k-$230k, roughly $195-$230/sqft"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Similar 1940s-50s bungalows nearby resell mid-$200s only with full gut rehab + updated systems"
+        }
+      ],
+      "red_flags": [
+        "1945 build: likely pier-and-beam foundation, original galvanized/cast-iron plumbing, knob-and-tube or outdated electrical, possible asbestos/lead",
+        "Only 952 sqft caps top-end ARV; hard to hit strong PPSF without an addition",
+        "NE Houston (77028) is a softer, higher-crime submarket with slower resale and thinner buyer pool",
+        "$169k ask is aggressive for the area \u2014 leaves little spread for a flip after $50k-$70k rehab + closing/holding",
+        "Check flood zone / Halls Bayou drainage and any deferred roof/HVAC",
+        "Verify lot condition and whether comps supporting ARV are truly renovated, not distressed"
+      ],
+      "opportunity_notes": [
+        "Better fit as Fix&Rent: post-rehab rents ~$1,500-$1,750/mo can yield solid cash-on-cash at a lower all-in basis",
+        "Wholesale angle if seller flexible \u2014 target contract in the $140s and assign to a rental buyer",
+        "Fix&Flip only works if negotiated to ~$130k-$145k with a lean $45k-$55k cosmetic-plus-systems rehab",
+        "Small footprint on the lot may allow a room/bath addition to push sqft and ARV if zoning/setbacks permit",
+        "Confirm ARV with 2-3 sold, fully-renovated comps within 0.5 mi before committing"
+      ]
+    }
+  },
+  {
+    "id": 16290251,
+    "address": "8161 Record St, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 170000,
+    "beds": 4,
+    "baths": 1,
+    "sqft": 1328,
+    "year_built": 1950,
+    "price_per_sqft": 128,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3188323",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/8161-record-st-houston-tx-77028/3188323",
+    "zillow_url": null,
+    "agent": {
+      "name": "Steven Tran",
+      "brokerage": "The Sears Group",
+      "phone": "713-405-9836"
+    },
+    "sms_message": "Hi Steven, this is Vivek, local Investor. Interested in your listing at 8161 Record St, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 200000,
+      "arv_high": 240000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3-4/1-2 in 77028 (Trinity/Houston Gardens) selling ~$150-180/sqft, i.e. ~$200-240K for ~1,300 sqft"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Similar 1950s frame homes on Record/Lavender/Laura Koppe closing $210-235K post-rehab"
+        }
+      ],
+      "red_flags": [
+        "4 beds/1 bath is functionally obsolete \u2014 buyers/renters expect 2nd bath; budget to add one",
+        "1950 build: likely original cast-iron/galvanized plumbing, knob-and-tube or outdated wiring, possible foundation movement on Houston clay",
+        "77028 has elevated flood/drainage risk and higher crime; check FEMA flood zone and Harvey history",
+        "$170K ask leaves thin margin \u2014 at ~$210-220K ARV and $40-60K rehab + adding a bath, flip spread is tight",
+        "DOM 0 / just listed \u2014 may attract multiple offers or price is a fishing number; verify actual condition/occupancy"
+      ],
+      "opportunity_notes": [
+        "Best fit as Fix&Rent: 4/2 rehab rents ~$1,650-1,900/mo in 77028, strong cash-on-cash at this basis",
+        "Add a 2nd bath by reconfiguring 1,328 sqft to a true 4/2 (or 3/2) to unlock top-of-market ARV and rentability",
+        "Wholesale angle if inspection reveals foundation/flood issues \u2014 assign at $150-160K to a rehab/rental buyer",
+        "Northeast Houston path-of-growth: proximity to 610/Hwy 59, ongoing rental demand and gradual gentrification",
+        "Frame home on pier-and-beam is cheaper to re-plumb/level than slab; verify to keep rehab budget contained"
+      ]
+    }
+  },
+  {
+    "id": 16290252,
+    "address": "1269 Road 5714",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 175000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 980,
+    "year_built": 2026,
+    "price_per_sqft": 179,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15769890",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/1269-road-5714-cleveland-tx-77327/15769890",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lisseth Larios",
+      "brokerage": "The Larios Home Group",
+      "phone": "2818189913"
+    },
+    "sms_message": "Hi Lisseth, this is Vivek, local Investor. Interested in your listing at 1269 Road 5714, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290253,
+    "address": "656 Road 57071",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 118000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1178,
+    "year_built": 2021,
+    "price_per_sqft": 100,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15770571",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/656-road-57071-cleveland-tx-77327/15770571",
+    "zillow_url": null,
+    "agent": {
+      "name": "Adam Olsen",
+      "brokerage": "eXp Realty, LLC",
+      "phone": "936-689-9123"
+    },
+    "sms_message": "Hi Adam, this is Vivek, local Investor. Interested in your listing at 656 Road 57071, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290254,
+    "address": "314 County Road 3181",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 200000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1056,
+    "year_built": 1984,
+    "price_per_sqft": 189,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "4806113",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/314-county-road-3181-cleveland-tx-77327/4806113",
+    "zillow_url": null,
+    "agent": {
+      "name": "Alexandra Steach",
+      "brokerage": "JLA Realty",
+      "phone": "8325443903"
+    },
+    "sms_message": "Hi Alexandra, this is Vivek, local Investor. Interested in your listing at 314 County Road 3181, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 230000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "3/1-3/2 frame homes on acreage in 77327 (Cleveland/Tarkington ISD) trade ~$160-220k depending on land & condition"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 1,000-1,300 sqft rural homes in Cleveland closing near $200-235k when on 1+ acre"
+        }
+      ],
+      "red_flags": [
+        "Only 1 bath in a 3-bed severely caps resale/rent demand; adding a 2nd bath is likely needed",
+        "$200k list for 1,056 sqft = ~$189/sqft, high for an updated-lacking 1984 rural home unless significant acreage is included",
+        "County Road / 77327 is well outside Houston core \u2014 flood zone, septic, well, and private-road access must be verified",
+        "Possible manufactured/mobile home or non-conforming structure at this price/size given rural CR address \u2014 confirm foundation type for financing",
+        "1984 build likely needs roof, HVAC, septic, electrical updates \u2014 dated systems typical for area"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: rural Cleveland 3/2 rents ~$1,500-1,850/mo; converting to 2 baths improves rentability and DSCR",
+        "If sizable acreage is included, land value supports the price and offers lot-split or additional-dwelling upside",
+        "Fix&Flip only works with meaningful discount off $200k \u2014 target purchase ~$130-150k plus $30-45k reno to hit ARV spread",
+        "Wholesale angle: motivated/estate rural sellers common in 77327 \u2014 verify true land size, septic/well condition, and clear title before assigning",
+        "Growing Cleveland/Grand Parkway-corridor appreciation supports buy-and-hold if bought right"
+      ]
+    }
+  },
+  {
+    "id": 16290255,
+    "address": "21102 Stoney Haven Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 230000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1484,
+    "year_built": 2001,
+    "price_per_sqft": 155,
+    "dom": 0,
+    "status": "Active",
+    "mls": "11238654",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/21102-stoney-haven-dr-katy-tx-77449/11238654",
+    "zillow_url": null,
+    "agent": {
+      "name": "Diana Mejia Larios",
+      "brokerage": "Step Real Estate",
+      "phone": "8328052367"
+    },
+    "sms_message": "Hi Diana, this is Vivek, local Investor. Interested in your listing at 21102 Stoney Haven Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 255000,
+      "arv_high": 280000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "77449 3/2 ~1450-1550sf, built ~2000, renovated: $255k-$275k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Nearby Stoney Haven/Bear Creek Village resales $170-$185/sf"
+        }
+      ],
+      "red_flags": [
+        "77449 is high-volume investor zip with heavy comp competition and thin margins",
+        "Price at $155/sf already near retail for unrenovated 2001 stock \u2014 little room for Fix&Flip",
+        "Katy 77449 (not Katy ISD proper) \u2014 likely Cy-Fair ISD; verify schools/flood zone",
+        "1484sf on 3/2 limits ARV ceiling; MUD taxes and possible drainage/flood (Bear Creek area) risk",
+        "DOM 0 / just listed \u2014 expect multiple offers, hard to buy at discount"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent: rents ~$1,900-$2,150/mo for updated 3/2 in 77449",
+        "Light cosmetic reno (paint, LVP, fixtures) $20-30k could push to high-$260s ARV",
+        "Strong rental demand near Grand Pkwy/I-10 employment; stable tenant pool",
+        "Wholesale only works if acquired well under $210k; current price too tight to flip",
+        "2001 build = updated systems/slab era, lower deferred-maintenance risk for a rental hold"
+      ]
+    }
+  },
+  {
+    "id": 16290256,
+    "address": "3060 Highbank Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 247991,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1876,
+    "year_built": 2026,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17635847",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/3060-highbank-dr-katy-tx-77493/17635847",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 3060 Highbank Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 265000,
+      "arv_high": 290000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 3/2 ~1,850 sqft in 77493 (Elyson/Sunterra) trading $145-155/sqft"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Recent 77493 new construction 1,800-1,950 sqft closing $270k-$288k"
+        }
+      ],
+      "red_flags": [
+        "New construction (2026 build) at $132/sqft leaves thin equity spread \u2014 little room for Fix&Flip margin",
+        "77493 is saturated with builder inventory; heavy new-supply competition suppresses resale appreciation and slows exit",
+        "DOM 0 means no market-tested pricing; builder base price may exclude lot premium, upgrades, and closing costs",
+        "No rehab-driven value-add possible on a brand-new home \u2014 Fix&Rent/Fix&Flip thesis doesn't apply"
+      ],
+      "opportunity_notes": [
+        "Buy-and-hold rental play: Katy 77493 rents strong (~$1,950-$2,150/mo for 3/2), but at $248k price debt service is tight \u2014 needs builder rate buydown or incentives to cash-flow",
+        "Negotiate builder concessions (closing costs, rate buydown, appliance/blinds packages) rather than price for real margin",
+        "Wholesale is weak here \u2014 no distressed-seller motivation and MLS-listed at retail; skip unless assignment to a rental buyer",
+        "Katy ISD + new-build appeal supports low vacancy and quality tenants for a long-term BRRRR-lite hold"
+      ]
+    }
+  },
+  {
+    "id": 16290257,
+    "address": "4235 Prairie Meadow Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 210000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1285,
+    "year_built": 1982,
+    "price_per_sqft": 163,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3523707",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/4235-prairie-meadow-dr-katy-tx-77449/3523707",
+    "zillow_url": null,
+    "agent": {
+      "name": "Joe Mark Robinson",
+      "brokerage": "R Group Realtors",
+      "phone": "281-380-9571"
+    },
+    "sms_message": "Hi Joe, this is Vivek, local Investor. Interested in your listing at 4235 Prairie Meadow Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 275000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "77449 3/2 ~1300sf 1980s renovated resales trading $255k-$275k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Nearby Katy subdivision flips (Williamsburg/Nottingham Country area) closing near $260k"
+        }
+      ],
+      "red_flags": [
+        "1982 build \u2014 likely original CPVC/cast iron plumbing, aging HVAC and electrical panel",
+        "1285 sqft is small for a 3/2 in Katy, caps top-end ARV",
+        "77449 has heavy inventory competition, longer DOM on flips",
+        "Active/0 DOM at $210k suggests limited spread after rehab (~$40k-$50k reno typical)",
+        "Potential prior flood exposure \u2014 77449 hit hard in Harvey; verify flood zone/history"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent fits best: rents ~$1,850-$2,050/mo, strong Katy ISD tenant demand",
+        "Katy ISD schools drive resale and rental velocity \u2014 core value driver",
+        "Cosmetic-only rehab (paint/LVP/kitchen/baths) keeps costs down if systems are sound",
+        "Wholesale angle viable if acquired sub-$185k given thin flip margin at $210k",
+        "Verify no flood claims/MUD tax rate \u2014 can make or break Fix&Flip exit"
+      ]
+    }
+  },
+  {
+    "id": 16290258,
+    "address": "26823 Dalmation Bellflower Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 235000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1451,
+    "year_built": 2025,
+    "price_per_sqft": 162,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17286024",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/26823-dalmation-bellflower-dr-katy-tx-77493/17286024",
+    "zillow_url": null,
+    "agent": {
+      "name": "Zhirun Chen",
+      "brokerage": "Texas Real Realty Inc.",
+      "phone": "832-966-6000"
+    },
+    "sms_message": "Hi Zhirun, this is Vivek, local Investor. Interested in your listing at 26823 Dalmation Bellflower Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 275000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 3/2 ~1450sf in Elyson/Sunterra 77493 selling $255-270k ($175-185/sf)"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "2024-2025 KB/Lennar 3/2 comps in 77493 closing $250-268k"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2025 build leaves almost no forced-appreciation/rehab margin for Fix&Flip",
+        "DOM 0 and near-retail price \u2014 builder/MLS pricing already reflects market",
+        "Katy 77493 has heavy new-construction supply competing on price and builder incentives",
+        "MUD taxes + likely HOA in this corridor raise carry costs and compress buyer budgets",
+        "Small 1451sf footprint limits rent premium vs larger new 4-bed inventory"
+      ],
+      "opportunity_notes": [
+        "Best fit as Fix&Rent/turnkey buy-and-hold: rent ~$1,850-2,050/mo, minimal deferred maintenance on a 2025 build",
+        "Sub-$240k entry on new construction is below typical 77493 resale \u2014 thin flip spread but solid hold basis",
+        "Push for builder incentives (rate buydown, closing costs) to improve cash-on-cash rather than banking on ARV lift",
+        "Wholesale only viable if secured meaningfully under $220k; current $235k leaves no assignment room"
+      ]
+    }
+  },
+  {
+    "id": 16290259,
+    "address": "6309 Settlers Square Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 209000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1637,
+    "year_built": 2004,
+    "price_per_sqft": 128,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "7752521",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/6309-settlers-square-ln-katy-tx-77449/7752521",
+    "zillow_url": null,
+    "agent": {
+      "name": "Francisco Gomez",
+      "brokerage": "eXp Realty LLC",
+      "phone": "713-494-1619"
+    },
+    "sms_message": "Hi Francisco, this is Vivek, local Investor. Interested in your listing at 6309 Settlers Square Ln, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 235000,
+      "arv_high": 255000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "Comparable 4/2.5 ~1,600-1,700 sqft in Katy 77449 (Williamsburg Settlement/Cimarron area) closing $240k-$255k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Updated 2000s-built two-story near Franz Rd/Mason Rd trading $145-$155/sqft"
+        }
+      ],
+      "red_flags": [
+        "DOM 0 with below-comp $209k list may signal deferred maintenance, foundation, or bidding-war bait",
+        "2.5 baths/1,637 sqft two-story likely small bedrooms and dated finishes typical of 2004 KB/Lennar tract build",
+        "77449 is high-inventory, price-sensitive submarket \u2014 limits ARV ceiling and speeds price cuts",
+        "MUD taxes and possible HOA in Katy erode carrying and rent margins",
+        "Verify no prior flood/Harvey history \u2014 parts of 77449 flooded in 2017"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: rents ~$1,850-$2,050/mo for 4/2.5; strong Katy ISD schools drive tenant demand and low vacancy",
+        "Fix&Flip spread ~$30k-$45k at $209k in on cosmetic reno (paint, LVP, counters, fixtures) targeting mid-$240s",
+        "Katy ISD is the primary value driver \u2014 market to families for both resale and rental",
+        "Wholesale: assign to landlord buyers if under contract $195k-$205k given thin flip margin",
+        "Confirm foundation and roof age on 2004 build before committing rehab budget"
+      ]
+    }
+  },
+  {
+    "id": 16290260,
+    "address": "26710 New World Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 249000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1350,
+    "year_built": 2004,
+    "price_per_sqft": 184,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3605556",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/26710-new-world-dr-katy-tx-77493/3605556",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 26710 New World Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 285000,
+      "arv_high": 315000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "77493 3/2 ~1,300-1,450 sqft 2000s builds trading $280K-$310K renovated"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Katy ISD resales near New World Dr closing ~$205-220/sqft post-reno"
+        }
+      ],
+      "red_flags": [
+        "2004 build likely on original HVAC/roof/water heater \u2014 budget major systems",
+        "Small 1,350 sqft limits top-end ARV vs newer 1,800+ sqft KB/Lennar inventory nearby",
+        "DOM 0 at $249K may already be near market for as-is condition \u2014 thin spread",
+        "Older Katy sections (77493) can carry higher property tax / MUD burden that pressures rent-to-price"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: Katy ISD schools drive strong 3/2 rental demand; est. rent $1,850-$2,150/mo",
+        "Cosmetic-only flip (paint/LVP/quartz/fixtures) with ~$25-35K budget could hit $290K+ ARV",
+        "Katy 77493 is high-growth NW corridor \u2014 steady appreciation and low vacancy support buy-and-hold",
+        "Confirm as-is vs rehab: at $249K if only cosmetic needed, ~$40K+ equity spread for flip"
+      ]
+    }
+  },
+  {
+    "id": 16290261,
+    "address": "302 Hunt St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77003",
+    "price": 320000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1626,
+    "year_built": 1926,
+    "price_per_sqft": 197,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2947800",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/302-hunt-st-houston-tx-77003/2947800",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 302 Hunt St, Houston TX 77003. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 425000,
+      "arv_high": 525000,
+      "comps": [
+        {
+          "address": "Houston 77003",
+          "notes": "Renovated 1920s bungalows in 77003/EaDo trading $260-320/sqft post-reno"
+        },
+        {
+          "address": "Houston 77003",
+          "notes": "New-construction & gut-rehab SFRs near Emancipation Ave/Third Ward closing $450-540k"
+        }
+      ],
+      "red_flags": [
+        "1926 build \u2014 likely pier-and-beam foundation, knob-and-tube/galvanized plumbing, no central HVAC; budget full systems",
+        "Only 1 bath on 1626 sqft \u2014 must add 2nd bath to be market-competitive",
+        "Coming Soon at $320k list is aggressive; near ARV land value, thin flip margin unless heavy reno adds sqft/beds",
+        "77003 has flood-prone pockets (Buffalo Bayou proximity) \u2014 verify flood zone/insurance",
+        "Possible historic/deed or lot-value teardown dynamics; confirm no historic district restrictions"
+      ],
+      "opportunity_notes": [
+        "EaDo/Third Ward is prime gentrification path near downtown \u2014 strong appreciation and buyer demand",
+        "Lot likely supports townhome/redevelopment; check zoning-free Houston + platting for 2-3 unit teardown play",
+        "Fix&Flip: add 2nd/3rd bath + central AC, open floor plan to hit $475k+ ARV",
+        "Fix&Rent: renovated 3/2 rents $2,400-2,900/mo in EaDo; solid rent-to-value",
+        "Wholesale angle: builders pay strong land prices here \u2014 assign to infill developer if reno margin too thin"
+      ]
+    }
+  },
+  {
+    "id": 16290262,
+    "address": "4514 Warm Springs Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77035",
+    "price": 394500,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1588,
+    "year_built": 1957,
+    "price_per_sqft": 248,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3259658",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4514-warm-springs-rd-houston-tx-77035/3259658",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kelly Zwern",
+      "brokerage": "White Label Realty Suite 320-5061",
+      "phone": "5129032053"
+    },
+    "sms_message": "Hi Kelly, this is Vivek, local Investor. Interested in your listing at 4514 Warm Springs Rd, Houston TX 77035. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 410000,
+      "arv_high": 445000,
+      "comps": [
+        {
+          "address": "Houston 77035",
+          "notes": "Renovated 3/2 ~1,550-1,650 sqft in Westbury (77035) trading $415k-$450k"
+        },
+        {
+          "address": "Houston 77035",
+          "notes": "1950s ranch remodels near S Post Oak/W Bellfort selling ~$260-275/sqft"
+        }
+      ],
+      "red_flags": [
+        "1957 build \u2014 likely cast iron/galvanized plumbing, original slab, possible foundation movement common to Westbury",
+        "Coming Soon at $394,500 = ~$248/sqft already near renovated comps, thin flip margin",
+        "77035/Westbury has pockets of repetitive flooding (Brays Bayou watershed) \u2014 verify flood zone & Harvey history",
+        "No DOM/photos yet; asking price may reflect a done reno, killing value-add spread",
+        "Original 1,588 sqft with 2 baths \u2014 no room to add value via reconfiguration without permits"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent fit: Westbury rents ~$2,200-2,500/mo for updated 3/2, near med center/downtown commuting",
+        "Large typical Westbury lots (~7,500-8,000 sqft) support ADU or garage addition for rent upside",
+        "If it needs cosmetic-only work, buy sub-$330k to leave 20%+ flip margin toward $430k ARV",
+        "Wholesale angle: lock at Coming Soon before MLS exposure, assign to landlord buyers targeting sub-$250/sqft",
+        "Confirm flood zone X vs AE \u2014 zone X + updated systems makes this a clean long-term rental hold"
+      ]
+    }
+  },
+  {
+    "id": 16290263,
+    "address": "15906 Redwood Place Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77079",
+    "price": 1200000,
+    "beds": 5,
+    "baths": 5,
+    "sqft": 5741,
+    "year_built": 1988,
+    "price_per_sqft": 209,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10563005",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/15906-redwood-place-dr-houston-tx-77079/10563005",
+    "zillow_url": null,
+    "agent": {
+      "name": "Deshaun Webster",
+      "brokerage": "Hamilton Realty Group",
+      "phone": "3465580177"
+    },
+    "sms_message": "Hi Deshaun, this is Vivek, local Investor. Interested in your listing at 15906 Redwood Place Dr, Houston TX 77079. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1450000,
+      "arv_high": 1750000,
+      "comps": [
+        {
+          "address": "Houston 77079",
+          "notes": "Renovated 5,000-6,000 sqft homes in Nottingham Forest/Energy Corridor (77079) trade ~$260-310/sqft"
+        },
+        {
+          "address": "Houston 77079",
+          "notes": "Nearby 1980s-90s two-story luxury resales close $1.5M-$1.75M post-reno"
+        }
+      ],
+      "red_flags": [
+        "77079 sits in/near Addicks-Barker reservoir pool zone \u2014 severe Harvey 2017 flooding; verify 500-yr floodplain and reservoir inundation history",
+        "'Coming Soon' with 0 DOM and no reno details \u2014 actual condition/updates unverified",
+        "1988 build likely needs full systems refresh (roof, HVAC x2+, PEX, electrical panel) at this size",
+        "Entry at $209/sqft is not deep-discount for the area \u2014 thin fix&flip margin after 5,741 sqft reno cost",
+        "High-price segment (>$1.2M) has slower absorption and larger carry/commission drag"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent weak here \u2014 luxury rents (~$5.5k-$7k/mo) yield sub-1% rule vs $1.2M+reno basis",
+        "Best fit is Fix&Flip only if acquired well under $1.05M and no flood history \u2014 target $260-290/sqft ARV finish",
+        "Large lot/square footage in a prestige, deed-restricted, top-school (Rummel Creek/SBISD) corridor supports premium retail buyer",
+        "Confirm never-flooded status via elevation cert \u2014 a clean, elevated home here commands full ARV and fast sale",
+        "Negotiate hard pre-market (Coming Soon) before competing buyers; push for flood docs, survey, and reno receipts"
+      ]
+    }
   }
 ]
