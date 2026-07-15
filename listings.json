@@ -16680,5 +16680,302 @@
         "Negotiate hard pre-market (Coming Soon) before competing buyers; push for flood docs, survey, and reno receipts"
       ]
     }
+  },
+  {
+    "id": 16290264,
+    "address": "39 County Road 3478",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 100000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 896,
+    "year_built": 2007,
+    "price_per_sqft": 112,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "16793861",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/39-county-road-3478-cleveland-tx-77327/16793861",
+    "zillow_url": null,
+    "agent": {
+      "name": "Casey Barron",
+      "brokerage": "JLA Realty",
+      "phone": "8324014070"
+    },
+    "sms_message": "Hi Casey, this is Vivek, local Investor. Interested in your listing at 39 County Road 3478, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 115000,
+      "arv_high": 140000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "2/2 ~900sf on <1 acre in Camino Real/Plum Grove 77327 selling $110k-$135k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Similar 2000s-built small SFR/manufactured near CR 3400s closing $120k-$145k"
+        }
+      ],
+      "red_flags": [
+        "896 sqft 2/2 at 2007 vintage on a County Road strongly suggests a manufactured/mobile home, not stick-built \u2014 verify foundation type and whether it's real property (HUD tags, permanent foundation) before financing",
+        "Cleveland 77327 is a rural Liberty County exurb with thin comp density and slow days-on-market for resale; likely septic + well, not city utilities \u2014 inspect both",
+        "Flood/wetland exposure common in this area \u2014 check FEMA flood zone and elevation",
+        "Tiny footprint caps buyer pool and rehab ARV lift; check acreage since land, not structure, drives value here"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent: low $100k basis on 2/2 can rent ~$1,150-$1,400/mo in Cleveland, supporting solid cap rate if it's real property",
+        "If sited on usable acreage (>0.5 ac), land value provides downside protection and possible add-a-unit/second-home play",
+        "Wholesale angle viable to rural landlord buyers at $80k-$90k assignment if title/foundation are clean",
+        "Confirm it's classified as real (not personal) property to unlock conventional/DSCR financing and maximize exit ARV"
+      ]
+    }
+  },
+  {
+    "id": 16290265,
+    "address": "5987 Mercer St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 188990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1411,
+    "year_built": 2026,
+    "price_per_sqft": 134,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17634967",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/5987-mercer-st-conroe-tx-77303/17634967",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 5987 Mercer St, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 220000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 3/2 ~1,400 sqft in Conroe 77303 closing $185k-$205k"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Comparable 2025-2026 builders (LGI/Legend/D.R. Horton) 77303 tract homes $190k-$215k"
+        }
+      ],
+      "red_flags": [
+        "Priced near/at ARV ($189k list vs ~$195k-$220k ARV) leaves thin margin for Fix&Flip",
+        "New construction 2026 = no rehab upside; you're buying retail, not distressed",
+        "77303 (north Conroe) is a builder-heavy submarket \u2014 heavy new-supply competition can cap appreciation and resale speed",
+        "DOM 0 / For Sale = likely builder inventory, limited negotiation and no seller concessions modeled",
+        "Verify builder quality, HOA dues, and MUD tax rate (77303 MUD taxes often 3.0%+ hurting rent DSCR)"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey buy-hold, not flip \u2014 new build = zero rehab, tenant-ready day one",
+        "Estimated market rent ~$1,650-$1,850/mo; at $189k basis roughly 1.0% rule, marginal but workable with low maintenance capex on a new home",
+        "Push builder for rate buydown, closing-cost credits, or appliance/blinds packages to improve cash-on-cash",
+        "Bulk/standing-inventory builder deals in 77303 sometimes negotiable 3-6% \u2014 target sub-$180k basis to create equity",
+        "Conroe/Montgomery County job and population growth supports long-term hold and future rent bumps"
+      ]
+    }
+  },
+  {
+    "id": 16290266,
+    "address": "239000",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 240000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1000,
+    "year_built": 2020,
+    "price_per_sqft": 240,
+    "dom": 0,
+    "status": "Active",
+    "mls": "999999",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/239000-katy/999999",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 239000, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 275000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "77449 Katy 4/2 built 2018-2021, ~1,600-1,900 sqft trading $255k-$275k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Recent entry-level Katy resales average ~$150-$165/sqft"
+        }
+      ],
+      "red_flags": [
+        "1,000 sqft for a 4/2 is implausible \u2014 likely bad sqft data; verify actual size before underwriting",
+        "$240/sqft asking is far above 77449 norm (~$150-$165/sqft), leaving no spread if sqft is correct",
+        "Address field shows '239000' (not a real address) \u2014 listing data is unreliable, confirm subject property",
+        "2020 build means little rehab upside for a Fix&Rent/Flip; margins depend entirely on buy price",
+        "DOM 0 / Active \u2014 no pricing history or negotiation signal yet"
+      ],
+      "opportunity_notes": [
+        "If true sqft is ~1,600-1,900, home is roughly at-market, not a discount \u2014 pass unless price drops",
+        "Newer build = low CapEx/turnkey rental; 77449 rents ~$1,900-$2,150/mo for 4/2, supports Fix&Rent if acquired <$230k",
+        "Strong Katy/Cy-Fair school demand and rental velocity make this a solid buy-and-hold zip once data is verified",
+        "Wholesale angle only works if property can be tied up well under $220k given thin flip margin on 2020 stock"
+      ]
+    }
+  },
+  {
+    "id": 16290267,
+    "address": "1606 E Bonner St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 579900,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2378,
+    "year_built": 2019,
+    "price_per_sqft": 244,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "14434486",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1606-e-bonner-st-houston-tx-77007/14434486",
+    "zillow_url": null,
+    "agent": {
+      "name": "Tanesha McKinley",
+      "brokerage": "Premier Properties",
+      "phone": "8326599191"
+    },
+    "sms_message": "Hi Tanesha, this is Vivek, local Investor. Interested in your listing at 1606 E Bonner St, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 560000,
+      "arv_high": 620000,
+      "comps": [
+        {
+          "address": "Houston 77007",
+          "notes": "77007 2018-2020 free-standing/townhome 3/2.5 ~2,200-2,500 sqft trading $245-265/sqft"
+        },
+        {
+          "address": "Houston 77007",
+          "notes": "Rice Military/Washington Corridor new-build closings near $575k-$615k in last 6 mo"
+        }
+      ],
+      "red_flags": [
+        "List price $579,900 (~$244/sqft) is already at market ARV \u2014 near-zero spread for Fix&Rent or Flip",
+        "2019 build needs no rehab, so no forced-appreciation lever for the model",
+        "Coming Soon/DOM 0 means no price fatigue or negotiation leverage yet",
+        "Likely HOA/shared-driveway townhome product in this pocket compresses rent yield and resale pool",
+        "77007 rents (~$3,000-$3,400/mo for this size) yield ~0.55% rule \u2014 negative cash flow at this basis"
+      ],
+      "opportunity_notes": [
+        "Only works as a wholesale/assignment if you can tie it up 12-18% under list (~$480k-$500k) off-market",
+        "Watch for a post-Coming-Soon price cut or extended DOM (>30) to create entry room",
+        "Turnkey condition + Heights-adjacent location supports a fast retail flip IF acquired well below $520k",
+        "Strong long-term appreciation zip \u2014 better as a buy-hold if seller accepts creative/seller-finance terms"
+      ]
+    }
+  },
+  {
+    "id": 16290268,
+    "address": "13431 Bridgewalk Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77041",
+    "price": 258000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1440,
+    "year_built": 1983,
+    "price_per_sqft": 179,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10150844",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13431-bridgewalk-ln-houston-tx-77041/10150844",
+    "zillow_url": null,
+    "agent": {
+      "name": "Annabel Blanco Polo",
+      "brokerage": "Dalton Wade Inc",
+      "phone": "8327925863"
+    },
+    "sms_message": "Hi Annabel, this is Vivek, local Investor. Interested in your listing at 13431 Bridgewalk Ln, Houston TX 77041. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290269,
+    "address": "251 Malone St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 775000,
+    "beds": 4,
+    "baths": 4,
+    "sqft": 3210,
+    "year_built": 1992,
+    "price_per_sqft": 241,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2988958",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/251-malone-st-houston-tx-77007/2988958",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kirsten Abney",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Woodway",
+      "phone": "7132088307"
+    },
+    "sms_message": "Hi Kirsten, this is Vivek, local Investor. Interested in your listing at 251 Malone St, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 850000,
+      "arv_high": 975000,
+      "comps": [
+        {
+          "address": "Houston 77007",
+          "notes": "Renovated 77007 SFRs ~$280-320/sqft near Rice Military/Washington Ave"
+        },
+        {
+          "address": "Houston 77007",
+          "notes": "3,000+ sqft inner-loop homes trading $900k-$1.0M when updated"
+        }
+      ],
+      "red_flags": [
+        "1992 build likely needs cosmetic/systems updating to hit top-of-market vs new-construction townhomes",
+        "Coming Soon at $775k / 0 DOM leaves thin flip margin at ~$241/sqft entry",
+        "Partial 77007 flood exposure near Buffalo Bayou\u2014verify FEMA zone and flood history",
+        "4/4 older SFR competes with abundant 3-story new-build product in the pocket"
+      ],
+      "opportunity_notes": [
+        "Prime Rice Military/Washington Ave location\u2014strong walkability, high rent demand for Fix&Rent",
+        "Land value supports hold; lot could justify future redevelopment",
+        "Cosmetic Fix&Flip play if entry negotiated below $740k; target $60-90/sqft reno",
+        "Larger single-lot SFR is scarce inventory\u2014differentiates from townhome glut for both flip and premium rental"
+      ]
+    }
   }
 ]
