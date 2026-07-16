@@ -16977,5 +16977,250 @@
         "Larger single-lot SFR is scarce inventory\u2014differentiates from townhome glut for both flip and premium rental"
       ]
     }
+  },
+  {
+    "id": 16290270,
+    "address": "2642 Planters House Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 100000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1490,
+    "year_built": 1983,
+    "price_per_sqft": 67,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3499382",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/2642-planters-house-ln-katy-tx-77449/3499382",
+    "zillow_url": null,
+    "agent": {
+      "name": "Nema Ghalamdanchi",
+      "brokerage": "007 Signature Realty, LLC",
+      "phone": "8326922979"
+    },
+    "sms_message": "Hi Nema, this is Vivek, local Investor. Interested in your listing at 2642 Planters House Ln, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 230000,
+      "arv_high": 260000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "3/2 ~1450sqft 1980s builds in 77449 (Williamsburg/Bear Creek) selling $235k-$255k renovated"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Comparable 1490sqft 1983 homes near Barker Cypress/Clay Rd trading ~$160/sqft post-reno"
+        }
+      ],
+      "red_flags": [
+        "$100k list at 0 DOM is far below market \u2014 likely auction/estate/foreclosure or teaser; confirm true price and title status",
+        "1983 build in 77449 \u2014 verify not in FEMA floodplain/Barker Reservoir flood pool; Katy 77449 had Harvey inundation",
+        "Possible major deferred maintenance justifying deep discount (foundation, roof, HVAC, plumbing recast)",
+        "Confirm no HOA liens, tax delinquency, or occupancy/tenant issues at this price"
+      ],
+      "opportunity_notes": [
+        "~$130k-$160k spread to ARV supports Fix&Flip or Wholesale even after $40k-$55k Houston rehab",
+        "Strong Fix&Rent: 3/2 in 77449 rents ~$1,700-$1,900/mo, solid Katy ISD schools drive tenant demand",
+        "1490sqft slab ranch = straightforward cosmetic reno scope (paint, LVP, kitchen/bath, HVAC) for predictable margins",
+        "Assign contract to flipper if verified at $100k \u2014 quick wholesale fee with minimal capital"
+      ]
+    }
+  },
+  {
+    "id": 16290271,
+    "address": "6863 Winslow Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 249000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1746,
+    "year_built": 1977,
+    "price_per_sqft": 143,
+    "dom": 0,
+    "status": "Active",
+    "mls": "10123740",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/6863-winslow-dr-katy-tx-77493/10123740",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 6863 Winslow Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 300000,
+      "arv_high": 335000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "Katy 77493 1970s-80s 4/2 ~1,700-1,900 sqft resales trading ~$175-190/sqft, i.e. ~$300-350k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Updated single-story ranch homes in Nottingham Country/older Katy tracts closing $310-330k"
+        }
+      ],
+      "red_flags": [
+        "1977 build: likely original cast-iron/galvanized plumbing, aluminum wiring risk, and dated electrical panel",
+        "Katy/77493 near reservoir/flood-prone zones \u2014 verify flood zone (X vs AE) and Harvey/Tax Day flooding history",
+        "Age suggests possible foundation movement (slab) and original HVAC/roof at end of life",
+        "DOM 0 / Active priced at $249k likely draws multiple offers \u2014 thin spread if bid up",
+        "Confirm no unpermitted additions affecting the 1,746 sqft figure"
+      ],
+      "opportunity_notes": [
+        "~$50-85k spread to ARV at $249k; strong Fix&Rent candidate given Katy ISD schools driving rent/resale demand",
+        "Estimated rehab $45-65k (kitchen, 2 baths, flooring, paint, HVAC, roof, plumbing updates) for cosmetic-to-moderate scope",
+        "Fix&Rent exit: Katy 4/2 ~1,700 sqft rents ~$1,950-2,250/mo; solid DSCR at these bases",
+        "Wholesale angle: lock at/below $249k, assign to flippers targeting $310k+ ARV",
+        "Single-story 4/2 with large-lot 1977 tracts appeals to owner-occupants \u2014 broad buyer pool on flip exit"
+      ]
+    }
+  },
+  {
+    "id": 16290272,
+    "address": "4010 Brookwoods Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77092",
+    "price": 665000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 1718,
+    "year_built": 1955,
+    "price_per_sqft": 387,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3187095",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4010-brookwoods-dr-houston-tx-77092/3187095",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kelly Simon",
+      "brokerage": "KSP",
+      "phone": "832-309-1433"
+    },
+    "sms_message": "Hi Kelly, this is Vivek, local Investor. Interested in your listing at 4010 Brookwoods Dr, Houston TX 77092. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 620000,
+      "arv_high": 710000,
+      "comps": [
+        {
+          "address": "Houston 77092",
+          "notes": "Renovated 1950s Oak Forest 4/3s ~1,600-1,900 sqft trade $610-720K in 77092"
+        },
+        {
+          "address": "Houston 77092",
+          "notes": "New/expanded builds on Brookwoods & nearby push $400-450/sqft"
+        }
+      ],
+      "red_flags": [
+        "$387/sqft is rich for 1,718 sqft \u2014 little/no flip margin at $665K ask",
+        "1955 build: check foundation, cast-iron sewer, panel, and original slab",
+        "Coming Soon/0 DOM means unproven pricing \u2014 likely already-renovated retail comp, not a deal",
+        "77092 has flood-prone pockets; verify flood zone & Harvey history before offer"
+      ],
+      "opportunity_notes": [
+        "Oak Forest/Shepherd Forest is strong appreciation submarket with high buyer demand",
+        "1,718 sqft is small for the block \u2014 add-on/2nd-story or garage-apartment ADU boosts ARV",
+        "If lot is 7,000+ sqft, teardown/new-construction exit ($750-900K) may beat cosmetic flip",
+        "Better as Fix&Rent hold or wholesale to builder than thin-margin retail flip at this basis"
+      ]
+    }
+  },
+  {
+    "id": 16290273,
+    "address": "3306 W 12th St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008",
+    "price": 659900,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2199,
+    "year_built": 2022,
+    "price_per_sqft": 300,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "13361798",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/3306-w-12th-st-houston-tx-77008/13361798",
+    "zillow_url": null,
+    "agent": {
+      "name": "Heather Hatfield",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "281-222-5199"
+    },
+    "sms_message": "Hi Heather, this is Vivek, local Investor. Interested in your listing at 3306 W 12th St, Houston TX 77008. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290274,
+    "address": "14302 Apple Tree Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77079",
+    "price": 875000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2744,
+    "year_built": 1967,
+    "price_per_sqft": 319,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9644800",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/14302-apple-tree-rd-houston-tx-77079/9644800",
+    "zillow_url": null,
+    "agent": {
+      "name": "J. Carter Breed",
+      "brokerage": "NewTrust Real Estate",
+      "phone": "7134822222"
+    },
+    "sms_message": "Hi J., this is Vivek, local Investor. Interested in your listing at 14302 Apple Tree Rd, Houston TX 77079. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 950000,
+      "arv_high": 1075000,
+      "comps": [
+        {
+          "address": "Houston 77079",
+          "notes": "Renovated 1960s 4/2.5 in Nottingham Forest (77079) trading ~$350-395/sqft, 2,744 sqft implies ~$960K-$1.08M"
+        },
+        {
+          "address": "Houston 77079",
+          "notes": "Comparable updated SBISD homes near Memorial/Energy Corridor closing $925K-$1.05M in 2,600-2,900 sqft range"
+        }
+      ],
+      "red_flags": [
+        "1967 build: likely cast-iron sewer lines, galvanized/original plumbing, aluminum wiring risk, dated HVAC/electrical panel \u2014 budget full systems reno",
+        "77079 Energy Corridor flood exposure (Harvey/Addicks-adjacent pockets) \u2014 pull FEMA flood zone + Harvey claims before offer",
+        "$875K entry on unrenovated 1967 stock leaves thin flip margin; after ~$150K-$200K reno + carry, spread to $1.0M ARV is tight",
+        "Only 2.5 baths for 4BR/2,744 sqft \u2014 may need bath add/reconfig to hit top-of-market comps",
+        "Coming Soon / DOM 0: no price-cut history, seller likely anchored high; possible bidding pressure in strong SBISD zone"
+      ],
+      "opportunity_notes": [
+        "Prime Spring Branch ISD zoning (Nottingham/Frostwood elem, Memorial HS) drives premium resale and low vacancy \u2014 strong Fix&Rent hold",
+        "Large mature-tree lots in Nottingham Forest support high land value and teardown/new-build comps north of $1.3M as alt exit",
+        "Fix&Rent underwriting: renovated 4/2.5 rents ~$3,800-$4,500/mo in 77079 \u2014 model DSCR before committing to flip-only",
+        "Energy Corridor employment base (BP, Shell) sustains executive rental and buyer demand",
+        "Negotiate on flood/systems findings during Coming Soon window to reset the $875K basis before public MLS launch"
+      ]
+    }
   }
 ]
