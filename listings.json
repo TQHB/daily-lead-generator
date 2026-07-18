@@ -18304,5 +18304,426 @@
         "If flood-zone clean and foundation sound, solid BRRRR candidate given West Houston appreciation and lot size"
       ]
     }
+  },
+  {
+    "id": 16290296,
+    "address": "150 Pegasus Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 144900,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1568,
+    "year_built": 2001,
+    "price_per_sqft": 92,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5235510",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/150-pegasus-ct-conroe-tx-77306/5235510",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kristi Delafuente",
+      "brokerage": "JNK Property Group",
+      "phone": "713-305-4490"
+    },
+    "sms_message": "Hi Kristi, this is Vivek, local Investor. Interested in your listing at 150 Pegasus Ct, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 230000,
+      "arv_high": 265000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Renovated 4/2 ~1550-1650sqft in 77306 (e.g. Peach Creek/Crown Ranch area) trading ~$235-260k, ~$150-165/sqft"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Similar 2000s-built SFRs in east Conroe resell $225-270k depending on lot size and updates"
+        }
+      ],
+      "red_flags": [
+        "List price $144,900 (~$92/sqft) is well below renovated comps \u2014 likely condition/foundation/water damage or occupancy issue, verify interior",
+        "77306 is rural east Conroe: some parcels in floodplain/septic/well \u2014 confirm flood zone, water source and sewer",
+        "DOM 0 / just-listed \u2014 expect competition and possible multiple offers, move fast but inspect",
+        "2001 build may need HVAC, roof, and full cosmetic rehab; budget $35-55k for Fix&Flip"
+      ],
+      "opportunity_notes": [
+        "Spread: ~$85-120k between price and ARV low \u2014 room for Fix&Flip or wholesale assignment if rehab stays under ~$45k",
+        "Fix&Rent: 4/2 ~1568sqft rents ~$1,750-1,950/mo in 77306; strong DSCR at this basis",
+        "Wholesale angle: lock at/near list, assign to rehabber at $165-180k for quick spread",
+        "4-bed layout and larger east-Conroe lots appeal to family renters and owner-occupant flip buyers"
+      ]
+    }
+  },
+  {
+    "id": 16290297,
+    "address": "16571 Colleen Pl",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 170000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 900,
+    "year_built": 2022,
+    "price_per_sqft": 189,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "16445144",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16571-colleen-pl-conroe-tx-77306/16445144",
+    "zillow_url": null,
+    "agent": {
+      "name": "Eunice Zamora Portillo",
+      "brokerage": "SERHANT.",
+      "phone": "2819656583"
+    },
+    "sms_message": "Hi Eunice, this is Vivek, local Investor. Interested in your listing at 16571 Colleen Pl, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 210000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~900-1,100 sqft in 77306 (Grangerland/east Conroe) trading ~$185k-$215k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Small 2020-2023 SFR builds near Colleen Pl / FM 3083 at ~$190-$210/sqft"
+        }
+      ],
+      "red_flags": [
+        "900 sqft is very small for a 3/2 \u2014 limits buyer pool and rent ceiling",
+        "77306 is rural east Conroe (Grangerland) \u2014 slower appreciation, softer comps",
+        "Built 2022 = near-retail price, almost no rehab upside; thin Fix&Flip/Wholesale margin at $170k",
+        "DOM 0 + list at ~$189/sqft leaves little spread; verify not manufactured/modular given size+new build",
+        "Possible small/odd lot or infill build \u2014 confirm lot size, septic/well vs city utilities"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey buy-and-hold: 2022 build = minimal capex, low maintenance",
+        "Estimated rent ~$1,400-$1,600/mo; at $170k gross yield ~1.0-1.1% \u2014 marginal, push seller toward $150-160k",
+        "Little to no rehab needed \u2014 cosmetic only, fast lease-up",
+        "Negotiate below list (DOM 0, builder/flipper motivation unknown) to create wholesale/BRRRR spread",
+        "Confirm utilities, HOA/MUD taxes, and true living area \u2014 small footprint may appraise light"
+      ]
+    }
+  },
+  {
+    "id": 16290298,
+    "address": "10807 Royal Tricia Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 200000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1066,
+    "year_built": 2005,
+    "price_per_sqft": 188,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5294679",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/10807-royal-tricia-dr-conroe-tx-77303/5294679",
+    "zillow_url": null,
+    "agent": {
+      "name": "Amanda Hofstra",
+      "brokerage": "All City Real Estate",
+      "phone": "832-702-0121"
+    },
+    "sms_message": "Hi Amanda, this is Vivek, local Investor. Interested in your listing at 10807 Royal Tricia Dr, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 210000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "Conroe 77303 3/2 ~1,050-1,150 sqft, 2003-2008 build, resale $205k-$230k"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Nearby renovated 3/2 ~1,100 sqft closing $220k-$238k in 77303"
+        }
+      ],
+      "red_flags": [
+        "Small footprint (1,066 sqft) caps ARV and buyer pool",
+        "77303 is a slower/softer submarket vs 77301/77304 \u2014 longer DOM, price-sensitive",
+        "$200k ask leaves thin spread to $210k-$235k ARV; little room for rehab + margin on a flip",
+        "2005 build likely needs cosmetic-only updates, but verify roof/HVAC/foundation (Conroe expansive clay)",
+        "DOM 0 / just listed \u2014 no price-drop leverage yet"
+      ],
+      "opportunity_notes": [
+        "Better fit for Fix&Rent: 3/2 rents ~$1,650-$1,850/mo in 77303, solid yield at/under $200k",
+        "Wholesale angle: tie up sub-$180k to leave assignment room given tight flip spread",
+        "Fix&Flip only works if bought $155k-$170k with $20k-$30k cosmetic rehab",
+        "Newer 2005 build = lower rehab risk and easier rent-ready turn",
+        "Target light cosmetic (paint, flooring, fixtures) to hit top of $235k ARV"
+      ]
+    }
+  },
+  {
+    "id": 16290299,
+    "address": "304 Helen St",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77328",
+    "price": 170000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1499,
+    "year_built": 1970,
+    "price_per_sqft": 113,
+    "dom": 0,
+    "status": "Active",
+    "mls": "4810673",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/304-helen-st-cleveland-tx-77328/4810673",
+    "zillow_url": null,
+    "agent": {
+      "name": "Leslie Threadgill-Burton",
+      "brokerage": "Lets Buy A Home",
+      "phone": "8324231554"
+    },
+    "sms_message": "Hi Leslie, this is Vivek, local Investor. Interested in your listing at 304 Helen St, Cleveland TX 77328. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290300,
+    "address": "645 Maria Elena Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 172990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1311,
+    "year_built": 2026,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17629337",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/645-maria-elena-way-cleveland-tx-77327/17629337",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 645 Maria Elena Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1300sqft in 77327 (Grand San Jacinto/Santa Fe-style tracts) closing $170k-$190k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Resale 3/2 1250-1400sqft near US-59/Cleveland ISD trading $125-$145/sqft"
+        }
+      ],
+      "red_flags": [
+        "New construction bought near retail ($172,990 / ~$132/sqft) leaves almost no flip margin",
+        "Cleveland/77327 is exurban Liberty County \u2014 slower resale absorption, values driven by builder pipeline not appreciation",
+        "DOM 0 / Active new build: no proven resale comp for this exact plan yet",
+        "Heavy new-construction supply in the corridor caps ARV and pressures resale price",
+        "2026 build = no rehab value-add angle for Fix&Flip"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey buy-and-hold, not flip \u2014 minimal rehab, rent ~$1,500-$1,650/mo",
+        "Path-of-growth play: Grand Parkway/US-59 expansion and Houston exurb migration support long-term hold",
+        "Negotiate builder incentives (rate buydown, closing costs) to improve cash-on-cash since equity spread is thin",
+        "New build = low CapEx/maintenance for first 5-7 yrs, boosting net rental cash flow",
+        "Wholesale margin unlikely at retail pricing \u2014 only viable if builder bulk/investor discount is secured"
+      ]
+    }
+  },
+  {
+    "id": 16290301,
+    "address": "236 Road 5210",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 150000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1216,
+    "year_built": 2020,
+    "price_per_sqft": 123,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14965837",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/236-road-5210-cleveland-tx-77327/14965837",
+    "zillow_url": null,
+    "agent": {
+      "name": "Nelly Perez",
+      "brokerage": "CENTURY 21 Western Realty, Inc",
+      "phone": "832-343-1930"
+    },
+    "sms_message": "Hi Nelly, this is Vivek, local Investor. Interested in your listing at 236 Road 5210, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290302,
+    "address": "10722 Ella Lee Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77042",
+    "price": 795000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 3074,
+    "year_built": 1972,
+    "price_per_sqft": 259,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3280616",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/10722-ella-lee-ln-houston-tx-77042/3280616",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ignacio Avila",
+      "brokerage": "HomeSmart",
+      "phone": "9564087607"
+    },
+    "sms_message": "Hi Ignacio, this is Vivek, local Investor. Interested in your listing at 10722 Ella Lee Ln, Houston TX 77042. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290303,
+    "address": "12508 Still Harbour Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77041",
+    "price": 1057725,
+    "beds": 4,
+    "baths": 5,
+    "sqft": 4701,
+    "year_built": 1998,
+    "price_per_sqft": 225,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "8475189",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/12508-still-harbour-dr-houston-tx-77041/8475189",
+    "zillow_url": null,
+    "agent": {
+      "name": "Brenda Stardig",
+      "brokerage": "Wanda Taylor Properties",
+      "phone": "2817261555"
+    },
+    "sms_message": "Hi Brenda, this is Vivek, local Investor. Interested in your listing at 12508 Still Harbour Dr, Houston TX 77041. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1050000,
+      "arv_high": 1250000,
+      "comps": [
+        {
+          "address": "Houston 77041",
+          "notes": "Lakes on Eldridge North gated resales, 4,000-5,000 sqft, ~$210-245/sqft renovated"
+        },
+        {
+          "address": "Houston 77041",
+          "notes": "1990s-2000s 77041 executive homes trading $1.0M-$1.3M when updated"
+        }
+      ],
+      "red_flags": [
+        "Priced ~$225/sqft near top of 77041 range, leaving thin flip margin at ask",
+        "High-end price point shrinks buyer pool and lengthens DOM vs sub-$500K SFR",
+        "1998 build likely needs kitchen/baths/roof/HVAC/systems refresh; reno on 4,701 sqft is capital-heavy",
+        "Texas property taxes (~2.2-2.7%) + likely HOA crush rental cash flow at this basis",
+        "Rent (~$4,500-6,000/mo) yields sub-1% gross on price \u2014 Fix&Rent math does not work",
+        "Coming Soon/0 DOM means no price discovery; ask may be aspirational"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Flip, not Fix&Rent, given price-to-rent ratio",
+        "Target all-in (purchase+reno) under ~$950K to protect a 10%+ flip spread toward $1.2M ARV",
+        "Negotiate hard pre-market \u2014 Coming Soon seller may cut before active listing",
+        "Gated Lakes on Eldridge North location supports premium if finishes are brought to current luxury standard",
+        "Consider wholesale/assignment if reno scope or carrying costs exceed comfort at this price tier",
+        "Verify flood status (77041 has flood-prone pockets) and elevation before committing"
+      ]
+    }
+  },
+  {
+    "id": 16290304,
+    "address": "1319 Mission Chase Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 515000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 2388,
+    "year_built": 1994,
+    "price_per_sqft": 216,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "7763588",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1319-mission-chase-dr-houston-tx-77077/7763588",
+    "zillow_url": null,
+    "agent": {
+      "name": "Elizabeth Vanderbrouk",
+      "brokerage": "Martha Turner Sotheby's International Realty",
+      "phone": "8322369999"
+    },
+    "sms_message": "Hi Elizabeth, this is Vivek, local Investor. Interested in your listing at 1319 Mission Chase Dr, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 560000,
+      "arv_high": 615000,
+      "comps": [
+        {
+          "address": "Houston 77077",
+          "notes": "77077 Energy Corridor 3-4/2-2.5 ~2,300-2,500 sqft renovated resales trading ~$240-260/sqft ($575k-$640k)"
+        },
+        {
+          "address": "Houston 77077",
+          "notes": "1990s two-story homes in Ashford/Nottingham Country reno'd closing $560k-$610k"
+        }
+      ],
+      "red_flags": [
+        "Energy Corridor / 77077 is a documented Harvey flood zone near Barker Reservoir \u2014 pull FEMA map, flood history, and elevation cert before offering",
+        "2,388 sqft with only 3 beds signals functional obsolescence or unpermitted add-on; verify beds/sqft vs HCAD",
+        "$515k 'Coming Soon' at ~$216/sqft leaves thin spread \u2014 likely near-retail pricing, not a distressed buy",
+        "1994 build: original roof, HVAC, PEX/polybutylene plumbing and dated finishes probable \u2014 budget $60k-$90k full reno"
+      ],
+      "opportunity_notes": [
+        "Strong Energy Corridor rental demand (BP, ExxonMobil-adjacent, Westchase) supports Fix&Rent; 3/2 could rent ~$2,800-$3,300/mo",
+        "Adding a 4th bedroom to the 2,388 sqft footprint boosts ARV and rent-ability materially",
+        "If seller motivated pre-list, negotiate below $515k to open a Fix&Flip margin; target all-in under ~$470k for ~$600k ARV",
+        "Confirm no-flood / never-flooded status \u2014 if clean, area commands premium and de-risks exit"
+      ]
+    }
   }
 ]
