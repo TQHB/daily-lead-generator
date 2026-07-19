@@ -18725,5 +18725,704 @@
         "Confirm no-flood / never-flooded status \u2014 if clean, area commands premium and de-risks exit"
       ]
     }
+  },
+  {
+    "id": 16290305,
+    "address": "490 County Road 2269",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 48000,
+    "beds": 0,
+    "baths": 1,
+    "sqft": 1175,
+    "year_built": 1965,
+    "price_per_sqft": 41,
+    "dom": 0,
+    "status": "Active",
+    "mls": "7789405",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/490-county-road-2269-cleveland-tx-77327/7789405",
+    "zillow_url": null,
+    "agent": {
+      "name": "Everett Green",
+      "brokerage": "RE/MAX ONE",
+      "phone": "409-350-2773"
+    },
+    "sms_message": "Hi Everett, this is Vivek, local Investor. Interested in your listing at 490 County Road 2269, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 140000,
+      "arv_high": 175000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 1,100-1,300 sqft 1960s-70s homes on CR/rural lots in 77327 trading ~$150k-$180k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Small updated SFRs in Cleveland/Liberty Co (Tarkington ISD area) ~$120-$145/sqft"
+        }
+      ],
+      "red_flags": [
+        "Beds listed as 0 and only 1 bath \u2014 likely bad data or a true 1-bath layout that caps resale/rent",
+        "$48k price + 1965 build signals possible foundation, septic, well, or structural issues; verify utilities (well/septic vs public)",
+        "County Road/rural location \u2014 flood zone, unpaved access, and mobile-home-heavy comps can drag ARV; pull FEMA + survey",
+        "DOM 0 / just-listed \u2014 competition and price validation unknown, could be wholesaler-flipped or as-is estate sale"
+      ],
+      "opportunity_notes": [
+        "Deep spread: ~$48k buy vs ~$150k+ ARV leaves room for full gut rehab and still a healthy Fix&Flip margin",
+        "Add a 2nd bath and confirm 3BR configuration in 1,175 sqft to maximize rent/resale in Tarkington ISD",
+        "Fix&Rent viable \u2014 Cleveland rents ~$1,300-$1,600 for a small updated SFR; strong cash-on-cash at this basis",
+        "If title/condition is clean, quick Wholesale assignment likely given the low entry price and investor demand in 77327",
+        "Confirm lot size/acreage \u2014 rural CR parcels often include usable land that lifts ARV above stick-built-only comps"
+      ]
+    }
+  },
+  {
+    "id": 16290306,
+    "address": "75 County Road 4950",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 77000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1000,
+    "year_built": 1985,
+    "price_per_sqft": 77,
+    "dom": 0,
+    "status": "Active",
+    "mls": "9711737",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/75-county-road-4950-cleveland-tx-77327/9711737",
+    "zillow_url": null,
+    "agent": {
+      "name": "/",
+      "brokerage": "/",
+      "phone": "/"
+    },
+    "sms_message": "Hi /, this is Vivek, local Investor. Interested in your listing at 75 County Road 4950, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 130000,
+      "arv_high": 160000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 2/1-3/2 ~1,000-1,200 sqft in 77327 Cleveland trading ~$135K-$155K"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Rural acreage cottages/manufactured-on-land off FM/County Roads listing $120K-$160K"
+        }
+      ],
+      "red_flags": [
+        "County Road 4950 address suggests rural/possible manufactured or non-conventional construction \u2014 confirm it's stick-built for financing/ARV",
+        "1985 build + only 1,000 sqft 2/2 limits buyer/rental pool; verify no MH tag/deed issue",
+        "Liberty County flood exposure \u2014 pull FEMA flood zone (much of 77327 is Zone A/AE)",
+        "No septic/well data given \u2014 rural, likely on septic + private well; inspect condition",
+        "DOM=0/Active \u2014 unverified condition; $77K could signal heavy rehab or land-value only",
+        "Slow, thin resale market in Cleveland; longer hold/DOM on exit"
+      ],
+      "opportunity_notes": [
+        "Low $77/sqft entry leaves margin if rehab is cosmetic \u2014 target all-in under ~$105K for Fix&Rent",
+        "Fix&Rent fits best: 2/2 rents ~$1,150-$1,375/mo in 77327, strong yield on low basis",
+        "Grand Parkway / 99 corridor growth pushing Cleveland demand \u2014 land + small SFR has upside",
+        "Wholesale angle: if construction is non-conventional or flood-zoned, assign to a rural/land buyer rather than retail flip",
+        "Verify lot size \u2014 extra acreage on a County Road adds value beyond the 1,000 sqft structure"
+      ]
+    }
+  },
+  {
+    "id": 16290307,
+    "address": "16299 Hidden Deer Ln",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 193500,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1531,
+    "year_built": 2003,
+    "price_per_sqft": 126,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5303238",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16299-hidden-deer-ln-conroe-tx-77302/5303238",
+    "zillow_url": null,
+    "agent": {
+      "name": "Scott Frnka",
+      "brokerage": "Keller Williams Realty Professionals",
+      "phone": "281-543-7321"
+    },
+    "sms_message": "Hi Scott, this is Vivek, local Investor. Interested in your listing at 16299 Hidden Deer Ln, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 225000,
+      "arv_high": 250000,
+      "comps": [
+        {
+          "address": "Conroe 77302",
+          "notes": "3/2 ~1,500 sqft early-2000s builds in 77302/Artavia-Deer Trail area trading ~$150-165/sqft renovated"
+        },
+        {
+          "address": "Conroe 77302",
+          "notes": "Conroe SFR 1,400-1,700 sqft closing $220k-$255k in 2026"
+        }
+      ],
+      "red_flags": [
+        "DOM 0 / brand-new listing \u2014 price not yet market-tested, possible bidding competition",
+        "At $126/sqft asking, limited spread unless cosmetic-only rehab",
+        "2003 build may carry aging HVAC, roof, and original finishes needing capex",
+        "Conroe/77302 has newer competing inventory and MUD/higher tax rates that pressure resale",
+        "Possible septic/well and larger-lot maintenance common in Hidden Deer Ln semi-rural pockets"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent candidate: Conroe rents ~$1,850-$2,100 for 3/2, supporting solid DSCR at this basis",
+        "Fix&Flip margin thin \u2014 target all-in under ~$205k with $20-30k cosmetic rehab to hit ARV mid-$240s",
+        "Growing north-Conroe corridor (Grand Central Park, Artavia, 336 loop) drives appreciation and tenant demand",
+        "1,531 sqft single-story with practical 3/2 layout appeals to both retail buyers and renters",
+        "If acquired below ask, viable wholesale flip to local landlord buyers given rent-ready condition"
+      ]
+    }
+  },
+  {
+    "id": 16290308,
+    "address": "14624 South Ascot Bend Cir",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 194990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1409,
+    "year_built": 2026,
+    "price_per_sqft": 138,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17636227",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/14624-south-ascot-bend-cir-conroe-tx-77306/17636227",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 14624 South Ascot Bend Cir, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~1,400sf in Ladera Creek/Ascot area, 77306: ~$135-150/sf \u2192 $190-210k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Resale 2023-2025 builder homes nearby closing ~$185-205k"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build bought at retail\u2014zero rehab/forced-equity upside, so no Fix&Flip margin",
+        "77306 (east Conroe) is a lower-appreciation, higher-DOM submarket vs west Conroe/Woodlands",
+        "High carry cost: MUD district + new-construction tax assessments inflate escrow",
+        "1,409 sf is small/builder-grade; DOM 0 means unproven pricing, likely one of many identical spec homes",
+        "Flip exit competes directly with builder's own new inventory at same price"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent buy-and-hold, not flip: est. rent ~$1,600-1,750/mo, minimal near-term capex on new build",
+        "Push builder for rate buydown/closing-cost incentives to improve cash-on-cash",
+        "New construction = low maintenance/vacancy risk, strong tenant appeal for entry-level renters",
+        "At ~$138/sf, entry basis is below replacement-ish for area\u2014hold for Conroe growth corridor appreciation (Grand Pkwy/HWY 105)",
+        "Verify MUD tax rate and HOA before underwriting; model true cap rate at ~6-7%"
+      ]
+    }
+  },
+  {
+    "id": 16290309,
+    "address": "17822 Shaw Cir",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 169500,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1680,
+    "year_built": 1996,
+    "price_per_sqft": 101,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "11002323",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17822-shaw-cir-conroe-tx-77302/11002323",
+    "zillow_url": null,
+    "agent": {
+      "name": "Nema Ghalamdanchi",
+      "brokerage": "007 Signature Realty, LLC",
+      "phone": "8326922979"
+    },
+    "sms_message": "Hi Nema, this is Vivek, local Investor. Interested in your listing at 17822 Shaw Cir, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 235000,
+      "arv_high": 265000,
+      "comps": [
+        {
+          "address": "Conroe 77302",
+          "notes": "Renovated 3/2 ~1650-1750sqft in 77302 (Imperial Oaks/Crighton Ridge area) trading ~$140-155/sqft"
+        },
+        {
+          "address": "Conroe 77302",
+          "notes": "Similar 1996-built SFRs near Shaw Cir sold $245k-$260k in last 6 mo"
+        }
+      ],
+      "red_flags": [
+        "Price ~$101/sqft is well under market \u2014 likely deferred maintenance or distressed condition",
+        "1996 build: original roof/HVAC/water heater likely at/past end of life",
+        "77302 has pockets in flood-prone/low-lying areas near Caney Creek \u2014 verify FEMA flood zone",
+        "DOM 0 / just listed \u2014 expect competition and possible multiple offers",
+        "Slab-on-grade era home \u2014 check for foundation movement common in Conroe clay soils"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Flip spread: ~$65k-$95k gross ARV-to-price margin before reno/holding",
+        "1680 sqft, 3/2 is prime rental/starter-home profile \u2014 good Fix&Rent exit (est. $1,850-$2,100/mo)",
+        "Conroe/Montgomery County appreciation + jobs growth supports resale demand",
+        "Wholesale angle: assignable if condition-driven discount confirmed on walkthrough",
+        "Target all-in (purchase+reno) under ~$200k to preserve 20%+ flip margin"
+      ]
+    }
+  },
+  {
+    "id": 16290310,
+    "address": "3519 Lake Ridge Bnd",
+    "city": "The Woodlands",
+    "state": "TX",
+    "zip": "77380",
+    "price": 240000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1342,
+    "year_built": 1973,
+    "price_per_sqft": 179,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5302942",
+    "source": "HAR",
+    "scenario_id": 3,
+    "har_url": "https://www.har.com/homedetail/3519-lake-ridge-bnd-spring-tx-77380/5302942",
+    "zillow_url": null,
+    "agent": {
+      "name": "Adam Olsen",
+      "brokerage": "eXp Realty, LLC",
+      "phone": "9366899123"
+    },
+    "sms_message": "Hi Adam, this is Vivek, local Investor. Interested in your listing at 3519 Lake Ridge Bnd, The Woodlands TX 77380. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 300000,
+      "arv_high": 345000,
+      "comps": [
+        {
+          "address": "The Woodlands 77380",
+          "notes": "Renovated 1970s 3/2 ~1,300-1,400 sqft in Grogan's Mill/77380 trading $290K-$340K"
+        },
+        {
+          "address": "The Woodlands 77380",
+          "notes": "Updated single-story Woodlands villas near Lake Ridge closing $215-$250/sqft"
+        }
+      ],
+      "red_flags": [
+        "1973 build: expect original cast-iron/galvanized plumbing, aluminum wiring risk, and aging HVAC/roof",
+        "Possible MUD + HOA dues plus higher Montgomery County tax load compress rent margins",
+        "1,342 sqft is small for The Woodlands buyer pool; limited layout flexibility",
+        "Lake Ridge/Grogan's Mill sits near I-45 and older section \u2014 verify flood/drainage and dated-section stigma",
+        "DOM 0 at $240K in 77380 may draw multiple offers, thinning the spread"
+      ],
+      "opportunity_notes": [
+        "Sub-$180/sqft entry in a premium ZIP is the core thesis \u2014 Woodlands brand supports strong ARV lift",
+        "Fix&Rent: renovated 3/2 rents ~$1,900-$2,200/mo with steady Woodlands tenant demand and low vacancy",
+        "Cosmetic-to-moderate reno (kitchen/baths/LVP/paint) at ~$40-55K can hit ARV without structural spend",
+        "Single-story on a Woodlands lot appeals to downsizers/flip buyers \u2014 broad exit",
+        "Confirm plumbing/electrical scope early; if cast iron is intact, flip math tightens toward wholesale exit"
+      ]
+    }
+  },
+  {
+    "id": 16290311,
+    "address": "3318 Roaming Woods Ln",
+    "city": "Spring",
+    "state": "TX",
+    "zip": "77380",
+    "price": 185000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1154,
+    "year_built": 1970,
+    "price_per_sqft": 160,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "10331861",
+    "source": "HAR",
+    "scenario_id": 3,
+    "har_url": "https://www.har.com/homedetail/3318-roaming-woods-ln-spring-tx-77380/10331861",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 3318 Roaming Woods Ln, Spring TX 77380. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 285000,
+      "comps": [
+        {
+          "address": "Spring 77380",
+          "notes": "3BR/2BA ~1,150 sqft renovated in 77380 (The Woodlands-adjacent Spring) trading $245K-$280K"
+        },
+        {
+          "address": "Spring 77380",
+          "notes": "1970s single-story near Grogan's Mill/Sawdust Rd resell $250K-$290K post-reno"
+        }
+      ],
+      "red_flags": [
+        "1970 build: likely original cast-iron/galvanized plumbing, aluminum wiring, and dated HVAC/roof \u2014 budget full systems",
+        "1,154 sqft is small for the area; limited add-value without square-footage expansion",
+        "Slab-on-grade 1970s home in Spring \u2014 check for foundation movement and past flooding (near Spring/Panther Creek watershed)",
+        "DOM 0 / just listed at $185K \u2014 likely to draw multiple offers, thin acquisition margin",
+        "Possible unpermitted prior work given age; verify permit history"
+      ],
+      "opportunity_notes": [
+        "Prime location: 77380 is inside/adjacent to The Woodlands with strong CISD schools \u2014 supports both rent premium and flip resale",
+        "Fix&Rent: rehabbed 3/2 should command $1,850-$2,150/mo; solid Woodlands-area rental demand",
+        "Fix&Flip: at $185K + ~$45K-$60K reno, exit $255K-$280K pencils if bought at/below ask",
+        "Single-story ranch on presumably decent lot \u2014 cosmetic-to-moderate reno appeals to owner-occupant buyers",
+        "Wholesale: assignable to Woodlands-area flippers given location; margin depends on true acquisition price under $185K"
+      ]
+    }
+  },
+  {
+    "id": 16290312,
+    "address": "360 L R Outlaw Ln",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77328",
+    "price": 147500,
+    "beds": 2,
+    "baths": 1.5,
+    "sqft": 1387,
+    "year_built": 1991,
+    "price_per_sqft": 106,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5909949",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/360-l-r-outlaw-ln-cleveland-tx-77328/5909949",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mary Brawner",
+      "brokerage": "JLA Realty",
+      "phone": "713-489-8130"
+    },
+    "sms_message": "Hi Mary, this is Vivek, local Investor. Interested in your listing at 360 L R Outlaw Ln, Cleveland TX 77328. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 200000,
+      "comps": [
+        {
+          "address": "Cleveland 77328",
+          "notes": "Similar 1980s-90s 2-3BR frame homes on acreage lots in Cleveland 77328 resell $180k-$210k renovated"
+        },
+        {
+          "address": "Cleveland 77328",
+          "notes": "Recent Tarkington-area SFR flips ~$130-145/sqft ARV"
+        }
+      ],
+      "red_flags": [
+        "Only 2BR/1.5BA at 1387 sqft under-rooms the market; most 77328 buyers want 3BR \u2014 plan to add a bedroom",
+        "1991 build likely needs septic, well, HVAC, roof, and possible foundation/pier checks (rural East Montgomery/Liberty Co.)",
+        "77328 is far exurban (~50mi NE of Houston) with slower DOM and thin renovated-comp inventory",
+        "Flood/wetland risk common in Cleveland \u2014 verify FEMA zone before committing",
+        "Price at ~$106/sqft leaves modest spread; septic/well surprises can erase margin"
+      ],
+      "opportunity_notes": [
+        "Reconfigure to 3BR/2BA to hit the dominant buyer profile and lift ARV toward high end",
+        "Strong Fix&Rent candidate \u2014 rural Cleveland rents $1,300-1,600/mo with low acquisition basis",
+        "DOM 0 means act fast but underwrite conservatively; offer below ask given 2BR functional obsolescence",
+        "Wholesale exit viable to local landlords if rehab scope (septic/foundation) proves heavy",
+        "Target all-in (purchase+rehab) near $150-160k to preserve 70% ARV rule with buffer"
+      ]
+    }
+  },
+  {
+    "id": 16290313,
+    "address": "638 Maria Elena Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 174990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1670,
+    "year_built": 2026,
+    "price_per_sqft": 105,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17629975",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/638-maria-elena-way-cleveland-tx-77327/17629975",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 638 Maria Elena Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 4/2 ~1,650 sqft in 77327 closing $185k-$200k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Recent Cleveland spec homes ~$110-$120/sqft resale"
+        }
+      ],
+      "red_flags": [
+        "Brand-new build priced near retail ARV \u2014 almost no flip spread",
+        "Cleveland/77327 (Liberty Co) is builder-saturated with heavy new-construction supply, capping appreciation and resale absorption",
+        "No renovation upside on a 2026 build; can't force equity",
+        "Rural submarket, longer DOM on resale; septic/well and unincorporated-area considerations",
+        "MUD/high property-tax rates common here erode rental cash flow"
+      ],
+      "opportunity_notes": [
+        "Better as Fix&Rent/turnkey buy-and-hold than flip; rents ~$1,500-$1,700/mo for 4/2",
+        "Negotiate builder incentives/rate buydown or lot premium credit to create instant equity",
+        "Low entry price fits a rental portfolio play with minimal rehab capex",
+        "Wholesale only viable if secured well under $160k \u2014 thin at $174,990 list"
+      ]
+    }
+  },
+  {
+    "id": 16290314,
+    "address": "641 Maria Elena Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 169990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1411,
+    "year_built": 2026,
+    "price_per_sqft": 120,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17636715",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/641-maria-elena-way-cleveland-tx-77327/17636715",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 641 Maria Elena Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1,400 sqft in 77327 (Cleveland/Grand San Jacinto area) closing $175k\u2013$190k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Comparable 2025\u20132026 builder spec homes on similar lots trading $120\u2013$135/sqft"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build with 0 DOM \u2014 near-zero forced-appreciation/equity for Fix&Flip; ARV \u2248 list price",
+        "Cleveland 77327 is far-exurb Liberty County: slower resale, heavy new-build supply competes directly, thin rental demand",
+        "No rehab upside \u2014 cannot buy below market on a new spec home; wholesale spread essentially absent",
+        "Possible MUD/PID special taxes and high tax rate common in new 77327 subdivisions, compressing rental cash flow",
+        "Small 1,411 sqft on likely modest lot limits ARV ceiling"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-and-hold: new construction = minimal capex/maintenance for years",
+        "Target rent ~$1,450\u2013$1,650/mo; verify against 1% rule (~$1,700) \u2014 likely under, so negotiate builder incentives/rate buydown",
+        "Push builder for closing-cost credits, blinds/fridge, or 2-1 buydown rather than price cut on new inventory",
+        "Verify tax rate and any MUD/PID before underwriting; model true PITI for cash-flow",
+        "Wholesale/flip not viable here \u2014 only pursue as a rental if long-term Houston-metro growth thesis holds"
+      ]
+    }
+  },
+  {
+    "id": 16290315,
+    "address": "818 W 43rd St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77018",
+    "price": 1250000,
+    "beds": 5,
+    "baths": 3.5,
+    "sqft": 3088,
+    "year_built": 2014,
+    "price_per_sqft": 405,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10184592",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/818-w-43rd-st-houston-tx-77018/10184592",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jeremy Fain",
+      "brokerage": "Greenwood King Properties - Kirby Office",
+      "phone": "713-677-4337"
+    },
+    "sms_message": "Hi Jeremy, this is Vivek, local Investor. Interested in your listing at 818 W 43rd St, Houston TX 77018. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1150000,
+      "arv_high": 1325000,
+      "comps": [
+        {
+          "address": "Houston 77018",
+          "notes": "Oak Forest/Garden Oaks new-build 2800-3200 sqft trading ~$375-420/sqft ($1.1M-1.3M)"
+        },
+        {
+          "address": "Houston 77018",
+          "notes": "Nearby 2013-2016 custom builds in 77018 selling $1.15M-1.35M"
+        }
+      ],
+      "red_flags": [
+        "List price $1.25M (~$405/sqft) is near top of 77018 range \u2014 thin equity/flip margin",
+        "Coming Soon/0 DOM means no price discovery; likely priced to full retail",
+        "Only ~11 yrs old so no distressed/reno upside \u2014 pure retail resale, not a value-add play",
+        "$1M+ price band has thinner buyer pool and longer DOM if market softens"
+      ],
+      "opportunity_notes": [
+        "Prime Oak Forest location, strong 77018 school/commute demand supports Fix&Rent hold and resale liquidity",
+        "Newer construction = low CapEx/maintenance, good turnkey rental (est. rent $5,500-7,000/mo, though cap rate thin at this price)",
+        "Not a fit for Fix&Flip or Wholesale margins; best as buy-and-hold or agent-assignment if seller motivated",
+        "Watch for a price cut after Coming Soon launch \u2014 re-underwrite if it drops below ~$1.1M for flip viability"
+      ]
+    }
+  },
+  {
+    "id": 16290316,
+    "address": "9118 Sunny Ridge Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77095",
+    "price": 360000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2563,
+    "year_built": 2001,
+    "price_per_sqft": 140,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9453226",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/9118-sunny-ridge-dr-houston-tx-77095/9453226",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jaime Connell",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Cypress",
+      "phone": "832-754-8560"
+    },
+    "sms_message": "Hi Jaime, this is Vivek, local Investor. Interested in your listing at 9118 Sunny Ridge Dr, Houston TX 77095. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 380000,
+      "arv_high": 415000,
+      "comps": [
+        {
+          "address": "Houston 77095",
+          "notes": "Renovated 3-4/2.5 in Copperfield 77095, ~2,400-2,700 sqft, selling $150-160/sqft ($385k-$420k)"
+        },
+        {
+          "address": "Houston 77095",
+          "notes": "Similar 2001-build two-story on Sunny Ridge/Barker Cypress corridor closing near $150/sqft updated"
+        }
+      ],
+      "red_flags": [
+        "Coming Soon at $360k (~$140/sqft) leaves thin fix&flip margin after 6-8% selling costs and holding",
+        "2.5 baths with 2,563 sqft two-story limits appeal vs 3-full-bath comps",
+        "Barker Cypress/Addicks reservoir zone\u2014confirm flood zone, 2017 Harvey history in parts of 77095",
+        "MUD district taxes in Copperfield can push effective rate ~2.8-3.2%, hurting rent yield",
+        "2001 build likely needs HVAC/roof/original finishes\u2014budget $35k-$55k rehab"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent: Cy-Fair ISD schools drive stable family-tenant demand; rents ~$2,300-$2,600/mo",
+        "Fix&Flip viable only if bought closer to $330k-$340k to hit $60k+ spread at $400k+ ARV",
+        "Coming Soon/0 DOM\u2014get in pre-list to negotiate before competing offers",
+        "Large 2,563 sqft two-story with good bones; cosmetic reno (paint, LVP, kitchen/baths) yields fast ARV lift",
+        "Copperfield is established, low-vacancy submarket\u2014good rental exit if flip margins compress"
+      ]
+    }
+  },
+  {
+    "id": 16290317,
+    "address": "13428 Merryville Harrogate Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77048",
+    "price": 280000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1656,
+    "year_built": 2021,
+    "price_per_sqft": 169,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "17637352",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13428-merryville-harrogate-ln-houston-tx-77048/17637352",
+    "zillow_url": null,
+    "agent": {
+      "name": "Antoine Ferguson",
+      "brokerage": "GBR Realty",
+      "phone": "8328209285"
+    },
+    "sms_message": "Hi Antoine, this is Vivek, local Investor. Interested in your listing at 13428 Merryville Harrogate Ln, Houston TX 77048. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 260000,
+      "arv_high": 295000,
+      "comps": [
+        {
+          "address": "Houston 77048",
+          "notes": "77048 new-build (2020-2022) 3/2.5 ~1,600-1,750 sqft trading ~$160-175/sqft"
+        },
+        {
+          "address": "Houston 77048",
+          "notes": "Recent Merryville/Harrogate-area resales in the low-to-mid $280s"
+        }
+      ],
+      "red_flags": [
+        "2021 build = near-zero rehab upside; no forced-appreciation flip play",
+        "List $280k already at/above market (~$169/sqft) leaving thin flip margin",
+        "77048 is a softer submarket (flood-plain pockets, higher crime, slower appreciation) that caps ARV and buyer pool",
+        "Coming Soon / DOM 0 means untested pricing \u2014 likely priced at retail, not distressed",
+        "2.5 baths in 1,656 sqft signals a builder tract/townhome-style layout with limited lot"
+      ],
+      "opportunity_notes": [
+        "Better fit as Fix&Rent than Flip \u2014 2021 build means low capex, minimal turn cost",
+        "Estimated rent ~$1,850-2,050/mo; at $280k gross yield is thin (~0.7% rule) so only works with a discount",
+        "Push offer to ~$245-255k to create equity and hit rent-ratio targets",
+        "Wholesale angle: if seller motivated on a Coming Soon, lock at sub-$250k and assign to a landlord buyer wanting turnkey new construction",
+        "Newer HVAC/roof/systems = strong tenant appeal and lower maintenance reserve"
+      ]
+    }
   }
 ]
