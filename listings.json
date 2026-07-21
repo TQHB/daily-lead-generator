@@ -20171,5 +20171,217 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290333,
+    "address": "12576 Stablegate Dr, Conroe, TX 77306",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 185000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 2024,
+    "price_per_sqft": 138,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17488443",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/12576-stablegate-dr-conroe-tx-77306/17488443",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sonia Camacho",
+      "brokerage": "NB Elite Realty",
+      "phone": "832-707-7477"
+    },
+    "sms_message": "Hi Sonia, this is Vivek, local Investor. Interested in your listing at 12576 Stablegate Dr, Conroe, TX 77306, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 230000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~1300-1400 sqft in 77306/Conroe closing $200-225k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Nearby 2023-2024 builds ~$150-160/sqft in NE Conroe subdivisions"
+        }
+      ],
+      "red_flags": [
+        "2024 build at $185k (~$138/sqft) is below new-construction replacement cost \u2014 verify it's not a manufactured/modular home or in a MUD with high tax rate",
+        "77306 is NE Conroe \u2014 flood-prone pockets and higher property-tax/MUD burden can compress rents and buyer pool",
+        "DOM 0 / just-listed \u2014 price may move; confirm no foundation, septic, or builder-warranty issues",
+        "Rural-edge location = longer marketing time and thinner comp set for flip exit"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: minimal rehab on a 2024 build; likely rents $1,650-1,850/mo, supporting solid cash-on-cash if tax rate is moderate",
+        "Thin ~$20-45k spread makes Fix&Flip marginal after closing/holding \u2014 better as buy-and-hold or wholesale",
+        "Wholesale angle: assign to a rental buyer given near-turnkey condition and strong Conroe rental demand",
+        "New construction limits capex risk (roof/HVAC/systems all new) \u2014 attractive for a low-maintenance rental hold"
+      ]
+    }
+  },
+  {
+    "id": 16290334,
+    "address": "910 Hillstar St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77009",
+    "price": 310000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1477,
+    "year_built": 2017,
+    "price_per_sqft": 210,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11864295",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/910-hillstar-st-houston-tx-77009/11864295",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kiesha Curtis",
+      "brokerage": "Realty Kings Properties",
+      "phone": "8322442342"
+    },
+    "sms_message": "Hi Kiesha, this is Vivek, local Investor. Interested in your listing at 910 Hillstar St, Houston TX 77009. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 320000,
+      "arv_high": 365000,
+      "comps": [
+        {
+          "address": "Houston 77009",
+          "notes": "Recent 3/2.5 new-construction townhomes in 77009 (Near Northside/Heights fringe) trading ~$215-245/sqft"
+        },
+        {
+          "address": "Houston 77009",
+          "notes": "2016-2018 builds ~1,400-1,600 sqft selling $325k-$360k within 1 mi"
+        }
+      ],
+      "red_flags": [
+        "2017 build in good condition leaves thin Fix&Flip margin at $310k ask (~$210/sqft entry vs ~$235/sqft ARV)",
+        "Coming Soon / DOM 0 \u2014 likely to draw retail offers at/above ask, hard to win at investor price",
+        "1,477 sqft on likely small/zero-lot townhome parcel limits add-value (no room-count expansion)",
+        "77009 pricing varies block-to-block; verify not backing to rail line, industrial, or I-45 noise"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/BRRRR-lite: newer build means low CapEx, strong Heights-adjacent rent demand ($2,200-2,600/mo for 3/2.5)",
+        "Light cosmetic refresh only (paint, fixtures, landscaping) to reprice toward $355k-$365k top of range",
+        "Negotiate below $300k pre-list while Coming Soon to create flip spread; otherwise pass to a retail buyer as wholesale-to-agent",
+        "Target buy box: entry <=$285k for viable flip, <=$305k for cash-flowing rental at current rates"
+      ]
+    }
+  },
+  {
+    "id": 16290335,
+    "address": "13615 Mansfield Point Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77070",
+    "price": 394000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2824,
+    "year_built": 2000,
+    "price_per_sqft": 140,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10953613",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13615-mansfield-point-ln-houston-tx-77070/10953613",
+    "zillow_url": null,
+    "agent": {
+      "name": "Velvet Harris",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Cypress",
+      "phone": "832-444-5652"
+    },
+    "sms_message": "Hi Velvet, this is Vivek, local Investor. Interested in your listing at 13615 Mansfield Point Ln, Houston TX 77070. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 410000,
+      "arv_high": 445000,
+      "comps": [
+        {
+          "address": "Houston 77070",
+          "notes": "2000s-built 2-story 2,700-2,900 sqft in 77070 Champions/Willowbrook trading $145-160/sqft"
+        },
+        {
+          "address": "Houston 77070",
+          "notes": "Recent renovated 3-4/2.5 sales near Mansfield/Champion Forest closing $420k-$450k"
+        }
+      ],
+      "red_flags": [
+        "List ~$139/sqft leaves thin margin for Fix&Flip after 6-8% selling costs and holding",
+        "2000-build likely original HVAC/roof/water heater near end of life",
+        "2-story 2,824 sqft with only 3 beds suggests large formal/media rooms \u2014 dated layout buyers discount",
+        "77070 has HOA + possible MUD taxes (verify rate, often 2.6-3.2%) squeezing rental cash flow",
+        "Coming Soon/DOM 0 \u2014 no price discovery yet, seller may be testing high"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent: Champions schools + 2,800 sqft rents ~$2,400-2,700/mo, stable NW Houston tenant demand",
+        "Cosmetic-only reno (paint, LVP, quartz, lighting) could lift to $150-158/sqft ARV on modest $30-45k budget",
+        "Target contract at $360-370k to preserve 15-20% flip margin; walk if seller holds $394k",
+        "Verify sqft via HCAD \u2014 if closer to 2,600 heated, per-sqft math and comps shift",
+        "2.5 baths + large footprint appeals to move-up families; strong resale liquidity if rehabbed tastefully"
+      ]
+    }
+  },
+  {
+    "id": 16290336,
+    "address": "1912 Gentry St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77009",
+    "price": 339990,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 1548,
+    "year_built": 1930,
+    "price_per_sqft": 220,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2942318",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1912-gentry-st-houston-tx-77009/2942318",
+    "zillow_url": null,
+    "agent": {
+      "name": "Liz Hunter",
+      "brokerage": "eXp Realty LLC",
+      "phone": "8326213612"
+    },
+    "sms_message": "Hi Liz, this is Vivek, local Investor. Interested in your listing at 1912 Gentry St, Houston TX 77009. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 420000,
+      "arv_high": 500000,
+      "comps": [
+        {
+          "address": "Houston 77009",
+          "notes": "Renovated 1920s-30s bungalows in 77009 Near Northside/Woodland Heights fringe trading ~$290-330/sqft"
+        },
+        {
+          "address": "Houston 77009",
+          "notes": "Comparable 3/2-3 ~1,500-1,700 sqft updated homes east of I-45 closing $430k-$490k"
+        }
+      ],
+      "red_flags": [
+        "1930 build \u2014 likely pier-and-beam foundation, knob-and-tube/original wiring, cast-iron/galvanized plumbing needing full replacement",
+        "Zip 77009 Near Northside is a hard flood/ponding zone in spots \u2014 verify flood plain (X vs AE) and Harvey history",
+        "3 baths in only 1,548 sqft suggests choppy/added-on layout or converted space \u2014 permit and appraisal risk",
+        "'Coming Soon' at $339,990 with 0 DOM in a hot Heights-adjacent submarket means little negotiation room and multiple-offer risk",
+        "Small lot / older platting near industrial and rail corridor can cap resale ceiling"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent: 77009 rents well; a renovated 3/2 can command ~$2,400-$2,900/mo with proximity to Downtown/Heights",
+        "Fix&Flip viable if all-in (purchase + reno) stays under ~$400k against a $460k-$490k ARV \u2014 target $60k-$90k rehab",
+        "Woodland Heights/Norhill spillover demand \u2014 buyers priced out of core Heights are moving east, lifting comps",
+        "Original 1930s character (if intact) supports a design-forward flip that pushes top of ARV range",
+        "Wholesale angle: if seller motivated pre-list, assign below $310k to a rehabber given tight but real spread"
+      ]
+    }
   }
 ]
