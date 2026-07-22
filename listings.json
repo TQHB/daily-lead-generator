@@ -20383,5 +20383,571 @@
         "Wholesale angle: if seller motivated pre-list, assign below $310k to a rehabber given tight but real spread"
       ]
     }
+  },
+  {
+    "id": 16290337,
+    "address": "3651 Duplet Ave",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 132991,
+    "beds": 2,
+    "baths": 2.5,
+    "sqft": 1013,
+    "year_built": 2026,
+    "price_per_sqft": 131,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17639166",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/3651-duplet-ave-conroe-tx-77306/17639166",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 3651 Duplet Ave, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 150000,
+      "arv_high": 175000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 2/2.5 townhomes near Conroe/77306 trading ~$145-170k, ~$140-160/sqft"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Similar sub-1,100 sqft new SFR in NE Conroe listing $150k-180k"
+        }
+      ],
+      "red_flags": [
+        "Only 1,013 sqft with 2.5 baths signals a townhome/attached product, not detached SFR \u2014 narrower buyer/renter pool and possible HOA/MUD fees",
+        "New construction (2026) leaves almost no forced-appreciation/rehab margin for Fix&Flip or Fix&Rent",
+        "2 beds caps rent and resale demand vs 3/2 that dominates Houston SFR investor comps",
+        "77306 is a lower-tier NE Conroe submarket \u2014 softer appreciation and higher DOM on exit",
+        "DOM 0 / builder pricing means no distress; wholesale spread near zero at $133k list"
+      ],
+      "opportunity_notes": [
+        "Better fit as a turnkey Fix&Rent buy-and-hold: est. rent ~$1,300-1,500/mo, low maintenance on a new build",
+        "Confirm HOA/MUD taxes and whether attached \u2014 if detached SFR on its own lot, ARV upside toward $175k improves",
+        "Negotiate builder incentives (rate buydown/closing costs) rather than price to improve cash-on-cash",
+        "Not a flip/wholesale candidate at list; only pencils if acquired 10-15% under $133k"
+      ]
+    }
+  },
+  {
+    "id": 16290338,
+    "address": "19079 Style Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 196990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1311,
+    "year_built": 2026,
+    "price_per_sqft": 150,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17638715",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/19079-style-dr-conroe-tx-77306/17638715",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 19079 Style Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 230000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~1300sqft in Conroe 77306 selling $205k-225k (e.g. nearby Ladera/Artavia-adjacent builder tracts)"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Resale 2022-2024 3/2 ~1250-1400sqft in 77306 closing $200k-215k"
+        }
+      ],
+      "red_flags": [
+        "77306 is a slower, lower-price Conroe submarket \u2014 thin margin for Fix&Flip at $197k buy on new construction",
+        "New build (2026) means near-zero forced-appreciation/reno upside; ARV \u2248 list, so flip spread is minimal",
+        "DOM 0 / builder Active listing \u2014 price is retail, no distress; builder incentives (rate buydown) inflate perceived value not resale ARV",
+        "Small 1311 sqft lowers rent ceiling and buyer pool",
+        "Property-tax and any MUD/PID district in new Conroe developments can spike carrying costs"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-and-hold: est. rent ~$1,650-1,850/mo, marginal 1% rule at this basis \u2014 push builder for closing-cost credits to improve cashflow",
+        "Negotiate builder rate buydown or incentives instead of expecting equity spread",
+        "New construction = minimal maintenance/capex for first several years, low turnover risk for a rental",
+        "Conroe/77306 path-of-growth (Grand Parkway, Hwy 105 corridor) supports long-term appreciation hold",
+        "Not a viable Fix&Flip or Wholesale target at retail $196,990 \u2014 margins don't exist without a discounted/bulk builder deal"
+      ]
+    }
+  },
+  {
+    "id": 16290339,
+    "address": "3638 Duplet Ave",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 171990,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1535,
+    "year_built": 2026,
+    "price_per_sqft": 112,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17638683",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/3638-duplet-ave-conroe-tx-77306/17638683",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 3638 Duplet Ave, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 4/2.5 ~1,500 sqft in 77306 (Grand Central Park/Ladera-type communities) closing $180k-$205k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Resale 2022-2024 builds in Conroe 77306 trading ~$120-130/sqft"
+        }
+      ],
+      "red_flags": [
+        "Year built 2026 = brand-new build, essentially priced at retail ($112/sqft) so no flip spread and no rehab-forced-appreciation angle",
+        "77306 is a lower-tier Conroe zip with softer resale demand and higher DOM than 77304/77384",
+        "New-construction glut in Conroe means builder incentives compress your future resale/refi ARV",
+        "No equity at purchase \u2014 DOM 0, Active, likely list-to-builder pricing with limited negotiation"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/BRRRR-lite hold, not flip: new build = near-zero maintenance capex, strong tenant appeal on 4/2.5 layout",
+        "Estimated rent $1,700-$1,900/mo; at $172k basis that's ~1.0-1.1% rule \u2014 marginal but workable with builder rate buydown",
+        "Push builder for closing-cost credits or 2-1 rate buydown to improve early cash flow instead of chasing price cuts",
+        "Wholesale/flip is weak here \u2014 skip unless you can assign builder incentives; verify no MUD/PID tax surprise (77306 has high combined tax rates)"
+      ]
+    }
+  },
+  {
+    "id": 16290340,
+    "address": "7952 Bonaire St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 145900,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 840,
+    "year_built": 1940,
+    "price_per_sqft": 174,
+    "dom": 0,
+    "status": "Active",
+    "mls": "10119790",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/7952-bonaire-st-houston-tx-77028/10119790",
+    "zillow_url": null,
+    "agent": {
+      "name": "Marleni Mairena",
+      "brokerage": "Keller Williams Realty Southwest",
+      "phone": "8322622966"
+    },
+    "sms_message": "Hi Marleni, this is Vivek, local Investor. Interested in your listing at 7952 Bonaire St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 2-3/1 ~850-1000sqft in 77028 (Houston Gardens/Trinity Gardens) closing ~$175-195k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Updated 1940s-50s bungalows near Kashmere/Homestead Rd trading $190-220/sqft renovated"
+        }
+      ],
+      "red_flags": [
+        "1940 build: likely original galvanized/cast-iron plumbing, knob-and-tube wiring, pier-and-beam foundation movement common in NE Houston clay",
+        "840 sqft 2/1 is below FHA-buyer sweet spot \u2014 narrow resale pool unless expanded to 3/2",
+        "77028 is high-crime/lower-appreciation zip; appraisal and rent ceilings are sticky",
+        "List price $145,900 (~$174/sqft as-is) is aggressive for the area \u2014 thin margin before rehab",
+        "DOM 0/Active: unproven pricing, could sit or signal wholesaler/assignment"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent fits best: rehabbed 2/1 rents ~$1,150-1,350/mo; strong cash-on-cash if bought under ~$110-120k",
+        "Value-add by adding a bath and/or converting to 3/1 to widen buyer/renter pool",
+        "Section 8 demand strong in 77028 \u2014 stabilizes vacancy and supports rent floor",
+        "Target all-in (purchase+rehab) under ~$135k to hold 70% ARV on the $165-195k range",
+        "Wholesale angle only works if seller will take ~$95-110k \u2014 current list leaves no assignment spread"
+      ]
+    }
+  },
+  {
+    "id": 16290341,
+    "address": "7433 Springdale St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 90000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 940,
+    "year_built": 1960,
+    "price_per_sqft": 96,
+    "dom": 0,
+    "status": "Active",
+    "mls": "9649918",
+    "source": "HAR",
+    "scenario_id": 4,
+    "har_url": "https://www.har.com/homedetail/7433-springdale-st-houston-tx-77028/9649918",
+    "zillow_url": null,
+    "agent": {
+      "name": "Zelda Cain",
+      "brokerage": "A2Z Real Estate Consultants",
+      "phone": "281-813-6887"
+    },
+    "sms_message": "Hi Zelda, this is Vivek, local Investor. Interested in your listing at 7433 Springdale St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 150000,
+      "arv_high": 180000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 2-1/3-1 ~900-1000 sqft in 77028 (Houston Gardens/Trinity Gardens) trading ~$155k-$180k"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "1950s-60s bungalows post-rehab near Halls Bayou closing $160k-$175k"
+        }
+      ],
+      "red_flags": [
+        "1960 build \u2014 likely original cast-iron/galvanized plumbing, foundation movement, possible asbestos/lead",
+        "2 bed / 1 bath is functionally obsolete for resale; caps ARV and buyer pool",
+        "77028 is a low-value, higher-crime submarket \u2014 appraisal ceiling and slower retail exit",
+        "940 sqft is small; limited rent and resale upside",
+        "Halls Bayou/Greens Bayou proximity \u2014 verify flood zone and prior flooding (Harvey area)",
+        "DOM 0 / just listed \u2014 price not yet market-tested, could be aspirational"
+      ],
+      "opportunity_notes": [
+        "Convert to 3/2 by reconfiguring layout or small addition to lift ARV toward $180k+ and improve rentability",
+        "Fix&Rent play: post-rehab rents ~$1,350-$1,550/mo; solid cashflow if all-in stays under ~$135k",
+        "Wholesale angle: if seller motivated, assign at ~$80k-$85k to landlord/BRRRR buyers",
+        "Entry at $90k leaves margin only if rehab is cosmetic (~$35k-$45k); confirm scope before committing",
+        "Land/lot value in gentrifying NE Houston pockets provides downside floor"
+      ]
+    }
+  },
+  {
+    "id": 16290342,
+    "address": "26830 Rosy Shimmer Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 243990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1461,
+    "year_built": 2026,
+    "price_per_sqft": 167,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17448649",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/26830-rosy-shimmer-ln-katy-tx-77493/17448649",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 26830 Rosy Shimmer Ln, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 248000,
+      "arv_high": 268000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 3/2 ~1450 sqft in Katy 77493 (Sunterra/Cane Island area) closing $250k-$265k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Comparable 2025-2026 builders (LGI/Century/DR Horton) 1400-1550 sqft resales $245k-$270k"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build at MLS list price leaves near-zero equity spread; not a Fix&Flip/Fix&Rent candidate at $243,990",
+        "DOM 0 / Active \u2014 likely builder base price, no distress or motivated seller",
+        "77493 is heavy new-construction supply; ARV suppressed by builder inventory undercutting resales",
+        "MUD taxes + potential HOA in Katy master-planned communities raise carry costs and squeeze rent margins",
+        "No renovation upside on a new home \u2014 nothing to force appreciation on"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent math weak: est. rent $1,900-$2,150/mo vs ~$244k basis + high MUD tax = thin/negative cash flow",
+        "Only works as buy-hold appreciation play if bought at/below builder incentive pricing (ask for closing-cost credits, rate buydown)",
+        "Wholesale not viable \u2014 no assignable spread on a full-price new build",
+        "Better fit: negotiate builder incentives for a turnkey rental, or pass and target aged/distressed resales in 77493 for equity"
+      ]
+    }
+  },
+  {
+    "id": 16290343,
+    "address": "26872 Scarlet Willow Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 210000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1311,
+    "year_built": 2026,
+    "price_per_sqft": 160,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17450191",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/26831-scarlet-willow-dr-katy-tx-77493/17450191",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 26872 Scarlet Willow Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 3/2 ~1,300 sqft in 77493 (Sunterra/Katy master-planned) trading $210k-$235k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Comparable 2024-2026 builds ~$160-175/sqft in far-west Katy"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build \u2014 zero rehab upside for Fix&Flip; no forced-appreciation play",
+        "Purchase at $160/sqft leaves razor-thin spread vs $215k-$235k ARV; likely negative after 6-8% selling costs",
+        "MUD/high property taxes (~2.8-3.4%) and possible HOA in far-west Katy compress rent yield",
+        "77493 has heavy new-construction supply \u2014 builder inventory competes directly on resale and rent",
+        "DOM 0 / Active \u2014 unverified pricing; confirm it isn't a builder base price excluding lot premium/upgrades"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey buy-and-hold, NOT flip \u2014 no rehab needed, tenant-ready day one",
+        "Katy ISD + master-planned amenities drive strong SFR rental demand; est. rent $1,750-$1,950/mo for 3/2 ~1,311 sqft",
+        "At $210k, gross rent yield ~10-11% but net compressed by taxes/insurance/HOA \u2014 model DSCR carefully",
+        "Wholesale only viable if secured well under $200k; new-build margins too thin at ask",
+        "Verify true all-in cost (lot premium, upgrades, closing) before assuming $210k basis"
+      ]
+    }
+  },
+  {
+    "id": 16290344,
+    "address": "1920 Parkridge Cir",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 255000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1585,
+    "year_built": 1982,
+    "price_per_sqft": 161,
+    "dom": 0,
+    "status": "Active",
+    "mls": "54932754",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/1920-parkridge-cir-katy-tx-77493/54932754",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 1920 Parkridge Cir, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 300000,
+      "arv_high": 330000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "Katy 77493 1980s 3/2 ~1,600 sqft resales trading $185-205/sqft renovated"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Updated 3/2s near Parkridge/Katy Old Towne closing $300k-$325k in 2025-26"
+        }
+      ],
+      "red_flags": [
+        "1982 build likely needs updates: original HVAC, roof age, cast-iron/polybutylene plumbing risk",
+        "Possible Harris/Waller flood exposure \u2014 verify FEMA zone and pre-2000 flood history",
+        "DOM 0/Active \u2014 no price-drop signal yet; seller may be firm at $255k",
+        "No lot/reno detail given; confirm foundation (slab movement common in Katy clay soils)"
+      ],
+      "opportunity_notes": [
+        "Entry $161/sqft vs ~$190-205/sqft ARV leaves ~$45-75k spread before rehab \u2014 viable Fix&Flip if reno <$45k",
+        "Fix&Rent: Katy 77493 3/2 rents ~$1,950-2,150/mo; strong Katy ISD demand supports refinance",
+        "Wholesale: if secured $235-245k, assignable to flippers targeting $310k+ ARV",
+        "Katy ISD schools + established neighborhood = fast resale/lease-up; verify no HOA restrictions on rentals"
+      ]
+    }
+  },
+  {
+    "id": 16290345,
+    "address": "7147 Windwater Lagoon",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77036",
+    "price": 380000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 2471,
+    "year_built": 2007,
+    "price_per_sqft": 154,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3650548",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/7147-windwater-lagoon-houston-tx-77036/3650548",
+    "zillow_url": null,
+    "agent": {
+      "name": "Robert Goleman",
+      "brokerage": "Orchard Brokerage",
+      "phone": "7138823842"
+    },
+    "sms_message": "Hi Robert, this is Vivek, local Investor. Interested in your listing at 7147 Windwater Lagoon, Houston TX 77036. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 330000,
+      "arv_high": 375000,
+      "comps": [
+        {
+          "address": "Houston 77036",
+          "notes": "77036 (Sharpstown/Bellaire-adjacent) 2000s-built 2-story, 2,200-2,500 sqft resales trading ~$135-155/sqft"
+        },
+        {
+          "address": "Houston 77036",
+          "notes": "Recent 3/2-2.5 brick homes in nearby master-planned pockets closing $340k-$370k with updates"
+        }
+      ],
+      "red_flags": [
+        "List price $380k (~$154/sqft) is at/above ARV for 77036 \u2014 little to no fix&flip margin at ask",
+        "77036 is a lower-value, higher-density SW Houston zip; appraisal risk and softer buyer pool than the sqft implies",
+        "2,471 sqft on a 3/2 is bath-count light for the size \u2014 hurts resale vs 4-bed comps",
+        "2007 build may need roof/HVAC/water heater soon (15-19 yrs); verify no prior flood/Harvey history in 77036",
+        "DOM 0 / just-listed \u2014 no price-drop leverage yet"
+      ],
+      "opportunity_notes": [
+        "Better fit as Fix&Rent: large sqft rents well to multigenerational SW Houston tenants; target rent ~$2,400-2,800/mo",
+        "Only pursue flip if acquired well below list (~$300k-$315k) to leave room for $30-45k reno + margin",
+        "Add a conforming 4th bedroom/office from the oversized layout to lift ARV toward top of range",
+        "Wholesale angle: tie up under contract if seller is motivated, assign to a landlord buyer given strong rental fundamentals",
+        "Confirm HOA (master-planned/lagoon community) dues and flood zone before underwriting"
+      ]
+    }
+  },
+  {
+    "id": 16290346,
+    "address": "2601 Bevis St E",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008",
+    "price": 519000,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 2180,
+    "year_built": 2013,
+    "price_per_sqft": 238,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "12190964",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2601-bevis-st-e-houston-tx-77008/12190964",
+    "zillow_url": null,
+    "agent": {
+      "name": "Virginia Ledwell",
+      "brokerage": "Led Well Realty",
+      "phone": "832-402-8679"
+    },
+    "sms_message": "Hi Virginia, this is Vivek, local Investor. Interested in your listing at 2601 Bevis St E, Houston TX 77008. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290347,
+    "address": "3014 La Estancia Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77093",
+    "price": 210000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1590,
+    "year_built": 2006,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3749976",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/3014-la-estancia-ln-houston-tx-77093/3749976",
+    "zillow_url": null,
+    "agent": {
+      "name": "Stephanie Gonzalez",
+      "brokerage": "Keller Williams Houston Central",
+      "phone": "346-212-5894"
+    },
+    "sms_message": "Hi Stephanie, this is Vivek, local Investor. Interested in your listing at 3014 La Estancia Ln, Houston TX 77093. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 245000,
+      "comps": [
+        {
+          "address": "Houston 77093",
+          "notes": "Similar 1,500-1,700 sqft 4/2 builds (2004-2008) in 77093 trading ~$135-150/sqft renovated"
+        },
+        {
+          "address": "Houston 77093",
+          "notes": "Recent north-Houston/Aldine-area resales landing low-$200s to mid-$240s"
+        }
+      ],
+      "red_flags": [
+        "77093 is a soft, crime-sensitive submarket with slower appreciation and thinner buyer pool",
+        "At $210k list with ARV ~$230k, spread is too tight for a flip after ~6-8% selling + holding costs",
+        "No visible rehab/condition data (DOM 0) \u2014 verify roof, foundation, HVAC before assuming light rehab",
+        "Possible flood/drainage exposure in this north Houston area \u2014 pull FEMA/MUD and flood history"
+      ],
+      "opportunity_notes": [
+        "Better fit as Fix&Rent: 4/2 in this area rents ~$1,700-1,950/mo, supporting reasonable cash flow if bought below list",
+        "2006 build lowers rehab risk (likely cosmetic-only), good for a rent-ready BRRRR play",
+        "Wholesale angle: negotiate to ~$175-185k to leave margin for an investor buyer",
+        "Verify true condition and comp for post-2004 construction only \u2014 avoid mixing in 1960s-70s comps common to this zip"
+      ]
+    }
   }
 ]
