@@ -22012,5 +22012,516 @@
         "Confirm exact block \u2014 north of Elgin/near Emancipation trades higher than south pockets"
       ]
     }
+  },
+  {
+    "id": 16290368,
+    "address": "16594 Colleen Pl",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 165000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 900,
+    "year_built": 2022,
+    "price_per_sqft": 183,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16445153",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16594-colleen-pl-conroe-tx-77306/16445153",
+    "zillow_url": null,
+    "agent": {
+      "name": "Chris Lawrence",
+      "brokerage": "Trillionaire Realty",
+      "phone": "832-455-3550"
+    },
+    "sms_message": "Hi Chris, this is Vivek, local Investor. Interested in your listing at 16594 Colleen Pl, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Small new-build 3/2s (2020-2022) in 77306 E. Conroe trading ~$190-215k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "900-1,100 sqft homes off FM 3083/Loop 336 E closing ~$185-205k"
+        }
+      ],
+      "red_flags": [
+        "900 sqft for a 3/2 is unusually tight \u2014 verify sqft (possible manufactured/modular or listing error)",
+        "2022 build means little forced-appreciation/reno upside for Fix&Flip",
+        "77306 (East Conroe) is more rural \u2014 slower appreciation and thinner comp set",
+        "$183/sqft entry is already near-retail for the submarket \u2014 margin is thin",
+        "DOM 0 / Active: unproven pricing, no negotiation history yet"
+      ],
+      "opportunity_notes": [
+        "Better fit for Fix&Rent/turnkey buy-and-hold than Flip \u2014 2022 build means low capex/maintenance",
+        "New construction rents well; 3/2 in Conroe can fetch ~$1,500-1,750/mo, supports DSCR/cash-flow hold",
+        "Wholesale angle only works if seller takes ~$140-150k \u2014 need deeper discount given minimal reno spread",
+        "Conroe/Montgomery County growth corridor (SH-249, ISD demand) supports long-term hold thesis",
+        "Confirm land size, HOA, and whether it's stick-built vs. manufactured before committing \u2014 drives ARV and financeability"
+      ]
+    }
+  },
+  {
+    "id": 16290369,
+    "address": "17306 N Baron Kingsale Pl",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 184990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1029,
+    "year_built": 2026,
+    "price_per_sqft": 180,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17497512",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17306-baron-kingsale-pl-conroe-tx-77306/17497512",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Woodruff",
+      "brokerage": "D.R. Horton-Texas, LTD",
+      "phone": "832-532-9592"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 17306 N Baron Kingsale Pl, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 180000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~1,000-1,200 sqft in 77306 (Grangerland/Conroe NE) closing $185k-$205k, ~$175-185/sqft"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Recent 2024-2025 builder resales in area trading near or slightly above original list"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build \u2014 zero rehab/forced-appreciation upside, so no Fix&Flip or Fix&Rent value-add play",
+        "Tiny 1,029 sqft on likely small lot limits ARV ceiling and buyer pool",
+        "At ~$180/sqft you're paying retail builder pricing; no equity at purchase",
+        "77306/Grangerland is outer-Conroe \u2014 softer resale demand, longer DOM on exit, potential MUD taxes & high tax rate",
+        "DOM 0 / Active new listing \u2014 no negotiation history, builder unlikely to discount early"
+      ],
+      "opportunity_notes": [
+        "Best fit is buy-and-hold rental, not flip: est. rent ~$1,450-1,650/mo on a 3/2 new build, but $185k price yields thin ~0.8% rent-to-price \u2014 below Houston cashflow targets",
+        "Push builder for closing-cost credits / rate buydown rather than price to improve cash-on-cash",
+        "New build = low maintenance/capex and strong tenant appeal; viable turnkey rent if acquired 5-10% under list or with 2-1 buydown",
+        "Wholesale is not viable \u2014 no spread at retail builder pricing",
+        "Verify tax rate/MUD and HOA; high combined rate could push PITI above market rent and kill cashflow"
+      ]
+    }
+  },
+  {
+    "id": 16290370,
+    "address": "17439 Virginia City Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 160000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1216,
+    "year_built": 2019,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "Active",
+    "mls": "15284113",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17439-virginia-city-dr-conroe-tx-77306/15284113",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ryan Lisembee",
+      "brokerage": "eXp Realty LLC",
+      "phone": "832-226-7266"
+    },
+    "sms_message": "Hi Ryan, this is Vivek, local Investor. Interested in your listing at 17439 Virginia City Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 230000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Similar 3/2 ~1,200-1,400 sqft new-build (2018-2020) resales in 77306 trading ~$165-$185/sqft"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Recent Conroe/Grangerland closes on comparable single-story slab homes: ~$210k-$225k"
+        }
+      ],
+      "red_flags": [
+        "Only 1,216 sqft on a 3/2 limits ARV ceiling; smaller footprint caps rehab upside",
+        "2019 build means little cosmetic-rehab margin \u2014 likely near-retail already, thin fix&flip spread",
+        "77306 (Grangerland/east Conroe) is a softer, more rural submarket with slower appreciation and higher DOM than west Conroe/Woodlands",
+        "DOM 0 / just-listed at $160k on a 2019 home may signal it moves fast or has a hidden condition/foundation/flood issue \u2014 verify inspection & MUD/tax rate",
+        "High Montgomery County MUD + tax burden and possible flood-zone exposure near Caney Creek can dent rent/resale"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent candidate: newer build = low deferred maintenance/capex; likely rents ~$1,650-$1,850/mo supporting solid cash flow at $160k basis",
+        "Light-touch value-add (paint, LVP, fixtures, landscaping) could lift to $205k-$215k ARV for a modest flip or refi-out (BRRRR)",
+        "Below likely ARV \u2014 ~$45k-$65k gross spread; validate ARV with 2024-2025 closed comps within 1 mi before committing",
+        "New-construction subdivision means clean comps and financeable condition \u2014 good for a quick wholesale to a landlord buyer at $170k-$180k assignment"
+      ]
+    }
+  },
+  {
+    "id": 16290371,
+    "address": "1875 County Road 3545, Cleveland, TX 77327",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 190000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 0,
+    "year_built": 2016,
+    "price_per_sqft": null,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "13338794",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/1875-county-road-3545-cleveland-tx-77327/13338794",
+    "zillow_url": null,
+    "agent": {
+      "name": "Laura Lujano",
+      "brokerage": "Southern Star Realty",
+      "phone": "8329300340"
+    },
+    "sms_message": "Hi Laura, this is Vivek, local Investor. Interested in your listing at 1875 County Road 3545, Cleveland, TX 77327, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 210000,
+      "arv_high": 245000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "2016+ 3/2 builds on acreage-adjacent CR lots off US-59/Cleveland trading ~$200k-$240k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Similar 77327 new-ish stick-builds ~$120-$140/sqft"
+        }
+      ],
+      "red_flags": [
+        "sqft listed as 0 \u2014 must confirm GLA before any offer; kills ARV precision",
+        "Cleveland 77327 is exurban/rural \u2014 thin comp set, slow DOM, flood/septic/well risk on County Road parcels",
+        "DOM 0 & status For Sale \u2014 unverified pricing, may already reflect retail",
+        "2016 build at $190k leaves little spread if it's turnkey \u2014 flip margin questionable"
+      ],
+      "opportunity_notes": [
+        "2016 build = low deferred maintenance; strong Fix&Rent candidate \u2014 rents ~$1,650-$1,900 if 3/2 ~1,400-1,600 sqft",
+        "If on acreage, land value + Houston-metro exurban growth (I-69 corridor) supports appreciation hold",
+        "Wholesale angle viable if seller motivated \u2014 light rehab means assignable to rental buyers",
+        "Verify lot size, septic/well, flood zone; if 1,600+ sqft ARV pushes toward $245k for modest cosmetic spread"
+      ]
+    }
+  },
+  {
+    "id": 16290372,
+    "address": "2480 Bluebird Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 220000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1525,
+    "year_built": 2020,
+    "price_per_sqft": 144,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3714342",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/2480-bluebird-dr-katy-tx-77493/3714342",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 2480 Bluebird Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290373,
+    "address": "26810 Rosy Shimmer Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 243990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1461,
+    "year_built": 2026,
+    "price_per_sqft": 167,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17448644",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/26810-rosy-shimmer-ln-katy-tx-77493/17448644",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 26810 Rosy Shimmer Ln, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 240000,
+      "arv_high": 260000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 3/2 ~1,400-1,500 sqft in Katy 77493 (Sunterra/Elyson/Anserra) closing $235k-$255k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Resale 1-2 yr old builder homes 77493 ~$160-175/sqft"
+        }
+      ],
+      "red_flags": [
+        "New construction (2026) \u2014 priced at/near market, ~$167/sqft leaves no equity spread for flip or wholesale",
+        "77493 carries high MUD + tax rate (~3.2-3.5%), squeezing rental cash flow",
+        "DOM 0 / builder inventory \u2014 heavy new-supply competition in Elyson/Sunterra depresses appreciation and resale ARV near term",
+        "Likely HOA + builder premium; no value-add/rehab upside on a brand-new home",
+        "Comps thin for this specific plan \u2014 builder base price may not reflect incentives/rate buydowns already baked in"
+      ],
+      "opportunity_notes": [
+        "Fits Fix&Rent only as a turnkey buy-and-hold: rent ~$1,900-2,150/mo for 3/2 ~1,461 sqft in Katy, but high taxes make DSCR tight at list",
+        "Negotiate builder incentives (rate buydown, closing costs, upgrades) rather than price \u2014 that's where real margin is on new builds",
+        "Katy ISD schools + continued Grand Parkway growth support long-term tenant demand and exit liquidity",
+        "Not a Fix&Flip/Wholesale candidate \u2014 no distressed equity; redirect to aged resale or estate/probate stock in 77493/77449 for value-add"
+      ]
+    }
+  },
+  {
+    "id": 16290374,
+    "address": "6212 Tuckerman Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 250000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1569,
+    "year_built": 1977,
+    "price_per_sqft": 159,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15432247",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/6212-tuckerman-ln-katy-tx-77449/15432247",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 6212 Tuckerman Ln, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 275000,
+      "arv_high": 300000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "1500-1650 sqft 3/2 remodels in 77449 (Bear Creek/Williamsburg area) selling ~$175-190/sqft = $270-305k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Recent updated 1970s-80s single-story sales near Barker Cypress/Clay Rd closing $265-295k"
+        }
+      ],
+      "red_flags": [
+        "1977 build: likely original cast-iron/galvanized plumbing, aluminum wiring risk, and dated electrical panel",
+        "77449 is partly in floodplain/near Addicks-Barker reservoir pool zone \u2014 verify flood zone and Harvey history before offer",
+        "List at $250k on 0 DOM with no reno leaves thin spread; confirm actual condition, roof, HVAC, and foundation (slab-on-clay movement common)",
+        "Katy ISD premium may already be priced in; sqft-based ARV can overstate value for functionally dated layouts"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: strong rental demand in Katy ISD; 3/2 ~1569 sqft rents ~$1,850-2,100/mo \u2014 solid buy-and-hold if acquired below $240k",
+        "Fix&Flip: target ~$40-55k reno (kitchen, baths, LVP, paint, roof/HVAC as needed) for ~$285k resale; needs purchase near $225-235k for 70% ARV math",
+        "Single-story 1977 slab on standard lot is a straightforward, contractor-friendly rehab with predictable scope",
+        "Wholesale angle: if seller motivated, assign at $210-225k to investors given tight retail flip margins at current list"
+      ]
+    }
+  },
+  {
+    "id": 16290375,
+    "address": "12323 Brandywyne Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 580000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 2242,
+    "year_built": 1968,
+    "price_per_sqft": 259,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10992156",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/12323-brandywyne-dr-houston-tx-77077/10992156",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lorena Cousin",
+      "brokerage": "Surge Realty",
+      "phone": "713-874-4060"
+    },
+    "sms_message": "Hi Lorena, this is Vivek, local Investor. Interested in your listing at 12323 Brandywyne Dr, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 525000,
+      "arv_high": 620000,
+      "comps": [
+        {
+          "address": "Houston 77077",
+          "notes": "Renovated 4/2242sf 1968 ranch homes in 77077 (Ashford/Lakes area) trading ~$230-275/sf = $515k-$615k"
+        },
+        {
+          "address": "Houston 77077",
+          "notes": "Nearby Energy Corridor updated homes 2,000-2,500sf closing $500k-$610k"
+        }
+      ],
+      "red_flags": [
+        "77077 Brandywyne sits in the Addicks reservoir/Buffalo Bayou watershed \u2014 high Harvey-era flood history; pull flood claims, elevation cert, and reservoir-pool status before offering",
+        "$580k list at $259/sf is priced like a renovated home despite 1968 build \u2014 verify condition; if dated, ARV won't support the price for a flip",
+        "1968 mechanicals likely original: cast-iron/galvanized plumbing, aluminum wiring risk, slab foundation movement common in west Houston clay",
+        "2.5 stories/1968 layout (4/3.5) may be chopped-up \u2014 functional-obsolescence risk vs modern open comps",
+        "Coming Soon/DOM 0 \u2014 no price discovery yet; seller likely anchored high"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: 77077/Energy Corridor rents strong ($3.2k-$3.8k for updated 4bd); if acquired well below list post-inspection, cash-flow + appreciation play",
+        "Fix&Flip only works if bought in low-$400s with $60-90k reno budget to hit $580-620k ARV \u2014 needs meaningful discount from list",
+        "Wholesale angle: if seller is motivated (estate/dated home mispriced), tie up and assign to a flipper given strong Energy Corridor buyer demand",
+        "Confirm non-flooded / elevated status \u2014 a clean, never-flooded home here commands a premium and de-risks the whole deal",
+        "Target buyer pool: Energy Corridor professionals; good schools/commute support resale velocity if renovated tastefully"
+      ]
+    }
+  },
+  {
+    "id": 16290376,
+    "address": "16131 White Star Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77062",
+    "price": 265000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1516,
+    "year_built": 1967,
+    "price_per_sqft": 175,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3326023",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/16131-white-star-dr-houston-tx-77062/3326023",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lauren Harper-Dunn",
+      "brokerage": "Griffin Realty & Associates",
+      "phone": "4092561955"
+    },
+    "sms_message": "Hi Lauren, this is Vivek, local Investor. Interested in your listing at 16131 White Star Dr, Houston TX 77062. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 300000,
+      "arv_high": 340000,
+      "comps": [
+        {
+          "address": "Houston 77062",
+          "notes": "77062 3/2 ~1500sf renovated resales trading ~$200-225/sf in Clear Lake City / Camino South"
+        },
+        {
+          "address": "Houston 77062",
+          "notes": "Comparable 1960s Middlebrook/Camino South remodels closing $310-335k with updated kitchens & baths"
+        }
+      ],
+      "red_flags": [
+        "1967 build \u2014 likely original cast-iron/galvanized plumbing, aluminum wiring risk, and CLCWA sewer; budget for repipe/panel",
+        "Slab-on-grade 1960s home in Clear Lake \u2014 check for foundation movement and 2017 Harvey flood history (parts of 77062 flooded)",
+        "$265k list at 0 DOM 'Coming Soon' leaves thin spread if full gut needed ($60-80k reno) \u2014 margin tight for flip",
+        "Older single-pane windows, likely original HVAC/roof \u2014 verify ages"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent play: Clear Lake City rents ~$1,950-2,200/mo for updated 3/2, steady NASA/Bay Area tenant demand",
+        "Good schools (CCISD) and proximity to Johnson Space Center support resale velocity and rental stability",
+        "1516 sf with 3/2 and likely large 1960s lot \u2014 room to add value with cosmetic remodel vs full gut",
+        "If acquired near/below list with modest ~$45-55k cosmetic reno, supports ~$310k+ exit; verify non-flood/elevated status to widen buyer pool"
+      ]
+    }
+  },
+  {
+    "id": 16290377,
+    "address": "2003 Richvale Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77062",
+    "price": 275000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1759,
+    "year_built": 1965,
+    "price_per_sqft": 156,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3299792",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2003-richvale-ln-houston-tx-77062/3299792",
+    "zillow_url": null,
+    "agent": {
+      "name": "Gina Holstien",
+      "brokerage": "Holstien Properties, LLC",
+      "phone": "281-841-4037"
+    },
+    "sms_message": "Hi Gina, this is Vivek, local Investor. Interested in your listing at 2003 Richvale Ln, Houston TX 77062. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 330000,
+      "arv_high": 365000,
+      "comps": [
+        {
+          "address": "Houston 77062",
+          "notes": "Renovated 3/2 ~1700-1800sf in Clear Lake City (77062) trading ~$185-205/sf, i.e. $325k-$360k"
+        },
+        {
+          "address": "Houston 77062",
+          "notes": "Comparable CCISD single-story 1960s homes post-reno closing $335k-$355k"
+        }
+      ],
+      "red_flags": [
+        "1965 build: likely cast-iron/galvanized plumbing, original panel, and single-pane windows \u2014 budget full systems update",
+        "Slab-on-grade on Houston clay \u2014 verify foundation (past leveling / cracks) before committing",
+        "77062 sits near Clear Lake/Horsepen Bayou \u2014 confirm flood zone (X vs AE) and Harvey history; flooding kills ARV and insurability",
+        "Coming Soon with 0 DOM \u2014 price unproven; sellers may expect multiple offers at/above ask, compressing margin",
+        "Interior condition unknown \u2014 at $156/sf list, reno scope could be light cosmetic or full gut; get inside before locking price"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent play: CCISD schools drive stable tenant demand; renovated 3/2 rents ~$2,000-$2,300/mo in Clear Lake",
+        "Fix&Flip spread workable if all-in (purchase + ~$45k-$60k reno + closing) stays under ~$310k against $330k-$365k ARV",
+        "Try to lock before it hits MLS \u2014 negotiate off-market to avoid Coming Soon bidding war",
+        "Single-story 1759sf on a mature-neighborhood lot is the sweet spot for both flip buyers and long-term renters",
+        "If flood zone X and foundation is clean, this is a clean base-hit deal rather than a home run \u2014 size reno to comps, don't over-improve"
+      ]
+    }
   }
 ]
