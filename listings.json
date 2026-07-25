@@ -22523,5 +22523,381 @@
         "If flood zone X and foundation is clean, this is a clean base-hit deal rather than a home run \u2014 size reno to comps, don't over-improve"
       ]
     }
+  },
+  {
+    "id": 16290378,
+    "address": "16431 Valdez Way",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 189900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1302,
+    "year_built": 2005,
+    "price_per_sqft": 146,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5251669",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16431-valdez-way-conroe-tx-77306/5251669",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 16431 Valdez Way, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 230000,
+      "arv_high": 255000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Grangerland/Conroe 77306 3/2 ~1,300sf 2000s builds trading ~$175-200/sf renovated"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Similar Valdez Way & Foxwood-area resales closing $225k-250k updated"
+        }
+      ],
+      "red_flags": [
+        "77306 (east Conroe/Grangerland) is a softer, rural-fringe submarket \u2014 slower resale velocity and lower $/sf ceiling than west Conroe/Montgomery ISD",
+        "Only ~$40-65k spread between $189,900 ask and ARV limits flip margin; verify true condition before assuming rehab is light",
+        "Possible septic/well and no city water; MUD/well maintenance and older 2005 systems (roof, HVAC, water heater near end of life)",
+        "Active with 0 DOM at $146/sf \u2014 if priced near market for its condition, little forced-appreciation room"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent fit: 3/2 1,302sf 2005 build rents ~$1,650-1,850/mo in 77306; likely cash-flows at this basis",
+        "Post-2000 construction means lighter rehab scope (no foundation/galvanized/knob-tube) \u2014 cosmetic refresh could hit ARV cheaply",
+        "Wholesale angle only works with a deeper discount \u2014 target sub-$165k to leave assignment + investor margin",
+        "Run comps tight to Valdez Way / same subdivision; 77306 values vary block-to-block, don't pull from west Conroe"
+      ]
+    }
+  },
+  {
+    "id": 16290379,
+    "address": "1826 Lake Glen Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77304",
+    "price": 193000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1647,
+    "year_built": 2022,
+    "price_per_sqft": 117,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5248316",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/1826-lake-glen-dr-conroe-tx-77304/5248316",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kathleen Sexton",
+      "brokerage": "Keller Williams Realty The Woodlands",
+      "phone": "8326540065"
+    },
+    "sms_message": "Hi Kathleen, this is Vivek, local Investor. Interested in your listing at 1826 Lake Glen Dr, Conroe TX 77304. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 210000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Conroe 77304",
+          "notes": "Similar 2020-2022 build 3/2.5 ~1,600 sqft in 77304 (Water Crest/Ladera-type communities) trading ~$215-230k"
+        },
+        {
+          "address": "Conroe 77304",
+          "notes": "Recent 77304 resales pricing ~$130-142/sqft for newer stock"
+        }
+      ],
+      "red_flags": [
+        "DOM 0 / just listed \u2014 no price-drop leverage yet and limited comp history for the subdivision",
+        "2022 build at $117/sqft is near retail; thin spread once closing/holding/agent costs are added \u2014 weak flip margin",
+        "Likely HOA + MUD district taxes in 77304 master-planned communities compress rent cash flow",
+        "Newer home = minimal forced-appreciation upside; little rehab value to add",
+        "Verify no active builder inventory nearby undercutting resale ARV"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey hold: 2022 build means near-zero deferred maintenance and low capex reserves",
+        "Conroe/77304 near Lake Conroe & I-45 corridor has strong rental demand and population growth",
+        "If negotiable below ~$185k, cosmetic-only refresh could yield a light Fix&Flip or quick wholesale to a landlord",
+        "Target rent ~$1,750-1,950/mo; check 1% rule and MUD tax rate before committing",
+        "Wholesale angle: assignable to buy-and-hold investors seeking new construction with tenant-ready condition"
+      ]
+    }
+  },
+  {
+    "id": 16290380,
+    "address": "19004 Regal Oaks Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 174500,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 2022,
+    "price_per_sqft": 130,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17702510",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/19004-regal-oaks-dr-conroe-tx-77306/17702510",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 19004 Regal Oaks Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "1300-1400 sqft 2021-2023 builds in 77306 trading ~$135-150/sqft ($185k-205k)"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Similar new 3/2s in east Conroe/Grangerland subdivisions sold $180k-200k last 90 days"
+        }
+      ],
+      "red_flags": [
+        "DOM 0 / Active = priced at or near market, little negotiation room for a discount entry",
+        "2022 build = essentially turnkey, so no forced-appreciation/rehab margin for a Fix&Flip",
+        "77306 (east Conroe/Grangerland) is a softer, lower-liquidity submarket with longer rental DOM",
+        "High Montgomery County + likely MUD tax burden (~2.5-3%) compresses rental cash flow",
+        "Possible flood/drainage exposure in east Conroe \u2014 verify FEMA zone and MUD/flood status",
+        "New subdivision comps can be builder-inflated; resale values may lag original sale prices"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent as turnkey buy-and-hold \u2014 no rehab capex, low near-term maintenance on a 2022 build",
+        "Entry ~$130/sqft is at/below replacement cost, giving equity cushion vs. new-build retail",
+        "Estimated market rent ~$1,550-1,700/mo; ~1% rule is marginal, run DSCR carefully with tax/insurance",
+        "Wholesale angle weak at this price unless negotiated 10-15% under; better as a direct hold",
+        "Verify actual property taxes and any MUD/PID assessments before underwriting cash flow"
+      ]
+    }
+  },
+  {
+    "id": 16290381,
+    "address": "2901 County Road 3525",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 180000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 0,
+    "year_built": 2017,
+    "price_per_sqft": null,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "13337694",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/2901-county-road-3525-cleveland-tx-77327/13337694",
+    "zillow_url": null,
+    "agent": {
+      "name": ".",
+      "brokerage": "Home Realty",
+      "phone": "0530-222-1234"
+    },
+    "sms_message": "Hi ., this is Vivek, local Investor. Interested in your listing at 2901 County Road 3525, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Cleveland 77327 3/2 ~1,400-1,600 sqft newer builds (2015-2019) sold $190k-$220k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Rural CR-3525/Plum Grove area new-const 3/2 on acreage $200k-$230k"
+        }
+      ],
+      "red_flags": [
+        "sqft listed as 0 \u2014 cannot compute $/sqft or verify size; must confirm before offer",
+        "County Road/rural parcel \u2014 likely well & septic (not city water/sewer); inspect condition",
+        "77327/Plum Grove is flood- and drainage-prone \u2014 pull FEMA flood zone & elevation",
+        "DOM 0 and no lot size given \u2014 verify acreage, deed restrictions, MUD/tax rate (Liberty Co. can run high)",
+        "2017 build but low price for area suggests possible condition, title, or manufactured-home classification issue"
+      ],
+      "opportunity_notes": [
+        "Newer 2017 build = low rehab for Fix&Rent; light cosmetic turn likely under $10k-$15k",
+        "Rent comps in Cleveland/Plum Grove 3/2 ~$1,500-$1,800/mo \u2014 check DSCR at $180k basis",
+        "If on acreage, land value adds upside and rural-development/USDA buyer pool for Fix&Flip exit",
+        "Wholesale angle: if condition/size checks out, assignment margin exists at $180k vs $195k-$225k ARV",
+        "Fast-growing exurb along US-59/I-69 corridor \u2014 appreciation tailwind for buy-and-hold"
+      ]
+    }
+  },
+  {
+    "id": 16290382,
+    "address": "1631 Ridgebriar Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77014",
+    "price": 212999,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1594,
+    "year_built": 1993,
+    "price_per_sqft": 134,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "8682892",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1631-ridgebriar-dr-houston-tx-77014/8682892",
+    "zillow_url": null,
+    "agent": {
+      "name": "Peggy Lui Dancer",
+      "brokerage": "The Listing Pros Team",
+      "phone": "8329048018"
+    },
+    "sms_message": "Hi Peggy, this is Vivek, local Investor. Interested in your listing at 1631 Ridgebriar Dr, Houston TX 77014. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 230000,
+      "arv_high": 260000,
+      "comps": [
+        {
+          "address": "Houston 77014",
+          "notes": "Updated 3/2 ~1,600 sqft in Northgate Forest/77014 area: $235k-$255k"
+        },
+        {
+          "address": "Houston 77014",
+          "notes": "Renovated early-90s SFR near Greens Rd & I-45: ~$150-160/sqft"
+        }
+      ],
+      "red_flags": [
+        "77014 (Greenspoint/North Houston) is a soft, high-crime submarket with weak rent-to-price and slow appreciation",
+        "1993 build likely has original systems (roof, HVAC, cast-iron/PEX plumbing, dated kitchen/baths) \u2014 verify rehab scope",
+        "Coming Soon at $212,999 leaves thin flip margin if ARV tops out near $250k after ~$25-35k rehab and closing costs",
+        "North Houston flood/drainage exposure \u2014 check FEMA flood zone and prior flooding (Harvey)",
+        "Possible aging clay/foundation movement common in Houston slab homes of this era \u2014 inspect for cracks/settling"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent candidate: likely rents $1,650-$1,850/mo, supporting a ~1% rule play at this price point",
+        "Close to I-45, Beltway 8, and Bush IAX \u2014 steady blue-collar tenant demand",
+        "Solid 1,594 sqft 3/2 layout with light cosmetic rehab (paint, flooring, kitchen refresh) can hit ARV quickly",
+        "Wholesale angle: if acquired 15-20% under at ~$175-185k, assignable to a landlord buyer given rent numbers",
+        "Coming Soon status lets Vivek pre-position an offer before MLS competition heats up"
+      ]
+    }
+  },
+  {
+    "id": 16290383,
+    "address": "18707 Agua Vista Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "price": 415000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2435,
+    "year_built": 2006,
+    "price_per_sqft": 170,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11773665",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/18707-agua-vista-dr-houston-tx-77084/11773665",
+    "zillow_url": null,
+    "agent": {
+      "name": "David Smith",
+      "brokerage": "Compass RE Texas, LLC - Memorial",
+      "phone": "2817323090"
+    },
+    "sms_message": "Hi David, this is Vivek, local Investor. Interested in your listing at 18707 Agua Vista Dr, Houston TX 77084. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 385000,
+      "arv_high": 430000,
+      "comps": [
+        {
+          "address": "Houston 77084",
+          "notes": "Copperfield/Bear Creek 4/2.5 ~2,400sf 2004-2008 builds trading $155-175/sf"
+        },
+        {
+          "address": "Houston 77084",
+          "notes": "77084 updated 2000s two-story recent solds $380k-$425k"
+        }
+      ],
+      "red_flags": [
+        "77084 west of Addicks/Bear Creek \u2014 verify FEMA flood zone & Harvey history; parts of this ZIP flooded 2017",
+        "List $415k (~$170/sf) is at/above ARV ceiling \u2014 thin-to-no margin for Fix&Rent or Flip",
+        "Coming Soon/DOM 0 \u2014 no price discovery yet, likely priced to retail not investor",
+        "Only 2.5 baths on a 4-bed 2,435sf \u2014 check if second-story secondary baths dated",
+        "2006 build \u2014 original HVAC/roof/water heater at end of life"
+      ],
+      "opportunity_notes": [
+        "Wholesale/Flip math doesn't pencle at $415k; target contract price <$330k to leave rehab+margin",
+        "Fix&Rent: 2,400sf 4/2.5 in Katy-adjacent 77084 rents ~$2,300-2,600/mo \u2014 run 1% rule, likely fails at list",
+        "Best angle: if it sits past Coming Soon and drops, or seller flexible, negotiate on flood-disclosure risk",
+        "Solid rental submarket (Katy ISD portions, commuter access I-10/Hwy 6) supports long-term Fix&Rent if acquired right"
+      ]
+    }
+  },
+  {
+    "id": 16290384,
+    "address": "4010 Elser St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77009",
+    "price": 347500,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1636,
+    "year_built": 2022,
+    "price_per_sqft": 212,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "15837365",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4010-elser-st-houston-tx-77009/15837365",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sedric Hudson",
+      "brokerage": "Redfin Corporation",
+      "phone": "2815297990"
+    },
+    "sms_message": "Hi Sedric, this is Vivek, local Investor. Interested in your listing at 4010 Elser St, Houston TX 77009. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 335000,
+      "arv_high": 375000,
+      "comps": [
+        {
+          "address": "Houston 77009",
+          "notes": "77009 new-build 3/2.5 ~1,600 sqft trading $205-230/sqft ($330K-$375K)"
+        },
+        {
+          "address": "Houston 77009",
+          "notes": "Near Northside/Lindale Park 2021-2023 freestanding builds ~$340K-$365K"
+        }
+      ],
+      "red_flags": [
+        "List price $212/sqft leaves little spread on a 2022 build \u2014 near retail, thin margin for Fix&Flip",
+        "3-year-old home needs no rehab, so no forced-appreciation value-add for Fix&Flip/Wholesale",
+        "Coming Soon/DOM 0 \u2014 no price-drop leverage yet, likely priced to market",
+        "77009 has micro-pocket variance (freeway/industrial proximity, flood-adjacent blocks near White Oak/Little White Oak Bayou) \u2014 verify exact block and flood zone",
+        "2.5 baths + likely 2-story narrow-lot build; confirm lot size/parking, common in dense infill"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/buy-hold: turnkey 2022 build, low maintenance, strong 77009 rental demand near Downtown/Heights; est. rent ~$2,300-$2,600/mo",
+        "Near Northside is a gentrifying path-of-progress corridor (Metro rail, Hardy Yards, Downtown proximity) \u2014 long-term appreciation play",
+        "No rehab capex needed \u2014 deploy quickly as a rental or light-lipstick resale",
+        "Negotiate below ask before official listing; target sub-$330K to open flip/wholesale margin",
+        "Wholesale angle weak at this price unless seller motivation emerges \u2014 monitor for post-launch price cut"
+      ]
+    }
   }
 ]
