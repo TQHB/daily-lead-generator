@@ -23766,5 +23766,164 @@
         "Coming Soon status \u2014 try to lock it pre-MLS-exposure before competing investor offers hit"
       ]
     }
+  },
+  {
+    "id": 16290402,
+    "address": "412 S San Jacinto St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 65000,
+    "beds": 0,
+    "baths": 0,
+    "sqft": 576,
+    "year_built": 1950,
+    "price_per_sqft": 113,
+    "dom": 0,
+    "status": "Active",
+    "mls": "10456017",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/412-s-san-jacinto-st-conroe-tx-77301/10456017",
+    "zillow_url": null,
+    "agent": {
+      "name": "Stacy Gonzalez",
+      "brokerage": "Lion Drive Realty",
+      "phone": "281-691-2522"
+    },
+    "sms_message": "Hi Stacy, this is Vivek, local Investor. Interested in your listing at 412 S San Jacinto St, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 135000,
+      "arv_high": 170000,
+      "comps": [
+        {
+          "address": "Conroe 77301",
+          "notes": "Renovated 2/1 ~700sqft near downtown Conroe 77301 trading $150-175/sqft"
+        },
+        {
+          "address": "Conroe 77301",
+          "notes": "Small updated cottages on similar lots 77301 closing $140k-$165k"
+        }
+      ],
+      "red_flags": [
+        "576sqft with 0bd/0ba listed \u2014 likely data gap, teardown, or non-conforming/uninhabitable structure",
+        "Built 1950 \u2014 expect full systems overhaul (foundation, electrical, plumbing, roof) and possible asbestos/lead",
+        "Tiny footprint caps resale; value may be land-driven, not structure",
+        "77301 is a mixed/lower-value pocket of Conroe \u2014 verify block-by-block, flood zone, and any code violations/liens",
+        "DOM 0 / just listed \u2014 no price-drop leverage yet"
+      ],
+      "opportunity_notes": [
+        "$65k entry leaves room even after $40-60k rehab if ARV holds ~$150k",
+        "Downtown Conroe revitalization + Montgomery County growth supports appreciation",
+        "Lot may support expansion/ADU or full scrape-and-rebuild for higher exit",
+        "Strong Fix&Rent play \u2014 small renovated homes rent well near downtown Conroe ($1,200-1,500/mo)",
+        "Confirm true bed/bath count and habitability; if 2/1 it materially improves flip and rental math"
+      ]
+    }
+  },
+  {
+    "id": 16290403,
+    "address": "16495 Taurus Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 145000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1568,
+    "year_built": 2001,
+    "price_per_sqft": 92,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11565866",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16495-taurus-ct-conroe-tx-77306/11565866",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sharon Strickland",
+      "brokerage": "Advantage Property Mgmt DBA JBB Enterprises",
+      "phone": "281-908-4193"
+    },
+    "sms_message": "Hi Sharon, this is Vivek, local Investor. Interested in your listing at 16495 Taurus Ct, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 235000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Similar 3/2 ~1550sqft 2000-2003 builds in 77306 resell $205k-$235k renovated"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Conroe/Grangerland resales ~$135-$150/sqft post-reno"
+        }
+      ],
+      "red_flags": [
+        "$145k list well under ARV suggests deferred maintenance/condition issues \u2014 inspect foundation, roof, HVAC (2001 systems likely EOL)",
+        "77306 has areas with septic/well and possible flood/drainage concerns \u2014 verify sewer, MUD, and FEMA flood zone",
+        "Coming Soon / DOM 0 means limited data and likely competing cash offers \u2014 move fast but confirm actual condition",
+        "Slab-on-grade 2001 build in Montgomery County \u2014 check for foundation movement/cracks common to the era/soil"
+      ],
+      "opportunity_notes": [
+        "Strong Fix&Rent: buy $145k + ~$25-35k reno vs ~$220k ARV; Conroe rents ~$1,650-$1,850/mo for 3/2 support solid DSCR",
+        "Fix&Flip spread ~$60-75k gross before costs if reno stays modest \u2014 viable if bought at or below list",
+        "Growing Conroe submarket with I-45/Grand Parkway demand tailwind supports both resale and rental exit",
+        "Wholesale angle: if condition is rough, assignable to rehabbers given the below-ARV basis \u2014 lock contract before public MLS launch"
+      ]
+    }
+  },
+  {
+    "id": 16290404,
+    "address": "5974 Mercer St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 189990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1411,
+    "year_built": 2026,
+    "price_per_sqft": 135,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17640958",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/5974-mercer-st-conroe-tx-77303/17640958",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Marti Realty Group",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 5974 Mercer St, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 3/2 ~1,400sqft in Conroe 77303 (e.g. Grand Central Park/Ladera builder tracts) closing $195k\u2013$210k"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Resale 2023\u20132025 3/2 ~1,350\u20131,500sqft near Mercer/N Conroe trading $190k\u2013$205k ($135\u2013$145/sqft)"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build at DOM 0 \u2014 near-zero equity spread, list likely \u2248 ARV, no room for Fix&Flip",
+        "No renovation upside; new construction means no forced appreciation for Fix&Rent BRRRR",
+        "77303 is far-north Conroe, weaker rent demand and slower resale vs. south Conroe/Woodlands corridor",
+        "Likely builder tract with ongoing new supply competing on price and depressing appreciation",
+        "Wholesale impossible \u2014 no distressed/below-market basis on a new MLS active listing"
+      ],
+      "opportunity_notes": [
+        "Best fit is buy-and-hold rent: est. rent ~$1,550\u2013$1,700/mo, ~0.85% rent-to-price, thin but workable cash flow",
+        "New build = low CapEx/maintenance for 5\u201310yrs, builder warranty, attractive to Fix&Rent turnkey hold",
+        "Push builder for closing-cost credits/rate buydown to improve entry basis and DSCR",
+        "Only pursue if acquired at/below $180k with concessions; otherwise pass \u2014 no flip or wholesale margin"
+      ]
+    }
   }
 ]
