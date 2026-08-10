@@ -27159,5 +27159,203 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290503,
+    "address": "9903 Opal Stone Way, Conroe, TX 77306",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 172900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1000,
+    "year_built": 2022,
+    "price_per_sqft": 173,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "16445291",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/9903-opal-stone-way-conroe-tx-77306/16445291",
+    "zillow_url": null,
+    "agent": {
+      "name": "Saher Said",
+      "brokerage": "MODUS Real Estate",
+      "phone": "832-803-8887"
+    },
+    "sms_message": "Hi Saher, this is Vivek, local Investor. Interested in your listing at 9903 Opal Stone Way, Conroe, TX 77306, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290504,
+    "address": "16474 N Emerson Cir, Conroe, TX 77306",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 149000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1536,
+    "year_built": 2001,
+    "price_per_sqft": 97,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5234771",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16474-n-emerson-cir-conroe-tx-77306/5234771",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kristi Delafuente",
+      "brokerage": "JNK Property Group",
+      "phone": "713-305-4490"
+    },
+    "sms_message": "Hi Kristi, this is Vivek, local Investor. Interested in your listing at 16474 N Emerson Cir, Conroe, TX 77306, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290505,
+    "address": "361 Lucia Way, Cleveland, TX 77327",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 147900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1192,
+    "year_built": 2026,
+    "price_per_sqft": 124,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17646061",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/361-lucia-way-cleveland-tx-77327/17646061",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 361 Lucia Way, Cleveland, TX 77327, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290506,
+    "address": "24610 Shellbrook Dr",
+    "city": "Huffman",
+    "state": "TX",
+    "zip": "77336",
+    "price": 185000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1721,
+    "year_built": 1976,
+    "price_per_sqft": 107,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "7925065",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/24610-shellbrook-dr-huffman-tx-77336/7925065",
+    "zillow_url": null,
+    "agent": {
+      "name": "Dakota Davis",
+      "brokerage": "Post Oak Realty, LLC",
+      "phone": "903-423-0651"
+    },
+    "sms_message": "Hi Dakota, this is Vivek, local Investor. Interested in your listing at 24610 Shellbrook Dr, Huffman TX 77336. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290507,
+    "address": "18502 Wood Glen Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "price": 285000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1553,
+    "year_built": 1991,
+    "price_per_sqft": 184,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3494316",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/18502-wood-glen-ln-houston-tx-77084/3494316",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sandra Meza",
+      "brokerage": "RE/MAX GO",
+      "phone": "7135769314"
+    },
+    "sms_message": "Hi Sandra, this is Vivek, local Investor. Interested in your listing at 18502 Wood Glen Ln, Houston TX 77084. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290508,
+    "address": "708 Asbury St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 880000,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 3675,
+    "year_built": 2012,
+    "price_per_sqft": 239,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "12370001",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/708-asbury-st-houston-tx-77007/12370001",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sheryl Davis",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "832-273-9995"
+    },
+    "sms_message": "Hi Sheryl, this is Vivek, local Investor. Interested in your listing at 708 Asbury St, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
