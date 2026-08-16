@@ -29304,5 +29304,170 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290568,
+    "address": "17242 Cymbal Ln",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 152991,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1535,
+    "year_built": 2026,
+    "price_per_sqft": 100,
+    "dom": 0,
+    "status": "Under Contract - P",
+    "mls": "17647884",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17242-cymbal-ln-conroe-tx-77306/17647884",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hey Christopher, this is Vivek, local investor. Interested in one of your listings at 17242 Cymbal Ln, Conroe TX 77306. I see it's under contract \u2014 please let me know if the current buyer doesn't perform. Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290569,
+    "address": "3203 Dawnwood Dr",
+    "city": "Spring",
+    "state": "TX",
+    "zip": "77380",
+    "price": 220000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1564,
+    "year_built": 1972,
+    "price_per_sqft": 141,
+    "dom": 0,
+    "status": "Active",
+    "mls": "9971075",
+    "source": "HAR",
+    "scenario_id": 3,
+    "har_url": "https://www.har.com/homedetail/3203-dawnwood-dr-spring-tx-77380/9971075",
+    "zillow_url": null,
+    "agent": {
+      "name": "Janet Chavez",
+      "brokerage": "Keller Williams Realty The Woodlands",
+      "phone": "8322982596"
+    },
+    "sms_message": "Hi Janet, this is Vivek, local Investor. Interested in your listing at 3203 Dawnwood Dr, Spring TX 77380. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290570,
+    "address": "6626 Fairfield St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77023",
+    "price": 529000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2021,
+    "year_built": 1945,
+    "price_per_sqft": 262,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3109375",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/6626-fairfield-st-houston-tx-77023/3109375",
+    "zillow_url": null,
+    "agent": {
+      "name": "Raul Diaz",
+      "brokerage": "MetroPlus Realty",
+      "phone": "7133010849"
+    },
+    "sms_message": "Hi Raul, this is Vivek, local Investor. Interested in your listing at 6626 Fairfield St, Houston TX 77023. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290571,
+    "address": "5734 Cullen Blvd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77021",
+    "price": 430000,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 1980,
+    "year_built": 1945,
+    "price_per_sqft": 217,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11151093",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5734-cullen-blvd-houston-tx-77021/11151093",
+    "zillow_url": null,
+    "agent": {
+      "name": "Erica Capistran",
+      "brokerage": "The Haven",
+      "phone": "7138597550"
+    },
+    "sms_message": "Hi Erica, this is Vivek, local Investor. Interested in your listing at 5734 Cullen Blvd, Houston TX 77021. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290572,
+    "address": "6230 Autumn Arbor Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77092",
+    "price": 329000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1645,
+    "year_built": 1970,
+    "price_per_sqft": 200,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3316624",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/6230-autumn-arbor-dr-houston-tx-77092/3316624",
+    "zillow_url": null,
+    "agent": {
+      "name": "Angela Heart",
+      "brokerage": "Keller Williams Signature",
+      "phone": "832-483-2828"
+    },
+    "sms_message": "Hi Angela, this is Vivek, local Investor. Interested in your listing at 6230 Autumn Arbor Dr, Houston TX 77092. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
