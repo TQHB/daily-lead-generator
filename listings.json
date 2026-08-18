@@ -29964,5 +29964,137 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290588,
+    "address": "830 Road 5501",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 139900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1200,
+    "year_built": 2022,
+    "price_per_sqft": 117,
+    "dom": 0,
+    "status": "Active",
+    "mls": "15270357",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/830-road-5501-cleveland-tx-77327/15270357",
+    "zillow_url": null,
+    "agent": {
+      "name": "Deanna Parsons",
+      "brokerage": "Gen Stone Realty",
+      "phone": "832-444-8219"
+    },
+    "sms_message": "Hi Deanna, this is Vivek, local Investor. Interested in your listing at 830 Road 5501, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290589,
+    "address": "4546 Hickory Downs Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "price": 259000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1928,
+    "year_built": 1977,
+    "price_per_sqft": 134,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3420374",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4546-hickory-downs-dr-houston-tx-77084/3420374",
+    "zillow_url": null,
+    "agent": {
+      "name": "Uzair Muhammad",
+      "brokerage": "Walzel Properties - Corporate Office",
+      "phone": "7323065875"
+    },
+    "sms_message": "Hi Uzair, this is Vivek, local Investor. Interested in your listing at 4546 Hickory Downs Dr, Houston TX 77084. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290590,
+    "address": "13026 Clarewood Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77072",
+    "price": 145000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1156,
+    "year_built": 1976,
+    "price_per_sqft": 125,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3351101",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13026-clarewood-dr-houston-tx-77072/3351101",
+    "zillow_url": null,
+    "agent": {
+      "name": "Elena Castellon",
+      "brokerage": "JPAR Houston",
+      "phone": "7132980352"
+    },
+    "sms_message": "Hi Elena, this is Vivek, local Investor. Interested in your listing at 13026 Clarewood Dr, Houston TX 77072. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290591,
+    "address": "2206 Carr Street",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77026",
+    "price": 374900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1793,
+    "year_built": 2026,
+    "price_per_sqft": 209,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17087800",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2206-carr-st-houston-tx-77026/17087800",
+    "zillow_url": null,
+    "agent": {
+      "name": "Luke Hurtado",
+      "brokerage": "Nan & Company Properties - Corporate Office (Heights)",
+      "phone": "713-245-6530"
+    },
+    "sms_message": "Hi Luke, this is Vivek, local Investor. Interested in your listing at 2206 Carr Street, Houston TX 77026. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
