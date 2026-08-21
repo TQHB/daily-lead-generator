@@ -31020,5 +31020,411 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290620,
+    "address": "7428 Greenbrook Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 203800,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2036,
+    "year_built": 2003,
+    "price_per_sqft": 100,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3157618",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/7428-greenbrook-dr-houston-tx-77028/3157618",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 7428 Greenbrook Dr, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 245000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "77028 2000-2010 build 4/2 ~1,900-2,100sf resales trading $105-120/sf ($205k-250k)"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Nearby Trinity/Houston Gardens infill 2-story 4/2 ~2,000sf closed low-$200s with cosmetic-only updates"
+        }
+      ],
+      "red_flags": [
+        "List price $203,800 = ~$100/sf, only ~10-15% under likely ARV \u2014 no flip spread at asking",
+        "DOM 0 on an Active listing: no price-discovery yet, expect multiple offers or an inflated ask",
+        "77028 is a high-crime, low-appraisal-support submarket; appraisal gaps and buyer financing fallout are common",
+        "2003 build in this pocket often slab-on-clay with foundation movement \u2014 budget Level A engineer report",
+        "Original 2003 HVAC/roof/water heater likely at or past end of life ($18-25k combined)",
+        "Flood/drainage: portions of 77028 near Hunting Bayou; verify FEMA zone and any Harvey claim history",
+        "Resale buyer pool here is FHA/conventional-limited; cash investor exit compresses price"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest exit: 4/2 2,036sf rents ~$1,750-1,950/mo in 77028; at ~$205k all-in that's ~0.90-0.95% rule \u2014 marginal, needs purchase at $170-180k to work",
+        "Target offer $155k-170k to leave a real flip spread ($30k rehab, $245k ARV, 70% rule \u2248 $141k max)",
+        "2003 vintage means no cast iron/knob-and-tube \u2014 rehab is likely cosmetic (paint, LVP, counters) at $18-30k, not gut",
+        "4/2 with 2,036sf is above the neighborhood median size \u2014 largest-house-on-block risk, but rents well to multi-generational tenants",
+        "Wholesale angle: if seller is motivated, contract low and assign to local landlord buyers who accept sub-1% ratios for East Houston appreciation",
+        "Check HISD/Wheatley feeder and any Section 8 voucher payment standard \u2014 HCV rent may exceed market and improve DSCR"
+      ]
+    }
+  },
+  {
+    "id": 16290621,
+    "address": "881 Road 590114",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 164990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1311,
+    "year_built": 2026,
+    "price_per_sqft": 126,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17350906",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/881-road-590114-cleveland-tx-77327/17350906",
+    "zillow_url": null,
+    "agent": {
+      "name": "Korina Carnes",
+      "brokerage": "JLA Realty",
+      "phone": "8324203188"
+    },
+    "sms_message": "Hi Korina, this is Vivek, local Investor. Interested in your listing at 881 Road 590114, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 155000,
+      "arv_high": 180000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3-4BR/2BA, 1,250-1,400 sqft in Plum Grove/Cleveland 77327 (Camino Real, Santa Fe, Grand San Jacinto): $150k-$185k, $115-$135/sqft"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Resale 2021-2024 builds same tracts trade $135k-$165k ($105-$125/sqft) \u2014 resale lags builder list by 10-20%"
+        }
+      ],
+      "red_flags": [
+        "Colony Ridge-style tract: unnamed 'Road 590114' address signals private/dirt-gravel road, no city services, weak comp data",
+        "No MUD water/sewer \u2014 likely well + septic; septic failure and well quality are major repair/lender risks",
+        "Liberty County tax + MUD/road assessments push effective rate 2.7-3.3%, crushing DSCR",
+        "Flood/drainage exposure near Plum Grove / East Fork San Jacinto; many parcels in or adjacent to Zone A",
+        "Heavy seller-financed sales in area inflate recorded prices \u2014 appraisals often come in 10-20% under list",
+        "Zero DOM on a 2026 build = builder inventory, no price discovery; retail buyer pool is cash/owner-finance, not FHA/conv",
+        "Thin exit liquidity: long marketing times (90-180 DOM) and high concession loads on resale",
+        "No rehab spread \u2014 new construction leaves nothing to fix, so Fix&Flip math does not work here"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent only viable if all-in under ~$140k; expect $1,350-$1,550/mo rent, ~1.0% rule at list price \u2014 marginal",
+        "Push builder for 3-5% closing cost credit + rate buydown; new-build inventory in 77327 is oversupplied",
+        "Verify septic permit, well depth/flow, and road maintenance agreement before earnest money goes hard",
+        "Order flood cert + elevation certificate day one; insurance can add $1,800-$3,000/yr if in Zone A",
+        "Wholesale angle is weak \u2014 no distress, no equity; better to source 1990s-2010s resale in Cleveland ISD proper with actual rehab spread",
+        "Tenant base is Liberty County workforce/commuter to Grand Parkway; screen hard, expect higher turnover and delinquency than inside Beltway 8",
+        "If pursuing, structure as build-to-rent bulk (3-5 units) for volume discount rather than one-off retail purchase"
+      ]
+    }
+  },
+  {
+    "id": 16290622,
+    "address": "528 Road 5818",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 185000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 11326,
+    "year_built": 2022,
+    "price_per_sqft": 16,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "16149422",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/528-road-5818-cleveland-tx-77327/16149422",
+    "zillow_url": null,
+    "agent": {
+      "name": "Patricia Huizar",
+      "brokerage": "Epique Realty LLC",
+      "phone": "281-779-0911"
+    },
+    "sms_message": "Hi Patricia, this is Vivek, local Investor. Interested in your listing at 528 Road 5818, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "2021-2023 3/2 ~1,300-1,500sf new builds off Rd 58xx/Camino Real, 77327: $150k-$190k, ~$115-$130/sf"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Grand San Jacinto / Santa Fe Cleveland 3/2 resales on 0.25ac: $160k-$185k, 90-150 DOM"
+        }
+      ],
+      "red_flags": [
+        "'sqft' 11,326 is lot size (0.26ac), not living area \u2014 actual house likely 1,200-1,500sf; verify with Liberty CAD",
+        "Road 58xx numbering = Colony Ridge / Camino Real development: owner-financed lot history, thin conventional lender appetite, appraisal/comp scarcity",
+        "No city water/sewer \u2014 well + aerobic septic; ongoing maintenance and buyer-financing friction",
+        "Gravel/unpaved private roads, minimal drainage infrastructure, Liberty County flood exposure near East Fork San Jacinto",
+        "2022 build = zero rehab spread; no Fix&Flip value-add at $185k ask vs $165k-$195k ARV",
+        "Massive standing new-construction supply in 77327 caps appreciation and stretches DOM to 4-6 months",
+        "Rent ~$1,350-$1,550 on $185k = ~0.75-0.83% rule \u2014 fails Fix&Rent cashflow after taxes (~2.3-2.7% Liberty Co rate) and insurance",
+        "0 DOM: no price-discovery yet; ask likely at or above retail"
+      ],
+      "opportunity_notes": [
+        "Best fit is Wholesale only \u2014 needs to be tied up at $115k-$130k (60-70% of ARV less zero repairs) to leave assignment room",
+        "If pursuing rent, demand is real from Houston-commuting workforce tenants; underwrite at $1,400/mo, 8-10% vacancy, self-manage or 8% PM",
+        "Turnkey 2022 condition means near-zero holding rehab \u2014 fast to list or lease, low capex for 5-7 years",
+        "Pull Liberty CAD for true living area, septic permit, and whether the lot is deed-restricted; confirm title is clean of Colony Ridge contract-for-deed clouds",
+        "Grand Parkway 99 segment and Cleveland-area industrial/logistics growth are the only credible appreciation drivers \u2014 3-5 year horizon, not a flip thesis",
+        "Cash or hard-money exit assumption is safer than assuming buyer gets conventional financing in this pocket"
+      ]
+    }
+  },
+  {
+    "id": 16290623,
+    "address": "630 Maria Elena Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 170991,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1311,
+    "year_built": 2026,
+    "price_per_sqft": 130,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17650591",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/630-maria-elena-way-cleveland-tx-77327/17650591",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 630 Maria Elena Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 160000,
+      "arv_high": 180000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1,300 sf spec homes in Grand Oaks/Camino Real, Cleveland 77327 closing $165k-$182k ($125-$139/sf)"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "2023-2025 resales of similar 1,250-1,400 sf 77327 builder homes trading $155k-$172k, ~90-150 DOM"
+        }
+      ],
+      "red_flags": [
+        "Brand-new builder spec at DOM 0 - list price is effectively ARV, so zero flip spread and no wholesale assignment room",
+        "Liberty County/MUD tax rate ~2.8-3.3% pushes taxes to ~$4,800-5,600/yr, crushing Fix&Rent cash flow",
+        "Heavy competing new-construction supply plus builder rate buydowns and closing-cost credits undercut any resale exit",
+        "77327 rents cap around $1,450-$1,700 for 3/2 1,311 sf - ~1.0% rule at best, likely negative after taxes/insurance/PM",
+        "Insurance elevated (Liberty County, hail/wind, flood-plain proximity along Tarkington/Luce Bayou); verify FEMA zone and detention/drainage",
+        "Colony Ridge-adjacent submarket has weak appreciation history, thin retail buyer pool, and appraisal/financing friction",
+        "No value-add - nothing to renovate means no forced equity; strategy would be pure buy-and-hold speculation",
+        "Verify HOA/POA dues, private road maintenance, septic vs. municipal sewer, and well vs. water district"
+      ],
+      "opportunity_notes": [
+        "Only works as a long-term rental if you get builder concessions - push for 2-1 or permanent rate buydown plus all closing costs, effective basis under ~$160k",
+        "Ask for the standing-inventory/quick-close discount; unsold completed specs in 77327 often move 5-8% under list at quarter-end",
+        "Structural upside is bulk, not one-off: negotiate a 3-5 home tranche with the builder's investor desk for 8-12% off and a rent-ready package",
+        "Verify tax rate BEFORE offering - a 2.2% vs 3.2% MUD swing is ~$1,700/yr and is the difference between breakeven and bleeding",
+        "Builder warranty (1-2-10) plus new roof/HVAC means near-zero capex for 5+ years - the one genuine Fix&Rent positive here",
+        "Path-of-growth thesis: SH-99 Grand Parkway segment and Cleveland-area industrial/Amazon-corridor job growth could support 3-5% annual rent lift",
+        "Skip for Fix&Flip and Wholesale entirely - no distress, no seller motivation, no assignable equity",
+        "Alternative: pursue distressed 1980s-2000s resales in 77327/77328 at $85-$115k with $30-45k rehab for a real 70% ARV entry instead"
+      ]
+    }
+  },
+  {
+    "id": 16290624,
+    "address": "1022 Akron St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77029",
+    "price": 205000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1280,
+    "year_built": 1994,
+    "price_per_sqft": 160,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3140494",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1022-akron-st-houston-tx-77029/3140494",
+    "zillow_url": null,
+    "agent": {
+      "name": "Pualani Murillo",
+      "brokerage": "Urban Loop Realty",
+      "phone": "2817954145"
+    },
+    "sms_message": "Hi Pualani, this is Vivek, local Investor. Interested in your listing at 1022 Akron St, Houston TX 77029. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 238000,
+      "comps": [
+        {
+          "address": "Houston 77029",
+          "notes": "77029 renovated 3/2 1,250-1,400sf 1990s builds trading ~$165-185/sf"
+        },
+        {
+          "address": "Houston 77029",
+          "notes": "Recent Denver Harbor/Pleasantville-adjacent resales $210k-$240k post-reno"
+        }
+      ],
+      "red_flags": [
+        "Ask $205k = $160/sf leaves ~$10-30k spread before costs; no flip margin",
+        "Ship Channel industrial corridor: refinery air/noise, buyer pool and appraisals suppressed",
+        "Hunting Bayou drainage/street flooding history; verify FEMA zone and prior claims",
+        "Slab-on-grade 1994 build in Beaumont clay - check foundation levels and plumbing under slab",
+        "Coming Soon / DOM 0 means untested price; likely multiple investor offers at list",
+        "Rent ~$1,550-1,750 on $205k basis is ~0.8% rule - thin for Fix&Rent with taxes near 2.8-3.1%"
+      ],
+      "opportunity_notes": [
+        "1994 build means no lead/asbestos and likely functional systems - cosmetic-only scope $15-25k (paint, LVP, counters, fixtures)",
+        "Best fit is Wholesale: contract low-to-mid $180s and assign to a landlord buyer; do not chase list",
+        "Fix&Rent works only at ~$175k all-in basis; target 1.0%+ with $1,700 rent",
+        "Check for 4th bed/office conversion or garage add to push above 1,400sf and reprice at top-of-market",
+        "Confirm HISD vs Galena Park ISD boundary - GPISD side rents and resells better here",
+        "No HOA and 1990s subdivision layout appeals to Section 8 and workforce tenants near Ship Channel employers"
+      ]
+    }
+  },
+  {
+    "id": 16290625,
+    "address": "9602 Stockwell Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77083",
+    "price": 172000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1064,
+    "year_built": 1982,
+    "price_per_sqft": 162,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11867849",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/9602-stockwell-dr-houston-tx-77083/11867849",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rosa Raygoza",
+      "brokerage": "REALM Real Estate Professionals - West Houston",
+      "phone": "7134926155"
+    },
+    "sms_message": "Hi Rosa, this is Vivek, local Investor. Interested in your listing at 9602 Stockwell Dr, Houston TX 77083. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 238000,
+      "comps": [
+        {
+          "address": "Houston 77083",
+          "notes": "77083 renovated 3/2 ~1,050-1,200 sf 1980s resales trading ~$195-225/sf-adjusted, i.e. ~$210-235k"
+        },
+        {
+          "address": "Houston 77083",
+          "notes": "Mission Bend/Alief 1,100 sf 1982 builds w/ updated kitchen+baths closing $220-240k; dated ones $175-195k"
+        }
+      ],
+      "red_flags": [
+        "Ask $172k = ~$162/sf pre-reno; leaves thin flip spread vs $215-238k ARV",
+        "1982 build: likely cast-iron drain lines, original panel, 40-yr-old slab movement risk in Alief clay",
+        "Only 1,064 sf caps ARV ceiling regardless of finish level",
+        "Alief ISD + high combined tax rate (~2.7-3.1% w/ MUD/Fort Bend overlap) suppresses buyer pool and DSCR",
+        "Keegans/Brays watershed proximity - verify Harvey/Tax Day flood history and current FEMA zone",
+        "Coming Soon / 0 DOM signals multiple-offer setup; overpaying kills the deal",
+        "Possible HOA (Mission Bend-area subdivisions) with deed restrictions and transfer fees"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent: $35-45k reno to ~$210-217k all-in, rents $1,750-1,900/mo in 77083, strong Section 8 and workforce demand off Beltway 8/Bissonnet",
+        "Flip only works at $150-158k purchase: $40k reno, $232k ARV, ~$25-30k net after 8% sale costs",
+        "Wholesale angle: assign at $155-162k to local Alief rehabbers who buy this profile all day",
+        "Add value cheaply by converting/enclosing garage or covered patio to push past 1,200 sf and unlock $240k+ comps - verify permits",
+        "Rent-ready cosmetic scope (LVP, paint, quartz-look counters, refresh baths, HVAC/roof check) is enough; avoid luxury finishes the sf can't support",
+        "High Hispanic/Asian owner-occupant demand in 77083 supports quick resale if condition is turnkey and price stays under $245k",
+        "Ask seller for pre-list survey, MUD tax statement, and plumbing scope video before committing"
+      ]
+    }
+  },
+  {
+    "id": 16290626,
+    "address": "548 Allston St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 629000,
+    "beds": 3,
+    "baths": 4,
+    "sqft": 2156,
+    "year_built": 2015,
+    "price_per_sqft": 292,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "12372796",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/548-allston-st-houston-tx-77007/12372796",
+    "zillow_url": null,
+    "agent": {
+      "name": "Fiona Gilmour",
+      "brokerage": "Keller Williams Realty Metropolitan",
+      "phone": "7138708532"
+    },
+    "sms_message": "Hi Fiona, this is Vivek, local Investor. Interested in your listing at 548 Allston St, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 615000,
+      "arv_high": 665000,
+      "comps": [
+        {
+          "address": "Houston 77007",
+          "notes": "Rice Military/Washington Ave 3-story free-standing new-builds (2014-2018), 2,000-2,300 sf, trading ~$280-305/sf"
+        },
+        {
+          "address": "Houston 77007",
+          "notes": "Nearby Allston/Sandman/Feagan St detached patio homes ~$600-680K with 2-car attached garage + small yard"
+        }
+      ],
+      "red_flags": [
+        "Priced at ~$292/sf with no rehab upside \u2014 2015 build leaves nothing to force appreciation on",
+        "4 baths / 3 beds in 2,156 sf signals 3-story vertical layout; ground-floor bed/bath suite limits buyer pool and rental appeal",
+        "Coming Soon / 0 DOM means no price discovery; list price likely aspirational vs. 2026 Houston resale softness",
+        "Rice Military has heavy new-construction supply \u2014 competing spec homes undercut resale of a 10-yr-old unit",
+        "Check if free-standing or shared-driveway/patio-home site; land value is thin on a subdivided 1,800-2,300 sf lot",
+        "Verify HOA/maintenance agreement and whether garage is tandem \u2014 both hit ARV",
+        "77007 flood/drainage: confirm Buffalo Bayou proximity and any 2015-era pre-Harvey slab elevation issues",
+        "Property taxes ~2.2-2.3% (~$14K/yr) crush Fix&Rent DSCR"
+      ],
+      "opportunity_notes": [
+        "Fix&Flip: no margin at $629K ask. Only works at \u2264$490-510K acquisition with $45-60K cosmetic (floors, paint, quartz, lighting, primary bath) targeting $650K exit \u2014 make a low offer or pass",
+        "Fix&Rent: 3/4 new-builds in Rice Military rent ~$3,200-3,800/mo. At $629K that's a ~0.55% rent-to-price ratio \u2014 negative cash flow after taxes/insurance/HOA. Fails as a rental",
+        "Wholesale: no assignable spread unless seller is motivated pre-list; Coming Soon status is the window \u2014 approach listing agent before MLS go-live for an off-market cash close",
+        "Best real angle is a light-cosmetic 'refresh flip' only if it can be bought in the low $500s \u2014 verify seller motivation (relocation, estate, builder-carryback) before spending diligence dollars",
+        "Comparable-quality inventory means speed matters more than rehab: a 2015 build can be turned in 3-4 weeks, minimizing holding cost if the buy price is right",
+        "If it is free-standing with a true yard (not a patio-home), ARV ceiling moves toward $680-700K and the deal deserves a second look"
+      ]
+    }
   }
 ]
