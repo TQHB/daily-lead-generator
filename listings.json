@@ -32383,5 +32383,640 @@
         "If it's a HOA-free detached condo regime, negotiate the seller into conventional-financeable status or plan for DSCR/hard-money exit only"
       ]
     }
+  },
+  {
+    "id": 16290644,
+    "address": "17278 Cymbal Ln",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 179990,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1535,
+    "year_built": 2026,
+    "price_per_sqft": 117,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17653267",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17278-cymbal-ln-conroe-tx-77306/17653267",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 17278 Cymbal Ln, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 178000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Comparable 1,450-1,650 sf new-build resales in 77306 (Deer Trail/Woodhaven Forest corridor off FM 3083/Hwy 105 E) trading $172k-$192k, roughly $112-$122/sf"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Nearby 4/2.5 two-story spec homes 2024-2025 vintage closing $180k-$195k with builder incentives baked in"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build with 0 DOM at retail list price \u2014 no distress, no rehab spread, essentially zero equity for Flip or Wholesale",
+        "Buying at builder retail means you eat the 8-12% new-construction premium; resale in yrs 1-3 typically prints below original sales price as the builder keeps releasing sections",
+        "MUD + Conroe ISD tax rate in this corridor commonly runs 2.8%-3.3%, which crushes DSCR and can be 25-30% of gross rent",
+        "77306 east Conroe is the softest submarket in the county \u2014 heavy entry-level new supply (LGI/Starlight/Century-type product) competing directly for the same renter and buyer",
+        "1,535 sf with 4 beds / 2.5 baths means a tight two-story with small secondary bedrooms and likely no yard \u2014 appraisal and rent both cap out fast",
+        "No survey of standing inventory vs. builder pipeline; if the section is still selling, comps are controlled by the builder, not the market",
+        "Verify flood/detention status \u2014 parts of 77306 near Caney/Crystal Creek drainage have insurance and resale friction"
+      ],
+      "opportunity_notes": [
+        "Only viable as Fix&Rent-lite (really Buy&Rent): rents for 4/2.5 new builds in this corridor run ~$1,600-$1,775/mo, so gross yield ~10.7-11.8% before the tax hit",
+        "Push the builder for rate buydown, closing-cost credit, blinds/fridge/fence/sod, or a lot-premium waiver instead of price \u2014 worth $6k-$12k effective and it does not depress the section comps",
+        "Ask for the final year-end standing-inventory list; last 2-4 spec homes in a closing section are where real 5-8% discounts show up",
+        "Structural + 10yr builder warranty and no CapEx for 8-10 years makes this a low-maintenance turnkey rental if the tax rate comes back under ~2.9%",
+        "Protest the tax assessment in year 1 \u2014 new builds are often assessed at full list including lot premium and incentives",
+        "If Vivek wants Flip or Wholesale exposure, skip this and redirect the same capital to 1970s-1990s resale stock in Conroe 77301/77303 where a $40k-$60k rehab spread actually exists"
+      ]
+    }
+  },
+  {
+    "id": 16290645,
+    "address": "15017 Twin Lake Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 199999,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1480,
+    "year_built": 2018,
+    "price_per_sqft": 135,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5309624",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/15017-twin-lake-dr-conroe-tx-77306/5309624",
+    "zillow_url": null,
+    "agent": {
+      "name": "Eric Haye",
+      "brokerage": "HomeSmart",
+      "phone": "908-477-5542"
+    },
+    "sms_message": "Hi Eric, this is Vivek, local Investor. Interested in your listing at 15017 Twin Lake Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 232000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "2016-2020 builds, 1,400-1,600 sf 3/2 in SE Conroe 77306 (FM 3083 / Caney Creek corridor) resell ~$138-$152/sf, i.e. ~$205k-$230k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Older 3/1 and manufactured-on-acreage product in 77306 trades far lower, ~$95-$135/sf ($140k-$190k) - which band applies depends on stick-built vs. MH verification"
+        }
+      ],
+      "red_flags": [
+        "3/1 on a 2018 build is atypical - strong signal this is a manufactured/mobile home on land or an MLS data error; pull MCAD improvement type before underwriting",
+        "If manufactured, financing is HUD-tag/land-and-home only, buyer pool shrinks and ARV drops to the $140k-$175k band",
+        "77306 east of Conroe is Caney Creek / East Fork San Jacinto watershed - Harvey-era flooding common; verify FEMA zone, elevation cert and prior claims",
+        "Almost certainly septic + private well (no MUD out here) - budget inspection, aerobic maintenance contract, and possible $8k-$15k septic replacement",
+        "Single bath caps both resale and rent; 1,480 sf with one bath appraises and leases below 3/2 comps",
+        "DOM 0 / Active at $199,999 means zero negotiation leverage today and likely multiple looks in the first week",
+        "At $200k ask vs. $205k-$232k ARV there is no flip spread - MAO on a light rehab is roughly $140k-$150k"
+      ],
+      "opportunity_notes": [
+        "Highest-value play is adding a second bath: ~$12k-$18k in a 1,480 sf newer-construction shell typically returns $18k-$25k in ARV and $150-$200/mo in rent",
+        "Fix&Rent: stabilized rent ~$1,650-$1,800 for a 3/2 in 77306; at a $150k-$160k all-in basis that is ~1.1% and cash-flows after taxes (~2.0-2.2% Montgomery County rate) and insurance",
+        "2018 vintage means minimal capex - roof, HVAC, and systems should have 8-12 years left, so rehab is cosmetic plus the bath add rather than a full gut",
+        "Conroe/Grand Parkway corridor demand and Conroe ISD support 3-5 yr appreciation; better as a hold than a flip at this price",
+        "Wholesale angle only works with a deep seller discount - target $135k-$145k contract to leave an assignable spread; test motivation before spending diligence dollars",
+        "Verify stick-built status first - if MCAD shows conventional frame construction, this becomes a legitimate Fix&Rent buy at $170k-$180k negotiated"
+      ]
+    }
+  },
+  {
+    "id": 16290646,
+    "address": "17863 Lionheart Rd",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 199900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1388,
+    "year_built": 2026,
+    "price_per_sqft": 144,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17119848",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17863-lionheart-rd-conroe-tx-77306/17119848",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jared Turner",
+      "brokerage": "Century Communities",
+      "phone": "713-222-7000"
+    },
+    "sms_message": "Hi Jared, this is Vivek, local Investor. Interested in your listing at 17863 Lionheart Rd, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "New-build 3/2 ~1,350-1,450sf, Conroe 77306 (Ladera Creek/Deer Trail area), $200-215k"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Resale 2-4yr-old 3/2 ~1,400sf off FM 3083/Hwy 105 E, $210-225k"
+        }
+      ],
+      "red_flags": [
+        "2026 new construction, 0 DOM \u2014 no equity spread; builder inventory, not distressed",
+        "No repair upside: Fix&Rent/Fix&Flip thesis doesn't apply to a brand-new spec home",
+        "77306 is heavy new-supply corridor; builder incentives/price cuts undercut resale ARV for 2-3 yrs",
+        "MUD + new-build tax rate likely 2.8-3.3% \u2014 escrow ~$500-575/mo kills DSCR",
+        "Likely HOA $400-800/yr plus possible MUD reserve; verify",
+        "Wholesale exit near-impossible \u2014 no assignable spread on retail builder pricing",
+        "Conroe rents for 1,388sf 3/2 ~$1,650-1,850; at $199.9k P&I+T+I+HOA runs negative to breakeven"
+      ],
+      "opportunity_notes": [
+        "Only works as buy-and-hold if builder gives 3-5% closing cost credit + rate buydown to ~5.5% \u2014 model that, not list price",
+        "Ask for spec-home/quick-close incentive; year-end builder quotas in 77306 have produced $10-15k concessions",
+        "Target price for cash-flow: sub-$180k with seller-paid closing; otherwise pass",
+        "Better use of this lead: source the builder rep for bulk/standing-inventory deals (3-5 homes at 8-12% off)",
+        "New build = near-zero capex for 8-10 yrs and 1-2yr builder warranty \u2014 a real value if Vivek wants a low-maintenance rental sleeve",
+        "Protest the first-year assessed value; new builds often assessed at full contract price",
+        "Verify flood \u2014 parts of 77306 near Caney Creek/Peach Creek; new plats often sit adjacent to Zone AE"
+      ]
+    }
+  },
+  {
+    "id": 16290647,
+    "address": "8002 Richland Dr, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 155000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1657,
+    "year_built": 1950,
+    "price_per_sqft": 94,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3186392",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/8002-richland-dr-houston-tx-77028/3186392",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rene Sorola",
+      "brokerage": "Keller Williams Realty Metropolitan",
+      "phone": "8325885842"
+    },
+    "sms_message": "Hi Rene, this is Vivek, local Investor. Interested in your listing at 8002 Richland Dr, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 1950s 3/2 ~1,600 sf in Trinity Gardens/Liberty Rd corridor trading $190k-$215k ($115-$130/sf)"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Newer infill 3/2 builds near Hunting Bayou/77028 pushing $230k+, but set the ceiling, not the comp"
+        }
+      ],
+      "red_flags": [
+        "$155k ask on a ~$200k ARV leaves ~$45k spread before rehab \u2014 70% rule caps buy near $110-$120k",
+        "1950 build: expect cast-iron/galvanized plumbing, knob-and-tube or 60-100amp panel, no post-Ike sheathing; $45-$70k full gut likely",
+        "77028 sits near Hunting Bayou and multiple TCEQ/Union Pacific creosote-contamination concerns (Fifth Ward/Kashmere plume) \u2014 buyer disclosure and appraisal drag",
+        "Appraisal risk: few clean renovated comps, high investor-flip density can trigger low FHA valuations",
+        "Slab movement common in 1950s Trinity Gardens stock \u2014 budget $8-$15k foundation contingency",
+        "DOM 0 means untested pricing; no evidence seller will take a discount yet",
+        "Insurance/HOA-free but taxes ~2.6-2.9% effective; verify no homestead cap being lost"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the stronger play: renovated 3/2 rents $1,650-$1,850 in 77028; at a $130k all-in basis that is ~1.3% monthly rent-to-cost",
+        "Wholesale fallback: assign at $115-$125k to a local rehabber if seller drops 20%+ after 30 DOM",
+        "1,657 sf with 2 baths is above-average for the pocket \u2014 supports top-of-range resale if layout is not chopped",
+        "East-side path-of-progress: proximity to 610/US-90 and Fifth Ward redevelopment supports 3-5 yr appreciation on a hold",
+        "Offer strategy: open at $105k cash, walk above $125k unless rehab scope comes in under $35k",
+        "Verify lot size \u2014 many 77028 lots are 6,500-8,500 sf and may support a second unit or future new-build exit"
+      ]
+    }
+  },
+  {
+    "id": 16290648,
+    "address": "6929 Hoffman St, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 179900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1541,
+    "year_built": 1965,
+    "price_per_sqft": 117,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "7781983",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/6929-hoffman-st-houston-tx-77028/7781983",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ashley Mayberry",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "8328320920"
+    },
+    "sms_message": "Hi Ashley, this is Vivek, local Investor. Interested in your listing at 6929 Hoffman St, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "77028 fully renovated 3/2s ~1,400-1,600 sf resell $120-140/sf ($180k-$215k) \u2014 e.g. Hoffman/Lockwood/Kirkpatrick corridor"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Cash/as-is trades in Trinity Gardens run $65-95/sf ($100k-$145k), which is where this should have been bought"
+        }
+      ],
+      "red_flags": [
+        "Ask of $179,900 ($117/sf) is at or above renovated ARV/sf \u2014 essentially no flip spread",
+        "70% MAO on a $200k ARV with ~$40-50k reno is ~$90-100k; seller is ~$80k over",
+        "1965 build: likely cast-iron sewer, original panel/cloth wiring, possible asbestos tile and galvanized supply lines",
+        "77028/Trinity-Houston Gardens sits near the Union Pacific Englewood Yard creosote plume area \u2014 buyer disclosure and appraisal drag",
+        "Harris County tax rate ~2.4-2.8% plus rising windstorm/HO insurance kills DSCR at this basis",
+        "Appraisal risk: FHA/conventional buyers in this zip frequently come in low; exit buyer pool is thin and credit-constrained",
+        "DOM 0 \u2014 no price-discovery yet; assume the list price is aspirational, not market",
+        "Flood/drainage: much of NE Houston has poor storm sewer capacity; verify Halls Bayou proximity and BFE"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent math only works near $100-115k all-in-basis; market rent for a renovated 3/2 1,541 sf here is ~$1,550-1,800/mo",
+        "Strong Section 8 (HHA) demand \u2014 voucher payment standard for 3BR often exceeds market rent, best exit for this asset class",
+        "Offer strategy: open at $105k cash, 10-day close, walk above $125k; let it sit 60-90 days and re-approach after 2 price cuts",
+        "Wholesale only if you can tie it up under ~$115k \u2014 local landlord buyer list in 77028 is deep at $65-80/sf",
+        "1,541 sf with 3/2 already in place means no addition needed; scope is cosmetic + systems, keeps reno to $35-45k",
+        "Check lot size \u2014 many Trinity Gardens lots are 6,000-9,000 sf with new-build/2-on-1 potential if zoning-free lot width allows",
+        "Verify no unpermitted garage conversion inflating the 1,541 sf figure; re-measure before underwriting ARV"
+      ]
+    }
+  },
+  {
+    "id": 16290649,
+    "address": "6114 Wedgefield St, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 194900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1472,
+    "year_built": 1940,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "2988492",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/6114-wedgefield-st-houston-tx-77028/2988492",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ramona Melo",
+      "brokerage": "Executive Texas Realty",
+      "phone": "832-641-7288"
+    },
+    "sms_message": "Hi Ramona, this is Vivek, local Investor. Interested in your listing at 6114 Wedgefield St, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 235000,
+      "arv_high": 265000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/2 ~1,400-1,600sf resales in 77028 (Settegast/Kashmere Gardens) trading ~$155-$175/sf, i.e. $230K-$265K"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Recent flips on Wedgefield/Bay/Lockwood corridor closing low-to-mid $200Ks; new-build infill 3/2 pushes $280K+ but is not a true comp for a 1940 frame house"
+        }
+      ],
+      "red_flags": [
+        "1940 build \u2014 likely pier-and-beam settlement, knob-and-tube or ungrounded wiring, galvanized/cast-iron drain lines; budget full electrical/plumbing",
+        "77028 is a soft appraisal zone: wide comp dispersion, many cash/investor sales, high chance of low FHA/conventional appraisal on exit",
+        "Ask of $194,900 = ~$132/sf on an unrenovated 1940 home \u2014 thin spread; MAO at 70% of $250K ARV less $60-75K rehab is roughly $100-115K",
+        "Possible additions without permits (1,472sf on a 1940 shell often includes converted garage/porch) \u2014 verify HCAD sqft vs. actual",
+        "Settegast/Kashmere area: elevated crime stats, older utility infrastructure, some blocks near rail and industrial uses; check flood/drainage on Hunting Bayou side",
+        "DOM 0 \u2014 no price-discovery yet; seller likely firm, and retail-priced listings here rarely pencil without a 15-25% reduction"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the stronger play: renovated 3/2 in 77028 rents ~$1,500-$1,750/mo; at ~$120K all-in acquisition + $50K light rehab, that's ~1% rule territory with Section 8 demand strong in this submarket",
+        "Lot value matters \u2014 77028 lots are typically 5,000-7,500sf with no deed restrictions on many blocks; check for subdivide/new-build-two potential which can beat a rehab exit",
+        "Proximity to Loop 610 / US-59 and ~15 min to Downtown and East End job centers supports rental demand and long-term appreciation from Fifth Ward/East End spillover",
+        "Wholesale angle: if seller will take $110-125K, there is a clean assignment to local flippers active on Wedgefield; pitch a cash, no-inspection-contingency, 10-day close",
+        "Ask for HCAD card, any prior permit history, and photos of the crawlspace/panel before offering \u2014 condition unknown is the biggest variance in the $235K-$265K ARV band",
+        "Consider a scope that keeps original hardwoods and footprint (cosmetic + systems only) to hold rehab near $55K and preserve margin at a conservative $235K ARV"
+      ]
+    }
+  },
+  {
+    "id": 16290650,
+    "address": "20519 Sycamore Crest Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 214900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1199,
+    "year_built": 2010,
+    "price_per_sqft": 179,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "7870104",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/20519-sycamore-crest-ln-katy-tx-77449/7870104",
+    "zillow_url": null,
+    "agent": {
+      "name": "Brittany Lawrence",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Cypress",
+      "phone": "8327755409"
+    },
+    "sms_message": "Hi Brittany, this is Vivek, local Investor. Interested in your listing at 20519 Sycamore Crest Ln, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 232000,
+      "arv_high": 248000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "Similar 1,150-1,300 sf 3/2 one-story in Katy 77449 (Cypress Point/Westfield Village area, 2005-2012 builds) selling $228k-$245k renovated"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Nearby 1,199-1,400 sf 3/2 attached-garage resales trade $185-$200/sf renovated; dated stock $155-$170/sf"
+        }
+      ],
+      "red_flags": [
+        "List price ~$179/sf already near renovated ceiling for 1,199 sf in 77449 \u2014 thin flip spread",
+        "0 DOM: no price-drop leverage; likely multiple-offer and retail-priced, not distressed",
+        "77449 has heavy investor/rental saturation and high inventory of similar 3/2s \u2014 resale exit can sit 45-75 DOM",
+        "Katy ISD boundary is not automatic in 77449 (parts feed Cy-Fair ISD) \u2014 verify, it swings ARV $10k-15k",
+        "2010 build means little forced appreciation available: no obsolete floorplan or major systems to modernize",
+        "Harris County taxes ~2.6-2.9% plus possible MUD; verify MUD district and any HOA transfer/deed restrictions",
+        "Small sqft caps rent \u2014 3/2 1,199 sf in 77449 rents ~$1,650-$1,850, not $2,000+",
+        "Check for Addicks/Barker and Cypress Creek overflow flood history \u2014 2016-2017 events hit parts of 77449 hard; pull elevation cert and claim history"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest fit: at $214.9k with $8-12k cosmetic (paint, LVP, fixtures, landscaping) and ~$1,750 rent, gross yield ~9.3% \u2014 workable if bought at $200k-$205k",
+        "2010 build = roof, HVAC, and slab likely have remaining life; low capex reserve requirement vs. 1970s Houston stock",
+        "Target buy at or below $195k to make Fix&Flip pencil: $195k + $20k reno + $18k holding/closing vs $240k ARV leaves ~$7k \u2014 only worth it if seller concedes",
+        "Wholesale only works at a $170k-$180k contract; unlikely at 0 DOM on MLS \u2014 revisit at DOM 45+ or if it goes price-reduced/expired",
+        "Strong renter demand from Grand Parkway/Energy Corridor commuters; 77449 has one of the deepest workforce-rental pools in Houston",
+        "Ask listing agent about seller motivation, existing survey, and whether it is currently tenant-occupied \u2014 an in-place lease changes the Fix&Rent math immediately",
+        "If Katy ISD confirmed, market to owner-occupant FHA buyers at $239k-$249k; that buyer pool pays the top of the range"
+      ]
+    }
+  },
+  {
+    "id": 16290651,
+    "address": "24946 Westfloria Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 225000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1473,
+    "year_built": 2023,
+    "price_per_sqft": 153,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "1245789",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/24946-westfloria-dr-katy-tx-77493/1245789",
+    "zillow_url": null,
+    "agent": {
+      "name": "Chet Polniazek",
+      "brokerage": "1st Texas Realty Services",
+      "phone": null
+    },
+    "sms_message": "Hi Chet, this is Vivek, local Investor. Interested in your listing at 24946 Westfloria Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 238000,
+      "arv_high": 262000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "77493 2022-2024 builds, 1,400-1,600 sf 3/2: ~$160-$178/sf resale"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Nearby Sunterra/Elyson/Katy Manor 1,473 sf resales closing ~$245K-$258K"
+        }
+      ],
+      "red_flags": [
+        "2023 build = near-zero rehab spread; no fix&flip value-add story",
+        "MUD + Katy ISD tax rate ~3.0-3.5% crushes rent DSCR and buyer affordability",
+        "Builder inventory in 77493 still selling new 1,400-1,600 sf at $250K-$270K with rate buydowns \u2014 resale can't compete",
+        "HOA $800-$1,200/yr plus possible PID/MUD assessments eat cash flow",
+        "DOM 0 at $153/sf may be a teaser/agent-mispriced listing or subject to lender approval; verify no undisclosed liens or FHA/VA loan-assumption strings",
+        "Part of 77493 sits in Royal ISD, not Katy ISD \u2014 confirm boundary, it moves value 5-8%",
+        "West Katy flood/drainage sensitivity (Barker/Cypress Creek overflow) \u2014 pull Elevation Cert and check for post-Harvey plat changes"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Rent/turnkey buy-and-hold, not flip: near-new house, minimal capex for 8-10 years, rents ~$1,850-$2,050/mo in 77493",
+        "If truly acquirable at $225K, that's ~$20K-$35K under comp value \u2014 wholesale to a hold buyer at $232K-$238K for a $7K-$13K assignment with almost no rehab risk",
+        "Verify if it's a builder close-out or investor bulk offload \u2014 those often allow a fast cash close at 3-5% below list",
+        "Cosmetic-only lift (paint, fixtures, sod/landscaping, blinds) at $5K-$8K can push it to the top of the $255K-$262K band",
+        "Check for assumable 2023 FHA/VA note in the 4-5% range \u2014 that alone makes this a strong hold and a premium wholesale exit",
+        "Katy ISD schools + rental demand keep vacancy low; target 12-month leases to relocating families"
+      ]
+    }
+  },
+  {
+    "id": 16290652,
+    "address": "7411 Heather Row Ln, Houston, TX 77044",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77044",
+    "price": 1000000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2108,
+    "year_built": 1983,
+    "price_per_sqft": 474,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3148143",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/7411-heather-row-ln-houston-tx-77044/3148143",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Balderas",
+      "brokerage": "Keller Williams Houston Central",
+      "phone": "832-614-9400"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 7411 Heather Row Ln, Houston, TX 77044, Houston TX 77044. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 225000,
+      "arv_high": 265000,
+      "comps": [
+        {
+          "address": "Houston 77044",
+          "notes": "1980s 4/2 ~2,000-2,200 sf resales in 77044 (Green Meadows/Hunterwood/Woodland Trails) trading $105-$125/sf, i.e. $220k-$270k"
+        },
+        {
+          "address": "Houston 77044",
+          "notes": "Renovated 77044 4/2 with updated kitchen/baths and newer roof/HVAC topping out near $130/sf (~$275k)"
+        }
+      ],
+      "red_flags": [
+        "$1,000,000 list is ~4x realistic ARV \u2014 almost certainly a data-entry error, non-arm's-length transfer, or land/assemblage listing; verify against HCAD before any outreach",
+        "$474/sf ask vs $105-$125/sf submarket comps \u2014 no rehab math works at list",
+        "77044 sits along Lake Houston/San Jacinto corridor: check FEMA zone, Harvey inundation history, and prior flood claims before offering",
+        "1983 build: expect original cast-iron sewer, possible polybutylene supply, 40-yr-old slab, and 20+ yr roof/HVAC \u2014 budget $40k-$55k full rehab",
+        "Only 2 baths on a 4-bed 2,108 sf \u2014 functional obsolescence vs newer Summerwood inventory",
+        "Coming Soon / 0 DOM means no interior photos, condition, or seller motivation confirmed yet",
+        "Harris County tax load ~2.7-3.2% with likely MUD \u2014 kills rental cash flow if underwritten at 2.2%"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent: 77044 3-4 bed rents $1,850-$2,150/mo; at an all-in basis of $175k-$190k that's roughly a 1.05-1.15% rent-to-price ratio \u2014 thin but workable with low-cost debt",
+        "Fix&Flip MAO at 70% rule: $245k ARV x 0.70 - $48k repairs \u2248 $123k purchase \u2014 only pursue if the $1M price is corrected or the seller is distressed",
+        "Wholesale angle: contract at $125k-$140k and assign to a local flipper; margin exists only if condition is cosmetic-plus rather than structural",
+        "Adding a 3rd bath or converting to 4/2.5 is the highest-ROI floorplan fix in this sqft/price band",
+        "Location tailwind: Generation Park, Beltway 8, and Summerwood/Lakeshore growth support steady rental demand and W. Lake Houston Pkwy retail access",
+        "Verify subdivision \u2014 if this is actually a Lakeshore/Summerwood address rather than 1983-era stock, ARV shifts up to $290k-$330k and the underwriting changes materially",
+        "Call the listing agent day one: a $1M price on 2,108 sf usually resolves to a typo (likely $100,000 or $190,000) or acreage/commercial land not reflected in the sqft field \u2014 that ambiguity is where the edge is"
+      ]
+    }
+  },
+  {
+    "id": 16290653,
+    "address": "2012 Harvard St, Houston, TX 77008",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008",
+    "price": 1585000,
+    "beds": 4,
+    "baths": 4,
+    "sqft": 3848,
+    "year_built": 2015,
+    "price_per_sqft": 412,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2972630",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2012-harvard-st-houston-tx-77008/2972630",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kyla Phung Linn",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "2819052760"
+    },
+    "sms_message": "Hi Kyla, this is Vivek, local Investor. Interested in your listing at 2012 Harvard St, Houston, TX 77008, Houston TX 77008. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1520000,
+      "arv_high": 1700000,
+      "comps": [
+        {
+          "address": "Houston 77008",
+          "notes": "77008 Heights new-ish builds (2014-2018), 3,500-4,000 sf, trading ~$395-$440/sf = $1.52M-$1.69M"
+        },
+        {
+          "address": "Houston 77008",
+          "notes": "Recent Harvard/Cortlandt/Rutland St 4/4 3,700-3,900 sf resales in the $1.5M-$1.65M band, 30-75 DOM"
+        }
+      ],
+      "red_flags": [
+        "Priced at ~$412/sf retail with zero distress signal - DOM 0, Coming Soon, no motivated-seller angle",
+        "2015 build in good condition = no rehab spread; nothing to force appreciation on",
+        "Fix&Rent math fails: ~$5,500-$6,800/mo achievable rent on $1.585M = ~0.4% rent-to-price, deeply negative cash flow",
+        "HCAD taxes ~2.1-2.3% (~$33K-$36K/yr) plus Heights-area insurance crush any hold scenario",
+        "Luxury price point shrinks buyer pool; $1.5M+ Heights inventory sits 60-120 DOM, high carry risk on a flip",
+        "Possible Heights Historic District / deed-restriction limits on exterior changes or teardown",
+        "Verify White Oak Bayou flood zone / drainage history and post-Harvey elevation cert before any offer",
+        "No wholesale margin - retail-listed MLS product with an agent already priced to market"
+      ],
+      "opportunity_notes": [
+        "Only viable as a flip if acquired at $1.15M-$1.25M (70% of $1.6M ARV less ~$60K light cosmetic + $70K carry/closing) - requires ~25% price cut, unlikely",
+        "Harvard St is prime Heights: walkable to 19th St retail, Heights Blvd esplanade, Donovan Park - strong end-buyer demand and fast absorption if priced at $1.55M or below",
+        "Watch it: if it goes Coming Soon -> Active -> two price cuts past 90 DOM, seller may be relocation/estate; re-underwrite at that point",
+        "Light-touch play only - designer paint, lighting, landscaping, pool add-on could support $1.68M-$1.75M resale, but spread is too thin for a hard-money deal",
+        "Better fit for a 1031 buyer or luxury mid-term/corporate rental at $7K-$8K furnished than for Vivek's Fix&Rent box",
+        "Use as a comp anchor: this listing sets the $/sf ceiling for underwriting cheaper 77008 teardowns and 1920s bungalows in the $500K-$700K range"
+      ]
+    }
+  },
+  {
+    "id": 16290654,
+    "address": "714 E 18th St, Houston, TX 77008",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008",
+    "price": 1425000,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 3308,
+    "year_built": 2015,
+    "price_per_sqft": 431,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3083745",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/714-e-18th-st-houston-tx-77008/3083745",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rhett Ross",
+      "brokerage": "Martha Turner Sotheby's International Realty",
+      "phone": "832-483-0756"
+    },
+    "sms_message": "Hi Rhett, this is Vivek, local Investor. Interested in your listing at 714 E 18th St, Houston, TX 77008, Houston TX 77008. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1150000,
+      "arv_high": 1325000,
+      "comps": [
+        {
+          "address": "Houston 77008",
+          "notes": "Heights East 2014-2018 builds, 3,100-3,500 sf, resold $330-$390/sf ($1.05M-$1.32M) on E 16th-E 20th between Yale and Studewood"
+        },
+        {
+          "address": "Houston 77008",
+          "notes": "Recent 3/3.5 new-construction singles near Heights Blvd trade $1.15M-$1.30M; only true new builds (2024+) with pools clear $430/sf"
+        }
+      ],
+      "red_flags": [
+        "Ask of $431/sf is ~15-25% over Heights resale comps for a 10-yr-old build \u2014 no equity at list",
+        "2015 construction means no rehab-value play; nothing to force appreciation on a Fix&Flip",
+        "Rent comp ~$5,500-$6,500/mo on $1.425M = ~0.42% rent-to-price; deeply negative cash flow after 2.1-2.3% HCAD tax (~$30K/yr) and insurance",
+        "Coming Soon / 0 DOM = seller at peak expectation, zero negotiation leverage today",
+        "Likely Heights East Historic District \u2014 exterior changes and any teardown/rebuild need HAHC approval",
+        "Verify White Oak Bayou proximity / Zone X-shaded and 2015 pre-Harvey slab elevation; post-Harvey Chapter 19 rules may not have applied",
+        "Luxury Heights resale pool is thin \u2014 90-150 DOM typical, high carry cost on a flip",
+        "Only 3 beds at $1.4M limits the move-up family buyer that price band attracts"
+      ],
+      "opportunity_notes": [
+        "Pass at list; set an alert and re-engage after 75-90 DOM or the first price cut \u2014 target $1.02M-$1.08M to leave a 12-15% flip margin",
+        "No Fix&Rent case at any realistic price here; Vivek's Heights capital is better used on 1940s-60s bungalows under $500K on 6,600 sf lots",
+        "If seller is a builder/relocation, test a cash close-fast wholesale assignment at ~$975K-$1.05M \u2014 end buyer would be a luxury retail agent, not an investor",
+        "Lot value alone (typical 6,600 sf Heights East) runs $425K-$525K, so downside is floored but there's no teardown play on a 2015 house",
+        "Cosmetic-only refresh (paint, lighting, landscaping, $35-50K) is the max rehab spend that pencils \u2014 pool add ($90-120K) does not return in this pocket",
+        "Corporate/executive furnished rental at $7,500-8,500/mo is the only lease strategy that gets close to breakeven; underwrite 25% vacancy",
+        "Pull HCAD sale history and the 2015 builder \u2014 spec-quality varies widely on E 18th; inspect for slab settlement and stucco/EIFS moisture before any offer"
+      ]
+    }
   }
 ]
