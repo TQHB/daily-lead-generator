@@ -35532,5 +35532,355 @@
         "Ask for a hydrostatic and sewer camera up front - cast-iron replacement on a 1950 Northside home is commonly $12K-$18K and is the single biggest budget swing"
       ]
     }
+  },
+  {
+    "id": 16290699,
+    "address": "8186 Record St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 193000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1164,
+    "year_built": 1955,
+    "price_per_sqft": 166,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "10578671",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/8186-record-st-houston-tx-77028/10578671",
+    "zillow_url": null,
+    "agent": {
+      "name": "Andrea Leassear",
+      "brokerage": "Darrion Butler",
+      "phone": "713-363-1177"
+    },
+    "sms_message": "Hi Andrea, this is Vivek, local Investor. Interested in your listing at 8186 Record St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 215000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "Renovated 3/2 ~1,150-1,300 sf 1950s slab homes off Homestead/Liberty Rd trading $160-180/sf ($190-215k)"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "Non-updated 77028 3/2s selling $110-140k; wholesale/as-is basis $85-125k"
+        }
+      ],
+      "red_flags": [
+        "List price $193k = $166/sf, at or above renovated ARV/sf \u2014 no flip spread at ask",
+        "1955 build: likely cast iron/galvanized plumbing, original slab, cloth wiring, possible asbestos tile/siding",
+        "77028 Kashmere/Trinity Gardens: appraisal risk, FHA/conventional buyer pool thin, higher DOM on resale",
+        "Harris County tax rate ~2.6-2.9% and rising insurance crush Fix&Rent DSCR",
+        "DOM 0 \u2014 no price discovery yet; seller unlikely to entertain 60-70% MAO",
+        "Flood/drainage and street-level ponding common in this corridor; verify FEMA zone and Halls Bayou proximity",
+        "Crime/vandalism exposure during rehab \u2014 copper theft on vacant 77028 jobs is routine"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the only viable exit: 3/2 in 77028 rents $1,450-1,650; needs all-in \u2264 $135-145k to hit 1% and positive cash flow after taxes/insurance",
+        "Wholesale angle: contract only at $95-115k assignable; pitch to landlord buyers, not flippers",
+        "Flip math at ask fails \u2014 $193k + $45-60k rehab + 10% selling costs vs $200k ARV is negative; revisit only if price drops under $120k",
+        "Watch for 60-90 DOM price cuts; overpriced 77028 listings routinely reset 15-25% below original ask",
+        "Lot value matters: if 5,000+ sf and street has new-build activity near Lockwood/Cavalcade, land-only exit or ADU/second-unit rent stack may beat the house",
+        "Section 8 HCV payment standards in 77028 can exceed market rent \u2014 check current HHA standards for 3BR before underwriting"
+      ]
+    }
+  },
+  {
+    "id": 16290700,
+    "address": "353 Lucia Way",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 157991,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1375,
+    "year_built": 2026,
+    "price_per_sqft": 115,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17656181",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/353-lucia-way-cleveland-tx-77327/17656181",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 353 Lucia Way, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 152000,
+      "arv_high": 172000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 4/2 ~1,300-1,450 sf in Cleveland 77327 (Colony Ridge/Camino Real area) closing $108-$125/sf, i.e. ~$150K-$178K"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Resale 2022-2024 builder homes ~1,400 sf in 77327 trading $145K-$165K, ~30-90 DOM"
+        }
+      ],
+      "red_flags": [
+        "New construction at retail \u2014 priced at/near ARV, so no flip or wholesale spread",
+        "Liberty County tax rate ~2.7-3.3% with MUD/emergency district; taxes can run $350-450/mo and crush DSCR",
+        "Heavy builder inventory and continued new supply in 77327 caps appreciation and creates rent competition",
+        "Colony Ridge-adjacent submarket: financing/insurance friction, appraisal risk, thin lender appetite",
+        "DOM 0 and 2026 build year mean no true arms-length resale comps yet",
+        "Check flood zone / detention and whether roads, water and sewer are county-maintained or private (aerobic septic likely)",
+        "Possible builder concessions inflating recorded sale prices vs true market value",
+        "Rent comps ~$1,400-$1,600 \u2014 with taxes and insurance, cash flow is likely thin at full list"
+      ],
+      "opportunity_notes": [
+        "Fits Fix&Rent only as a turnkey buy-and-hold: zero rehab, ~$1,450-$1,600 rent, 1%+ gross rent-to-price",
+        "4/2 at 1,375 sf is the workforce-rental sweet spot for Liberty County commuters on US-59/I-69",
+        "Push builder for 3-5% closing cost credit, rate buydown, blinds/fridge/fence \u2014 those concessions are the real margin here",
+        "Ask about bulk/investor pricing on multiple spec units; builders in this corridor discount standing inventory at quarter-end",
+        "Protest the 2027 appraisal immediately \u2014 new builds are often assessed above market in Liberty County",
+        "Verify HOA dues, deed restrictions and any lease-restriction clauses before committing to a rental exit",
+        "Skip as Fix&Flip and Wholesale \u2014 no distress, no forced-appreciation lever, competing directly with the builder"
+      ]
+    }
+  },
+  {
+    "id": 16290701,
+    "address": "389 County Road 2281",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 120000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1568,
+    "year_built": 1984,
+    "price_per_sqft": 77,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "8501244",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/389-county-road-2281-cleveland-tx-77327/8501244",
+    "zillow_url": null,
+    "agent": {
+      "name": "Patrick Coto",
+      "brokerage": "eXp Realty, LLC",
+      "phone": "8322357131"
+    },
+    "sms_message": "Hi Patrick, this is Vivek, local Investor. Interested in your listing at 389 County Road 2281, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 170000,
+      "arv_high": 200000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "Renovated 3/2 ~1,500-1,700 sqft on 1+ acre off FM 787/CR 2200s, Cleveland 77327: $175k-$205k"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Updated 1980s-90s Liberty County rural 3/2 trading ~$105-$125/sqft; unrenovated county-road stock $70-$95/sqft"
+        }
+      ],
+      "red_flags": [
+        "1,568 sqft 3/2 built 1984 on a county road is a classic double-wide footprint - verify HUD tags, permanent foundation, and whether title is real property or still a manufactured-home statement of ownership (kills most conventional/FHA financing and hurts ARV)",
+        "Liberty County rural: almost certainly septic (aerobic/conventional) and well or Community Water Supply Corp - failed septic can be $12k-$18k to replace, and no permit records is common out here",
+        "77327 has heavy flood/drainage exposure (Trinity River / East Fork San Jacinto basin, Harvey and 2024 flooding); pull the FEMA panel and Liberty County floodplain admin elevation before contracting",
+        "Listing shows DOM 0 with no lot size given - acreage drives most of the value here; 0.25 acre vs 2 acres is a $40k+ swing in ARV",
+        "Cleveland 77327 is a slow-absorption submarket - retail resale often 60-120 DOM, and buyer pool is heavily FHA/USDA, so condition and financeability matter more than finish level",
+        "1984 vintage = original aluminum wiring risk, R-panel/3-tab roof at end of life, and 40-year-old HVAC/ductwork; budget $45k-$65k full reno at 1,568 sqft",
+        "Verify legal/deeded access and easements on CR 2281 - shared or unrecorded driveway access is common and can stall a title policy",
+        "Possible ETJ/unrestricted land use - check for adjacent mobile homes, pipelines, or oilfield servitudes that cap ARV"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest exit: $120k + ~$35k light-to-moderate reno = ~$155k all-in against $1,500-$1,700/mo rent in 77327 = ~1.0-1.1% rent-to-price, and Liberty County taxes (~2.0-2.2%) are below Harris County",
+        "USDA Rural Development 100% financing is available in most of 77327 - if the home is real property on a permanent foundation, that materially widens the retail buyer pool and supports the high end of ARV",
+        "Grand Parkway (SH 99) Segment H/I progress and continued Houston-north migration up US-59/I-69 keep Cleveland on a long-run appreciation path; good hold-and-rent basis",
+        "Flip math is thin at list: $120k + $50k reno + $18k carry/closing = ~$188k all-in vs $170k-$200k ARV - needs a purchase in the $85k-$95k range to hit a 20%+ margin, so this is a negotiate-hard or wholesale candidate",
+        "Wholesale angle: if seller is motivated at DOM 0, tie it up at $85k-$95k and assign to the local landlord/BRRRR buyer pool that is active in 77327 for a $8k-$12k fee",
+        "If lot is 1+ acre and unrestricted, added value from a barndominium/shop, RV pad, or second dwelling - rural Liberty County buyers pay a premium for usable land",
+        "Original 1984 layout at 1,568 sqft usually has a workable open-concept conversion (kitchen wall removal) that lifts perceived value cheaply",
+        "Ask the listing agent immediately for: lot acreage, septic type and last inspection, water source, roof age, foundation type, and whether the structure is site-built or manufactured - those five answers determine whether this is a deal or a pass"
+      ]
+    }
+  },
+  {
+    "id": 16290702,
+    "address": "11502 Olympia Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 450000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2156,
+    "year_built": 1978,
+    "price_per_sqft": 209,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3415001",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/11502-olympia-dr-houston-tx-77077/3415001",
+    "zillow_url": null,
+    "agent": {
+      "name": "Andrea Thomas",
+      "brokerage": "RE/MAX Signature",
+      "phone": "2815368073"
+    },
+    "sms_message": "Hi Andrea, this is Vivek, local Investor. Interested in your listing at 11502 Olympia Dr, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 425000,
+      "arv_high": 495000,
+      "comps": [
+        {
+          "address": "Houston 77077",
+          "notes": "Briarhills/Ashford West 1970s 4/2 renovated resales trading ~$200-230/sf \u2192 $430k-$495k at 2,156 sf"
+        },
+        {
+          "address": "Houston 77077",
+          "notes": "Nearby Walnut Bend/Briar Forest corridor cosmetic-updated 4/2s closing $390k-$440k; only fully gutted + updated-bath homes clear $470k+"
+        }
+      ],
+      "red_flags": [
+        "Ask of $450k = $209/sf leaves near-zero flip spread against a $425k-$495k ARV \u2014 priced at retail, not wholesale",
+        "77077 west-Houston flood exposure: verify FEMA zone, Addicks/Barker reservoir flood-pool proximity, and Harvey/Tax Day/Imelda claim history via seller disclosure + CLUE",
+        "4 beds / 2 baths is under-bathroomed for the price tier; buyers at $450k expect 2.5-3 baths \u2014 caps top-end ARV",
+        "1978 construction: likely cast-iron drain lines, possible polybutylene supply, original 200A/aluminum-branch panel concerns, asbestos in popcorn ceiling / 9x9 floor tile",
+        "Coming Soon / 0 DOM means no price discovery yet \u2014 expect multiple offers at or above list if the pocket is clean",
+        "Rent math is weak: ~$2,500-$2,900/mo on a $450k basis is ~0.6% with Harris County taxes near 2.7-3.0% \u2014 negative leverage for Fix&Rent",
+        "Slab-on-grade 1970s home in Houston clay \u2014 budget for foundation eval; movement here is common and lender-visible"
+      ],
+      "opportunity_notes": [
+        "Best fit is Fix&Flip ONLY at a discounted basis: target ~$300k-$325k all-in acquisition with $70k-$90k reno to hold 70% ARV minus repairs",
+        "Highest-ROI scope: convert/add a third bath, open kitchen-to-den wall, LVP throughout, quartz + white shaker, full paint \u2014 that's the move from $185/sf to $215/sf comps",
+        "Energy Corridor / CityCentre employment base and Katy ISD-adjacent or Houston ISD Askew-area schools support resale velocity if the flood story is clean",
+        "Wholesale angle: if seller will take $310k-$340k pre-list off-market, there is a $20k-$35k assignment to Energy Corridor flippers",
+        "Verify square footage against HCAD \u2014 1970s additions in this area are frequently unpermitted and appraisers will strip that sf at resale",
+        "If flood-zone-clean and never flooded, that fact alone is worth $15k-$25k of ARV in 77077 \u2014 get elevation cert early and market it"
+      ]
+    }
+  },
+  {
+    "id": 16290703,
+    "address": "11510 Mullins Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77035",
+    "price": 399900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1767,
+    "year_built": 1960,
+    "price_per_sqft": 226,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3252062",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/11510-mullins-dr-houston-tx-77035/3252062",
+    "zillow_url": null,
+    "agent": {
+      "name": "Connie Reddington",
+      "brokerage": "Century 21 Realty Partners",
+      "phone": "832-512-1442"
+    },
+    "sms_message": "Hi Connie, this is Vivek, local Investor. Interested in your listing at 11510 Mullins Dr, Houston TX 77035. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 395000,
+      "arv_high": 445000,
+      "comps": [
+        {
+          "address": "Houston 77035",
+          "notes": "Renovated 3/2 ranch on Mullins/Warm Springs in Westbury, ~1,700-1,850 sf, sold $390k-$425k ($215-235/sf)"
+        },
+        {
+          "address": "Houston 77035",
+          "notes": "Westbury Sec 4/5 full-gut flip near Chimney Rock & W Bellfort, ~1,750 sf, sold ~$430k-$450k with added bath/open kitchen"
+        }
+      ],
+      "red_flags": [
+        "Asking $399,900 = ~$226/sf, essentially at renovated ARV \u2014 no spread for Fix&Flip at list price",
+        "77035/Westbury has repeat flood history (Keegans Bayou, Willow Waterhole, Harvey/Tax Day); verify FEMA zone, elevation cert, and prior claims via CLUE/seller disclosure",
+        "1960 slab-on-grade: expect foundation movement, original cast iron/clay sewer lines \u2014 budget $8k-$15k for pier work and a camera-scope of the sewer",
+        "Original systems likely at end of life (panel possibly FPE/Zinsco, galvanized supply, ducts in attic), plus asbestos popcorn/9x9 tile and lead paint abatement",
+        "'Coming Soon' with 0 DOM \u2014 likely priced for retail buyer competition, not investor; Westbury draws owner-occupants who bid up",
+        "HISD boundary (Parker/Meyerland-area schools) is a mixed draw; buyer pool skews to private/charter families, softening top-end resale",
+        "Insurance cost in flood-prone 77035 hurts Fix&Rent DSCR; NFIP + windstorm can run $3.5k-$6k/yr"
+      ],
+      "opportunity_notes": [
+        "Westbury is a proven flip corridor with strong owner-occupant demand for renovated 1,700+ sf ranches \u2014 30-60 DOM when finished to current spec",
+        "Max allowable offer for a flip: ~$255k-$275k assuming $75k-$95k rehab, 10% closing/holding, and 15-18% net margin \u2014 pencil an offer only if it sits sharply below list",
+        "Wholesale angle is strongest play: contract in the $240k-$265k range and assign to a Westbury flipper who already knows the elevation/flood nuances",
+        "1,767 sf with a 1960 compartmentalized layout usually has room to open kitchen-to-living and convert to a true 3/2.5 or add a primary suite \u2014 biggest ARV lift for the dollar",
+        "Fix&Rent floor: renovated 3/2 in Westbury rents ~$2,300-$2,650/mo; only works as a BRRRR if all-in (purchase + rehab) stays under ~$300k",
+        "Elevated/never-flooded homes on the block command a $20k-$35k premium \u2014 if this one is dry with documentation, lead marketing with that",
+        "Lot sizes in Westbury (~7,500-9,000 sf) support a detached garage/ADU or larger backyard sell-point vs. newer inner-loop product",
+        "Set your walk-away trigger at the inspection: if foundation + sewer + flood all hit, exit \u2014 this deal only works bought right, not sold hard"
+      ]
+    }
+  },
+  {
+    "id": 16290704,
+    "address": "4303 Bungalow Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77047",
+    "price": 274999,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1412,
+    "year_built": 1965,
+    "price_per_sqft": 195,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10171478",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4303-bungalow-ln-houston-tx-77047/10171478",
+    "zillow_url": null,
+    "agent": {
+      "name": "Angel Martinez Bueno",
+      "brokerage": "Real Broker, LLC",
+      "phone": "3466261904"
+    },
+    "sms_message": "Hi Angel, this is Vivek, local Investor. Interested in your listing at 4303 Bungalow Ln, Houston TX 77047. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 238000,
+      "comps": [
+        {
+          "address": "Houston 77047",
+          "notes": "1960s 3/2 ~1,350-1,500sf resales off Scott/Almeda in 77047 trading $150-170/sf renovated"
+        },
+        {
+          "address": "Houston 77047",
+          "notes": "Nearby Ridgemont/Central Southwest updated 3/2s closing $210k-$235k, unrenovated $130k-$165k"
+        }
+      ],
+      "red_flags": [
+        "Ask of $274,999 ($195/sf) sits above renovated ARV for 77047 - negative spread before any rehab",
+        "1965 build: likely CI/galvanized supply lines, cast iron drain, original slab, aluminum branch wiring risk",
+        "Original slab in Houston gumbo clay - budget $8k-$18k contingency for foundation level/piers",
+        "Coming Soon with 0 DOM: no price discovery yet; sellers often anchor to unsupported Zestimate",
+        "Zip carries HISD/Fort Bend ISD boundary confusion and higher tax rate (~2.6-2.9%) that compresses buyer affordability",
+        "Elevated insurance and some ponding/drainage issues in the Sims Bayou/Ridgemont corridor - verify flood zone and 2016/Harvey claim history",
+        "Sub-1,500sf 1960s stock competes with $230k-$250k new builds nearby, capping resale ceiling"
+      ],
+      "opportunity_notes": [
+        "Fix&Flip only pencils near $105k-$125k purchase assuming $45k-$60k rehab, 8% cost of sale, and $205k-$225k exit - pass at ask",
+        "Fix&Rent math is stronger: rents $1,650-$1,850/mo for a clean 3/2; all-in under $150k gives ~1.2-1.3% rule and workable DSCR at current rates",
+        "Wholesale angle: build the seller a comp-supported CMA showing $200-$235k renovated ceiling; Coming Soon status means you can be first with a cash, as-is, quick-close offer before MLS exposure resets expectations",
+        "Watch for a price cut after 21-30 DOM or an expired/withdrawn listing - re-approach at 45-60 days when the seller has absorbed market feedback",
+        "Verify beds/baths against HCAD - 1965 1,412sf homes in this pocket are frequently 3/1 or 3/1.5 on record, and an unpermitted bath add changes both rehab scope and comp set",
+        "Adding a 4th bedroom or converting garage (if permitted) can push into the $245k+ comp band where FHA buyers at 1,600sf+ are shopping",
+        "If the roof, HVAC, and panel are already replaced, a light $25k cosmetic scope plus a $180k-$190k negotiated price could work as a rental hold rather than a flip"
+      ]
+    }
   }
 ]
