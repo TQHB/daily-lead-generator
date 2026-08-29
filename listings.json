@@ -35882,5 +35882,237 @@
         "If the roof, HVAC, and panel are already replaced, a light $25k cosmetic scope plus a $180k-$190k negotiated price could work as a rental hold rather than a flip"
       ]
     }
+  },
+  {
+    "id": 16290705,
+    "address": "20136 Sullivan Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 250000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1920,
+    "year_built": 1995,
+    "price_per_sqft": 130,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "2487891",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/20136-sullivan-dr-katy-tx-77449/2487891",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 20136 Sullivan Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 278000,
+      "arv_high": 302000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "1,850-2,000 sf 4/2 1990s resales off Clay Rd/Barker Cypress trading $272k-$295k updated"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Nearby 77449 rehabbed 2-story 4/2 ~1,900 sf closed low-$290s; dated/original condition sells $235k-$255k"
+        }
+      ],
+      "red_flags": [
+        "77449 sits near Addicks Reservoir/Bear Creek watershed - pull FEMA map, Harvey inundation history, and flood claim/elevation cert before offer",
+        "MUD + Harris County tax rate commonly 2.7%-3.2% - kills DTI for retail buyer and rental cash flow if underwritten at 2.2%",
+        "DOM 0 at $250k is essentially retail for this pocket - only ~$28k-$50k of spread before repairs, closing, holding, and commissions",
+        "1995 slab on Katy gumbo clay - check for foundation movement, sticking doors, brick cracks; piers run $8k-$18k",
+        "Original systems risk: 30-yr-old roof, HVAC, water heater, and likely galvanized/CPVC issues - budget $18k-$25k before cosmetics",
+        "Heavy competition from Katy/Cypress new construction under $300k caps ARV upside",
+        "Verify school zoning - 77449 splits Katy ISD vs Cy-Fair ISD and the difference is real dollars on ARV and rent",
+        "Possible HOA with transfer fees, deed restrictions, and rental caps - confirm leasing is allowed before Fix&Rent"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest fit: rehabbed 4/2 1,920 sf in 77449 rents $1,950-$2,200 with deep Katy tenant demand and fast lease-up",
+        "Cosmetic-only scope (paint, LVP, counters, fixtures, light landscaping) around $25k-$38k gets to full ARV - no floorplan work needed on a 4/2",
+        "Flip math is tight: 70% of $290k ARV less $35k repairs implies max offer near $168k-$185k - needs a $200k-$215k negotiated price or motivated seller to pencil",
+        "Wholesale spread is thin at list; only viable if seller drops to sub-$215k or the deal is assigned to a landlord buyer tolerant of a $230k basis",
+        "4 beds with 2 baths is the volume rental config here - adding a half bath is not required, keep capex lean",
+        "Ask for a survey and elevation certificate early; a clean flood answer alone can justify a stronger offer versus competitors still waiting on diligence",
+        "Run Katy ISD zoning confirmation on day one - if Katy ISD, push ARV toward the $300k-$310k band and rent toward $2,200"
+      ]
+    }
+  },
+  {
+    "id": 16290706,
+    "address": "9630 Vilven Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77080",
+    "price": 699900,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 2992,
+    "year_built": 2024,
+    "price_per_sqft": 234,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9296794",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/9630-vilven-ln-houston-tx-77080/9296794",
+    "zillow_url": null,
+    "agent": {
+      "name": "Gloria Nieto",
+      "brokerage": "First Millennium Realty",
+      "phone": "8325406607"
+    },
+    "sms_message": "Hi Gloria, this is Vivek, local Investor. Interested in your listing at 9630 Vilven Ln, Houston TX 77080. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 640000,
+      "arv_high": 700000,
+      "comps": [
+        {
+          "address": "Houston 77080",
+          "notes": "New-build 3/3.5 patio homes in Spring Branch/Binglewood corridor (77080) trading ~$215-235/sf, roughly $620k-$700k for 2,800-3,100 sf"
+        },
+        {
+          "address": "Houston 77080",
+          "notes": "Nearby 2023-2024 builder resales off Hammerly/Blalock generally settling in the mid-$600s, with $700k+ listings often needing price cuts"
+        }
+      ],
+      "red_flags": [
+        "Priced at ~$234/sf, at or above the top of the 77080 new-construction band \u2014 little to no equity spread for a flip",
+        "2024 build, Coming Soon, 0 DOM: no distress, no repair upside, seller likely holds firm near list",
+        "Spring Branch/77080 has documented flooding history near Brickhouse Gully and Spring Branch Creek \u2014 verify flood zone, elevation certificate, and whether the lot was raised",
+        "Likely a detached patio/townhome-style product on a small subdivided lot; possible shared driveway, private drive, or HOA/maintenance-area obligations that limit resale pool",
+        "2,992 sf 3/3.5 implies a 2-3 story layout with only 3 bedrooms \u2014 narrow buyer pool vs. 4-bed competing product at the same price",
+        "Rent for a $700k asset in 77080 realistically lands ~$3,400-$4,000/mo, well below the 1% rule; negative cash flow on financed Fix&Rent",
+        "New-construction builder warranty period ending soon; MUD/high Harris County tax rate (~2.1-2.3%) plus insurance crush DSCR"
+      ],
+      "opportunity_notes": [
+        "Not a Fix&Flip or Fix&Rent candidate at list; the only path is a deep price play \u2014 target sub-$560k (roughly 80% of the $700k ARV ceiling) if the listing goes stale past 60-90 DOM",
+        "Coming Soon status is a chance to get in before MLS exposure: offer a fast, non-contingent close in exchange for a 15-20% discount, especially if the seller is a builder carrying construction debt",
+        "Watch for a builder inventory unload \u2014 if the same subdivision has multiple unsold 2024 spec homes, a bulk or single-unit discount becomes realistic",
+        "Wholesale angle is weak: cash buyers in 77080 want $150-180/sf teardown/rehab basis, not finished new-build product; assignment spread would be thin to none",
+        "Better use of a $700k check in this submarket is 2-3 older Spring Branch 1950s-60s ranch homes at $250k-$320k for gut rehab, or a lot play at $240k-$300k for build-to-rent",
+        "If Vivek wants exposure here, a mid-term/corporate rental (Memorial-area, City Centre and Energy Corridor commuters) could push gross rent toward $4,500-$5,000/mo furnished and is the only structure that pencils near this basis"
+      ]
+    }
+  },
+  {
+    "id": 16290707,
+    "address": "5505 Aspen St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77081",
+    "price": 899000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 3050,
+    "year_built": 1999,
+    "price_per_sqft": 295,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11129520",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5505-aspen-st-houston-tx-77081/11129520",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lisa Kornhauser",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "832-274-6156"
+    },
+    "sms_message": "Hi Lisa, this is Vivek, local Investor. Interested in your listing at 5505 Aspen St, Houston TX 77081. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 855000,
+      "arv_high": 945000,
+      "comps": [
+        {
+          "address": "Houston 77081",
+          "notes": "Updated 1999-2006 4-bed detached homes in the Bellaire-adjacent north end of 77081 trade ~$280-310/sf, i.e. $855K-$945K at 3,050 sf"
+        },
+        {
+          "address": "Houston 77081",
+          "notes": "Similar-vintage 3,000+ sf homes on the Gulfton-facing south side of 77081 fall to $230-260/sf ($700K-$795K) \u2014 block-level location drives a ~$150K swing"
+        }
+      ],
+      "red_flags": [
+        "List price $295/sf is already at retail ARV \u2014 zero flip spread at asking; needs a $600-650K basis to pencil",
+        "77081 is a split ZIP: heavy Class-C apartment density (Gulfton) within blocks can kill appraisal and buyer pool",
+        "2.5 baths on 3,050 sf is under-configured for a $900K Houston buyer, who expects 3.5-4 baths \u2014 functional obsolescence discount",
+        "Coming Soon / 0 DOM = no price discovery; assume agent-optimistic pricing, do not anchor to list",
+        "1999 build is at end-of-life on roof, both HVAC systems, and water heater \u2014 budget $35-50K before cosmetics",
+        "Fix&Rent is dead at this basis: market rent ~$3,800-4,300/mo is ~0.45% of price, negative leveraged cash flow",
+        "Verify Brays Bayou watershed / Harvey flood history and current FEMA zone \u2014 1999 slab predates post-2018 detention rules"
+      ],
+      "opportunity_notes": [
+        "Wholesale/flip only works at $620-660K all-in acquisition; make the offer, let it sit, re-approach at DOM 45-60",
+        "Adding a 3rd full bath by converting the half bath plus a closet (~$15-20K) moves the property to the top of the $945K range",
+        "Pull HCAD lot size and dimensions \u2014 if 7,000+ sf with Bellaire-side frontage, builder/teardown takeout may beat a renovation exit",
+        "Coming Soon status means you can be first in with a cash, no-option, 10-day close offer before MLS exposure",
+        "Check title for estate, divorce, or out-of-state owner \u2014 that is the only realistic path to a 25-30% discount here",
+        "If bought right, a mid-level cosmetic scope ($60-80K: paint, floors, kitchen, primary bath) is enough; no structural work indicated at this vintage"
+      ]
+    }
+  },
+  {
+    "id": 16290708,
+    "address": "8505 Rising Stream Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77063",
+    "price": 434900,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2030,
+    "year_built": 2023,
+    "price_per_sqft": 214,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "16209728",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8505-rising-stream-dr-houston-tx-77063/16209728",
+    "zillow_url": null,
+    "agent": {
+      "name": "Stanley Mani",
+      "brokerage": "MIH REALTY, LLC",
+      "phone": "7134465086"
+    },
+    "sms_message": "Hi Stanley, this is Vivek, local Investor. Interested in your listing at 8505 Rising Stream Dr, Houston TX 77063. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 425000,
+      "arv_high": 468000,
+      "comps": [
+        {
+          "address": "Houston 77063",
+          "notes": "New-build infill detached homes in 77063 (Woodlake/Briarmeadow, off Fondren/Westpark) trading $205-$230/sqft; subject at $214/sqft is at market, not below"
+        },
+        {
+          "address": "Houston 77063",
+          "notes": "Comparable 2022-2024 builds, 1,950-2,150 sqft 4/2.5 gated-community product near Richmond/Hillcroft closing $415K-$465K"
+        }
+      ],
+      "red_flags": [
+        "2023 build at retail pricing - zero rehab spread; no Fix&Flip or Fix&Rent value-add path",
+        "Coming Soon / 0 DOM means seller is testing top of market; likely no motivation and no discount for 30-60 days",
+        "Rent for 4/2.5 2,030 sqft in 77063 is ~$2,600-$2,950/mo = 0.60-0.68% of price; negative cash flow after ~2.2-2.5% tax rate, insurance, and HOA",
+        "Small-lot/patio-home infill product often carries $1,500-$3,000/yr HOA plus possible shared-driveway or party-wall configuration - check plat and CCRs",
+        "Portions of 77063 near Keegans/Brays tributaries took water in Harvey; verify FEMA zone, LOMA, and whether slab elevation certificate exists",
+        "Builder may still have unsold inventory or newer phases in or near the same community, capping resale ARV and competing on price",
+        "2023 tax appraisal may still reflect partial-year or unimproved land value - HCAD reassessment can spike carrying costs 30-60% after sale",
+        "Wholesale exit is weak: no distress, no assignment margin at $435K retail on an MLS-listed new build"
+      ],
+      "opportunity_notes": [
+        "Location is the real asset: inside Beltway 8, ~10 min to Galleria/Uptown, ~15-20 min to Energy Corridor and Med Center via Westpark Tollway - supports strong tenant demand and low vacancy",
+        "Best-fit strategy is buy-and-hold with a large down payment or mid-term/corporate furnished rental to relocating energy/medical professionals at $3,400-$4,200/mo furnished, which flips the cash flow math",
+        "New 2023 construction means near-zero CapEx for 8-10 years and builder structural warranty may be assignable - lower reserve requirement than typical 1970s 77063 stock",
+        "Coming Soon status is the only edge: approach the listing agent pre-MLS for a $410K-$420K off-market number; below ~$405K the Fix&Rent numbers start working with 25% down",
+        "77063 is a gentrifying infill corridor - continued teardown/rebuild of 1960s-70s ranches supports 3-5%/yr appreciation, favoring an appreciation-weighted hold over a cash-flow thesis",
+        "Zoned to Piney Point Elementary (well-regarded) - lead with elementary zoning for family tenants; Wisdom HS is weak, so expect tenants with younger children or private-school plans",
+        "If pursuing at all, run it as a rate-buydown or assumable-financing play; a 2023 builder loan at a sub-5% assumable rate would materially change the deal - ask the agent directly"
+      ]
+    }
   }
 ]
