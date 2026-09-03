@@ -38725,5 +38725,352 @@
         "If flood zone X and no claim history, that removes the biggest discount driver and supports the upper ARV band"
       ]
     }
+  },
+  {
+    "id": 16290754,
+    "address": "4921 Marcellus St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 224900,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2438,
+    "year_built": 2021,
+    "price_per_sqft": 92,
+    "dom": 14,
+    "status": "Active",
+    "mls": "3170451",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/4921-marcellus-st-houston-tx-77028/3170451",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 4921 Marcellus St, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 248000,
+      "arv_high": 282000,
+      "comps": [
+        {
+          "address": "Houston 77028",
+          "notes": "2021-2022 built 4/3 ~2,300-2,500sf, Trinity/Houston Gardens 77028: ~$255-278k (~$105-115/sf)"
+        },
+        {
+          "address": "Houston 77028",
+          "notes": "New-build 3/2.5 ~1,700-1,900sf off Lockwood/Wileyvale: ~$225-248k (~$125-135/sf), size-adjusted down for 2,438sf"
+        }
+      ],
+      "red_flags": [
+        "$92/sf on a 4-year-old build is 20-25% under 77028 new-build comps - find out why before assuming equity",
+        "77028 sits next to the UP Englewood Yard creosote plume / Fifth Ward cancer cluster: resale stigma plus lender and insurer friction",
+        "Hunting Bayou / Halls Bayou drainage exposure - pull FEMA zone, Elevation Cert, and prior claims even on a 2021 slab",
+        "Hard price ceiling in the zip; appraisals routinely cap ~$270-285k no matter the sqft",
+        "2,438sf 4/3 is over-built for the block - $/sf compresses hard on larger homes here",
+        "HCAD rate ~2.9-3.2% with no homestead exemption: ~$560-650/mo escrow that guts rental DSCR",
+        "Small-builder spec risk - verify permits, COO, foundation engineering, and transferable builder warranty",
+        "Rents in 77028 top out near $1,800-2,100 for 4BR; underwriting $2,300+ is unrealistic",
+        "DOM 14 with no reduction - low list may be multiple-offer bait rather than a motivated seller"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the best fit: 2021 build means near-zero rehab, $10-20k for paint, fence, appliances, blinds",
+        "At $225k with $1,950-2,050 rent that is ~0.88% - offer $195-205k to clear the 1% rule and cover taxes",
+        "Flip math is thin: $282k ARV less 8% selling, $20k rehab, and holding leaves ~$25-35k - only works at a sub-$200k buy",
+        "Clean wholesale: tie up at $195-200k, assign to a DSCR landlord at $210-215k for a $10-15k spread",
+        "New construction is easily insurable and financeable with low CapEx for 10+ years - strong turnkey story for out-of-state buyers",
+        "Houston HCV payment standard for 4BR runs ~$2,000-2,300, so a voucher tenant can beat market rent",
+        "Lead with cash, as-is, 10-day close, and request survey plus builder warranty transfer"
+      ]
+    }
+  },
+  {
+    "id": 16290755,
+    "address": "38 County Road 3548",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77328",
+    "price": 74000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 600,
+    "year_built": 1990,
+    "price_per_sqft": 123,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "7222340",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/38-county-road-3548-cleveland-tx-77328/7222340",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 38 County Road 3548, Cleveland TX 77328. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 95000,
+      "arv_high": 125000,
+      "comps": [
+        {
+          "address": "Cleveland 77328",
+          "notes": "600-900 sqft 2/1-2/2 cabins/MH on 0.5-2 acres off CR 3500s, Cleveland 77328 resale $95k-$120k"
+        },
+        {
+          "address": "Cleveland 77328",
+          "notes": "Renovated small rural SFR in Tarkington/Plum Grove ISD area sold $110k-$130k, avg 60-90 DOM"
+        }
+      ],
+      "red_flags": [
+        "600 sqft 2/2 built 1990 on a county road is likely a manufactured/mobile home \u2014 verify HUD tags and that title was surrendered to real property, or conventional/FHA financing dies",
+        "Under-700 sqft limits appraisal comps and lender appetite; exit is largely cash/local portfolio buyers",
+        "Rural = private well and septic (aerobic or conventional) \u2014 inspect, test flow and OSSF permit with Liberty County; replacement $8k-$15k",
+        "Liberty County flood exposure near East Fork San Jacinto/Luce Bayou tributaries \u2014 pull FEMA panel; unpermitted improvements common in unrestricted CR subdivisions",
+        "Verify no owner-finance wrap, POA/road maintenance fees, or unpaid Liberty County taxes; unrestricted acreage means neighbor use risk (junk, livestock, RVs) that caps ARV",
+        "Access may be a shared/unmaintained dirt easement \u2014 confirm recorded legal access and all-weather ingress",
+        "1990 vintage: check for polybutylene, original electrical panel, and roof/wind damage typical of 30+ yr rural stock"
+      ],
+      "opportunity_notes": [
+        "Basis at $74k with $15k-$25k cosmetic + systems rehab puts all-in ~$90k-$99k against a $95k-$125k ARV \u2014 thin flip, better as Fix&Rent",
+        "Fix&Rent is the strongest play: Cleveland/Plum Grove rental demand from Colony Ridge and I-69 corridor workforce supports $950-$1,200/mo on a clean 2/2; ~13-15% gross yield on all-in basis",
+        "DOM 0 \u2014 offer fast, cash, 7-10 day close, and lead with an as-is inspection-optional structure to win against retail buyers who can't finance it",
+        "Land component carries the value: if the parcel is 1+ acre, price the dirt separately ($25k-$45k/acre in the area) \u2014 a lot-value floor de-risks the deal",
+        "Wholesale exit is realistic to the cash landlord pool at $82k-$88k if rehab scope comes back heavy; assignment spread $8k-$14k",
+        "If it is a MH on owned land in good shape, target a Texas MH-friendly portfolio lender or seller-finance the exit at $135k-$145k with $15k down for a much larger spread",
+        "Confirm septic/well condition and flood zone before hard money \u2014 those two items decide whether this is a $20k winner or a money pit"
+      ]
+    }
+  },
+  {
+    "id": 16290756,
+    "address": "8382 Westwood Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 245000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1234,
+    "year_built": 2011,
+    "price_per_sqft": 199,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3554694",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/8382-westwood-dr-katy-tx-77493/3554694",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 8382 Westwood Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 232000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "77493 4/2 ~1,250-1,450 sf, 2009-2013 builds (Westfield Village/Katy Lakes area) trading $165-$180/sf = $205k-$235k"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Comparable 1,200-1,300 sf Katy ISD resales closing 45-70 DOM near $215k after light cosmetic updates"
+        }
+      ],
+      "red_flags": [
+        "Asking $245k = ~$199/sf, roughly 15-20% above the $165-$180/sf 77493 resale band \u2014 no spread at list",
+        "4 beds in 1,234 sf implies ~10x10 bedrooms or a converted garage/unpermitted add; verify HCAD sqft and permits",
+        "MUD + Katy ISD tax rate likely 2.8-3.3% \u2014 carry cost ~$600-$700/mo hurts flip and compresses rent yield",
+        "DOM 0 means unproven pricing; no seller fatigue, low odds of a deep discount today",
+        "77493 has Cypress Creek/Barker-adjacent flood and detention-basin exposure \u2014 pull FEMA panel and 2016/2017 claim history",
+        "2011 build means little forced-appreciation upside; likely only cosmetic rehab available, so ARV lift is capped"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the only viable exit here: 4/2 in Katy ISD rents ~$1,750-$1,950; at $245k that's ~0.75% rent-to-price \u2014 needs price at $200k-$210k to pencil",
+        "Max allowable offer for flip at $220k ARV, $25k rehab, 70% rule = ~$129k \u2014 pass unless seller is 40%+ off list",
+        "Wholesale angle: tie up only with a long option period and assignment language; buyer pool for small Katy 4/2s is landlord-driven, not flipper-driven",
+        "Newer 2011 systems (roof, HVAC, plumbing near end of first cycle) mean low deferred-maintenance risk \u2014 favors a buy-and-hold at the right basis",
+        "Katy ISD zoning plus 4-bed count is a strong rental demand driver; low vacancy and fast lease-up if acquired under $210k",
+        "Ask agent for HCAD-vs-MLS sqft reconciliation, survey, and MUD tax bill before spending on inspection"
+      ]
+    }
+  },
+  {
+    "id": 16290757,
+    "address": "5806 Larkin St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 525000,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 2390,
+    "year_built": 2007,
+    "price_per_sqft": 220,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3779412",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5806-larkin-st-houston-tx-77007/3779412",
+    "zillow_url": null,
+    "agent": {
+      "name": "Thomas Mingarelli",
+      "brokerage": "Pat Griffin Realty",
+      "phone": "281-415-5171"
+    },
+    "sms_message": "Hi Thomas, this is Vivek, local Investor. Interested in your listing at 5806 Larkin St, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 565000,
+      "arv_high": 620000,
+      "comps": [
+        {
+          "address": "Houston 77007",
+          "notes": "Rice Military/Cottage Grove 3-story townhomes 2005-2010 build, 2,200-2,500sf, resell $240-260/sf post-cosmetic reno"
+        },
+        {
+          "address": "Houston 77007",
+          "notes": "New-construction 2022+ freestanding 3/3.5 nearby trading $650-720k \u2014 sets the ceiling and steals buyers"
+        }
+      ],
+      "red_flags": [
+        "Priced at ~$220/sf on a Coming Soon/0 DOM listing \u2014 near retail, thin flip spread before 6% CoS and holding",
+        "2007 Tuscan-era finishes (granite, dark cabinets, travertine, iron rails) \u2014 full cosmetic gut needed, budget $55-75k to compete with new builds",
+        "3-story walk-up with 1st-floor bedroom: shrinking buyer pool vs. free-standing new construction with yards",
+        "Rent ~$2,900-3,300/mo on a $525k basis = sub-0.65% rule; Fix&Rent will not cash flow with HOA/insurance/HCAD taxes ~2.1-2.3%",
+        "Cottage Grove/White Oak Bayou flood history \u2014 verify pre-Harvey flooding, current FEMA zone, and whether slab elevation triggers flood insurance",
+        "Likely PUD/townhome HOA with shared driveway and party-wall/maintenance obligations \u2014 check dues, reserves, and rental restrictions",
+        "2007 systems near end of life: original HVAC (2 units on 3 stories), water heater, and roof \u2014 inspect before hard offer",
+        "I-10 / Washington Ave noise and street-parking constraints on Larkin depress buyer showings"
+      ],
+      "opportunity_notes": [
+        "Best fit is Wholesale or a tight Fix&Flip \u2014 target contract at $415-440k to hold 70% ARV minus $65k reno",
+        "Highest-ROI scope is cosmetic: white/light cabinet refinish, quartz, LVP over travertine, lighting, paint, iron-to-cable stair rail \u2014 $50-70k lifts to the $600k+ band",
+        "2,390sf at 3/3.5 supports adding a 4th bed or dedicated office on the 1st floor \u2014 meaningful appraisal bump for remote-work buyers",
+        "Zip 77007 is a strong resale market (Memorial Park, Buffalo Bayou trails, Washington corridor) \u2014 expect 20-45 DOM if renovated to current taste",
+        "Coming Soon status = chance to pre-empt with a cash, fast-close offer before MLS exposure; ask the agent for seller motivation and any known flood/foundation history",
+        "If seller won't move on price, pivot to a mid-term/corporate furnished rental play near the Med Center/Downtown commute rather than a long-term lease",
+        "Roof age and HOA reserve study are the two diligence items that most likely create a post-inspection price reduction"
+      ]
+    }
+  },
+  {
+    "id": 16290758,
+    "address": "1605 Welch St B",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77006",
+    "price": 675000,
+    "beds": 4,
+    "baths": 4.5,
+    "sqft": 2404,
+    "year_built": 2015,
+    "price_per_sqft": 281,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "13587295",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1605-welch-st-b-houston-tx-77006/13587295",
+    "zillow_url": null,
+    "agent": {
+      "name": "Todd Mann",
+      "brokerage": "Compass RE Texas, LLC - West Houston",
+      "phone": "8323925589"
+    },
+    "sms_message": "Hi Todd, this is Vivek, local Investor. Interested in your listing at 1605 Welch St B, Houston TX 77006. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 690000,
+      "arv_high": 745000,
+      "comps": [
+        {
+          "address": "Houston 77006",
+          "notes": "Welch/Hopkins/W Main 2013-2017 3-story townhomes, 2,300-2,600 sf, $285-$310/sf"
+        },
+        {
+          "address": "Houston 77006",
+          "notes": "Montrose attached-B units, 2015 build, recent closes ~$700-735k"
+        }
+      ],
+      "red_flags": [
+        "List price $281/sf is already near ARV - flip spread <5% before 8% cost of sale",
+        "2015 build: cosmetic-only value-add, no forced-appreciation lever",
+        "'Unit B' implies shared driveway/lot and party-wall or maintenance agreement - verify title/HOA docs",
+        "Rent ~$4,000-4,600/mo on $675k = ~0.65% rent-to-price; negative cash flow at current rates",
+        "HCAD taxes ~2.0-2.2% plus rising TX insurance kill DSCR underwriting",
+        "3-story walk-up, no yard - narrows resale/family buyer pool",
+        "Coming Soon / DOM 0: no price discovery, likely multiple-offer, seller not motivated",
+        "77006 townhome resale supply is heavy - 60-90+ DOM typical at this price band"
+      ],
+      "opportunity_notes": [
+        "Only pencils as a flip at ~$590-615k acquisition with $30-40k cosmetic (paint, quartz, lighting, LVP) targeting $735k",
+        "4 full baths + likely 1st-floor ensuite: rent-by-room or mid-term furnished (Med Center/downtown commute) to lift gross rent 25-35%",
+        "STR angle exists in Montrose but confirm City of Houston short-term rental registration compliance before underwriting",
+        "Wholesale only viable if seller takes pre-list cash at a 12-15% discount - ask why it's 'Coming Soon' and not on MLS",
+        "Verify whether A and B units can be sold/financed separately - single-lot condo regime hurts lender options and exit",
+        "Best use for Vivek is likely a pass unless it comes back after 60 DOM with a price cut into the low $600s"
+      ]
+    }
+  },
+  {
+    "id": 16290759,
+    "address": "607 Blue Willow Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77042",
+    "price": 639000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2321,
+    "year_built": 1969,
+    "price_per_sqft": 275,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3314001",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/607-blue-willow-dr-houston-tx-77042/3314001",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lauren Amaro",
+      "brokerage": "Compass RE Texas, LLC - The Heights",
+      "phone": "8327236957"
+    },
+    "sms_message": "Hi Lauren, this is Vivek, local Investor. Interested in your listing at 607 Blue Willow Dr, Houston TX 77042. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 585000,
+      "arv_high": 668000,
+      "comps": [
+        {
+          "address": "Houston 77042",
+          "notes": "Renovated 1960s-70s Blue Willow/Briar Hills 4/2.5 ~2,200-2,500 sf trading ~$250-285/sf ($570k-$690k)"
+        },
+        {
+          "address": "Houston 77042",
+          "notes": "Dated original-condition Blue Willow resales ~$195-225/sf ($450k-$520k) before reno"
+        }
+      ],
+      "red_flags": [
+        "List price $275/sf is already at renovated-comp ARV \u2014 near-zero flip spread at ask",
+        "1969 build: likely cast-iron/galvanized plumbing, original slab, aluminum wiring risk, 1970s-era ductwork",
+        "77042 sections near Buffalo Bayou/Turkey Creek flooded in Harvey \u2014 pull elevation cert, flood claims, and 500-yr map before contracting",
+        "Coming Soon / 0 DOM means seller is testing top of market; expect multiple-offer pressure with no inspection leverage",
+        "Rent for 2,321 sf here caps around $2,800-$3,300/mo \u2014 roughly 0.45-0.50% rent-to-price, negative cash flow at list on financed Fix&Rent",
+        "2.5 baths in a $600k+ price band underperforms 4/3 competition; adding a full bath is often required to hit top comps"
+      ],
+      "opportunity_notes": [
+        "Target contract price $430k-$480k to make a flip pencil: ~$85k-$110k full reno, 8-9% total costs, leaves ~$70k+ margin at $620k ARV",
+        "Best fit is Wholesale unless seller cuts materially \u2014 pass on Fix&Rent at list, DSCR won't clear 1.0",
+        "Blue Willow is deed-restricted with strong Energy Corridor/Westchase commute demand and BUSD-adjacent zoning \u2014 resale velocity is good for a clean, modern-finish reno",
+        "Value-add levers: open the 1969 galley kitchen to den, convert half bath to full or add ensuite, LVP throughout, and full plumbing/electrical updates to defend $270+/sf",
+        "If flood history is clean, market the elevation cert aggressively \u2014 it's a measurable premium in 77042 buyer psychology",
+        "Watch for original 1969 pool/patio and mature-tree root issues on slab; budget $15k-$25k contingency above base reno"
+      ]
+    }
   }
 ]
