@@ -41854,5 +41854,410 @@
         "Value-add: open galley kitchen to den, LVP throughout, quartz + white shaker, fresh brick paint - $38k-$50k cosmetic scope on 1,674sf"
       ]
     }
+  },
+  {
+    "id": 16290808,
+    "address": "543 Ashlawn Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 175000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1872,
+    "year_built": 2020,
+    "price_per_sqft": 93,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15995446",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/543-ashlawn-dr-conroe-tx-77303/15995446",
+    "zillow_url": null,
+    "agent": {
+      "name": "Adelina Ochoa",
+      "brokerage": "RA Brokers",
+      "phone": null
+    },
+    "sms_message": "Hi Adelina, this is Vivek, local Investor. Interested in your listing at 543 Ashlawn Dr, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 215000,
+      "arv_high": 240000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "2018-2021 builds in Conroe 77303 (Wedgewood Forest / Ashlawn area), 1,750-1,950 sf, 4/2, selling $210k-$238k ($112-$127/sf)"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Recent 77303 new-ish resales ~$120/sf; builder inventory in nearby sections listing $225k-$245k"
+        }
+      ],
+      "red_flags": [
+        "List price ~$93/sf on a 2020 build is 20-25% under market \u2014 implies undisclosed damage, foundation/plumbing issue, or a fishing/auction-style price",
+        "DOM 0 means no market feedback; likely to draw multiple offers or be an unrepresentative/teaser listing",
+        "77303 is Conroe's weakest submarket (higher crime, softer schools, longer DOM) \u2014 appraisal risk and buyer pool thinner than 77304/77384",
+        "MUD district + Montgomery County: tax rate commonly 2.6-3.2%, ~$450-$600/mo escrow on ARV \u2014 crushes rent-side DSCR",
+        "New-build subdivisions in 77303 have heavy competing builder inventory with rate buydowns; resale must undercut new to move",
+        "Possible HOA and deed restrictions; also confirm it is not in a flood-prone section near Crockett Martin / SH-105 drainage"
+      ],
+      "opportunity_notes": [
+        "If the 2020 structure is sound, this is a light cosmetic flip: paint, flooring, fixtures, landscaping at $12k-$25k \u2014 not a full rehab",
+        "Spread math: $175k + $20k reno + $25k holding/closing/commissions \u2248 $220k all-in vs $215k-$240k ARV \u2014 thin flip margin, only works if purchase lands at $155k-$165k",
+        "Fix&Rent is the stronger play: 4/2 1,872 sf in 77303 rents $1,750-$1,950/mo; at $175k that's ~1.05-1.1% rule, workable with sub-7% financing but tight after MUD taxes",
+        "Wholesale angle is best if it can be tied up at/below list \u2014 investor buyers pay $180k-$190k for a turnkey 2020 4/2, leaving a $10k-$15k assignment",
+        "Verify the discount first: order foundation and full plumbing/slab-leak inspection, pull permit and insurance-claim history, confirm no post-Beryl or hail damage",
+        "Young roof, HVAC, and slab mean near-zero deferred capex for 8-10 years \u2014 strong long-term hold if entry price is right",
+        "Conroe/77303 benefits from I-45 corridor and Grand Parkway job growth; rent growth 3-4%/yr supports a 5-year hold over a quick flip"
+      ]
+    }
+  },
+  {
+    "id": 16290809,
+    "address": "13004 McCrorey Trails Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 197990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1502,
+    "year_built": 2026,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17495201",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/13004-mccrorey-trails-dr-conroe-tx-77303/17495201",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Woodruff",
+      "brokerage": "D.R. Horton-Texas, LTD",
+      "phone": "8325329592"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 13004 McCrorey Trails Dr, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 193000,
+      "arv_high": 212000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "New-build 4/2 ~1,450-1,600 sf in Conroe 77303 (FM 1484/Hwy 105 E corridor) closing $128-$140/sf"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "Resale 3-5 yr old 4/2 ~1,500 sf in NE Conroe trading $185k-$205k, ~$125-$135/sf"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2026 build at builder base price - zero rehab spread, not a flip or wholesale candidate",
+        "Purchase price likely at or above true resale ARV; builder premium evaporates on resale (first-resale discount 5-10%)",
+        "77303 is the softest Conroe submarket - higher DOM, heavy competing new inventory from LGI/DR Horton/Century keeps a price ceiling",
+        "MUD + Montgomery County tax rate likely 2.8-3.3% -> ~$460-$545/mo escrow on a $198k basis, kills DTI and cash flow",
+        "DOM 0 / builder listing - no motivated seller, minimal price negotiation, only incentives",
+        "Rent comps ~$1,650-$1,800 => ~0.85% rent-to-price rule, negative or breakeven cash flow after tax, HOA and insurance",
+        "Unfinished section - ongoing construction noise and future phases release at same or lower price, suppressing near-term appreciation",
+        "New-build appraisal risk on ARV; no seasoning for a fast cash-out refi"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent only if structured as a new-build buy-and-hold: push builder for 3-2-1 or permanent rate buydown (5.25-5.75%) plus $5-8k closing costs via preferred lender - that is the real yield, not equity",
+        "Ask about standing/completed spec inventory and end-of-quarter closeout pricing; builders in 77303 have cut $10-15k off aged specs",
+        "Explore a 2-4 home bulk/investor allocation for an additional 3-6% off base plus blinds, fridge and full sod included",
+        "Low maintenance capex for 8-10 yrs (builder 1/2/10 warranty) is the main hold advantage vs older Conroe rentals needing roof/HVAC",
+        "Tenant demand driven by Conroe ISD, Hwy 105/I-45 commuters, and Conroe Park North industrial jobs - target $1,700-$1,800 with a 12-18 mo lease",
+        "Rerun underwriting with actual MUD rate and non-homestead assessed value before LOI; if DSCR < 1.0 at a buydown rate, pass and redeploy to a 1980s-2000s resale rehab in 77301/77304 where a real Fix&Rent spread exists",
+        "No wholesale angle - builder contracts prohibit assignment and there is no discount to market to pass through"
+      ]
+    }
+  },
+  {
+    "id": 16290810,
+    "address": "13012 McCrorey Trails Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 189990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1279,
+    "year_built": 2025,
+    "price_per_sqft": 149,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17495203",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/13012-mccrorey-trails-dr-conroe-tx-77303/17495203",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Woodruff",
+      "brokerage": "D.R. Horton-Texas, LTD",
+      "phone": "8325329592"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 13012 McCrorey Trails Dr, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 185000,
+      "arv_high": 202000,
+      "comps": [
+        {
+          "address": "Conroe 77303",
+          "notes": "McCrorey Trails / Ladera Creek new-build 3/2 1,250-1,400 sqft closing $185K-$200K ($143-$152/sf)"
+        },
+        {
+          "address": "Conroe 77303",
+          "notes": "77303 resale 2021-2024 builds 1,300 sqft trading $180K-$195K, ~45-70 DOM"
+        }
+      ],
+      "red_flags": [
+        "Brand-new 2025 build at 0 DOM: no rehab spread, ARV is essentially list price - not a flip",
+        "MUD + Conroe ISD combined tax rate likely 2.8-3.3%, so ~$450-520/mo escrow on a $190K basis",
+        "Builder is still selling competing inventory in-section with rate buydowns and closing cost credits, capping resale ARV for 18-36 months",
+        "77303 (north Conroe) is the weakest submarket in the county - slower appreciation and higher tenant turnover than 77304/77384",
+        "1,279 sqft 3/2 on a small builder lot: rents cap around $1,500-1,650, so ~1.25% of purchase price at best",
+        "No assignment margin for wholesale - MLS builder listing, seller is a national builder, not motivated"
+      ],
+      "opportunity_notes": [
+        "Only viable as a buy-and-hold rental, not Fix&Flip; underwrite to negative or breakeven cash flow year 1 unless a rate buydown is negotiated",
+        "Push the builder for 3-5% closing cost credit plus a 2-1 or permanent rate buydown through their affiliated lender - that is where the real yield is here",
+        "Ask for the last-in-section / standing-inventory discount; builders in 77303 have been cutting $8K-$15K on completed spec homes at quarter-end",
+        "New build means near-zero CapEx and full builder warranty for 1-10 years - low maintenance reserve (~$60/mo) supports thinner cash flow",
+        "Grand Parkway 249 / SH 105 employment corridor and Conroe ISD growth support 3-5 yr appreciation; treat as an appreciation play, not a cash flow play",
+        "If Vivek wants velocity, skip this and hunt 1980s-2000s resale in 77301/77304 where a $40K-$60K rehab creates real forced equity"
+      ]
+    }
+  },
+  {
+    "id": 16290811,
+    "address": "250 County Road 5001",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 174900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 0,
+    "year_built": 2023,
+    "price_per_sqft": null,
+    "dom": 0,
+    "status": "Active",
+    "mls": "13613405",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/250-county-road-5001-cleveland-tx-77327/13613405",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rosalva Alvarado",
+      "brokerage": "Excelencia Real Estate, LLC",
+      "phone": "2816603455"
+    },
+    "sms_message": "Hi Rosalva, this is Vivek, local Investor. Interested in your listing at 250 County Road 5001, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Cleveland 77327",
+          "notes": "New-build 3/2 ~1,250 sqft on 0.25-0.5 ac off CR 5000s (Colony Ridge/Camino Real area), closed $168k-$185k in last 6 mo"
+        },
+        {
+          "address": "Cleveland 77327",
+          "notes": "Similar 2022-2024 stick-built 3/2 in Grand San Jacinto/Santa Fe sections, $170k-$198k, avg 90-150 DOM"
+        }
+      ],
+      "red_flags": [
+        "Address is Liberty County CR 5001 \u2014 Colony Ridge footprint: seller-financed lots, high foreclosure/turnover, weak arms-length comp set",
+        "sqft listed as 0 \u2014 no verified GLA; ARV band is unreliable until tape/appraisal confirms size",
+        "Ask $174,900 sits inside the ARV band \u2014 effectively zero flip spread at list; needs 25-35% discount to work",
+        "2023 build = no rehab upside; Fix&Flip and Fix&Rent value-add theses don't apply",
+        "Likely septic + water well or small private utility, unpaved/poorly drained county road access \u2014 appraisal and FHA/VA financing risk for exit buyer",
+        "Liberty County flood/drainage exposure along Tarkington/San Jacinto tributaries; verify FEMA panel and elevation",
+        "Unincorporated \u2014 no city services, slow permitting/inspection history, unverified builder quality on unpermitted rural builds",
+        "Exit buyer pool is heavily cash/owner-finance; conventional-financed retail resale is thin, expect 120+ DOM"
+      ],
+      "opportunity_notes": [
+        "Best fit is Wholesale, not Flip: tie up at $115k-$130k and assign to a Spanish-language investor/owner-finance buyer network for $140k-$150k",
+        "Fix&Rent math: rents ~$1,450-$1,650/mo for new 3/2 in 77327; at a $130k all-in basis that's ~1.15-1.25% gross \u2014 workable, but budget higher vacancy/collections and 10-12% PM",
+        "Owner-finance resale is the highest-margin exit here \u2014 10-15% down, 10-12% note; that buyer pool pays above cash comps",
+        "2023 build means minimal capex for 5-7 yrs: no roof/HVAC/systems reserve beyond routine \u2014 supports a rental hold if basis is right",
+        "Verify lot size and whether the lot is paid off or carries a Colony Ridge seller-financed note; a wrapped/encumbered lot kills clean title",
+        "Pull the deed history for the 2023 sale price \u2014 many of these traded $30k-$60k for land plus a $90k-$120k build; that spread sets your true offer floor",
+        "DOM 0 \u2014 get in first with a cash offer and a 10-day inspection/title window before the listing accumulates showings",
+        "If sqft confirms 1,400+ under air, top of band moves to ~$205k and a $135k buy could support a light-cosmetic flip"
+      ]
+    }
+  },
+  {
+    "id": 16290812,
+    "address": "2922 Halcyon Time Trl",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77045",
+    "price": 339000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 2346,
+    "year_built": 2013,
+    "price_per_sqft": 145,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3807477",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2922-halcyon-time-trl-houston-tx-77045/3807477",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sreeni Todupunoori",
+      "brokerage": "Texas Signature Realty",
+      "phone": "281-241-9242"
+    },
+    "sms_message": "Hi Sreeni, this is Vivek, local Investor. Interested in your listing at 2922 Halcyon Time Trl, Houston TX 77045. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 330000,
+      "arv_high": 355000,
+      "comps": [
+        {
+          "address": "Houston 77045",
+          "notes": "2013-2016 builds in Blue Ridge West/Windmill Lakes corridor 77045: 2,200-2,400 sf resales $138-$150/sf, $310K-$350K"
+        },
+        {
+          "address": "Houston 77045",
+          "notes": "Nearby Fort Bend/Almeda Genoa 2-story production homes ~2,300 sf trading $325K-$345K, 45-75 DOM"
+        }
+      ],
+      "red_flags": [
+        "Ask of $339K = $144/sf is already at/above retail for 77045 \u2014 near-zero equity spread at list",
+        "0 DOM: unproven pricing, no seller motivation yet; likely priced to a builder-comp fantasy",
+        "77045 has soft resale demand and long DOM vs. inner-loop; exit risk on a flip",
+        "Likely MUD + Harris County tax rate ~2.6-3.1% \u2014 kills Fix&Rent DSCR at this basis",
+        "Slab-on-grade Gulf Coast clay: verify foundation levelness and any post-2013 movement",
+        "Check FEMA/500-yr floodplain and Sims Bayou drainage; insurance quotes before committing",
+        "2013 build means minimal forced-appreciation levers \u2014 no cosmetic ARV lift available",
+        "3/2 at 2,346 sf is bed-count-light for the sf; appraisal and rent comps favor 4-bed at this size"
+      ],
+      "opportunity_notes": [
+        "No flip here at list. Only works as a Fix&Flip at roughly $245K-$260K all-in purchase (70% of $350K ARV less $15-20K light reno) \u2014 write the offer, don't chase",
+        "Fix&Rent math: market rent ~$2,150-$2,350/mo; at $339K that's a ~0.65% rent ratio \u2014 fails the 1% screen and likely negative cash flow after tax/ins",
+        "Wholesale angle is the realistic play: assign at $250K-$265K to a landlord buyer; spread depends entirely on seller distress emerging after 60-90 DOM",
+        "Watch for a price cut at day 45-60; re-engage if ask drops under $300K",
+        "Newer build = low CapEx reserve and easy tenant placement \u2014 a legitimate long-term hold for a buy-and-hold buyer, just not at a 2026 investor basis",
+        "Verify HOA dues and any transfer/cap fees; sub-$600/yr keeps rental exit viable",
+        "Pull rent comps on 3-bed vs 4-bed in the section \u2014 if a 4th bedroom can be framed from an oversized game room for $8-12K, that's the one real value-add"
+      ]
+    }
+  },
+  {
+    "id": 16290813,
+    "address": "19015 N Taverns Corner Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "price": 314990,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 3136,
+    "year_built": 2012,
+    "price_per_sqft": 100,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3763927",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/19015-taverns-corner-ct-houston-tx-77084/3763927",
+    "zillow_url": null,
+    "agent": {
+      "name": "Susan Tran",
+      "brokerage": "5X REALTY",
+      "phone": "7134805560"
+    },
+    "sms_message": "Hi Susan, this is Vivek, local Investor. Interested in your listing at 19015 N Taverns Corner Ct, Houston TX 77084. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 348000,
+      "arv_high": 382000,
+      "comps": [
+        {
+          "address": "Houston 77084",
+          "notes": "77084 N of I-10, 2010-2015 builds, 2,900-3,300 sf 4/3 two-story: $112-$122/sf trailing 6 mo"
+        },
+        {
+          "address": "Houston 77084",
+          "notes": "Stone Gate / Bear Creek Meadows / Lakes of Bridgewater resales ~3,100 sf: $355k-$385k, 30-55 DOM"
+        }
+      ],
+      "red_flags": [
+        "List at ~$100/sf is only 10-15% under ARV - no flip spread (70% rule MAO ~$225-245k on $365k ARV)",
+        "Rent ~$2,300-2,600/mo on $315k = 0.75-0.82% rule; MUD+ISD tax load ~2.9-3.2% kills Fix&Rent cash flow",
+        "77084 sits in Addicks/South Mayde Creek watershed - Harvey-era flooding nearby; pull Elevation Cert, FEMA panel and MUD district before offering",
+        "DOM 0 = zero price discovery; seller anchored at retail, no motivation signal yet",
+        "$314,990 pricing + 2012 vintage suggests iBuyer or SFR-fund disposition - expect scripted counters and as-is addendum, plus deferred maintenance from tenant turns",
+        "3,136 sf two-story competes directly with Katy/Cypress new builds carrying 5.x% rate buydowns - resale buyer pool is thin at this size",
+        "Verify Cy-Fair ISD vs Katy ISD boundary - wrong side of the line is worth $15-25k on this ARV",
+        "13-yr-old original HVAC, roof and water heater are all at replacement age"
+      ],
+      "opportunity_notes": [
+        "Best fit is wholesale/wholetail, not flip: contract at $250-268k and assign to a landlord or light-rehab retail buyer",
+        "2012 build = cosmetic-only scope ($22-35k: paint, LVP down, carpet up, quartz/backsplash, fixtures, landscaping) with low structural risk",
+        "Wholetail play: buy ~$268k, spend ~$15k, list $349-359k - roughly $45-55k gross before ~8% sale costs",
+        "If it is a fund/iBuyer disposition, wait for 21-30 DOM and 2 price cuts, then offer 12-15% under list with quick close and no option-period retrade",
+        "3,136 sf 4/3 supports HCV/Section 8 (Harris County 4BR FMR ~$2,300-2,500) or room-rental exit if the price gets to the low $260s",
+        "Ask for seller-paid closing costs / rate buydown instead of price cut if the seller is anchored - same effect on the exit spread",
+        "Confirm no active MUD reimbursement or unpaid HOA transfer fees; 77084 MUD payoffs regularly surprise at closing"
+      ]
+    }
+  },
+  {
+    "id": 16290814,
+    "address": "11026 Green Arbor Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77089",
+    "price": 325000,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 2365,
+    "year_built": 1970,
+    "price_per_sqft": 137,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3307587",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/11026-green-arbor-dr-houston-tx-77089/3307587",
+    "zillow_url": null,
+    "agent": {
+      "name": "Norman Frenk",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Bay Area",
+      "phone": "7138180829"
+    },
+    "sms_message": "Hi Norman, this is Vivek, local Investor. Interested in your listing at 11026 Green Arbor Dr, Houston TX 77089. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 355000,
+      "arv_high": 390000,
+      "comps": [
+        {
+          "address": "Houston 77089",
+          "notes": "Sagemont/Kirkwood South area 3/2.5 ~2,200-2,400 sf 1970s resales trading ~$150-165/sf renovated ($340k-$395k)"
+        },
+        {
+          "address": "Houston 77089",
+          "notes": "Green Arbor/Green Tee-adjacent 2,300+ sf updated two-story closings in the low-to-mid $370s"
+        }
+      ],
+      "red_flags": [
+        "1970 build in 77089: original cast-iron/galvanized plumbing, aluminum branch wiring risk, 50-yr-old slab \u2014 foundation and sewer scope should be assumed until proven",
+        "Price at $137/sf on a 0-DOM listing leaves thin margin; ARV spread is only ~$30-65k over ask before rehab",
+        "Clear Brook City MUD + Pearland-adjacent tax load pushes tax rate toward ~2.6-3.0%, hurting Fix&Rent DSCR",
+        "Zone is Harris County flood-repetitive-loss territory (Clear Creek/Armand Bayou watershed); verify Harvey/Imelda claim history and current flood zone before any offer",
+        "2,365 sf with 3 beds implies odd/added square footage \u2014 check for unpermitted additions or converted garage that comps won't credit",
+        "3 full/half baths in a 1970 tract home often means a dated primary bath layout requiring full gut, not cosmetic"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest exit: 3/2.5 ~2,300 sf in 77089 rents ~$2,100-2,400/mo with strong Clear Creek ISD demand from NASA/Bay Area commuters",
+        "Cosmetic-to-moderate rehab budget $45k-70k (roof, HVAC, kitchen, baths, LVP, paint) supports a flip at $370k-385k with ~$25-40k spread \u2014 too tight unless purchase is negotiated to $280k-295k",
+        "Wholesale angle is realistic: assign at $285k-300k to a local rehabber; 0 DOM means test seller motivation early rather than waiting",
+        "Large 1970s lots in Sagemont-area subdivisions often allow ADU/garage-apartment add for rental upside outside deed-restriction limits \u2014 verify HOA docs",
+        "If foundation and flood history come back clean, the $/sf discount vs. renovated comps is the entire thesis; if either is dirty, walk"
+      ]
+    }
   }
 ]
