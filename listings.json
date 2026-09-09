@@ -42259,5 +42259,236 @@
         "If foundation and flood history come back clean, the $/sf discount vs. renovated comps is the entire thesis; if either is dirty, walk"
       ]
     }
+  },
+  {
+    "id": 16290815,
+    "address": "300 S Sandra St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 109900,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 1072,
+    "year_built": 1955,
+    "price_per_sqft": 103,
+    "dom": 0,
+    "status": "Active",
+    "mls": "10333134",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/300-s-sandra-st-conroe-tx-77301/10333134",
+    "zillow_url": null,
+    "agent": {
+      "name": "Maria Borrego",
+      "brokerage": "Walzel Properties - Conroe",
+      "phone": "(832) 674-4960"
+    },
+    "sms_message": "Hi Maria, this is Vivek, local Investor. Interested in your listing at 300 S Sandra St, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 175000,
+      "arv_high": 205000,
+      "comps": [
+        {
+          "address": "Conroe 77301",
+          "notes": "1950s 2/1\u20133/1 bungalows, Dugan/Madeley area 77301: renovated ~$165\u2013195k, ~$160\u2013180/sf"
+        },
+        {
+          "address": "Conroe 77301",
+          "notes": "Conroe 77301 close-in renovated 1,000\u20131,300 sf resales trending $180\u2013210k with added 2nd bath"
+        }
+      ],
+      "red_flags": [
+        "1955 build: likely original cast-iron/galvanized plumbing, knob-and-tube or 60\u2013100A panel, no post-1955 code updates \u2014 budget $18\u201328k mechanicals",
+        "2/1 configuration is a financing and resale drag; sub-1,100 sf caps appraised value unless a 2nd bath is added",
+        "Corner lot on S Sandra near downtown Conroe \u2014 verify pier-and-beam vs slab, sloped floors and foundation movement common in this vintage",
+        "77301 is the weakest submarket in Conroe (older stock, mixed rentals, higher crime index) \u2014 buyer pool is heavily investor/FHA-entry",
+        "DOM 0 at $109,900 = priced to draw multiple offers; expect bid-up over ask, which kills the margin fast",
+        "Possible lead paint / asbestos siding or floor tile on a 1955 house \u2014 abatement adds cost and disclosure risk",
+        "Check Conroe city limits utilities, tax rate ~2.1\u20132.3%, and whether structure is in a Stewarts Creek floodplain fringe"
+      ],
+      "opportunity_notes": [
+        "$103/sf entry is genuinely below replacement cost; even a light-cosmetic rent-ready holds equity",
+        "Best play is Fix&Flip with a bath conversion: carve a 2nd full bath from an existing utility/hall area, take it to 2/2 and target $190\u2013200k resale",
+        "Fix&Rent: renovated 2/1 or 2/2 in 77301 rents ~$1,350\u20131,550/mo; at $110k + $45k rehab that's ~$155k all-in for a ~1.0% gross rent ratio \u2014 thin but works with a BRRRR refi near $180k",
+        "Wholesale spread is real: assign at $125\u2013135k and a local rehabber still clears \u2014 lowest-risk exit given the DOM 0 competition",
+        "Conroe ISD plus continued I-45 north corridor jobs and downtown Conroe revitalization support the 77301 rent floor",
+        "If lot is >7,000 sf, check for room to add square footage or a detached unit \u2014 Conroe zoning is more permissive than City of Houston deed-restricted tracts",
+        "Verify roof age and HVAC; a 1955 house with recent roof/HVAC swings rehab from $55k down to $35k and makes the flip math work"
+      ]
+    }
+  },
+  {
+    "id": 16290816,
+    "address": "415 Reinerman St B, Houston, TX 77007",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "price": 795000,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 3070,
+    "year_built": 2012,
+    "price_per_sqft": 259,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "12188432",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/415-reinerman-st-b-houston-tx-77007/12188432",
+    "zillow_url": null,
+    "agent": {
+      "name": "Vicki Barazandeh",
+      "brokerage": "Martha Turner Sotheby's International Realty",
+      "phone": "7134164900"
+    },
+    "sms_message": "Hi Vicki, this is Vivek, local Investor. Interested in your listing at 415 Reinerman St B, Houston, TX 77007, Houston TX 77007. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 800000,
+      "arv_high": 880000,
+      "comps": [
+        {
+          "address": "Houston 77007",
+          "notes": "Rice Military/Washington Corridor 3-story free-standing townhomes, 2010-2015 build, 2,800-3,200 sqft, trading $255-$285/sqft ($780k-$890k)"
+        },
+        {
+          "address": "Houston 77007",
+          "notes": "Newer 2020+ builds on Reinerman/Blossom/Floyd with elevator or roof deck closing $890k-$950k, setting the ceiling"
+        }
+      ],
+      "red_flags": [
+        "Priced at ~$259/sqft with DOM 0 \u2014 no distress signal, seller likely holds firm; almost no wholesale spread",
+        "2012 build in good condition means only cosmetic ARV lift (~$25-40/sqft), not enough to cover 6% sell costs + carry on a $795k basis",
+        "Unit 'B' patio-home/townhome: shared driveway, possible shared-wall or HOA/maintenance agreement \u2014 verify survey and any land-lease/common-area docs",
+        "Fix&Rent fails badly: $795k basis vs realistic $4,200-$4,800/mo rent = ~0.55% rent-to-price, negative cash flow after taxes (~2.0-2.2% HCAD rate) and insurance",
+        "High-price-point exit in 77007 is buyer-financing sensitive; 60-120 DOM typical above $800k, meaning 4-6 months carry",
+        "Competes directly with new construction inventory at $850k-$950k that offers warranties and modern finishes"
+      ],
+      "opportunity_notes": [
+        "Best path is Fix&Flip only if acquired at $620k-$660k (70% of $880k ARV less $60-80k reno) \u2014 write the offer there, not at ask",
+        "Value-add levers: full kitchen/primary bath refresh, LVP over builder carpet, white-oak stair refinish, roof-deck or third-floor terrace add \u2014 highest $/sqft return in Rice Military",
+        "3,070 sqft is above the neighborhood median for the vintage; market the extra square footage and 3.5 baths to move-up buyers priced out of $900k+ new builds",
+        "Zone-to-Memorial-area walkability (Washington Ave bars, Buffalo Bayou trails, Whole Foods) supports a premium exit \u2014 lead with lifestyle in listing photos",
+        "If seller shows fatigue after 90+ DOM, revisit; townhomes at this price band in 77007 commonly cut 5-8% before contract",
+        "Alternative exit: mid-term/corporate rental at $6,000-$6,800/mo furnished (Memorial Hermann/downtown professionals) improves the hold economics but still won't cover debt service at full price",
+        "Verify HCAD tax assessment and whether a homestead exemption is currently in place \u2014 investor-owned taxes will jump materially and must be modeled in the carry"
+      ]
+    }
+  },
+  {
+    "id": 16290817,
+    "address": "10819 Oasis Dr, Houston, TX 77096",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77096",
+    "price": 520000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1713,
+    "year_built": 1960,
+    "price_per_sqft": 304,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3244271",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/10819-oasis-dr-houston-tx-77096/3244271",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 10819 Oasis Dr, Houston, TX 77096, Houston TX 77096. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 415000,
+      "arv_high": 470000,
+      "comps": [
+        {
+          "address": "Houston 77096",
+          "notes": "Renovated 1960s 3/2 ranches in Meyerland/Willow Meadows (77096) trading ~$240-275/sqft, i.e. ~$410k-$470k at 1,713 sqft"
+        },
+        {
+          "address": "Houston 77096",
+          "notes": "Non-elevated original-condition 77096 stock closing $185-215/sqft ($315k-$370k); new-construction elevated builds $550k-$750k set the ceiling"
+        }
+      ],
+      "red_flags": [
+        "List price $520k = $304/sqft, above renovated resale comps for the tract \u2014 likely no flip spread at ask",
+        "77096/Brays Bayou corridor: Harvey, Tax Day and Memorial Day flood history; pull FEMA map, elevation cert and repetitive-loss/claims history before offering",
+        "1960 build not elevated: expect original cast-iron/clay sewer, 60-yr-old slab on Beaumont clay (foundation movement), possible aluminum or cloth wiring, and asbestos in tile/mastic",
+        "3/2.5 in a 1960 ranch implies a prior addition \u2014 verify permits and that HCAD sqft matches the 1,713 marketed",
+        "Flood insurance can run $2.5k-$6k+/yr if in AE zone; kills DSCR on a rent hold",
+        "Rent-to-price is ~0.45-0.50% ($2,300-$2,600/mo on $520k) \u2014 well under the 0.8-1.0% Fix&Rent threshold",
+        "0 DOM: unproven price, seller likely still anchored to list; no motivation signal yet"
+      ],
+      "opportunity_notes": [
+        "Best angle is lot/teardown or elevate-and-build: 77096 lots support $550k-$750k new elevated product; underwrite land value ($180k-$250k) rather than the improved value",
+        "Fix&Flip only works on a big price cut \u2014 at ARV $440k with $85k-$110k reno, MAO is roughly $200k-$220k plus holding; make a low cash offer and let it sit",
+        "Wholesale play: tie up at $330k-$360k and market to Meyerland builders/elevators who already work the Brays corridor",
+        "If the structure sits in X/shaded-X and has an elevation cert showing no flood history, ARV moves to the top of range \u2014 that single document is the whole deal",
+        "HISD zoning (Kolter/Meyerland Middle/Bellaire HS) and inner-loop-adjacent access drive resale and family rent demand; verify current zoning, it has shifted",
+        "Watch for estate/tired-landlord seller after 45-60 DOM and a price drop under $450k \u2014 that is the realistic entry window",
+        "If held, target $2,400-$2,600/mo after a $45k cosmetic refresh; only pencils at a sub-$330k basis"
+      ]
+    }
+  },
+  {
+    "id": 16290818,
+    "address": "17519 Butte Creek Rd, Houston, TX 77090",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77090",
+    "price": 359000,
+    "beds": 5,
+    "baths": 3,
+    "sqft": 3196,
+    "year_built": 1968,
+    "price_per_sqft": 112,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3328601",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/17519-butte-creek-rd-houston-tx-77090/3328601",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mia Adams",
+      "brokerage": "Realty Of America, LLC",
+      "phone": "2818068553"
+    },
+    "sms_message": "Hi Mia, this is Vivek, local Investor. Interested in your listing at 17519 Butte Creek Rd, Houston, TX 77090, Houston TX 77090. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 305000,
+      "arv_high": 345000,
+      "comps": [
+        {
+          "address": "Houston 77090",
+          "notes": "Ponderosa Forest 4-5BR 1968-74 resales, 2,600-3,300 sqft, renovated $100-112/sqft (~$290k-$350k)"
+        },
+        {
+          "address": "Houston 77090",
+          "notes": "77090 north-of-1960 large-home sales cluster $95-105/sqft as-is; $359k list = $112/sqft, at/above the ceiling"
+        }
+      ],
+      "red_flags": [
+        "List price at or above likely ARV - zero spread for flip or wholesale at asking",
+        "1968 build: cast iron drain lines, likely original panel/possible aluminum branch wiring, 40+ yr slab and cracked-tile risk",
+        "3,196 sqft is superadequate for the block - extra sqft appraises at a discount in 77090",
+        "Spring ISD zoning and Greenspoint-adjacent perception cap retail buyer pool and financing appraisals",
+        "Cypress Creek/Greens Bayou watershed nearby - verify current FEMA panel and post-Harvey claim history",
+        "Tax rate ~2.6-2.9% w/ possible MUD; ~$9k-$10k/yr tax kills rental DSCR",
+        "5/3 at 3,196 sqft rents ~$2,400-$2,750 = ~0.7% of asking, well under 1% rule",
+        "0 DOM means no seller fatigue; likely already flipped or priced on sqft, not condition"
+      ],
+      "opportunity_notes": [
+        "Only works as Fix&Rent if acquired at $215k-$235k; anchor offer off $95-100/sqft as-is, not list",
+        "Large 5/3 footprint supports mother-in-law suite, co-living, or midterm/traveling-nurse rental for rent premium over standard SFR",
+        "Wholesale angle: watch for 30-60 DOM price cuts, then assign at $220k-$245k to a rental buyer",
+        "Pull HCAD for owner tenure, prior permits, and whether recent reno was permitted - unpermitted work is a discount lever",
+        "Order sewer scope and Level 2 panel inspection during option period; cast iron replacement alone is $8k-$15k on this footprint",
+        "If truly updated and structurally clean, a retail-lite exit at $330k-$345k is possible but margin is thin - underwrite Fix&Rent first"
+      ]
+    }
   }
 ]
