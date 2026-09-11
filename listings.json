@@ -43342,5 +43342,295 @@
         "Best fit for Vivek is Fix&Flip or wholesale-to-builder; drop Fix&Rent from consideration on this address regardless of price"
       ]
     }
+  },
+  {
+    "id": 16290835,
+    "address": "16411 Valerie Marie Pl",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 159900,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 840,
+    "year_built": 2023,
+    "price_per_sqft": 190,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16869301",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16411-valerie-marie-pl-conroe-tx-77306/16869301",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mathew Anderson",
+      "brokerage": "Rapid Realty, LLC",
+      "phone": "4696451011"
+    },
+    "sms_message": "Hi Mathew, this is Vivek, local Investor. Interested in your listing at 16411 Valerie Marie Pl, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 162000,
+      "arv_high": 182000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "Small 2/2 new-builds (800-950 sf) in E. Conroe 77306 trading $165k-$180k, roughly $185-205/sf"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Nearby 2022-2024 cottage/BTR product off FM 3083 & Hwy 105 E closing $170k-$185k with builder concessions"
+        }
+      ],
+      "red_flags": [
+        "2023 build at $190/sf list = already near retail; almost no rehab arb for Fix&Flip",
+        "840 sf 2-bed caps resale pool to investors/first-timers; FHA/conv appraisals thin on tiny-home comps",
+        "DOM 0 \u2014 no price discovery yet; seller unlikely to take wholesale-level discount",
+        "77306 MUD + Conroe ISD tax load often 2.7%-3.2%, crushing DSCR",
+        "Rent ~$1,275-$1,425 vs $159,900 = ~0.85% rule, below Houston cash-flow threshold",
+        "Likely small-lot/cottage community with HOA and heavy same-product competition from builder standing inventory",
+        "East Conroe flood/drainage exposure \u2014 verify LOMR, MUD district and detention before offer"
+      ],
+      "opportunity_notes": [
+        "Play it as Fix&Rent or turnkey hold, not a flip: near-zero CapEx for 8-10 yrs, builder warranty may transfer",
+        "Offer $138k-$145k to hit 1%+ rent-to-price and leave resale margin; walk above $148k",
+        "If it's builder/spec inventory, push for rate buydown + closing costs instead of price \u2014 better cash-flow math than a discount",
+        "Wholesale angle: assignable to out-of-state turnkey buyers chasing new-build Conroe rentals \u2014 thin $3k-$6k fee at best",
+        "Conroe 77306 rent growth driven by I-45/Hwy 242 job corridor; 2-bed product leases fast to singles/couples",
+        "Verify tax rate, HOA dues and whether MUD bonds are pre- or post-buildout before underwriting NOI"
+      ]
+    }
+  },
+  {
+    "id": 16290836,
+    "address": "21173 Shakey Holw",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 189900,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 960,
+    "year_built": 1985,
+    "price_per_sqft": 198,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5205255",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/21173-shakey-holw-conroe-tx-77306/5205255",
+    "zillow_url": null,
+    "agent": {
+      "name": "Myra Arenas",
+      "brokerage": "SES Real Estate Group",
+      "phone": "832-282-8931"
+    },
+    "sms_message": "Hi Myra, this is Vivek, local Investor. Interested in your listing at 21173 Shakey Holw, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 195000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "77306 Grangerland/East Conroe 900-1,100 sqft 1980s frame homes on 0.25-1 ac: $150k-$185k renovated, ~$150-175/sqft"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Rehabbed 2-3/1-2 in Shadow Lake Estates / Crystal Forest area closing $160k-$190k, 30-60 DOM"
+        }
+      ],
+      "red_flags": [
+        "List price $189,900 = $198/sqft, at or above likely renovated ARV \u2014 no spread for Fix&Flip at asking",
+        "2 bed / 1 bath is functionally obsolete for Conroe family buyers; resale pool is thin without adding a 3rd bed/2nd bath",
+        "77306 is heavy septic + private/community water \u2014 verify septic condition, aerobic permit, and well; replacement is $12k-$18k",
+        "1985 build: likely original aluminum-frame windows, 40-yr-old plumbing/electrical panel (check for FPE/Zinsco), and end-of-life HVAC",
+        "MUD/community water district and unrestricted-adjacent lots can include mobile homes nearby, capping appraised value",
+        "DOM 0 \u2014 no price history to leverage; seller likely anchored to Conroe appreciation headlines, not to 2/1 comps",
+        "Flood/drainage: East Conroe along Caney Creek tributaries has Zone AE pockets \u2014 pull the FIRM panel before contracting"
+      ],
+      "opportunity_notes": [
+        "Best exit is Fix&Rent, not Flip: a clean 2/1 in 77306 rents ~$1,250-$1,450/mo; needs an all-in basis near $135k-$145k to hit ~1% rule",
+        "Offer well under ask \u2014 target $120k-$140k; run a $35k-$45k rehab (roof, HVAC, septic contingency, kitchen/bath, LVP throughout)",
+        "Highest-value add: convert to 3/2 by bumping ~200-300 sqft or reconfiguring \u2014 3/2 comps in 77306 run $190k-$215k, which creates the actual margin",
+        "Confirm lot size \u2014 if it's 0.5+ acre, land value carries the deal and supports a higher ARV than the structure alone",
+        "Wholesale angle is viable if seller motivation surfaces: assignable at $130k-$145k to a local Conroe landlord buyer pool",
+        "Grand Parkway 249 / SH-105 corridor growth and Conroe ISD demand support long-hold rent growth; this is a 5+ yr hold story, not a quick flip",
+        "Verify deed restrictions \u2014 if unrestricted, a mobile-home-friendly lot broadens the buyer pool but caps stick-built ARV"
+      ]
+    }
+  },
+  {
+    "id": 16290837,
+    "address": "4618 McEwen St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77009",
+    "price": 650000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1148,
+    "year_built": 1940,
+    "price_per_sqft": 566,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2973124",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/4618-mcewen-st-houston-tx-77009/2973124",
+    "zillow_url": null,
+    "agent": {
+      "name": "David Batagower",
+      "brokerage": "Compass RE Texas, LLC - The Heights",
+      "phone": "713-253-8609"
+    },
+    "sms_message": "Hi David, this is Vivek, local Investor. Interested in your listing at 4618 McEwen St, Houston TX 77009. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 525000,
+      "arv_high": 600000,
+      "comps": [
+        {
+          "address": "Houston 77009",
+          "notes": "Renovated 1940s Woodland Heights/Norhill bungalows (1,100-1,400 sf) trade ~$430-490/sf, i.e. ~$500-620K"
+        },
+        {
+          "address": "Houston 77009",
+          "notes": "New-build 2,600-3,000 sf in 77009 sells $950K-$1.2M; teardown lots 4,500-6,000 sf trade $330-425K"
+        }
+      ],
+      "red_flags": [
+        "Ask is ~$566/sf vs ~$430-490/sf renovated comps \u2014 negative spread before any rehab",
+        "Fix&Rent fails: 3/2 1,148sf rents ~$2,400-2,900, under 0.45% of a $650K basis; Harris Co. taxes ~2.0-2.2% with no homestead exemption",
+        "1940 pier-and-beam: expect foundation shimming, knob-and-tube/60A service, cast-iron sewer, transite/original ducts \u2014 $60-90K to full-gut",
+        "Woodland Heights/Norhill historic district overlay is likely on this block \u2014 HAHC approval can block demo, second-story additions, and window/siding changes",
+        "Coming Soon / 0 DOM = untested price, no reductions yet; seller likely anchored to lot-value hype",
+        "1,148 sf caps resale ceiling \u2014 buyers at $600K+ in 77009 expect 2,000+ sf and off-street parking",
+        "Verify 500-yr floodplain / Little White Oak Bayou proximity and any post-Harvey repair history"
+      ],
+      "opportunity_notes": [
+        "Primary thesis is lot value, not the house: underwrite the dirt at $340-400K and only bid if seller will take a land price",
+        "If non-historic and lot is ~5,000+ sf, new-build spec at ~$175-200/sf cost into a $950K-$1.1M sale supports a land basis near $375-425K",
+        "Fix&Flip only works with a whole-house gut plus 400-700 sf rear addition to reach ~1,700 sf; target purchase $325-375K, rehab $150-200K, ARV $700-760K",
+        "Wholesale angle is strongest: 77009 infill builders (Heights/Norhill) are active buyers \u2014 assign at $390-415K if seller capitulates",
+        "Watch for price cuts after 30-45 DOM; Coming Soon overpricing in 77009 typically resets 8-12% by day 60",
+        "Confirm whether lot can be subdivided into two 25-30' townhome lots \u2014 that materially raises the land bid",
+        "Pass at list; make a written land-value offer and set a follow-up for day 45"
+      ]
+    }
+  },
+  {
+    "id": 16290838,
+    "address": "8403 Braes Meadow Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77071",
+    "price": 339000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2356,
+    "year_built": 1969,
+    "price_per_sqft": 144,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "12058190",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8403-braes-meadow-dr-houston-tx-77071/12058190",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 8403 Braes Meadow Dr, Houston TX 77071. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 295000,
+      "arv_high": 345000,
+      "comps": [
+        {
+          "address": "Houston 77071",
+          "notes": "Braeburn Valley West 4/2 ~2,200-2,400 sf 1968-1972 rehabbed resales trading ~$125-$145/sf ($285k-$340k)"
+        },
+        {
+          "address": "Houston 77071",
+          "notes": "Dated-condition 77071 2,300+ sf sales ~$95-$110/sf ($220k-$260k) set the acquisition basis"
+        }
+      ],
+      "red_flags": [
+        "Asking $339k = ~$144/sf, at/above renovated ARV ceiling for 77071 \u2014 zero spread at list",
+        "Brays Oaks/Keegans-Brays Bayou corridor: verify FEMA zone, Harvey/Tax Day flood history, prior claims and whether it is a repaired flood home",
+        "1969 build: cast iron drain lines, original slab, possible aluminum branch wiring, 55-yr-old sewer \u2014 $15k-$25k of invisible systems cost",
+        "Likely original 4-5 ton HVAC, galvanized/polybutylene supply, and single-pane windows on a 2,356 sf footprint",
+        "Coming Soon with 0 DOM \u2014 no price discovery yet; agent may be testing a Meyerland-adjacent price in a Braeburn submarket",
+        "Brays Oaks Management District assessment plus HCAD rate pushes effective tax load ~2.6-3.0%, which crushes Fix&Rent DSCR",
+        "HISD zoning (Braeburn/Welch/Sharpstown feeder) caps owner-occupant exit buyer pool and resale velocity"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the only viable lane: 4/2.5 at 2,356 sf rents ~$2,300-$2,600/mo in 77071 \u2014 needs an all-in basis under ~$235k to clear 1% with taxes/insurance",
+        "Flip math requires purchase \u2264$205k-$220k with a $45k-$60k cosmetic-plus-systems scope to hit a $320k exit at 70% MAO",
+        "Ask for the elevation certificate and CLUE report before touring; a clean non-flood elevation on this street is a genuine value unlock vs. neighborhood stigma pricing",
+        "Coming Soon status means no offers logged \u2014 get in pre-MLS with a cash, as-is, 10-day close and anchor 30-35% under list",
+        "Square footage is rare for the zip; if the layout allows a true primary-down or a 5th bed conversion, it differentiates against the 1,900 sf comp stack",
+        "Insurance quote (flood + wind/hail) should be underwritten at $4,500-$6,500/yr, not the $2,200 a seller pro-forma will show",
+        "Check for permitted vs. unpermitted additions \u2014 1969 Braeburn homes often carry converted garages that HCAD sqft does not reflect"
+      ]
+    }
+  },
+  {
+    "id": 16290839,
+    "address": "2007 Gardenia Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77018",
+    "price": 1725000,
+    "beds": 5,
+    "baths": 4.5,
+    "sqft": 3997,
+    "year_built": 2024,
+    "price_per_sqft": 432,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3166391",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2007-gardenia-dr-houston-tx-77018/3166391",
+    "zillow_url": null,
+    "agent": {
+      "name": "Oscar C. Hernandez",
+      "brokerage": "The Advisory Real Estate + Development",
+      "phone": "832-841-3858"
+    },
+    "sms_message": "Hi Oscar, this is Vivek, local Investor. Interested in your listing at 2007 Gardenia Dr, Houston TX 77018. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1380000,
+      "arv_high": 1560000,
+      "comps": [
+        {
+          "address": "Houston 77018",
+          "notes": "Oak Forest/Garden Oaks 2023-25 new builds, 3,400-4,300 sf, trading ~$345-$390/sf ($1.25M-$1.60M)"
+        },
+        {
+          "address": "Houston 77018",
+          "notes": "77018 luxury spec resales near 43rd/Shepherd closing 5-10% under list after 90+ DOM"
+        }
+      ],
+      "red_flags": [
+        "Ask of ~$431/sf is ~15-25% above the 77018 new-build comp band; likely $150K-$300K over ARV",
+        "2024 build still unsold in 2026 - carrying builder/lender, possible spec that failed to move or a failed prior contract",
+        "No value-add: brand-new construction leaves no rehab spread for Fix&Flip",
+        "Fix&Rent is dead on arrival - $5.5K-$6.5K/mo rent vs $1.7M basis; negative cash flow before taxes",
+        "Harris County taxes ~2.1-2.3% = $36K-$40K/yr, plus $6K-$9K windstorm/HO insurance at this value",
+        "$1.5M+ band in 77018 is thin and illiquid - 120-200 DOM typical, jumbo-buyer-dependent",
+        "Check FEMA/White Oak Bayou drainage and whether the lot is a fill-elevated rebuild; Harvey-era history on the block",
+        "Coming Soon / DOM 0 means no market feedback yet - list price is seller fantasy, not a data point"
+      ],
+      "opportunity_notes": [
+        "Wholesale angle is weak at list; only works if you tie it up at $1.15M-$1.25M (roughly $290-$315/sf) and assign to a luxury end-buyer",
+        "Watch for 60-90 DOM, then two price cuts - stale 2024 spec inventory is where builder/lender motivation shows up",
+        "Ask directly whether a construction loan is maturing; distressed builder takeouts in Oak Forest have printed 12-18% under list",
+        "Best fit is a light cosmetic/finish-out reposition (landscaping, pool add, kitchen upgrade) to reach the $1.55M ceiling - not a gut rehab",
+        "Verify builder reputation and remaining structural warranty; unknown small builders discount 5-8% vs known Oak Forest names",
+        "If acquired near $1.2M, a 12-month lease-then-list hold covers ~50-60% of carry while waiting for the spring luxury window",
+        "Pull the original 2024 list price and price history - the delta tells you exactly how much room the seller has"
+      ]
+    }
   }
 ]
