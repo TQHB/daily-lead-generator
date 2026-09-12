@@ -43632,5 +43632,359 @@
         "Pull the original 2024 list price and price history - the delta tells you exactly how much room the seller has"
       ]
     }
+  },
+  {
+    "id": 16290840,
+    "address": "1104 Southline St",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 114900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1456,
+    "year_built": 1965,
+    "price_per_sqft": 79,
+    "dom": 0,
+    "status": "Active",
+    "mls": "4796523",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/1104-southline-st-cleveland-tx-77327/4796523",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christian Wallace",
+      "brokerage": "LKV Realty ,LLC",
+      "phone": "214-935-3952"
+    },
+    "sms_message": "Hi Christian, this is Vivek, local Investor. Interested in your listing at 1104 Southline St, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290841,
+    "address": "3703 W Koller St",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 90000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1520,
+    "year_built": 0,
+    "price_per_sqft": 59,
+    "dom": 0,
+    "status": "Active",
+    "mls": "4810567",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/3703-w-koller-st-cleveland-tx-77327/4810567",
+    "zillow_url": null,
+    "agent": {
+      "name": "Yolanda Rahbani",
+      "brokerage": "JLA Realty",
+      "phone": "/agent_yolrahbani"
+    },
+    "sms_message": "Hi Yolanda, this is Vivek, local Investor. Interested in your listing at 3703 W Koller St, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290842,
+    "address": "6148 Bayberry Blooms Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 246990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1656,
+    "year_built": 2026,
+    "price_per_sqft": 149,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17448557",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/6148-bayberry-blooms-ln-katy-tx-77493/17448557",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 6148 Bayberry Blooms Ln, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 245000,
+      "arv_high": 262000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "New-build 4/2 ~1,600-1,750 sf in 77493 (Elyson/Sunterra/Katy Crossing) closing $240k-$265k, ~$145-155/sf"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Resale 2-4 yr old builder homes same sf in 77493 trading $235k-$255k, ~$140-150/sf"
+        }
+      ],
+      "red_flags": [
+        "ARV is essentially the purchase price - zero day-one equity on a 2026 spec build; no flip or wholesale spread",
+        "MUD + ISD combined tax rate in 77493 typically 3.0-3.5%, so ~$620-720/mo escrow on $247k - kills rental cash flow",
+        "Builder incentives (rate buydowns, closing costs) inflate recorded comps; true cash-equivalent value is often 3-6% lower",
+        "HOA $700-1,100/yr plus front-yard maintenance covenants in most Katy MPCs",
+        "Heavy new-supply competition - 77493 is one of the highest-permit zips in the US; builder standing inventory undercuts resale",
+        "DOM 0 / new listing means no price discovery; builder list price is a ceiling, not a comp",
+        "No rehab value-add: nothing to fix, so Vivek's renovation edge does not apply",
+        "Likely no fence/blinds/fridge/sod - $8k-15k of buyer-side finish-out before it is rent-ready",
+        "Assignment on a builder contract is usually prohibited by the purchase agreement - wholesale exit is contractually blocked"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent only if bought with a builder 4.99-5.5% forward buydown; market rent for 4/2 1,656 sf new in Katy is ~$1,950-2,150/mo, which needs sub-6% money to break even",
+        "Push builder for standing-inventory / quick-close discount plus incentive cash - $10k-18k concessions are realistic on spec homes sitting 60+ days",
+        "Ask for the flooring/blinds/fence/sod package in lieu of price cut; saves $10k+ of out-of-pocket rent-ready cost",
+        "Katy ISD zoning and new-build appeal support strong tenant demand and low vacancy (2-4 weeks) - a stability play, not a spread play",
+        "Protest the first-year assessment aggressively; new builds are often assessed at full sale price including incentives",
+        "Better fit for a 5-10 yr buy-and-hold appreciation thesis in a growth corridor than for Vivek's flip or wholesale pipelines",
+        "If pursuing volume, negotiate a 2-3 home bulk spec purchase for an additional 3-5% builder discount"
+      ]
+    }
+  },
+  {
+    "id": 16290843,
+    "address": "20411 Oasis Park Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 249500,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2200,
+    "year_built": 2005,
+    "price_per_sqft": 113,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17448580",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/20411-oasis-park-dr-katy-tx-77493/17448580",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jared Turner",
+      "brokerage": "Lennar Homes Village Builders, LLC",
+      "phone": "8888453451"
+    },
+    "sms_message": "Hi Jared, this is Vivek, local Investor. Interested in your listing at 20411 Oasis Park Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 295000,
+      "arv_high": 325000,
+      "comps": [
+        {
+          "address": "Katy 77493",
+          "notes": "Katy 77493 (Ventana Lakes/Oasis Park area) 4/2 ~2,100-2,300 sf 2003-2008 builds resale $300k-$320k, ~$140/sf"
+        },
+        {
+          "address": "Katy 77493",
+          "notes": "Nearby 2,000-2,400 sf single-story updated resales $310k-$330k; dated/original-condition sell $270k-$285k"
+        }
+      ],
+      "red_flags": [
+        "List price ~$113/sf is well below 77493 resale norm \u2014 implies heavy deferred maintenance, foundation/slab movement, or post-flood/Harvey history not disclosed",
+        "DOM 0 means no market feedback yet; likely multiple offers or an investor-bait price that will bid up above $265k",
+        "Katy Gumby/Cane Island area MUD + Katy ISD tax rate ~2.4-2.9% \u2014 taxes $7k-$9k/yr crush Fix&Rent DSCR",
+        "2005 build: original 20-yr HVAC, roof, and water heater all at end of life ($18k-$25k combined)",
+        "Verify flood zone and Barker Reservoir flood-pool proximity \u2014 77493 has parcels inside the 500-yr/controlled-release zone; lender flood insurance can add $1.5k-$3k/yr",
+        "Possible HOA in Oasis Park/Ventana Lakes subdivision \u2014 deed restrictions may block rental or short-term use; check transfer fees and resale cert"
+      ],
+      "opportunity_notes": [
+        "Fix&Flip math: $249.5k + $45k-$60k rehab + $25k carry/closing = ~$325k-$335k all-in vs $295k-$325k ARV \u2014 thin. Only works if bought at $215k-$230k",
+        "Fix&Rent is the stronger play: 4/2 2,200 sf in Katy ISD rents $2,200-$2,450/mo; at $249.5k + $35k light rehab that's ~0.85% rule \u2014 below 1% but Katy ISD appreciation and tenant quality compensate",
+        "Katy ISD attendance zone is the main value driver \u2014 confirm elementary/junior high zoning before underwriting rent at top of range",
+        "Wholesale angle is realistic: if seller motivated, contract at $215k-$225k and assign at $240k-$248k to a flipper; the sub-$120/sf basis in 77493 is the pitch",
+        "2,200 sf 4/2 at 2005 vintage = likely single-story or 2-story with all beds up; single-story commands a $10k-$15k premium in this submarket \u2014 verify",
+        "Cosmetic-only scope (LVP, paint, quartz, fixtures, landscaping) at $30k-$38k could hit $300k-$308k retail if structure and roof check out \u2014 get a foundation engineer report before hard money"
+      ]
+    }
+  },
+  {
+    "id": 16290844,
+    "address": "2126 Chimney Rock Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77056",
+    "price": 799990,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2367,
+    "year_built": 1952,
+    "price_per_sqft": 338,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3208582",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2126-chimney-rock-rd-houston-tx-77056/3208582",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kenneth Soc",
+      "brokerage": "Keller Williams Summit",
+      "phone": "346-331-9877"
+    },
+    "sms_message": "Hi Kenneth, this is Vivek, local Investor. Interested in your listing at 2126 Chimney Rock Rd, Houston TX 77056. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 875000,
+      "arv_high": 1050000,
+      "comps": [
+        {
+          "address": "Houston 77056",
+          "notes": "Tanglewood-area 1950s remodels off San Felipe trading $430-520/sqft interior-street; apply 20-30% discount for Chimney Rock frontage"
+        },
+        {
+          "address": "Houston 77056",
+          "notes": "Recent 77056 teardown/lot sales on 8-10k sqft lots at $600-750k land value"
+        }
+      ],
+      "red_flags": [
+        "Fronts Chimney Rock Rd, a 4-lane arterial \u2014 permanent noise/traffic discount and narrow resale buyer pool",
+        "1952 build: expect cast iron/galvanized plumbing, knob-and-tube or 60-100A service, asbestos tile/popcorn, possible slab or pier-and-beam settling",
+        "$338/sqft list on a pre-reno 74-year-old house leaves ~$75-250k spread before $150-250k of rehab \u2014 negative flip margin at ask",
+        "Coming Soon / 0 DOM means no price discovery; seller likely anchored to Tanglewood comps that don't apply to arterial frontage",
+        "Verify Tanglewood-area deed restrictions and whether the tract is single-family-only \u2014 limits commercial/office conversion upside",
+        "Rent comps in 77056 top out near $3.8-4.5k/mo; at $800k basis Fix&Rent yields sub-4% gross \u2014 does not pencil"
+      ],
+      "opportunity_notes": [
+        "Play this as land/teardown, not a cosmetic flip \u2014 underwrite to lot value ($600-750k) and offer accordingly, not to the $800k ask",
+        "If lot is 9,000+ sqft with arterial frontage, test a new-build spec at 3,400-3,800 sqft targeting $1.6-1.9M, or a 2-unit/townhome layout if restrictions allow",
+        "Wholesale angle is strongest: 77056 land is in demand by Galleria-area builders \u2014 tie up at $650-700k and assign to a spec builder",
+        "Ask about seller motivation pre-MLS (estate/probate/out-of-state owner) and push for a pre-list contract before Coming Soon converts to Active",
+        "Arterial location can support a professional-office or medical use if a variance/commercial comp exists nearby \u2014 check adjacent parcel uses along Chimney Rock",
+        "Set a hard max: $700k all-in acquisition for flip/build math; walk if seller holds at $799,990"
+      ]
+    }
+  },
+  {
+    "id": 16290845,
+    "address": "2422 Deutser St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77093",
+    "price": 215000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1148,
+    "year_built": 1940,
+    "price_per_sqft": 187,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "7964225",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2422-deutser-st-houston-tx-77093/7964225",
+    "zillow_url": null,
+    "agent": {
+      "name": "Melissa Nelson",
+      "brokerage": "Keller Williams Realty Northeast",
+      "phone": "8325274989"
+    },
+    "sms_message": "Hi Melissa, this is Vivek, local Investor. Interested in your listing at 2422 Deutser St, Houston TX 77093. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 195000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Houston 77093",
+          "notes": "Renovated 2-3/2 1,050-1,300 sqft 1940s-60s homes off Little York/Airline (77093) trading ~$165-$195/sqft, or ~$185k-$235k"
+        },
+        {
+          "address": "Houston 77093",
+          "notes": "Nearby 77093 flips on Deutser/Winfield/Gulf Bank closing $200k-$230k when converted to 3/2 with new roof, HVAC, and PEX"
+        }
+      ],
+      "red_flags": [
+        "Ask of $215k is at/above ARV - zero flip margin at list, needs to be bought in the $110k-$135k range",
+        "2-bed configuration caps buyer pool and appraisal vs 3/2 comps that dominate the area",
+        "1940 build: expect pier-and-beam settlement, knob-and-tube/cloth wiring, cast-iron sewer, lead paint and possible asbestos siding/tile",
+        "77093 sits in the Halls Bayou drainage basin - verify FEMA zone, past flood claims (Harvey/Imelda), and insurability before contract",
+        "Harris County tax rate ~2.7-3.0%; at $215k basis taxes alone run ~$5.8k-$6.5k/yr and kill rental DSCR",
+        "Rents for a 2/2 here are only ~$1,300-$1,500/mo - roughly 0.65% of ask, fails Fix&Rent underwriting at this price",
+        "Aldine ISD ratings and heavy rental/investor concentration slow retail resale; expect 45-75 DOM even renovated",
+        "'Coming Soon' with 0 DOM means no price discovery yet - seller expectations likely anchored high"
+      ],
+      "opportunity_notes": [
+        "Highest-and-best use is converting to 3/2 within the existing 1,148 sqft (steal from oversized living/dining) - adds ~$20k-$30k to ARV for ~$8k-$12k cost",
+        "Target MAO for Fix&Flip: ~$118k-$130k assuming $55k-$70k rehab on a 1940 house and 70% of a $210k ARV",
+        "Wholesale is the cleanest play - tie up at $115k-$125k, assign for $8k-$15k to a local 77093 rehabber who already runs crews in Aldine",
+        "Check HCAD lot size and Houston's single-family setback rules; many Deutser-area lots are 6,000-7,500 sqft and may support an ADU or second unit for a rent-by-door strategy",
+        "Location is genuinely good for rental demand: minutes to I-45, Hardy Toll Road, and Beltway 8, with strong blue-collar tenant base and short vacancy",
+        "Let it sit - 'Coming Soon' overpriced listings in 77093 typically reprice 8-12% within 45-60 days; set an alert and re-offer at $130k cash, 10-day close",
+        "If the foundation report comes back clean and it is outside the 500-yr floodplain, a modest $35k-$40k cosmetic rehab at a $130k basis still yields ~$40k-$50k net on a flip"
+      ]
+    }
+  },
+  {
+    "id": 16290846,
+    "address": "14526 Royal Hill Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77083",
+    "price": 294000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1886,
+    "year_built": 1983,
+    "price_per_sqft": 156,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11599552",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/14526-royal-hill-dr-houston-tx-77083/11599552",
+    "zillow_url": null,
+    "agent": {
+      "name": "Bill Bexley",
+      "brokerage": "eXp Realty LLC",
+      "phone": "8328165139"
+    },
+    "sms_message": "Hi Bill, this is Vivek, local Investor. Interested in your listing at 14526 Royal Hill Dr, Houston TX 77083. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 298000,
+      "arv_high": 322000,
+      "comps": [
+        {
+          "address": "Houston 77083",
+          "notes": "Mission Bend/Royal Hill 3/2 1,800-1,950sf 1980s resales trading ~$155-170/sf, i.e. $295K-$325K renovated"
+        },
+        {
+          "address": "Houston 77083",
+          "notes": "Nearby 77083 Alief ISD 1-story updated 3/2s closing $300K-$315K with 30-60 DOM"
+        }
+      ],
+      "red_flags": [
+        "List price $294K (~$156/sf) is essentially at retail ARV \u2014 near-zero spread for flip or wholesale",
+        "1983 slab-on-grade on Houston gumbo clay: expect foundation movement, sewer line cracks; demand engineer report + hydrostatic test",
+        "Original systems likely at/past life: 40+ yr cast iron/galvanized plumbing, aluminum branch wiring risk, HVAC and roof likely 15+ yrs",
+        "77083/Mission Bend is Fort Bend/Harris border with multiple MUD districts and a possible HOA - tax rate can run 2.7-3.2%, crushing DSCR",
+        "Alief ISD schools drag owner-occupant demand; retail buyer pool is thinner and FHA-heavy, so appraisal risk is real",
+        "Coming Soon / 0 DOM means agent is fishing for multiple offers - likely bid above list, worsening the math",
+        "Flood risk: parts of 77083 back to Keegans/Brays tributaries - pull FEMA panel and Harris County flood viewer before offer"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the only plausible exit: 3/2 1,886sf rents $2,000-$2,250 in 77083. At $294K + $25K light reno, PITI at 2.9% tax rate kills cash flow - needs purchase near $225-240K to pencil",
+        "Max allowable offer for flip at 70% rule: $310K ARV x 0.70 - $45K reno = ~$172K. List is $122K over - pass unless seller is distressed",
+        "Wholesale only works as a novation/assignment if you can get it under contract sub-$210K; at list there is no assignment fee",
+        "1,886sf with 3/2 suggests an oversized den or formal - adding a 4th bedroom or converting to 4/2 is the highest-ROI layout play in this submarket ($8-12K cost, $10-15K ARV lift)",
+        "Watch it after Coming Soon expires: if it sits past 45-60 DOM with 1-2 price cuts, re-engage at $250-260K",
+        "Ask the listing agent for the reason for sale and whether seller will carry - owner finance at 6% with $40K down would make the rent exit viable at close to list"
+      ]
+    }
   }
 ]
