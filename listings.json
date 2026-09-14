@@ -44684,5 +44684,407 @@
         "Confirm no flood history + elevation cert \u2014 a clean, never-flooded 77449 house trades at the top of the ARV range and insures cheaply"
       ]
     }
+  },
+  {
+    "id": 16290859,
+    "address": "1710 Campos Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 199000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1180,
+    "year_built": 2021,
+    "price_per_sqft": 169,
+    "dom": 0,
+    "status": "Active",
+    "mls": "15504657",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/1710-campos-ct-conroe-tx-77301/15504657",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mary Feece",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - The Woodlands",
+      "phone": "9365230123"
+    },
+    "sms_message": "Hi Mary, this is Vivek, local Investor. Interested in your listing at 1710 Campos Ct, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 205000,
+      "arv_high": 225000,
+      "comps": [
+        {
+          "address": "Conroe 77301",
+          "notes": "Wedgewood Forest / Ladera Creek 3/2 1,150-1,300 sf 2020-2022 builds resold $205k-$222k (~$170-182/sf), 30-60 DOM"
+        },
+        {
+          "address": "Conroe 77301",
+          "notes": "Crighton Ridge / Woodhaven Forest 77301 3/2 ~1,200 sf closings $200k-$228k; new-build base models nearby list $215k-$235k"
+        }
+      ],
+      "red_flags": [
+        "2021 build = no rehab upside; spread is $6k-$26k before costs, too thin for a flip after 8-9% sell-side + holding",
+        "MUD + Conroe ISD tax rate likely 2.6-3.2%; ~$450-550/mo escrow kills Fix&Rent DSCR",
+        "Builder still selling comparable inventory in/near the subdivision with rate buydowns and closing credits - caps resale price and stretches DOM",
+        "HOA dues ~$400-700/yr plus deed restrictions on rentals in some Conroe sections - verify leasing cap before Fix&Rent",
+        "DOM 0 at $199k is below the $170/sf comp band - expect multiple offers, possible flood/foundation/insurance-claim or seller-distress reason for the discount",
+        "East 77301 rent band is soft; 1,180 sf 3/2 rents $1,575-$1,800 = ~0.85-0.90% of purchase, negative or breakeven cash flow at current rates",
+        "Check 77301 flood zone / Stewarts Creek and San Jacinto drainage - several 2019-2021 Conroe sections sit near 500-yr fringe"
+      ],
+      "opportunity_notes": [
+        "Best fit is Wholesale: tie up at $185k-$192k and assign $8k-$12k to a buy-and-hold or turnkey buyer who wants a zero-deferred-maintenance 2021 asset",
+        "Fix&Rent works only at $175k-$185k all-in with cosmetic-only spend ($4k-$8k: paint, blinds, fixtures, landscaping) targeting $1,750/mo",
+        "Structural/roof/HVAC all under 5 yrs and likely remaining 10-yr builder structural warranty - transferable, strong resale and insurance story",
+        "Low-capex hold: minimal reserves needed vs 1970s-80s Houston inventory, so cash flow is predictable even if thin",
+        "Conroe/I-45 corridor rent growth from Woodlands-area employment supports a 3-5 yr hold with refi exit rather than a flip",
+        "If seller is a relocating original owner or builder-buyback, push for a fast-close cash discount to $180s - that is where all three exits pencil",
+        "Verify no builder resale restriction / right of first refusal and confirm the 2021 tax assessment is not still land-only, which would spike year-one escrow"
+      ]
+    }
+  },
+  {
+    "id": 16290860,
+    "address": "17906 Alexandria Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 148950,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1008,
+    "year_built": 1994,
+    "price_per_sqft": 148,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5281599",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17906-alexandria-dr-conroe-tx-77302/5281599",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 17906 Alexandria Dr, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 165000,
+      "arv_high": 185000,
+      "comps": [
+        {
+          "address": "Conroe 77302",
+          "notes": "Renovated 1,000-1,200 sf 3-4/2 1990s builds in 77302 (Caney Creek/Ponderosa-area subdivisions) trading ~$160-185/sf, $168k-$192k"
+        },
+        {
+          "address": "Conroe 77302",
+          "notes": "Similar small-footprint Conroe 77302 resales off SH-242/FM-1485 closing $155k-$180k with 30-60 DOM"
+        }
+      ],
+      "red_flags": [
+        "4 beds in 1,008 sf is implausible for a 1994 build - likely unpermitted conversion, added-on bedroom, or MLS data error; verify HCAD/MCAD sqft and permits",
+        "Ask price $148/sf is already near renovated retail for 77302 - flip spread is thin to negative before rehab",
+        "DOM 0 / Active: no price discovery yet, seller unlikely to take a deep discount on day one",
+        "Possible manufactured/mobile home on land in this 77302 pocket - confirm real-property conversion and foundation type, kills conventional/FHA exit if not",
+        "Montgomery County MUD + Conroe ISD tax rate commonly 2.4-3.0% - crushes Fix&Rent DSCR at this price",
+        "Caney Creek HS feeder caps buyer pool and ARV ceiling vs. north/west Conroe",
+        "Likely septic and possible well - inspect aerobic system; failed septic is a $8k-$15k surprise",
+        "1994 systems: original roof/HVAC/panel (check Federal Pacific/Zinsco) and cast-iron or poly plumbing"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest exit: renovated 4/2 in 77302 rents ~$1,350-$1,500/mo; at ~$145k all-in that's near 1% rule for this market",
+        "Low price point means a deep cash-buyer/landlord pool - clean wholesale assignment at $10k-$15k fee if tied up around $115k-$125k",
+        "Target max allowable offer ~$100k-$110k for a flip ($175k ARV x 0.70 - ~$25k-$35k cosmetic rehab); anything above $125k should be rent or pass",
+        "If lot is 7,000+ sf with no HOA, adding a garage conversion/permitted 4th bedroom or RV/boat parking adds real rental premium in this corridor",
+        "SH-242 and Grand Parkway (SH-99) segment growth plus Conroe job base support 3-5 yr appreciation on a buy-and-hold",
+        "Verify true bed count - if it appraises as a 3/2 at 1,008 sf, re-underwrite ARV to $155k-$170k and drop the offer accordingly",
+        "Small sqft = cheap rehab: full cosmetic (paint, LVP, counters, fixtures, HVAC) realistically $22k-$32k at Houston contractor pricing"
+      ]
+    }
+  },
+  {
+    "id": 16290861,
+    "address": "17911 Wilcock Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 200000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1970,
+    "year_built": 1998,
+    "price_per_sqft": 102,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5275125",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17911-wilcock-ct-conroe-tx-77306/5275125",
+    "zillow_url": null,
+    "agent": {
+      "name": "Amy Hall",
+      "brokerage": "HomesPlus Real Estate Services",
+      "phone": "713-202-2372"
+    },
+    "sms_message": "Hi Amy, this is Vivek, local Investor. Interested in your listing at 17911 Wilcock Ct, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 250000,
+      "arv_high": 285000,
+      "comps": [
+        {
+          "address": "Conroe 77306",
+          "notes": "1,900-2,100 sf 1990s-2000s 4/2 homes in Conroe 77306 (Ranch Crest/Wilcock Ct area) trading ~$125-140/sf, i.e. $245k-$280k renovated"
+        },
+        {
+          "address": "Conroe 77306",
+          "notes": "Nearby FM 3083/Hwy 105 East corridor resales: 2,000 sf 4/2 on 1/4+ acre closing $255k-$275k with updated kitchen/baths and newer roof"
+        }
+      ],
+      "red_flags": [
+        "0 DOM at $200k on a 1,970 sf 1998 home priced ~$102/sf \u2014 likely distressed/heavy deferred maintenance or an investor-bait price; expect multiple offers and possible highest-and-best within days",
+        "77306 is a slower-absorption submarket than 77384/77385 (The Woodlands side) \u2014 days-to-sell often 45-75+ and appraisals come in conservative; ARV above $285k is hard to support",
+        "1998 build: original HVAC/roof/water heater likely at or past end of life; budget $12k-$18k for roof + HVAC alone",
+        "Verify septic and well vs. MUD \u2014 much of 77306 is septic/aerobic; failed septic is a $12k-$20k surprise and can kill FHA/VA buyer financing",
+        "Montgomery County tax rate ~2.0-2.3% with possible MUD; ~$5.5k-$6.5k/yr taxes compresses rental cash flow",
+        "Check FEMA zone and Caney Creek/West Fork San Jacinto proximity \u2014 parts of east Conroe flooded in Harvey/2024 events; prior flooding cuts ARV 10-15% and raises insurance",
+        "Slab/foundation movement common on Montgomery County clay \u2014 get an engineer report before hard money closing"
+      ],
+      "opportunity_notes": [
+        "Fix&Flip math: $200k purchase + $45k-$55k full cosmetic reno (LVP throughout, kitchen, both baths, paint, roof/HVAC contingency) + ~$25k holding/closing/commissions = ~$275k all-in vs $265k midpoint ARV \u2014 thin. Only works if you can negotiate to $170k-$180k or reno comes in under $40k",
+        "Fix&Rent is the stronger play: 4/2 1,970 sf in 77306 rents ~$1,850-$2,100/mo; at $200k + $30k light reno ($230k basis) that's a ~1.0% gross rent ratio \u2014 acceptable for a BRRRR hold if you refi at 75% of a $260k appraisal (~$195k, near-full capital return)",
+        "Wholesale angle: at $200k list there is little spread to assign; target a seller-direct renegotiation after inspection (septic/foundation/roof findings) to get to $165k-$175k, which supports a $10k-$15k assignment to a flipper",
+        "4/2 at ~1,970 sf hits the sweet spot for Conroe workforce rental demand \u2014 Conroe ISD zoning and Hwy 105 commute to The Woodlands/Lake Conroe employers keeps vacancy low",
+        "If lot is 1/4 acre+ with no HOA (common in this pocket), boat/RV parking and a shop/slab addition add real rental premium ($100-$150/mo) at low cost",
+        "Day-one action: pull the MLS remarks for 'sold as-is'/'cash only', order a septic dye test and engineer foundation report, and run a Montgomery County flood/claims check before committing earnest money"
+      ]
+    }
+  },
+  {
+    "id": 16290862,
+    "address": "20211 Ravenmeadow Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 225000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1530,
+    "year_built": 1998,
+    "price_per_sqft": 147,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3706913",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/20211-ravenmeadow-ln-katy-tx-77449/3706913",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 20211 Ravenmeadow Ln, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 268000,
+      "arv_high": 292000,
+      "comps": [
+        {
+          "address": "Katy 77449",
+          "notes": "Williamsburg Colony/Westfield Village 3/2 1,450-1,650 sf, 1996-2000 builds, updated, sold $265k-$285k"
+        },
+        {
+          "address": "Katy 77449",
+          "notes": "Nearby Katy 77449 ~1,530 sf single-story rehabbed resales trading $175-$190/sf"
+        }
+      ],
+      "red_flags": [
+        "Price at ~$147/sf is near retail for 77449 \u2014 thin margin for flip at $225k list",
+        "1998 build: original HVAC/roof/water heater and cast-iron or poly supply lines likely due",
+        "DOM 0 means no price discovery \u2014 expect multiple offers, little negotiating room",
+        "Harris County MUD + possible HOA push taxes to ~3.0-3.3%, crushing Fix&Rent DSCR",
+        "77449 has Addicks/Barker watershed and localized street-flooding history \u2014 verify FEMA zone and Harvey flood claims",
+        "High investor competition and heavy rental supply in 77449 keeps rent growth flat",
+        "Slab foundation era + Katy clay soils \u2014 budget for foundation/plumbing inspection before hard money"
+      ],
+      "opportunity_notes": [
+        "Katy ISD zoning is the main value driver \u2014 market to owner-occupant FHA/VA buyers at exit",
+        "Light cosmetic rehab ($30-45k: paint, LVP, kitchen counters/cabinet refresh, fixtures, roof if needed) supports low-$280s resale",
+        "Fix&Rent: rents $1,850-$2,050/mo for updated 3/2 in this pocket; works only if acquired at $190-200k, not $225k",
+        "Wholesale angle is strongest play \u2014 assign at $195-205k to a local flipper if seller will take a cash close",
+        "Single-story 1,530 sf 3/2 is the most liquid product type in Katy \u2014 fast resale velocity, 15-30 DOM when priced right",
+        "Check for a seller-motivation angle (estate, relocation, tired landlord) to justify offering below list despite 0 DOM"
+      ]
+    }
+  },
+  {
+    "id": 16290863,
+    "address": "7609 Avenue E",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77012",
+    "price": 265000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1152,
+    "year_built": 1930,
+    "price_per_sqft": 230,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9963538",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/7609-avenue-e-houston-tx-77012/9963538",
+    "zillow_url": null,
+    "agent": {
+      "name": "Marvy Mendoza",
+      "brokerage": "HomeSmart",
+      "phone": "7132696333"
+    },
+    "sms_message": "Hi Marvy, this is Vivek, local Investor. Interested in your listing at 7609 Avenue E, Houston TX 77012. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 240000,
+      "arv_high": 278000,
+      "comps": [
+        {
+          "address": "Houston 77012",
+          "notes": "Renovated 3/2 ~1,150 sqft Magnolia Park/77012 (Ave F\u2013Ave H, Capitol/Canal blocks) trading ~$205-240/sqft, i.e. $235k-$275k"
+        },
+        {
+          "address": "Houston 77012",
+          "notes": "Unrenovated 1920s-40s bungalows in 77012 closing $140k-$185k; 5,000 sqft lots alone valued ~$95k-$130k for teardown/new-build"
+        }
+      ],
+      "red_flags": [
+        "Ask of $265k \u2248 full retail ARV \u2014 zero spread for Fix&Flip or Fix&Rent at list",
+        "1930 build: pier-and-beam settling, knob-and-tube/60A service, cast-iron/galvanized sewer lines, lead paint and likely asbestos siding or floor tile",
+        "Only 1 bath on 1,152 sqft \u2014 caps ARV until a second bath is added; most retail buyers in this pocket expect 3/2",
+        "Heavy industrial exposure: Valero/Manchester refinery corridor and rail lines nearby \u2014 appraisal and buyer-pool drag, air-quality stigma",
+        "Sims Bayou / Brays drainage area \u2014 verify FEMA zone, prior flood claims (Harvey/Imelda) and whether slab or piers were raised",
+        "Coming Soon / 0 DOM means no seller fatigue; likely multiple-offer pricing off recent gut-rehab comps, not condition",
+        "1,152 sqft on a 1930 bungalow often includes unpermitted rear/porch enclosure \u2014 confirm HCAD sqft vs. permits",
+        "Rent ~$1,650-1,900 post-reno gives roughly 0.65-0.7% rent-to-price at ask \u2014 well under DSCR at current rates"
+      ],
+      "opportunity_notes": [
+        "Wholesale is the realistic play: assignment math works only around $150k-$170k with ~$60k-$75k rehab to a $255k+ ARV",
+        "Adding a second bath (convert rear enclosure or carve from oversized bedroom) is the single highest-ROI move \u2014 typically $12k-$18k for $25k-$35k of ARV",
+        "Magnolia Park is on the East End appreciation path \u2014 6 miles to Downtown, Harrisburg/Green Line access, steady builder demand for lots",
+        "No HOA and typical 5,000 sqft platted lot \u2014 check for two-detached-unit or single-family-plus-ADU potential to lift exit value",
+        "If seller is motivated after Coming Soon expires, watch for a price cut past 30-45 DOM; re-underwrite at $185k or below",
+        "Alternative exit: sell to an infill builder at land value if structure inspection reveals foundation/sewer scope above $30k"
+      ]
+    }
+  },
+  {
+    "id": 16290864,
+    "address": "2230 Ashford Hollow Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 469900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 2009,
+    "year_built": 1982,
+    "price_per_sqft": 234,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11484523",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2230-ashford-hollow-ln-houston-tx-77077/11484523",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lance Chau",
+      "brokerage": "MB Connections",
+      "phone": "713-271-9898"
+    },
+    "sms_message": "Hi Lance, this is Vivek, local Investor. Interested in your listing at 2230 Ashford Hollow Ln, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 380000,
+      "arv_high": 425000,
+      "comps": [
+        {
+          "address": "Houston 77077",
+          "notes": "77077 Ashford/Briarhills 1980s 3/2 ~2,000sf renovated resales trading ~$185-210/sf ($375k-$420k)"
+        },
+        {
+          "address": "Houston 77077",
+          "notes": "Dated/original-condition comparables in the same subdivision clearing $150-170/sf ($300k-$340k)"
+        }
+      ],
+      "red_flags": [
+        "List price $469,900 = $234/sf, roughly 15-25% above renovated comp ceiling for this pocket",
+        "77077 sits in the Barker Reservoir / Buffalo Bayou influence area - verify Harvey 2017 flood history, reservoir flood-pool overlay, and current FEMA zone before any offer",
+        "1982 build: likely original cast-iron/galvanized drain lines, aluminum-era branch wiring risk, 40-yr slab movement typical of west Houston clay",
+        "Coming Soon with 0 DOM means no price discovery yet; seller anchored high and will likely need 60-120 days plus cuts",
+        "Flood-zone insurance plus Harris County/HISD-area tax load near 2.1-2.5% crushes rental DSCR",
+        "Rent comp ~$2,300-$2,700/mo on 2,009sf = ~0.55% rent-to-price at ask, far below Fix&Rent threshold"
+      ],
+      "opportunity_notes": [
+        "No deal at ask. Max allowable offer for Fix&Flip: ~$402k ARV x 0.70 = $281k minus $55-75k reno = $210-225k. Gap to list is ~$245k - pass unless seller is distressed",
+        "Wholesale angle is the only live path: paper it at $215-235k assignable, target flipper buyers active in Energy Corridor",
+        "Watch for a price-cut cascade - if it sits 90+ days and drops under $400k, re-underwrite; sub-$300k is where it becomes real",
+        "Energy Corridor tenant demand (BP, Shell Woodcreek, Citgo campuses) and Bush/Westside HS zoning support exit velocity if basis is right",
+        "2,009sf with 3/2 is under-bathroomed for the price tier; adding a half-bath or converting to 4/2.5 is the highest-ROI value-add here",
+        "Pull the elevation certificate and MUD/WCID assignment first - if the home flooded in Harvey and was never elevated, discount ARV another 10-15% and expect a shallow buyer pool"
+      ]
+    }
+  },
+  {
+    "id": 16290865,
+    "address": "14414 Gadshill Cir",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77044",
+    "price": 379990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2642,
+    "year_built": 1999,
+    "price_per_sqft": 144,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3619441",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/14414-gadshill-cir-houston-tx-77044/3619441",
+    "zillow_url": null,
+    "agent": {
+      "name": "Angel Martinez Bueno",
+      "brokerage": "Real Broker, LLC",
+      "phone": "3466261904"
+    },
+    "sms_message": "Hi Angel, this is Vivek, local Investor. Interested in your listing at 14414 Gadshill Cir, Houston TX 77044. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 365000,
+      "arv_high": 395000,
+      "comps": [
+        {
+          "address": "Houston 77044",
+          "notes": "Waterstone/Summerwood-area 4/2 ~2,400-2,700 sf 1998-2003 builds trading $140-$150/sf resale"
+        },
+        {
+          "address": "Houston 77044",
+          "notes": "Nearby 77044 updated 2,600 sf two-story closings in the $370k-$390k band"
+        }
+      ],
+      "red_flags": [
+        "List price $379,990 ($144/sf) is already at retail ARV \u2014 no flip spread at ask",
+        "Coming Soon with 0 DOM; expect multiple offers and little negotiation room",
+        "1999 build: original HVAC, roof, water heater and possible polybutylene/cast-iron era plumbing risk",
+        "77044 is Lake Houston/Halls Bayou watershed \u2014 verify flood zone, Harvey history, and whether flood insurance is required",
+        "Likely MUD district plus HOA: effective tax rate often 2.8-3.3%, which crushes rental DSCR",
+        "Only 2 full baths on a 4-bed 2,642 sf two-story is a resale/rent objection vs newer 2.5-bath comps",
+        "Large two-story in this price tier appeals to owner-occupants, not investors \u2014 thin assignment market"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the only plausible lane: 2,600 sf 4-bed in Summerwood/Waterstone rents ~$2,300-$2,550/mo; at $380k with ~3% taxes that is roughly a 0.62% rent-to-price ratio \u2014 negative cash flow, so pass unless bought near $300-315k",
+        "Target max offer for flip: ~$255k-$270k assuming $45-60k cosmetic reno (paint, LVP, counters, HVAC) to hit $385k ARV at 70% rule",
+        "Wholesale angle only works if this fails to sell and goes stale \u2014 set a 45-60 DOM watch and re-approach on a price cut below $340k",
+        "Best value-add is adding a half or full bath and refreshing the primary suite to match 2.5-bath comps and push toward the $395k top end",
+        "Strong school-zone and master-planned amenity appeal (pool, trails) supports retail resale speed if acquired right",
+        "Verify tax rate and MUD bond status first \u2014 a sub-2.6% rate would materially change the rental math"
+      ]
+    }
   }
 ]
