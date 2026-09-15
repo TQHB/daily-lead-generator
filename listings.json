@@ -45086,5 +45086,183 @@
         "Verify tax rate and MUD bond status first \u2014 a sub-2.6% rate would materially change the rental math"
       ]
     }
+  },
+  {
+    "id": 16290866,
+    "address": "1011 Lancaster Lake Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77073",
+    "price": 209000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1972,
+    "year_built": 2006,
+    "price_per_sqft": 106,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "11090181",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1011-lancaster-lake-dr-houston-tx-77073/11090181",
+    "zillow_url": null,
+    "agent": {
+      "name": "Glaiza Ramos-Febre",
+      "brokerage": "JLA Realty",
+      "phone": "8326552592"
+    },
+    "sms_message": "Hi Glaiza, this is Vivek, local Investor. Interested in your listing at 1011 Lancaster Lake Dr, Houston TX 77073. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 225000,
+      "arv_high": 248000,
+      "comps": [
+        {
+          "address": "Houston 77073",
+          "notes": "2006-2010 builds, 1,900-2,100 sqft in Remington Ranch/Northgate Crossing (77073) closing $218k-$245k"
+        },
+        {
+          "address": "Houston 77073",
+          "notes": "Nearby 4/2.5 two-story resales ~$112-$124/sqft, 30-60 DOM"
+        }
+      ],
+      "red_flags": [
+        "Thin spread: $209k ask vs ~$235k ARV leaves little room after 7-8% selling costs + holding \u2014 flip margin likely under $10k without a discount",
+        "Aldine ISD + Greenspoint-adjacent stigma caps buyer pool and drags DOM/appraisals",
+        "MUD + possible PID on top of Harris County tax rate \u2014 effective rate often 2.9-3.3%, kills DSCR on a rental underwrite",
+        "Coming Soon / 0 DOM means no price discovery; likely priced at or above retail with multiple-offer risk",
+        "Detention-pond/'Lake' section \u2014 verify current FEMA panel and post-Harvey claim history; flood insurance can add $1.2k-$2.5k/yr",
+        "Slab-on-grade 2006 build in expansive Beaumont clay \u2014 check for cornerbead cracks, door binding, sticking windows",
+        "Likely mandatory HOA ($500-$900/yr) plus deed restrictions on leasing in some sections",
+        "Heavy investor/institutional ownership concentration in 77073 suppresses resale to owner-occupants"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the strongest fit: market rent ~$1,825-$1,975/mo on 1,972 sqft 4/2.5; at $209k + $15k cosmetic, gross yield ~10.5% before the tax drag",
+        "2006 vintage means big-ticket items (roof, slab, windows, framing) are likely sound \u2014 scope is cosmetic: paint, LVP downstairs, carpet up, fixtures, landscaping ($12k-$20k)",
+        "Wholesale angle is viable if you can get it under contract near $185k-$190k \u2014 Section 8 / turnkey-rental buyers are active in 77073 and will pay $195k-$205k as-is",
+        "4 beds + 2.5 baths + game room layout rents faster than 3/2 stock in this submarket; target families on HISD/Aldine transfer or Beltway 8 commuters",
+        "Push for a pre-list offer before it hits MLS \u2014 at 0 DOM the seller may take certainty over a 30-day market test",
+        "Proximity to I-45/Beltway 8 and the Hardy Toll Road supports steady tenant demand from IAH and north-corridor logistics employment",
+        "If pursuing a flip, underwrite to a $190k max purchase and $25k rehab to protect a $20k+ net at a $240k exit"
+      ]
+    }
+  },
+  {
+    "id": 16290867,
+    "address": "13023 Southfield Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77045",
+    "price": 239900,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1602,
+    "year_built": 1960,
+    "price_per_sqft": 150,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9294075",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13023-southfield-dr-houston-tx-77045/9294075",
+    "zillow_url": null,
+    "agent": {
+      "name": "Shantel Lofton",
+      "brokerage": "Jireh MP Realty",
+      "phone": "713-471-4847"
+    },
+    "sms_message": "Hi Shantel, this is Vivek, local Investor. Interested in your listing at 13023 Southfield Dr, Houston TX 77045. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 225000,
+      "arv_high": 262000,
+      "comps": [
+        {
+          "address": "Houston 77045",
+          "notes": "Renovated 1960s 4/2 ranch ~1,550-1,700 sqft off W Orem/Hiram Clarke in 77045 trading $148-162/sqft ($235k-$270k)"
+        },
+        {
+          "address": "Houston 77045",
+          "notes": "Cosmetically updated 3-4/2 near S Post Oak & Bellfort closing $215k-$245k; unrenovated same-vintage stock $135k-$175k"
+        }
+      ],
+      "red_flags": [
+        "List at $239,900 is already at/near renovated ARV midpoint \u2014 effectively zero flip spread at asking",
+        "1960 build: expect cast-iron/Orangeburg sewer, original 60-100A panel or Federal Pacific/Zinsco, aluminum branch wiring risk, galvanized supply",
+        "Slab-on-grade over Houston clay \u2014 budget engineer report; foundation work in this pocket runs $8k-$18k",
+        "1,602 sqft on a 4/2 from 1960 often means converted garage or non-permitted add-on; verify HCAD sqft vs. appraisal-usable sqft and permits",
+        "77045 appraisal risk: ARV comps are thin and lender appraisals frequently come in 5-8% under the top of the range",
+        "Sims Bayou / Zone X-shaded drainage and 2015-2017 flood history nearby \u2014 pull Harris County Flood Control and prior claims (CLUE)",
+        "Coming Soon / 0 DOM means no price-discovery yet; seller expectations are anchored to list, not to condition",
+        "Insurance and tax load is high (2.6-2.9% combined rate); taxes on a $240k basis kill thin rental cash flow",
+        "Resale buyer pool here is FHA/DPA-dependent \u2014 deal dies on appraisal or condition (peeling paint, roof age) without a full-permit rehab"
+      ],
+      "opportunity_notes": [
+        "Fix&Rent is the realistic path, not Flip: 4/2 in 77045 rents $1,750-$1,975; Section 8 HCV demand is deep and HHA payment standards support the top of that band",
+        "Max allowable offer for a flip at 70% rule: ~$245k ARV x 0.70 = $171k less rehab \u2014 target contract $135k-$155k, i.e. $85k-$105k under list",
+        "Wholesale angle: only works if you get it pre-MLS. Coming Soon status is the window \u2014 go direct to listing agent with cash, 7-day close, no option period",
+        "Rehab scope estimate for full cosmetic + systems: $45k-$65k ($30-40/sqft) \u2014 includes roof, panel, sewer scope/spot repair, HVAC, LVP, kitchen/baths",
+        "If foundation and sewer clear, a light $25k-$32k cosmetic refresh supports a rent-ready hold with ~$1,850 rent; DSCR still tight at a $240k basis, so basis must come down",
+        "Location supports rental velocity: ~15 min to Medical Center via 288, close to 610 S and Beltway 8 \u2014 strong workforce-tenant draw",
+        "Ask for the seller's disclosure and any prior inspection now; a known foundation or sewer issue is your lever to negotiate $20k-$35k off before it hits MLS",
+        "Backup exit: if flip margin never materializes, a novation or assignment to a local landlord buyer at $165k-$180k still clears $10k-$20k"
+      ]
+    }
+  },
+  {
+    "id": 16290868,
+    "address": "8511 Cedarbrake Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "price": 1295000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 2971,
+    "year_built": 1984,
+    "price_per_sqft": 436,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10571108",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8511-cedarbrake-dr-houston-tx-77055/10571108",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jana Bruce",
+      "brokerage": "Compass RE Texas, LLC - Memorial",
+      "phone": "7134440180"
+    },
+    "sms_message": "Hi Jana, this is Vivek, local Investor. Interested in your listing at 8511 Cedarbrake Dr, Houston TX 77055. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": 1200000,
+      "arv_high": 1400000,
+      "comps": [
+        {
+          "address": "Houston 77055",
+          "notes": "Spring Valley Village/77055 1980s 4/3.5, 2,800-3,200 sf renovated resales trade ~$390-460/sf = $1.15M-$1.40M"
+        },
+        {
+          "address": "Houston 77055",
+          "notes": "New-construction 4,500-5,500 sf infill in 77055 Spring Valley trades $1.7M-$2.3M ($360-420/sf) \u2014 sets the teardown ceiling"
+        }
+      ],
+      "red_flags": [
+        "Ask is $436/sf on a 1984 build \u2014 at or above renovated ARV; effectively zero flip spread",
+        "Fix&Rent fails: 4/3.5 rents ~$4.2K-5.2K/mo on $1.295M = ~4% gross, deeply negative cash flow",
+        "1984 vintage: original slab, likely cast-iron/polybutylene lines, 40-year foundation movement, aged HVAC/roof",
+        "Reno to a $1.3M finish level is $180-250/sf = $500K+ on 2,971 sf; total basis would exceed ARV",
+        "Coming Soon / 0 DOM means multiple-offer risk and no negotiating leverage on day one",
+        "Spring Branch/Buffalo Bayou tributary corridor \u2014 verify FEMA zone plus Harvey and Tax Day flood history before anything",
+        "Jumbo price point = thin cash-buyer pool, longer DOM, heavy carry on hard money"
+      ],
+      "opportunity_notes": [
+        "Real play is land, not house \u2014 if this is inside Spring Valley Village, lot value alone is ~$650K-$850K",
+        "Best exit is builder land sale or JV, not retail flip; target contract ~$800K-$900K for a builder to pencil",
+        "Wholesale angle: assign to a Spring Valley custom builder (Prosperity/Sandcastle tier) who underwrites dirt, not improvements",
+        "Spring Branch ISD Memorial-feeder zoning is the durable value driver \u2014 protects resale on a new-build exit",
+        "1984 lots here run 10K-15K sf, larger than newer infill \u2014 supports 4,800-5,500 sf new build or pool/addition",
+        "Pre-MLS access while Coming Soon: get a lot-value LOI in before it prices to retail buyers",
+        "If it prices down 25-30% after DOM builds, revisit as a builder-assignment target; pass at full ask"
+      ]
+    }
   }
 ]
