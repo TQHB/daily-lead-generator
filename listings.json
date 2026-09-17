@@ -45693,5 +45693,203 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290882,
+    "address": "57 County Road 8851",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 75000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 864,
+    "year_built": 1985,
+    "price_per_sqft": 87,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "15198093",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/57-county-road-8851-cleveland-tx-77327/15198093",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 57 County Road 8851, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290883,
+    "address": "8029 Woodlyn Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 189000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1372,
+    "year_built": 1951,
+    "price_per_sqft": 138,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3187801",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/8029-woodlyn-rd-houston-tx-77028/3187801",
+    "zillow_url": null,
+    "agent": {
+      "name": "Maralana Bossett",
+      "brokerage": "eXp Realty LLC",
+      "phone": "346-823-8787"
+    },
+    "sms_message": "Hi Maralana, this is Vivek, local Investor. Interested in your listing at 8029 Woodlyn Rd, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290884,
+    "address": "4810 Monarch Glen Ln, Katy, TX 77449",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 200000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1350,
+    "year_built": 2002,
+    "price_per_sqft": 148,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3701111",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/4810-monarch-glen-ln-katy-tx-77449/3701111",
+    "zillow_url": null,
+    "agent": {
+      "name": "Margie Esquivel",
+      "brokerage": "ME Realty Group LLC",
+      "phone": "281-546-2040"
+    },
+    "sms_message": "Hi Margie, this is Vivek, local Investor. Interested in your listing at 4810 Monarch Glen Ln, Katy, TX 77449, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290885,
+    "address": "8915 Durham Manor Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77075",
+    "price": 255000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1512,
+    "year_built": 2006,
+    "price_per_sqft": 169,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3745875",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8915-durham-manor-ln-houston-tx-77075/3745875",
+    "zillow_url": null,
+    "agent": {
+      "name": "Carlos Nuncio",
+      "brokerage": "Champions NextGen Real Estate",
+      "phone": "2817343105"
+    },
+    "sms_message": "Hi Carlos, this is Vivek, local Investor. Interested in your listing at 8915 Durham Manor Ln, Houston TX 77075. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290886,
+    "address": "11807 Glenway Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77070",
+    "price": 335000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2257,
+    "year_built": 1974,
+    "price_per_sqft": 148,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10356723",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/11807-glenway-dr-houston-tx-77070/10356723",
+    "zillow_url": null,
+    "agent": {
+      "name": "Franciele Freitas",
+      "brokerage": "Keller Williams Premier Realty",
+      "phone": "7135757578"
+    },
+    "sms_message": "Hi Franciele, this is Vivek, local Investor. Interested in your listing at 11807 Glenway Dr, Houston TX 77070. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290887,
+    "address": "405 Stratford St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77006",
+    "price": 1395000,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 2360,
+    "year_built": 1915,
+    "price_per_sqft": 591,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "8889494",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/405-stratford-st-houston-tx-77006/8889494",
+    "zillow_url": null,
+    "agent": {
+      "name": "Michael Raak",
+      "brokerage": "Nan & Company Properties - Corporate Office (Heights)",
+      "phone": "7133981240"
+    },
+    "sms_message": "Hi Michael, this is Vivek, local Investor. Interested in your listing at 405 Stratford St, Houston TX 77006. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
