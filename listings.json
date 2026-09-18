@@ -45891,5 +45891,170 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290888,
+    "address": "42 Road 5856, Cleveland, TX 77327",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 75000,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 950,
+    "year_built": 1980,
+    "price_per_sqft": 79,
+    "dom": 0,
+    "status": "Active",
+    "mls": "19812332",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/42-road-5856-cleveland-tx-77327/19812332",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 42 Road 5856, Cleveland, TX 77327, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290889,
+    "address": "23706 Jacks Ct",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77494",
+    "price": 239000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1350,
+    "year_built": 1989,
+    "price_per_sqft": 177,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3401908",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/23706-jacks-ct-katy-tx-77494/3401908",
+    "zillow_url": null,
+    "agent": {
+      "name": "Cynthia Barajas-Padilla",
+      "brokerage": "Fathom Realty",
+      "phone": null
+    },
+    "sms_message": "Hi Cynthia, this is Vivek, local Investor. Interested in your listing at 23706 Jacks Ct, Katy TX 77494. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290890,
+    "address": "9006 Silver Spring Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77025",
+    "price": 539000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1733,
+    "year_built": 1956,
+    "price_per_sqft": 311,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10122810",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/9006-silver-spring-ln-houston-tx-77025/10122810",
+    "zillow_url": null,
+    "agent": {
+      "name": "Volkan Civi",
+      "brokerage": "HomeSmart",
+      "phone": "832-692-2471"
+    },
+    "sms_message": "Hi Volkan, this is Vivek, local Investor. Interested in your listing at 9006 Silver Spring Ln, Houston TX 77025. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290891,
+    "address": "6003 Sanford Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77096",
+    "price": 449000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1744,
+    "year_built": 1964,
+    "price_per_sqft": 257,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3261702",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/6003-sanford-rd-houston-tx-77096/3261702",
+    "zillow_url": null,
+    "agent": {
+      "name": "Zoie Voskuhl",
+      "brokerage": "Monarch & Co",
+      "phone": "832-361-4294"
+    },
+    "sms_message": "Hi Zoie, this is Vivek, local Investor. Interested in your listing at 6003 Sanford Rd, Houston TX 77096. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290892,
+    "address": "8750 TURRIFF St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "price": 1125000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 2112,
+    "year_built": 1955,
+    "price_per_sqft": 533,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3209365",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8750-turriff-st-houston-tx-77055/3209365",
+    "zillow_url": null,
+    "agent": {
+      "name": "Maria Sindoni",
+      "brokerage": "Inspired Living",
+      "phone": "281-773-4730"
+    },
+    "sms_message": "Hi Maria, this is Vivek, local Investor. Interested in your listing at 8750 TURRIFF St, Houston TX 77055. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
