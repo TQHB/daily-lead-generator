@@ -47013,5 +47013,236 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290922,
+    "address": "363 W Santa Fe St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 157700,
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1056,
+    "year_built": 1940,
+    "price_per_sqft": 149,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14981752",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/363-w-santa-fe-st-conroe-tx-77301/14981752",
+    "zillow_url": null,
+    "agent": {
+      "name": "Latisha Bradshaw",
+      "brokerage": "Texas Diamond Realty",
+      "phone": "409-454-8512"
+    },
+    "sms_message": "Hi Latisha, this is Vivek, local Investor. Interested in your listing at 363 W Santa Fe St, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290923,
+    "address": "12340 Rollingwood Loop",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 189000,
+    "beds": 3,
+    "baths": 1.5,
+    "sqft": 1240,
+    "year_built": 1977,
+    "price_per_sqft": 152,
+    "dom": 0,
+    "status": "Active",
+    "mls": "10825336",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/12340-rollingwood-loop-conroe-tx-77303/10825336",
+    "zillow_url": null,
+    "agent": {
+      "name": "Cindy Waters",
+      "brokerage": "Walzel Properties - Conroe",
+      "phone": "936-760-5734"
+    },
+    "sms_message": "Hi Cindy, this is Vivek, local Investor. Interested in your listing at 12340 Rollingwood Loop, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290924,
+    "address": "2514 Country Creek Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77450",
+    "price": 225000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1700,
+    "year_built": 2008,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3980997",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/2514-country-creek-dr-katy-tx-77450/3980997",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 2514 Country Creek Dr, Katy TX 77450. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290925,
+    "address": "6701 Grand River Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 205000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1400,
+    "year_built": 1985,
+    "price_per_sqft": 146,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3456789",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/6701-grand-river-ln-katy-tx-77449/3456789",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 6701 Grand River Ln, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290926,
+    "address": "13611 Charwell Crossing Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77069",
+    "price": 345000,
+    "beds": 5,
+    "baths": 3,
+    "sqft": 2797,
+    "year_built": 1976,
+    "price_per_sqft": 123,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3393914",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13611-charwell-crossing-ln-houston-tx-77069/3393914",
+    "zillow_url": null,
+    "agent": {
+      "name": "Pompello Rubio",
+      "brokerage": "Texas Grand Real Estate Inc.",
+      "phone": "8326389166"
+    },
+    "sms_message": "Hi Pompello, this is Vivek, local Investor. Interested in your listing at 13611 Charwell Crossing Ln, Houston TX 77069. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290927,
+    "address": "2410 Locke Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77019",
+    "price": 1695000,
+    "beds": 3,
+    "baths": 4,
+    "sqft": 3008,
+    "year_built": 1940,
+    "price_per_sqft": 563,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3123173",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2410-locke-ln-houston-tx-77019/3123173",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lorena Gonzalez",
+      "brokerage": "Gold Quest Realty - Galleria",
+      "phone": "8324341862"
+    },
+    "sms_message": "Hi Lorena, this is Vivek, local Investor. Interested in your listing at 2410 Locke Ln, Houston TX 77019. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290928,
+    "address": "5207 Castlecreek Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77053",
+    "price": 195000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1073,
+    "year_built": 1971,
+    "price_per_sqft": 182,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2395790",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5207-castlecreek-ln-houston-tx-77053/2395790",
+    "zillow_url": null,
+    "agent": {
+      "name": "Angel Armadillo-Macias",
+      "brokerage": "Orchard Brokerage",
+      "phone": "7139039459"
+    },
+    "sms_message": "Hi Angel, this is Vivek, local Investor. Interested in your listing at 5207 Castlecreek Ln, Houston TX 77053. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
