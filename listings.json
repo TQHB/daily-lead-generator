@@ -47673,5 +47673,170 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16290942,
+    "address": "1916 Road 1372",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 135000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1260,
+    "year_built": 1985,
+    "price_per_sqft": 107,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14608389",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/1916-road-1372-cleveland-tx-77327/14608389",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 1916 Road 1372, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290943,
+    "address": "3605 Cactus Trl",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77494",
+    "price": 180000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1450,
+    "year_built": 2018,
+    "price_per_sqft": 124,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3605Cactus",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/3605-cactus-trl-katy-tx-77494/3605Cactus",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 3605 Cactus Trl, Katy TX 77494. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290944,
+    "address": "10106 Mandolin Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77070",
+    "price": 439000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 3101,
+    "year_built": 2000,
+    "price_per_sqft": 142,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9672469",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/10106-mandolin-ct-houston-tx-77070/9672469",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jill Goehring",
+      "brokerage": "CB&A, Realtors\u00ae",
+      "phone": "3464545542"
+    },
+    "sms_message": "Hi Jill, this is Vivek, local Investor. Interested in your listing at 10106 Mandolin Ct, Houston TX 77070. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290945,
+    "address": "8501 Tidwell Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 345000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 4358,
+    "year_built": 1955,
+    "price_per_sqft": 79,
+    "dom": 0,
+    "status": "Active",
+    "mls": "11684522",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8501-tidwell-rd-houston-tx-77028/11684522",
+    "zillow_url": null,
+    "agent": {
+      "name": "Almy Prefontaine",
+      "brokerage": "Keller Williams Fort Worth",
+      "phone": "817-585-3269"
+    },
+    "sms_message": "Hi Almy, this is Vivek, local Investor. Interested in your listing at 8501 Tidwell Rd, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16290946,
+    "address": "1214 Gray Moss Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "price": 1925000,
+    "beds": 4,
+    "baths": 5.5,
+    "sqft": 5114,
+    "year_built": 2001,
+    "price_per_sqft": 376,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "8682449",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1214-gray-moss-ln-houston-tx-77055/8682449",
+    "zillow_url": null,
+    "agent": {
+      "name": "Luanne Marshall",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "8324190685"
+    },
+    "sms_message": "Hi Luanne, this is Vivek, local Investor. Interested in your listing at 1214 Gray Moss Ln, Houston TX 77055. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
