@@ -49752,5 +49752,170 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291005,
+    "address": "401 N William Barnett Ave",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 55000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 674,
+    "year_built": 1955,
+    "price_per_sqft": 82,
+    "dom": 0,
+    "status": "Active",
+    "mls": "4791048",
+    "source": "HAR",
+    "scenario_id": 1,
+    "har_url": "https://www.har.com/homedetail/401-n-william-barnett-ave-cleveland-tx-77327/4791048",
+    "zillow_url": null,
+    "agent": {
+      "name": "Austin Eggers",
+      "brokerage": "GregTXRealty - The Woodlands",
+      "phone": "713-828-4185"
+    },
+    "sms_message": "Hi Austin, this is Vivek, local Investor. Interested in your listing at 401 N William Barnett Ave, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291006,
+    "address": "116 Road 5240",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 150000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1568,
+    "year_built": 2018,
+    "price_per_sqft": 96,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14965733",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/116-road-5240-cleveland-tx-77327/14965733",
+    "zillow_url": null,
+    "agent": {
+      "name": "Maritza Gudiel",
+      "brokerage": "MVP Realty & Associates",
+      "phone": "8326168563"
+    },
+    "sms_message": "Hi Maritza, this is Vivek, local Investor. Interested in your listing at 116 Road 5240, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291007,
+    "address": "2010 Flower Garden Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 1290000,
+    "beds": 4,
+    "baths": 6,
+    "sqft": 4966,
+    "year_built": 2009,
+    "price_per_sqft": 260,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3747054",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2010-flower-garden-ln-houston-tx-77077/3747054",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jean D'Aguilar",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Cypress",
+      "phone": "281-825-7826"
+    },
+    "sms_message": "Hi Jean, this is Vivek, local Investor. Interested in your listing at 2010 Flower Garden Ln, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291008,
+    "address": "5114 Boyce Springs Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77066",
+    "price": 345000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2313,
+    "year_built": 1973,
+    "price_per_sqft": 149,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "8872074",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5114-boyce-springs-dr-houston-tx-77066/8872074",
+    "zillow_url": null,
+    "agent": {
+      "name": "Shawn Santhosh",
+      "brokerage": "Keller Williams Preferred",
+      "phone": "8322457890"
+    },
+    "sms_message": "Hi Shawn, this is Vivek, local Investor. Interested in your listing at 5114 Boyce Springs Dr, Houston TX 77066. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291009,
+    "address": "1205 W Tidwell Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77091",
+    "price": 279990,
+    "beds": 3,
+    "baths": 3,
+    "sqft": 1505,
+    "year_built": 2020,
+    "price_per_sqft": 186,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "14948021",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1205-w-tidwell-rd-houston-tx-77091/14948021",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kimbriana Nzeogu",
+      "brokerage": "SERHANT.",
+      "phone": "7138396039"
+    },
+    "sms_message": "Hi Kimbriana, this is Vivek, local Investor. Interested in your listing at 1205 W Tidwell Rd, Houston TX 77091. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
