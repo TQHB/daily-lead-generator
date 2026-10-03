@@ -49917,5 +49917,203 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291010,
+    "address": "20406 Blue Juniper Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 225000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 1762,
+    "year_built": 1983,
+    "price_per_sqft": 128,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "7908952",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/20406-blue-juniper-dr-katy-tx-77449/7908952",
+    "zillow_url": null,
+    "agent": {
+      "name": "Pompello Rubio",
+      "brokerage": "Texas Grand Real Estate Inc.",
+      "phone": "8326389166"
+    },
+    "sms_message": "Hi Pompello, this is Vivek, local Investor. Interested in your listing at 20406 Blue Juniper Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291011,
+    "address": "20736 Fawnbrook Ct",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77450",
+    "price": 3200,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2878,
+    "year_built": 1996,
+    "price_per_sqft": 1,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "11235338",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/20736-fawnbrook-ct-katy-tx-77450/11235338",
+    "zillow_url": null,
+    "agent": {
+      "name": "Louis Ceraldi",
+      "brokerage": "Walzel Properties - Katy",
+      "phone": "713-445-6036"
+    },
+    "sms_message": "Hi Louis, this is Vivek, local Investor. Interested in your listing at 20736 Fawnbrook Ct, Katy TX 77450. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291012,
+    "address": "1834 Powderhorn Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 225000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1220,
+    "year_built": 1983,
+    "price_per_sqft": 184,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3463837",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/1834-powderhorn-ln-katy-tx-77493/3463837",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lissete Rivera",
+      "brokerage": "C.R.Realty",
+      "phone": "7139355013"
+    },
+    "sms_message": "Hi Lissete, this is Vivek, local Investor. Interested in your listing at 1834 Powderhorn Ln, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291013,
+    "address": "7719 Bryonwood Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "price": 3250000,
+    "beds": 6,
+    "baths": 9,
+    "sqft": 6203,
+    "year_built": 2026,
+    "price_per_sqft": 524,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10578421",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/7719-bryonwood-dr-houston-tx-77055/10578421",
+    "zillow_url": null,
+    "agent": {
+      "name": "Brookes Cunningham",
+      "brokerage": "SERHANT.",
+      "phone": "8326390228"
+    },
+    "sms_message": "Hi Brookes, this is Vivek, local Investor. Interested in your listing at 7719 Bryonwood Dr, Houston TX 77055. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291014,
+    "address": "15730 Maple Manor Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77095",
+    "price": 284900,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2352,
+    "year_built": 1983,
+    "price_per_sqft": 121,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10664151",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/15730-maple-manor-dr-houston-tx-77095/10664151",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jennifer Turner",
+      "brokerage": "Vaughn Realty & Co",
+      "phone": "281-744-8896"
+    },
+    "sms_message": "Hi Jennifer, this is Vivek, local Investor. Interested in your listing at 15730 Maple Manor Dr, Houston TX 77095. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291015,
+    "address": "2726 Yestereve Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "price": 215000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2079,
+    "year_built": 2008,
+    "price_per_sqft": 103,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "9474553",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2726-yestereve-ct-houston-tx-77084/9474553",
+    "zillow_url": null,
+    "agent": {
+      "name": null,
+      "brokerage": null,
+      "phone": null
+    },
+    "sms_message": "Hi there, this is Vivek, local Investor. Interested in your listing at 2726 Yestereve Ct, Houston TX 77084. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
