@@ -52986,5 +52986,236 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291103,
+    "address": "16381 Crockett Bend Dr, Conroe, TX 77303",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77303",
+    "price": 199000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 2003,
+    "price_per_sqft": 148,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5229286",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16381-crockett-bend-dr-conroe-tx-77303/5229286",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kristi Delafuente",
+      "brokerage": "JNK Property Group",
+      "phone": "713-936-9832"
+    },
+    "sms_message": "Hi Kristi, this is Vivek, local Investor. Interested in your listing at 16381 Crockett Bend Dr, Conroe, TX 77303, Conroe TX 77303. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291104,
+    "address": "256 Road 5210",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 125000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 890,
+    "year_built": 2023,
+    "price_per_sqft": 140,
+    "dom": 0,
+    "status": "Active",
+    "mls": "14559826",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/256-road-5210-cleveland-tx-77327/14559826",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mario E. Baez",
+      "brokerage": "EXP Realty, LLC",
+      "phone": null
+    },
+    "sms_message": "Hi Mario, this is Vivek, local Investor. Interested in your listing at 256 Road 5210, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291105,
+    "address": "391 County Road 5171",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 135000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 648,
+    "year_built": 1978,
+    "price_per_sqft": 208,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17595395",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/391-county-road-5171-cleveland-tx-77327/17595395",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Denissen",
+      "brokerage": "American Dream Realty -Houston",
+      "phone": "Not provided"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 391 County Road 5171, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291106,
+    "address": "2084 Hidden Hills Ln",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 212990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1325,
+    "year_built": 2026,
+    "price_per_sqft": 161,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": " ... ",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/2084-hidden-hills-ln-katy-tx-77423/17687911",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 2084 Hidden Hills Ln, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291107,
+    "address": "8415 Sunnyhill St B",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77088",
+    "price": 310000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1675,
+    "year_built": 2022,
+    "price_per_sqft": 185,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3006653",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8415-sunnyhill-st-b-houston-tx-77088/3006653",
+    "zillow_url": null,
+    "agent": {
+      "name": "Robin Winans",
+      "brokerage": "eXp Realty LLC",
+      "phone": "2534269960"
+    },
+    "sms_message": "Hi Robin, this is Vivek, local Investor. Interested in your listing at 8415 Sunnyhill St B, Houston TX 77088. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291108,
+    "address": "1221 Columbia St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008",
+    "price": 935000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1831,
+    "year_built": 1920,
+    "price_per_sqft": 511,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "2973296",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1221-columbia-st-houston-tx-77008/2973296",
+    "zillow_url": null,
+    "agent": {
+      "name": "Julie O'Neill",
+      "brokerage": "Norhill Realty",
+      "phone": "2812244410"
+    },
+    "sms_message": "Hi Julie, this is Vivek, local Investor. Interested in your listing at 1221 Columbia St, Houston TX 77008. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291109,
+    "address": "3714 Parkridge Glen Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77082",
+    "price": 239900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1528,
+    "year_built": 1983,
+    "price_per_sqft": 157,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10026952",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/3714-parkridge-glen-dr-houston-tx-77082/10026952",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jorge Armendariz",
+      "brokerage": "Real Properties",
+      "phone": "7138207846"
+    },
+    "sms_message": "Hi Jorge, this is Vivek, local Investor. Interested in your listing at 3714 Parkridge Glen Dr, Houston TX 77082. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
