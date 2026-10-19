@@ -54240,5 +54240,170 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291141,
+    "address": "23926 Silversmith Ln, Katy, TX 77493",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 184600,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1242,
+    "year_built": 1981,
+    "price_per_sqft": 149,
+    "dom": 16,
+    "status": "Active",
+    "mls": "3464184",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/23926-silversmith-ln-katy-tx-77493/3464184",
+    "zillow_url": null,
+    "agent": {
+      "name": "Deoir Thomas",
+      "brokerage": "Texas Signature Realty",
+      "phone": "3416003338"
+    },
+    "sms_message": "Hi Deoir, this is Vivek, local Investor. Interested in your listing at 23926 Silversmith Ln, Katy, TX 77493, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291142,
+    "address": "26830 Lollipop Pink Ln, Katy, TX 77493",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 229990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1656,
+    "year_built": 2026,
+    "price_per_sqft": 139,
+    "dom": 19,
+    "status": "Active",
+    "mls": "17450123",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/26830-lollipop-pink-ln-katy-tx-77493/17450123",
+    "zillow_url": null,
+    "agent": {
+      "name": "[Not Provided]",
+      "brokerage": "[Not Provided]",
+      "phone": "[Not Provided]"
+    },
+    "sms_message": "Hi [Not, this is Vivek, local Investor. Interested in your listing at 26830 Lollipop Pink Ln, Katy, TX 77493, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291143,
+    "address": "2432 Wroxton Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77005",
+    "price": 1521000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 3441,
+    "year_built": 2022,
+    "price_per_sqft": 442,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "15975914",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2432-wroxton-rd-houston-tx-77005/15975914",
+    "zillow_url": null,
+    "agent": {
+      "name": "Becky Wheeler",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "7135628472"
+    },
+    "sms_message": "Hi Becky, this is Vivek, local Investor. Interested in your listing at 2432 Wroxton Rd, Houston TX 77005. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291144,
+    "address": "5435 Tavenor Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77048",
+    "price": 124900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1488,
+    "year_built": 1962,
+    "price_per_sqft": 84,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "7913807",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/5435-tavenor-ln-houston-tx-77048/7913807",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ozzie Ramirez",
+      "brokerage": "AEA Realty, LLC",
+      "phone": "2819688444"
+    },
+    "sms_message": "Hi Ozzie, this is Vivek, local Investor. Interested in your listing at 5435 Tavenor Ln, Houston TX 77048. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291145,
+    "address": "16002 Brittany Knoll Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77095",
+    "price": 262000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1704,
+    "year_built": 1990,
+    "price_per_sqft": 154,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3566935",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/16002-brittany-knoll-dr-houston-tx-77095/3566935",
+    "zillow_url": null,
+    "agent": {
+      "name": "Lisa Adams",
+      "brokerage": "Martha Turner Sotheby's International Realty - Cypress",
+      "phone": "281-330-4342"
+    },
+    "sms_message": "Hi Lisa, this is Vivek, local Investor. Interested in your listing at 16002 Brittany Knoll Dr, Houston TX 77095. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
