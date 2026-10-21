@@ -54834,5 +54834,236 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291159,
+    "address": "16536 Jasmine Marie Place",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 175000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1000,
+    "year_built": 2023,
+    "price_per_sqft": 175,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16868079",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16536-jasmine-marie-pl-conroe-tx-77306/16868079",
+    "zillow_url": null,
+    "agent": {
+      "name": "Haydee Velez",
+      "brokerage": "Precision Realty & Mgmt.",
+      "phone": "2813524886"
+    },
+    "sms_message": "Hi Haydee, this is Vivek, local Investor. Interested in your listing at 16536 Jasmine Marie Place, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291160,
+    "address": "17315 Valley Ln",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 135000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2016,
+    "year_built": 2002,
+    "price_per_sqft": 67,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5319513",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17315-valley-ln-conroe-tx-77306/5319513",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jimmy Franklin",
+      "brokerage": "eXp Realty LLC",
+      "phone": "2819496362"
+    },
+    "sms_message": "Hi Jimmy, this is Vivek, local Investor. Interested in your listing at 17315 Valley Ln, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291161,
+    "address": "16323 Jasmine Marie Pl",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 169999,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 1000,
+    "year_built": 2023,
+    "price_per_sqft": 170,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16868049",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16323-jasmine-marie-pl-conroe-tx-77306/16868049",
+    "zillow_url": null,
+    "agent": {
+      "name": "Sarah Atchison",
+      "brokerage": "Grey Rock Realty",
+      "phone": "832-260-3743"
+    },
+    "sms_message": "Hi Sarah, this is Vivek, local Investor. Interested in your listing at 16323 Jasmine Marie Pl, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291162,
+    "address": "4314 Mt Davis Way",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 250000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2455,
+    "year_built": 2007,
+    "price_per_sqft": 102,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3722588",
+    "source": "HAR",
+    "scenario_id": 7,
+    "har_url": "https://www.har.com/homedetail/4314-mt-davis-way-katy-tx-77449/3722588",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kelly Clifton-Martinez",
+      "brokerage": "Key 2 Texas Realty",
+      "phone": "8326414004"
+    },
+    "sms_message": "Hi Kelly, this is Vivek, local Investor. Interested in your listing at 4314 Mt Davis Way, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291163,
+    "address": "1311 N Jordan Cv",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "price": 850000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 3741,
+    "year_built": 2003,
+    "price_per_sqft": 227,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3650433",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1311-n-jordan-cv-houston-tx-77055/3650433",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rachel Conkling",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "7138949070"
+    },
+    "sms_message": "Hi Rachel, this is Vivek, local Investor. Interested in your listing at 1311 N Jordan Cv, Houston TX 77055. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291164,
+    "address": "504 W 10th St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77008",
+    "price": 1139000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2668,
+    "year_built": 2016,
+    "price_per_sqft": 427,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "13605728",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/504-w-10th-st-houston-tx-77008/13605728",
+    "zillow_url": null,
+    "agent": {
+      "name": "Amanda Anhorn",
+      "brokerage": "Greenwood King Properties - Heights Office",
+      "phone": "7132565123"
+    },
+    "sms_message": "Hi Amanda, this is Vivek, local Investor. Interested in your listing at 504 W 10th St, Houston TX 77008. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291165,
+    "address": "12522 Malachite Way #84",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 350000,
+    "beds": 4,
+    "baths": 3.5,
+    "sqft": 2073,
+    "year_built": 2018,
+    "price_per_sqft": 169,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "13603492",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/12522-malachite-way-houston-tx-77077/13603492",
+    "zillow_url": null,
+    "agent": {
+      "name": "Blake Plaster",
+      "brokerage": "Martha Turner Sotheby's International Realty",
+      "phone": "713-297-1256"
+    },
+    "sms_message": "Hi Blake, this is Vivek, local Investor. Interested in your listing at 12522 Malachite Way #84, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
