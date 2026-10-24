@@ -55758,5 +55758,236 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291187,
+    "address": "17303 Water Medallion St",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 199990,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1707,
+    "year_built": 2027,
+    "price_per_sqft": 117,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17724947",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17303-water-medallion-st-conroe-tx-77306/17724947",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 17303 Water Medallion St, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291188,
+    "address": "17536 White Oak Orch",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 129900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1280,
+    "year_built": 1987,
+    "price_per_sqft": 101,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5232787",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17536-white-oak-orch-conroe-tx-77306/5232787",
+    "zillow_url": null,
+    "agent": {
+      "name": "Nhung Samaan",
+      "brokerage": "United Real Estate",
+      "phone": "832-447-5120"
+    },
+    "sms_message": "Hi Nhung, this is Vivek, local Investor. Interested in your listing at 17536 White Oak Orch, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291189,
+    "address": "808 Dr Martin Luther King Jr Pl N",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 130000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1288,
+    "year_built": 1966,
+    "price_per_sqft": 101,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17724869",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/808-dr-martin-luther-king-jr-pl-n-conroe-tx-77301/17724869",
+    "zillow_url": null,
+    "agent": {
+      "name": "Barbara Gardner",
+      "brokerage": "Olde Homestead Properties of T",
+      "phone": "281-300-8457"
+    },
+    "sms_message": "Hi Barbara, this is Vivek, local Investor. Interested in your listing at 808 Dr Martin Luther King Jr Pl N, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291190,
+    "address": "1919 Beechwood Ct",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 198000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1500,
+    "year_built": 1984,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "Active",
+    "mls": "3548236",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/1919-beechwood-ct-katy-tx-77449/3548236",
+    "zillow_url": null,
+    "agent": {
+      "name": "Regina Pope",
+      "brokerage": "Call It Closed Int'l Realty",
+      "phone": "unknown"
+    },
+    "sms_message": "Hi Regina, this is Vivek, local Investor. Interested in your listing at 1919 Beechwood Ct, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291191,
+    "address": "12423 May Laurel Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77014",
+    "price": 317000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 2135,
+    "year_built": 1996,
+    "price_per_sqft": 148,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10732512",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/12423-may-laurel-dr-houston-tx-77014/10732512",
+    "zillow_url": null,
+    "agent": {
+      "name": "Tri Tran",
+      "brokerage": "Real Broker, LLC",
+      "phone": "832-677-3666"
+    },
+    "sms_message": "Hi Tri, this is Vivek, local Investor. Interested in your listing at 12423 May Laurel Dr, Houston TX 77014. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291192,
+    "address": "2719 Star Peak Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77088",
+    "price": 288900,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2440,
+    "year_built": 2009,
+    "price_per_sqft": 118,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3776496",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2719-star-peak-dr-houston-tx-77088/3776496",
+    "zillow_url": null,
+    "agent": {
+      "name": "Cuong Nguyen",
+      "brokerage": "THE REALTORS\u00ae, NETWORK",
+      "phone": "7136282682"
+    },
+    "sms_message": "Hi Cuong, this is Vivek, local Investor. Interested in your listing at 2719 Star Peak Dr, Houston TX 77088. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291193,
+    "address": "17105 Stillhouse Lake Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77044",
+    "price": 375000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2801,
+    "year_built": 2016,
+    "price_per_sqft": 134,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "12385583",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/17105-stillhouse-lake-ct-houston-tx-77044/12385583",
+    "zillow_url": null,
+    "agent": {
+      "name": "Clifford Williams",
+      "brokerage": "Keller Williams Realty Metropolitan",
+      "phone": "832-229-5058"
+    },
+    "sms_message": "Hi Clifford, this is Vivek, local Investor. Interested in your listing at 17105 Stillhouse Lake Ct, Houston TX 77044. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
