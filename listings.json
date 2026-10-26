@@ -56385,5 +56385,203 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291206,
+    "address": "602 Airline Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 197500,
+    "beds": 3,
+    "baths": 1.5,
+    "sqft": 1372,
+    "year_built": 1970,
+    "price_per_sqft": 144,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5212373",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/602-airline-dr-conroe-tx-77301/5212373",
+    "zillow_url": null,
+    "agent": {
+      "name": "Maria Borrego",
+      "brokerage": "Walzel Properties - Conroe",
+      "phone": "(832) 674-4960"
+    },
+    "sms_message": "Hi Maria, this is Vivek, local Investor. Interested in your listing at 602 Airline Dr, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291207,
+    "address": "16481 Spring Rain Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 169000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 2002,
+    "price_per_sqft": 126,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "11940198",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16481-spring-rain-ct-conroe-tx-77302/11940198",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kristi Delafuente",
+      "brokerage": "JNK Property Group",
+      "phone": "7139369832"
+    },
+    "sms_message": "Hi Kristi, this is Vivek, local Investor. Interested in your listing at 16481 Spring Rain Ct, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291208,
+    "address": "20618 Willow Creek Ct",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 196990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1461,
+    "year_built": 2027,
+    "price_per_sqft": 135,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17689488",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/20618-willow-creek-ct-conroe-tx-77306/17689488",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 20618 Willow Creek Ct, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291209,
+    "address": "14514 Littleford St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77045",
+    "price": 160000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1216,
+    "year_built": 1966,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3303896",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/14514-littleford-st-houston-tx-77045/3303896",
+    "zillow_url": null,
+    "agent": {
+      "name": "Eddie Parker",
+      "brokerage": "Exit Realty 360",
+      "phone": "2818313080"
+    },
+    "sms_message": "Hi Eddie, this is Vivek, local Investor. Interested in your listing at 14514 Littleford St, Houston TX 77045. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291210,
+    "address": "16418 Heatherdale Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77059",
+    "price": 335000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2394,
+    "year_built": 1975,
+    "price_per_sqft": 140,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "9376297",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/16418-heatherdale-dr-houston-tx-77059/9376297",
+    "zillow_url": null,
+    "agent": {
+      "name": "Koy Lyn Jamail",
+      "brokerage": "Keller Williams Realty Clear Lake / NASA",
+      "phone": "7133013053"
+    },
+    "sms_message": "Hi Koy, this is Vivek, local Investor. Interested in your listing at 16418 Heatherdale Dr, Houston TX 77059. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291211,
+    "address": "2205 Mary St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77026",
+    "price": 399999,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 2060,
+    "year_built": 2026,
+    "price_per_sqft": 194,
+    "dom": 0,
+    "status": "New Construction",
+    "mls": "17725724",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2205-mary-st-houston-tx-77026/17725724",
+    "zillow_url": null,
+    "agent": {
+      "name": "Aaron Jistel",
+      "brokerage": "Listing Spark",
+      "phone": "877-897-7275"
+    },
+    "sms_message": "Hi Aaron, this is Vivek, local Investor. Interested in your listing at 2205 Mary St, Houston TX 77026. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
