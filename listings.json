@@ -58134,5 +58134,104 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291259,
+    "address": "16750 Fallen Timbers Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77385",
+    "price": 142910,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1042,
+    "year_built": 2005,
+    "price_per_sqft": 137,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5242206",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16750-fallen-timbers-dr-conroe-tx-77385/5242206",
+    "zillow_url": null,
+    "agent": {
+      "name": "William Klingberg",
+      "brokerage": "AIM Realty, Inc.",
+      "phone": "2819605491"
+    },
+    "sms_message": "Hi William, this is Vivek, local Investor. Interested in your listing at 16750 Fallen Timbers Dr, Conroe TX 77385. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291260,
+    "address": "9814 Emerald Stone Way",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 150000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 900,
+    "year_built": 2022,
+    "price_per_sqft": 167,
+    "dom": 0,
+    "status": "Active",
+    "mls": "16219586",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/9814-emerald-stone-way-conroe-tx-77306/16219586",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mark Dimas",
+      "brokerage": "Realty Of America, LLC",
+      "phone": "2818616199"
+    },
+    "sms_message": "Hi Mark, this is Vivek, local Investor. Interested in your listing at 9814 Emerald Stone Way, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291261,
+    "address": "17294 Cymbal Ln",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 153990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1360,
+    "year_built": 2026,
+    "price_per_sqft": 113,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17728691",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/17294-cymbal-ln-conroe-tx-77306/17728691",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 17294 Cymbal Ln, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
