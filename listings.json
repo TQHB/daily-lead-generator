@@ -61698,5 +61698,137 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291367,
+    "address": "10879 N Baron Village Pl",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 169990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1029,
+    "year_built": 2027,
+    "price_per_sqft": 165,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17731376",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/10879-n-baron-village-pl-conroe-tx-77306/17731376",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Woodruff",
+      "brokerage": "D.R. Horton-Texas, LTD",
+      "phone": "832-532-9592"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 10879 N Baron Village Pl, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291368,
+    "address": "10887 N Baron Village Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 174990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1104,
+    "year_built": 2027,
+    "price_per_sqft": 159,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17497327",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/10887-n-baron-village-dr-conroe-tx-77306/17497327",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jonathan Woodruff",
+      "brokerage": "D.R. Horton-Texas, LTD",
+      "phone": "8325329592"
+    },
+    "sms_message": "Hi Jonathan, this is Vivek, local Investor. Interested in your listing at 10887 N Baron Village Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291369,
+    "address": "6205 Road 2612",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 135000,
+    "beds": 2,
+    "baths": 1,
+    "sqft": 1160,
+    "year_built": 2021,
+    "price_per_sqft": 116,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "12234567",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/6205-road-2612-cleveland-tx-77327/12234567",
+    "zillow_url": null,
+    "agent": {
+      "name": "Eric Peterson",
+      "brokerage": "Kopa Real Estate",
+      "phone": null
+    },
+    "sms_message": "Hi Eric, this is Vivek, local Investor. Interested in your listing at 6205 Road 2612, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291370,
+    "address": "1734 Brickarbor Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77449",
+    "price": 195000,
+    "beds": 3,
+    "baths": 1,
+    "sqft": 1116,
+    "year_built": 1983,
+    "price_per_sqft": 175,
+    "dom": 0,
+    "status": "Active",
+    "mls": "12055710",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/1734-brickarbor-dr-katy-tx-77449/12055710",
+    "zillow_url": null,
+    "agent": {
+      "name": "Stacy Johnson",
+      "brokerage": "Epique Realty LLC",
+      "phone": "832-683-7275"
+    },
+    "sms_message": "Hi Stacy, this is Vivek, local Investor. Interested in your listing at 1734 Brickarbor Dr, Katy TX 77449. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
