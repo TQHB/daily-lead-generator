@@ -62358,5 +62358,236 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291387,
+    "address": "18994 Style Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 172990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1266,
+    "year_built": 2027,
+    "price_per_sqft": 137,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17734153",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/18994-style-dr-conroe-tx-77306/17734153",
+    "zillow_url": null,
+    "agent": {
+      "name": "Christopher Marti",
+      "brokerage": "Keller Williams City View",
+      "phone": "888-845-3451"
+    },
+    "sms_message": "Hi Christopher, this is Vivek, local Investor. Interested in your listing at 18994 Style Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291388,
+    "address": "10639 Crockett Meadows Blvd",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 199900,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1216,
+    "year_built": 2026,
+    "price_per_sqft": 164,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17490540",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/10639-crockett-meadows-blvd-conroe-tx-77306/17490540",
+    "zillow_url": null,
+    "agent": {
+      "name": "Jared Turner",
+      "brokerage": "Century Communities",
+      "phone": "713-222-7000"
+    },
+    "sms_message": "Hi Jared, this is Vivek, local Investor. Interested in your listing at 10639 Crockett Meadows Blvd, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291389,
+    "address": "16200 New Cyprus Rd",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 189999,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1456,
+    "year_built": 2004,
+    "price_per_sqft": 130,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "5309510",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16200-new-cyprus-rd-conroe-tx-77302/5309510",
+    "zillow_url": null,
+    "agent": {
+      "name": "John Martinez",
+      "brokerage": "Keller Williams Realty Clear Lake",
+      "phone": null
+    },
+    "sms_message": "Hi John, this is Vivek, local Investor. Interested in your listing at 16200 New Cyprus Rd, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291390,
+    "address": "6325 Rosebay Woods Dr",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 240000,
+    "beds": 3,
+    "baths": 1.5,
+    "sqft": 1691,
+    "year_built": 1983,
+    "price_per_sqft": 142,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "2523034",
+    "source": "HAR",
+    "scenario_id": 8,
+    "har_url": "https://www.har.com/homedetail/6325-rosebay-woods-dr-katy-tx-77493/2523034",
+    "zillow_url": null,
+    "agent": {
+      "name": "Melissa Menindez",
+      "brokerage": "eXp Realty LLC",
+      "phone": null
+    },
+    "sms_message": "Hi Melissa, this is Vivek, local Investor. Interested in your listing at 6325 Rosebay Woods Dr, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291391,
+    "address": "3434 Yorktown St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77056",
+    "price": 799000,
+    "beds": 3,
+    "baths": 4,
+    "sqft": 3381,
+    "year_built": 2005,
+    "price_per_sqft": 236,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3741507",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/3434-yorktown-st-houston-tx-77056/3741507",
+    "zillow_url": null,
+    "agent": {
+      "name": "Marie Daly",
+      "brokerage": "The LaRose Kaileh Group",
+      "phone": "832-212-3635"
+    },
+    "sms_message": "Hi Marie, this is Vivek, local Investor. Interested in your listing at 3434 Yorktown St, Houston TX 77056. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291392,
+    "address": "14011 Valechase Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77014",
+    "price": 265000,
+    "beds": 4,
+    "baths": 3,
+    "sqft": 2772,
+    "year_built": 1992,
+    "price_per_sqft": 96,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3535059",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/14011-valechase-ln-houston-tx-77014/3535059",
+    "zillow_url": null,
+    "agent": {
+      "name": "Nancy Tullis",
+      "brokerage": "Walzel Properties - The Woodlands",
+      "phone": "281-450-7272"
+    },
+    "sms_message": "Hi Nancy, this is Vivek, local Investor. Interested in your listing at 14011 Valechase Ln, Houston TX 77014. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291393,
+    "address": "8404 Oak Leaf Point Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "price": 469000,
+    "beds": 3,
+    "baths": 4,
+    "sqft": 2451,
+    "year_built": 2016,
+    "price_per_sqft": 191,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "13387408",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/8404-oak-leaf-point-dr-houston-tx-77055/13387408",
+    "zillow_url": null,
+    "agent": {
+      "name": "Thao Nguyen",
+      "brokerage": "eXp Realty LLC",
+      "phone": "3462266699"
+    },
+    "sms_message": "Hi Thao, this is Vivek, local Investor. Interested in your listing at 8404 Oak Leaf Point Dr, Houston TX 77055. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
