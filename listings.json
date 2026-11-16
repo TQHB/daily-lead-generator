@@ -62589,5 +62589,104 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291394,
+    "address": "2349 Triana",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77493",
+    "price": 245000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 2100,
+    "year_built": 2023,
+    "price_per_sqft": 117,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17124844",
+    "source": "HAR",
+    "scenario_id": 9,
+    "har_url": "https://www.har.com/homedetail/2349-triana-katy-tx-77493/17124844",
+    "zillow_url": null,
+    "agent": {
+      "name": "Not Provided",
+      "brokerage": "Not Provided",
+      "phone": "Not Provided"
+    },
+    "sms_message": "Hi Not, this is Vivek, local Investor. Interested in your listing at 2349 Triana, Katy TX 77493. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291395,
+    "address": "13767 Stabledon Dr",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77014",
+    "price": 305000,
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": 2405,
+    "year_built": 1995,
+    "price_per_sqft": 127,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "10729105",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/13767-stabledon-dr-houston-tx-77014/10729105",
+    "zillow_url": null,
+    "agent": {
+      "name": "Magdalena Ramirez",
+      "brokerage": "HomeSmart",
+      "phone": "346-763-8712"
+    },
+    "sms_message": "Hi Magdalena, this is Vivek, local Investor. Interested in your listing at 13767 Stabledon Dr, Houston TX 77014. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291396,
+    "address": "11026 Melba Ln",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77041",
+    "price": 240990,
+    "beds": 5,
+    "baths": 2,
+    "sqft": 1659,
+    "year_built": 1972,
+    "price_per_sqft": 145,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3262775",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/11026-melba-ln-houston-tx-77041/3262775",
+    "zillow_url": null,
+    "agent": {
+      "name": "Linda Dietert",
+      "brokerage": "Better Homes and Gardens Real Estate Gary Greene - Champions",
+      "phone": "281-224-1562"
+    },
+    "sms_message": "Hi Linda, this is Vivek, local Investor. Interested in your listing at 11026 Melba Ln, Houston TX 77041. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
