@@ -63282,5 +63282,203 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291415,
+    "address": "16176 Western Echo Rd",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77302",
+    "price": 160000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1344,
+    "year_built": 1999,
+    "price_per_sqft": 119,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5265260",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/16176-western-echo-rd-conroe-tx-77302/5265260",
+    "zillow_url": null,
+    "agent": {
+      "name": "Kathleen Ruby",
+      "brokerage": "FirstWalk Realty",
+      "phone": "2812216877"
+    },
+    "sms_message": "Hi Kathleen, this is Vivek, local Investor. Interested in your listing at 16176 Western Echo Rd, Conroe TX 77302. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291416,
+    "address": "236 Dawns Edge Dr",
+    "city": "Montgomery",
+    "state": "TX",
+    "zip": "77356",
+    "price": 199000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1774,
+    "year_built": 1981,
+    "price_per_sqft": 112,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5214450",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/236-dawns-edge-dr-montgomery-tx-77356/5214450",
+    "zillow_url": null,
+    "agent": {
+      "name": "Ryan Kutter",
+      "brokerage": "Connect Realty.com",
+      "phone": "832-588-1006"
+    },
+    "sms_message": "Hi Ryan, this is Vivek, local Investor. Interested in your listing at 236 Dawns Edge Dr, Montgomery TX 77356. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291417,
+    "address": "5854 900 Rd",
+    "city": "Cleveland",
+    "state": "TX",
+    "zip": "77327",
+    "price": 160000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1475,
+    "year_built": 2024,
+    "price_per_sqft": 108,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "17737472",
+    "source": "HAR",
+    "scenario_id": 6,
+    "har_url": "https://www.har.com/homedetail/5854-900-rd-cleveland-tx-77327/17737472",
+    "zillow_url": null,
+    "agent": {
+      "name": "Mayra Barahona",
+      "brokerage": "Walzel Properties - Corporate Office",
+      "phone": "7135401482"
+    },
+    "sms_message": "Hi Mayra, this is Vivek, local Investor. Interested in your listing at 5854 900 Rd, Cleveland TX 77327. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291418,
+    "address": "7121 Goforth St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77021",
+    "price": 329000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 1520,
+    "year_built": 2024,
+    "price_per_sqft": 216,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "16945160",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/7121-goforth-st-houston-tx-77021/16945160",
+    "zillow_url": null,
+    "agent": {
+      "name": "Donna Cole",
+      "brokerage": "Dr. Sean Realty, LLC",
+      "phone": "5042656938"
+    },
+    "sms_message": "Hi Donna, this is Vivek, local Investor. Interested in your listing at 7121 Goforth St, Houston TX 77021. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291419,
+    "address": "1106 Walden Hill Ct",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77077",
+    "price": 590000,
+    "beds": 3,
+    "baths": 2.5,
+    "sqft": 2525,
+    "year_built": 2000,
+    "price_per_sqft": 234,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "3632238",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/1106-walden-hill-ct-houston-tx-77077/3632238",
+    "zillow_url": null,
+    "agent": {
+      "name": "Maritza Canenguez-Botsford",
+      "brokerage": "Compass RE Texas, LLC - Houston",
+      "phone": "8322487303"
+    },
+    "sms_message": "Hi Maritza, this is Vivek, local Investor. Interested in your listing at 1106 Walden Hill Ct, Houston TX 77077. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291420,
+    "address": "2071 Sherwood Forest St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77043",
+    "price": 349900,
+    "beds": 3,
+    "baths": 3.5,
+    "sqft": 1876,
+    "year_built": 2019,
+    "price_per_sqft": 187,
+    "dom": 0,
+    "status": "Coming Soon",
+    "mls": "14817426",
+    "source": "HAR",
+    "scenario_id": 10,
+    "har_url": "https://www.har.com/homedetail/2071-sherwood-forest-st-houston-tx-77043/14817426",
+    "zillow_url": null,
+    "agent": {
+      "name": "Rachel Borgsmiller",
+      "brokerage": "RE/MAX Fine Properties",
+      "phone": "9187602334"
+    },
+    "sms_message": "Hi Rachel, this is Vivek, local Investor. Interested in your listing at 2071 Sherwood Forest St, Houston TX 77043. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
