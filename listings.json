@@ -65724,5 +65724,104 @@
       "red_flags": [],
       "opportunity_notes": []
     }
+  },
+  {
+    "id": 16291489,
+    "address": "18897 Style Dr",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77306",
+    "price": 173990,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1382,
+    "year_built": 2027,
+    "price_per_sqft": 126,
+    "dom": 0,
+    "status": "Active",
+    "mls": "17731354",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/18897-style-dr-conroe-tx-77306/17731354",
+    "zillow_url": null,
+    "agent": {
+      "name": "Khiere Simmons",
+      "brokerage": "KX Realty PLLC",
+      "phone": "5125931342"
+    },
+    "sms_message": "Hi Khiere, this is Vivek, local Investor. Interested in your listing at 18897 Style Dr, Conroe TX 77306. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291490,
+    "address": "191 Queens Way",
+    "city": "Conroe",
+    "state": "TX",
+    "zip": "77301",
+    "price": 179000,
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1358,
+    "year_built": 1978,
+    "price_per_sqft": 132,
+    "dom": 0,
+    "status": "Active",
+    "mls": "5209324",
+    "source": "HAR",
+    "scenario_id": 2,
+    "har_url": "https://www.har.com/homedetail/191-queens-way-conroe-tx-77301/5209324",
+    "zillow_url": null,
+    "agent": {
+      "name": "Not Available",
+      "brokerage": "Not Available",
+      "phone": "Not Available"
+    },
+    "sms_message": "Hi Not, this is Vivek, local Investor. Interested in your listing at 191 Queens Way, Conroe TX 77301. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
+  },
+  {
+    "id": 16291491,
+    "address": "9420 Rainbow Dr, Houston, TX 77028",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77028",
+    "price": 195000,
+    "beds": 4,
+    "baths": 2,
+    "sqft": 1000,
+    "year_built": 1980,
+    "price_per_sqft": 195,
+    "dom": 0,
+    "status": "For Sale",
+    "mls": "3203427",
+    "source": "HAR",
+    "scenario_id": 5,
+    "har_url": "https://www.har.com/homedetail/9420-rainbow-dr-houston-tx-77028/3203427",
+    "zillow_url": null,
+    "agent": {
+      "name": "Krystal McDaniel",
+      "brokerage": "Realty Of America, LLC",
+      "phone": "123-456-7890"
+    },
+    "sms_message": "Hi Krystal, this is Vivek, local Investor. Interested in your listing at 9420 Rainbow Dr, Houston, TX 77028, Houston TX 77028. Are you available to walk the property? Is there a lockbox on site? Thank you!",
+    "ai_report": {
+      "arv_low": null,
+      "arv_high": null,
+      "comps": [],
+      "red_flags": [],
+      "opportunity_notes": []
+    }
   }
 ]
